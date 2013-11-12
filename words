@@ -1,0 +1,2541 @@
+
+LDTD	:Local Descriptor Table Descriptor
+SVF	:Serial Vector Format
+GREP	:Global Search Regular Expression and Printout the lines
+PDL	:Proximity Drive Level
+AGL	:ALS Gain Level
+EVM	:Error Vector Magnitude
+perl	:practical extraction and report language
+bmc050	:bma250 + bmm050
+bmc150	:bma255 + bmm150
+EDT	:Event-Driven Time-base mode (bmc150)
+BGA	:Ball Grid Array
+MSVCRT	:Microsoft Visual C Run-Time
+RVO	:Return Value Optimization
+WinSxS	:Windows Side-by-Side
+WFP	:Windows File Protection
+COM	:Component Object Model
+MLSL	:Motion Library Serial Layer
+MLLite	:Basic Motion Library (source)
+MLDL	:The Motion Library Driver Layer
+IAT	:Import Address Table
+INT	:Import Name Table
+EAT	:Export Address Table
+VCM	:Voice Coil Motor
+FV	:Focus Value
+FF	:Fixed Focus
+MF	:Manual Focus 
+TLine	:Tablet Line => DL+FT+2G3GTEST
+ALine	:Assembly Line => MMI_BB+ONLINE_WLS+ALS_AUDIO+CAMERA+TOUCH
+PLine	:Product Line
+SRST	:Soft Reset
+ETRI	:Electronics and Telecommunications Research Institute
+PSAT	:Proximity Saturation
+MARC	:Mission Advanced Research and Communications Center
+FOV	:Field of View
+PVCS
+HDD	:Hard Disk Drive
+CTE	:Coefficient of Linear Thermal Expansion
+PILT	:Proximity Interrupt Low Threshold
+PIHT	:Proximity Interrupt High Threshold
+PDL	:Proximity Drive Level
+MSR	:Modem Status Register
+LSR	:Line Status Register
+IOI	:International Olympiad in Informatics
+CU	:China Unicom
+D.J.	:International English Pronounciation Dictionary, 1963 (Daniel Jones)
+K.K.	:A Pronounciation Dictionary of American English, 1956 (John S. Kenyon & Thomas A. Knott) => (Kenyon & Knott)
+IPA	:International Pronounciation of symbols
+AHD	:American pronounciation in custom dictionary
+BCC	:Bump Chip Carrier
+CLCC	:Ceramic Leadless Chip Carrier
+LCC	:Leader Chip Carrier
+LCCC	:Leaded Ceramic Chip Carrier
+DLCC	:Dual Lead-Less Chip Carrier (Ceramic)
+PLCC	:Plastic Leaded Chip Carrier
+DAVID	:Downscale Assembly of Interconnected Devices
+RIL	:Radio Interface Layer
+RILD	:Radio Interface Layer Daemon
+QCRIL	:QualComm Radio Interface Layer
+SCRIL
+CUCC
+CMUX
+SAI	:Sleep-After-Interrupt
+SAIC	:Single Antenna Interference Cancellation
+EVDO	:Evolution Data Only Technology in cdma2000
+IRAT	:Institute for Research in Art and Technology
+OOS	:Out of Service
+CMG	:Control Moment Gyroscope
+FOC	:Fast Offset Controller
+IMU	:Inertia Measurement Unit
+PSRAM
+OVTP	
+BSDL	:Boundary Scan Description Language
+DSO	:Dynamic Shared Objects
+AWE	:Address Windowing Extensions
+DOA	:Dead on Arrival
+TDOA	:Time Difference of Arrival
+OTDOA	:Observed Time Delay of Arrival
+NTF
+Gravatar:Global Recognized Avatar
+VMA	:Virtual Memory Address
+AVMA	:Anonymous Virtual Memory Address
+LMA	:Load Memory Address
+SUS	:Single UNIX Specification
+SVID	:System V Interface Definition version 3
+yacc	:Yet Another Compiler Compiler
+LBA	:Logical Block Address
+WLS	:Wireless factory test site (RF GPS WIFI BT)
+EGCS	:Experimental/Enhanced GNU Compiler System
+TOC	:Table Of Content; Theory of Constraints
+OMF	:Intel Object Module Format
+RVA	:Relative Virtual Address
+ESID	:External Symbol ID
+COFF	:Common Object File Format
+DWARF	:Debug With Arbitrary Record Format
+PSP	:Program Segment Prefix
+IQC	:Incoming Quality Control
+OQC	:Outgoing Quality Control
+DNC	:Do Not Connect
+UUC	:UnUsable Charge
+RUC	:Remaining Usable Charge
+PLT	:Procedure Linkage Table
+ARHAT	:Association for the Retrieval of Historic Astrological Texts
+DARCS	:Darcs Advanced Revision Control System
+TFS	:Team Foundation Server
+DAG	:Directed Acyclic Graph
+HMI	:Hardware Module INFO
+ALI	:Acer Labs Inc.
+ONFI	:Open NAND Flash Interface Working Group
+NVMHCI	:Non-Volatile Memory Host Controller Interface
+FTL	:Flash Translation Layer
+BBM	:Bad Block Management
+IEDM	:International Electron Devices Meeting
+NX	:No eXecute
+PAE	:Physical Address Extension
+PGE	:Page Global Enable
+PSE	:Page Size Extension
+PUD	:Page Upper Directory; Pick-Up and Delivery	
+PMD	:Page Middle Directory
+PDPT	:Page Directory Pointer Table
+UKIDS	:Universal Knowledge, Information and Data Storage
+USPTO	:The United States Patent and Trademark Office
+CCD	:Common Citation Document
+WIPO	:World Intellectual Property Organization
+PTDL	:Patent and Trademark Depository Library
+PCT	:Patent Cooperation Treaty
+FAIR	:Federal Activities Inventory Reform
+CEC	:Coporative Executive Council
+ROTC	:Reserve Officers' Training Corps
+DJGPP	:DJ's GNU Programming Platform
+MBWA	:Management By Walking Around
+MBTA	:Management By Talking Around
+AIDS	:Acquired Immunodeficiency Syndrome
+MR	:Maintenance Release
+VM	:Virtual Machine; Version Management
+BIST	:Built-in Self Test
+MII	:Media Independent Interface
+GDFS	:Ground to Domain Foot Switch
+GDHS	:Ground to Domain Head Switch
+PCAR	:Power Collapse And Restore state
+QDSS
+TIC	:Test Interface Controller
+QGIC	:
+TDMI	
+mbn
+MPSS	:Mobile Platform Special Subcommittee
+KWISF	:Korea Wireless Internet Standardization Forum
+HDOE	:Reliability Rate
+DOE	:Dynamic Offset Estimation
+MDOF	:Multi-Degree-of-Freedom
+RMW	:Read-Modify-Write
+JBD	:The Journaling Block Device layer
+GPP	:General Purpose Preprocessor
+NDK	:Native Development Kit
+SD	:San Diego; SanDisk
+ETA	:Estimated Time of Arrival
+OLE	:
+SFC	:System File Checker
+CPSR	:Current Program Status Register
+SPSR	:Saved Program Status Register
+(Be used to save CPSR status, in order to restore working status after exception return.)
+EM64T	:Extended Memory 64 Technology
+SSE	:Streaming SIMD Extensions
+MMX	:MultiMedia eXtensions
+AUI	:Attachment Unit Interface
+bma	:bosch mxxx accelerometer
+bmm	:bosch mxxx magnetometer
+bmc	:= bma + bmm
+SIP	:System In package
+HBM	:Halt Burst Mode
+ODR	:Output Data Rate
+SES	:SocioEconomic Status; SCSI Enclosure Services
+DECT	:Digital European/Enhanced Cordless Telephone/Telecommunications
+MCI	:Micro Controller Interface
+SED	:Self Extraction Directive
+-------------------------------------
+9 pins serial COM port Definition:
+RS232	:Bus Standard Rule
+CD	:Carrier Detection
+RXD	:Receive Data
+TXD	:Transmit Data
+DTR	:Data Terminal Ready
+SG	:Signal Ground
+DSR	:Data Send Ready
+RTS	:Request To Send; Return To Sleep
+CTS	:Clear To Send; Compatibility Test Suite
+RI	:Ring Indicator
+-------------------------------------
+AEI	:After Etching Inspection
+BOE	:Buffered Oxide Ether
+EPD	:End Point Detector
+MFC	:Mass Flow Controller
+GDP	:Gas Distribution Plate
+WMI	:Windows Management Instrumentation
+ARR	:Address Range Registers
+VOM	:Voice of Martyrs
+GPTO	:German patent and Trademark Office
+TCS	:Traction Control System
+ESP	:Electronic Stability Program
+ABS	:Anti-lock Braking System
+RBG	:Robert Bosch GmbH
+HXL	:X-axis measurement data Lower  8bit
+HXH	:X-axis measurement data Higher 8bit
+HYL	:Y-axis measurement data Lower  8bit
+HYH	:Y-axis measurement data Higher 8bit
+HZL	:Z-axis measurement data Lower  8bit
+HZH	:Z-axis measurement data Higher 8bit
+SNG	:Single
+SCP	:Sensor Control Program (akmd8975)
+HTC	:High Tech Computer Corporation
+YPR	:Yaw Pitch Roll
+ECS	:E-Compass
+DLPF	:Digital Low Pass Filter
+dps	:degrees per second
+AN	:Application Note
+APERS	:ALS interrupt threshold must persist
+PPERS	:Proximity interrupt threshold must persist
+GA	:Glass Attenuation
+AGAIN	:ALS GAIN control
+ATIME	:ALS integration TIME
+IR	:Infrared Ray
+TAOS	:Texas Advanced Optoelectronic Solutions
+CPOL
+CPHA
+WDT	:Watch Dog Timer
+SCCS	:Source Code Control System
+CSSC	:Compatibly Stupid Source Control
+PWB	:Programmer's WorkBench
+CDDL	:Common Development and Distribution License
+CIFS	:Common Internet File System
+ASEC	:
+LGA	:Land Grid Array
+AKM	:Asahi Kasei Microdevices Corporation
+ASAX	:X-Axis Sensitivity Adjustment value
+ASAY	:Y-Axis Sensitivity Adjustment value
+ASAZ	:Z-Axis Sensitivity Adjustment value
+COEFX	:Coefficient of X
+COEFY	:Coefficient of Y
+COEFZ	:Coefficient of Z
+BSRR	:Bit Set/Reset Register
+BSR	:Boundary Scan Register
+PD	:Power-Down 
+ASTC	:
+POR	:Power On Reset circuit
+PON	:Power ON	
+DRDY	:Data is Ready to be read. Sensor measurement end. 
+GATE	:Gesture-Assisted Telephony Engine
+ACCI	:Audomotive, Consumer, Computer & Communication Infrastructure
+IMS	:Industrial and Multisegment Sector
+CRLF
+C/A	:Command/Address
+BR
+WNS	:Web Notification Service
+SCADA	:Supervisory Control And Data Acquisition
+AML	:Advanced Motion Library
+OGC	:Open Geospatial Consortium
+OWS	:OGC Web Services
+O&M	:Observations and Measurements
+SOS	:Sensor Observation Service
+SOSIS	:Sensor Observation Service Implementation Specification
+N/R	:Not Ready 
+CNT	:Can Not be Tested
+N/A	:Not Applicable
+UE	:User Equipment; Ultra Edit
+PDCP
+RLC
+3GPP	:The 3rd Generation Partnership Project   ==> WCDMA
+3GPP2	:The 3rd Generation Partnership Project 2 ==> CDMA2000
+CSFB	:Circuit Switched Fall Back 
+	:(Fallback: handover/redirection)
+FDE	:Frequency Domain Equalization
+PAPR	:Peak to Average Power Ratio
+LMU	:Location Measurment Unit
+EMC	:ElectroMagnetic Compatibility
+BS	:Base Station
+DMP	:Digital Motion Processor
+Ope	:Open Handset Alliance
+ML	:Modeling Language
+AIDL	:Android Interface Definition Language
+IDL	:Interface Define Language; Interactive Distance Learning; InDirect Labor
+EPCs	:Electronic Product Codes
+LBS	:Location Base Service
+MS	:MediaScanner; Mobile Station(The Mobile Phone); 
+LDMFA	:Load Multiple instructions (LDMDA)
+ATPCS	:ARM-Thumb Procedure Call Standard
+TMD	:Thermal Mitigation Devices
+TSENS	:Temperature Sensors
+HKADC	:HouseKeeping ADC
+ThermalD:Thermal Daemon
+J-to-A	:Junction-to-ambient
+J-to-C	:Junction-to-case
+RTAC	:Real Time ADSP Cofiguration regulation
+AR	:Artificial Reality
+RGT	:ReGression Test
+STRR	:Communication between BSP and QA about the standards into ST. 
+PETS	:Public English Test System (5 levels)
+VIM	:Vi IMproved
+ANR	:App Not Responding
+FQC
+RCI	:Regulator Consumer Interface
+DRMS	:Dynamic Regulator Operating Mode Switching
+FD	:Face Detection
+ROI	:Region of Interest
+AMC	:Audio Manager Class
+CV	:Condition Variable
+AS	:AudioSystem
+AMB	:AudioManagerBase
+SDQA	:Software Design Quality Assurance Team
+ACB	:American Council of Blind
+ADP	:Audio Description Project
+SAP	:Secondary Audio Program; Service Access Point
+UASAP	:United Aircraft Symbolic Assembly Program
+FAP	:FORTRAN Assembly Program
+CMAS
+ETWS
+GART	:Graphics Address Remapping Table
+BKL	:Big Kernel Lock
+VBTBL	:Virtual Base Table
+VFTBL	:Virtual Function Table
+ICS	:Ice Cream Sandwich  	==> Android 4.0
+Android	:Cupcake 		==> Android 1.5
+	 Donut			==> Android 1.6
+	 Eclair			==> Android 2.0
+	 Froyo			==> Android 2.2
+	 Gingerbread		==> Android 2.3
+	 Honeycomb		==> Android 3.x
+GB	:GingerBread
+HC	:HoneyComb; Head Count; Health Care
+CNY	:Chinese New Year
+ALP	:Access Linux Platform
+IANA	:Internet Assigned Numbers Authority
+CIDR	:Classless InterDomain Routing
+ARP	:Address Resoution Protocol
+CPE	:Customer Premises Equipment
+QCAT	:Qualcomm CDMA Analysis Toolkit
+DNI	:Do Not Install
+Mutex	:Mutual Exclusive Lock
+PSK	:Pre-Shared Key
+PHK	:Private Hardware Key
+KTV	:Karaok TV
+RTV	:Real-Time VOD
+	:Rekaxation Televisor VOD
+VOD	:Video On Demand
+WIA	:Windows Image Acquisition
+MIO
+MO	:Mobile Original
+MT	:Mobile Terminated; Multi Threaded
+JNI	:Java Native Interface
+AC	:Application Control
+AL	:Application Launch Button
+DSB	:Data Structure Block
+DSA	:Data Structure Address
+PW	:PassWord
+VFR	:Vocoder Frame Reference
+CAPI	:Common Audio Processor Interface
+NLT	:New Living Translation
+DRS	:DQA Report System
+PQM	:Project Quality Management
+SNT	:Sanity Test
+HPD
+BNEP
+HIDP
+HIE	:Human Interface Emulation
+MPPE
+SLIP
+CSLIP
+VFS	:Virtual File System
+CSP	:Creative Signal Processor
+FLG	:Flag
+OpenGL	:Open Graphics Library
+OpenGLES:OpenGL for Embedded Systems
+MPU	:Memory Protection Unit; Mobility Processing Unit;
+	:Mobile Power Unit; Motion Processing Unit
+ACIA	:Asynchronous Communications Interface Adapter
+ECL	:Emitter Coupled Logic
+CMRR	:Common-Mode Rejection Ratio
+UT	:User Trial
+BES	:Blackberry Enterprise Service
+BIS	:Business Information System
+QNX	:QUNIX(Quick UNIX), from Quantum Software Systems.
+BST	:Binary Search Tree; Bosch Sensor Technology (sensortec)
+	:Basic Service Tier; Business Systems and Technology
+UTC	:Coordinated Universal Time
+DAW	:Digital Audio Workstations
+LKM	:Loadable Kernel Module
+FIFP	:First In First Processed
+GUID	:Group ID and User ID
+ISV
+IP	:Internet Protocol; Intellectual Property
+OTASP
+VUs	:Versions Units
+CFA	:Call Flow Analysis
+CSAE	:Customer Software Applications Engineers
+CHAE	:Customer Hardware Applications Engineers
+T/NT	:Tunnel/Non-Tunnel Mode
+CR	:Change Requests;Calling Rate; Control Run
+	:Configuration Register; Control Register
+DDTM	:Data Dedicated Transmission Mode
+TAM	:Technical Account Managers; Technology acceptance model
+FAE	:Field Account Engineer
+FTS	:Full-Time Simultaneous
+PBX	:Private Branch Exchange
+DMAIC	:Define Measure Analyze Improve Control
+TLS	:Thread Local Storage
+TEB	:Thread Environment Block
+TLV	:Thread Local Variable
+GIMP	:GNU Image Manipulation Program
+CACM	:Central American Common Market
+RFC	:Requests For Comment
+SCA	:Society of Creative Anachronism
+TMRC	:Tech Model Railroad Club
+BBN	:Bolt Beranek & Newman
+UNICS	:Uniplexed Information and Computing Service
+Multics	:MULTiplexed Information and Computing Service
+SCO	:Santa Cruz Operation
+DARPA	:Defense Advanced Research Projects Agency
+DEC	:Data Equipment Company; Digital Equipment Corporation
+UUCP	:Unix to Unix Copy Program
+SCP	:Seattle Computer Products
+QDOS	:Quick and Dirty Operating System
+FCLK	:Forward Clock
+GFP	:GPL File Protocol
+CIM
+SSS
+TLDP	:The Linux Documentation Project
+RTC	:Real Time Clock ==> calendar and alarm
+UCS	:Universal Character Set
+UTF	:Unicode Transformation Format
+BMP	:Basic Multilingual Plane
+FBD	:Flow Block Diagram; Function Block Diagram
+FBF	:FeedBack Filter
+FBC	:File Buffered Channel
+BFD	:Binary File Descriptor library
+CEO	:Chief Executive Officer
+COO	:Chief Operation Officer
+CFO	:Chief Financial Officer
+htons	:host to network short
+TLI	:Transport Layer Interface
+RSSI	:Received Signal Strength Indication
+RSCP	:Received Signal Code Power
+GCA	:Gain Control Amplifier
+FFT	:Fast Fourier Transform Algorithm (method)
+KY	:KunYao Lee
+PLC	:Programmable Logic Controller
+	 Package Loss Concealing
+ANS	:Automatic Noise Suppression
+TASI	:Time-Assigned Speech Interpolation
+VAD	:Voice Activity Detection
+SID	:Silence Insertion Descriptor
+DTX	:Discontinuous Transmission
+CNG	:Comfort Noise Generator
+post-CS	:post-Commercial Sample
+SPA	:Solus Par Agula
+SPARC	:Scalable Processor Architecture
+VDI	:Virtual Desktop Infrastructure
+VPS	:Virtual Private Server
+VDS	:Virtual Dedicated Server
+P2V	:Physical to Virtual
+PVM	:Parallel Virtual Machine
+SIE	:Serial Interface Engine
+BDU	:Bitstream Data Unit
+PPS	:Picture Parameter Set
+TDMS	:Technical Document Management System
+	 Technical Data Management Streaming
+SKB	:Socket Buffer
+DW	:Data Warehouse
+BI	:Business Intelligence
+DOI	:Digital Object Identifier
+URN	:ISO standard Uniform Resource Name
+IPTC	:International Press Telecommunications Council
+IIM	:Information Interchange Model
+XMP	:Extensible Metadata Platform
+DCMI	:Dublin Core Metadata Initiative
+PLUS	:Picture Licensing Universal System
+EML	:Ecological Metadata Language
+GBRDS	:GBIF Biodiversity Resources Discovery System
+POS	:Point-of-Sale Terminal
+	:Portable Operation System
+	:Programmable Option Select
+POST	:Power-On Self-Test
+POSIX	:Portable Operating System Interface of Unix
+CTA	:Condenser-Transmitter Amplifier; China Testing Alliance
+CCC	:Canadian Computing Competition; China Compulsory Certification
+CSD	:Circuit Switch Data; Character Show Destination
+	 Control System Designed
+RTSP	:Real-Time Streaming Protocol
+RBSP	:Raw Byte Sequence Packet/Payload
+	 Remote Batch Station Processor
+PSNR	:Peak Signal to Noise Ratio
+RC	:Rate Control
+SMBus	:System Management Bus => a subset of i2c protocol
+FPS	:Frames Per Second
+FMR	:Frequency Modulated Receiver; Facility Management Reporting
+PMEM	:Processor MEMory; Put Memory
+SMI	:Structure of Management Information; 
+	 Storage Media Interoperability;
+	 Stacked Memory Interface
+SMF	:System Management Function
+SGMP	:Simple Gateway Monitoring Protocol
+DVB	:Digital Video Broadcasting
+SGML	:Standard Generalized Markup Language
+SHA	:Secure Hash Algorithm
+SMMU	:Shared MMU
+NAL	:Network Abstraction Layer
+VCD	:Video Core Driver
+UML	:User-Mode Linux
+LDP	:Linux Documentation Project
+LTT	:Linux Trace Toolkit
+IOT	:InterOperability Test
+	 Integrated Office Terminal; Input/Output Tools; 
+	 Individual Operation Test; International Optical Telecommunications.
+RTE	:RunTime Environment
+AEE	:Application ExEcutive
+SAK	:Secure Attention Key
+CMBC	:China Merchants Bank Corporation
+TAOUP	:The Art of Unix Programming
+KISS	:Keep It Simple and Stupid
+ESR	:Eric S. Raymond;
+	:Equivalent Series Resistance
+ADOS	:Advanced DOS
+DOS	:Disk Operating System
+DoS	:Denial of Service
+WPS	:WorkPlace Shell
+NT	:New Technology
+SNA	:System Network Architecture
+ARM	:The Application Response Measurement standard
+	:Advanced RISC Machine; Architecture Reference Manual
+RISC	:Reduced Instruction Set Computer
+Well known RISC families include DEC Alpha, AMD 29k, ARC, ARM, Atmel AVR, Blackfin, MIPS, PA-RISC, Power (including PowerPC), SuperH, and SPARC. The ARM architecture processors in smart phones and tablet computers also belongs to the RISC families. And RISC processors are also used in supercomputers such as the K computer.
+CISC	:Complicated Instruction Set Computer
+ILP	:int long pointer
+JCL	:Job Contrl Language
+CMPI	:The Common Manageability Programming Interface standard
+UDEF	:The Universal Data Element Framework standard
+CDE	:Common Desktop Environment
+DRDA	:Distributed Relational Database Architecture
+OSIMM	:The Open Group Service Integration Maturity Model
+SIMM	:Single In-line Memory Module
+MZR	:Multiple Zone Recording
+HPFS	:High Performance File System
+SUS	:Single Unix Specification
+XSI	:X/Open System Interface
+SIF	:Schools Interoperability Framework
+NAS	:Non-Access Stratum
+AS	:Access Stratus
+NASPL	:North American State Lotteries Association
+TOGAF	:The Open Group Architecture Framework
+ITAC	:IT Architect Certification
+ITSC	:IT Specialist Certification
+PAWS	:Protection Against Wrapped Sequence Numbers
+vocoder	:voice coder
+PGP	:Pretty Good Privacy
+GPG	:GNU Privacy Guard
+DTX	:Discontinuous Transmission 
+CNG	:Comfort Noise Generation
+RFID	:Radio Frequency Identification
+CBCP	:CallBack Control Protocol
+CAR	:Committed Access Rate
+BCMCS	:Broadcast and Multicast Service
+BCLK	:Microprocessor Clock
+ABI	:Application Binary Interface
+SBA	:Qualcomm Release patch
+TP	:Test Points; Table Panel
+MSL	:Moisture Sensitivity Level
+CEC	:Consumer Electronics Control
+HEAC	:HDMI Ethernet and Audio Return Channel
+AUX I/O	:Auxiliary analog I/O
+AUX_PCM	:External PCM interface
+HFK	:Hands-Free Kit
+ES	:Engineering Specification
+	:Early Software
+	:Emergency Services
+VMI	:Vendor Management Inventory
+CDD	:Compatibility Definition Document
+LOHAS	:Lifestyle of Health And Sustainability
+MILD
+LADSPA	:Linux Audio Developers Simple Plugin
+LADML	:Linux Audio Developers Mailing List
+ASOC	:ALSA System on Chip
+DAPM	:Dynamic Audio Power Management
+JACK	:JACK Audio Connection Kit
+OSS	:Open Sound System; Open Source Software; 
+	:Open Search Server; Operations Support Systems
+WDM	:Windows Driver Model
+WDF	:Windows Driver Foundation
+WHQL	:Windows Hardware Quality Labs
+FS	:Flash file System; Full-Scale (range)
+IDNA	:Internationalizing Domain Names in Applications
+TLD	:Top-Level Domain names
+OOM	:Object-Oriented Memory/Method/Model
+CF	:Clock Frequency; Compact Flash
+API	:Application Program Interface
+CTSS	:Compatable Time Sharing System
+IAU	:International Astronomical Union
+DFS	:Distributed File System
+	 Depth First Search
+BFS	:Breadth First Search
+RCA	:Ripple Carry Adder
+NOS	:Networking Operating System
+FDMA	:Frequency Division Multiple Access
+FDM	:Frequency-Division Multiplexing
+WAIS	:Wide Area Information Server
+SPP	:Sequences Packet Protocol
+	 Serial Port Profile
+SIPO	:Serial-In, Parallel-Out
+PISO	:Parallel-In, Serial-Out
+HTL	:High Threshold Logic
+GDS	:Generic Digital Switch
+GLB	:Generic Logic Block
+GAL	:Generic Array Logic
+NetBEUI	:NetBios Enhanced User Interface
+IPX/SPX	:Internetwork Packet Exchange/Sequences Packet Exchange
+HTML	:Hyper Text Markup Language
+TML	:Transducer Markup Language
+SWE	:Sensor Web Enablement
+OASIS	:
+CAP	:Common Alerting Protocol
+NCAP	:Network Capable Application Processor
+WS-N	:Web Services Notification
+ASAP	:Asynchronous Service Access Protocol; 
+	:As Soon As Possible
+PSTN	:Public Switched Telephone Network
+PSDN	:Public Switched Data Network
+PSN	:Public Switching Network
+PTV	:Pay TeleVision
+POP	:Post Office Protocol
+TELNET	:Telecommunications Network
+JLR	:Junction Loudness Rating
+OLR	:Overall Loudness Rating
+LLC	:Logical Link Control
+ANSNET	:Advanced Networks and Services Network
+SMTP	:Simple Message Transfer Protocol
+VOD	:Video On Demand
+VLL	:Virtual Leased Line
+PDU	:Protocol Data Unit
+CSMA/CD	:Carrier Sense Multiple Access/Collision Detect
+SNMP	:Simple Network Management Protocol
+RMI	:Remote Method Invocation; Register Mapped Interface
+SSC	:Synchronous burst SRAM Cache
+ARPA	:Advanced Research Projects Agency
+TCP	:Transmission Control Protocol
+ASE	:Android Script Environment
+CASE	:Common Application Service Element
+FTAM	:File Transmission, Access and Management
+VT	:Virtual Terminator
+JTM	:Job Transmitter and Management
+UDP	:User Datagram Protocol
+UDTV	:Ultra High Definition TV
+UA	:User Agent
+ICT	:Information & Communication Technology
+DL	:Direct Labor
+CNC	:Computerized Numerical Control
+DP	:Dial Pulse 
+LD	:Loop Disconnect
+MFT	:Master File Table
+WWDC	:WorldWide Developer Conference
+TRS	:Telecommunications Relay Service
+MIME	:Multipurpose Internet Mail Extension Protocol
+RTFM	:Read The * Mannual
+RTF	:Rich Text File
+STFW	:Search The * Web
+OTA	:Over The Air
+CESoP	:Circuit Emulation over Packet Switched Net
+ITU	:International Telecommunication Union
+VCEG	:Video Coding Experts Group
+IETF	:Internet Engineering Task Force
+GML	:Geography Markup Language
+PIDF	:Presence Information Description Format
+MEF	:Metro Ethernet Forum
+MPLS	:Multi Protocol Label Switching
+MFA	:MPLS and Frame relay Alliance
+MSP	:Message Send Protocol
+EPAR	:Explicit Pointer Adjustment Relay
+DWA	:Double Word Access; Dynamic Work Area;
+	 Data Warehousing Alliance
+MSTB	:Master and Bias
+RADAR	:RAdio Detection And Ranging
+NASA	:National Aeronautics and Space Administration
+NOW	:National Organization for Women
+THIN	:The Health Institute of Nutrition
+PDA	:Personal Digital Assistant
+DCT	:Device Control Table; Discrete Cosine Transform
+COCT	:Controller Operation Control Table
+CHCT	:CHannel Control Table
+SDT	:System Device Table
+LUT	:Logical Unit Table
+PSW	:Processor Status Word
+AOSP	:Android Open Source Project
+	:Automatic Operating and Scheduling Program
+ECM	:Electret Condenser Microphones
+JFET	:Junction gate Field-Effect Transistor
+DSD	:Direct Stream Data
+	:Driver's Safety Device
+OPC	:Operator Presence Control
+MEMS	:Micro-Electro-Mechanical Systems
+SSH	:Secure SHell (made by IETF)
+SS	:System Server
+DSLAM	:Digital Subscriber Line Access Multiplexer
+APIC	:Advanced Programmable Interrupt Controller
+	:Advanced Programmable Integrated Circuit
+DXD	:Dynax Driver Framework
+IFS	:Installable File System
+NDIS	:Network Driver Interface Specification
+ODI	:Open Data-link Interface
+SANE	:Scanner Access Now Easy
+UDI	:Uniform Driver Interface
+WDDM	:Windows Display Driver Model
+WDF	:Windows Driver Foundation
+WDM	:Windows Driver Model
+UMDF	:User-Mode Driver Foundation
+KMDF	:Kernel-Mode Driver Foundation
+EGS	:Electronic-Grade Silicon
+XIP	:Execute In Place
+CFI	:Common Flash Memory Interface = CFMI
+ECC	:Error Correcting Code checksum
+NOP	:Number of Operations
+HCI	:Host Controller Interface
+PROM	:Programmable Read-Only Memory
+PLD	:Programmable Logic Devices
+CPLD	:Complex Programmable Logic Devices
+EEPROM	:Electrically Erasable Programmable Read-Only Memory
+ASIP	:Application-Specific Instruction-set Processor
+SDS	:Software Defined Silicon
+OUM	:Ovonic Unified Memory 
+MRAM	:FeRAM
+PFRAM	:Polymer Memory 
+CBRAM	:Conductive Bridge RAM
+ORAM	:Organic RAM
+NRAM	:Nanotube RAM
+NRU	:Not Recently Used
+LFU	:Least Frequently Used
+PBA	:Page Buffering Algorithm
+DSLAM	:Digital Subscriber Line Access Multiplexer
+POTS	:Plain Old Telephone Service
+HBF	:Half-Band Filter
+CORDIC	:Coordinate Rotation Digital Computer
+DDC	:Direct Digital Control; Digital Down Converter
+NCO	:Nu-merical Control Oscillator
+DDS	:Direct Digital Frequency Synthesis. =DDFS
+LCC	:Line Concentration Controller; Life Cycle Costs; Library of Congress Classification
+CIC	:Cross Interleave Code; Circuit Identify Code; Carrier Interface Controller;Circulating Innune Complex
+CIC	:Cascaded Integrator-Comb filter
+DML	:Database Manipulate Language; Data Manipulation Language
+DNA	:Distributed interNet Application
+DNS	:Digital Nervous System; Domain Name Service
+CTL	:Complementary Transistor Logic; Certificate Trust List
+VCA	:Voltage Controlled Amplifier; Valid Channel Allocations
+LDR	:Light Sensitive Resistor; LED driver
+LEDK	:LED cathode
+LED	:Light-Emitting Diode
+mDSP	:modem DSP; Mobile Device Synchronization Protocol
+MDU	:Motor Drive Unit; Main Display Unit; Message Decoder Unit
+NASDAQ	:National Association of Securities Dealers Automated Quotations
+NASD	:National Association of Securities Dealers
+FINRA	:Financial Industry Regulatory Authority
+OTC	:Over-The-Counter
+SOES	:Small Order Execution System
+PHLX	:Philadelphia Stock Exchange
+SEC	:United States Securities and Exchange Commision
+ICE	:InterContinental Exchange; In-Circuit Emulator
+HLL	:High-Level Language
+EASDAQ	:European Association of Securities Dealers Automatic Quotation System
+LEO	:Low-Earth Orbit
+PIO	:Programmed Input/Output
+TTF	:True Type Font
+I/OAT	:I/O Acceleration Technology
+CD	:Compact Disc
+DAT	:Digital Auido Tape
+SVG	:Scalable Vector Graphics
+SVD	:Software Version Description
+DIM	:DDR Interface Macros
+DQS	:DQ Strobe
+APN	:Access Point Network; Average Peak Noise
+CPSS	:Chip Peripheral SubSystem
+STL	:Standard Template Library
+	 Standard Telephone Laboratories
+COW	:Copy-On-Write
+ASV	:Advanced SuperView 
+	 ==> The technology from Sharp to improve image quality
+TFT	:Thin Film Transistor
+QVGA	:Quater Video Graphics Array, 320*240 image resolution
+SQCIF	:SubQuarter Common Intermediate Format, 128*96 image resolution
+SC	:Start Code
+	:System Control
+	:Short Circuit - A headset type
+OC	:Open Circuit - A headset type
+SUPL	:Secure User Plane Location
+VOL	:Visual Object Layer
+QCIF	:Quarter Common Intermediate Format, 176*144 image resolution
+CCD	:Charge Coupled Device
+LRU	:Line Replaceable Unit; List Recently Used
+LSB	:Least Significant Bit
+LPAP	:Low Power Audio Playback
+HPM	:High Power Mode
+LPM	:Low Power Memory; Low Power Mode
+PXO	:Playphone XO
+BTSCO	:BlueTooth SCO
+BTS	:Debian Bug Tracking System
+MTD	:Memory Technology Device
+FUSE	:Filesystem in USERspace
+IMA	:Integrity Measurement Architecture
+	 Interactive Multimedia Association
+KVM	:Kernel based Virtual Machine
+MTRR	:Memory Type Range Register
+MSI	:Message Signaled Interrupts
+MRV	:Magillem Register View
+TLM	:Transmission Line Model; Time Linearization Method; 
+	 Transmission Line Matrix
+TLP	:Transmission Layer Protocol
+RTL	:Register Transfer Language
+MMU	:Memory Management Unit = PMMU.
+PMMU	:Paged Memory Management Unit
+TLB	:Translation Lookaside Buffer
+PTE	:Page Table Entries
+RVCT	:RealView Compilation Tools (ARM tool set)
+MOM	:Mass Optical Memory
+MCF	:MOM Connector Framework
+EVO	:Enhanced VOB
+FLV	:FLash Video
+MOV	:QuickTime format.Apple.
+SWF	:a flash:header+body
+DivX	:Digital Video eXpress
+OMX	:Open Media Acceleration
+VOB	:a Video Format
+AIFF
+FITS	:Flexible Image Transport System
+TIFF	:Tagged Image File Format
+RIFF	:Resource Interchange File Format
+IFF	:Interchanger File Format
+MKV	:Matroska
+JVGA
+GOT	:Global Offset Tables
+PIE	:Position-Independent Executable
+PCIE	:PCI-Express
+JFIF	:JPEG File Interchange Format
+PNG	:Portable Network Graphics
+PNM	:Portable any-map file format; general image format
+MNG	:Multiple-image Network Graphics
+JNG	:JPEG Network Graphics
+FPC	:Flexible Printer Circuit (Board)
+FMS	:Flexible Manufacturing System
+FPI	:First Piece Inspection
+BTB	:Branch Target Buffer
+BTAM	:Basic Terminal Access Method
+OSD	:On-Screen Display
+OSI	:Open Systems Interconnection
+FSAA	:Full Scene Anti-Aliasing method
+FSA	:Frequency Stability Analyzer
+FSB	:File Cache Buffers
+FC	:Feature Complete
+CSC	:Commercial Software Candidate
+WCA	:Wireless Connectivity and Analog
+ESN	:Electronic Serial Number
+SAGE	:Semi-Automatic Ground Environment
+PSK	:Phas Shift Keying
+BBS	:Bulletin Board System
+JEDEC	:Joint Electron Device Engineering Council
+OMAP	:Object Modules Assembly Program
+	 Operations and Maintenance Application Part
+OAM	:Operations, Administration and Maintenance
+OMARM	:Object Management Architecture Reference Model
+RGI	:RF Gain Index
+CPLR
+ATTN
+LB
+HB
+BPF	:BandPass Filter
+FSF	:Free Software Foundation
+NIC	:Network Interface Card
+PTR	:Page-Table Register
+GNOME	:GNU Network Object Model Environment
+KDE	:K Desktop Environment
+TWM	:Tab Window Manager
+XFCE	:XForms Common Environment
+GDM	:GNOME Display Manager
+RDS	:Radio Data System
+RDBS	:Radio Data Broadcast System
+PI	:Program Identification
+PS	:Program Service Name; Protocol Select;
+	:Precise Start; Parametric Stereo ; Product Specification
+EIA	:Electronic Industry Association
+RS232	:Reference Standard 232  <= 20m
+RS485	:Reference Standard 485  <= 1km
+RS422	:Reference Standard 422  <= 1.2km
+PTY	:Program Type
+PTYN	:Program Type Name
+TP	:Traffic Program
+TA	:Traffic Announcement
+AF	:Alternative Frequency; Auto Focus; Adaptive Filter; Audio Flinger
+DI	:Decoder Identification
+MS	:Music Speech Switch
+	:Mobile Station, MicroSoft
+EON	:Enhanced Other Networks 
+EWS	:Emergency Warning System
+IH	:In House app
+RP	:Radio Paging
+RT	:Radio Text
+TMC	:Thermal Mitigation Configuration
+	:Traffic Message Channel
+	:Task and Mode controller
+	:Task Main Control
+TDC	:Transparent Data Channel
+CT	:Clock Time; China Telecom
+PRT	:Process Region Table
+SRT	:System Region Table
+COSE	:Common Open Software Environment
+ARSS	:Airborne Remote Sensing System
+ECM	:Error-Correcting Module
+ECC	:Error-Correcting Code (standard)
+PSRR	:Power Supply Rejection Ratio; Product and Support Requirement Request
+=> Describe the amount of noise from a power supply that a particular device can reject.
+SIP	:Session Initiation Protocol; Simple IP
+SIR	:Signal-to-Interface Protocol
+SMD	:Surface Mount Device; Shared Memory Driver
+SPL	:Sound Pressure Level
+EARO	:Earpiece Receiver Output
+ECM	:Electret Condenser Microphone
+OSR	:Over Sampled Ratio
+OSF	:Over Sampling Frequency; Open Software Foundation
+NDA	:Non-Disclosure Agreement
+DFI	:Digital Facility Interface; Discrete Frequency Interference
+	 Data Field Identification
+CFG	:Control Flow Graph; Content-Free Grammar
+AUX	:Auxiliary
+MMSS	:MultiMedia SubSystem
+OE	:Output Enable; Offline Explorer
+FBI	:Federal Bureau of Investigation
+PGD	:Page Global Directory
+LILO	:LInux LOader
+MCA	:Micro Channel Architecture
+GRUB	:GRand Unified Bootloader
+HLDC	:High-Level Data link Control
+SPDM	:System Performance Diagnostic Monitors
+MFD	:Master Flow Diagram; Master File Directory
+	:Microfarad(measurement of capacitance; MultiFunction Display
+ADI	:Analog Device Instrument
+TI	:Texas Instrument; Table Indicator
+FPGA	:Field Programmable Gate Array
+FPAA	:Field Programmable Analog Array
+VHSIC	:Very High Speed Integrated Circuit
+VHDL	:VHSIC Hardware Description Language
+JHDL	:Just-another Hardware Description Language
+VGS	:Video Graphics System
+ACPU	:Apps CPU
+SMSS	:Scorpion Microprocessor SubSystem
+Cpufreq	:cpu clock frequency dynamic management strategy
+SCSS	:SMSS clock function
+SCPLL	:cpu0/cpu1 and L2 cache using PLL
+LPASS	:Low Power Audio SubSystem
+ACPU	:Auxiliary Computer Power Unit; Apps CPU
+ACR	:Access Control Registers; Abandon Call and Retry
+SDAC	:Stereo DAC
+XPS	:XML Paper Specification
+AUD	:Audio
+EMS	:Electro Magnetic Compatibility; Electronic Motor Control (module)
+EMD	:Electric Motro Driven
+FCC	:Federal Communication Commission; Full Charge Capacity
+OCV	:Open-Circuit Voltage
+ARE	:Activating Response Element; Antenna Range Equipment; 
+	:Audio Response Equipment
+IHF	:Inhibit Halt Flip-flop
+STG	:SideTone Gain
+GDT	:Global Discriptor Table
+LDT	:Local  Discriptor Table
+SOP	:Standard Operating Procedure
+EDF	:Earliest Deadline First
+LLF	:Least Laxity First
+FIFO	:First In First Out
+LIFO	:Last  In First out
+FCFS	:First Come First Served
+SSTF	:Shortest Seek Time First
+SJF	:Shortest Job First
+SPN	:Shortest Process Next
+SPF	:Shortest Process First; Storage Protect Feature; 
+	 Sun Protection Factor; Service Port Function
+FPF	:First Priority First
+CPASS	:Chip Peripheral SubSystem
+LO	:Local Oscillator
+PFFR	:Predict Field Failure Rate
+ISP	:Internal Service Provider; International Signaling Point;
+KMA	:Kernel Memory Allocator
+FFPC	:Fast Forward Power Control
+HID	:Human Interface Device
+HIF	:Host Interface node
+HDR	:High Data Rate; High Dynamic range
+MRD	:Mobile Receive Diversity
+SHDR	:Simultaneous Hybrid Dual Receiver
+GERAN	:GSM/EDGE Radio Access Network
+SINAD	:Signal to noise + Distortion
+SMPS	:Switched-Mode Power Supply
+FT-SMPS	:Fast-transient SMPS
+SMT	:Surface Mounting Technology
+OSC	:Oscillator
+GCF	:Global Certification Forum
+GCF-AP	:GCF-Application Procedures
+GCF-OP	:GCF-Organization Procedures
+CAGC	:Close-loop Automatic Gain Control
+NMI	:Non-Maskable Interrupt
+LOC	:Local Timer Interrupts
+SPU	:Spurious Interrupts
+PMI	:Performance Monitoring Interrupts
+PND	:Performance Pending Work
+RES	:Rescheduling Interrupts
+TRM	:Thermal Event Interrupts
+THR	:Threshold APIC Interupts
+MCE	:Machine Check Exceptions
+MCP	:Machine Check Poll
+ACM	:Association of Computing Machinery
+CDO	:Computation for Design and Optimization
+LGO	:Leaders for Global Operations
+SDM	:System Design and Management
+TPP	:Technology and Policy Program
+SVR	:System V Release
+CAE	:Common Applications Environment
+JFS	:Journaling File System
+XFS	:eXtended File System
+CRIS	:Code Reduced Instruction Set
+MD5	:Message-Digest algorithm 5
+SHA	:Secure Hash Algorithm
+DES	:Data Encryption Standard
+	 Dynamic Echo Suppression
+DEP	:Data Encryption Processor
+NTP	:Network Time Protocol
+SGA	:Software Grant Agreement
+CLA	:Contributor License Agreement
+CCLA	:Corporate CLA
+PMS	:Performance Management System; Patch Management System
+	:Project Management System
+SDC	:Secure Digital Controller
+SDCC	:Supplemental Digital Color Code;
+	 Secure Digital Card Controller
+SDCCH	:Standalone Dedicated Control Channel
+FM	:Fault Management; Frequency Modulation
+FMI	:Frequency Modulation Inspect
+FMIQ	:FM Inphase and Quadrature
+NIS	:Network Information Services
+DAP	:Debug Access Port
+LDAP	:Lightweight Directory Access Protocol
+FTM	:Factory Test Mode; Fast Transfer Mode
+LWP	:Light Weight Process
+LWKT	:Light Weight Kernel Threads
+NPTL	:Native POSIX Thread Library (RedHat)
+TPM	:Technology of Project Management
+SOCC	:Satellite Operations Control Message
+SOCM	:Service Option Control Message
+SOC	:System On Chip; Slow Offset Controller
+EFRC	:Electronic File Release Control
+FREQ	:Frequency
+FRM	:Frame Rate Modulation; Frame
+FRS	:Feature Requirements Specification
+FRT	:Feature code string Recognition Test
+FRU	:Field Replaceable Unit
+CIP	:Continuous Process Improvement
+KPI	:Key Performance Indicators
+CAL	:Calculated Average Life; Calibration
+SF	:Safe Factor;Science Fiction; San Francisco;
+	:Super Flinger; SuperFrame; Search Frequency; 
+	:Serving Frequency; Spreading Factor; Spatial Filter
+DNNS	:Dynamic echo and Nonstationary Noise Suppressor
+DDNS	:Dynamic Domain Name Server
+DNSS	:Defense Navigation Satellite System
+PCD	:Path Change Detection; PolyCrystalline Diamond; Page Cache Dsable
+PWT	:Page Write-Through
+SAR	:Specific Absorption Rate
+PMP	:Project Management Professional; Portable Media Players
+PMT	:Project Management Techniques
+PDN	:Public Data Network; Power Delivery Network
+WAN	:Wide Area Network; Wireless Area Network
+PCS	:Personal Communication services; Personal Communication system
+PCSC	:Personal Communication Switching Center
+KPCS	:
+IMT	:International Mobile Telecommunications;
+	 Inter-Machine Trunk; International Mobile Telephone
+JCDMA	:Japanese CDMA
+AWS	:Air Weather Service
+HPH	:HeadPHone
+WSXGA
+MIPI-CSI
+MIPI-DSI
+LPDDR2	:Low Power Double Data Rate 2
+PTT	:Physical Layer Test tool; 
+	:Postal Telephone & Telegraph (Administration);
+	:Push-To-Talk, Press-to-Transmit
+SADC
+DMIPS
+DSDS	:Dual SIM Dual Standby
+DSDA	:Dual SIM Dual Active
+SSSS	:Single SIM Single Standby
+SURF	:Subscriber Unit Reference Platform
+FFA	:Form Factor Accurate
+SMART	:Specific Measurable Attainable Relevant Time-based
+	:Software Management and Release Tools
+NFS	:Network File System
+LDD	:Library Dependency Discovery; Linux Device Driver; Logical Device Driver
+PDD	:Physical Device Driver
+BIOS	:Basic Input Output System
+PnP	:Plug aNd Play
+MBR	:Master Boot Record
+AVC	:Automatic Volume Control;
+	:Access Vector Cache
+VCL	:Video Code Layer
+NALU	:NAL Unit
+SODB	:String Of Data Bits
+
+DAT	:Digital Audio Tape; Dynamic Address Translation; 
+	:Data Acquisition Test; Disk Allocation Table
+CEFI	:Communication Evaluation Feedback Improvement
+LOAS	:Low Overhead Audio Stream
+MP3	:Moving Picture Experts Group Layer 3 audio (audio file format/extension)
+	:MPEG audio layer 3
+PAIT	:Professional Audio Interface Tool
+SAT	:Supervisory Audio Tone
+SAW	:Surface Acoustic Wave
+WBAC	:stereo WideBand Audio Codec
+NS	:Noise Suppressor
+DMS	:Database Management Subsystem
+DMSS	:Dual-Mode Subscriber Station/Software
+NAT	:Network Address Translation
+DMSS_J	:DMSS customization requirements for the Japanese market
+DNS	:Domain Name Service; Domain Name System; Domain Name Server
+MSEC	:Mobile Station Echo Canceller
+ERL	:Echo Return Loss
+FL	:Forward Link
+RL	:Reverse Link
+HEC	:Headset Echo Canceller
+SEC	:Speakerphone Echo Canceller
+NES	:Network Echo Suppressor
+DFM	:Digital FM
+BRE	:Basic Regular Expression
+ERE	:Extended Regular Expression
+PRE	:Perl Regular Expression
+EANS	:Enhanced Audio Noise Supperssion
+NLES	:Non-Linear Echo Suppression
+CNI	:Comfort Noise Injection
+DRC	:Dynamic Range Control; Dynamic Range Compression;
+	:Data record control; Digital Rate Control
+MBDRC	:MultiBand Dynamic Range Control
+MBADRC	:MultiBand Audio Dynamic Range Control
+TSADC	:Touch Screen ADC
+EOC	:End Of Conversion
+ADIE	:Analog DIE(Integrated Circuit) ==> The Timpani codec of the QTR device.
+	:Automatic Dialing and Indicating Equipment;
+	:Alliance of Independent Democrats in Europe
+BW	:BandWidth
+FABRIC	:Flexible Advanced Buses and Reusable Interconnect Cores
+MIPS	:Millions of Instructions Per Second ==> A measure for computing speed of a program.
+NPA	:Node Power Architecture
+MVM	:Multimode Voice Manager
+CVP	:Core VocProc
+CVS	:Core Voice Stream; Concurrent Versions System
+CVD	:Core Voice Driver
+VOX	:Voice-Operated Exchange (Voice-Operated switch)
+VPN	:Virtual Private Network; Virtual Page Number
+VSM	:Voice Stream Manager; Virtual Share Memory; Value Stream Mapping
+VPM	:Voice Processing Manager
+VSS	:Voice SubSystem; Virtual Surround Sound; Visual Source Safe
+VLSI	:Very Large Scale Integration
+VMIC	:VLSI Multilevel Interconnection Conference
+VLR	:Visitor Location Register
+VOA	:Voice Over ATM
+ATM	:Automatic Teller Machine; Asynchronous Transfer Mode
+CDS	:Central Dynamic Store
+HGC	:Hutchison Global Communications Investments Limited
+VPM	:Voice Privacy Mask; Voice Processing Management
+	 VoiceProc Manager
+ADM	:Application Data Mover
+ASM	:ASSEMBLY language; Asynchronous state machine;
+	 Algorithmic State Machine; Audio Stream Manager;
+	 Auto-Sequencing Memory
+ASMP	:Active Set Management Protocol
+XML	:eXtensible Markup Language
+OVR	:Output Voltage Regulation
+PV	:Physical Volume; Packet Video
+VG	:Volume Group
+PE	:Physical Extend
+LV	:Logical Volume
+DM	:Dianostic Monitor;Data Mover; Device Management; 
+	 Data Memory; Delta Modulation
+DTS	:Digital Theatre System
+LPC	:Linear Predictive Coding
+LPCM	:Linear Pulse Coded Modulation
+DPCM	:Differential PCM
+APCM	:Adaptive PCM
+ADPCM	:Adaptive Differential PCM (Delta Modulation: one bit per sample)
+¦Ì-law	:North America and Japan. PAM
+a-law	:Europe and most of the rest of the world. PCM
+RZ	:Return-to-Zero
+NRZ	:Non-Return-to-Zero
+SQNR	:Signal-to-Quantizationn-Noise Ratio
+PXO	:Platform XO
+ACELP	:Algebraic Code Excited Linear Prediction
+VBR	:Variable Bit Rate
+ABR	:Average Bit Rate
+CBR	:Constant Bit Rate; Circuit Board Rack
+SBR	:Spectral Band Replication
+MDCT	:Modified Discrete Cosine Transform
+MPC	:Muse Pack
+RA	:Real Audio; Register Address
+MLP	:Mobile Location Protocol; Multilink PPP
+PPP	:Point-to-Point Protocol
+	 Pixel Processing Pipe
+CAC
+PACN
+PLM
+PLMN	:Public Land Mobile Network; Private Land Mobile Network
+WRP
+RMC
+SCO	:Synchronous Connection-Oriented
+HSSD	:HeadSet Switch Detect
+HT	:High Throughput
+HTC	:Host-Target Communication
+HAST	:Highly Accelerated Stress Test
+HTOL	:High-Temperature Operating life (test for package/product qualification)
+HTSL	:High-Temperature Storage Life (test used for product qualification)
+SLIMBus	:Serial Low-power Inter-chip Media Bus
+MBHC	:MultiButton Headset Control
+DMIC	:Digital Microphone IC
+DRE	:Dynamic Range Enhancement
+PA	:Power Amplifiers
+PGA	:Programmable Gain Amplifier
+IEC	:Interstate Electronics Coporation
+	 International Electrotechnical Commission
+IEEE	:Institute of Electrical and Electronic Engineers
+BTSIG	:BlueTooth Special Interest Group
+ATC	:Authorized Testing Center;
+	 Adaptive Transform Coding;
+	 Automatic Trickle Charging;
+	 Autio-Trickle Charging
+ABS	:Analysis-By-Synthesis
+CDF	:Capabilities Declaration Form
+DTD	:Detailed Timing Descriptor ("18-byte timing descriptor")
+DUT	:Device Under Test
+ISVM	:I (current) Source Voltage Measurements
+SVD	:Short Video Descriptor 
+	(in Data Block collection of CEA EDID Timing Extension)
+TDR	:Time Domain Reflectometer/Reflectometry
+TDT	:Time Domain Transmission
+TE	:Test Equipment
+TPA	:Test Point Access
+VSIM	:Voltage Source I (current) Measurements
+RoHS	:Restriction of Hazardous Substances
+SAC405
+VR	:Voice Recognition; Virtual Reality
+EVRC	:Enhanced Variable Rate Coder
+ALSA	:Advanced Linux Sound Architecture
+ADM	:Application Data Mover; Audio Device Manager
+APR	:Asynchronous Packet Router;
+	 Audio Protocol Routing
+APM	:Audio Policy Manager; Advanced Power Management;
+	:Adaptive Pointer Management; 
+EDDS	:Enhanced Disk Driver Services
+ARD	:Audio Routing Driver
+A2DP	:Advanced Audio Distribution Profile
+AVCRP	:Bluetooth profile
+OPP	:Bluetooth profile
+FTRT	:Faster Than Real Time
+VIPT
+VIVT
+ASID
+PFFR	:Predict Field Failure Rate
+DFS	:Design For Services
+PRA	:Product Resource Assessment
+AER	:Alternative Engineer Request
+MMPM	:MultiMedia Power Management
+SBC	:Sub-Band Codec;Sub-Band Coding
+SBBC	:Service-Based Bearer Control
+SAW	:Surface Acoustic Wave
+SAT	:Supervisory Audio Tone
+PHF	:Middle wave and FM antenna
+COPP	:Computerized Optical Prescription Processing; Common Object Pre/Postprocessing
+POPP	:Per Object Pre/Postprocessing
+PAMP	:Power Amplifier
+COP	:Computer Operating Properly timer = watchdog timer
+UMT
+QIYI	:QIYI video player
+QRD	:Qualcomm Reference Design(TBD) => The board of surf, more customer-orientated
+QAEP	:MSM/QSD Android Enablement Project
+QSEE	:Qualcomm Secure Execution Environment
+QLF	:Qualcomm License File
+QUP	:Qualcomm Universal Peripheral engine
+QCPR	:QConcert Plus Reverb
+QCC	:QDSP C Compiler
+QCOM	:Qualcomm
+QSPR	:
+QRCT	:Qualcomm RF SW TEST tool
+QPF	:Qualcomm Permission File
+QTMS	:Qualcomm Test Management System
+QDL	:Qisda DownLoad tool
+QCN	:NV backup, mainly contains RF calibration
+QMP	:Qualcomm Management Process; Quality Management Process
+QCTACK	:QCT ACKnowledgement
+QXDM	:Qualcomm eXtensible Diagnostic Monitor
+QFILT	:Qualcomm Filter Tuning Tool
+QS	:QRD Sample
+QSC	:Qualcomm Single Chip ASIC Device
+QCELP	:Qualcomm Code Excited Linear Predication
+QCP	:Qualcomm Pure voice file format
+WebAudio:Audio fomrat authored by Faith, Inc.
+ADEC	:Audio Decoder
+QMC	:Qualcomm Mobile & Computing
+QCA	:Qualcomm Atheros
+QIS	:Qualcomm Internet Services
+QGOV	:Qualcomm Government Technologies 
+QCES	:Qualcomm Corporate Engineering Services
+OCTO	:Office of the Chief Technology Officer 
+OCS	:Office of the Chief Scientist 
+GMD	:Global Market Development 
+GBO	:Global Business Operations 
+AI-TO-CA:Android ICS - Touch screen - Capacitive
+QMSS
+QMSS Software configures the QCT baseband device
+input pins to ensure a minimum sleep current for QRD hardware designs. 
+QPST	:Qualcomm Product Support Tool
+Qlife	:Qualcomm Life
+QLabs	:Qualcomm Labs
+QCSI	:QMI Common Service Interface
+QCCI	:QMI Common Client Interface
+QCTL	:Qualcomm Control Service
+QMT	:Qualcomm MEMS Technologies
+QuIC	:Qualcomm Innovation Center 
+QTI	:Qualcomm Technologies, Inc. 
+QTL	:Qualcomm Technology Licensing
+QCLIMB	:Qualcomm CoLor Image Management and Benchmarker
+QCS	:Qualcomm CDMA System; Qisda Corporation of Suzhou
+QACT	:Qualcomm Audio Calibration Tool
+QDV	:Qualcomm DSP Viewer
+QXATT	:Qualcomm XML Audio Tuning Tool
+QTT	:Qisda Taiwan Taipei
+QTY	:Qisda Taiwan taoYuan
+QTH	:Qisda Taiwan Hsinchu
+QSD	:Qualcomm SnapDragon
+LQSS	:Loral Qualcomm Satellite Service
+QFS	:Qualcomm File System
+QFTP	:Qualcomm File Transfer Protocol
+QFP	:Quad Flat Pack
+TQFP	:Thin QFP
+CQFP	:Ceramic QFP
+LQFP	:Low-profile QFP
+PQFP	:Plastic QFP
+CCS	:Constant Current Source/Sink
+SEM	:Simplified Ebers-Moll model
+SLUB	:
+SROT	:Secure Root-of-Trust
+PME	:power wakeup signal
+	 A signal line on PCI bus, restart system by triggering it.
+EDAC MC	:
+PEC	:Packet Error Checking
+STMR	:SideTone Masking Rating
+LSTR	:Listener SideTone Rating
+SPA	:Software Publisher Association; Stereo Pan Allochthonous; Sudden Phase Anomalies
+SIA	:Semiconductor Industries Association
+SSPA	:Solid State Power Amplifier
+SSS	:Single Subscriber Station
+HSPA	:High-Speed Packet Access
+HSPD	:High-Speed Packet Data
+PBE	:Philips Business Excellence; Plain Both Ends;
+	 Psycho-acoustic Bass Enhancement
+CAF	:Core Audio Format; Code Aurora Forum
+AMR	:Adaptive Multi-Rate
+AMR-NB	:AMR-NarrowBand
+AMR-WB	:AMR-WideBand
+APE	:Automatic Photomapping Equipment; ANSI/POSIX Environment
+AAC	:MPEG-2 Advanced Audio Codec
+AAC+	:MPEG-4 high efficiency AAC
+HE-AAC	:Hight-Efficiency AAC (MPEG-4 Audio)
+ER-AAC	:Error Resilient AAC
+AAL	:ATRAC Advanced Lossless
+AAGC	:Audio Automatic Gain Control
+ABB	:Audio Breakout Box
+ADTS	:Audio Data Transport Stream (MPEG-2 AAC format)
+ADIF	:Analog Data Interchange Format (MPEG-2 AAC format)
+AG	:Audio Gateway; Access Gateway
+AVI	:Audio Video Interleaved
+AVPF	:Audio-Visual Profile with Feedback
+AVRCP	:Audio/Video Remote Control Profile
+AXI	:Advanced eXtensible Interface
+MPEG	:Motion Pictures Experts Group
+EBU	:European Broadcast Union
+BWF	:Broadcast Wave Format
+MIDI	:Musical Instrument Digital Interface
+SMF	:Standard MIDI Format
+SP-MIDI	:Scalable Polyphony MIDI
+GM/GMM	:General MIDI Mode
+GS	:General Synthesizer
+XG-MIDI	:Extended General MIDI
+SMAF	:Synthetic music Mobile Application Format
+	:Service Management Access/Agent Function
+DTS	:Digital Theater System
+DVS	:Digital Video System; Dynamic voltage scaling
+DVX	:Digital Voice eXchange
+DRP	:Distribution Requirement Planning; Disaster Recovery Planning
+BCP	:Business Continuity Planning
+THD	:Total Harmonic Distortion
+THD+N	:THD+Noise
+QLIC	:Quasi-linear interference cancellation
+QTA	:Qualcomm Traffic Arbitration (proprietary UART-based)
+QTR	:Qualcomm Transceiver
+QFN	:Quad Flat No-lead
+mQFN	:micro-QFN
+QRRS	:Qisda Resource Reservation Systeming
+QMSL	:Qualcomm Manufacturing Support Library
+QMSP	:Qualcomm Modem Server Plus
+QMUX	:QMI Multiplexing Protocol
+QMI	:Qualcomm Modem Interface; Qualcomm MSM Interface;
+	:Quadrature Mirror Filter; Qualcomm Messaging Interface
+QMIS	:Qualcomm Management Information Service
+QMSG	:Qualcomm Messaging
+MDM	:Mobile Data Modem; Mobile Diagnostic Monitor; Mobile Device Management
+HPF	:High-Pass Filter; Head Phone Frequency
+MOSFET	:Metal Oxide Semiconductor Field Effect Transistor
+MTP	:Modem Test Platform; Media Transfer Protocol
+ASIC	:Application Specific Integrated Circuit
+ASSPs	:Application-Specific Standard Products
+HDL	:Hardware Description Language
+DTR	:Tape and Reel
+MT	:Matrix Tray
+MBB	:Moisture Barrier Bag
+OCP	:Over-Current Protection; Over Circuit Protection
+SND	:Sound
+PWR	:Power supply
+GND	:Ground
+SE	:Single-Ended
+SPKR	:Speaker
+ST	:SideTone
+WSP	:Wafer-Scale Package
+WCD	:WSP Coder/Decoder
+WLNSP	:Wafer-Level Nano-Scale Package
+XMF	:eXtensible Music Format
+DLS	:Dynamic Light Scattering; Differential Lock System; 
+	:Doctor of Library Science; DownLoadable Sound files; 
+	:Data Link System (subsystem)
+ABD	:Automatic Break Differntial
+NDC	:Network Data Centers
+DSL	:Digital Subscriber Line
+ADSL	:Asymmetrical Digital Subscriber Loop
+RADSL	:Rate-Adaptive DSL
+HDSL	:High-speed DSL
+VDSL	:Very-high-bit-rate DSL; Very-high-speed DSL
+MFI	:Magnetic Field Intensity; Musicians Foundation Incorporated
+DoCoMo	:Do Communication Over Mobile Network
+NTT	:Nippon Telegraph and Telephone corporation
+DCM	:Doll Capital Management
+FOMA	:Freedom Of Mobile multimedia Access
+SAF	:Simple Animation Format
+DPCM	:Difference PCM
+DME	:Data Modulator Engine; Direct Memory Exchange
+IMAP	:Internet Messaging Access Protocol
+IMG	:Image
+DVI	:Digital Visual Interface
+DVD	:Digital Video Disk
+WAV	:Wave
+WMA	:Windows Media Audio (file type)
+ASF	:Advanced Streaming Format; 
+	:Apache Software Foundation; 
+	:Application Server Funciton
+NCSA	:National Center for Supercomputing Applications
+ERL	:Echo Return Loss
+ECNS	:Echo Cancellation and Noise Suppression
+MRP	:Mouth Reference Point
+ASIO	:Audio Stream I/O
+AIO	:Async I/O
+SIO	:Sync I/O
+TTY	:TeleTYpewriter
+HCO	:Hearing Carry Over
+VCO	:Voice Carry Over
+Rx	:Receive
+RxC	:Receive CDMA task
+RxTx	:CDMA traffic channel layer 2 task
+Tx/TX	:Transmit
+TXC	:Transmit CDMA task
+FIR	:Finite Impulse Response; FIR filters (electronic)
+IIR	:Infinite Impulse Response
+EEC	:Enhanced Echo Canceller
+NS	:Noise Suppression
+RVE	:Receive Voice Enhancement
+WVE	:Wide Voice Enhancement
+WNR	:Wind Noise Deduction
+FENS	:Far-End Noise Suppression
+SLR	:Sending Loudness Rating
+RLR	:Receive Loudness Rating
+MOS	:Mean Opinion Score
+PCM	:Pulse Code Modulation
+PESQ	:Perceptual Evaluation of Speech Quality
+PSQM	:Perceptual Speech Quality Measure
+RFR	:Receive Frequency Response
+SFR	:Send Frequency Response
+SNR	:Signal to Noise Ratio
+C/N0	:Signal to Noise Ratio
+STQ	:Speech Processing, Transmission and Quality Aspects
+DAL	:Device Access Library; Device Abstraction Layer
+HAL	:Hardware Abstraction layer
+	 Hardware Access Layer
+PIL	:Peripheral Image Loader
+LDM	:Linux Driver Model
+DAI	:(PCM) Digital Audio Interafce
+HTTP	:HyperText Transfer Protocol
+HTTPS	:HyperText Transfer Protocol over SSL
+SET	:Secure Electronic Transaction
+	 Selective Employment Tax
+SSL	:Secure Socket Layer; Synchronization Sub-Layer
+IMS	:IP Multimedia Subsystem
+DPL	:Device Porting Layer
+HOM	:HandOff Manager
+VSC	:Video Share Calling
+RCS	:Rich Communication Suite; Revision Control System
+VoIP	:Voice Over IP
+DTMF	:Dual-Tone MultiFrequency
+PSVT	:Packet Switched Video Telephony
+RTP	:Real-Time Transport Protocol
+RTCP	:RTP Control Protocol
+QoS	:Quality of Service
+aDSP	:application DSP; advanced DSP
+ADSP	:Audio DSP
+ADSPS	:aDSP Services
+FEM	:Front End Module
+FB	:FireBox
+FF	:Feed Forward;Flip/Flop; Form Feed
+FB	:Feed Back
+ANC	:Active Noise Cancellation
+AFE	:Audio Front End
+ACD	:Analog Codec Driver
+	:Android Compatibility Definition
+PoP	:The memory Package stacks onto the MSM(TM) Package
+DBL	:Dynamic Buffer Limits
+SPS	:Sensor peripheral system
+	:Sequence Parameter Set
+	:Sensor Planning Service
+SAS	:Sensor Alert Service
+SIC	:SPS Interrupt Controller; Sector interface card
+	 Simple Interrupt Controller
+SCI	:Slot Cycle Index; Synchronized Capsule Indicator;
+	 Serial Communications Interface
+AMSS	:Advanced Mobile Subscriber Software
+ASW	:Application Software;ASIC Software
+DIP	:Double In-line Package
+WDOG	:Watch Dog
+BWC 	:BackWard-Compatible changes
+OZPLA	:Australian Public License A
+ERTOS	:Embedded, Real-Time and Operating Systems Program
+NICTA	:National ICT Australia Ltd
+ONCRPC	:Open Network Computing Remote Procedure Call
+SMEM	:Shared Memory Manager
+PAM	:Pluggable Authentication Modules; Pulse Amplitude Modulation
+PPPD	:Point-to-Point Protocol Deamon
+NIS	:Network Information Services; National Information System
+GECOS	:General Electric Comprehensive Operating System
+HLOS	:Hardware Limited Operation Strategy; Horizontal Line of Sight;
+	:High-Level OS
+SBL	:Qualcomm Secondary Boot Loader
+PBL	:Primary Boot Loader
+SBL1	:RPM SBL
+SBL2	:Scorpion PBL	
+SBL3	:Scorpion SBL
+ADT	:Automatic Data Transmission/Tracking/Translator
+DDMS	:Dalvik Debug Monitor Service
+DMI	:Desktop Management Interface
+ACL	:Access Control List; Asynchronous Connectionless
+AMI	:Alternate Mark Inversion; Advanced Material Information
+ACS	:ADSP Core Services
+CMI	:Coded Mark Invresion; Control Method Interface; 
+	:Common Modem Interface; (This is a top-level system-decoupling effort)
+ACPI	:Advanced Configuration and Power Interface/Initiative; 
+	:Automatic Cable Pair Identification
+	:Aviation Crime Prevention Institute
+AM	:Amplitude Modulation; Assistant Memorizer; Associative Memory
+FM	:Frequency Modulation
+ACPIAM	:ACPI AM
+MTRR	:Memory Type Range Register
+TOM	:Technical Operations Manager
+RSDP	:Root System Description Pointer
+RSDT	:Root System Description Table
+XSDT	:Extended System Description Table
+FADT	:Fixed ACPI Description Table
+FACS	:Firmware ACPI Control Structure
+FACP	:Fully Automated Computer Program;
+	:Fellow of the American College of Physicians
+MSFT	:MicroSoft Full Time employee
+RAID	:Redundant Array of Independent/Inexpensive Disks
+LVM	:Logical Volume Manager
+DSDT	:Differentiated System Description Table
+FACS	:Firmware ACPI Control Structure
+	:Facilities Assignment and Control System
+OSPM	:Operating System-directed Power Management
+SRAT	:Speed Remote Administration Tool		
+HPET	:High Precision Event Timer
+PSDT	:Persistent System Description Table
+MADT	:Multiple ACPI Description Table
+SSDT	:Secondary System Description Table
+SSD	:Solid State Disk; Scheduled Start Date
+UMA	:Uniform Memory Access model
+NUMA	:Non Uniform Memory Access/Architecture
+PFN	:Pulse Forming Network; Page Frame Numbers
+AGP	:Accelerated Graphics Port; 
+URL	:Uniform Resource Locator
+ALU	:Arithmetic Logic Unit
+AMD	:Advanced Micro Devices
+RCU	:Remote Concentrator Unit; Recovery Control Unit;
+	:Relay Control Unit; Read-Copy-Update 
+ELF	:Executable Location File; Electronic Location Finder; 
+	:Executable and Linkable Format
+MCE	:Mission Control Element; 
+	:Master Communication Equipment; 
+	:Master of Civil Engineering
+PMU	:Power Management Unit; Portable Measurement Unit; Power Monitor Unit
+RAMFS	:RAM File System
+AOT	:Average Operation Time; Alloc On Trample (Page Demand Allocation)
+OSBL	:Output Signal Balance Loss
+EDD	:Electronic Data Display; Envelope Delay Distortion
+	:Estimated Delivery Date
+DSPS	:Dedicated Sensors Processor Subsystem
+TZ	:Trust Zone
+XMS	:Extended Memory Specification
+HMA	:High Memory Area
+ESN	:Electronic Serial Number
+MIN	:Mobile Identification Number
+SCM	:Station Class Mark; Secure Channel Manager
+L2_UL	:Layer 2 Uplink
+L2_DL	:Layer 2 Downlink
+RRC	:Radio Resource Manager
+MM	:Mobility Management
+REG	:Registration
+SM	:Session Management
+HS	:HandSet; Handset Services
+DIAG	:Diagnostics
+VOC	:Vocoder Services
+LF
+CMX	:Compact Multimedia eXtensions
+AVS	:Audio Vocoding Sound; Adaptive voltage scaling
+	:Audio Video Standard
+EAC	:Enhanced Audio Codec
+VS	:Voice Services
+RSS	:Relative System Sensitivity; Remote Switching System
+CUPS	:Common Unix Printing System
+IPP	:Internet Printing Protocol
+LPD	:Line Printer Deamon
+SMB	:Server Message Block
+MAME	:Multiple Arcade Machine Emulator
+ICMP	:Internet Control Messages Protocol
+JDWP	:Java Debug Wire Protocol
+SN	:Serial Number
+IMEI	:TAC+FAC+SNR+SP
+IMEI	:International Mobile Equipment Identity => UMTS
+MEID	:Mobile Equipment 			 => CDMA
+MinGW	:Minimalist GNU for Windows
+ADS	:ARM Developer Suite; Approved Destination Status; 
+	:Adaptive Damping System
+ATA	:Advanced Technology Attachment; Actual Time of Arrical
+TFTP	:Trivial File Transfer Protocol
+DHCP	:Dynamic Host Configuration Protocol
+DNS	:Domain Name Server
+NMEA	:National Marine Electronics Association
+CLR	:Common Language Runtime
+ASLR	:Address Space Layout Randomization
+WPF	:Window Presentation Foundation
+WCF	:Windows Communication Foundation
+ADO	:Active Data Object
+REST	:Representational State Transfer
+JDK	:Java Development Kit
+JRE	:Java Runtime Environment
+ADT	:Android Development Tools plug-in
+SDK	:Software Development Kit
+DDMS	:Dalvik Debug Monitor Service
+JVM	:Java   Virtual Machine
+DVM	:Dalvik Virtual Machine
+EAP	:Employee Assistant Plan
+ASP	:Active Server Page; Application Service Provider; Audio Signal Processing
+STB	:Set-Top-Box
+NB	:NetBook;Narrow Band; Nightly Build
+NEC	:Nippon Electric Company
+CLM	:Component Library Management
+PLM	:Product Lifecycle Management
+SRS	:Software Release System
+	:System Restore Service
+IPR	:Intellectual Property Right
+CPL	:Current Privilege Level; Counts Per Lux
+DPL	:Descriptor Privilege Level
+RPL	:Requestor Priviledge Level
+APK	:Application Program Kit
+Dex	:Dalvik VM executes
+OHA	:Open Handset Alliance 
+PIM	:Personal Information Management
+IM	:Instant Message
+GUI	:Graphic User Interface
+BT	:Block Terminal; British Telecom
+NXP	:Non-Exchange Package
+aapt	:Android asset packaging tool
+AVDs	:Android Virtual Devices
+DDMS	:Dalvik Debug Monitor Service
+MID	:Mobile Internet Device
+DMT	:Discrete Multi-Tone modulation
+Ashmem	:Android Shared Memory
+	:Anonymous Shared Memory Subsystem 
+CSS	:Cascading Style Sheets
+DOM	:Document Object Model
+AJAX	:Asynchronous JavaScript and XML
+EOS	:Embedded Operating System; End Of Stream
+MXAR	:Rx Audio Matrix
+MXAT	:Tx Audio Matrix
+LCAAC	:Low Complexity AAC
+HEAAC	:High Efficiency AAC
+MIT	:Massachusettes Institute of Technology	(Theory)
+CMU	:Carnegie Mellon University (Practice)
+	:Cell site Modem Unit (RF test equipment)
+EECS	:Electrical Engineering and Computer Service
+OCW	:Open CourseWare; Operation Command Word
+GIR	:General Institute Requirements
+GCS	:Gate Control and Sequencing Computer
+CM	:Call Manager;Center of Mass; 
+	:Configuration Management; Connection Management;Case Manager
+CRM	:Change and Release Management
+FMEA	:Failure Mode Effective Analysis
+PhD	:Doctor of Philosophy
+ScD	:Doctor of Science
+SM	:Engineer and Master of Science
+MEng	:Master of Engineering
+MArch	:Master of Architecture
+MCP	:MultiChip Package; Master in City Planning
+MBA	:Master of Business Administration
+MFG	:Manufacturing; Message Flow Graph; Master Frequency Generator
+GPA	:Grade Point Average; General Purpose Amplifier
+GRE	:Graduate Record Examination; Generic Routing Encapsulation
+PSTS	:Problem Solving Tracking System
+ITARM	:IT Application Requirement Management
+OAM	:Office Automation Management
+SMC	:Short Message Center
+SWAS	:SoftWare Audit System
+GCSS	:Global Computer Security System
+EKM	:E-Knowledge Management
+CSRM	:Custom Service Repair Management
+ES	:Engineering Specification; Engineering Samples;
+GDMS	:Global Document Management Platform
+FWR	:Financial Weekly Report
+IRS	:Incident Report System
+PDSP	:Patent Database Service Platform
+NPM	:Non-Product Material; Network Path Manager; Network Print Management 
+NPMP	:Non-Product Material Platform
+CEMS	:Central Equipment Management System
+MISW	:Mobile Information Service Web
+eGIM	:e-Global Item Master
+PDM	:Pulse Density Modulation; Product Data Management; 
+TDM	:Time-Division Multiplexing
+FDM	:Frequency-Division Multiplexing
+	 Position Determination Module; Pulse Duration Modulation;
+	 Personal Data Module
+SRM	:Supplier Relationship Management
+NCIR	:Non-Confirm Item Report
+BIRDS	:Basic Instruments Resource Data System
+VDI	:Vendor Electronic Data Interchange
+SQM	:Supplier Quality Management
+GECM	:Glocal Engineering Change Management
+RVS	:Return Vendor System
+GLS	:Global Logistic System
+FMS	:Freight Management System
+NSA	:National Security Agency
+SELinux	:Security-Enhanced Linux
+SCC	:Secure Computing Corporation
+DAC	:Discretionary Access Control; Double-Address Cycle
+	:Digital-to-analog converter
+MAC	:Mandatory Access Control; Medium Access Control
+RBAC	:Role Base Access Control
+PA	:Product Assurance
+FA	:Final Assembly
+ST	:System Testing; Slow Talk; Single Thread
+FNS	:Far-end Noise Suppression
+ADB	:Android Debug Bridge
+ADBD	:ADB Daemon
+APK	:Android Package
+LSM	:Linux Security Module
+FTT	:First Time Through
+TRON	:Real-Time OS Nucleus
+FPU	:Floating Point Unit
+VFE	:Variable Field Element; Variable Field Executor
+SD	:Staircase Scheduler
+RSDL	:Rotating Staircase Deadline Scheduler
+CFS	:Completely Fair Scheduler
+IPC	:Inter-Process Communication
+COW	:Copy on Write
+BG	:Business Group; BackGround
+scull	:Simple Character Utility for Loading Localities
+MP	:Market Price; Multipoint Processor; 
+	:Marketing Project; Material Preparation
+EVT	:Engineering Verification Testing!
+DVT	:Design Verification Testing! ; Digital Virtual Tester; Device Vector Table
+PVT	:Production  Verification Testing!
+	:Prive Volume Trend; Pressure Volume Temperature;
+	:Process/Voltage/Temperature
+MD	:Mechanical Development; Mechanical Design
+MRS	:Multipurpose Research System
+PCI	:Program controlled interruption; 
+	:Peripheral component interconnect 
+PCMCIA	:Personal Computer Memory Card International Association
+ISA	:Industry Standard Architecture
+	:Instruction Set Architecture
+	:Internet Security Acceleration
+	:Interactive Services Architecture
+	:International Standards Association
+	:Instrument Society of America
+	:International Student Association
+CSN	:Card Select Number
+CLA	:Contribution license agreements
+TDF	:The Document Foundation
+OO.o	:OpenOffice.org
+UDS	:Ubuntu Developer Summit
+SCSI	:Small Comupter Systems Interface
+FHS	:Filesystem Hierarchy Standard
+KDE	:K Desktop Environment; Keyboard Data Entry
+FTPD	:File Transfer Protocol Deamon
+GCD	:Greatest Common Divisor
+EIS	:Electronic Image Stabilization
+EISA	:Extended ISA
+VLB	:VESA Local Bus
+LANANA	:Linux Assigned Names And Numbers Authority
+IBM	:International Business Machines
+NGPT	:Next Generation POSIX Treading (IBM)
+FUTEX	:Fast Userspace muTEX
+IDE	:Integrated Development Environment; Integrated Device Electronics
+SQL	:Structured Query Language
+ESD	:Electronic static discharge; Electronic software distribution
+SPC	:Signal path compensation; Service Programming Code
+CSDN	:Chinese Software Deleloper Net
+RMS	:Root Mean Square (valid value of IC peaks); 
+	:Random Music Sensor; Richard M. Stallman
+TTL	:Transistor-Transistor Logic; Time To Leave
+SHORT	:Simple Hardware Operations and Raw Tests
+STUPID	:Simple Tool for Unloading and Printing ISA Data.
+TOS	:Type of Service
+SCK	:Serial Clock
+MSB	:Most Significant Bit
+LSB	:Least Significant Bit
+ACK	:Acknowlodge flag
+AMP	:Ampere; Amplifier; Asymmetric multi processing
+SMP	:Symmetric MultiProcessor
+AMPS	:Advanced/Analog Mobile Phone System
+GIC	:Generic Interrupt Controller
+SGI	:Software Generated Interrupts
+PPI	:Private Peripheral Interrupts
+STI	:Software Triggered Interrupts
+GIT	:Global Interface Table; General Information Test
+ISO	:International Standard Organization; Isolation
+SAC	:Standardization Administration of China
+HJR	:Hand Jitter Reduction
+AFR	:Auto Frame Rate
+VFE	:Video Front End
+VPE	:Video Pre-processing Engine
+DIS	:Digital Image Stabilization
+AEC	:Auto Exposure Control; 
+	:Acoustic Echo Cancellation; 
+	:Adaptive Echo Canceller 
+	:Audio Echo Canceller
+AWB	:Auto While Balance
+WT	:Wireless Telegraphy
+OA	:Office Automation
+SWI	:Software Interrupt
+RSA	:Rural service area; Rivest-Shamir-Adelmann
+RTOS	:Real-time operating system
+MAO	:Modem always on
+ASCII	:American standard code for Information Interchange
+MISO	:Master input shift data
+OTP	:One Time Programmable; Over Temperature Protection
+FTD	:Field Terminated Diode; Factory Test Deamon
+EFS	:Encrypting file system; Embedded File System
+RPC	:Remote procedure call; Reverse power control
+XDR	:External Data Representation standard protocol
+PIC	:Prioritized interrupt controller; Programmable Interrupt Controllers;
+	:Position-Independent Code
+VIC	:Vectored interrupt controller
+GPL	:General public lincense; General purpose language; 
+	:Graphic programming language; Generalizd programming language
+GNU	:GNU's Not Unix
+GCC	:GNU Compiler Collection
+GAS	:GNU ASsembly
+GPL	:GNU General Public License
+LGPL	:GNU Lesser General Public License
+GFDL	:GNU Free Documentation License
+LGPL	:lesser GPL
+BSD	:Berkly Software Distribution
+BSP	:Board support packet
+B/S	:Browser/Server
+C/S	:Client/Server
+MPL	:Motion Processing Library = ML + MLDL + MLSL
+	:Mozilla public license version
+MPLD	:MPL Daemon
+ML	:Motion Library (Platform Independent)
+MLDL	:Motion Library Driver Layer (Platform Independent)
+MLSL	:Motion Library System Layer (Platform Dependent)
+NOKOS	:Nokia Open Source License
+ASL	:Apache Software Lincese
+ACDB	:Audio Calibration DataBase
+TCM	:Terminal-to-Computer Multiplexer; 
+	:Time-Compression Multiplexing; 
+	:Transmission Control Module; Tightly Coupled Memory
+TCMA	:Tunable Channel Multiple Access
+ITCM	:Instruction Tightly coupled memory 
+MDSP	:modem DSP; Mobile Device Synchronization Protocol
+HAL	:Hardware abstraction layer
+MIC	:Market Intelligence & Consulting Institute
+AISP	:Advisory & Intelligence Service Program
+JEDEC	:Joint Electron Device Engineering Council
+CSR	:call state register; clock select register; cell site receive
+DMA	:Direct Memory Access
+RMA	:Random multiple access; Reliability Maintainability and Availability
+REG	:Register
+IRQ	:Interrupt ReQuest = irq
+FIQ	:Fast Interrupted Request
+IDT	:Interrupt Descriptor Table; Integrated Device Technology, Inc.
+NAND	:not and (electronic logic gate)
+eMMC	:embedded multimedia card (software)
+DPDCH	:dedicated physical channel
+DPD	:data processing device; data processing division; 
+	 differential pulse detection; digital phase difference
+PIN	:Product Identification Number;
+	 Personal Identification Number;
+	 Program Item Number
+NRE	:Non-recurring engineering
+ASIC	:Application-specific integrated circuit
+ASIA	:Automatic Scripting interface for ASICs
+CMM	:Capability Maturit Model for SW
+BREW	:Binary Runtime Environment for Wireless 
+WIPI	:Wireless Internet Platform for Interoperability
+SDD	:Software Design Document
+BTW	:By the way
+OEM	:Original equipment manufacturer
+	:Outstanding Electronics Manufacturing
+SEMI	:Silicon Engineering Management, Inc. 
+OEMB	:
+ODM	:Original designed manufacturer
+SR	:Service Request; Sales Representative
+SMSM	:Shared memory state machine
+SWFI	:Standby and Wait For Interrupt;
+	:Software Wait For Interrupt
+DEM	:Dynamic environment manager; Demodulator
+AXI	:Advanced extensible interface
+EVB	:Embedded Visual Basic
+ALS	:Amyotrophic lateral sclerosis; Ambient Light Sensing
+GPU	:Graphics process unit
+ATI	:Array Technology Industry(TM)
+MM	:mobility management; MovieMail; multimedia
+FPB	:Fast Peripheral Bus;(Filter passband;first polar body)
+MMI	:man-machine interface; man-mobile interface
+SISD	:Single instruction single data
+SIMD	:Single instruction multiple data
+ISM	:Industrial Security Manual; 
+	:Internal Stacked Memory
+WXGA	:Wide extended graphics array
+Vsync	:Vertical synchronization
+SVGA	:Scalable vector graphics array (1024*768)
+QDSP	:Qualcomm digital signal processor
+WMA	:Windows media audio (file type)
+MIDI	:musical instrument digital interface 
+	:(a standard musical note audio format)
+PLL	:Phase-Lock Loop
+IRQ	:Interrupt request
+EDA	:Electronic design automatic
+RCO	:Remote control oscillator
+ADC	:Analog-to-digital converter;
+	:Application Data Center
+APC	:Applications processor core
+AGC	:Automatic Gain Control
+AIG	:Adaptive Input Gain
+ADRC	:Automatic Dynamic Range Control
+ISOD	:Interface Specification and Operational Description
+HATS	:Head and Torso Simulator
+DMS	:Database Management Subsystem
+MSS	:mobile satellite services; maximum segment size; 
+	:Mobile Servicing System
+AMEC	:Advanced micro-fabrication equipment
+AT	:Audio and Touchscreen (features integrated within QTR device)
+	:AudioTrack
+A/V	:Audio/Visual
+ARGB	:Alpha RGB
+FE PCM	:Front End PCM
+BER	:Bit error rate
+BLE	:Bluetooth low energy
+BLT	:Board level test; Base station load tester
+bps	:Bits per second
+BR	:Basic rate
+BT	:Bluetooth
+CSP	:Chip-scale package
+CC	:Closed captioning
+CDMA	:Code Division Multiple Access
+SDM	:Space-Division Multiplexing
+FDM	:Frequency-Division Multiplexing
+CDM	:Code-Division Multiplexing; Continuous Delta Modulation
+FHSS	:Frequency-Hopping Spread Spectrum
+DSSS	:Direct-Sequence Spread Spectrum
+MIMO	:Multiple-Input Multiple-Output communications
+CGMS	:Copy generation management system
+CRC	:Cyclick redundancy code
+CSI	:Camera Serial Interface
+CES	:Consumer Electronics Show
+CS 	:circuit-switched; composite signal; column stripes; 
+CS	:critical section; component services; Commercial Samples; Code Segmentation
+CS	:Circuit Switch; Computer Science (MIT+CMU Stanford UC.Berkeley)
+CS	:Commercial Software;Component Service
+MWC	:Mobile world congress
+MN	:Mobile node; Mobile network
+CVBS	:Composite video baseband signal
+DDR	:Double data rate
+DRAM	:Dynamic RAM
+SRAM	:Static RAM
+SDRAM	:Synchronous dynamic random access memory
+DRM	:Digital rights management
+TTA	:The True Audio
+DSI	:Display Serial Interface
+IBUF	:Input Buffer
+DSP	:Digital signal processor
+EBI	:External Bus Interface
+EBI1 	:enhanced bus interface used for faster devices such as SDRAM
+EBI2 	:enhanced bus interface used for slower devices such as NAND
+ECC	:Error correction coding
+EDGE	:Enhanced Data rates for GSM Evolution
+EDR	:Enhanced data rate
+EMI	:Electro Magnetic interference
+ETM	:Embedded Trace Macrocell
+EV-DO	:Evolution data optimized
+FDD	:Frequency Division Duplexing
+FFA	:Form Factor Accurate; Form-fit-accurate evaluation platform
+GLONASS	:Global orbiting navigation satellite system
+GNSS	:Global Navigation Satellite System
+A-GNSS	:Assisted Global Navigation Satellite System
+CATV	:Community Antenna TeleVision
+ISDN	:Integrated Services Digital Network
+GPIO	:General-purpose input/output
+GPRS	:General packet radio services
+GPS	:Global Positioning System
+	:Gate Pass System
+GRFC	:Generic RF controller
+GSM	:Global System for Mobile communications
+HDMI	:High-Definition Multimedia Interface
+HSDPA	:High-speed downlink packet access
+HSPA+	:High-speed packet access
+HSUPA	:High-speed uplink packet access
+HTS	:H.222.0 Transport Stream; Hight Temperature Storage Life
+HVS	:High-voltage switch
+IIC	:Interintegrated circuit
+IIS	:Inter-IC sound; Internet Information Server
+IMEM	:Internal memory
+IMR	:Interrupt mask register
+IrDA	:Infrared Data Association
+ISR	:Interrupt status register; Interrupt Service Routine
+SCDMA	:Synchronous CDMA
+TD-SCDMA:Time division-SCDMA
+LTE	:3G Long Term Evolution
+SV-LTE	:Simultaneous Voice LTE data
+TD-LTE	:TD-SCDMA LTE (OFDM)
+OFDM	:Orthogonal Frequency Division Multiplexing 
+	:(Basement of OFDMA and SC-FDMA)
+DFTS	:Discrete Fourier Transform Spread
+OFDMA	:Orthogonal Frequency Division Multiplexing Access
+SC-FDMA	:Single Carrier Frequency Division Multiple Access
+	:= DFTS-OFDM
+E-UTRA	:Evolved UMTS Terrestrial Radio Access
+E-UTRAN	:Evolved UMTS Terrestrial Radio Access Network
+JPEG	:Joint Photographic Experts Group
+PE	:Project engineer
+ANSI	:American National Standards Institute
+JTAG	:Joint Test Action Group (ANSI/ICEEE Std. 1149.1-1990)
+kbps	:Kilobits per second
+CDC	:codec
+LCD	:Liquid crystal display
+LCDC	:LCD controller
+LPA	:Low-Power Audio
+LP-DDR	:Low-power DDR
+LDO	:Low dropout regulator
+MBP	:Mobile broadcast platform
+MDDI	:Mobile display digital interface
+MDP	:Mobile Display Processor; Multiplexer-DemultiPlexer; 
+	:Mobile Data Peripheral
+MDP4	:Fourth-generation mobile display processor
+MIPI	:Mobile Industry Processor Interface
+MMC	:Multimedia card
+MPM	:MSM power management
+NFC	:Near field communicator
+NSP	:NanoScale Package
+NTSC	:National Television System Committee
+NTS	:Network Terminal Server;
+	:Windows NT Server
+OMA	:Open Mobile Alliance
+PA	:Power amplifier
+PAL	:Phase alternate line; Programmable Array Logic
+PDM	:Pulse-density modulation
+PHY	:Physical layer
+PID	:proportional/integral/derivative; Process ID; Product ID
+VID	:Vendor ID
+PM	:Power management; Performance Management
+BOM	:Bill of Materials
+IT	:Integration Testing; Impedance Track Technology (cairo gauge IC: BQ27520)
+UT	:Unit Testing; User Trial
+CT	:Component Testing
+QA	:Quality Assessment; Quality Assurance
+QTTR	:Qualification Test Readiness Review
+STTR	:Software Readiness Review
+FTTR	:Field Trial Readiness Review
+SQN	:Software Qualification Notice
+NPI	:New Product Investigation
+STC	:System Testing Case
+NPI	:New Product Investigation
+QT	:Qualification Testing
+FT	:Field Trial; Faint
+OST	:On-going Software Test
+PCR	:Process Capability Run
+PRNG	:Pseudo random noise generator
+PTA	:Packet traffic arbitration
+RadioOne:Zero-IF (ZIF) radio architecture
+RDS	:Radio data system
+RBDS	:Radio broadcast data system
+RLP	:Radio link protocol
+ECNS	:Echo Cancellation and Noise Suppression
+PDV	:Packet Delay Variation
+RPM	:Resource and Power Management; RedHat Package Manager; Remote Power Module
+WAC	:Waferless Auto Clean
+MTBC	:Mean Time Between Clean
+RTR	:Radio frequency transceiver
+SBI	:Serial bus interface
+GSBI	:General-purpose Serial Bus Interface
+SD	:static decoder (open test); sigma-delta; 
+	:system determination; secure digital; service domain
+SFS	:Secure file system
+SIM	:Subscriber identity module
+SoC	:System-on-chip; State-of-Charge
+SPI	:Serial peripheral interface; Shared peripheral interrupts
+SVS	:Static Voltage Scaling
+SPSS	:Sensor Peripheral Subsystem
+SMPSS	:Scorpion Multi-Processor Subsystem
+Sps	:Symbols per second (or samples per second)
+TAP	:Test access port
+TDD	:Time-division duplexing; Time Division Distortion (TDD noise)
+TSS	:The Subsystem Simulator; Time-Sharing System; 
+	:Telecommunication Standardization Sector;
+	:Telecommunication Switching System;
+	:Task State Segment
+TSSD	:Task State Segment Descriptor
+IOPB	:I/O Permission Bitmap
+TSC	:Touch Screen Controller; Test Station Controller; 
+	:Training Sequence Code; TimeStamp Counter;
+	:Time Symbol Counter; Television Standard Converter
+TS	:TimeStamp; TouchScreen; TeleService; 
+	:Technical Specification; Test registers for Shipment test
+TSPP	:Transport stream packets processor
+U-APSD	:Unscheduled automatic power-save delivery
+UART	:Universal Asynchronous Receiver and Transmitter
+DUART	:Dual UART
+USARTs	:Universal Synchronous/Asynchronous Reveiver/Transmitter
+UBM	:Universal broadcast modem
+UICC	:Universal integrated circuit card
+UIM	:User identity module
+UMTS	:Universal Mobile Telecommunications System = 3GSM
+UTRAN	:UMTS Terrestrial Radio Access Network
+MAP	:Mobile Application Part
+NSTL	:National Software Testing Labs
+EIMS	:Eudora Internet Mail Server
+USB	:Universal serial bus
+USB-OTG	:Universal serial bus on-the-go
+USIM	:UMTS subscriber identity module
+VESA	:Video Electronics Standards Association
+WCA	:Wireless Connectivity and Analog functions
+WCDMA	:Wideband Code Division Multiple Access
+WCN	:Wireless Connectivity Network
+WLAN	:Wireless local area network
+WMM	:WiFi MultiMedia
+WMM-AC	:WiFi multimedia access categories
+WoW	:Wake on WLAN; Windows on Windows
+XmemC	:External memory controller
+XO	:Crystal oscillator
+PXO	:Platform oscillator
+MXO	:Multimedia oscillator
+CXO	:Core oscillator
+ZIF	:Zero Intermediate Frequency
+MSM	:Mobile Station Modem; Manufacturing Standards Manual
+USB	:universal serial bus
+UART	:Universal Asynchronous Receiver Transmitter
+UARTDM	:UART Data Mover (high-speed UART)
+I2C	:Interintegrated Circuit
+I2S	:Interintegrated Sound
+MI2S	:Multiple I2S
+SD	:secure digital
+GPIO	:General-purpose input/output
+TLMM	:top-level mode multiplexer	
+WLAN	:wireless local area network
+CSI	:camera serial interface
+DSI	:display serial interface
+LPA	:Low-power audio
+PHY	:physical layer
+IF	:Intermediate frequency; Information collector
+QCT	:Qualcomm CDMA Technologies 
+USB-OTG	:universal serial bus/on-the-go
+SSBI	:Single-wire SBI
+SDI	:Systron Donner Inertial
+FOG	:Fiber Optic Gyroscope
+VSG	:Vibrating Structure Gyroscope
+CVG	:Coriolis Vibratory Gyroscope
+DTG	:Dynamically Tuned Gyroscope
+SDIO	:secure digital input/output
+	:secure data input/output
+PCM	:Pulse Coded Modulation; Process Control Monitor
+RF	:Radio Frequency
+RFIC	:radio frequency integrated circuit
+WoWLAN	:Wake-on-WLAN
+MCS	:modulation coding scheme
+STBC	:Space-time block coding
+MPDU	:MAC protocol data unit
+MSDU	:MAC service data unit 
+SPM	:Static Power Manager; Subsystem Power Manager
+HDLC	:high-level data link control
+AHB	:adavanced high-performance bus; AMBA high-speed bus
+AMBA	:advanced microcontroller bus architecture
+FPB	:fast peripheral bus
+BAM	:bus access manager
+XPU	:Embedded memory protection unit
+DDR	:double-data-rate
+FSM	:finite state-machine ( Finite-state automaton )
+EBI	:external bus interface
+SSC	:SMPS step control
+ABC	:adaptive backlight control
+GC	:gamma correction; Garbage Collection
+DTV	:Digital television
+VESA	:Vision electronics standards association
+SDTV	:Standard Definition TV
+DMA_S	:secondary display DMA
+DMA_P	:
+DMA_E	:
+BTA	:bus turnaround
+VGA	:video/graphics array; Variable Gain Amplifier
+SRP	:session request protocol 
+HNP	:host negotiation protocol
+RUIM	:removable user interface module
+	 Re-Usable Identification Module
+SBDT	:Serial Bus Data Line
+	 ==> bidirectional and is used to transfer data into and out of the PM8058IC
+SBST	:Serial Bus Strobe Signal
+	 ==> used to initiate serial data transfers
+SBCK	:Serial Bus Clock ==> synchronizes data transfers
+TXCO	:Temperature Compensated Crystal Oscillator
+SLC	:Single-Level Cell: one bit information per cell
+MLC	:Multi-Level Cell: more than one bit per cell
+TLC	:Triple-Level Cell: more than one bit per cell
+SDA	:Serial Data
+SCL	:Serial Clock;
+SDAH	:The hight speed data
+SCLH	:The hight-speed serial clock
+DMB	:Digital Mobile Broadcast
+S_DMB	:satellite DMB
+T-DMB	:terrestrial Digital Multimedia Broadcast
+DVB	:Digital Video Broadcast
+DVB_H	:DVB - handheld
+DVB_T	:DVB - terrestrial
+FLO	:forward link only
+LFE	:Low Frequency Effects
+ISDB-T	:integrated services digital broadcast - terrestrial
+EHI	:external hardware interface
+TSIF	:Transport Stream Interface
+TTS	:TSIF time stamp
+TCR	:TSIF clock reference
+DM	:data mover
+SCR	:system clock reference
+SROT	:secure root of trust
+QLIC	:Quasi-linear interference cancellation
+SCH	:supplemental channel
+F-QPCH	:forward quick-paging channel
+ACC	:access control core
+WCN	:wireless connectivity network
+MBB	:moisture barrier bag
+USB-UICC:USB-UI user interface; USB-Universal integrated circuit card
+PCB	:printed circuit board; Process Controll Block
+MPP	:multipurpose pin; Message Posting Protocol
+SMPL	:Sudden Momentary Power Loss
+UV	:Ultraviolet
+Li	:Lithium
+HKADC	:HouseKeeping Analog-to-Digital Converter
+MIC	:Manufacturer Identity Code; 
+	:Microprocessor Interface Control; 
+	:Multiple Interface Connection; 
+	:Microphone; Media Interface Connector
+MUX	:Multiplexer
+NCP	:Negative(voltage) Charge Pump
+CTC	:Charge Transfer Capacitors; China Telecom
+OVP	:overvoltage protection
+UVLO	:Under-Voltage Lockout
+PBM	:pulse burst modulation
+PC	:Program Counter = instruction pointer; Percentage Charge
+PDM	:Pulse-density modulation
+PFM	:pulse frequency modulation
+PWM	:pulse width modulation
+TCXO	:temperature-compensated XO
+TCXO	:Temperature-compensated crystal oscillator
+FET	:Field effect transistor
+MOS	:Metal Oxide Semiconductor
+PMOS	:Positive-channel MOS
+NMOS	:Nitride MOS
+CMOS	:Complementary MOS; CMOS = NMOS + PMOS
+NVM	:NonVolatile memory
+LVS	:low-voltage switch
+MVS	:Multimode Voice Services;
+	:Medium-Voltage Switch;
+	:Multiple Virtual Storage
+DSN	:Data Set Names
+ESDS	:Entry-Sequenced DataSets
+KSDS	:Key-Sequenced Datasets
+PDS	:Partitioned Datasets
+GDG	:Generation Data Groups
+HFS	:Hierarchical File System
+NIST	:National Institute of Standards and Technology
+FIPS	:Federal Information Processing Standard
+HVS	:high-voltage switch
+LPG	:light pulse generator; Light Pattern Generator
+HSED	:The headset send/end detection
+OTHC	:one-touch headset control
+PMIC	:power management integrated chip
+NO	:normally open   = DNI 
+NC	:normally closed = 0 oum Resistance
+UPL	:user programmable logic
+MPM	:modem power management
+ERP	:Ear Reference Point; Enterprise Resource Planning; Emergency Response Plan
+MES	:Manufacturing Execution System; Mechanical Engineering Society
+ORD	:Office of Research and Development
+RT	:Real time
+GMT	:Greenwich Mean Time
+MSBit/
+MSByte	:Defines whether the MSB is the most significant bit or most significant byte.
+LSBit/
+LSByte	:Defines whether the LSB is the least significant bit or least significant byte.
+DVCS	:Digital Visual (frequency) Circuit Service; 
+	 Desktop Video Conferencing System;
+	 Distributed Version Control System
+WSC	:Wireless Switching Center
+WSF	:Wide Area Switch Fabric
+GTOD	:Generic Time Of Day
+
+***********LINUX Command Abbreviations**********
+strtab	:string table
+shstrtab:section header string table
+binutils:GNU Binary Utilities
+libbfd	:Binary File Descriptor library
+vtbl	:virtual function table
+eip	:program counter register (special-purpose register)
+eax	:variable arithmetic and read/write memory register (general-purpose register) 
+cust	:customer
+a.out	:Assembler OUTput Format
+BSS	:Block Started by Symbol
+uid/gid	:user and group read identifiers
+euid/
+egid	:user and group effective identifiers
+fsuid/
+fsgid	:user and group effective identifiers for file access
+groups	:supplementary group identifiers
+suid/
+sgid	:user and group saved identifiers
+ksh	:Kornshell 
+bash	:GNU Bourne-Again SHell
+	:a Unix command shell written for the GNU project
+ldd	:list dynamic dependencies
+plt	:procedure linkage table
+got	:Global Offset Table
+nrt	:non-reentrant
+eabi	:Embedded Applications Binary Interface
+vdso	:virtaul dynamic shared object
+pni	:prescott new instructions
+adfs	:Acorn Advanced Disk Filing System
+afs	:Andrew File System
+affs	:Amiga Fast File System
+dad	:DMA Acquisition Device
+cxt	:context
+hc	:hardware controller
+cmwq	:Concurrency Managed Workqueue
+S	:Start (I2C)
+Sr	:repeated Start (I2C)
+w/o	:without
+pf	:Pass/Fail
+mtrr	:Memory Type Range Registers
+MTRR	:Memory Type Range Registers
+mv	:magnetic vector
+aot	:acceleration, orientation, temperature...
+senpwr	:sensor power
+stg	:storage temperature range
+iocb	:I/O control block
+pcdv	:precise codeville
+rv	:rotation vector = accelerometer + magnetometer
+pc	:Program Counter; Permission Controller
+vidc	:video core 
+wq	:workqueue
+dwork	:delayable work
+cv	:condition variables
+cblk	:control block
+cbf	:callback function
+bs	:binder_state
+bwr	:binder_write_read
+sm	:Service Manager
+fw	:firmware
+mss	:max segmentation size
+vma	:virtual memory area
+simple	:Simple Implementation Mapping Pages with Little Enthusiasm
+hrtimers:High-resolution kernel timers
+res	:resolution
+hpet	:High Precision Event Timer Driver 
+ff	:force feedback; flip-flop
+ipd	:input device
+bar	:base address register
+pcpu	:cpu utilization percentage
+pmem	:memory utilization percentage
+rmb	:read memory barrier
+wmb	:write memory barrier
+mb	:memory barrier
+RSP	:Response
+lrgain	:left and right gain
+jit	:just in time
+jiq	:just in queue
+sdk	:street dance kemp
+rmt
+dfi	:data flash information
+bsg	:block layer SCSI generic
+cd	:change directory
+fd	:file descriptor
+fa	:file async
+ls	:list
+nr
+su	:switch user
+rpm	:redhat package manager
+cpp	:c preprocessing
+pwd	:print work directory
+ps	:process status (ps -auxf)
+df	:disk free
+cat	:concatenate
+insmod	:insert module
+ln -s	:link -soft
+InitRD	:Initial Ram Disk
+ac	:audio client
+cwd	:current working directory
+ext	:an elaborate extension of minix fs
+ext2	:the 2nd extended fs
+ext3	:A journaling version of ext2
+msdos	:microsoft dos fs
+umsdos	:an extended DOS fs
+proc	:a pseudo fs
+hpfs	:High Performance filesystem in OS/2
+sysv	:SystemV/Coherent fs
+nfs	:network fs
+LE	:Little Endian
+BE	:Big Endian
+ioctl commands list below
+FIOCLEX	:set close-on-exec flag.(File IOctl CLose on EXec).
+FIONCLEX:clear close-on-exec flag. (File IOctl Not CLose on EXec).
+FIOASYNC:(re)set async notification
+FIOQSIZE
+FIONBIO	:File IOctl Non-Blocking I/O 
+
+**************************
+Qualcomm Chipset:
+MBP2700	:Mobile Broadcast
+APQ8x60 :Application Processor Qualcomm
+QTR8615
+WCN2243
+WCN1314
+QSD8672 QSD8250
+FFA8260 FFA8660
+MSM8125	:supports GSM/EDGE/GPRS/GPS
+MSM8225	:supports WCDMA-R99/HSDPA/HSUPA/GSM-R99/GPRS/EDGE/GPS
+MSM8625	:MSM8225 + CDMA-1x/1xEV-DOrA
+MPQ	:Media Processor Qualcomm
+MSM = APQ + MDM
+
+************REGISTERS***************
+RSTN	:Reset Pin
+WIA	:Who I Am
+ASTC	:AKM Self Test Control
+AD	:Address
+DERR	:Data Error
+HOFL	:Magnetic sensor OverFlow
+CNTL	:Control
+TST	:Test pin
+CSB	:Chip Select pin
+RSV	:Reserved pin
+SK	:Serial Clock
+SI	:Serial data Input pin
+SO	:Serial data Output pin
+AC	:Analog Circuit
+Tcs	:CSB setup time
+Ts	:Time of data setup
+Th	:Time of data hold
+Twh	:SK high time
+Twl	:SK low time
+Tsd	:SK setup time
+Tdd	:SK to SO delay time
+Tcd	:CSB to SO delay time
+Tr	:Time of SK rise
+Tf	:Time of SK fall
+Tch	:CSB high time
+RE	:Read Enable
+WE	:Write Enable
+DCDEE	:Decode Error Enable
+MPUEIE	:MPU Interrupt Enable
+MPUERE	:MPU Error Report Enable
+MP	:MultiProcessing
+MPUE	:MPU Enable
+VMID
+SS	:Stack Segmentation
+DS	:Data Segmentation
+PSR	:Processor Status Register
+PR	:Program Register
+NC	:Non Connection
+N	:Negative
+P	:Positive
+PWR	:Power
+REC	:Receive
+VUSB	:USB Voltage 
+VOLT	:Voltage
+VCC	:Reference Control Voltage 
+VDD	:Voltage of source ==> primary Power
+VSS	:Ground
+VAPC	:Voltage of Automatic Power Control
+VBAT	:Voltage of Battery
+VCO	:Voltage of Compress Oscillator; Voltage-controlled oscillator
+VREG	:Voltage Regulators
+VCHG	:Charger Voltage
+VBATT	:Battery Voltage
+
+***********component Number and representation************
+CPU U101:Chips
+J1201	:(keyboard) Interface 
+Q1206	:Audions 
+D1102	:Diodes
+X901	:Oscillators
+R32	:Resistor
+VR211	:Voltage Resistances
+C101	:Capacitors
+L1104	:Inductances
+S1201	:Side Key
+B201	:Batteries
+SH1	:Shields
+M201	:Vibrators
+TP	:Test Point
+RE	:Rising Edge
+FE	:Falling Edge
+AI	:Analog Input
+AO	:Analog Output
+DI	:Digital Input  (CMOS)
+DO	:Digital Output (CMOS)
+PI	:Power Input
+PO	:Power Output
+Z	:High-Impedance (high-Z) output
+UL	:Up-Link
+DL	:Down-Link

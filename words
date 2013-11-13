@@ -1,4 +1,89 @@
 
+LFE	:Low Frequency Enhancement channel (15Hz ~ 120 Hz)
+IEC	:International Electrotechnical Commission
+TVB	:Television Broadcasts Limited
+SBS	:Seoul Broadcasting System
+MBC	:Munhwa Broadcasting Corporation
+CATV	:Cable TV Distribution
+CDAD	:Cable Digital Audio Distribution
+DAB	:Digital Audio Broadcast
+DVD	:Digital Versatile Disc
+ENG	:Electronic News Gathering (including Satellite News Gathering)
+HDTV	:High Definition Television
+IPC	:Interpersonal Communications (video conference, videophone, etc.)
+ISM	:Interactive Storage Media (optical disks, etc.)
+NDB	:Network Database Services (via ATM, etc.)
+DSM	:Digital Storage Media (digital VTR, etc.)
+EC	:Electronic Cinema
+HTT	:Home Television Theatre
+ISDN	:Integrated Services Digital Network
+STB	:Set-top-box
+SEC	:Satellite Equipment Control
+OBS	:Open Build Service
+CCB	:Change Control Board
+ES	:Elementary Stream
+FDT	:Flattened Device Tree
+PES	:Packetized Elementary Stream
+DPB	:Decoded Picture Buffer
+VIB	:Video Input Buffer
+SRC	:Sample Rate Converter
+SMB	:Server Messages Block
+STD	:System Target Decoder
+SCR	:System Clock Reference
+STC	:System Time Clock
+ADC	:compensation filter, FIR filter, Sinc filter,
+	PGA and sigma-delta modulator.
+DAC	:compensation filter, FIR filter, Sinc filter,
+	digital sigma-delta modulator, multi-bit DAC
+SDP	:Standard Definition Processor
+VDP	:Vertical Blanking Interval Data Processor
+AVD	:Analog Video Decoder
+CA	:Conditional Access
+CP	:Copy Protection
+DTS	:Digital Theater Systems; Decode Time Stamp; Device Tree Source
+LVDS	:Low-Voltage Differential Signaling
+DVR	:Digital Video Recorder
+PVR	:Personal Video Recorder
+VBI	:Vertical Blanking Interval
+WSM	:World Shared Memory
+TSD	:Transport Stream De-multiplexer
+SPDIF	:Sony/Philips Digital Interface, only used for transfering PCM data. 
+SCMS	:Serial Copy Management System
+UUID	:Universally Unique IDentifier
+TZ	:Trust Zone
+SDAL	:Samsung Device Abstraction Layer
+MDAL	:Multimedia Device Abstraction Layer
+TDI	:TV Device Interface
+PTS	:Presentation Time Stamp
+ATS	:Arriving Time Stamp
+SPTS	:Single Program Transport Stream
+MPO	:Multiple Picture Objects
+TVP	:Transfer Verification Process
+RLC	:Research Life Cycle
+PLC	:Product Life Cycle
+PSI	:Program Specific Information
+STC	:Standard Transmission Code
+STC	:System Time Clock
+PSIP	:Program and System Information Protocol
+MPTS	:Multi Program Transport Stream
+SPTS	:Single Program Transport Stream
+PAT	:Program Association Table
+PMT	:Program Map Table
+PCR	:Program Clock Reference
+To enable a decoder to present synchronized content, such as audio tracks matching the associated video,
+at least once each 100 ms a Program Clock Reference, or PCR is transmitted in the adaptation field of
+an MPEG-2 transport stream packet. The PID with the PCR for an MPEG-2 program is identified by the pcr_pid
+value in the associated Program Map Table. The value of the PCR, when properly used, is employed to
+generate a system_timing_clock in the decoder. The STC or System Time Clock decoder, when properly
+implemented, provides a highly accurate time base that is used to synchronize audio and video elementary
+streams. 
+Timing in MPEG2 references this clock. For example, the presentation time stamp (PTS) is intended to
+be relative to the PCR. The first 33 bits are based on a 90 kHz clock. The last 9 are based on a 27 MHz
+clock. The maximum jitter permitted for the PCR is +/- 500 ns.
+Decoding of N-elementary streams is synchronized by adjusting the decoding of streams to a common master
+time base rather than by adjusting the decoding of one stream to match that of another. The master time
+base may be one of the N-decoders¿ clocks, the data source¿s clock, or it may be some external clock.
+
 LDTD	:Local Descriptor Table Descriptor
 SVF	:Serial Vector Format
 GREP	:Global Search Regular Expression and Printout the lines
@@ -319,11 +404,11 @@ VBTBL	:Virtual Base Table
 VFTBL	:Virtual Function Table
 ICS	:Ice Cream Sandwich  	==> Android 4.0
 Android	:Cupcake 		==> Android 1.5
-	 Donut			==> Android 1.6
-	 Eclair			==> Android 2.0
-	 Froyo			==> Android 2.2
-	 Gingerbread		==> Android 2.3
-	 Honeycomb		==> Android 3.x
+	:Donut			==> Android 1.6
+	:Eclair			==> Android 2.0
+	:Froyo			==> Android 2.2
+	:Gingerbread		==> Android 2.3
+	:Honeycomb		==> Android 3.x
 GB	:GingerBread
 HC	:HoneyComb; Head Count; Health Care
 CNY	:Chinese New Year
@@ -461,7 +546,7 @@ SIE	:Serial Interface Engine
 BDU	:Bitstream Data Unit
 PPS	:Picture Parameter Set
 TDMS	:Technical Document Management System
-	 Technical Data Management Streaming
+	:Technical Data Management Streaming
 SKB	:Socket Buffer
 DW	:Data Warehouse
 BI	:Business Intelligence
@@ -482,10 +567,10 @@ POSIX	:Portable Operating System Interface of Unix
 CTA	:Condenser-Transmitter Amplifier; China Testing Alliance
 CCC	:Canadian Computing Competition; China Compulsory Certification
 CSD	:Circuit Switch Data; Character Show Destination
-	 Control System Designed
+	:Control System Designed
 RTSP	:Real-Time Streaming Protocol
 RBSP	:Raw Byte Sequence Packet/Payload
-	 Remote Batch Station Processor
+	:Remote Batch Station Processor
 PSNR	:Peak Signal to Noise Ratio
 RC	:Rate Control
 SMBus	:System Management Bus => a subset of i2c protocol
@@ -493,8 +578,8 @@ FPS	:Frames Per Second
 FMR	:Frequency Modulated Receiver; Facility Management Reporting
 PMEM	:Processor MEMory; Put Memory
 SMI	:Structure of Management Information; 
-	 Storage Media Interoperability;
-	 Stacked Memory Interface
+	:Storage Media Interoperability;
+	:Stacked Memory Interface
 SMF	:System Management Function
 SGMP	:Simple Gateway Monitoring Protocol
 DVB	:Digital Video Broadcasting
@@ -507,8 +592,8 @@ UML	:User-Mode Linux
 LDP	:Linux Documentation Project
 LTT	:Linux Trace Toolkit
 IOT	:InterOperability Test
-	 Integrated Office Terminal; Input/Output Tools; 
-	 Individual Operation Test; International Optical Telecommunications.
+	:Integrated Office Terminal; Input/Output Tools; 
+	:Individual Operation Test; International Optical Telecommunications.
 RTE	:RunTime Environment
 AEE	:Application ExEcutive
 SAK	:Secure Attention Key

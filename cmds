@@ -1,0 +1,1868 @@
+# List the most used cmds in this file:
+grep "hello" * <=> grep -nr hellp .
+/sys/devices/virtual/misc/lsensor_taos/ctrl => The node to control L/P-sensor
+/* imported from o-2qpg commands.txt */
+Logmaster usage: 
+Android system log
+	$adb logcat
+Linux system log
+	$adb shell dumpstate
+	etc
+AMSS system log
+	$ adb shell logd2ext
+	
+
+Android original release build kernel steps:
+cd android
+export PATH=/usr/java/jdk1.6.0_23:$PATH
+source ./build/envsetup.sh
+choosecombo
+make bootimage
+
+DB value of audio devices:
+1.handset_tx(amic primary mono) | AMIC_PRI_MONO_OSR_256 | imic_a1_device
+2.headset_mono_tx | HEADSET_AMIC2_TX_MONO_PRI_OSR_256 | msm_headset_mic_device
+0x86 0x87 : 0x00 = 0db
+
+1.handset_rx (receiver) | EAR_PRI_MONO_8000_OSR_256 | msm_iearpiece_ffa_device
+0x84 : 0x00 = 0db
+2.speaker_stereo_rx | SPEAKER_MONO_PRI_STEREO_48000_OSR_256 | ispkr_stereo_device
+0xe0 0xe1 : 0x10 = -4.5db
+3.headset_stereo_rx | HEADSET_AB_CPLS_48000_OSR_256 | msm_headset_stereo_device
+0xe2 0xe3 : 0x1c = -9.0db
+3.headset_stereo_rx | HEADSET_AB_CPLS_48000_OSR_256_SING | msm_headset_stereo_device
+0xe2 0xe3 : 0x04 = 0db
+4.headset_stereo_speaker_stereo_rx | SPEAKER_MONO_HPH_AB_CPL_PRI_STEREO_48000_OSR_256 | ihs_stereo_speaker_stereo_rx_device | 
+0xe0 0xe1 : 0x10 = -4.5db
+0xe2 0xe3 : 0x04 = 0db
+
+---------------------------------------
+1.QCT 30112..release.
+  \\10.85.21.71\jtag\home\qisda\ics30112
+2.........codebase...
+  .android.
+  repo init -u git://10.85.21.71/ics/platform/manifest.git -b QIcs
+  .OEM.
+  git clone git://10.85.21.71/ics/oem.git -b QIcs
+  
+  The method of fetching code of cairo project: 
+  repo init -u git://10.82.164.21/Data/msm8260/platform/manifest.git -b Qplatform_ICS 
+  repo sync
+  repo start QIcs --all
+  git clone git://10.82.164.21/Data/msm8260/oem.git -b Qplatform_ICS
+  git clone git://10.82.164.21/Data/msm8260/amss.git -b Qplatform_ICS
+  
+  
+  
+#git clone git://10.85.21.71/ics/kernel/msm.git -b QIcs
+==> grep the kernel code.
+git log --author=Frankie --no-merges --stat
+
+  ..git server......build PC..
+3.build...GB....amss.image...GB..
+4.ICS.kernel........3.0.8
+---------------------------------------
+
+shutdown -s -t 3600	==> shutdown this computer in one hour
+shutdown -a		==> cancle the shutdown operation
+Set mobile phone to ftd mode: 
+adb shell reboot ftd
+fastboot oem set-boot-mode 0
+fastboot reboot
+The ways to suspend an Android phone:
+echo mem > /sys/power/state
+timeout
+press end/power key:
+branches:
+MSM8260_GB
+SWEP_GORAB1A_v01.017.a_00 
+remotes/origin/SWEP_GORAB1A_v01.025.g_00
+
+
+---------------------------------------
+check in procedure:
+ssh-keygen -t rsa
+ssh p 29418 Larkin.Huang@10.82.164.21
+git config --global user.name "Larkin.Huang"
+git config --global user.email "Larkin.Huang@Qisda.com"
+git config -l
+mkdir git; cd git
+git clone git://10.82.164.21/Data/msm8260/kernel/msm -b MSM8260_GB
+
+Audio Low Temp git of code base:
+git clone git://10.85.21.71/audio_core.git
+git clone git://10.85.21.71/audio_msm8660_surf.git
+git clone git://10.85.21.71/audio_kernel.git
+git push
+
+
+
+git clone git://10.82.164.21/Data/msm8260/platform/vendor/qcom/proprietary -b MSM8260_GB
+==> android/vendor/qcom/proprietary/mm-audio/audcal/boss/audio_cal_orange_dvt.acdb
+
+git clone git://10.82.164.21/Data/msm8260/kernel/msm -b SWEP_GORAB1A_v01.017.a_00
+git clone ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git -b MSM8260_GB
+cd msm; git status
+git add .	//check in all the files
+git add kernel/drvier/power/kconfig  //check in a special file
+git commit -m "EVT1 max8903b charge IC driver" //submit comments
+
+git push notes : 1.GIT_PATH 2.BRANCH
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/MSM8260_GB  
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/SWEP_GORAB1A_v01.017.a_00 
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/bionic.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/system/core.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/build.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/platform/build.git HEAD:refs/for/MSM8660_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/packages/apps/oem_apps/EngineeringMode.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/vendor/qcom/proprietary.git HEAD:refs/for/MSM8260_GB  
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/vendor/qcom/proprietary.git HEAD:refs/for/MSM8260_ICS  
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/vendor/qcom/proprietary.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/device/boss/cairo.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/device/boss/orange.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/device/boss/cairo.git HEAD:refs/for/MSM8660_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+
+msm8260/platform/vendor/qcom/proprietary
+SWFP_GORAB1A_v51.00 
+remotes/qisda/SWFP_GORAB1A_v51.004.g_00
+Derrick update em_audio_test from app to lib.
+http://10.82.164.21:8080/#change,9226
+/* Larkin.Huang 2011/11/16 change the HPH setting of headset volume level from -9db to 0db for DVT. */
+
+---------------------------------------
+Get code:
+android: 
+** Using repo
+$ mkdir android
+$ cd android
+$ repo init -u git://10.82.164.21/Data/msm8260/platform/manifest.git -b MSM8260_GB
+$ repo sync
+$ repo start MSM8260_GB --all
+
+branches:	
+MSM8260_ICS	MSM8260_GB
+
+** Using git
+git clone git://10.82.164.21/Data/${GitProject} -b MSM8260_GB
+Ex. $ git clone git://10.82.164.21/Data/msm8260/platform/build -b MSM8260_GB
+amss: 
+$ git clone git://10.82.164.21/Data/msm8260/amss -b MSM8260_GB
+oem: 
+$ git clone git://10.82.164.21/Data/msm8260/oem -b MSM8260_GB
+$ git clone git://10.82.164.21/Data/msm8260/device/boss/orange -b MSM8260_ICS
+$ git clone git://10.82.164.21/Data/msm8260/device/boss/cairo -b Qplatform_ICS
+$ git clone git://10.82.164.21/Data/msm8260/platform/system/core -b MSM8260_GB
+
+git clone git://10.82.164.21/Data/cairo/device/boss/cairo -b MSM8660_ICS
+git clone git://10.82.164.21/Data/cairo/platform/vendor/qcom/proprietary -b MSM8660_ICS
+git clone git://10.82.164.21/Data/cairo/kernel/msm -b MSM8660_ICS
+
+
+
+git commit format:
+Record othc insertion/removal state after kernel detection delay.
+
+Big id: S2-05-000725
+Solution: Modify pmic8058-othc.c to 
+
+--------------------------------------
+git status -uno    	//show no untracked files
+git commit --amend 	//change the last commit
+git reset HEAD file	//give stage files to unstage
+git checkout --file	//undo the revised file
+git checkout master
+git merge hotfix	//fast-forward
+
+switch branch with git command
+action 		command
+list		git branch
+list all	git branch -a
+verbose 	git branch -v
+delete		git branch -d <branch>
+force delete	git branch -D <branch>
+rename		git branch -m <branch> <new_branch>
+
+change branch			git checkout <branch>
+get specific version of file 	git checkout <branch> file
+create and move to a new branch	git checkout -b <new_branch>
+create and move to a new branch base on version
+				git checkout -b <new_branch> <version>
+
+list				git remote
+verbose				git remote -v
+remote server information	git remote show [remote-name]
+remove				git remote rm <name>
+rename				git remote rename <oldname> <newname>
+
+--------------------------------------
+cat /proc/bus/input/devices
+ls -l /sys/class/input
+ls -l /sys/fs/ext4
+ls -l /dev/input
+------------------------------------------
+The Android logcat usage summary:
+adb logcat -v brief  => default
+adb logcat -v time
+adb logcat -v thread
+adb logcat -v long
+versions: process, tag, raw, threadtime.
+adb logcat -c 	     => clear buffer
+adb logcat -g
+adb logcat -gb radio
+adb logcat -gb events
+adb logcat -db radio
+adb logcat -db events
+adb logcat -db main  => default
+adb logcat -d >> log.txt	=> non-block
+adb logcat -ds PowerManagerService:d
+adb logcat ActivityManager:I MyApp:D *:S
+adb logcat *:W  => display info with priority >= warning
+adb logcat *:V   => display log with priority  >= verbose (all) 
+export ANDROID_LOG_TAGS="ActivityManager:I MyApp:D *:S"
+------------------------------------------
+build scripts: oem/orange_scripts
+build android target
+$ ./build_android.sh evt1 lexus release
+$ ./build_android.sh evt2c lexus release
+$ ./build_android.sh evt3u lexus release
+
+build kernel
+$ ./1_build_android.sh kernel evt2u lexus release
+$ ./2_mm.sh [TAG] evt3u lexus release
+--------------------------------------------
+
+delta average = testing average value - average value before test
+
+Function definition for AGC1 and AGC2
+AGC1 AGC2 	Function
+0 		0 	AGC Function disabled
+0 		1 	AGC Limiter Function enabled
+1 		0 	AGC, Limiter, and Compression Functions enabled
+1 		1 	AGC, Limiter, Compression, and Noise Gate Functions enabled
+
+AGC1 and AGC2 current setting:
+AGC_DTMF : 01
+AGC_MUSIC: 10
+AGC_CALL : 00
+
+dir: kernel/arch/arm/mach-msm/gpiomux-8x60-orange.c
+Disable AGC1 and AGC2 by configure gpio136 and gpio137:
+echo 136 > /sys/class/gpio/export
+cat /sys/devices/virtual/gpio/gpio136/value
+echo low > /sys/devices/virtual/gpio/gpio136/direction
+
+
+echo 137 > /sys/class/gpio/export
+cat /sys/devices/virtual/gpio/gpio137/value
+echo low > /sys/devices/virtual/gpio/gpio137/direction
+
+AGC current situation:
+AGC1 : Low  AGC2 : High
+Only use AGC limiter function: 
+Set the threshold to prevent spk damage occurs.
+
+Check out disk usage on build pc daemon
+# more ~qisda/disk_stat.log
+------------------------------------------
+
+Debugfs support QTR device register access.
+Verify audio path and gain testing. 
+echo 1 > /sys/kernel/debug/msm_adie_codec/dump
+ Mounting debugfs 
+# mount -t debugfs debugfs /sys/kernel/debug 
+ Power up the adie codec and enable regulator first
+# echo 1 > /sys/kernel/debug/msm_adie_codec/power
+ Writing data: example address 0x8A, sata: 0x0C 
+# echo 0x8A 0x0C > /sys/kernel/debug/msm_adie_codec/poke 
+ Reading data: example address 0x8A 
+# echo 0x8A > /sys/kernel/debug/msm_adie_codec/peek 
+ Shows the read value in the ADB window 
+# cat /sys/kernel/debug/msm_adie_codec/peek 
+.0x0C
+ Dump all the register information to dmesg
+# echo 0x88 > /sys/kernel/debug/msm_adie_codec/dump
+
+------------------------------------------
+set the Tx and Rx device in audio native test command
+#echo "devctl -cmd=dev_switch_tx -dev_id=3" > /data/audio_test 
+#echo "devctl -cmd=enable_dev -dev_id=3"    > /data/audio_test 
+#echo "devctl -cmd=dev_switch_rx -dev_id=2" > /data/audio_test 
+#echo "devctl -cmd=enable_dev -dev_id=2"    > /data/audio_test
+#echo "playpcm path_of_file -id=xxx -repeat=x -dev=/dev/msm_pcm_dec or msm_pcm_out" > tmp/audio_test 
+#echo "playpcm /sdcard/pcm_stereo.wav -id=100 -repeat=0 -dev=/dev/msm_pcm_out" > /data/audio_test
+#echo "control_cmd -id=xxx -cmd=stop" > /data/audio_test
+#echo "devctl -cmd=enable_dev -dev_id=x" > /data/audio_test
+
+video native test commands:
+# adb push 4.mp4 /sdcard/
+Larkin.Huang
+# mm-vdec-omx-test /sdcard/4.mp4 2 2 1 1 1
+
+---------------------------------------------------------------------
+fastboot download procedure:
+adb shell reboot bootloader
+fastboot flash ptn   	 partition.bin 
+fastboot flash sbl1  	 sbl1.mbn 
+fastboot flash sbl2  	 sbl2.mbn 
+fastboot flash sbl3  	 sbl3.mbn 
+fastboot flash rpm   	 rpm.mbn 
+fastboot flash tz    	 tz.mbn 
+fastboot flash aboot 	 emmc_appsboot.mbn 
+fastboot flash boot   	 boot.img
+fastboot flash recovery  recovery.img 
+fastboot flash modem     NON-HLOS.bin 
+fastboot flash system    system.img.ext4
+fastboot flash userdata  userdata.img.ext4
+fastboot flash cache     cache.img.ext4
+fastboot flash persist   persist.img.ext4
+fastboot reboot
+------------------------------------
+fastboot command list
+D:\adb\fastboot\load\cairo>fastboot 0
+usage: fastboot [ <option> ] <command>
+
+commands:
+  update <filename>                        reflash device from update.zip
+  flashall                                 flash boot + recovery + system
+  flash <partition> [ <filename> ]         write a file to a flash partition
+  erase <partition>                        erase a flash partition
+  getvar <variable>                        display a bootloader variable
+  boot <kernel> [ <ramdisk> ]              download and boot kernel
+  flash:raw boot <kernel> [ <ramdisk> ]    create bootimage and flash it
+  devices                                  list all connected devices
+  reboot                                   reboot device normally
+  reboot-bootloader                        reboot device into bootloader
+
+options:
+  -w                                       erase userdata and cache
+  -s <serial number>                       specify device serial number
+  -p <product>                             specify product name
+  -c <cmdline>                             override kernel commandline
+  -i <vendor id>                           specify a custom USB vendor id
+  -b <base_addr>                           specify a custom kernel base address
+
+grep GB code from server:
+./repo_reget_code.sh oem 	*
+./repo_reget_code.sh amss 
+./repo_reget_code.sh android 	*
+./repo_reget_code.sh project   		==>  oem + android + amss
+
+grep ICS code from server:
+ ./ics_get_code.sh project  
+./ics_get_code.sh android
+./ics_get_code.sh oem
+./ics_get_code amss
+-----------------------------------
+compress files with tar
+#tar -jcv -f name.tar.bz2 file   => compress 
+#tar -jtv -f name.tar.bz2 file   => check
+#tar -jxv -f name.tar.bz2 -C dir => decompress
+------------------------------------
+make mrproper 
+
+Debug workqueue:
+If kworkers are going crazy (using too much cpu), there are two types
+of possible problems:
+
+        1. Something beeing scheduled in rapid succession
+        2. A single work item that consumes lots of cpu cycles
+
+The first one can be tracked using tracing:
+
+        $ echo workqueue:workqueue_queue_work > /sys/kernel/debug/tracing/set_event
+        $ cat /sys/kernel/debug/tracing/trace_pipe > out.txt
+        (wait a few secs)
+        ^C
+
+If something is busy looping on work queueing, it would be dominating
+the output and the offender can be determined with the work item
+function.
+
+For the second type of problems it should be possible to just check
+the stack trace of the offending worker thread.
+
+        $ cat /proc/THE_OFFENDING_KWORKER/stack
+
+The work item's function should be trivially visible in the stack trace.
+
+/* record the vital commands from history */
+ 1128  2012-03-08 19:36:15 find . -name +100c
+ 1130  2012-03-08 19:39:48 find . -type f -print
+ 1132  2012-03-08 19:41:49 find . -type f -print | xargs echo "" > ~/core.log
+ 1135  2012-03-08 19:43:34 find . -name Make* | xargs grep obj
+ 1136  2012-03-08 19:43:50 find . -name Make* | xargs grep bma
+ 1025  2012-04-13 14:19:35 ./1_build_android.sh kernel evt2c hermes release
+ 1025  2012-04-13 14:19:35 ./1_build_android.sh kernel evt2c hermes release
+ 1028  2012-04-13 14:26:55 ./build_android.sh evt2c hermes release
+ 1000  2012-04-18 11:16:58 ./1_build_android.sh kernel evt2c hermes release
+ 1018  2012-04-26 18:52:57 repo init -u git://10.82.164.21/Data/msm8260/platform/manifest.git -b Qplatform_ICS
+ 1191  2012-04-27 11:38:52 git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/Qplatform_ICS
+ 1196  2012-04-27 13:26:05 diff ics/0410/android/device/boss/cairo/libsensors/sensord/ cairo/android/device/boss/cairo/libsensors/sensord/
+ 1197  2012-04-27 13:26:17 diff -r ics/0410/android/device/boss/cairo/libsensors/sensord/ cairo/android/device/boss/cairo/libsensors/sensord/
+ 1056  2012-05-02 11:08:33 ./build_android.sh evt2u hermes release
+ 1020  2012-05-07 20:55:19 ar cqs libhello.a hello.o
+ 1022  2012-05-07 20:55:50 gcc -shared -Wl,-soname,libhello.so.1 -o libhello.so.1.0 hello.o
+ 1058  2012-05-09 11:17:23 git clone git://10.82.164.21/Data/msm8260/platform/system/core -b MSM8260_GB
+
+/* Important git commands: */
+
+git reset --hard
+git clean -df
+git commit --amend
+git pull --rebase
+  980  2012-05-16 10:32:36 ./1_build_android.sh kernel evt2u hermes release
+ 1078  2012-05-17 10:13:43 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/platform/build.git HEAD:refs/for/MSM8660_ICS
+ 1087  2012-05-17 10:16:11 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/device/boss/cairo.git HEAD:refs/for/MSM8660_ICS
+
+ 1054  2012-05-30 21:50:50 git log -3
+ 1055  2012-05-30 21:51:53 git branch -v
+ 1058  2012-05-30 21:54:54 git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+ 1059  2012-05-30 21:56:03 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+ 1037  2012-06-28 14:12:18 git reflog show
+ 1042  2012-06-28 14:14:53 git checkout --patch f3043672fcb717338e90096188e270c4c3d1d638
+ 1045  2012-06-28 14:18:26 git checkout f3043672fcb717338e90096188e270c4c3d1d638
+ 1050  2012-06-28 14:20:42 git log -g
+ 1051  2012-06-28 14:20:48 git log -g --oneline
+ 1052  2012-06-28 14:20:53 git reflog
+ 1053  2012-06-28 14:21:08 git log -g --abbrev-commit --pretty=oneline
+ 1054  2012-06-28 14:21:13 git log -g --abbrev-commit
+ 1074  2012-06-28 15:03:21 gcc -c lt.c -o lt.o
+ 1078  2012-06-28 15:04:34 ar cqs liblt.a lt.o
+ 1087  2012-06-28 15:06:46 gcc test.o liblt.a -o test
+ 1088  2012-06-28 15:07:15 gcc test.c liblt.a -o test
+ 1147  2012-07-05 15:43:23 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/SWEP_GCAIB1A_v01.008.b_00
+ 1139  2012-07-05 15:36:22 git help cherry-pick
+ 1140  2012-07-05 15:37:17 git cherry-pick 8334f5989abf36995d21ba1f0e18d1f96b01ee16
+1038  2012-07-06 09:49:32 repo forall -p
+ 1039  2012-07-06 09:49:43 repo forall -p -c git log
+ 1040  2012-07-06 09:50:07 repo forall -p -v -c git show HEAD
+ 1041  2012-07-06 09:50:24 repo help forall
+ 1042  2012-07-06 09:52:23 repo forall -c
+ 1043  2012-07-06 09:52:31 repo forall -c git status
+ 1044  2012-07-06 09:52:49 repo forall -pvc git status
+ 1045  2012-07-06 09:53:53 repo forall -pvc git branch -v
+ 1046  2012-07-06 09:55:44 repo help prune
+ 1049  2012-07-06 10:00:13 git branch -r
+ 1050  2012-07-06 10:00:17 git branch -v
+ 1057  2012-07-06 10:03:06 git stash
+ 1058  2012-07-06 10:03:19 git tag -l
+ 1046  2012-07-08 19:23:53 git checkout -b NEW_BRANCH
+ 1027  2012-07-08 19:41:02 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen (%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+user.name=Larkin.Huang
+user.email=Larkin.Huang@Qisda.com
+color.ui=auto
+alias.lg=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen (%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+alias.lag=log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen (%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+   90  2012-07-02 09:40:03 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/device/boss/cairo.git HEAD:refs/for/MSM8660_ICS
+  329  2012-07-05 11:14:08 history | grep push 
+  330  2012-07-05 11:14:26 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+  396  2012-07-05 15:29:01 history | grep push
+  397  2012-07-05 15:29:21 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+  413  2012-07-05 15:43:23 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/SWEP_GCAIB1A_v01.008.b_00
+  864  2012-08-22 11:24:49 find android -size +1M 
+  865  2012-08-22 11:25:02 find android -size +1G
+  866  2012-08-22 11:25:20 find android -size +1G -exec ls -l {} \;
+  997  2012-08-23 09:44:28 nm /bin/ls | more
+ 1004  2012-08-24 08:43:09 ulimit -s unlimited; ./seg
+ 1123  2012-08-27 17:50:45 ranlib libstk.a
+ 1128  2012-08-27 17:51:44 gcc main.c -L. -lstack -Istack -o main
+ 1131  2012-08-27 17:52:27 gcc -print-search-dirs
+ 1138  2012-08-27 17:57:52 objdump -d main | more
+ 1140  2012-08-27 18:02:13 gcc main.c stack/stack.o stack/push.o stack/pop.o stack/empty.o -Istack -o mn
+ 1156  2012-08-27 20:02:01 gcc -c -fPIC stack.c push.c pop.c empty.c 
+gcc -c -g stack.c push.c pop.c empty.c
+ 1173  2012-08-27 20:16:26 sed -n $,$p /home/larkin/cmd.log 
+ 1174  2012-08-27 20:16:45 sed -n '$,$p' /home/larkin/cmd.log 
+ 1175  2012-08-27 20:16:58 gcc -c -g stack.c push.c pop.c empty.c
+ 1179  2012-08-27 20:18:28 objdump -dS push.o
+ 1024  2012-08-28 08:47:44 objdump -dS push.o | grep 0x0
+ 1025  2012-08-28 08:48:56 grep -n readelf /home/larkin/cmd.log 
+ 1026  2012-08-28 08:49:11 readelf -a push.o 
+ 1028  2012-08-28 08:53:33 gcc -g main.c stack.o pop.o push.o empty.o -Istack -o main
+ 1029  2012-08-28 08:54:07 gcc -g main.c stack/stack.o stack/pop.o stack/push.o stack/empty.o -Istack -o main
+ 1032  2012-08-28 08:54:43 gcc -g main.c stack/stack.o stack/pop.o stack/push.o stack/empty.o -Istack -o main
+ 1048  2012-08-28 16:31:45 gcc -shared -o libstack.so stack.o push.o pop.o empty.o
+ 1052  2012-08-28 16:32:54 gcc -c -g -fPIC stack.c push.c pop.c empty.c 
+ 1053  2012-08-28 16:33:04 gcc -shared -o libstack.so stack.o push.o pop.o empty.o
+ 1065  2012-08-28 16:39:44 gcc main.c -g -L. -lstack -Istack -o main
+ 1068  2012-08-28 16:41:03 gcc main.c -g -Lstack -lstack -Istack -o main
+ 1036  2012-08-28 20:42:48 repo sync
+ 1037  2012-08-28 20:43:28 repo start cairo_jb --all
+ 1040  2012-08-28 20:44:06 git clone git://10.85.21.71/cairo_jb/oem.git -b cairo_jb
+ 1006  2012-08-29 09:47:02 LD_LIBRARY_PATH=. ./main
+ 1007  2012-08-29 09:47:19 ldd main
+ 1008  2012-08-29 09:47:27 file stack/libstack.so 
+ 1009  2012-08-29 09:47:43 LD_LIBRARY_PATH=stack ./main
+ 1038  2012-08-29 10:08:43 gcc main -Lstack -lstack -Istack -o main -Wl,-rpath,/home/larkin/c/stk/so/stack
+ 1039  2012-08-29 10:08:54 gcc main.c -Lstack -lstack -Istack -o main -Wl,-rpath,/home/larkin/c/stk/so/stack
+ 1028  2012-08-30 12:32:56 git log --author=Jack
+ 1029  2012-08-30 12:33:05 git log --author=Reed
+ 1030  2012-08-30 12:33:13 git log --author=Reed.Wang
+ 1032  2012-08-30 12:33:39 repo forall -c git log --author=Reed.Wang
+ 1034  2012-08-30 12:34:27 repo forall -pc git log --author=Reed.Wang
+ 1035  2012-08-30 12:34:36 repo help forall
+ 1036  2012-08-30 12:35:00 repo forall -p -c git log --author=Reed.Wang
+ 1037  2012-08-31 10:28:37 gcc -shared -Wl,-soname,libstack.so.1 -o libstack.so.1.0 stack.o push.o pop.o empty.o
+  658  2012-09-10 11:24:59 readeld -a m > elf.executable
+  659  2012-09-10 11:25:07 readelf -a m > elf.executable
+  660  2012-09-10 11:25:19 readelf -a a.o > elf.relocatable
+  665  2012-09-10 11:27:43 vi elf.executable
+  676  2012-09-10 14:08:37 readelf -a sensors.default.nonconst.so > elf.shared.objects
+
+ 1012  2012-09-18 10:54:44 git remote -v
+ 1013  2012-09-18 10:54:52 git branch -v
+ 1014  2012-09-18 11:08:15 ./1_build_android.sh sensors.default evt2u qplatform release
+ 1015  2012-09-18 11:28:37 ./1_build_android.sh sensord evt2u qplatform release
+ 997  2012-09-21 11:51:13 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo_jb/platform/vendor/qcom/msm8660_surf.git HEAD:refs/for/cairo_jb
+
+ 1059  2012-09-24 09:14:12 ll -d \.*
+ 1060  2012-09-24 09:14:21 cat .gitconfig 
+  882  2012-09-25 09:00:00 gcc -c -g -fPIC a.c
+  885  2012-09-25 09:00:32 objdump -dS a.o | less
+  886  2012-09-25 09:01:06 gcc -c -g -fPIC aa.cpp
+  888  2012-09-25 09:01:16 objdump -dS aa.o | less
+  889  2012-09-25 09:01:50 gcc -shared -o liba.so a.o
+  891  2012-09-25 09:01:54 file liba.so
+  892  2012-09-25 09:02:06 objdump -dS liba.so | less
+  894  2012-09-25 09:03:56 gcc a.c -g -L. -la -o a
+  899  2012-09-25 09:04:41 LD_LIBRARY_PATH=. ./a
+  903  2012-09-25 09:06:04 gcc -shared -o libaa.so aa.o
+  905  2012-09-25 09:06:43 gcc aa.c -g -L. -laa -o aa
+  906  2012-09-25 09:06:51 gcc aa.cpp -g -L. -laa -o aa
+  996  2012-09-25 09:56:31 gcc -rdynamic -o fa fa.c -ldl
+  997  2012-09-25 09:56:38 gcc -rdynamic -o faa faa.c -ldl
+
+ 1022  2012-10-09 09:47:57 gcc -E hello.c -o hello.i
+ 1027  2012-10-09 09:50:42 cpp hello.c > hello.i
+ 1039  2012-10-09 11:28:04 gcc -S hello.i -o hello.s
+ 1041  2012-10-09 11:28:24 cat hello.s | grep section
+ 1042  2012-10-09 11:28:41 gcc -S hello.c -o hello.s
+ 1043  2012-10-09 11:29:13 /usr/lib/gcc/x86_64-linux-gnu/4.4/cc1 hello.c
+ 1079  2012-10-16 19:03:49 objdump -dS liba.so > a.obj
+ 1080  2012-10-16 19:03:59 man objdump 
+ 1086  2012-10-16 19:06:30 hexdump -C a.o
+ 1209  2012-10-18 16:08:17 source ~/.bashrc
+ 1216  2012-10-18 16:10:45 git clone git://10.82.164.21/Data/msm8260/platform/packages/apps/oem_apps/EngineeringMode -b MSM8260_GB
+  997  2012-10-18 15:32:37 source ~/.bashrc 
+ 1004  2012-10-18 16:12:35 git clone git://10.82.164.21/Data/msm8260/platform/packages/apps/oem_apps/EngineeringMode -b MSM8260_ICS
+ 1061  2012-10-22 09:15:06 gcc -static --verbose -fno-builtin hello.c
+ 1062  2012-10-22 09:15:32 gcc -static --verbose -fno-builtin hello.c > cmp.detail.txt
+size SimpleSection.o
+ 1016  2012-10-24 09:56:34 readelf -a thw 
+ 1017  2012-10-24 09:56:39 objdump -h thw
+ 1018  2012-10-24 09:56:56 history | grep 'ld*Tiny' 
+ 1019  2012-10-24 09:57:05 history | grep thw
+ 1020  2012-10-24 09:57:19 grep ld ~/cmd
+ 1021  2012-10-24 09:57:24 history | grep thw
+ 1022  2012-10-24 09:57:28 vi TinyHelloWorld.lds
+ 1023  2012-10-24 09:57:37 ld -static -T TinyHelloWorld.lds -o thw TinyHelloWorld.o
+ 1024  2012-10-24 10:00:37 cat *.lds
+ 1025  2012-10-24 10:00:50 history | tail >> /home/larkin/cmd 
+ 1041  2012-11-05 16:08:58 vi /home/larkin/words 
+ 1042  2012-11-05 16:43:13 ls
+ 1043  2012-11-05 16:43:22 vi p1.c
+ 1044  2012-11-05 16:44:36 vi Lib.c
+ 1045  2012-11-05 16:46:44 gcc -fPIC -shared -o libp.so Lib.c
+ 1046  2012-11-05 16:46:48 ll libp.so 
+ 1047  2012-11-05 16:46:52 file libp.so 
+ 1048  2012-11-05 16:47:24 gcc -o p1 p1.c ./libp.so
+ 1049  2012-11-05 16:47:35 gcc -o p2 p2.c ./libp.so 
+ 1050  2012-11-05 16:47:44 history | tail >> /home/larkin/cmd 
+ 1008  2012-12-07 11:43:09 grep ssh cmd
+ 1009  2012-12-07 11:43:17 grep 'ssh -p' cmd
+ 1010  2012-12-07 11:44:05 ssh -p 29418 Larkin.Huang@10.85.21.181
+ 1011  2012-12-07 11:44:11 echo $?
+ 1012  2012-12-07 11:44:19 cd .ssh
+ 1013  2012-12-07 11:44:23 ls
+ 1014  2012-12-07 11:44:31 cat id_rsa.pub 
+ 1015  2012-12-07 11:45:01 ssh -p 29418 Larkin.Huang@10.85.21.181
+ 1016  2012-12-07 11:45:04 cd ..
+ 1017  2012-12-07 11:45:20 history | tail >> ~/cmd
+   38  2012-11-23 14:59:41 ./1_build_android.sh kernel evb qisda debug
+   44  2012-11-26 14:39:49 ./build_android.sh evb qisda debug
+   38  2012-11-23 14:59:41 ./1_build_android.sh kernel evb qisda debug
+   44  2012-11-26 14:39:49 ./build_android.sh evb qisda debug
+
+ 1080  2012-12-19 13:35:55 make VERBOSE=1 TARGET=android DEVICE=MPU3050 ANDROID_ROOT=/home/larkin/evb/android KERNEL_ROOT=/home/larkin/evb/android/kernel CROSS=/home/larkin/evb/android/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi- PRODUCT=msm7627a MPL_LIB_NAME=mplmpu echo_in_colors=echo -f Android-shared.mk
+ 1081  2012-12-19 15:41:44 cd ../../
+ 1082  2012-12-19 15:41:49 cd ../../kernel/Documentation/
+ 1083  2012-12-19 15:41:50 ls
+ 1084  2012-12-19 15:42:13 vi initrd.txt 
+ 1085  2012-12-19 15:56:36 man grep
+ 1086  2012-12-19 15:57:01 cd ../../
+ 1087  2012-12-19 15:57:29 grep -nr --exclude-dir=out 'Booting Linux' . 
+ 1088  2012-12-19 15:57:42 grep -nr --exclude-dir=out 'Booting Linux' . 2> /dev/null 
+ 1089  2012-12-19 16:12:15 history | tail >> ~/cmd
+  421  2012-12-18 18:26:52 make -f Android-static.mk
+  423  2012-12-18 18:28:05 make -f Android-shared.mk 
+  427  2012-12-18 18:34:39 make VERBOSE=1 TARGET=android DEVICE=MPU3050 ANDROID_ROOT=/media/backup/ubuntutools/cmnew KERNEL_ROOT=/media/data/platform/sensation/pyramid-2.6.35_mr  CROSS=/media/backup/ubuntutools/cmnew/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi- PRODUCT=passion MPL_LIB_NAME=mplmpu echo_in_colors=echo  -f Android-shared.mk
+  484  2012-12-19 09:58:12 mkdir make
+  485  2012-12-19 09:58:16 mv *.txt make
+  487  2012-12-19 09:58:21 mv make ~
+  489  2012-12-19 09:58:24 cd make/
+  494  2012-12-19 09:58:53 diff Readme.txt /home/larkin/make/Readme.txt 
+  496  2012-12-19 09:59:12 mv make make145
+  497  2012-12-19 09:59:18 mkdir make2040
+  506  2012-12-19 09:59:52 diff Readme.txt /home/larkin/make145/Readme.txt 
+  507  2012-12-19 10:00:23 diff COMMANDS.txt /home/larkin/make145/COMMANDS.txt 
+  510  2012-12-19 10:00:34 rm make2040/
+  511  2012-12-19 10:00:42 ls make*
+  512  2012-12-19 10:01:01 rmdir make2040
+  513  2012-12-19 10:01:07 mv make145 make2040
+  514  2012-12-19 10:01:11 ls make2040
+  522  2012-12-19 10:01:48 make VERBOSE=1 TARGET=android DEVICE=MPU3050 ANDROID_ROOT=/media/backup/ubuntutools/cmnew KERNEL_ROOT=/media/data/platform/sensation/pyramid-2.6.35_mr  CROSS=/media/backup/ubuntutools/cmnew/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi- PRODUCT=passion MPL_LIB_NAME=mplmpu echo_in_colors=echo  -f Android-shared.mk
+  523  2012-12-19 13:28:19 man make
+  526  2012-12-19 13:29:53 man make > make.man
+  527  2012-12-19 13:30:00 grep -n VERBOSE make.man 
+  528  2012-12-19 13:35:55 make VERBOSE=1 TARGET=android DEVICE=MPU3050 ANDROID_ROOT=/home/larkin/evb/android KERNEL_ROOT=/home/larkin/evb/android/kernel CROSS=/home/larkin/evb/android/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi- PRODUCT=msm7627a MPL_LIB_NAME=mplmpu echo_in_colors=echo -f Android-shared.mk
+  543  2012-12-19 17:43:58 make
+  654  2012-12-19 13:32:24 man make
+  761  2012-12-20 10:14:28 make -f Android-shared.mk 
+  786  2012-12-20 11:17:04 make -f Android-shared.mk 
+  881  2012-12-20 08:38:40 make menuconfig
+  882  2012-12-20 08:39:47 make help
+  957  2012-12-20 10:35:31 make mrproper
+ 1061  2012-12-21 11:24:32 make -f Android-shared.mk 
+ 1096  2012-12-21 11:43:09 make -f Android-shared.mk
+ 1097  2012-12-21 11:43:14 make
+ 1109  2012-12-21 14:54:52 make VERBOSE=1 TARGET=android CROSS=/home/larkin/evb/android/device/qcom/msm7627a/invensense/libsensors/mlsdk/../../../../../../prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi- ANDROID_ROOT=/home/larkin/evb/android/device/qcom/msm7627a/invensense/libsensors/mlsdk/../../../../../.. KERNEL_ROOT=/home/larkin/evb/android/device/qcom/msm7627a/invensense/libsensors/mlsdk/../../../../../../kernel PRODUCT=msm7627a DEVICE=MPU3050 MPL_LIB_NAME=mplmpu -f Android-static.mk
+ 1133  2012-12-21 15:10:38 history | grep make
+ 1134  2012-12-21 15:10:43 make VERBOSE=1 TARGET=android CROSS=/home/larkin/evb/android/device/qcom/msm7627a/invensense/libsensors/mlsdk/../../../../../../prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi- ANDROID_ROOT=/home/larkin/evb/android/device/qcom/msm7627a/invensense/libsensors/mlsdk/../../../../../.. KERNEL_ROOT=/home/larkin/evb/android/device/qcom/msm7627a/invensense/libsensors/mlsdk/../../../../../../kernel PRODUCT=msm7627a DEVICE=MPU3050 MPL_LIB_NAME=mplmpu -f Android-static.mk
+ 1144  2012-12-21 16:14:15 history | grep make
+ 1145  2012-12-21 16:14:46 history | grep make >> ~/cmd
+ 1344  find . -iname dal
+ 1347  grep -nr 127 . --exclude-dir=out 2> /dev/null | grep -n dal
+ 1348  vi ./modem_proc/core/dal/drivers/tlmm/src/bsp/7627A/TLMMBsp.c
+ 2041  history | grep dal >> ~/cmd
+ 2084  history
+ 2085  git grep -n mmap
+ 2086  git grep --name-only mmap
+ 2087  git grep -c mmap
+ 2088  git tag 
+ 2089  git grep mmap R8625SSNSKQLYA2040
+ 2090  git grep --all-match -e '#define' -e DUBAI
+ 2091  git grep -e '#define' --and -e DUBAI
+ 2092  git grep -e '#define' --and \(-e PATH -e MAX\)
+ 2093  history | tail >> ~/cmd
+ 2030  find . -name snap
+ 2031  find . -name snap*
+ 2032  find . -name out -prune -o -name sensor*.c
+ 2033  find .  -name sensor*.c
+ 2034  find .  -name sensor*
+ 2035  find .  -name sensor* | more
+ 2036  find . -path out -prune -o -name sensor*
+ 2037  find . -path out -prune -o -name sensor* | less
+ 2038  find . -path "./out" -prune -o -name sensor* | less
+ 2039  history | tail >> ~/cmd
+larkin@bp153:~/dubai/oem/dubai_scripts(dubai_jb)$ ./2_mm.sh  ../../android/frameworks/native/services/surfaceflinger/
+
+ 2045  ./2_mm.sh ../../android/frameworks/native/services/surfaceflinger/
+ 2046  ./2_mm.sh ../../android/frameworks/base/services/surfaceflinger/
+ 2047  ./2_mm.sh ../../android/frameworks/base/services/java/com/android/server/wm/
+ 2048  ./2_mm.sh ../../android/frameworks/base/services/java/com/android/server/wm/ all evt2u hermes release
+ 2049  ./2_mm.sh ../../android/frameworks/base/services/java/com/android/server/wm/ 
+ 2050  ./2_mm.sh ../../android/frameworks/base/policy/src/com/android/internal/policy/impl/ all evt2u hermes release
+ 2051  vi ../log/build_android.log
+ 2052  fg
+ 2053  history
+ 2054  history | tail >> ~/cmd
+ 2021  git show
+ 2022  git ps
+ 2023  git pull --rebase
+ 2024  git log
+ 2025  git show ab1ce9ee9559a906319160e5f3212f97fd98f096
+ 2026  git ps
+ 2027  ssh -p 29418 Larkin.Huang@10.85.21.181
+ 2028  git ps
+ 2029  git push ssh://Larkin.Huang@10.85.21.181:29418/dubai/oem.git HEAD:refs/for/dubai_jb
+ 2030  history | tail >> ~/cmd
+ 2051  repo init -u git://10.82.164.21/Data/cairo_jb/platform/manifest.git -b cairo_jb
+ 2052  repo help init 
+ 2053  repo help sync
+ 2054  cd ..
+ 2055  rm oem; rm amss
+ 2056  rmdir oem; rmdir amss
+ 2057  ls
+ 2058  git clone git://10.82.164.21/Data/cairo_jb/amss.git
+ 2059  git clone git://10.82.164.21/Data/cairo_jb/oem.git
+ 2060  history | tail >> /home/larkin/cmd 
+sed 's/Allow/Persuade/g' file1 
+ 2010  ~/5_mm.sh ../../android/device/qcom/msm7627a/libsensors/ all evt2 smart debug
+ 2011  git status
+ 2012  git add .
+ 2013  git commit
+ 2014  git log -2
+ 2015  git show
+ 2016  git pull --rebase
+ 2017  git ps
+ 2018  git push ssh://Larkin.Huang@10.85.21.181:29418/dubai/oem.git HEAD:refs/for/dubai_jb
+ 2019  history | tail >> ~/cmd
+ 1996  git status
+ 1997  git diff
+ 1998  git stash list;
+ 1999  git help stash
+ 2000  git stash save "adjust prox near spec."
+ 2001  git stash list;
+ 2002  git stash pop stash@{1}
+ 2003  git stash list;
+ 2004  grep -n stash ~/cmd
+ 2005  history | tail >> ~/cmd
+ 1986  cat stream_ics.sh 
+ 1987  ls
+ 1988  df
+ 1989  echo "tonight" >> space | at midnight
+ 1990  mount 
+ 1991  mount | column -t
+ 1992  whatis column
+ 1993  man column
+ 1994  (echo "Device - Path - Type flags" && mount) | column -t
+ 1995  history | tail >> ~/cmd
+ 1989  echo "tonight" >> space | at midnight
+ 1990  mount 
+ 1991  mount | column -t
+ 1992  whatis column
+ 1993  man column
+ 1994  (echo "Device - Path - Type flags" && mount) | column -t
+ 1995  history | tail >> ~/cmd
+ 1996  (echo "Device - Path - Type flags" && mount | awk '$2=$4="";1') | column -t
+ 1997  (echo "Device Path Type flags" && mount | awk '$2=$4="";1') | column -t
+ 1998  history | tail >> ~/cmd
+new lines
+ 2032  vi hex2.c
+ 2033  gcc hex2.c -o hex2
+ 2034  ./hex2
+ 2035  history | grep column
+ 2036  vi ../words 
+ 2037  w
+ 2038  history | grep 10
+ 2039  history | grep tail
+ 2040  ps aux | sort -nk +4 | tail
+ 2041  history | tail >> ~/cmd
+ 2075  date =%s
+ 2076  date +%s
+ 2077  ./sh11.sh
+ 2078  bash -x sh01.sh 
+ 2079  bash -x mysystem.sh 
+ 2080  set -x
+ 2081  w
+ 2082  who
+ 2083  set +x
+ 2084  history | tail >> /home/larkin/cmd 
+ 2383  echo $SHELL
+ 2384  echo ${!N*}
+ 2385  ls
+ 2386  echo ${!N*}
+ 2387  echo ${!R*}
+ 2388  echo ${!S*}
+ 2389  echo ${!H*}
+ 2390  echo $S*
+ 2391  ls
+ 2392  history|tail>>/home/larkin/cmd 
+ 2558  cd -
+ 2559  grep bash /etc/passwd
+ 2560  grep -c bash /etc/passwd 
+ 2561  grep -cv bash /etc/passwd 
+ 2562  man grep
+ 2563  grep -i ps ~/.bash* 
+ 2564  grep -i ps ~/.bash*  | grep -v history
+ 2565  grep -i ps ~/.bash*  | grep  history
+ 2566  grep -i ps ~/.bash*  | grep -v history
+ 2567  history|tail>>/home/larkin/cmd 
+ 2562  man grep
+ 2563  grep -i ps ~/.bash* 
+ 2564  grep -i ps ~/.bash*  | grep -v history
+ 2565  grep -i ps ~/.bash*  | grep  history
+ 2566  grep -i ps ~/.bash*  | grep -v history
+ 2567  history|tail>>/home/larkin/cmd 
+ 2568  vi .bashrc
+ 2569  wd
+ 2570  source .bashrc
+ 2571  cmd
+ 2660  vi ~/.bashrc
+ 2661  echo $PATH
+ 2662  hex
+ 2663  grep ^root /etc/passwd
+ 2664  grep ^larkin /etc/passwd
+ 2665  grep larkin /etc/passwd
+ 2666  grep :$ /etc/passwd
+ 2667  grep sh$ /etc/passwd
+ 2668  grep bash$ /etc/passwd
+ 2669  cmd
+ 2669  cmd
+ 2670  bkp
+ 2671  tail ~/cmd
+ 2672  echo $MANPATH
+ 2673  grep export ~/.bashrc | grep '\<PATH'
+ 2674  grep export ~/.bashrc | grep ' PATH'
+ 2675  grep ' PATH' ~/.bashrc
+ 2676  grep -w / /etc/fstab 
+ 2677  grep / /etc/fstab 
+ 2678  cmd
+ 2679  man grep
+ 2680  grep -w r /etc/fstab 
+ 2681  cat /etc/fstab 
+ 2682  dh
+ 2683  grep [0123456789] /etc/fstab 
+ 2684  grep [5-9] /etc/fstab 
+ 2685  echo $LC_ALL
+ 2686  cat /etc/group
+ 2687  grep [yf] /etc/group
+ 2688  cmd
+ 2723  ll .bash*
+ 2724  vi .bash_alias
+ 2725  source .bashrc
+ 2726  vi .bash_alias
+ 2727  source .bashrc
+ 2728  vi .bash_alias
+ 2729  alias vdir
+ 2730  vi .bashrc
+ 2731  grep '\<c...h\>' /usr/share/dict/words 
+ 2732  cmd
+ 2842  vi bus.txt 
+ 2843  set '/bus/p' bus.txt
+ 2844  sed '/bus/p' bus.txt
+ 2845  sed -n '/bus/p' bus.txt
+ 2846  sed -n '/bus /p' bus.txt
+ 2847  sed '/bus/d' bus.txt
+ 2848  sed '/bus/d' bus.txt | grep bus
+ 2849  sed -n '/^static.*/p' bus.txt
+ 2850  sed -n '/^static.*debug);$/p' bus.txt
+ 2851  cmd
+ 2852  bkp
+ 2853  sed '2,10d' bus.txt
+ 2854  sed '2,10d' bus.txt | more
+ 2855  cat -n bus.txt 
+ 2856  cat -n overview.txt 
+ 2857  sed '110,$d' overview.txt 
+ 2858  sed -n '110,$d' overview.txt 
+ 2859  sed '5,$d' overview.txt 
+ 2860  sed '5,$d' overview.txt | nl
+ 2861  cmd
+ 2879  find ~ -iname *.txt
+ 2880  ls bmc_dsps.txt 
+ 2881  cat bmc_dsps.txt 
+ 2882  sed -e 's/set/setup/g' bmc_dsps.txt 
+ 2883  sed -ne 's/set/setup/g' bmc_dsps.txt 
+ 2884  sed -e 's/set/setup/g' bmc_dsps.txt | grep up
+ 2885  sed -e 's/set/setup/g' bmc_dsps.txt | grep setup
+ 2886  sed -e 's/set/setup/g' -e 's/orient/orientation/g' bmc_dsps.txt 
+ 2887  sed -e 's/set/setup/g' -e 's/orient/orientation/g' bmc_dsps.txt | grep orien
+ 2888  cmd
+ 3178  ls /usr/bin/ | sed -n '/^.a/p' > ~/log/a.txt
+ 3179  cat /home/larkin/log/a.txt 
+ 3180  nl log/a.txt 
+ 3181  nl log/a.txt | sed '1,3s/d'
+ 3182  nl log/a.txt | sed '/1,3s/d'
+ 3183  nl log/a.txt | head
+ 3184  nl log/a.txt | sed '1d'
+ 3185  nl log/a.txt | sed '1d' | more
+ 3186  nl log/a.txt | sed '1,3d' | more
+ 3187  cmd
+ 3198  man sed
+ 3199  sed -ne '/an/p' words
+ 3200  sed '/an/p' words
+ 3201  sed -n '/an/p' words
+ 3202  sed -n '/^an/p' words
+ 3203  sed -n '/^A/p' words
+ 3204  history | grep share
+ 3205  sed -n '/an/p' /usr/share/dict/words 
+ 3206  sed -n '/^an/p' /usr/share/dict/words 
+ 3207  cmd
+ 3228  sed '/flush/agood jobs' cron.txt 
+ 3229  sed '/flush/aagood jobs' cron.txt 
+ 3230  sed '/flush/aa good job\ncontinue next time.' cron.txt 
+ 3231  cd scripts/
+ 3232  sed '/man/p' web2
+ 3233  sed -n '/man/p' web2
+ 3234  sed -n '/^man/p' web2
+ 3235  sed -n '/^.*man/p' web2
+ 3236  sed -n '/^.man/p' web2
+ 3237  cmd
+ 3355  ls
+ 3356  vi Android.mk 
+ 3357  cd ..
+ 3358  ls
+ 3359  cd ..
+ 3360  rs
+ 3361  alias
+ 3362  go Launcher2; git status; git reset --hard; git status
+ 3363  go Launcher2; git status; git reset --hard; git clean -df;git status
+ 3364  cmd
+ 3714  ls -l | awk '{print $1 $3}'
+ 3715  ls -ldh * | grep -v total | awk '{print "size is "$5" bytes for "$9}'
+ 3716  ls -dhl
+ 3717  ls -ldh 
+ 3718  ls -ldh *
+ 3719  man ls
+ 3720  ls -ldh 
+ 3721  ls -dhl
+ 3722  ls -ldh * | grep -v total | awk '{print "size is "$5" bytes for "$9}'
+ 3723  cmd
+ 3720  ls -ldh 
+ 3721  ls -dhl
+ 3722  ls -ldh * | grep -v total | awk '{print "size is "$5" bytes for "$9}'
+ 3723  cmd
+ 3724  alias cmd
+ 3725  man ls
+ 3726  df -h | sort -rnk 5 | head -3 | awk '{print "Partition "$6"\t: "$5" full!"}'
+ 3727  dh
+ 3728  dh | sort -rnk 5
+ 3729  cmd
+ 3724  alias cmd
+ 3725  man ls
+ 3726  df -h | sort -rnk 5 | head -3 | awk '{print "Partition "$6"\t: "$5" full!"}'
+ 3727  dh
+ 3728  dh | sort -rnk 5
+ 3729  cmd
+ 3730  df -h | awk '/dev\/hd/ {print $6 "\t: "$5}'
+ 3731  df -h | awk '/dev\/sda/ {print $6 "\t: "$5}'
+ 3732  dh
+ 3733  cmd
+ 3729  cmd
+ 3730  df -h | awk '/dev\/hd/ {print $6 "\t: "$5}'
+ 3731  df -h | awk '/dev\/sda/ {print $6 "\t: "$5}'
+ 3732  dh
+ 3733  cmd
+ 3734  ls -l | awk '/\<(a|x).*\.conf$/ {print $9}'
+ 3735  find / -name *.conf
+ 3736  find / -name *.conf$
+ 3737  ls -lR /etc | awk '/\<(a|x).*\.conf$/ {print $9}'
+ 3738  cmd
+ 3750  ls -lR > ~/conf.txt
+ 3751  cd
+ 3752  ll conf.txt 
+ 3753  cat conf.txt | awk '/^(a|x).*\.conf$/ {print $9}'
+ 3754  cat conf.txt | awk '/\^(a|x).*\.conf$/ {print $9}'
+ 3755  cat conf.txt | awk '/\<(a|x).*\.conf$/ {print $9}'
+ 3756  cat conf.txt | awk '/\(a|x).*\.conf$/ {print $9}'
+ 3757  ls -lR /etc | awk 'BEGIN { print "Files found:\n" } /\<[a|x].*\.conf$/ print$9}'
+ 3758  ls -lR /etc | awk 'BEGIN { print "Files found:\n" } /\<[a|x].*\.conf$/ {print $9}'
+ 3759  cmd
+ 3754  cat conf.txt | awk '/\^(a|x).*\.conf$/ {print $9}'
+ 3755  cat conf.txt | awk '/\<(a|x).*\.conf$/ {print $9}'
+ 3756  cat conf.txt | awk '/\(a|x).*\.conf$/ {print $9}'
+ 3757  ls -lR /etc | awk 'BEGIN { print "Files found:\n" } /\<[a|x].*\.conf$/ print$9}'
+ 3758  ls -lR /etc | awk 'BEGIN { print "Files found:\n" } /\<[a|x].*\.conf$/ {print $9}'
+ 3759  cmd
+ 3760  cat conf.txt | awk '/\<(a|x).*\.conf$/ {print $9}'
+ 3761  cat conf.txt | awk '/\<(a|x).*\.conf$/ {print $9} \
+END {print "Can I do anything else for you, mistress?"}'
+ 3762  cmd
+ 3778  cat /etc/passwd | awk '{print $1 "\t" $5}'
+ 3779  man awk
+ 3780  vi printnames.awk
+ 3781  cat /etc/passwd | awk -f printnames.awk 
+ 3782  vi printnames.awk
+ 3783  cat /etc/passwd | awk -f printnames.awk 
+ 3784  vi printnames.awk
+ 3785  cat /etc/passwd | awk -f printnames.awk 
+ 3786  awk -f printnames.awk /etc/passwd
+ 3787  cmd
+ 3823  vi revenues
+ 3824  ls
+ 3825  ll *.awk
+ 3826  vi total.awk
+ 3827  awk -f total.awk revenues 
+ 3828  cb
+ 3829  bc
+ 3830  vi total.awk
+ 3831  awk -f total.awk revenues 
+ 3832  cmd
+ 4291  find . -iname Activity*.java | grep -v test
+ 4292  cd base/core/java/android/app
+ 4293  ls
+ 4294  grep -nr getSystemService .
+ 4295  grep -nr getSystemService . | grep Activity
+ 4296  cd dubai/oem/dubai_scripts/
+ 4297  ~/5_mm.sh ../../android/frameworks/base/services/java/ all evt2 smart ship
+ 4298  ~/5_mm.sh ../../android/frameworks/base/services/java/ all evt2 smart debug
+ 4299  ~/5_mm.sh ../../android/frameworks/base/core/res/ all evt2 smart debug
+ 4300  cmd
+ 4521  cd dubaif/android/
+ 4522  cp /home/larkin/dubai/android/kernel/drivers/input/misc/lpsensor_taos.c kernel/drivers/input/misc/
+ 4523  cd -
+ 4524  cd dubaif/oem/dubai_scripts/
+ 4525  ./build_android.sh 
+ 4526  ./1_build_android.sh kernel evt2 smart factory
+ 4527  cp /home/larkin/dubai/android/kernel/drivers/input/misc/lpsensor_taos.c ../../android/kernel/drivers/input/misc/
+ 4528  cp /home/larkin/dubai/android/kernel/include/linux/lpsensor_taos.h ../../android/kernel/include/linux/
+ 4529  ./1_build_android.sh kernel evt2 smart factory
+ 4530  cmd
+976: 1024  tar -czvf  prom.tar.gz prom
+977: 1025  tar --help
+978: 1026  tar --help | less
+985: 1033  tar -xzvf prom.tar.gz 
+999: 1047  hg 'tar '
+1000: 1048  hg 'tar ' >> cmds
+959: 1008  gzip bashrc 
+962: 1011  gzip -d bashrc.gz 
+1000: 1049  hg 'gzip ' >> cmds
+ 1043  cd
+ 1044  mv cmds.txt cmds
+ 1045  ls
+ 1046  hg tar
+ 1047  hg 'tar '
+ 1048  hg 'tar ' >> cmds
+ 1049  hg 'gzip ' >> cmds
+ 1050  netstat -nl
+ 1051  netstat -nlu
+ 1052  cmds
+ 1061  ifconfig
+ 1062  ifconfig -a
+ 1063  ifconfig eth0 up
+ 1064  ifconfig 
+ 1065  ifconfig --help
+ 1066  ifconfig eth0 192.168.1.1 netmask 255.255.255.0
+ 1067  ifconfig 
+ 1068  ping 192.168.1.105
+ 1069  ifconfig eth0 192.168.1.105 netmask 255.255.255.0
+ 1070  cmds
+ 1077  sync
+ 1078  whatis sync
+ 1079  cal 12
+ 1080  cal --help
+ 1081  cat 2015-10
+ 1082  cat 201510
+ 1083  cal 2015-10
+ 1084  cal 
+ 1085  cal 7 2000
+ 1086  cmds
+ 1101  free -m
+ 1102  telnet help
+ 1103  whatis telnet
+ 1104  ip
+ 1105  whatis ip
+ 1106  ig inet
+ 1107  whatis ssh
+ 1108  ifconfig 
+ 1109  ifconfig eth0 | grep 'inet addr'
+ 1110  cmds
+  995  /etc/init.d network status
+  996  /etc/init.d/network status
+  997  /etc/init.d/network restart
+  998  ifconfig
+  999  whatis ping
+ 1000  ping 192.168.0.200
+ 1001  ping 127.0.0.1
+ 1002  netstat -nlt
+ 1003  netstat -nlu
+ 1004  cmds
+283:  342  source ~/.bashrc
+970: 1029  source /etc/profile
+980: 1039  source /etc/profile
+999: 1058  hg source
+1000: 1059  hg source >> ~/cmds
+
+ 1055  stty size
+ 1056  history
+ 1057  hg grep
+ 1058  hg source
+ 1059  hg source >> ~/cmds
+ 1060  hg COLORE
+ 1061  hg COLOR
+ 1062  vi ~/cmds
+ 1063  vi /etc/DIR_COLORS
+ 1064  cmds
+ 1019  ls
+ 1020  pwd
+ 1021  python -m SimpleHTTPServer 
+ 1022  who
+ 1023  ls
+ 1024  who
+ 1025  pwd
+ 1026  who
+ 1027  ls
+ 1028  cmds
+ 1133  git fetch origin
+ 1137  git merge origin/master
+ 1138  git push origin master
+915: 1058  git remote add origin https://github.com/hclife/-bach-con.git
+918: 1061  git remote add origin https://github.com/hclife/-bachs.git
+940: 1083  git remote add origin https://github.com/hclife/-bash-con.git
+951: 1094  git remote add origin https://github.com/hclife/-bash-con.git
+969: 1112  git remote add origin https://github.com/hclife/-bash-con.git
+976: 1119  git remote add origin git@github.com:hclife/-bash-con.git
+979: 1122  git remote add origin git@github.com:hclife/-bash-con.git
+999: 1142  hg 'remote add'
+1000: 1143  hg 'remote add' >> ~/cmds
+ 1242  cd /home/larkin/Documents/bash/bash_con/
+ 1243  ls
+ 1244  git remote -v
+ 1245  git remote rm upstream
+ 1246  git remote add upstream git@github.com:hclife/-bash-con.git
+ 1247  git remote -v
+ 1248  git fetch upstream
+ 1249  git branch -av
+ 1250  git merge upstream/master
+ 1251  cmds
+ 1128  2012-03-08 19:36:15 find . -name +100c
+ 1130  2012-03-08 19:39:48 find . -type f -print
+ 1132  2012-03-08 19:41:49 find . -type f -print | xargs echo "" > ~/core.log
+ 1133  2012-03-08 19:41:59 more ~/core.log 
+ 1134  2012-03-08 19:42:16 man find 
+ 1135  2012-03-08 19:43:34 find . -name Make* | xargs grep obj
+ 1136  2012-03-08 19:43:50 find . -name Make* | xargs grep bma
+ 1137  2012-03-08 19:44:40 history | tail > /home/larkin/cmd.log 
+ 1026  2012-03-18 19:22:23 grep -nR wakelock *
+ 1027  2012-03-18 19:22:47 grep -nR dma *
+ 1028  2012-03-18 19:23:09 grep -n SCSI ~/words
+ 1034  2012-03-18 19:23:41 grep -nR path *
+ 1035  2012-03-18 19:24:08 history | tail >> /home/larkin/cmd.log 
+cat /home/qisda/disk_stat.log
+ 1018  2012-04-13 09:42:02 grep -nr E_COMPASS_RESET .
+ 1024  2012-04-13 14:18:43 cd ics/0410/oem/orange_scripts/
+ 1025  2012-04-13 14:19:35 ./1_build_android.sh kernel evt2c hermes release
+ 1026  2012-04-13 14:26:12 history | tail >> /home/larkin/cmd.log 
+ 1024  2012-04-13 14:18:43 cd ics/0410/oem/orange_scripts/
+ 1025  2012-04-13 14:19:35 ./1_build_android.sh kernel evt2c hermes release
+ 1026  2012-04-13 14:26:12 history | tail >> /home/larkin/cmd.log 
+ 1027  2012-04-13 14:26:17 vi ~/cmd.log
+ 1028  2012-04-13 14:26:55 ./build_android.sh evt2c hermes release
+ 1031  2012-04-13 21:23:52 history | tail >> /home/larkin/cmd.log 
+  999  2012-04-18 09:20:53 ./build_android.sh evt2c hermes release
+ 1000  2012-04-18 11:16:58 ./1_build_android.sh kernel evt2c hermes release
+ 1003  2012-04-19 08:31:38 tail directory 
+ 1004  2012-04-19 08:31:41 cd /home/larkin/ics/0410/oem/cairo_scripts
+ 1006  2012-04-19 08:52:13 ./build_android.sh evt2c hermes release
+ 1007  2012-04-19 09:03:56 ./1_build_android.sh kernel evt2c hermes release
+ 1008  2012-04-19 09:39:58 history | tail >> /home/larkin/cmd.log 
+ 1018  2012-04-26 18:52:57 repo init -u git://10.82.164.21/Data/msm8260/platform/manifest.git -b Qplatform_ICS
+
+ 1191  2012-04-27 11:38:52 git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/Qplatform_ICS
+ 1196  2012-04-27 13:26:05 diff ics/0410/android/device/boss/cairo/libsensors/sensord/ cairo/android/device/boss/cairo/libsensors/sensord/
+ 1197  2012-04-27 13:26:17 diff -r ics/0410/android/device/boss/cairo/libsensors/sensord/ cairo/android/device/boss/cairo/libsensors/sensord/
+ 1198  2012-04-27 13:28:20 history | tail >> /home/larkin/cmd.log 
+ 1056  2012-05-02 11:08:33 ./build_android.sh evt2u hermes release
+
+ 1019  2012-05-07 20:55:03 ll
+ 1020  2012-05-07 20:55:19 ar cqs libhello.a hello.o
+ 1021  2012-05-07 20:55:23 whatis ar
+ 1022  2012-05-07 20:55:50 gcc -shared -Wl,-soname,libhello.so.1 -o libhello.so.1.0 hello.o
+ 1023  2012-05-07 20:56:04 vi hello.c
+ 1024  2012-05-07 20:56:24 ls
+ 1025  2012-05-07 20:56:29 rm hello.o
+ 1026  2012-05-07 20:56:31 rm *.a
+ 1027  2012-05-07 20:56:32 ls
+ 1028  2012-05-07 20:56:43 history | tail >> ~/cmd.log
+ 1050  2012-05-09 10:13:33 ./main
+ 1051  2012-05-09 10:13:45 vi main.c 
+ 1052  2012-05-09 11:00:48 cd
+ 1053  2012-05-09 11:00:53 cd cairo/android
+ 1054  2012-05-09 11:00:53 ls
+ 1055  2012-05-09 11:09:03 cd
+ 1056  2012-05-09 11:09:05 cd code
+ 1057  2012-05-09 11:09:05 ls
+ 1058  2012-05-09 11:17:23 git clone git://10.82.164.21/Data/msm8260/platform/system/core -b MSM8260_GB
+ 1059  2012-05-09 11:18:15 history | tail >> /home/larkin/cmd.log 
+ 1069  2012-05-11 10:05:23 ls saves
+ 1070  2012-05-11 10:05:38 mv android/device/boss/orange/liborangesensors/ saves/
+ 1071  2012-05-11 10:05:40 ls
+ 1072  2012-05-11 10:05:42 ls saves
+ 1073  2012-05-11 10:06:29 cp android/hardware/libhardware/hardware.c saves/
+ 1074  2012-05-11 10:06:49 cp android/frameworks/base/libs/gui/SensorManager.cpp saves/
+ 1075  2012-05-11 10:07:04 cp android/frameworks/base/services/sensorservice/SensorService.cpp saves/
+ 1076  2012-05-11 10:07:34 cp android/vendor/qcom/proprietary/logd2/Android.mk saves/
+ 1077  2012-05-11 10:07:41 cd saves/
+ 1078  2012-05-11 10:07:58 history | tail >> ~/cmd.log
+Important git commands:
+git reset --hard
+git clean -df
+git commit --amend
+git pull --rebase
+  980  2012-05-16 10:32:36 ./1_build_android.sh kernel evt2u hermes release
+ 1078  2012-05-17 10:13:43 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/platform/build.git HEAD:refs/for/MSM8660_ICS
+ 1087  2012-05-17 10:16:11 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/device/boss/cairo.git HEAD:refs/for/MSM8660_ICS
+
+52:  114  2012-05-11 10:02:29 cp stream_cairo.sh ../backup/
+59:  121  2012-05-11 10:03:01 cp -r gb_save/ ../backup/
+63:  125  2012-05-11 10:03:16 cp -r ics_save/ ../backup/
+70:  132  2012-05-11 10:16:01 cp -r libsensors/ /home/larkin/cairo/android/device/boss/orange/
+76:  138  2012-05-11 10:17:50 cp -r libsensors/ /home/larkin/cairo/android/device/boss/cairo/ 
+200:  262  2012-05-11 10:06:29 cp android/hardware/libhardware/hardware.c saves/
+201:  263  2012-05-11 10:06:49 cp android/frameworks/base/libs/gui/SensorManager.cpp saves/
+202:  264  2012-05-11 10:07:04 cp android/frameworks/base/services/sensorservice/SensorService.cpp saves/
+203:  265  2012-05-11 10:07:34 cp android/vendor/qcom/proprietary/logd2/Android.mk saves/
+265:  327  2012-05-11 11:11:50 cp ../saves/hardware.c hardware/libhardware/
+266:  328  2012-05-11 11:13:00 cp -r ../saves/libcairosensors/ device/boss/cairo/
+267:  329  2012-05-11 11:13:10 cp -r ../saves/liborangesensors/ device/boss/orange/
+383:  445  2012-05-14 13:28:57 cp cairo/android/device/boss/cd
+410:  472  2012-05-14 09:37:55 cp -r cairo/android/device/boss/cairo/libcairosensors/ cairol/android/device/boss/cairo/
+411:  473  2012-05-14 09:38:12 cp -r cairo/android/device/boss/orange/liborangesensors/ cairol/android/device/boss/orange/
+413:  475  2012-05-14 09:39:00 cp cairo/android/hardware/libhardware/hardware.c cairol/android/hardware/libhardware/
+646:  708  2012-05-14 16:10:15 cp -r libcairosensors/ /home/larkin/cairo/saves/
+649:  711  2012-05-14 16:11:01 cp -r liborangesensors/ ~/cairo/saves/
+728:  790  2012-05-15 08:27:03 cp /home/larkin/cairol/android/.repo/repo/repo /usr/bin/repo
+788:  850  2012-05-16 21:25:32 cp stream_cairo.sh ../backup/
+872:  934  2012-05-16 11:24:33 cp ../cairo/saves/stream_cairo.sh .
+954: 1016  2012-05-17 14:09:43 cp /home/larkin/cairo/android/kernel/include/linux/bma250.h include/linux/
+955: 1017  2012-05-17 14:09:54 cp /home/larkin/cairo/android/kernel/include/linux/bmm050.h include/linux/
+956: 1018  2012-05-17 14:10:22 cp /home/larkin/cairo/android/kernel/drivers/input/misc/bma250.c drivers/input/misc/
+957: 1019  2012-05-17 14:10:36 cp /home/larkin/cairo/android/kernel/drivers/input/misc/lpsensor_taos.c drivers/input/misc/
+958: 1020  2012-05-17 14:10:55 cp /home/larkin/cairo/android/kernel/drivers/misc/bmm050.c drivers/misc/
+977: 1039  2012-05-17 16:17:29 cp drivers/input/misc/bma250.c ~/cairo_mmi/
+999: 1061  2012-05-17 16:29:50 history | grep -n 'cp '
+1000: 1062  2012-05-17 16:30:03 history | grep -n 'cp ' >> ~/cmd.log
+ 1061  2012-05-21 20:29:40 vi ~/dirs/
+ 1062  2012-05-21 20:29:43 vi ~/dirs
+ 1063  2012-05-21 20:30:09 cd ../out/
+ 1064  2012-05-21 20:30:16 rm -rf caet2uS_her/ &
+ 1065  2012-05-21 20:30:31 cd caet2uR_her/target/product/cairo/obj/EXECUTABLES/
+ 1066  2012-05-21 20:30:36 pwd >> ~/dirs
+ 1067  2012-05-21 20:30:37 ls
+ 1068  2012-05-21 20:30:41 ll -d sensord_intermediates/
+ 1069  2012-05-21 20:30:44 rm -rf sensord_intermediates/
+ 1070  2012-05-21 20:30:55 history | tail >> /home/larkin/cmd.log 
+  231  2012-05-16 21:33:51 cat /home/qisda/disk_stat.log 
+  563  2012-05-17 08:26:31 cat /home/qisda/disk_stat.log 
+  722  2012-05-18 09:15:13 cat /home/qisda/disk_stat.log 
+  889  2012-05-21 09:13:03 cat /home/qisda/disk_stat.log 
+ 1006  2012-05-22 08:07:25 cat /home/qisda/disk_stat.log 
+ 1007  2012-05-22 08:07:40 history | grep qisda
+ 1008  2012-05-22 08:07:51 history | grep qisda >> cmd.log
+ 1051  2012-05-30 21:49:14 git status
+ 1052  2012-05-30 21:49:16 git commit
+ 1053  2012-05-30 21:50:46 git status
+ 1054  2012-05-30 21:50:50 git log -3
+ 1055  2012-05-30 21:51:53 git branch -v
+ 1056  2012-05-30 21:52:12 grep -n push ~/dirs
+ 1057  2012-05-30 21:52:22 grep -n push /home/larkin/cmd.log 
+ 1058  2012-05-30 21:54:54 git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+ 1059  2012-05-30 21:56:03 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+ 1060  2012-05-30 22:11:03 history | tail >> ~/cmd.log
+ 1037  2012-06-28 14:12:18 git reflog show
+ 1038  2012-06-28 14:12:28 git branch -v
+ 1039  2012-06-28 14:13:05 git help checkout
+ 1040  2012-06-28 14:14:28 git checkout MSM8660_ICS
+ 1041  2012-06-28 14:14:42 git log
+ 1042  2012-06-28 14:14:53 git checkout --patch f3043672fcb717338e90096188e270c4c3d1d638
+ 1043  2012-06-28 14:17:00 git log
+ 1044  2012-06-28 14:18:11 git branch -v
+ 1045  2012-06-28 14:18:26 git checkout f3043672fcb717338e90096188e270c4c3d1d638
+ 1046  2012-06-28 14:18:34 git remote -v
+ 1047  2012-06-28 14:18:40 git branch
+ 1048  2012-06-28 14:18:44 git branch -v
+ 1049  2012-06-28 14:18:52 git help log
+ 1050  2012-06-28 14:20:42 git log -g
+ 1051  2012-06-28 14:20:48 git log -g --oneline
+ 1052  2012-06-28 14:20:53 git reflog
+ 1053  2012-06-28 14:21:08 git log -g --abbrev-commit --pretty=oneline
+ 1054  2012-06-28 14:21:13 git log -g --abbrev-commit
+ 1055  2012-06-28 15:00:00 cd
+ 1056  2012-06-28 15:00:02 cd cfiles
+ 1057  2012-06-28 15:00:03 ls
+ 1058  2012-06-28 15:00:09 ls | wc
+ 1074  2012-06-28 15:03:21 gcc -c lt.c -o lt.o
+ 1075  2012-06-28 15:03:26 ar --help
+ 1076  2012-06-28 15:03:39 ar --help | less
+ 1078  2012-06-28 15:04:34 ar cqs liblt.a lt.o
+ 1079  2012-06-28 15:04:41 ar --help | less
+ 1087  2012-06-28 15:06:46 gcc test.o liblt.a -o test
+ 1088  2012-06-28 15:07:15 gcc test.c liblt.a -o test
+
+ 1144  2012-07-05 15:40:10 git log 
+ 1145  2012-07-05 15:40:27 git show
+ 1146  2012-07-05 15:40:32 git branch -v
+ 1147  2012-07-05 15:43:23 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/SWEP_GCAIB1A_v01.008.b_00
+ 1139  2012-07-05 15:36:22 git help cherry-pick
+ 1140  2012-07-05 15:37:17 git cherry-pick 8334f5989abf36995d21ba1f0e18d1f96b01ee16
+ 1154  2012-07-05 15:59:32 history | grep cherry >> /home/larkin/cmd.log 
+1038  2012-07-06 09:49:32 repo forall -p
+ 1039  2012-07-06 09:49:43 repo forall -p -c git log
+ 1040  2012-07-06 09:50:07 repo forall -p -v -c git show HEAD
+ 1041  2012-07-06 09:50:24 repo help forall
+ 1042  2012-07-06 09:52:23 repo forall -c
+ 1043  2012-07-06 09:52:31 repo forall -c git status
+ 1044  2012-07-06 09:52:49 repo forall -pvc git status
+ 1045  2012-07-06 09:53:53 repo forall -pvc git branch -v
+ 1046  2012-07-06 09:55:44 repo help prune
+ 1047  2012-07-06 09:56:00 repo help status
+ 1048  2012-07-06 10:00:10 cd kernel
+ 1049  2012-07-06 10:00:13 git branch -r
+ 1050  2012-07-06 10:00:17 git branch -v
+ 1051  2012-07-06 10:00:23 git log -3
+ 1052  2012-07-06 10:00:28 git log
+ 1053  2012-07-06 10:00:47 git show 59ee1528f1899f8d21c1ff3d847d480c0277167c
+ 1054  2012-07-06 10:01:48 git show
+ 1055  2012-07-06 10:02:09 git log
+ 1056  2012-07-06 10:02:42 cat .git/config
+ 1057  2012-07-06 10:03:06 git stash
+ 1058  2012-07-06 10:03:19 git tag -l
+ 1059  2012-07-06 10:08:55 grep -nr machine .
+ 1060  2012-07-06 10:09:07 grep -nr machine Kconfig
+ 1061  2012-07-06 10:09:11 grep -nr machine Makefile
+ 1062  2012-07-06 10:10:52 git help apply
+
+ 1039  2012-07-08 19:22:35 ls
+ 1040  2012-07-08 19:22:44 find . -name .git
+ 1041  2012-07-08 19:22:50 cd build
+ 1042  2012-07-08 19:22:51 ls
+ 1043  2012-07-08 19:22:55 git log -2
+ 1044  2012-07-08 19:22:59 git show
+ 1045  2012-07-08 19:23:12 git checkout MSM8660_ICS~3
+ 1046  2012-07-08 19:23:53 git checkout -b NEW_BRANCH
+ 1047  2012-07-08 19:23:59 git log -3
+ 1048  2012-07-08 19:25:10 history | tail >> /home/larkin/cmd.log 
+ 1020  2012-07-08 19:24:20 cd
+ 1021  2012-07-08 19:24:25 cd cairo_mmi/android/build/
+ 1022  2012-07-08 19:24:26 git log
+ 1023  2012-07-08 19:27:05 git status
+ 1024  2012-07-08 19:27:08 git pull 
+ 1025  2012-07-08 19:27:16 git log -3
+ 1026  2012-07-08 19:29:22 git log
+ 1027  2012-07-08 19:41:02 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen (%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+ 1028  2012-07-08 19:42:09 history 
+ 1029  2012-07-08 19:42:21 history | tail >> /home/larkin/cmd.log 
+user.name=Larkin.Huang
+user.email=Larkin.Huang@Qisda.com
+color.ui=auto
+alias.lg=log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen (%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+alias.lag=log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen (%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+Logmaster usage: 
+Android system log
+	$adb logcat
+Linux system log
+	$adb shell dumpstate
+	etc
+AMSS system log
+	$ adb shell logd2ext
+	
+
+Android original release build kernel steps:
+cd android
+export PATH=/usr/java/jdk1.6.0_23:$PATH
+source ./build/envsetup.sh
+choosecombo
+make bootimage
+
+DB value of audio devices:
+1.handset_tx(amic primary mono) | AMIC_PRI_MONO_OSR_256 | imic_a1_device
+2.headset_mono_tx | HEADSET_AMIC2_TX_MONO_PRI_OSR_256 | msm_headset_mic_device
+0x86 0x87 : 0x00 = 0db
+
+1.handset_rx (receiver) | EAR_PRI_MONO_8000_OSR_256 | msm_iearpiece_ffa_device
+0x84 : 0x00 = 0db
+2.speaker_stereo_rx | SPEAKER_MONO_PRI_STEREO_48000_OSR_256 | ispkr_stereo_device
+0xe0 0xe1 : 0x10 = -4.5db
+3.headset_stereo_rx | HEADSET_AB_CPLS_48000_OSR_256 | msm_headset_stereo_device
+0xe2 0xe3 : 0x1c = -9.0db
+3.headset_stereo_rx | HEADSET_AB_CPLS_48000_OSR_256_SING | msm_headset_stereo_device
+0xe2 0xe3 : 0x04 = 0db
+4.headset_stereo_speaker_stereo_rx | SPEAKER_MONO_HPH_AB_CPL_PRI_STEREO_48000_OSR_256 | ihs_stereo_speaker_stereo_rx_device | 
+0xe0 0xe1 : 0x10 = -4.5db
+0xe2 0xe3 : 0x04 = 0db
+
+---------------------------------------
+1.QCT 30112..release.
+  \\10.85.21.71\jtag\home\qisda\ics30112
+2.........codebase...
+  .android.
+  repo init -u git://10.85.21.71/ics/platform/manifest.git -b QIcs
+  .OEM.
+  git clone git://10.85.21.71/ics/oem.git -b QIcs
+  
+  The method of fetching code of cairo project: 
+  repo init -u git://10.82.164.21/Data/msm8260/platform/manifest.git -b Qplatform_ICS 
+  repo sync
+  repo start QIcs --all
+  git clone git://10.82.164.21/Data/msm8260/oem.git -b Qplatform_ICS
+  git clone git://10.82.164.21/Data/msm8260/amss.git -b Qplatform_ICS
+  
+  
+  
+#git clone git://10.85.21.71/ics/kernel/msm.git -b QIcs
+==> grep the kernel code.
+git log --author=Frankie --no-merges --stat
+
+  ..git server......build PC..
+3.build...GB....amss.image...GB..
+4.ICS.kernel........3.0.8
+---------------------------------------
+
+shutdown -s -t 3600	==> shutdown this computer in one hour
+shutdown -a		==> cancle the shutdown operation
+Set mobile phone to ftd mode: 
+adb shell reboot ftd
+fastboot oem set-boot-mode 0
+fastboot reboot
+The ways to suspend an Android phone:
+echo mem > /sys/power/state
+timeout
+press end/power key:
+branches:
+MSM8260_GB
+SWEP_GORAB1A_v01.017.a_00 
+remotes/origin/SWEP_GORAB1A_v01.025.g_00
+
+
+---------------------------------------
+check in procedure:
+ssh-keygen -t rsa
+ssh -p 29418 Larkin.Huang@10.82.164.21
+git config --global user.name "Larkin.Huang"
+git config --global user.email "Larkin.Huang@Qisda.com"
+git config -l
+mkdir git; cd git
+git clone git://10.82.164.21/Data/msm8260/kernel/msm -b MSM8260_GB
+
+Audio Low Temp git of code base:
+git clone git://10.85.21.71/audio_core.git
+git clone git://10.85.21.71/audio_msm8660_surf.git
+git clone git://10.85.21.71/audio_kernel.git
+git push
+
+
+
+git clone git://10.82.164.21/Data/msm8260/platform/vendor/qcom/proprietary -b MSM8260_GB
+==> android/vendor/qcom/proprietary/mm-audio/audcal/boss/audio_cal_orange_dvt.acdb
+
+git clone git://10.82.164.21/Data/msm8260/kernel/msm -b SWEP_GORAB1A_v01.017.a_00
+git clone ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git -b MSM8260_GB
+cd msm; git status
+git add .	//check in all the files
+git add kernel/drvier/power/kconfig  //check in a special file
+git commit -m "EVT1 max8903b charge IC driver" //submit comments
+
+git push notes : 1.GIT_PATH 2.BRANCH
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/MSM8260_GB  
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/SWEP_GORAB1A_v01.017.a_00 
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/bionic.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/system/core.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/build.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/platform/build.git HEAD:refs/for/MSM8660_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/packages/apps/oem_apps/EngineeringMode.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/vendor/qcom/proprietary.git HEAD:refs/for/MSM8260_GB  
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/vendor/qcom/proprietary.git HEAD:refs/for/MSM8260_ICS  
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/vendor/qcom/proprietary.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/device/boss/cairo.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/device/boss/orange.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/device/boss/cairo.git HEAD:refs/for/MSM8660_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+
+msm8260/platform/vendor/qcom/proprietary
+SWFP_GORAB1A_v51.00 
+remotes/qisda/SWFP_GORAB1A_v51.004.g_00
+Derrick update em_audio_test from app to lib.
+http://10.82.164.21:8080/#change,9226
+/* Larkin.Huang 2011/11/16 change the HPH setting of headset volume level from -9db to 0db for DVT. */
+
+---------------------------------------
+Get code:
+android: 
+** Using repo
+$ mkdir android
+$ cd android
+$ repo init -u git://10.82.164.21/Data/msm8260/platform/manifest.git -b MSM8260_GB
+$ repo sync
+$ repo start MSM8260_GB --all
+
+branches:	
+MSM8260_ICS	MSM8260_GB
+
+** Using git
+git clone git://10.82.164.21/Data/${GitProject} -b MSM8260_GB
+Ex. $ git clone git://10.82.164.21/Data/msm8260/platform/build -b MSM8260_GB
+amss: 
+$ git clone git://10.82.164.21/Data/msm8260/amss -b MSM8260_GB
+oem: 
+$ git clone git://10.82.164.21/Data/msm8260/oem -b MSM8260_GB
+$ git clone git://10.82.164.21/Data/msm8260/device/boss/orange -b MSM8260_ICS
+$ git clone git://10.82.164.21/Data/msm8260/device/boss/cairo -b Qplatform_ICS
+$ git clone git://10.82.164.21/Data/msm8260/platform/system/core -b MSM8260_GB
+
+git clone git://10.82.164.21/Data/cairo/device/boss/cairo -b MSM8660_ICS
+git clone git://10.82.164.21/Data/cairo/platform/vendor/qcom/proprietary -b MSM8660_ICS
+git clone git://10.82.164.21/Data/cairo/kernel/msm -b MSM8660_ICS
+
+
+
+git commit format:
+Record othc insertion/removal state after kernel detection delay.
+
+Big id: S2-05-000725
+Solution: Modify pmic8058-othc.c to 
+
+--------------------------------------
+git status -uno    	//show no untracked files
+git commit --amend 	//change the last commit
+git reset HEAD file	//give stage files to unstage
+git checkout --file	//undo the revised file
+git checkout master
+git merge hotfix	//fast-forward
+
+switch branch with git command
+action 		command
+list		git branch
+list all	git branch -a
+verbose 	git branch -v
+delete		git branch -d <branch>
+force delete	git branch -D <branch>
+rename		git branch -m <branch> <new_branch>
+
+change branch			git checkout <branch>
+get specific version of file 	git checkout <branch> file
+create and move to a new branch	git checkout -b <new_branch>
+create and move to a new branch base on version
+				git checkout -b <new_branch> <version>
+
+list				git remote
+verbose				git remote -v
+remote server information	git remote show [remote-name]
+remove				git remote rm <name>
+rename				git remote rename <oldname> <newname>
+
+--------------------------------------
+cat /proc/bus/input/devices
+ls -l /sys/class/input
+ls -l /sys/fs/ext4
+ls -l /dev/input
+------------------------------------------
+The Android logcat usage summary:
+adb logcat -v brief  => default
+adb logcat -v time
+adb logcat -v thread
+adb logcat -v long
+versions: process, tag, raw, threadtime.
+adb logcat -c 	     => clear buffer
+adb logcat -g
+adb logcat -gb radio
+adb logcat -gb events
+adb logcat -db radio
+adb logcat -db events
+adb logcat -db main  => default
+adb logcat -d >> log.txt
+adb logcat -ds PowerManagerService:d
+
+adb logcat ActivityManager:I MyApp:D *:S
+adb logcat *:W  => display info with priority >= warning
+adb logcat *:V   => display log with priority  >= verbose (all) 
+export ANDROID_LOG_TAGS="ActivityManager:I MyApp:D *:S"
+------------------------------------------
+build scripts: oem/orange_scripts
+build android target
+$ ./build_android.sh evt1 lexus release
+$ ./build_android.sh evt2c lexus release
+$ ./build_android.sh evt3u lexus release
+
+build kernel
+$ ./1_build_android.sh kernel evt2u lexus release
+$ ./2_mm.sh [TAG] evt3u lexus release
+--------------------------------------------
+
+delta average = testing average value - average value before test
+
+Function definition for AGC1 and AGC2
+AGC1 AGC2 	Function
+0 		0 	AGC Function disabled
+0 		1 	AGC Limiter Function enabled
+1 		0 	AGC, Limiter, and Compression Functions enabled
+1 		1 	AGC, Limiter, Compression, and Noise Gate Functions enabled
+
+AGC1 and AGC2 current setting:
+AGC_DTMF : 01
+AGC_MUSIC: 10
+AGC_CALL : 00
+
+dir: kernel/arch/arm/mach-msm/gpiomux-8x60-orange.c
+Disable AGC1 and AGC2 by configure gpio136 and gpio137:
+echo 136 > /sys/class/gpio/export
+cat /sys/devices/virtual/gpio/gpio136/value
+echo low > /sys/devices/virtual/gpio/gpio136/direction
+
+
+echo 137 > /sys/class/gpio/export
+cat /sys/devices/virtual/gpio/gpio137/value
+echo low > /sys/devices/virtual/gpio/gpio137/direction
+
+AGC current situation:
+AGC1 : Low  AGC2 : High
+Only use AGC limiter function: 
+Set the threshold to prevent spk damage occurs.
+
+Check out disk usage on build pc daemon
+# more ~qisda/disk_stat.log
+------------------------------------------
+
+Debugfs support QTR device register access.
+Verify audio path and gain testing. 
+echo 1 > /sys/kernel/debug/msm_adie_codec/dump
+ Mounting debugfs 
+# mount -t debugfs debugfs /sys/kernel/debug 
+ Power up the adie codec and enable regulator first
+# echo 1 > /sys/kernel/debug/msm_adie_codec/power
+ Writing data: example address 0x8A, sata: 0x0C 
+# echo 0x8A 0x0C > /sys/kernel/debug/msm_adie_codec/poke 
+ Reading data: example address 0x8A 
+# echo 0x8A > /sys/kernel/debug/msm_adie_codec/peek 
+ Shows the read value in the ADB window 
+# cat /sys/kernel/debug/msm_adie_codec/peek 
+.0x0C
+ Dump all the register information to dmesg
+# echo 0x88 > /sys/kernel/debug/msm_adie_codec/dump
+
+------------------------------------------
+set the Tx and Rx device in audio native test command
+#echo "devctl -cmd=dev_switch_tx -dev_id=3" > /data/audio_test 
+#echo "devctl -cmd=enable_dev -dev_id=3"    > /data/audio_test 
+#echo "devctl -cmd=dev_switch_rx -dev_id=2" > /data/audio_test 
+#echo "devctl -cmd=enable_dev -dev_id=2"    > /data/audio_test
+#echo "playpcm path_of_file -id=xxx -repeat=x -dev=/dev/msm_pcm_dec or msm_pcm_out" > tmp/audio_test 
+#echo "playpcm /sdcard/pcm_stereo.wav -id=100 -repeat=0 -dev=/dev/msm_pcm_out" > /data/audio_test
+#echo "control_cmd -id=xxx -cmd=stop" > /data/audio_test
+#echo "devctl -cmd=enable_dev -dev_id=x" > /data/audio_test
+
+video native test commands:
+# adb push 4.mp4 /sdcard/
+Larkin.Huang
+# mm-vdec-omx-test /sdcard/4.mp4 2 2 1 1 1
+
+---------------------------------------------------------------------
+fastboot download procedure:
+adb shell reboot bootloader
+fastboot flash ptn   	 partition.bin 
+fastboot flash sbl1  	 sbl1.mbn 
+fastboot flash sbl2  	 sbl2.mbn 
+fastboot flash sbl3  	 sbl3.mbn 
+fastboot flash rpm   	 rpm.mbn 
+fastboot flash tz    	 tz.mbn 
+fastboot flash aboot 	 emmc_appsboot.mbn 
+fastboot flash boot   	 boot.img
+fastboot flash recovery  recovery.img 
+fastboot flash modem     NON-HLOS.bin 
+fastboot flash system    system.img.ext4
+fastboot flash userdata  userdata.img.ext4
+fastboot flash cache     cache.img.ext4
+fastboot flash persist   persist.img.ext4
+fastboot reboot
+------------------------------------
+fastboot command list
+D:\adb\fastboot\load\cairo>fastboot 0
+usage: fastboot [ <option> ] <command>
+
+commands:
+  update <filename>                        reflash device from update.zip
+  flashall                                 flash boot + recovery + system
+  flash <partition> [ <filename> ]         write a file to a flash partition
+  erase <partition>                        erase a flash partition
+  getvar <variable>                        display a bootloader variable
+  boot <kernel> [ <ramdisk> ]              download and boot kernel
+  flash:raw boot <kernel> [ <ramdisk> ]    create bootimage and flash it
+  devices                                  list all connected devices
+  reboot                                   reboot device normally
+  reboot-bootloader                        reboot device into bootloader
+
+options:
+  -w                                       erase userdata and cache
+  -s <serial number>                       specify device serial number
+  -p <product>                             specify product name
+  -c <cmdline>                             override kernel commandline
+  -i <vendor id>                           specify a custom USB vendor id
+  -b <base_addr>                           specify a custom kernel base address
+
+grep GB code from server:
+./repo_reget_code.sh oem 	*
+./repo_reget_code.sh amss 
+./repo_reget_code.sh android 	*
+./repo_reget_code.sh project   		==>  oem + android + amss
+
+grep ICS code from server:
+ ./ics_get_code.sh project  
+./ics_get_code.sh android
+./ics_get_code.sh oem
+./ics_get_code amss
+-----------------------------------
+compress files with tar
+#tar -jcv -f name.tar.bz2 file   => compress 
+#tar -jtv -f name.tar.bz2 file   => check
+#tar -jxv -f name.tar.bz2 -C dir => decompress
+------------------------------------
+make mrproper 
+
+Debug workqueue:
+If kworkers are going crazy (using too much cpu), there are two types
+of possible problems:
+
+        1. Something beeing scheduled in rapid succession
+        2. A single work item that consumes lots of cpu cycles
+
+The first one can be tracked using tracing:
+
+        $ echo workqueue:workqueue_queue_work > /sys/kernel/debug/tracing/set_event
+        $ cat /sys/kernel/debug/tracing/trace_pipe > out.txt
+        (wait a few secs)
+        ^C
+
+If something is busy looping on work queueing, it would be dominating
+the output and the offender can be determined with the work item
+function.
+
+For the second type of problems it should be possible to just check
+the stack trace of the offending worker thread.
+
+        $ cat /proc/THE_OFFENDING_KWORKER/stack
+
+The work item's function should be trivially visible in the stack
+trace.
+
+
+   89  2012-07-02 09:39:51 history | grep push
+   90  2012-07-02 09:40:03 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/device/boss/cairo.git HEAD:refs/for/MSM8660_ICS
+  329  2012-07-05 11:14:08 history | grep push 
+  330  2012-07-05 11:14:26 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+  396  2012-07-05 15:29:01 history | grep push
+  397  2012-07-05 15:29:21 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+  413  2012-07-05 15:43:23 git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/SWEP_GCAIB1A_v01.008.b_00
+ 1009  2012-07-11 11:28:38 history | grep push
+ 1010  2012-07-11 11:28:51 history | grep push >> cmd.log 
+  858  2012-08-22 11:00:14 bc
+  859  2012-08-22 11:00:30 whoami
+  860  2012-08-22 11:00:32 who
+  861  2012-08-22 11:00:33 w
+  862  2012-08-22 11:00:38 whatis w
+  863  2012-08-22 11:22:12 man find
+  864  2012-08-22 11:24:49 find android -size +1M 
+  865  2012-08-22 11:25:02 find android -size +1G
+  866  2012-08-22 11:25:20 find android -size +1G -exec ls -l {} \;
+  867  2012-08-22 11:25:54 history | tail >> /home/larkin/cmd.log 
+  996  2012-08-23 09:43:57 ldd /bin/ls
+  997  2012-08-23 09:44:28 nm /bin/ls | more
+  998  2012-08-23 09:49:13 echo $VAR_NAME
+  999  2012-08-23 09:51:43 bash
+ 1000  2012-08-23 17:13:14 fg
+ 1001  2012-08-24 08:40:41 bc
+ 1002  2012-08-24 08:42:50 cd c
+ 1003  2012-08-24 08:42:57 history | grep ulimit
+ 1004  2012-08-24 08:43:09 ulimit -s unlimited; ./seg
+ 1005  2012-08-24 08:43:19 history | tail >> /home/larkin/cmd.log 
+ 1123  2012-08-27 17:50:45 ranlib libstk.a
+ 1124  2012-08-27 17:50:49 file lib*
+ 1125  2012-08-27 17:51:14 mv libstack.a ..
+ 1126  2012-08-27 17:51:17 cd ..
+ 1127  2012-08-27 17:51:20 ls
+ 1128  2012-08-27 17:51:44 gcc main.c -L. -lstack -Istack -o main
+ 1129  2012-08-27 17:52:00 ls
+ 1130  2012-08-27 17:52:03 file main
+ 1131  2012-08-27 17:52:27 gcc -print-search-dirs
+ 1132  2012-08-27 17:52:39 history | tail >> /home/larkin/cmd.log 
+ 1138  2012-08-27 17:57:52 objdump -d main | more
+ 1139  2012-08-27 18:01:28 ls
+ 1140  2012-08-27 18:02:13 gcc main.c stack/stack.o stack/push.o stack/pop.o stack/empty.o -Istack -o mn
+ 1141  2012-08-27 18:02:16 ll mn
+ 1142  2012-08-27 18:02:20 file mn
+ 1143  2012-08-27 18:02:23 ./mn
+ 1144  2012-08-27 18:02:29 echo #?
+ 1145  2012-08-27 18:02:34 echo $?
+ 1146  2012-08-27 18:02:48 objdump -d mn| less
+ 1147  2012-08-27 18:03:24 history | tail >> /home/larkin/cmd.log 
+ 1156  2012-08-27 20:02:01 gcc -c -fPIC stack.c push.c pop.c empty.c 
+ 1157  2012-08-27 20:02:06 ls
+ 1158  2012-08-27 20:02:38 ll *.o
+ 1159  2012-08-27 20:03:00 file pop.
+ 1160  2012-08-27 20:03:07 file pop.o
+ 1161  2012-08-27 20:03:49 file *.o
+ 1162  2012-08-27 20:04:06 man shared library
+ 1163  2012-08-27 20:04:10 man so
+ 1164  2012-08-27 20:04:19 history 
+ 1165  2012-08-27 20:04:38 history | tail >> /home/larkin/cmd.log 
+gcc -c -g stack.c push.c pop.c empty.c
+ 1171  2012-08-27 20:15:52 ll *.o
+ 1172  2012-08-27 20:15:54 file *.o
+ 1173  2012-08-27 20:16:26 sed -n $,$p /home/larkin/cmd.log 
+ 1174  2012-08-27 20:16:45 sed -n '$,$p' /home/larkin/cmd.log 
+ 1175  2012-08-27 20:16:58 gcc -c -g stack.c push.c pop.c empty.c
+ 1176  2012-08-27 20:17:02 file *.o
+ 1177  2012-08-27 20:17:09 ll *.o
+ 1178  2012-08-27 20:17:28 man objdump 
+ 1179  2012-08-27 20:18:28 objdump -dS push.o
+ 1180  2012-08-27 20:20:13 history | tail >> /home/larkin/cmd.log 
+ 1024  2012-08-28 08:47:44 objdump -dS push.o | grep 0x0
+ 1025  2012-08-28 08:48:56 grep -n readelf /home/larkin/cmd.log 
+ 1026  2012-08-28 08:49:11 readelf -a push.o 
+ 1027  2012-08-28 08:52:42 cd ..
+ 1028  2012-08-28 08:53:33 gcc -g main.c stack.o pop.o push.o empty.o -Istack -o main
+ 1029  2012-08-28 08:54:07 gcc -g main.c stack/stack.o stack/pop.o stack/push.o stack/empty.o -Istack -o main
+ 1030  2012-08-28 08:54:20 ls stack
+ 1031  2012-08-28 08:54:40 cp ../ar/stack/stack.h ./stack/
+ 1032  2012-08-28 08:54:43 gcc -g main.c stack/stack.o stack/pop.o stack/push.o stack/empty.o -Istack -o main
+ 1033  2012-08-28 08:54:55 history | tail >> /home/larkin/cmd.log 
+ 1047  2012-08-28 16:31:27 ls
+ 1048  2012-08-28 16:31:45 gcc -shared -o libstack.so stack.o push.o pop.o empty.o
+ 1049  2012-08-28 16:32:08 echo $?
+ 1050  2012-08-28 16:32:15 rm *.o
+ 1051  2012-08-28 16:32:17 ls
+ 1052  2012-08-28 16:32:54 gcc -c -g -fPIC stack.c push.c pop.c empty.c 
+ 1053  2012-08-28 16:33:04 gcc -shared -o libstack.so stack.o push.o pop.o empty.o
+ 1054  2012-08-28 16:33:05 ls
+ 1055  2012-08-28 16:33:09 file libstack.so 
+ 1056  2012-08-28 16:33:19 history | tail >> /home/larkin/cmd.log 
+ 1063  2012-08-28 16:36:57 ls
+ 1064  2012-08-28 16:39:42 mv stack/libstack.so .
+ 1065  2012-08-28 16:39:44 gcc main.c -g -L. -lstack -Istack -o main
+ 1066  2012-08-28 16:39:54 ls
+ 1067  2012-08-28 16:40:36 mv libstack.so stack
+ 1068  2012-08-28 16:41:03 gcc main.c -g -Lstack -lstack -Istack -o main
+ 1069  2012-08-28 16:41:06 ll main
+ 1070  2012-08-28 16:41:09 ./main
+ 1071  2012-08-28 16:41:21 echo $?
+ 1072  2012-08-28 16:41:49 history | tail >> /home/larkin/cmd.log 
+ 1033  2012-08-28 16:23:10 dmesg
+ 1034  2012-08-28 20:42:44 cd
+ 1035  2012-08-28 20:42:47 cd jb/android/
+ 1036  2012-08-28 20:42:48 repo sync
+ 1037  2012-08-28 20:43:28 repo start cairo_jb --all
+ 1038  2012-08-28 20:43:32 cd ..
+ 1039  2012-08-28 20:43:32 ls
+ 1040  2012-08-28 20:44:06 git clone git://10.85.21.71/cairo_jb/oem.git -b cairo_jb
+ 1041  2012-08-28 20:44:08 ls
+ 1042  2012-08-28 20:44:19 history | tail >> /home/larkin/cmd.log 
+ 1004  2012-08-29 09:46:30 cd c/stk/so
+ 1005  2012-08-29 09:46:31 ls
+ 1006  2012-08-29 09:47:02 LD_LIBRARY_PATH=. ./main
+ 1007  2012-08-29 09:47:19 ldd main
+ 1008  2012-08-29 09:47:27 file stack/libstack.so 
+ 1009  2012-08-29 09:47:43 LD_LIBRARY_PATH=stack ./main
+ 1010  2012-08-29 09:47:49 cat main.c 
+ 1011  2012-08-29 09:48:11 LD_LIBRARY_PATH=stack ./main
+ 1012  2012-08-29 09:48:14 echo $?
+ 1013  2012-08-29 09:48:35 history | tail >> /home/larkin/cmd.log 
+ 1034  2012-08-29 10:07:36 whatis -rpath
+ 1035  2012-08-29 10:07:45 ls
+ 1036  2012-08-29 10:07:48 ldd main
+ 1037  2012-08-29 10:07:51 rm main
+ 1038  2012-08-29 10:08:43 gcc main -Lstack -lstack -Istack -o main -Wl,-rpath,/home/larkin/c/stk/so/stack
+ 1039  2012-08-29 10:08:54 gcc main.c -Lstack -lstack -Istack -o main -Wl,-rpath,/home/larkin/c/stk/so/stack
+ 1040  2012-08-29 10:08:56 ll main
+ 1041  2012-08-29 10:08:59 ldd main
+ 1042  2012-08-29 10:09:04 pwd
+ 1043  2012-08-29 10:09:18 history | tail >> /home/larkin/cmd.log 
+ 1028  2012-08-30 12:32:56 git log --author=Jack
+ 1029  2012-08-30 12:33:05 git log --author=Reed
+ 1030  2012-08-30 12:33:13 git log --author=Reed.Wang
+ 1031  2012-08-30 12:33:25 cd ..
+ 1032  2012-08-30 12:33:39 repo forall -c git log --author=Reed.Wang
+ 1033  2012-08-30 12:34:07 ls
+ 1034  2012-08-30 12:34:27 repo forall -pc git log --author=Reed.Wang
+ 1035  2012-08-30 12:34:36 repo help forall
+ 1036  2012-08-30 12:35:00 repo forall -p -c git log --author=Reed.Wang
+ 1037  2012-08-30 12:35:12 history | tail >> /home/larkin/cmd.log 
+ 1029  2012-08-31 10:18:56 cat empty.
+ 1030  2012-08-31 10:18:59 cat empty.c
+ 1031  2012-08-31 10:21:17 cat ../main.c 
+ 1032  2012-08-31 10:22:07 history | grep gcc
+ 1033  2012-08-31 10:23:01 cat pop.c
+ 1034  2012-08-31 10:28:21 history | tail 
+ 1035  2012-08-31 10:28:26 ls
+ 1036  2012-08-31 10:28:30 ll libstack.so.1.0 
+ 1037  2012-08-31 10:28:37 gcc -shared -Wl,-soname,libstack.so.1 -o libstack.so.1.0 stack.o push.o pop.o empty.o
+ 1038  2012-08-31 10:28:46 history | tail >> /home/larkin/cmd.log 
+  658  2012-09-10 11:24:59 readeld -a m > elf.executable
+  659  2012-09-10 11:25:07 readelf -a m > elf.executable
+  660  2012-09-10 11:25:19 readelf -a a.o > elf.relocatable
+  665  2012-09-10 11:27:43 vi elf.executable
+  676  2012-09-10 14:08:37 readelf -a sensors.default.nonconst.so > elf.shared.objects
+

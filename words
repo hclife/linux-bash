@@ -250,8 +250,9 @@ MMX	:MultiMedia eXtensions
 AUI	:Attachment Unit Interface
 bma	:bosch mxxx accelerometer
 bmm	:bosch mxxx magnetometer
-bmc	:= bma + bmm
-SIP	:System In package
+bmc	:bma + bmm
+SIP	:System In package; Silicon Intellectrual Property
+SOPC	:System on Programmable Chip
 HBM	:Halt Burst Mode
 ODR	:Output Data Rate
 SES	:SocioEconomic Status; SCSI Enclosure Services
@@ -456,6 +457,7 @@ OpenGL	:Open Graphics Library
 OpenGLES:OpenGL for Embedded Systems
 MPU	:Memory Protection Unit; Mobility Processing Unit;
 	:Mobile Power Unit; Motion Processing Unit
+MCU	:Micro Controller Unit
 ACIA	:Asynchronous Communications Interface Adapter
 ECL	:Emitter Coupled Logic
 CMRR	:Common-Mode Rejection Ratio

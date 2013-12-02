@@ -909,6 +909,7 @@ SWF	:a flash:header+body
 DivX	:Digital Video eXpress
 OMX	:Open Media Acceleration
 VOB	:a Video Format
+AIF	:Audio InterFace
 AIFF
 FITS	:Flexible Image Transport System
 TIFF	:Tagged Image File Format

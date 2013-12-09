@@ -1,0 +1,97 @@
+
+Native interface in .java call JNI library of .cpp 
+private native void processFile(String path, String mimeType, MediaScannerClient client);
+    {"processFile",       "(Ljava/lang/String;Ljava/lang/String;Landroid/media/MediaScannerClient;)V",    
+                                                        (void *)android_media_MediaScanner_processFile},
+static void
+android_media_MediaScanner_processFile(JNIEnv *env, jobject thiz, jstring path, jstring mimeType, jobject client)
+jint JNI_OnLoad(JavaVM* vm, void* reserved)
+
+Mark 1213 in AudioFlinger.cpp
+
+AudioFlinger::AudioFlinger()
+    : BnAudioFlinger(),
+        mAudioHardware(0), mMasterVolume(1.0f), mMasterMute(false), mNextUniqueId(1), mFmOn(false)
+	mAudioHardware = AudioHardwareInterface::create();
+	mAudioHardware->initCheck()
+	setMode(mMode);
+
+AudioFlinger::~AudioFlinger()
+	closeInput(mRecordThreads.keyAt(0));	//mRecordThreads
+	closeOutput(mPlaybackThreads.keyAt(0));	//mPlaybackThreads
+	closeSession(mLPAHandle);				//close the output
+
+status_t AudioFlinger::dumpClients(int fd, const Vector<String16>& args)
+status_t AudioFlinger::dumpInternals(int fd, const Vector<String16>& args)
+status_t AudioFlinger::dumpPermissionDenial(int fd, const Vector<String16>& args)
+status_t AudioFlinger::dump(int fd, const Vector<String16>& args)
+	checkCallingPermission(String16("android.permission.DUMP"))
+		checkCallingPermission(permission, NULL, NULL);
+			checkPermission(permission, pid, uid);
+	dumpPermissionDenial(fd, args);
+	dumpClients(fd, args);
+	dumpInternals(fd, args);
+	mAudioHardware->dumpState(fd, args);
+
+sp<IAudioTrack> AudioFlinger::createTrack
+	client = new Client(this, pid);
+	mClients.add(pid, client);
+	thread->createTrack_l
+	trackHandle = new TrackHandle(track);
+
+void AudioFlinger::createSession
+	sessions = t->hasAudioSession(*sessionId);
+	mLPAEffectChain = t->getEffectChain_l(*sessionId);
+	mLPAEffectChain->setLPAFlag(true);
+
+void AudioFlinger::deleteSession()
+	mLPAEffectChain->setLPAFlag(false);
+	sp<EffectModule> effect = mLPAEffectChain->getEffectFromIndex_l(i);
+	effect->configure();
+	mLPAEffectChain.clear();
+
+uint32_t AudioFlinger::sampleRate(int output) const
+	thread->sampleRate();
+		return mSampleRate; 
+
+status_t AudioFlinger::setMode(int mode)
+	mAudioHardware->setMode(mode);
+
+status_t AudioFlinger::setMicMute(bool state)
+	    status_t ret = mAudioHardware->setMicMute(state);
+
+bool AudioFlinger::getMicMute() const
+	mAudioHardware->getMicMute(&state);
+
+status_t AudioFlinger::setStreamVolume(int stream, float value, int output)
+	thread->setStreamVolume(stream, value);
+
+bool AudioFlinger::isStreamActive(int stream) const	
+	mPlaybackThreads.valueAt(i)->isStreamActive(stream)
+	AudioParameter result(mAudioHardware->getParameters(key));
+
+status_t AudioFlinger::setParameters(int ioHandle, const String8& keyValuePairs)
+	mNewParameters.add(keyValuePairs);
+	mWaitWorkCV.signal();
+	result = mAudioHardware->setParameters(keyValuePairs);
+	String8 key = String8(AudioParameter::keyRouting);
+	
+void AudioFlinger::registerClient(const sp<IAudioFlingerClient>& client)
+	sp<NotificationClient> notificationClient = new NotificationClient(this, client, binder);
+	mNotificationClients.add(binder, notificationClient);
+	client->ioConfigChanged(AudioSystem::A2DP_OUTPUT_STATE, mA2DPHandle, NULL);
+
+status_t AudioFlinger::deregisterClient(const sp<IAudioFlingerClient>& client)
+
+AudioFlinger::ThreadBase::ThreadBase(const sp<AudioFlinger>& audioFlinger, int id)
+    :   Thread(false),
+        mAudioFlinger(audioFlinger), mSampleRate(0), mFrameCount(0), mChannelCount(0),
+        mFrameSize(1), mFormat(0), mStandby(false), mId(id), mExiting(false)
+
+
+bool AudioFlinger::MixerThread::threadLoop()
+bool AudioFlinger::DirectOutputThread::threadLoop()
+bool AudioFlinger::DuplicatingThread::threadLoop()
+bool AudioFlinger::RecordThread::threadLoop()
+	
+	

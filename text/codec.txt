@@ -1,0 +1,169 @@
+Adie codec power configuration related code:
+GB	==> board-msm8x60-common.c
+
+1. timpani codec settings  ==> used
+static struct marimba_platform_data timpani_pdata = {
+	.slave_id[MARIMBA_SLAVE_ID_CDC]	= TIMPANI_SLAVE_ID_CDC_ADDR,
+	.slave_id[MARIMBA_SLAVE_ID_QMEMBIST] = TIMPANI_SLAVE_ID_QMEMBIST_ADDR,
+	.marimba_setup = msm_timpani_setup_power,
+	.marimba_shutdown = msm_timpani_shutdown_power,
+	.codec = &timpani_codec_pdata,
+};
+
+2. marimba codec settings  ==> obsolete
+static struct marimba_platform_data marimba_pdata = {
+	.slave_id[SLAVE_ID_BAHAMA_FM]        = BAHAMA_SLAVE_ID_FM_ADDR,
+	.slave_id[SLAVE_ID_BAHAMA_QMEMBIST]  = BAHAMA_SLAVE_ID_QMEMBIST_ADDR,
+	.bahama_setup = msm_bahama_setup_power,
+	.bahama_shutdown = msm_bahama_shutdown_power,
+	.bahama_core_config = msm_bahama_core_config,
+	.fm = &marimba_fm_pdata,
+};
+
+
+
+
+#define GPIO_CDC_RST_N CDC_RST_N	//GPIO_CDC_RST_N=193
+#define CDC_RST_N	(PM8058_GPIO_PM_TO_SYS(PM_GPIO_21))		//CDC_RST_N=193
+#define PM_GPIO_21   20
+#define PM8058_GPIO_PM_TO_SYS(pm_gpio)	(pm_gpio + PM8058_GPIO_BASE)
+#define PM8058_GPIO_BASE			NR_MSM_GPIOS
+#define NR_MSM_GPIOS 173
+
+Audio related regulators list:
+1. vreg_timpani_1		==>  8058_L0  :1.2v digital
+2. vreg_timpani_2		==>  8058_S3  :1.8v IO
+3. vreg_timpani_cdc_apwr==>  8058_S4  :2.2v
+4. snddev_reg_l10		==>  8058_L10 :2.6v (not used for audio)
+5. snddev_reg_ncp		==>  8058_ncp :-1.8v
+6. OTHC_MICBIAS_*		==>  8058_L5  :2.85v
+
+
+msm_timpani_setup_power(void)
+	vreg_timpani_1 = regulator_get(NULL, "8058_l0");
+	vreg_timpani_2 = regulator_get(NULL, "8058_s3");
+	regulator_set_voltage(vreg_timpani_1, 1200000, 1200000);	//8058_L0:1.2v digital
+	regulator_set_voltage(vreg_timpani_2, 1800000, 1800000);	//8058_S3:1.8v IO
+	regulator_enable(vreg_timpani_1);
+	regulator_set_optimum_mode(vreg_timpani_1, 5000);
+	regulator_enable(vreg_timpani_2);
+	gpio_request(GPIO_CDC_RST_N, "CDC_RST_N");
+		//Reset the codec on AUD_RESET_N
+		gpio_direction_output(GPIO_CDC_RST_N, 1);
+		usleep_range(1000, 1050);
+		gpio_direction_output(GPIO_CDC_RST_N, 0);
+		usleep_range(1000, 1050);
+		gpio_direction_output(GPIO_CDC_RST_N, 1);
+		gpio_free(GPIO_CDC_RST_N);
+		
+msm_timpani_codec_power(int vreg_on)
+	vreg_timpani_cdc_apwr = regulator_get(NULL, "8058_s4");
+	regulator_set_voltage(vreg_timpani_cdc_apwr, 2200000, 2200000);	//8058_S4:2.2v
+	regulator_enable(vreg_timpani_cdc_apwr);
+
+
+board-msm8x60-audio.c 
+msm_snddev_voltage_on(void)
+	#if PM8058_L10_USED		/*Leo: 8058_l10 is not used for Audio*/
+		snddev_reg_l10 = regulator_get(NULL, "8058_l10");			
+		regulator_set_voltage(snddev_reg_l10, 2600000, 2600000);	//8058_L10:2.6v
+		regulator_enable(snddev_reg_l10);
+	#endif
+			
+		snddev_reg_ncp = regulator_get(NULL, "8058_ncp");
+		regulator_set_voltage(snddev_reg_ncp, 1800000, 1800000);	//8058_ncp:-1.8v 
+		regulator_enable(snddev_reg_ncp);
+	
+static struct othc_regulator_config othc_reg = {
+	.regulator	 = "8058_l5",										//8058_L5:2.85v
+	.max_uV		 = 2850000,
+	.min_uV		 = 2850000,
+};
+
+static struct pmic8058_othc_config_pdata othc_config_pdata_0	OTHC_MICBIAS_0 
+static struct pmic8058_othc_config_pdata othc_config_pdata_1 	OTHC_MICBIAS_1	(OTHC)
+static struct pmic8058_othc_config_pdata othc_config_pdata_2 	OTHC_MICBIAS_2
+
+	
+	
+#define PM8901_IRQ_BASE				(PM8058_IRQ_BASE + NR_PMIC8058_IRQS)//256 + 173 + 256
+#define PM8058_IRQ_BASE				(NR_MSM_IRQS + NR_GPIO_IRQS)		//256 + 173
+#define NR_MSM_IRQS 256
+#define NR_GPIO_IRQS 173
+
+
+static struct i2c_board_info msm_marimba_board_info[] = {
+	{
+		I2C_BOARD_INFO("marimba", 0xc),
+		.platform_data = &marimba_pdata,
+	}
+};
+
+#if  defined(CONFIG_MARIMBA_CORE) && defined(CONFIG_BAHAMA_CORE) 	
+{
+		I2C_SURF | I2C_FFA | I2C_FLUID,
+		MSM_GSBI7_QUP_I2C_BUS_ID,
+		msm_marimba_board_info,
+		ARRAY_SIZE(msm_marimba_board_info),
+	},
+#endif /* CONFIG_MARIMBA_CORE */
+
+
+
+Qualcom 307002 Android Release
+
+
+#if defined(CONFIG_MARIMBA_CORE)
+	{
+		I2C_SURF | I2C_FFA | I2C_FLUID,
+		MSM_GSBI7_QUP_I2C_BUS_ID,
+		msm_marimba_board_info,
+		ARRAY_SIZE(msm_marimba_board_info),
+	},
+#endif /* CONFIG_MARIMBA_CORE */
+
+a
+static struct marimba_pltform_data timpani_pdata = {
+	.slave_id[MARIMBA_SLAVE_ID_CDC]	= TIMPANI_SLAVE_ID_CDC_ADDR,
+	.slave_id[MARIMBA_SLAVE_ID_QMEMBIST] = TIMPANI_SLAVE_ID_QMEMBIST_ADDR,
+	.marimba_setup = msm_timpani_setup_power,
+	.marimba_shutdown = msm_timpani_shutdown_power,
+	.codec = &timpani_codec_pdata,
+};
+
+static struct i2c_board_info msm_i2c_gsbi7_timpani_info[] = {
+	{
+		I2C_BOARD_INFO("timpani", TIMPANI_I2C_SLAVE_ADDR),
+		.platform_data = &timpani_pdata,
+	},
+};
+
+
+
+The thermal mitigation algorithm 3 steps:
+1. Temperature monitoring
+2. Thermal state determination
+3. Mitigation/power reduction
+
+Derrick's workaround solution code flow:
+marimba_probe
+	init_timer(&stats_timer);
+	create_singlethread_workqueue
+	pdata->marimba_setup();
+	get_adie_type();	
+		1.ok	==> marimba_probe_func(client, id, rc)
+						i2c_get_adapter
+						i2c_new_dummy
+						marimba_init_reg
+						marimba_add_child
+		2.fail	==> marimba_timer_func
+						INIT_WORK((struct work_struct *) work, marimba_event_worker);
+						marimba_event_worker
+							get_adie_type();
+							1.1.del_timer
+							1.2.mod_timer
+							2.ok ==>  marimba_probe_func
+						queue_work(marimba_workqueue, (struct work_struct *) work)
+
+
+msm8x60_init_buses

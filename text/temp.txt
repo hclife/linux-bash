@@ -1,0 +1,212 @@
+	int result;
+	unsigned char serial_data[COMPASS_NUM_AXES];
+	unsigned char chipid_data = 0;
+	struct ak8975_private_data *private_data;
+
+	printk(KERN_INFO "ak8975_init entry.\n");
+	private_data = (struct ak8975_private_data *)
+	    kzalloc(sizeof(struct ak8975_private_data), GFP_KERNEL);
+
+	if (!private_data)
+		return INV_ERROR_MEMORY_EXAUSTED;
+
+	result = inv_serial_single_write(mlsl_handle, pdata->address,
+					 AK8975_REG_CNTL,
+					 AK8975_CNTL_MODE_POWER_DOWN);
+
+inv_error_t inv_serial_open(char const *port, void **sl_handle)
+{
+    INVENSENSE_FUNC_START;
+
+    if (NULL == port) {
+        port = I2CDEV;
+    }
+    *sl_handle = (void*) open(port, O_RDWR | O_NONBLOCK);
+    if(sl_handle < 0) {
+        /* ERROR HANDLING; you can check errno to see what went wrong */
+        MPL_LOGE("inv_serial_open\n");
+        MPL_LOGE("I2C Error %d: Cannot open Adapter %s\n", errno, port);
+        return INV_ERROR_SERIAL_OPEN_ERROR;
+    } else {
+        MPL_LOGI("inv_serial_open: %s\n", port);
+    }
+
+    return INV_SUCCESS;
+}
+
+
+static void *mlsl_handler;
+static struct ext_slave_descr *slaver;
+static struct ext_slave_platform_data *pdatar;
+/* -------------------------------------------------------------------------- */
+static int ak8975_init(void *mlsl_handle,
+		       struct ext_slave_descr *slave,
+		       struct ext_slave_platform_data *pdata)
+
+
+******** Building Android ********
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=4.0.4
+TARGET_PRODUCT=msm7627a
+TARGET_BUILDSPEC=qisda
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=debug
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+HOST_ARCH=x86
+HOST_OS=linux
+HOST_BUILD_TYPE=release
+BUILD_ID=IMM76I
+============================================
+
+
+
+
+\\10.85.21.150\larkin\evb\android\kernel\drivers\input\misc\bma250.c
+F:\Sensor\bmc050_rls_20120305_amo\bmc050_rls_20120305_amo\driver\bma250_driver.c
+Flash programmer file name: EMMCBLD.HEX / MPRG8x25.HEX
+Boot Image: 7x30_msimage.mbn / 8x25_msimage.mbn
+
+	/* Larkin.Huang add patch to silicon revision check.
+	   Suppressed product revision check, hardcoded to revision 26 */
+	printk(KERN_INFO "Manually assign 26 to index according to invensense patch.\n");
+	if (index == 0)	index = 26;
+
+/home/larkin/evb/android/out/debug/target/product/msm7627a/obj/KERNEL_OBJ/drivers/input/misc
+
+
+你好，我是狮山堂阿拉法小组长：黄超。
+If you have any Questions, please ask, thanks. 
+Best Regards
+Larkin.Huang
+8866-6062
+
+
+
+Dear All
+
+目前 FTD sensors 这边评估的情况如下：
+oslo / dubai 使用的sensors如下表1所示，除了Gyroscope 以外，oslo / dubai 使用的 sensors 都是一致的，
+因此暂定 Gsensor / Ecompass / ALS / Psensor 的接口可以放置不动，只需要增加 Gyroscope FTD 接口，表2所示；
+Gyroscope 使用的是 Bosch BMG160，IC定义的相应功能和BMC050一脉相承，可能后续需要新增加相应的测试接口。
+
+
+If you have any Questions, please ask, thanks. 
+Best Regards
+Larkin.Huang
+8866-6062
+
+
+
+
+
+
+"Sai:
+因为油墨的印刷存在差异，Cairo后来最终的做法是几乎放开此油墨透光率的规格。如果需要严格控制材料建议直接向PM或者机构提出需求。"
+问题原因是材料的透光率有差异，导致Lsensor calibration的数值不在范围内。
+我们的提议议是先对来料进行把关，避免材料差异过大；
+并由HW提供合理spec，再让SW去卡关，以免再出现许多fail的状况。
+
+全程  约7.2公里/18分钟
+金庄村收起1.从何山路出发1) 从起点向正东方向出发，沿何山路行驶3.6公里，过何山桥约190米后直行进入金门路收起2. 金门路到终点1) 沿金门路行驶150米，朝西环路高架方向，稍向右转2) 继续沿金门路行驶1.7公里，右转进入桐泾北路3) 沿桐泾北路行驶560米，过右侧的苏州地产大厦，左转进入干将西路4) 沿干将西路行驶630米，右转进入烽火路5) 沿烽火路行驶320米，到达终点(在道路左侧)通客服(烽火路店)
+
+
+这里将该分享遗留的相关问题解释如下：
+1. 该内容是针对的编译器是RVCT还是GCC？
+=>  该文档内容是针对GCC的编译和链接过程来说的，不包含RVCT相关内容。
+	RVCT由ARM推出，也是一种编译器，据说效率较GCC高，但不是免费的；GCC是开源的编译器，是免费的。
+
+2. Linux 加载程序时全局数据空间的分配过程是怎么样？如果数据在库里面的话，是否每个使用它的进程会复制一份？
+=>	共享库的代码段，也就是每个函数，可能是在内存中只有一份copy；
+	但是全局变量，包括静态变量，全局静态变量在每个进程中都有独立的copy。
+	这里做过实验，即在a.c 中定义一个全局变量，fa是调用 liba.so 的进程，
+	在fa中修改这个全局变量，再运行./a 看其是否也被更改，结果发现没有，于是得出上述结论。
+
+3. 我们写的程序是如何使用到库里面的 routine ？ 对于静态库和动态库分别是什么情况？
+=>	a. 对于静态库来说，程序在链接过程中已经将库中的 routine 绑定到了程序本身，程序在加载执行时就不再需要静态库了。
+	b. 对于动态库来说，它将许多链接过程都推迟到了程序启动的时候，因此程序在执行时需要动态库的存在；
+	每次程序执行时就调用到动态链接器ld.so来做该动作，主要是去查找程序所需要的各个库，routine的地址直到第一次被调用的时候才绑定。
+
+4. BSS 是什么段，它默认初始化为零的时间是在什么时候发生？
+=>	BSS是用于放置未初始化的全局变量和局部静态变量。
+目前个人的理解中，这是动态链接器ld.so在程序开始运行前映射页面到内存中的时候所做的，从《linkers and loaders》书中知道，当ld.so 找到共享库后，读取header后得到指向其.dynamic段的指针，然后再做map的过程中，会为库的代码和数据分配内存，此时就会将BSS段分配初始化为0的页，即BSS在程序加载时清零。
+
+5. 强符号和弱符号的处理规则是什么？
+=>	a. 不允许强符号的多次定义
+	b. 若符号在某个目标文件中为强，在其他目标文件中为弱，则选择强符号的定义
+	c. 若符号在所有文件中都是弱，则选择占用空间最大的那一个为该符号的定义
+
+1.1 Scope [整体描述该文档涵盖的内容，涉及到的测试项目等]
+Example: 
+该文档主要是定义项目开发过程中WLAN性能测试的测试项目，测试方法和测试步骤，并记录各项的测试结果。其中包括WLAN吞吐量测试，时间消耗测试，压力测试，功耗测试，兼容性测试，WLAN/BT/Modem共存测试，CPU loading测试，异常情况测试，边界条件测试，以及其他网络性能测试，Security相关测试，射频性能测试等几个部分：
+?	WLAN吞吐量测试主要是测试WLAN的传输速度。
+*	时间消耗测试主要是测试WLAN开关时间，扫描和连接路由器的时间。
+*	压力测试是测试WLAN功能的稳定性。
+*	功耗测试会测试手机中WLAN功能的耗电情况。
+*	兼容性测试主要关注手机与其他厂商的WLAN产品之间的互操作性和兼容性问题。
+*	WLAN/BT/Modem共存测试主要是关注WLAN与BT，WLAN与Modem功能是否存在冲突和互相干扰。
+*	CPU loading是测试WLAN功能在全速工作时所占用CPU的负荷。
+*	异常测试是测试手机在进行了某些异常操作后WLAN模块的行为。
+*	边界条件测试是测试WLAN模块的外部供电等情况是否满足要求。
+*	WLAN其他网络性能测试主要测试网络传输质量，网络延时和丢包率等。
+*	WLAN Security测试主要包括WEP/WPA/WPA2/WAPI这几种认证加密协议，以及测试在这些认证加密类型中互相切换等。
+*	WLAN射频性能的测试主要涉及RF方面的性能，需要借助专门的测试仪器，目前的项目中是送给厂商帮忙测试的，这里会附上厂商的测试报告。
+
+Sensors:
+该文档主要是定义项目开发过程中Gsensor/Ecompass 性能测试的相关测试项目，测试方法和测试步骤，并记录各项测试结果，其中包括精确度测试，稳定性测试，时间消耗测试，用户体验测试等几个部分：
+
+* 精确度测试主要是测试手机处于一种状态下，Gsensor/Ecompass的数据精确度，这里我们使用合成的Orientation角度数据来测试：
+1. 对于Gsensor是在空中旋转手机的时候，以量角器目前所在角度为参考，观察手机显示出 Roll, Pictch, Yaw 的角度数据，对比量角器目前所在角度，观察两者的偏差；
+2. 对于Ecompass是拿着物理指南针作为参考，先将手机分别指向东南西北，观察此时手机显示出的 Azimuth 角度数据，对比目前东西南北的角度，观察两者的偏差。
+
+* 稳定性测试主要是测试手机在不同的 Bandwidth (Sample rate = 2 * Bandwidth) 等级下sensor数据的稳定性，即数据的波动范围如何。
+
+*时间消耗测试主要是测试当手机指向一个特定方位时，Azimuth 转移到对应角度所需要的时间。
+
+*用户体验测试主要是测试手机在玩重力感应游戏和方位感应游戏时的用户体验如何，比如是否足够灵敏等。
+
+1.2 Test Preparation [说明测试前所需做的准备工作和使用的软硬件版本]
+
+* 功耗测试主要是去测试手机工作状态时，Gsensor/Ecompass 的耗电情况。 
+* 压力测试主要是测试 Gsensor/Ecompass 在工作期间的稳定性。
+* 兼容性测试主要是关注目前平台的手机与Andorid 市场上Gsensor/Ecompass 相关应用的互操作性和兼容性问题。
+* CPU Loading测试主要是看 Gsensor/Ecompass 的功能在工作时所占用的cpu负荷。
+* 边界条件测试是测试sensor module 外部的供电情况是否满足要求。
+* 异常情况测试是测试手机在进行了某些异常操作之后sensor module 的表现是否正常。
+*用户体验测试主要是测试手机用户在玩重力感应游戏和方位感应游戏时的感受如何，比如是否足够灵敏等。
+[定义异常测试的子项目]（如测试各个功能在使用时被异常打断的场景，或者功能运行过程中直接断电，开机后看该功能是否能正常进入和使用）
+
+10.1 [定义边界条件测试的子项目]（这里主要测试该功能涉及到的电源的使用，信号的电压是否符合器件的spec要求）
+10.1.1 测试目的
+[测试电池电压（在用户可能遇到的最大电池电压和最小电池电压的情况下）该功能涉及到的电源电压和信号电压是否符合要求，比如：电池低电量时touch的供电电压是否符合要求，是否会出现touch失效或误触发的现象]
+10.1.2 测试方法和步骤
+
+
+2 Throughput测试（举例）
+2.1 WLAN吞吐量测试
+2.1.1 测试目的
+WLAN吞吐量测试是测试手机WLAN模式下上传和下载数据的传输速度，这是衡量WLAN网络性能的主要指标之一，直接影响WLAN的整体性能和用户体验。
+* 精确度测试主要是测试手机处于一种状态下，Gsensor/Ecompass的数据精确度，这里我们使用合成的Orientation角度数据来测试：
+1. 对于Gsensor是在空中旋转手机的时候，以量角器目前所在角度为参考，观察手机显示出 Roll, Pictch, Yaw 的角度数据，对比量角器目前所在角度，观察两者的偏差；
+2. 对于Ecompass是拿物理指南针作为参考，先将手机分别指向东南西北，观察此时手机显示出的 Azimuth 角度数据，对比目前东西南北的角度，观察两者的偏差。
+
+2.1.2 测试方法和步骤
+该项测试分为两部分，一部分针对802.11b/g，另一部分是针对802.11n。
+。。。
+2.1.3 测试所需资源
+测试所用 Iperf 工具可从以下两种方式中获取：
+1. Internet:
+http://www.noc.ucf.edu/tools/iperf/
+http://sourceforge.net/projects/iperf/
+2. QCS server:
+\\ht0-pvcs\HT1\_WGC15\Misc\Process\BSP_Test_Plan\Performance_Test_Plan\Performance_Test_Tools\WLAN
+
+2.1.4 测试结果
+
+*时间消耗测试主要是测试当手机指向一个特定方位时，Azimuth 转移到对应角度所需要的时间。
+
+[RTS(Return To Sleep)测试手机在使用该功能涉及的各个场景并退出后是否能正常进入到sleep状态]
+
+Ecompass如果受到周围磁场干扰，或者其他因素的影响后，准确度会降低，此时需要用户进行重新校正(calibration)，即在空旷的场地分别向内和向外画8字，根据Bosch Sensortec Ecompass sw 取得各个方向上的数据求得平均值，这样可以重新得到精确的指北方向。

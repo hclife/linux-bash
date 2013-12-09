@@ -1,0 +1,23 @@
+ST联系方式如下，有问题可以优先与下面的三位FAE联系。
+意法半导体（ST）	=> L3GD20
+8800 10689177 xxxxxxxx
+Sales(TW)	  Howard Chen	howard.chen@st.com Mobile: +886-920-893-119	Tel: +8862-6603-2588 ext:2578	　
+FAE（台湾）Chiung LEE	chiung.lee@st.com 	 Mobile: 0922-150-876	TEL: +8862-6603-2115
+FAE（上海）Travis Tu	travis.tu@st.com	 Mobile: 18616386939	　	　
+FAE（上海）Yi Wu	　			 Mobile: 86 13761768266	　	　
+FAE	  Morris Chen	Morris.CHEN@st.com
+
+MTK 
+Sensors HW 	Mr Zhao	vend_yp.zhao@mediatek.com	Mobile: 88635670766	 Tel: 02154519650-85417
+Sensors SW	Mr Meng						 Tel: 02154519650-85461
+
+Taiwan Dublin team:
+–	HW PM : David Chang
+–	PCC : Claire CC Huang
+–	HWPL : Agi CC Hsu
+–	SWPL : Keith Huang
+–	BSP Leader : Tim Huang
+–	BB Leader : Kenny YT Wang
+–	RF Leader : Stanley Tu
+–	MDPL : Hsinliang Chen
+–	Tool integrator : Bruce Chen

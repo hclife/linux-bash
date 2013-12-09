@@ -1,0 +1,404 @@
+#otp_test -a 4 4
+#otp_test -a 2 LPSENSOR_CAL_DATA 
+search in gerrit: 
+owner:Larkin project:dubai/kernel/msm
+adb shell otp_test -a 4 4
+adb shell otp_test -a 2 LPSENSOR_CAL_DATA
+用附件的脚本可以获取ship版本手机的root权限
+Dos cd to the directory C:\Python26>
+python adb_enable2.py –root
+adb reboot
+Note：python要2.6版本
+
+[2013-1-14 22:19:57] adil_zhu:  
+find . \( -path "./*.git" -o -path "./*.repo" -o -name out \) -prune -o \( -iname "*.java" -o -iname "*.cpp" -o -iname "*.h" -o -iname "*.c" -o -iname "*.S" \) -print  | xargs grep -i --color -n -s "sensor tuning tool and the Camera/Camif DMSS code layer"
+
+
+Logmaster usage: 
+Android system log
+	$adb logcat
+Linux system log
+	$adb shell dumpstate
+	etc
+AMSS system log
+	$ adb shell logd2ext
+	
+
+Android original release build kernel steps:
+cd android
+export PATH=/usr/java/jdk1.6.0_23:$PATH
+source ./build/envsetup.sh
+choosecombo
+make bootimage
+
+DB value of audio devices:
+1.handset_tx(amic primary mono) | AMIC_PRI_MONO_OSR_256 | imic_a1_device
+2.headset_mono_tx | HEADSET_AMIC2_TX_MONO_PRI_OSR_256 | msm_headset_mic_device
+0x86 0x87 : 0x00 = 0db
+
+1.handset_rx (receiver) | EAR_PRI_MONO_8000_OSR_256 | msm_iearpiece_ffa_device
+0x84 : 0x00 = 0db
+2.speaker_stereo_rx | SPEAKER_MONO_PRI_STEREO_48000_OSR_256 | ispkr_stereo_device
+0xe0 0xe1 : 0x10 = -4.5db
+3.headset_stereo_rx | HEADSET_AB_CPLS_48000_OSR_256 | msm_headset_stereo_device
+0xe2 0xe3 : 0x1c = -9.0db
+3.headset_stereo_rx | HEADSET_AB_CPLS_48000_OSR_256_SING | msm_headset_stereo_device
+0xe2 0xe3 : 0x04 = 0db
+4.headset_stereo_speaker_stereo_rx | SPEAKER_MONO_HPH_AB_CPL_PRI_STEREO_48000_OSR_256 | ihs_stereo_speaker_stereo_rx_device | 
+0xe0 0xe1 : 0x10 = -4.5db
+0xe2 0xe3 : 0x04 = 0db
+
+---------------------------------------
+1.QCT 30112原始release：
+  \\10.85.21.71\jtag\home\qisda\ics30112
+2.抓基本开发环境的codebase方法：
+  抓android：
+  repo init -u git://10.85.21.71/ics/platform/manifest.git -b QIcs
+  抓OEM：
+  git clone git://10.85.21.71/ics/oem.git -b QIcs
+  
+  The method of fetching code of cairo project: 
+  repo init -u git://10.82.164.21/Data/msm8260/platform/manifest.git -b Qplatform_ICS 
+  repo sync
+  repo start QIcs --all
+  git clone git://10.82.164.21/Data/msm8260/oem.git -b Qplatform_ICS
+  git clone git://10.82.164.21/Data/msm8260/amss.git -b Qplatform_ICS
+  
+  
+  
+#git clone git://10.85.21.71/ics/kernel/msm.git -b QIcs
+==> grep the kernel code.
+git log --author=Frankie --no-merges --stat
+
+  以上git server是建在我们的build PC上。
+3.build方法跟GB上一样，amss端image直接用GB的。
+4.ICS上kernel的版本已经升级到3.0.8
+---------------------------------------
+
+shutdown -s -t 3600	==> shutdown this computer in one hour
+shutdown -a		==> cancle the shutdown operation
+Set mobile phone to ftd mode: 
+adb shell reboot ftd
+fastboot oem set-boot-mode 0
+fastboot reboot
+The ways to suspend an Android phone:
+echo mem > /sys/power/state
+timeout
+press end/power key:
+branches:
+MSM8260_GB
+SWEP_GORAB1A_v01.017.a_00 
+remotes/origin/SWEP_GORAB1A_v01.025.g_00
+
+
+---------------------------------------
+check in procedure:
+ssh-keygen -t rsa
+ssh –p 29418 Larkin.Huang@10.82.164.21
+git config --global user.name "Larkin.Huang"
+git config --global user.email "Larkin.Huang@Qisda.com"
+git config -l
+mkdir git; cd git
+git clone git://10.82.164.21/Data/msm8260/kernel/msm -b MSM8260_GB
+
+Audio Low Temp git of code base:
+git clone git://10.85.21.71/audio_core.git
+git clone git://10.85.21.71/audio_msm8660_surf.git
+git clone git://10.85.21.71/audio_kernel.git
+git push
+
+
+
+git clone git://10.82.164.21/Data/msm8260/platform/vendor/qcom/proprietary -b MSM8260_GB
+==> android/vendor/qcom/proprietary/mm-audio/audcal/boss/audio_cal_orange_dvt.acdb
+
+git clone git://10.82.164.21/Data/msm8260/kernel/msm -b SWEP_GORAB1A_v01.017.a_00
+git clone ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git -b MSM8260_GB
+cd msm; git status
+git add .	//check in all the files
+git add kernel/drvier/power/kconfig  //check in a special file
+git commit -m "EVT1 max8903b charge IC driver" //submit comments
+
+git push notes : 1.GIT_PATH 2.BRANCH
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/MSM8260_GB  
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/SWEP_GORAB1A_v01.017.a_00 
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/bionic.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/system/core.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/build.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/platform/build.git HEAD:refs/for/MSM8660_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/packages/apps/oem_apps/EngineeringMode.git HEAD:refs/for/MSM8260_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/vendor/qcom/proprietary.git HEAD:refs/for/MSM8260_GB  
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/vendor/qcom/proprietary.git HEAD:refs/for/MSM8260_ICS  
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/platform/vendor/qcom/proprietary.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/device/boss/cairo.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/msm8260/device/boss/orange.git HEAD:refs/for/Qplatform_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/device/boss/cairo.git HEAD:refs/for/MSM8660_ICS
+git push ssh://Larkin.Huang@10.82.164.21:29418/cairo/kernel/msm.git HEAD:refs/for/MSM8660_ICS
+
+msm8260/platform/vendor/qcom/proprietary
+SWFP_GORAB1A_v51.00 
+remotes/qisda/SWFP_GORAB1A_v51.004.g_00
+Derrick update em_audio_test from app to lib.
+http://10.82.164.21:8080/#change,9226
+/* Larkin.Huang 2011/11/16 change the HPH setting of headset volume level from -9db to 0db for DVT. */
+
+---------------------------------------
+Get code:
+android: 
+** Using repo
+$ mkdir android
+$ cd android
+$ repo init -u git://10.82.164.21/Data/msm8260/platform/manifest.git -b MSM8260_GB
+$ repo sync
+$ repo start MSM8260_GB --all
+
+branches:	
+MSM8260_ICS	MSM8260_GB
+
+** Using git
+git clone git://10.82.164.21/Data/${GitProject} -b MSM8260_GB
+Ex. $ git clone git://10.82.164.21/Data/msm8260/platform/build -b MSM8260_GB
+amss: 
+$ git clone git://10.82.164.21/Data/msm8260/amss -b MSM8260_GB
+oem: 
+$ git clone git://10.82.164.21/Data/msm8260/oem -b MSM8260_GB
+$ git clone git://10.82.164.21/Data/msm8260/device/boss/orange -b MSM8260_ICS
+$ git clone git://10.82.164.21/Data/msm8260/device/boss/cairo -b Qplatform_ICS
+$ git clone git://10.82.164.21/Data/msm8260/platform/system/core -b MSM8260_GB
+
+git clone git://10.82.164.21/Data/cairo/device/boss/cairo -b MSM8660_ICS
+git clone git://10.82.164.21/Data/cairo/platform/vendor/qcom/proprietary -b MSM8660_ICS
+git clone git://10.82.164.21/Data/cairo/kernel/msm -b MSM8660_ICS
+
+
+
+git commit format:
+Record othc insertion/removal state after kernel detection delay.
+
+Big id: S2-05-000725
+Solution: Modify pmic8058-othc.c to 
+
+--------------------------------------
+git status -uno    	//show no untracked files
+git commit --amend 	//change the last commit
+git reset HEAD file	//give stage files to unstage
+git checkout --file	//undo the revised file
+git checkout master
+git merge hotfix	//fast-forward
+
+switch branch with git command
+action 		command
+list		git branch
+list all	git branch -a
+verbose 	git branch -v
+delete		git branch -d <branch>
+force delete	git branch -D <branch>
+rename		git branch -m <branch> <new_branch>
+
+change branch			git checkout <branch>
+get specific version of file 	git checkout <branch> file
+create and move to a new branch	git checkout -b <new_branch>
+create and move to a new branch base on version
+				git checkout -b <new_branch> <version>
+
+list				git remote
+verbose				git remote -v
+remote server information	git remote show [remote-name]
+remove				git remote rm <name>
+rename				git remote rename <oldname> <newname>
+
+--------------------------------------
+cat /proc/bus/input/devices
+ls -l /sys/class/input
+ls -l /sys/fs/ext4
+ls -l /dev/input
+------------------------------------------
+The Android logcat usage summary:
+adb logcat -v brief  => default
+adb logcat -v time
+adb logcat -v thread
+adb logcat -v long
+versions: process, tag, raw, threadtime.
+adb logcat -c 	     => clear buffer
+adb logcat -g
+adb logcat -gb radio
+adb logcat -gb events
+adb logcat -db radio
+adb logcat -db events
+adb logcat -db main  => default
+adb logcat -d >> log.txt
+adb logcat -ds PowerManagerService:d
+
+adb logcat ActivityManager:I MyApp:D *:S
+adb logcat *:W  => display info with priority >= warning
+adb logcat *:V   => display log with priority  >= verbose (all) 
+export ANDROID_LOG_TAGS="ActivityManager:I MyApp:D *:S"
+------------------------------------------
+build scripts: oem/orange_scripts
+build android target
+$ ./build_android.sh evt1 lexus release
+$ ./build_android.sh evt2c lexus release
+$ ./build_android.sh evt3u lexus release
+
+build kernel
+$ ./1_build_android.sh kernel evt2u lexus release
+$ ./2_mm.sh [TAG] evt3u lexus release
+--------------------------------------------
+
+delta average = testing average value - average value before test
+
+Function definition for AGC1 and AGC2
+AGC1 AGC2 	Function
+0 		0 	AGC Function disabled
+0 		1 	AGC Limiter Function enabled
+1 		0 	AGC, Limiter, and Compression Functions enabled
+1 		1 	AGC, Limiter, Compression, and Noise Gate Functions enabled
+
+AGC1 and AGC2 current setting:
+AGC_DTMF : 01
+AGC_MUSIC: 10
+AGC_CALL : 00
+
+dir: kernel/arch/arm/mach-msm/gpiomux-8x60-orange.c
+Disable AGC1 and AGC2 by configure gpio136 and gpio137:
+echo 136 > /sys/class/gpio/export
+cat /sys/devices/virtual/gpio/gpio136/value
+echo low > /sys/devices/virtual/gpio/gpio136/direction
+
+
+echo 137 > /sys/class/gpio/export
+cat /sys/devices/virtual/gpio/gpio137/value
+echo low > /sys/devices/virtual/gpio/gpio137/direction
+
+AGC current situation:
+AGC1 : Low  AGC2 : High
+Only use AGC limiter function: 
+Set the threshold to prevent spk damage occurs.
+
+Check out disk usage on build pc daemon
+# more ~qisda/disk_stat.log
+------------------------------------------
+
+Debugfs support QTR device register access.
+Verify audio path and gain testing. 
+echo 1 > /sys/kernel/debug/msm_adie_codec/dump
+ Mounting debugfs 
+# mount -t debugfs debugfs /sys/kernel/debug 
+ Power up the adie codec and enable regulator first
+# echo 1 > /sys/kernel/debug/msm_adie_codec/power
+ Writing data: example address 0x8A, sata: 0x0C 
+# echo 0x8A 0x0C > /sys/kernel/debug/msm_adie_codec/poke 
+ Reading data: example address 0x8A 
+# echo 0x8A > /sys/kernel/debug/msm_adie_codec/peek 
+ Shows the read value in the ADB window 
+# cat /sys/kernel/debug/msm_adie_codec/peek 
+→0x0C
+ Dump all the register information to dmesg
+# echo 0x88 > /sys/kernel/debug/msm_adie_codec/dump
+
+------------------------------------------
+set the Tx and Rx device in audio native test command
+#echo "devctl -cmd=dev_switch_tx -dev_id=3" > /data/audio_test 
+#echo "devctl -cmd=enable_dev -dev_id=3"    > /data/audio_test 
+#echo "devctl -cmd=dev_switch_rx -dev_id=2" > /data/audio_test 
+#echo "devctl -cmd=enable_dev -dev_id=2"    > /data/audio_test
+#echo "playpcm path_of_file -id=xxx -repeat=x -dev=/dev/msm_pcm_dec or msm_pcm_out" > tmp/audio_test 
+#echo "playpcm /sdcard/pcm_stereo.wav -id=100 -repeat=0 -dev=/dev/msm_pcm_out" > /data/audio_test
+#echo "control_cmd -id=xxx -cmd=stop" > /data/audio_test
+#echo "devctl -cmd=enable_dev -dev_id=x" > /data/audio_test
+
+video native test commands:
+# adb push 4.mp4 /sdcard/
+Larkin.Huang
+# mm-vdec-omx-test /sdcard/4.mp4 2 2 1 1 1
+
+---------------------------------------------------------------------
+fastboot download procedure:
+adb shell reboot bootloader
+fastboot flash ptn   	 partition.bin 
+fastboot flash sbl1  	 sbl1.mbn 
+fastboot flash sbl2  	 sbl2.mbn 
+fastboot flash sbl3  	 sbl3.mbn 
+fastboot flash rpm   	 rpm.mbn 
+fastboot flash tz    	 tz.mbn 
+fastboot flash aboot 	 emmc_appsboot.mbn 
+fastboot flash boot   	 boot.img
+fastboot flash recovery  recovery.img 
+fastboot flash modem     NON-HLOS.bin 
+fastboot flash system    system.img.ext4
+fastboot flash userdata  userdata.img.ext4
+fastboot flash cache     cache.img.ext4
+fastboot flash persist   persist.img.ext4
+fastboot reboot
+------------------------------------
+fastboot command list
+D:\adb\fastboot\load\cairo>fastboot 0
+usage: fastboot [ <option> ] <command>
+
+commands:
+  update <filename>                        reflash device from update.zip
+  flashall                                 flash boot + recovery + system
+  flash <partition> [ <filename> ]         write a file to a flash partition
+  erase <partition>                        erase a flash partition
+  getvar <variable>                        display a bootloader variable
+  boot <kernel> [ <ramdisk> ]              download and boot kernel
+  flash:raw boot <kernel> [ <ramdisk> ]    create bootimage and flash it
+  devices                                  list all connected devices
+  reboot                                   reboot device normally
+  reboot-bootloader                        reboot device into bootloader
+
+options:
+  -w                                       erase userdata and cache
+  -s <serial number>                       specify device serial number
+  -p <product>                             specify product name
+  -c <cmdline>                             override kernel commandline
+  -i <vendor id>                           specify a custom USB vendor id
+  -b <base_addr>                           specify a custom kernel base address
+
+grep GB code from server:
+./repo_reget_code.sh oem 	*
+./repo_reget_code.sh amss 
+./repo_reget_code.sh android 	*
+./repo_reget_code.sh project   		==>  oem + android + amss
+
+grep ICS code from server:
+ ./ics_get_code.sh project  
+./ics_get_code.sh android
+./ics_get_code.sh oem
+./ics_get_code amss
+-----------------------------------
+compress files with tar
+#tar -jcv -f name.tar.bz2 file   => compress 
+#tar -jtv -f name.tar.bz2 file   => check
+#tar -jxv -f name.tar.bz2 -C dir => decompress
+------------------------------------
+make mrproper 
+
+Debug workqueue:
+If kworkers are going crazy (using too much cpu), there are two types
+of possible problems:
+
+        1. Something beeing scheduled in rapid succession
+        2. A single work item that consumes lots of cpu cycles
+
+The first one can be tracked using tracing:
+
+        $ echo workqueue:workqueue_queue_work > /sys/kernel/debug/tracing/set_event
+        $ cat /sys/kernel/debug/tracing/trace_pipe > out.txt
+        (wait a few secs)
+        ^C
+
+If something is busy looping on work queueing, it would be dominating
+the output and the offender can be determined with the work item
+function.
+
+For the second type of problems it should be possible to just check
+the stack trace of the offending worker thread.
+
+        $ cat /proc/THE_OFFENDING_KWORKER/stack
+
+The work item's function should be trivially visible in the stack
+trace.
+

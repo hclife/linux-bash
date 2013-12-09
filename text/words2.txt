@@ -1,0 +1,191 @@
+Engineer 工程
+PE: Products Engineer; 生產工程 Process engineer 制程工程
+TE: Test Engineer 測試工程
+ME: Manufacturing Engineer; 製造工程; Mechanical Engineer 機械工程
+IE: Industrial Engineer 工業工程
+DCC: Document Control Center 文管中心
+BOM: Bill OF Material 材料清單
+ECN: Engineering Change Notice 工程變動公告
+TECN: Temporary Engineering Change Notice 工程臨時變動公告
+ATY: Assembly Test Yield Total Yield 直通率
+TPM: Total Productivity Maintenance
+PM: Product Manager; Project Manager
+ECR: Engineering Change Request 工程變更申請
+ECO: Engineering Change order 工程變更指令
+EN: Engineering Notice 工程通報
+WPS: Work Procedure Sheet 工作說明書
+ICT: In Circuit Test 電路測試
+P/R: pilot run; C/R control run T/R trial run 試做
+EVT: engineer Verification Test 工程驗証測試
+DVT: Design Verification Test 設計驗證測試
+MVT: Mass Verification Test 多項驗證測試
+ORT: On Going Reliability Test 出貨信賴性測試
+S/W:software 軟件
+H/W: hardware 硬件
+DCN: Design Change Notice 設計變更通知
+PVT: Production Verification Test 生產驗證測試
+MTF: Modulation Transfer Function 調整轉換功能
+CAT: Carriage Alignment Tool 載器調整具
+ID: Industrial Design 工業設計(外觀設計)
+PCBA: Printed Circuit Board Assembly 電路板組裝
+F/T: Function Test 功能測試
+CCD: Charge Coupled Device 掃描器之讀器
+ERS: External Reference Spec 外部規格
+PMP: Production Management Plan 工程管理計劃
+
+QA Quality Assurance 質量保證
+QRA uality & Reliability Assurance質量與可靠性保證
+MQA :Manufacturing Quality Assurance 製造質量保證
+DQA: Design Quality Assurance 設計質量保證
+QC: Quality Control 質量控制
+IQC: Incoming Quality Control 收益質量控制
+VQC: Vendor Quality Control 售貨質量控制
+IPQC: In Process Quality Control 制程質量控制
+OQA: Out going Quality Control 出貨質量控制
+QE: Quality Engineer 質量工程
+AQL: Acceptable Quality Level 可接受的質量水平
+DPPM: Defective Pieces Per Million units 百萬件中有損件數
+PPM: Pieces Per Million 百萬分之一
+CS: Custom Service 顧客服務
+MRB: Marerial Review Board
+DMR Defective Material Report 材料缺陷報告
+RMA: Return Marerial Administration 材料回收處理
+Life Test 壽命測試
+T/C: Temperature Cycle 溫度循環
+H/T: High Temperature Test 高溫測試
+L/T: Low Temperature Test 低溫測試
+ISO: International Standard Organization 國際標準化組織
+SPC: Statistic process control 統計過程控制
+5S: 整理.整頓.清理.清掃.素養
+VMI: Visual Mechanical Inspection 外觀機構檢驗
+MIL-STD: Military Standard 美軍標準
+SPEC: Specification 規格
+AVL: Approval Vendor List 合格廠商
+QVL: Qualified Vendor List 合格廠商
+FQC: Final Quality Control 最終質量控制
+OBA: Open Box Audit 成品檢驗
+EAR: Engineering Analysis Request
+FAI: First Article Inspection 首件檢驗
+VQM: Vendor Quality Management 廠商質量管理
+CAR: Corrective Action Request 改進對策要求
+4M: Man; Machine; Material; Method 人,機,材,方法
+5M: Man; Machine; Material; Method; Mwasurment 人,機,材,方法,測量
+MTBF: Mean Time Between Failure 平均壽命
+TTL: Total
+
+FIN Finance&Accounting 財務與賬目
+P&L: Profit & Lose
+PV : Performance Variance 現象差異
+3 Element of Cost = M,L,O
+M: Material 材料
+L: Labor 人力
+Overhead 管理費用
+Fix OH Fix Overhead 固定管理費用
+Var OH Variable Overhead 不定管理費用
+COGS Cost Of Goods Sold 工廠製造成本
+AR: Account Receivable 應收
+AP: Account Payable 應支
+
+MIS Management Information System 資迅管理系統
+IS: Information System 資迅系統
+IT: Information Technology 系統技術
+MRP: Material Requisition Plan 材料需求計劃
+I2:Information Integration System 資迅整合系統
+SAP: System Application Programming 系統申請項目
+ERP: Enterprise Resource Programming 企業資源項目
+
+HR Human Resource 人力資源
+PR: Public relation 公共關係
+T/O: Turn Over Rate=Monthly T/O Total People*12
+GR: General Affair 總務
+
+
+Organization 組織
+HQ Head Quarter 總公司
+Chairmen 主席 Lite-On Group 光寶集團
+President總裁
+Executive Vice President 常務副總裁
+Vice President 副總裁
+HR Human Resource 人力資源部
+FIN Finance 財務
+Sales 銷售
+R&D: Research & Developing 研發部
+QA: 質量保證 QA DQA CS
+MIS: Management Information System 資迅管理系統
+PUR 採購 Purchasing
+IMD: Image Management Division 影像管理事業部
+ITS: Information Technology System 電腦部
+QRA: Quality Reliability Assurance 品保部
+MFG: Manufacturing 製造部
+PMC: Production & Material Control 生(產)物(料)管(理)
+
+Materials 材料
+PC: Production Control 生產控制
+MPS: Mass Production Schedule 量產計劃
+FGI: Finished goods Inventory 成品存貨
+UTS: Units To Stock 存貨單元
+WIP: Working In Process Inventory 在制品
+C/T: Cycle Time 循環時間,瓶頸
+WD: Working Days 工作天
+MTD: Month To Days 月初到今日(例如總表整理)
+YTD: Year To Days年初到今日
+SO: Sales Order 銷售清單
+MO: Manufacture Order 製造清單
+BTO: Build To Order 訂單生產
+P/N: Part Number 料號
+MC: Material Control 材料控制
+MRP: Material Requisition Plan 材料需求計劃
+INV: Inventory 存貨清單
+Inv Turn Over Days=INVS/NSB X WD 庫存周轉天數
+PSI: Production Shipping Inventory 預備待出貨
+JIT: Just In Time 即時
+Safety Inventory 安全存量
+CKD: Completed Kits Delivery 全件組裝出貨
+SKD: Semi Kits Delivery 半件(小件)組裝出貨
+W/H: Warehouse 倉庫
+Rec: Receiving Center 接收中心
+Raw MTL 原物料
+F/G: finish goods 成品
+Import/Export 進出口
+SI: Shipping Instruction 發貨指令
+PL: Packing List 包裝清單
+Inv: Shipping Invoice 出貨發票
+ETD: Estimate Arrive 預估離開時間
+BL: Bill of Landing 提貨單(海運)
+AWB: Air Way Bill 提貨單(空運)
+MAWA: Master Air Way Bill 主提貨單
+HAWB: House Air Way Bill 副提貨單
+TEU: Twenty foot Equipment Unit(Contain) 二十英尺貨櫃
+FEU: Forty foot Equipment Unit(Contain) 四十英尺貨櫃
+CY: Container Yard 貨櫃場
+THC: Terminal Handing Charge 碼頭費
+ORC: Original Receiving Charge 碼頭費
+PUR: Purchasing 採購
+FOB: Free on Board 貨運至甲板(離岸價)
+CIF: Cost Insurance Freight 成本+運費+保險
+OA: Open Account 開戶
+TT: Telegram Transfer 電匯
+COD: Cash On Delivery
+CRP: Cost Reduction Program 降低成本方案
+PR: Purchasing Requisition 採購申請
+PO: Purchasing Order 採購單
+
+MFG Manufacturing Production 製造生產
+DL: Director Labor 直接人工
+IDL: Indirect Labor 間接人工
+DLH: Direct Labor Hours 直接工時
+Productivity=UTS/DLH
+PPH: Pieces Per Hour 每小時件數
+Efficiency=Actual/Target
+DT: Machine Down Time 停機時間
+AI: Auto Insertion 自動插入
+MI: Manual Insertion 人工插入
+SMD: Surface Mount Device 表面粘著零件
+SMT: Surface mount technology 表面粘著技術
+B/I: Burn In(for how many hours at how many degree) 燒機
+WI: Work Instruction 工作說明
+SOP: Standard Operation Procedure 作業指導書
+R/I: Run In 運轉機器
+ESD: Electrical Static Discharge 靜電釋放
+MP: Mass Production 量產
+

@@ -1,0 +1,209 @@
+Place Call Trace:
+
+binder: 277:494 transaction failed 29189, size 124-0
+auddev_cb_function, evt_id=1,
+auddev_cb_function, evt_id=1,
+==> voice_init (q6voice.c)
+	auddev_register_evt_listner(v->device_events, AUDDEV_CLNT_VOC,
+				0, voice_auddev_cb_function, v);  	==> switch(evt_id)
+									    case AUDDEV_EVT_DEV_CHG_VOICE=1
+										msm_snddev_enable_sidetone
+										voice_disable_vocproc(v)
+											voice_get_apr_cvp(v)
+											voice_get_cvp_handle(v)
+											apr_send_pkt
+											wait_event_timeout
+												
+msm_device_put: device speaker_stereo_rx set 0
+msm_device_put: device speaker_mono_rx set 0
+msm_device_put: device handset_rx set 1
+msm_device_put: device freq =48000
+afe_open: 0 48000
+auddev_cb_function, evt_id=2,
+==> voice_init (q6voice.c)
+	auddev_register_evt_listner(v->device_events, AUDDEV_CLNT_VOC,
+				0, voice_auddev_cb_function, v);  	==> switch(evt_id)							
+									    case AUDDEV_EVT_DEV_RDY:
+									    1. v->voc_state = VOC_INIT		
+										voice_create_mvm_cvs_session(v)
+										voice_setup_modem_voice(v)
+										voice_attach_vocproc(v)
+										voice_send_start_voice_cmd(v)
+										get_sidetone_cal
+										msm_snddev_enable_sidetone
+										voice_cvs_start_record
+										voice_cvs_start_playback(v)
+									     2. v->voc_state = VOC_CHANGE
+										voice_set_device(v)
+										get_sidetone_cal
+										msm_snddev_enable_sidetone
+auddev_cb_function, evt_id=32, (==> evt_id=0x20)
+==> voice_init (q6voice.c)
+	auddev_register_evt_listner(v->device_events, AUDDEV_CLNT_VOC,
+				0, voice_auddev_cb_function, v);  	==> switch(evt_id)
+									    case AUDDEV_EVT_START_VOICE:
+										voice_apr_register(v)
+										voice_create_mvm_cvs_session(v);
+										voice_setup_modem_voice(v);
+										voice_attach_vocproc(v);
+										voice_send_start_voice_cmd(v);
+										get_sidetone_cal(&sidetone_cal_data);
+										msm_snddev_enable_sidetone
+Open_q c0c618cc
+Write_q
+core msg: payload len = 80, apr resp opcode = 0x11153
+---------------------------------------------------
+Build id	  = 60761300
+Number of services= 9
+---------------------------------------------------
+svc-id[3-11]	ver[2.16]
+		ver[1.60]
+		ver[2.8]
+		ver[2.8]
+		ver[1.42]
+		ver[1.28]
+		ver[1.0]
+		ver[1.0]
+		ver[1.0]
+---------------------------------------------------
+==> aprv2_core_fn_q (q6core.c)
+	switch (data->opcode)
+	case ADSP_GET_VERSION_RSP
+adsp_ver fetched:60761300
+==> voice_apr_register
+	apr_mvm = voice_get_apr_mvm(v);
+	apr_cvs = voice_get_apr_cvs(v);
+	apr_cvp = voice_get_apr_cvp(v);
+voice_create_mvm_cvs_session:
+	void *apr_mvm = voice_get_apr_mvm(v);
+	void *apr_cvs = voice_get_apr_cvs(v);
+	void *apr_cvp = voice_get_apr_cvp(v);
+	u16 mvm_handle = voice_get_mvm_handle(v);
+	u16 cvs_handle = voice_get_cvs_handle(v);
+	u16 cvp_handle = voice_get_cvp_handle(v);
+	apr_send_pkt
+	wait_event_timeout
+	mvm_handle = voice_get_mvm_handle(v);
+110ff 0  ==> opcode to ADSP
+voice_create_mvm_cvs_session:creating CVS passive session
+send stream create session pkt size = 40
+voice_create_mvm_cvs_session: CVS create
+	apr_send_pkt
+	wait_event_timeout
+	cvs_handle = voice_get_cvs_handle(v);
+11140 0
+send create cvp session, pkt size = 42
+topology=69489 net_id=65591, dir=2 tx_port_id=1, rx_port_id=0
+==> voice_setup_modem_voice
+	void *apr_cvp = voice_get_apr_cvp(v);
+	dev_tx_info = audio_dev_ctrl_find_dev(v->dev_tx.dev_id);
+	ret = apr_send_pkt(apr_cvp, (uint32_t *) &cvp_session_cmd);
+	wait_event_timeout
+	voice_send_cvs_cal_to_modem(v);
+	voice_send_cvp_cal_to_modem(v);
+	voice_send_cvp_vol_tbl_to_modem(v);
+
+100c3 0
+110fb 0
+110fb 0
+110fb 0
+110fb 0
+110fb 0
+110fb 0
+voice_send_cvp_cal_to_modem: CVP calib
+110e3 0
+voice_send_cvp_cal_to_modem: CVP calib
+110e3 0
+voice_send_cvp_cal_to_modem: CVP calib
+110e3 0
+voice_send_cvp_cal_to_modem: CVP calib
+110e3 0
+voice_send_cvp_cal_to_modem: CVP calib
+110e3 0
+voice_send_cvp_cal_to_modem: CVP calib
+110e3 0
+==> voice_send_cvp_cal_to_modem
+	void *apr_cvp = voice_get_apr_cvp(v);
+	u16 cvp_handle = voice_get_cvp_handle(v);
+	get_vocproc_cal(&cal_data);
+	for (; index < cal_data.num_cal_blocks; index++)
+	ret = apr_send_pkt(apr_cvp, cmd_buf);
+	wait_event_timeout
+110e4 0
+110e4 0
+110e4 0
+110e4 0
+110e4 0
+110e4 0
+100c6 0
+send mvm_a_vocproc_cmd pkt size = 22
+110f8 0
+==> voice_attach_vocproc
+	void *apr_mvm = voice_get_apr_mvm(v);
+	u16 mvm_handle = voice_get_mvm_handle(v);
+	u16 cvp_handle = voice_get_cvp_handle(v);
+	voice_send_enable_vocproc_cmd(v);
+	ret = apr_send_pkt(apr_mvm, (uint32_t *) &mvm_a_vocproc_cmd);
+	wait_event_timeout
+	voice_send_tty_mode_to_modem(v);
+	voice_send_netid_timing_cmd(v);
+send mvm_start_voice_cmd pkt size = 20
+11190 0
+==> voice_send_start_voice_cmd
+	void *apr_mvm = voice_get_apr_mvm(v);
+	u16 mvm_handle = voice_get_mvm_handle(v);
+	ret = apr_send_pkt(apr_mvm, (uint32_t *) &mvm_start_voice_cmd);
+	ret = wait_event_timeout
+afe_sidetone: tx_port_id:1 rx_port_id:0 enable:0 gain:1298
+==> afe_sidetone
+	...initialization operations...
+	ret = apr_send_pkt(this_afe.apr, (uint32_t *) &cmd_sidetone);
+	wait_event_timeout
+auddev_cb_function, evt_id=16, (0x10)
+==> voice_init (q6voice.c)
+	auddev_register_evt_listner(v->device_events, AUDDEV_CLNT_VOC,
+				0, voice_auddev_cb_function, v);  	==> switch(evt_id)
+									    case AUDDEV_EVT_DEVICE_VOL_MUTE_CHG:
+										(device volume changed)
+										*if (DIR_TX) ==> voice_send_mute_cmd_to_modem(v);
+										 if (DIR_RX) ==> voice_send_vol_index_to_modem(v);
+
+										
+mute value =0
+11022 0
+==> voice_send_mute_cmd_to_modem
+	apr_send_pkt
+	wait_event_timeout
+auddev_cb_function, evt_id=16,
+==> repeat
+110ee 0
+auddev_cb_function, evt_id=16,
+==> repeat
+[ALS]lsensor_misc_ioctl: (0284) PSENSOR_IOC_ENABLE, prox 1
+==> lsensor_misc_ioctl (lpsensor_taos.c)
+	
+110ee 0
+request_suspend_state: wakeup (0->0) at 1296649844521 (time)
+request_suspend_state: wakeup (0->0) at 1297079286447 (time)
+==> request_suspend_state  (earlysuspend.c)
+		getnstimeofday(&ts);
+		rtc_time_to_tm(ts.tv_sec, &tm);
+		wake_lock(&main_wake_lock);
+		queue_work(suspend_work_queue, &late_resume_work);
+[ALS]lsensor_misc_ioctl: (0284) PSENSOR_IOC_DISABLE, prox 1->1
+==> lsensor_misc_ioctl (lpsensor_taos.c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

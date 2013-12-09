@@ -1,0 +1,526 @@
+  All My Admin Documentation   
+ 
+
+ Larkin.Huang <Larkin.Huang@Qisda.com>
+
+
+ msm8260/.repo/manifests Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/.repo/repo Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/amss Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/boss/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/boss/la Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/boss/orange Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/boss/song Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/dream Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/dream-sapphire Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/passion Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/passion-common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/sapphire Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/qcom/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/sample Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/samsung/crespo Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/kernel/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/kernel/lk Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/kernel/msm Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/oem Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/bionic Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/bootable/bootloader/legacy Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/bootable/diskinstaller Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/bootable/recovery Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/build Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/cts Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/dalvik Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/development Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/aes Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/alsa-lib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/alsa-utils Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/apache-http Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/astl Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bison Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/blktrace Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluetooth/bluez Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluetooth/glib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluetooth/hcidumb Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluetooth/hcidump Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluez Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bouncycastle Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bsdiff Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/busybox  
+ msm8260/platform/external/bzip2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/chromium Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/clearsilver Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/connectivity Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/dbus Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/dhcpcd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/dnsmasq Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/dosfstools Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/dropbear Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/e2fsprogs Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/easymock Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/eglib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/elfcopy Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/elfutils Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/embunit Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/emma Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/esd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/expat Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/fdlibm Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/freetype Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/fsck_msdos Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/gdata Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/genext2fs Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/giflib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/googleclient Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/grub Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/gtest Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/guava Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/harfbuzz Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/hcidump Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/hostap-06 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/hyphenation Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/icu4c Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/iperf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/iproute2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/ipsec-tools Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/iptables Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/jdiff Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/jhead Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/jpeg Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/jsilver Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/jsr305 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/junit Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/kernel-headers Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/lcc Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libffi Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libgsm Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libnfc-nxp Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libpcap Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libpng Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libvpx Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libxml2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libxslt Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/mtd-utils Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/mtpd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/netcat Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/netperf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/neven Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/nist-sip Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/oauth Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/opencore Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/openssl Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/openvpn Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/oprofile Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/pciutils Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/ping Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/powertop Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/ppp Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/proguard Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/protobuf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/qemu Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/qemu-pc-bios Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/qrngd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/quake Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/safe-iop Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/skia Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/sonivox Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/speex Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/sqlite Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/srec Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/stlport Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/strace Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/svox Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tagsoup Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tcpdump Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tesseract Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tinyxml Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tremolo Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tremor Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tslib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/v8 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/webkit Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/wpa_supplicant Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/wpa_supplicant_6 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/xdelta3 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/xmlwriter Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/yaffs2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/zlib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/base Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/ex Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/oem/LogLibrary Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/oem/sdk_addon Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/opt/com.google.android Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/opt/com.google.android.googlelogin Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/opt/emoji Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/policies/base Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/alsa_sound Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/broadcom/wlan Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/htc/dream Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/libhardware Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/libhardware_legacy Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/msm7k Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/qcom/gps Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/qcom/media Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/qsd8k Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/ril Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/ti/omap3 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/ti/wlan Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/libcore Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/manifest Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/ndk Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/AccountsAndSyncSettings Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/AlarmClock Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Bluetooth Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Browser Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Calculator Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Calendar Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Camera Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/CertInstaller Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Contacts Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/DeskClock Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Email Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/FM Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Gallery Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Gallery3D Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/GlobalSearch Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/GoogleSearch Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/HTMLViewer Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/IM Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Launcher Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Launcher2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Mms Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Music Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Nfc Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/OTAProvisioningClient Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/PackageInstaller Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Phone Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Protips Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Provision Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/QualcommSoftAP Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/QuickSearchBox Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Settings Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/SoundRecorder Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/SpeechRecorder Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Stk Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Sync Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/TSCalibration Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Tag Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Updater Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/VoiceDialer Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/ContactsPicker  
+ msm8260/platform/packages/apps/oem_apps/EngineeringMode Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/InternetServices  
+ msm8260/platform/packages/apps/oem_apps/LogMaster2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/LogService  
+ msm8260/platform/packages/apps/oem_apps/ModemVersion  
+ msm8260/platform/packages/apps/oem_apps/OOBTestTool  
+ msm8260/platform/packages/apps/oem_apps/PackageChecker Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/PackageUpdate Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/RunIn  
+ msm8260/platform/packages/apps/oem_apps/SIMManager  
+ msm8260/platform/packages/apps/oem_apps/SIMManger  
+ msm8260/platform/packages/apps/oem_apps/TodoList Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/test  
+ msm8260/platform/packages/experimental Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/inputmethods/LatinIME Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/inputmethods/OpenWnn Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/inputmethods/PinyinIME Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/ApplicationsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/CalendarProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/ContactsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/DownloadProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/DrmProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/GoogleContactsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/GoogleSubscribedFeedsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/ImProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/ManagementProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/MediaProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/TelephonyProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/UserDictionaryProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/WebSearchProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/services/EasService Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/services/LockAndWipe Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/wallpapers/Basic Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/wallpapers/LivePicker Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/wallpapers/MagicSmoke Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/wallpapers/MusicVisualization Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/prebuilt Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/recovery Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/sdk Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/bluetooth Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/core Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/extras Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/media Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/netd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/qcom Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/vold Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/wlan/broadcom Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/wlan/ti Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/tools/tradefederation Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/aosp Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/google Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/htc/common-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/htc/dream-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/htc/prebuilt-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/htc/sapphire-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/lexus  
+ msm8260/platform/vendor/pv-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/bt-wlan-coex Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/diag Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/kernel-tests/mm-audio Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/omx/mm-audio Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/omx/mm-core Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/omx/mm-video Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/time-services Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/webkit Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/android-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7201a_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7201a_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7501a_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7501a_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7625_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7625_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627_7x_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627_7x_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627a Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7630_1x_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7630_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7630_fusion Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7630_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm8660_csfb Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm8660_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm8960 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/proprietary Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/proprietary-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/qsd8250_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/qsd8250_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/qsd8650a_st1x Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qisda Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/real  
+ msm8260/platform/vendor/sample Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/repo Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/test  
+ msm8260/tools  
+ w50  
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The git repository address in android project:
+./android/sdk/.git
+./android/kernel/.git
+./android/build/.git
+./android/prebuilt/.git
+./android/hardware/qcom/gps/.git
+./android/hardware/qcom/media/.git
+./android/hardware/msm7k/.git
+./android/hardware/broadcom/wlan/.git
+./android/hardware/ril/.git
+./android/hardware/libhardware/.git
+./android/hardware/libhardware_legacy/.git
+./android/hardware/ti/omap3/.git
+./android/hardware/ti/wlan/.git
+./android/external/bison/.git
+./android/external/netcat/.git
+./android/external/elfcopy/.git
+./android/external/tremolo/.git
+./android/external/emma/.git
+./android/external/libffi/.git
+./android/external/oauth/.git
+./android/external/webkit/.git
+./android/external/jdiff/.git
+./android/external/qemu/.git
+./android/external/bsdiff/.git
+./android/external/quake/.git
+./android/external/skia/.git
+./android/external/libxml2/.git
+./android/external/libgsm/.git
+./android/external/fdlibm/.git
+./android/external/jpeg/.git
+./android/external/wpa_supplicant/.git
+./android/external/hostap-06/.git
+./android/external/svox/.git
+./android/external/dnsmasq/.git
+./android/external/tcpdump/.git
+./android/external/blktrace/.git
+./android/external/nist-sip/.git
+./android/external/zlib/.git
+./android/external/dbus/.git
+./android/external/xmlwriter/.git
+./android/external/fsck_msdos/.git
+./android/external/chromium/.git
+./android/external/jhead/.git
+./android/external/protobuf/.git
+./android/external/elfutils/.git
+./android/external/sonivox/.git
+./android/external/gtest/.git
+./android/external/ipsec-tools/.git
+./android/external/giflib/.git
+./android/external/guava/.git
+./android/external/expat/.git
+./android/external/wpa_supplicant_6/.git
+./android/external/tslib/.git
+./android/external/astl/.git
+./android/external/kernel-headers/.git
+./android/external/speex/.git
+./android/external/proguard/.git
+./android/external/jsr305/.git
+./android/external/iproute2/.git
+./android/external/iperf/.git
+./android/external/neven/.git
+./android/external/bzip2/.git
+./android/external/e2fsprogs/.git
+./android/external/sqlite/.git
+./android/external/qrngd/.git
+./android/external/iptables/.git
+./android/external/clearsilver/.git
+./android/external/embunit/.git
+./android/external/dhcpcd/.git
+./android/external/srec/.git
+./android/external/connectivity/.git
+./android/external/bouncycastle/.git
+./android/external/libpcap/.git
+./android/external/bluetooth/bluez/.git
+./android/external/bluetooth/hcidump/.git
+./android/external/bluetooth/glib/.git
+./android/external/ping/.git
+./android/external/libpng/.git
+./android/external/easymock/.git
+./android/external/dropbear/.git
+./android/external/icu4c/.git
+./android/external/tinyxml/.git
+./android/external/netperf/.git
+./android/external/strace/.git
+./android/external/apache-http/.git
+./android/external/libvpx/.git
+./android/external/safe-iop/.git
+./android/external/libnfc-nxp/.git
+./android/external/opencore/.git
+./android/external/ppp/.git
+./android/external/mtpd/.git
+./android/external/oprofile/.git
+./android/external/grub/.git
+./android/external/stlport/.git
+./android/external/v8/.git
+./android/external/busybox/.git
+./android/external/yaffs2/.git
+./android/external/openssl/.git
+./android/external/esd/.git
+./android/external/genext2fs/.git
+./android/external/tagsoup/.git
+./android/external/junit/.git
+./android/external/freetype/.git
+./android/development/.git
+./android/frameworks/ex/.git
+./android/frameworks/base/.git
+./android/frameworks/opt/emoji/.git
+./android/frameworks/oem/sdk_addon/.git
+./android/frameworks/oem/LogLibrary/.git
+./android/system/wlan/ti/.git
+./android/system/qcom/.git
+./android/system/extras/.git
+./android/system/vold/.git
+./android/system/media/.git
+./android/system/bluetooth/.git
+./android/system/core/.git
+./android/system/netd/.git
+./android/device/sample/.git
+./android/device/boss/la/.git
+./android/device/boss/common/.git
+./android/device/boss/orange/.git
+./android/device/boss/song/.git
+./android/device/qcom/msm7630_surf/.git
+./android/device/qcom/msm7627a/.git
+./android/device/qcom/msm7627_surf/.git
+./android/device/qcom/msm7630_fusion/.git
+./android/device/qcom/common/.git
+./android/device/qcom/msm8960/.git
+./android/device/qcom/msm8660_surf/.git
+./android/device/common/.git
+./android/cts/.git
+./android/bionic/.git
+./android/ndk/.git
+./android/vendor/lexus/.git
+./android/vendor/qcom/proprietary/.git
+./android/vendor/qcom/opensource/omx/mm-audio/.git
+./android/vendor/qcom/opensource/omx/mm-video/.git
+./android/vendor/qcom/opensource/omx/mm-core/.git
+./android/vendor/qcom/opensource/webkit/.git
+./android/vendor/qcom/opensource/bt-wlan-coex/.git
+./android/vendor/qcom/opensource/time-services/.git
+./android/vendor/qcom/opensource/kernel-tests/mm-audio/.git
+./android/vendor/qcom/opensource/diag/.git
+./android/vendor/qcom/android-open/.git
+./android/vendor/qisda/.git
+./android/vendor/real/.git
+./android/vendor/google/.git
+./android/dalvik/.git
+./android/packages/wallpapers/MagicSmoke/.git
+./android/packages/wallpapers/Basic/.git
+./android/packages/wallpapers/MusicVisualization/.git
+./android/packages/wallpapers/LivePicker/.git
+./android/packages/apps/QuickSearchBox/.git
+./android/packages/apps/VoiceDialer/.git
+./android/packages/apps/AccountsAndSyncSettings/.git
+./android/packages/apps/SoundRecorder/.git
+./android/packages/apps/Gallery3D/.git
+./android/packages/apps/Provision/.git
+./android/packages/apps/Stk/.git
+./android/packages/apps/HTMLViewer/.git
+./android/packages/apps/Browser/.git
+./android/packages/apps/CertInstaller/.git
+./android/packages/apps/Gallery/.git
+./android/packages/apps/Phone/.git
+./android/packages/apps/FM/.git
+./android/packages/apps/Bluetooth/.git
+./android/packages/apps/Contacts/.git
+./android/packages/apps/Nfc/.git
+./android/packages/apps/DeskClock/.git
+./android/packages/apps/Calendar/.git
+./android/packages/apps/oem_apps/OOBTestTool/.git
+./android/packages/apps/oem_apps/LogService/.git
+./android/packages/apps/oem_apps/TodoList/.git
+./android/packages/apps/oem_apps/InternetServices/.git
+./android/packages/apps/oem_apps/SIMManager/.git
+./android/packages/apps/oem_apps/ContactsPicker/.git
+./android/packages/apps/oem_apps/RunIn/.git
+./android/packages/apps/oem_apps/ModemVersion/.git
+./android/packages/apps/oem_apps/LogMaster2/.git
+./android/packages/apps/oem_apps/EngineeringMode/.git
+./android/packages/apps/QualcommSoftAP/.git
+./android/packages/apps/Music/.git
+./android/packages/apps/Mms/.git
+./android/packages/apps/SpeechRecorder/.git
+./android/packages/apps/Settings/.git
+./android/packages/apps/Camera/.git
+./android/packages/apps/Calculator/.git
+./android/packages/apps/TSCalibration/.git
+./android/packages/apps/Tag/.git
+./android/packages/apps/PackageInstaller/.git
+./android/packages/apps/Protips/.git
+./android/packages/apps/Email/.git
+./android/packages/apps/Launcher2/.git
+./android/packages/experimental/.git
+./android/packages/providers/GoogleContactsProvider/.git
+./android/packages/providers/CalendarProvider/.git
+./android/packages/providers/DrmProvider/.git
+./android/packages/providers/UserDictionaryProvider/.git
+./android/packages/providers/TelephonyProvider/.git
+./android/packages/providers/MediaProvider/.git
+./android/packages/providers/DownloadProvider/.git
+./android/packages/providers/ContactsProvider/.git
+./android/packages/providers/ApplicationsProvider/.git
+./android/packages/inputmethods/OpenWnn/.git
+./android/packages/inputmethods/LatinIME/.git
+./android/packages/inputmethods/PinyinIME/.git
+./android/libcore/.git
+./android/.repo/repo/.git
+./android/.repo/manifests/.git
+./android/bootable/diskinstaller/.git
+./android/bootable/recovery/.git
+./android/bootable/bootloader/legacy/.git
+./android/bootable/bootloader/lk/.git
+./oem/.git
+

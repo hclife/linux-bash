@@ -1,0 +1,22 @@
+经理人杂志(@manager-magazine) 【自己当老板需要的素质】1.首先要有一个好的心态。2.做人要大气，态度要和蔼；3.需要一定的文化水平。4.需要管理能力；5.了解国家的大政方针和经济形势；6.需要了解法律知识；7.既要知法更要守法；8.要有一个坚定的目标。9.要有较强的沟通能力；10.有一个好的身体。 http://t1.qpic.cn/mblogpic/ed66f45f361c29fceade/2000 http://t.qq.com/p/t/2460002062879
+
+李开复(@kaifulee) 美国时代周刊2012年年度人物评选接近尾声，12月14日揭晓。目前得票第一的是金正恩，得票1248275张。第二是埃及总统穆尔西。第三是被塔利班枪击的巴基斯坦少女马拉拉。第四是江南style演唱者鸟叔。 郑渊洁(@zhyj) http://t.qq.com/p/t/214601029121551
+
+
+
+沟通最重要的是，你想说的话说清楚了没有，你的意思别人理解了没有。同样，你是否理解了别人说话的重点，而不在于话的多少。 ”
+史敏认为，一发言就是长篇大论、洋洋洒洒，并不是沟通能力强的体现。 
+财会人员往往会关注到资金管理、资产运营、内部控制等方面存在的一些漏洞或过失，并及时向上级发出危险提示。然而，发现问题重要，解决问题更加重要。如果在发现问题而未找到解决措施时，便匆匆去向上级领导汇报，即使汇报了有关问题，但时间长了，在上级领导的心目中，你的名字与“麻烦”已经自然联系在一起了。 就是说，探讨并勇于解决问题，而不只是发现问题，能提升外人对自己的认同度。而这种认同，是职场发展的阶梯。
+
+首先你需要一个RDB打包解包工具 注意: 这个工具需要 .NetFramework 支持,如果您的系统中出现初始化失败的字样,请 下载最新的 2.0 版Framework 
+x:\Program Files\Tencent\QQ\Plugin\Com.Tencent.Advertisement
+x是指你的qq安装目录 在Com.Tencent.Advertisement 里面找到Bundle.rdb  
+当然，是不能删除的，这样QQ因为缺乏文件而无法启动，要做的是解包这个文件解包后在目录Bundle\I18N\2052下，有个StringBundle.xml文件，用记事本打开它，删除如下字段：
+String id="IDS_DEFAULT_AD_BANNER_FN"defaultbanner.jpg/String
+String id="IDS_DEFAULT_AD_BANNER_CLICKURL"www.tencentmind.com/String 
+String id="IDS_DEFAULT_AD_RICH_FN"defaultrich.swf/String 
+String id="IDS_DEFAULT_GROUP_BANNER_FN"GroupBanner.jpg/String 
+String id="IDS_DEFAULT_AD_VIDEO_FN"defaultvideo.swf/String 
+String id="IDS_DEFAULT_AD_VIDEO_CLICKURL"www.tencentmind.com/String 
+String id="IDS_ADVERTISEMENT_TITLE"然后再打包放回原处。
+

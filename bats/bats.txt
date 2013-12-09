@@ -1,0 +1,337 @@
+@echo off
+echo Download android sensor apps
+title apps
+C:
+cd C:\Documents and Settings\Larkin.Huang\Application Data\Wandoujia2\Download\Apps
+dir /q sensor
+adb devices
+@echo on
+@echo off
+echo enter to the right dir. 
+d:
+cd \
+cd D:\Load\Dubai\cdma
+@echo on@echo off 
+echo Cleaning system rubbish, please wait ... 
+del /f /s /q %systemdrive%\*.tmp 
+del /f /s /q %systemdrive%\*._mp 
+del /f /s /q %systemdrive%\*.log 
+del /f /s /q %systemdrive%\*.gid 
+del /f /s /q %systemdrive%\*.chk 
+del /f /s /q %systemdrive%\*.old 
+del /f /s /q %systemdrive%\recycler\*.* 
+del /f /s /q %windir%\*.bak 
+del /f /s /q %windir%prefetch*.* 
+rd /s /q %windir%\temp & md %windir%\temp 
+del /f /q %userprofile%\cookies*.* 
+del /f /q %userprofile\%recent\*.* 
+del /f /s /q "%userprofile%\Local Settings\Temporary Internet Files\*.*"
+del /f /s /q "%userprofile%\Local Settings\Temp\*.*"
+del /f /s /q "%userprofile%\recent*.*" 
+echo Finished cleaning the system junk!
+echo. & pause
+@echo on
+@echo off
+echo Enter the desktop directory. 
+c:
+cd C:\Documents and Settings\Larkin.Huang\×ÀÃæ\
+dir /d
+@echo on
+@echo off
+echo The Machine will be shutdown in 5 hours.
+shutdown -s -t 18000
+@echo on
+@echo off
+echo update the boot.msg for debug.
+adb devices
+echo 1. The old boot.msg is listed as below:
+dir /q boot.msg
+del boot.msg
+adb shell dmesg > boot.msg
+echo 2. The new boot.msg is listed as below:
+dir /q boot.msg
+echo update finished.
+@echo on@echo off
+echo This is for mobile loading and doskey.
+d:
+cd adb\fastboot\load\cairo
+echo This window is to download and assign doskey. 
+@echo on
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -v time -s Sensors
+doskey FTD = adb logcat -s FTD 
+doskey HAL = adb logcat -s HAL 
+doskey reboot = adb shell reboot bootloader
+doskey devices = fastboot devices
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash system system.img.ext4
+@echo Preparation already ok. 
+
+title kmsg
+@echo This window is to show kmsg
+adb shell cat /proc/kmsg@echo off
+echo This is for dubai mobile loading and doskey.
+title adb                                       
+E:
+cd DB_Load\evts
+prompt [$T]$C$P$F$G$S
+echo Download and assign doskeys. 
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sdmsg = adb shell dmesg > boot.msg
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -v time -s Sensors
+doskey FTD = adb logcat -v time -s FTD 
+doskey HAL = adb logcat -v time -s HAL 
+doskey MMI = adb logcat -v time -s MMI
+doskey OTP  = adb logcat -v time -s OTP
+doskey PhoneApp = adb logcat -v time -s PhoneApp
+doskey ActivityManager = adb logcat -v time -s ActivityManager
+doskey reboot = adb shell reboot bootloader
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash system system.img.ext4
+echo Preparation already ok.
+adb shell
+@echo on
+@echo off
+echo This is for mobile loading and doskey.
+title cairo
+d:
+cd adb\fastboot\load\cairo
+echo This window is to download and assign doskey. 
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sdmsg = adb shell dmesg > boot.msg
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -v time -s Sensors
+doskey FTD = adb logcat -v time -s FTD 
+doskey HAL = adb logcat -v time -s HAL 
+doskey PhoneApp = adb logcat -v time -s PhoneApp
+doskey ActivityManager = adb logcat -v time -s ActivityManager
+doskey reboot = adb shell reboot bootloader
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash system system.img.ext4
+echo Preparation already ok. 
+@echo on
+@echo off
+echo This is for dubai mobile loading and doskey.
+title cdma
+E:
+cd DB_Load\evts
+prompt [$T]$C$P$F$G$S
+echo Download and assign doskeys. 
+doskey ls = dir /q
+doskey clear = cls
+doskey cat = type
+doskey .. = cd ..
+doskey ... = cd ../../
+doskey .... = cd ../../../
+doskey as = adb shell
+doskey ad = adb devices
+doskey ar = adb reboot
+doskey arf = adb reboot ftd
+doskey arc = adb reboot charge
+doskey arb = adb reboot bootloader
+doskey aks = adb kill-server
+doskey am = adb remount
+doskey fd = fastboot devices
+doskey fr = fastboot reboot
+
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sdm = adb shell dmesg > boot.msg
+doskey sum = adb logcat -v time -d > user.msg
+doskey sdsm = adb shell dumpstate > dump.msg
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -v time -s Sensors
+doskey SS = adb logcat -v time -s SensorService
+doskey SM = adb logcat -v time -s SensorManager
+doskey FTD = adb logcat -v time -s FTD 
+doskey HAL = adb logcat -v time -s HAL 
+doskey MMI = adb logcat -v time -s MMI
+doskey OTP  = adb logcat -v time -s OTP
+doskey PMS = adb logcat -v time -s PowerManagerService
+doskey PhoneApp = adb logcat -v time -s PhoneApp
+doskey ActivityManager = adb logcat -v time -s ActivityManager
+doskey reboot = adb shell reboot bootloader
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash system system.img.ext4
+echo Preparation already ok. 
+@echo on
+@echo off
+echo This is for mobile loading and doskey.
+title evb
+d:
+cd adb\fastboot\load\evb
+echo This window is to download and assign doskey. 
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sdmsg = adb shell dmesg > boot.msg
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -v time -s Sensors
+doskey FTD = adb logcat -v time -s FTD 
+doskey HAL = adb logcat -v time -s HAL 
+doskey PhoneApp = adb logcat -v time -s PhoneApp
+doskey ActivityManager = adb logcat -v time -s ActivityManager
+doskey reboot = adb shell reboot bootloader
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash system system.img.ext4
+echo Preparation already ok. 
+@echo on
+@echo off
+echo This is for mobile loading and doskey.
+title ics
+d:
+cd adb\fastboot\load\ics
+echo This window is to download and assign doskey. 
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -s Sensors
+doskey FTD = adb logcat -s FTD 
+doskey HAL = adb logcat -s HAL 
+doskey PhoneApp = adb logcat -v time -s PhoneApp
+doskey reboot = adb shell reboot bootloader
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash boot system.img.ext4
+echo Preparation already ok. 
+@echo on
+@echo off
+echo This is for mobile loading and doskey.
+title cairo_jb
+d:
+cd adb\fastboot\load\jb
+echo This window is to download and assign doskey. 
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sdmsg = adb shell dmesg > boot.msg
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -v time -s Sensors
+doskey FTD = adb logcat -v time -s FTD 
+doskey HAL = adb logcat -v time -s HAL 
+doskey PhoneApp = adb logcat -v time -s PhoneApp
+doskey ActivityManager = adb logcat -v time -s ActivityManager
+doskey reboot = adb shell reboot bootloader
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash system system.img.ext4
+echo Preparation already ok. 
+@echo on
+@echo off
+echo This is for mobile loading and doskey.
+title oslojb
+E:
+cd DB_Load\jb
+echo This window is to download and assign doskey. 
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sdmsg = adb shell dmesg > boot.msg
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -v time -s Sensors
+doskey FTD = adb logcat -v time -s FTD 
+doskey HAL = adb logcat -v time -s HAL 
+doskey PhoneApp = adb logcat -v time -s PhoneApp
+doskey ActivityManager = adb logcat -v time -s ActivityManager
+doskey reboot = adb shell reboot bootloader
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash system system.img.ext4
+echo Preparation already ok. 
+@echo on
+@echo off
+echo This is for mobile loading and doskey.
+title oslo
+d:
+cd adb\fastboot\load\oslo
+echo This window is to download and assign doskey. 
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -v time -s Sensors
+doskey FTD = adb logcat -v time -s FTD 
+doskey HAL = adb logcat -v time -s HAL 
+doskey PhoneApp = adb logcat -v time -s PhoneApp
+doskey ActivityManager = adb logcat -v time -s ActivityManager
+doskey reboot = adb shell reboot bootloader
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash system system.img.ext4
+echo Preparation already ok. 
+@echo on
+title log
+d:
+cd adb\fastboot\load
+echo This window is to show logcat
+adb logcat -v time@echo off
+echo Erase lpsensor new otp area data. 
+adb devices
+adb shell otp_test -a 4 4
+adb shell otp_test -a 2 LPSENSOR_CAL_DATA
+adb reboot
+echo erase finished and reboot machine.
+@echo on@echo off
+echo The Machine will be shutdown in 10 seconds.
+shutdown -s -t 10
+@echo on
+@echo off
+echo Cleaning the outlook temp files to release space.
+del  /s /q "%userprofile%\Local Settings\Temporary Internet Files\*.*" 
+echo The outlook temp files have been cleared successfully.
+echo. & pause
+@echo on
+@echo off
+echo change root permission for device.
+c:
+cd c:\Python26
+adb devices
+python adb_enable2.py -root
+call ping 1.1.1.1 -n 2 > nul
+adb reboot
+e:
+cd DB_Load\evts
+echo Now device has root permission.
+@echo on
+@echo off
+echo Install android sensors apk start.
+adb devices
+adb install "%userprofile%\Application Data\Wandoujia2\Download\Apps\sensor\system_info.apk"
+adb install "%userprofile%\Application Data\Wandoujia2\Download\Apps\sensor\android_sensor.apk"
+adb install "%userprofile%\Application Data\Wandoujia2\Download\Apps\sensor\SensorList_v2.1.apk"
+adb install "%userprofile%\Application Data\Wandoujia2\Download\Apps\sensor\SensorMonitor.apk"
+adb install "%userprofile%\Application Data\Wandoujia2\Download\Apps\sensor\supercompass.apk"
+adb install "%userprofile%\Application Data\Wandoujia2\Download\Apps\sensor\Large_compass.apk"
+echo Install android sensors apk finished.
+@echo on@echo off
+echo This is for cairo mobile loading and doskey.
+title cairo_ship
+d:
+cd adb\Haier
+echo This window is to download and assign doskey. 
+doskey kmsg = adb shell cat /proc/kmsg
+doskey logcat = adb logcat -v time
+doskey dmesg = adb shell dmesg 
+doskey sdmsg = adb shell dmesg > boot.msg
+doskey sensord = adb logcat -s sensord
+doskey Sensors = adb logcat -v time -s Sensors
+doskey FTD = adb logcat -v time -s FTD 
+doskey HAL = adb logcat -v time -s HAL 
+doskey PhoneApp = adb logcat -v time -s PhoneApp
+doskey ActivityManager = adb logcat -v time -s ActivityManager
+doskey reboot = adb shell reboot bootloader
+doskey boot = fastboot flash boot boot.img
+doskey system = fastboot flash system system.img.ext4
+echo Preparation already ok. 
+@echo on
+@echo off
+echo enter to the right dir. 
+d:
+cd Load\Dubai\umts
+@echo on

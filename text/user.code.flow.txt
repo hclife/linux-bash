@@ -1,0 +1,86 @@
+class MediaPlayerService : public BnMediaPlayerService
+class BnMediaPlayerService: public BnInterface<IMediaPlayerService>
+class BnInterface : public INTERFACE, public BBinder
+
+class PoolThread : public Thread
+class Thread : virtual public RefBase
+
+Main_mediaserver.cpp
+http://www.cnblogs.com/innost/archive/2011/01/09/1931456.html
+Mark ==> void IPCThreadState::joinThreadPool(bool isMain)
+
+sp<ProcessState> proc(ProcessState::self());
+	gProcess = new ProcessState;
+	ProcessState::ProcessState()   ==> mDriverFD(open_driver())
+		int fd = open("/dev/binder", O_RDWR);
+		status_t result = ioctl(fd, BINDER_VERSION, &vers);
+		result = ioctl(fd, BINDER_SET_MAX_THREADS, &maxThreads);
+		
+sp<IServiceManager> sm = defaultServiceManager();
+	gDefaultServiceManager = interface_cast<IServiceManager>(
+                ProcessState::self()->getContextObject(NULL));
+	1.getContextObject
+		getStrongProxyForHandle(0)
+			lookupHandleLocked(handle) 
+			b = new BpBinder(handle) 
+	2.interface_cast
+
+MediaPlayerService::instantiate
+	addService
+		IPCThreadState::self()->transact
+			writeTransactionData
+			waitForResponse
+				talkWithDriver
+					ioctl(mProcess->mDriverFD, BINDER_WRITE_READ, &bwr)
+ProcessState::self()->startThreadPool();
+	spawnPooledThread(true);
+	sp<Thread> t = new PoolThread(isMain);
+	t->run(buf);
+		res = createThreadEtc(_threadLoop,
+	                	this, name, priority, stack, &mThread);
+		res = androidCreateRawThreadEtc(_threadLoop,
+		                this, name, priority, stack, &mThread);
+
+IPCThreadState::self()->joinThreadPool();
+	androidSetThreadSchedulingGroup
+	executeCommand
+		case BR_TRANSACTION
+			ipcSetDataReference
+			transact(tr.code, buffer, &reply, tr.flags);
+				onTransact(code, data, reply, flags);
+				==> status_t BnMediaPlayerService::onTransact
+					CHECK_INTERFACE(IMediaPlayerService, data, reply);
+					sp<IMediaPlayer> player = create(
+                    					pid, client, url, numHeaders > 0 ? &headers : NULL, audioSessionId);
+					==> sp<IMediaPlayer> MediaPlayerService::create
+						sp<Client> c = new Client(this, pid, connId, client, audioSessionId);
+						c->setDataSource(fd, offset, length)
+							player_type playerType = getPlayerType(fd, offset, length);
+							sp<MediaPlayerBase> p = createPlayer(playerType);
+							mAudioOutput = new AudioOutput(mAudioSessionId);
+							p->setDataSource(fd, offset, length);						
+
+	mOut.writeInt32(BC_EXIT_LOOPER);
+	talkWithDriver(false);
+
+-----------------------------------------------------
+service_manager.c
+
+binder_open(128*1024)
+	bs->fd = open("/dev/binder", O_RDWR);
+	mmap(NULL, mapsize, PROT_READ, MAP_PRIVATE, bs->fd, 0);
+binder_become_context_manager(bs)
+	ioctl(bs->fd, BINDER_SET_CONTEXT_MGR, 0);
+binder_loop(bs, svcmgr_handler)
+	res = ioctl(bs->fd, BINDER_WRITE_READ, &bwr);
+	res = binder_parse(bs, 0, readbuf, bwr.read_consumed, func);
+	svcmgr_handler
+		do_find_service
+		do_add_service
+			find_svc
+			binder_acquire
+				binder_write
+			binder_link_to_death
+				binder_write
+		bio_put_ref
+

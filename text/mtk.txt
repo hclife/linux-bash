@@ -1,0 +1,220 @@
+
+cd /sys/bus/platform/drivers/gsensor
+cd /sys/bus/platform/drivers/msensor
+cd /sys/bus/platform/drivers/als_ps
+cd sdcard/mtklog/mobilelog/
+
+#define SENSOR_TYPE_ACCELEROMETER       1	0
+#define SENSOR_TYPE_MAGNETIC_FIELD      2	1
+#define SENSOR_TYPE_ORIENTATION         3	2
+#define SENSOR_TYPE_GYROSCOPE           4	3
+#define SENSOR_TYPE_LIGHT               5		4
+#define SENSOR_TYPE_PRESSURE            6	5
+#define SENSOR_TYPE_TEMPERATURE         7	6
+#define SENSOR_TYPE_PROXIMITY           8	7
+#define SENSOR_TYPE_GRAVITY             9		8		
+#define SENSOR_TYPE_LINEAR_ACCELERATION 10	9
+#define SENSOR_TYPE_ROTATION_VECTOR     11	10
+
+
+通过sdcard/mtklog/mobilelog/APLog_xxx_xxx_xxx/ kernel_log.boot文件，
+在该文件里面存储了开机时候的kernel log，该功能是在mtklogger里面开启的。
+可以通过*#*#3646633#*#*进入工程模式，对MTKlogger进行设置。选择mobilelog设置项的
+Start automatically选项，重启之后，MTKLogger会在下次开机后启动。
+
+
+在DRL里的driver都会包含一些比较有用的log信息，默认没有打开，当传感器发生异常时，这些信息可以帮助分析问题，可通过:
+1:手机连到PC，命令行窗口输入：adb shell
+2:cd sys/bus/platform/drivers/xsensor          x可以是g,m等对应的传感器
+3:echo 0xff >trace
+这时候抓取的log里就会有传感器driver的log信息，抓取后注明复现的时间，提交给MTK分析
+
+
+
+        //add wake lock to make sure data can be read before system suspend
+        wake_lock(&(obj->read_data_wake_lock));
+		err = cxt->obj.sensor_operate(cxt->obj.self,SENSOR_GET_DATA, NULL, 0, 
+			&sensor_data, sizeof(hwm_sensor_data), &out_size);
+        wake_unlock(&(obj->read_data_wake_lock));
+
+    .direction = 7,                 /* Larkin.Huang 2013/06/28 modify for compass direction of axis remap. */
+
+    File Path Comments Size Diff Reviewed 
+   Commit Message    Side-by-Side Unified  
+  A common/kernel/accelerometer/bma255/bma255.c  2244 lines Side-by-Side Unified  
+  A common/kernel/accelerometer/bma255/bma255.h  98 lines Side-by-Side Unified  
+  A common/kernel/gyroscope/l3gd20/l3gd20.c  1407 lines Side-by-Side Unified  
+  A common/kernel/gyroscope/l3gd20/l3gd20.h  140 lines Side-by-Side Unified  
+  A common/kernel/magnetometer/bmm150/bmm150.c  4312 lines Side-by-Side Unified  
+  A common/kernel/magnetometer/bmm150/bmm150.h  47 lines Side-by-Side Unified  
+  S qisda89_we_jb2/kernel/accelerometer/bma255/cust_acc.c  64 lines Side-by-Side Unified  
+  A qisda89_we_jb2/kernel/alsps/APDS9930/cust_alsps.c  60 lines Side-by-Side Unified  
+  A qisda89_we_jb2/kernel/gyroscope/l3g4200d/cust_gyro.c  65 lines Side-by-Side Unified  
+  A qisda89_we_jb2/kernel/gyroscope/l3gd20/cust_gyro.c  65 lines Side-by-Side Unified  
+  S qisda89_we_jb2/kernel/magnetometer/bmm150/cust_mag.c  49 lines Side-by-Side Unified  
+  
+
+
+
+I2C0 : CTP
+I2C1 : Main Camera / Sub Camera
+I2C2 : Main 3D Camera
+I2C3 : G/M/GYRO/ALS sensor
+I2C4 (PMIC) : MHL
+I2C5 (PMIC) : NFC
+I2C6 (PMIC) : Charger, T sensor
+
+MTK 2013-05-28 10:17:28 Dear customer, bma255.rar released. (Download ID: mfboM0w) 
+MTK 2013-05-28 10:17:27 Dear customer, bmm150.rar released. (Download ID: iNToRIg) 
+MTK 2013-05-28 10:06:14 Dear customer, bmm150.rar,bma255.rar released. (Download ID: tM-oRkQ,xaFgNYg) 
+
+还可以通过sdcard/ mtklog/ mobilelog/ APLog_xxx_xxx_xxx/ kernel_log.boot文件，
+在该文件里面存储了开机时候的kernel log，该功能是在mtklogger里面开启的。
+可以通过*#*#3646633#*#*进入工程模式，对MTKlogger进行设置。选择mobilelog设置项的
+Start automatically选项，重启之后，MTKLogger会在下次开机后启动。
+
+To open attachments of this system, you need to install TrustView Client.
+Before the installation of TrustView Client, please read the following User Manual carefully.
+http://dcc.mediatek.com/Docs/ExternalUserManual/Ext.html
+Please click the following link to begin installation.
+http://trv.mediatek.com:9082/tvud/MixSetup.zip
+PDF File open password:  2870673174
+
+http://online.mediatek.com
+可查看FAQ/eCourse/QVL等。
+ 直接用共用账号
+Username: derrick.zhang@qisda.com
+PWD:           wr35
+MediaTek Dcc +886-3-5670766#25204 Mail 
+Mediatek IT +886-3-5670766#52880 Mail 
+
+MTK Schedule link: 
+\\Ht0-pvcs2\pre_develop\MT6589_EVB_PreDevelop\20.SWStatus\20130619
+
+MTK documents list:  
+\\10.85.21.141\Technical\Develop_Ref\MTK_Release\Document\External Document\SW\3G Phone Data\Smart Phone\Standard Package\MT6589 SW Doc Package\FAQ\Mediatek Customization for Application Properties
+\\10.82.164.8\Technical3\MTK_Release\Document\External Document\SW\3G Phone Data\Smart Phone\Standard Package\MT6589 SW Doc Package\Customer Training\Driver_All_In_One_V1_MT6589_4.2
+
+\\ht0-pvcs2\Pre_Develop\MT6589_EVB_PreDevelop\13.Tool\MTK_Release\MTK_Tool_W1316_full
+\\ht0-pvcs2\Pre_Develop\MT6589_EVB_PreDevelop\13.Tool\MTK_Release\MTK_Tool_W1316_full\Driver (binary)
+
+MTK pdf password: [14:25:23] Snail.Qian: 2870673174 
+PMS website: http://ipsna.qisda.qcorp.com/PFCMS/SysFrame/
+Mediatek case website: http://eportal.mediatek.com/eservice/pri/index.jsp?issueid=962282
+Mediatek documents download website: 
+http://dcc.mediatek.com/Docs/Default.aspx
+
+
+目前download需要的image有这些：
+preloader_qisda89_we_jb2.bin
+MBR
+lk.bin
+boot.img
+recovery.img
+secro.img
+logo.bin
+system.img
+cache.img
+userdata.img
+
+MTK Build中会提及如何生成这些images。
+另外，MT6589_Android_scatter_emmc.txt也会被放到out下面。
+
+[16:34:27.92](I:\DB_Load\evts)> sensors
+--------- beginning of /dev/log/system
+--------- beginning of /dev/log/main
+
+01-01 01:55:22.867 D/Sensors (  540): open_sensors: name: poll!
+01-01 01:55:23.431 D/Sensors (  540): open_sensors: device handle 42
+01-01 01:55:23.431 D/Sensors (  540): hwm__activate: handle 0, enable or disable 0!
+01-01 01:55:23.438 D/Sensors (  540): hwm__activate: handle 7, enable or disable 0!
+01-01 01:55:23.449 D/Sensors (  540): hwm__activate: handle 4, enable or disable 0!
+01-01 01:55:23.456 D/Sensors (  540): hwm__activate: handle 2, enable or disable 0!
+01-01 01:55:23.468 D/Sensors (  540): hwm__activate: handle 1, enable or disable 0!
+01-01 01:55:27.983 D/Sensors (  540): hwm__activate: handle 0, enable or disable 1!
+
+01-01 00:01:31.396 D/MsensorDaemon( 1489): Msensor deamon statr!!!!!!!!!!!!
+01-01 00:01:31.396 D/MsensorDaemon( 1489): msensor demon start process detect demon name = bmm050d
+01-01 00:01:31.396 D/MsensorDaemon( 1489):
+01-01 00:01:31.396 D/MsensorDaemon( 1489): msensor demon start process detect demon prop = init.svc.bmm050d
+01-01 00:01:31.397 D/MsensorDaemon( 1489):
+01-01 00:01:31.397 D/MsensorDaemon( 1489): start_msensor_demon
+01-01 00:01:31.400 D/MsensorDaemon( 1489): HAVE_LIBC_SYSTEM_PROPERTIES
+01-01 00:01:31.400 D/MsensorDaemon( 1489): bmm050d running
+01-01 00:01:31.401 D/MsensorDaemon( 1489): Msensor deamon2 statr!!!!!!!!!!!!
+01-01 00:01:31.401 D/MsensorDaemon( 1489): open demon attr err = No such file or directory
+
+
+自己porting的Daemon，如何快速编译并放入手机当中运行调试
+[PLATFORM]
+ MT6575 MT6577
+[SOLUTION]
+1.       先用编译代码的Linux机器的命令行，进入您的工程，即alps目录
+2.       命令行输入source build/envsetup.sh
+3.       cd到mediatek/source/hardware/sensor/lib/xxx   xxx是您porting的daemon
+4.       命令行输入TARGET_PRODUCT=(您的工程) mm(如果提示出错，请在alps/build/core/usertags.mk 中msensord \后面按照格式增加您的daemon模块名)(JB2以上版本是在alps/build/target/product/common.mk目录)
+5.       然后把在out目录生成的system/bin  目录下的xxxx daemon_bin_file  push到手机上的任意一个目录$dir
+6.       然后手机链接电脑adb shell,cd 到该目录Sdir，./xxx   xxx是您porting的Daemon
+7.       这样就能把daemon起来，可以运行指南针等apk或debug
+
+
+磁感应sensor工作不正常会有哪些原因呢？
+[SOLUTION]
+1 进入factory mode->Item test->M-sensor，观察raw data X,Y,Z的值是否会根据手机的的转动而变化？
+    如果不变化，请检查sensor芯片工作电压及连线并观察log是否有I2C通信异常。
+ 2 如果第1步中，raw data的数据是会根据手机的转动而变化，请检查cust_mag.c里方向的设定是否正确。
+    关于方向的设定请参考dms上的客制化文档，路径：
+Cabinets/Product Line/WCX/3G Phone Data/Smart Phone/Software_Customer/Standard Package/ALPS.GB/BSP/Drivers
+Cabinets/Product Line/WCX/3G Phone Data/Smart Phone/Software_Customer/Standard Package/MT6575/BSP/Drivers 
+3  如果factory mode读取raw data正常，使用指南针不能正确指南，请确认此时您的G sensor是否工作正常？因为指南针的正常工作依赖于G 
+   sensor的数据。
+4   进入指南针界面，使用adb shell，确定此时M sensor的daemon是否有被加载执行。
+5   如果指南针大致指向正确，但是会有抖动现象，请检查手机内部是否有磁场干扰，比如马达之类。
+
+
+[FAQ05162] [Factory mode] 怎么配置工厂模式测试项？ Download 
+Platform:MT6577MT6589 
+Branch:ICSJB 
+FAQ Content[DESCRIPTION]
+
+修改alps/mediatek/custom/$proj/factory/factory.ini配置工厂模式测项
+[KEYWORD]
+  Factory mode test 
+[SOLUTION]
+alps/mediatek/custom/$proj/factory/factory.ini 可以定制Factory mode测试项，如： 
+MenuItem=M-Sensor;
+MenuItem=ALS/PS;
+Factory mode启动后，会先后寻找 /sdcard/factory.ini,/etc/factory.ini文件，所以可以复制factory.ini文件到SD卡，并修改其中的内容来配置测试项. 若找不到ini文件，则使用factory.c中的默认配置
+?      Related code all in alps/mediatek/factory/src/factory.c: 
+?      Golbal test items array:
+static item_t ftm_cust_items[ITEM_MAX_IDS]; // factory.ini settings
+static item_t ftm_cust_auto_items[ITEM_MAX_IDS];// factory.ini settings
+
+static item_t ftm_test_items[] // Default settings
+static item_t ftm_auto_test_items[]  // Default settings
+ ftm_test_items &&  ftm_auto_test_items controled by MACROS 
+
+            (ie. FEATURE_FTM_KEYS/CUSTOM_KERNEL_ALSPS...) 
+
+?      In main:
+
+               read_config(/sdcard/factory.ini or /etc/factory.ini)
+
+                     ftm_cust_items = Items in (factory.ini && ftm_test_items)
+
+                     ftm_cust_auto_items = Items in (factory.ini &&  ftm_test_items &&  ftm_auto_test_items)
+ 
+
+<4>[  229.681998] (0)[4:kworker/0:0]raw data x=-6, y=-9, z=-256
+<4>[  229.682701] (0)[4:kworker/0:0]cali_sw x=0, y=0, z=0
+<4>[  229.683334] (0)[4:kworker/0:0]cvt x=-1, y=-1, z=1
+<4>[  229.683944] (0)[4:kworker/0:0]mg acc=6, GRAVITY=9807, sensityvity=256
+
+<4>[  229.741754] (0)[4:kworker/0:0]raw data x=-7, y=-8, z=-258
+<4>[  229.742456] (0)[4:kworker/0:0]cali_sw x=0, y=0, z=0
+<4>[  229.743088] (0)[4:kworker/0:0]cvt x=-1, y=-1, z=1
+<4>[  229.743699] (0)[4:kworker/0:0]mg acc=7, GRAVITY=9807, sensityvity=256
+<4>[  229.801804] (0)[4:kworker/0:0]raw data x=-7, y=-7, z=-255
+<4>[  229.802507] (0)[4:kworker/0:0]cali_sw x=0, y=0, z=0
+<4>[  229.803139] (0)[4:kworker/0:0]cvt x=-1, y=-1, z=1
+

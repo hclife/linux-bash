@@ -1,0 +1,333 @@
+D:\adb\fastboot\load\cairo>sensord
+- waiting for device -
+--------- beginning of /dev/log/main
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<util_misc><util_misc_init><120><<---sensord started--->>
+D/sensord (  163):
+D/sensord (  163): [108][I]BS_INFO<util_misc><util_misc_init><125>tick start: 1340842754:326775, utc_time: 2012-06-28_08
+-19-14
+D/sensord (  163):
+D/sensord (  163): [108][D]BS_DBG<util_misc><util_misc_init><126>Test The Debug Log Level OK.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<util_misc><util_misc_init><127>Test Info Log Level OK.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [109][N]BS_NOTICE<util_misc><util_misc_init><128>Test Notice Log Level OK.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [109][W]BS_WARN<util_misc><util_misc_init><129>Test Warn Log Level OK.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [109][E]BS_ERR<util_misc><util_misc_init><130>Test Error Log Level OK.
+D/sensord (  163): <reason> No such file or directory
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<main><dump_ver><102>daemon_ver: 33816670 desc: 2012-03-05,14:03:48
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<main><dump_ver><103>algo_ver: M 34013953 desc: Copyright (C) Bosch Sensortec, release
+d on 2012-02-29/20:08:00
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<main><main><114>argc: 1
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<main><main><116>/system/bin/sensord
+D/sensord (  163):
+D/sensord (  163): [109][E]BS_ERR<sensor_cfg><set_cfg_axis><116>axis config file does not exist, assuming no remap is ne
+eded<reason> No such file or directory
+D/sensord (  163):
+D/sensord (  163): [109][W]BS_WARN<sensor_cfg><set_cfg_axis><156>error reading from config file: /system/etc/sensor/sens
+ord_cfg_axis, using default
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<data_proc_engines><data_proc_engines_init><170>function entry
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<data_proc_engines><data_proc_engines_init><186>Macro CFG_LOG_WITH_TIME Defined.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<data_proc_engines><data_proc_engines_init><190>Macro CFG_LOG_LEVEL = 7.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<data_proc_engines><data_proc_engines_init><194>Macro CFG_SENSOR_G_EMU = 1.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<data_proc_engines><data_proc_engines_init><204>Macro CFG_LOG_TO_LOGCAT Defined.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<data_proc_engines><data_proc_engines_init><212>Macro CFG_TARGET_OS_ANDROID Defined.
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<data_proc_engines><data_proc_engines_init><220>Macro CFG_DATA_INPUT_SRC_DEV Defined.
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<data_proc_engines><data_proc_engines_init><224>Macro CFG_USE_DATA_LOG = 1.
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<algo_init_bst><algo_init_bst><320>Init bst algo function entry.
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<algo_init_bst><hw_cntl_init><256>function entry.
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<util_sysfs><sysfs_get_input_dev_num><96>function entry.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<util_sysfs><sysfs_get_input_dev_num><99>sysfs_node_path = /sys/class/input/input0/nam
+e.
+D/sensord (  163):
+D/sensord (  163): [109][D]BS_DBG<util_sysfs><sysfs_get_input_dev_num><103>dev name: bmm050
+D/sensord (  163):  len_dev_name: 7 pname: bma250 len: 6
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<util_sysfs><sysfs_get_input_dev_num><99>sysfs_node_path = /sys/class/input/input1/nam
+e.
+D/sensord (  163):
+D/sensord (  163): [109][D]BS_DBG<util_sysfs><sysfs_get_input_dev_num><103>dev name: Vol_key
+D/sensord (  163):  len_dev_name: 8 pname: bma250 len: 6
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<util_sysfs><sysfs_get_input_dev_num><99>sysfs_node_path = /sys/class/input/input2/nam
+e.
+D/sensord (  163):
+D/sensord (  163): [109][D]BS_DBG<util_sysfs><sysfs_get_input_dev_num><103>dev name: pmic8xxx_pwrkey
+D/sensord (  163):  len_dev_name: 16 pname: bma250 len: 6
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<util_sysfs><sysfs_get_input_dev_num><99>sysfs_node_path = /sys/class/input/input3/nam
+e.
+D/sensord (  163):
+D/sensord (  163): [109][D]BS_DBG<util_sysfs><sysfs_get_input_dev_num><103>dev name: lsensor_taos
+D/sensord (  163):  len_dev_name: 13 pname: bma250 len: 6
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<util_sysfs><sysfs_get_input_dev_num><99>sysfs_node_path = /sys/class/input/input4/nam
+e.
+D/sensord (  163):
+D/sensord (  163): [109][D]BS_DBG<util_sysfs><sysfs_get_input_dev_num><103>dev name: psensor_taos
+D/sensord (  163):  len_dev_name: 13 pname: bma250 len: 6
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<util_sysfs><sysfs_get_input_dev_num><99>sysfs_node_path = /sys/class/input/input5/nam
+e.
+D/sensord (  163):
+D/sensord (  163): [109][D]BS_DBG<util_sysfs><sysfs_get_input_dev_num><103>dev name: bma250
+D/sensord (  163):  len_dev_name: 7 pname: bma250 len: 6
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<hw_cntl_a><hc_init_a><242>g_input_dev_num_a: 5
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<hw_cntl_a><hc_init_a><248>bma value sysfs node path: /sys/class/input/input5/value
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<hw_cntl_a><hc_init_a><253>bma update sysfs node path: /sys/class/input/input5/update
+D/sensord (  163):
+D/sensord (  163): [109][I]BS_INFO<hw_cntl_a><hc_init_a><261>g_fd_value_a: 10 g_fd_update_a: 11
+D/sensord (  163):
+D/sensord (  163): [110][E]BS_ERR<hw_cntl_a><hc_set_fast_calib_offset><174>error openning file: /data/local/tmp/fast_cal
+ib_a<reason> No such file or directory
+D/sensord (  163):
+D/sensord (  163): [110][I]BS_INFO<algo_init_bst><hw_cntl_init><260>Hardware control init acc return 0.
+D/sensord (  163):
+D/sensord (  163): [110][I]BS_INFO<util_sysfs><sysfs_get_input_dev_num><96>function entry.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [110][I]BS_INFO<util_sysfs><sysfs_get_input_dev_num><99>sysfs_node_path = /sys/class/input/input0/nam
+e.
+D/sensord (  163):
+D/sensord (  163): [110][D]BS_DBG<util_sysfs><sysfs_get_input_dev_num><103>dev name: bmm050
+D/sensord (  163):  len_dev_name: 7 pname: bmm050 len: 6
+D/sensord (  163):
+D/sensord (  163): [110][I]BS_INFO<hw_cntl_m><hc_init_m><126>g_input_dev_num_m: 0
+D/sensord (  163):
+D/sensord (  163): [110][I]BS_INFO<hw_cntl_m><hc_init_m><144>g_fd_value_m: 13 g_fd_op_mode_m: 12
+D/sensord (  163):
+D/sensord (  163): [110][I]BS_INFO<algo_init_bst><hw_cntl_init><264>Hardware control init mag return 0.
+D/sensord (  163):
+D/sensord (  163): [110][I]BS_INFO<algo_init_bst><hw_cntl_init><266>The <or> value is 0.
+D/sensord (  163):
+D/sensord (  163): [110][I]BS_INFO<algo_init_bst><algo_init_bst><333>Init hw control callback of bosch daemon.
+D/sensord (  163):
+D/sensord (  163): [140][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><484>acc op_mode: 2
+D/sensord (  163):
+D/sensord (  163): [140][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><488>opmode sysfs node path is : /sys/class/input/input5
+/mode.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [142][I]BS_INFO<hw_cntl_a><hc_acc_set_grange><397>grange: 1
+D/sensord (  163):
+D/sensord (  163): [142][I]BS_INFO<hw_cntl_a><hc_acc_set_grange><401>Range sysfs node path is : /sys/class/input/input5/
+range.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [143][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><699>Set bandwidth: 0.
+D/sensord (  163):
+D/sensord (  163): [143][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><700>bw: 0
+D/sensord (  163):
+D/sensord (  163): [143][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><704>bandwidth sysfs node path is : /sys/class/input/
+input5/bandwidth.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [143][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><717>tmp = 0.
+D/sensord (  163):
+D/sensord (  163): [144][I]BS_INFO<hw_cntl_m><hc_mag_set_opmode><254>mag op_mode: 2
+D/sensord (  163):
+D/sensord (  163): [150][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><484>acc op_mode: 2
+D/sensord (  163):
+D/sensord (  163): [150][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><488>opmode sysfs node path is : /sys/class/input/input5
+/mode.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [151][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><699>Set bandwidth: 2.
+D/sensord (  163):
+D/sensord (  163): [151][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><700>bw: 2
+D/sensord (  163):
+D/sensord (  163): [151][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><704>bandwidth sysfs node path is : /sys/class/input/
+input5/bandwidth.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [151][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><717>tmp = 2.
+D/sensord (  163):
+D/sensord (  163): [152][I]BS_INFO<hw_cntl_m><hc_mag_set_opmode><254>mag op_mode: 2
+D/sensord (  163):
+D/sensord (  163): [156][I]BS_INFO<algo_init_bst><algo_init_bst><353>get axis remap from placement in algo init.
+D/sensord (  163):
+D/sensord (  163): [156][I]BS_INFO<algo_init_bst><get_axis_remap_from_placement><147>g_place_a: 7 g_place_m: 7
+D/sensord (  163):
+D/sensord (  163): [156][I]BS_INFO<algo_init_bst><algo_init_bst><356>config acc/mag axis and axis_sign.
+D/sensord (  163):
+D/sensord (  163): [156][I]BS_INFO<algo_init_bst><algo_init_bst><384>set acc/mag calibration profile
+D/sensord (  163):
+D/sensord (  163): [169][I]BS_INFO<algo_init_bst><restore_sensor_profile><246>profile of a applied
+D/sensord (  163):
+D/sensord (  163): [169][W]BS_WARN<algo_init_bst><restore_sensor_profile><212>invalid content in file: /data/local/tmp/p
+rofile_calib_m
+D/sensord (  163):
+D/sensord (  163): [169][W]BS_WARN<algo_init_bst><restore_sensor_profile><219>invalid content in file: /data/local/tmp/p
+rofile_calib_m
+D/sensord (  163):
+D/sensord (  163): [169][W]BS_WARN<algo_init_bst><restore_sensor_profile><226>invalid content in file: /data/local/tmp/p
+rofile_calib_m
+D/sensord (  163):
+D/sensord (  163): [169][E]BS_ERR<algo_init_bst><restore_sensor_profile><237>invalid content in file: /data/local/tmp/pr
+ofile_calib_m<reason> No such file or directory
+D/sensord (  163):
+D/sensord (  163): [169][I]BS_INFO<algo_init_bst><algo_init_cust><278>function entry.
+D/sensord (  163):
+D/sensord (  163): [169][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><699>Set bandwidth: 0.
+D/sensord (  163):
+D/sensord (  163): [169][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><700>bw: 0
+D/sensord (  163):
+D/sensord (  163): [169][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><704>bandwidth sysfs node path is : /sys/class/input/
+input5/bandwidth.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [169][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><717>tmp = 0.
+D/sensord (  163):
+D/sensord (  163): [174][I]BS_INFO<algo_init_bst><algo_init_cust><287>range init => set acc range to 4g!
+D/sensord (  163):
+D/sensord (  163): [175][I]BS_INFO<hw_cntl_a><hc_acc_set_grange><397>grange: 1
+D/sensord (  163):
+D/sensord (  163): [175][I]BS_INFO<hw_cntl_a><hc_acc_set_grange><401>Range sysfs node path is : /sys/class/input/input5/
+range.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [177][I]BS_INFO<data_proc_engines><algo_data_log_init><106>function entry
+--------- beginning of /dev/log/system
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_init><1092>function entry
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_init><1102>g_sensor_list size will be 3.
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_init><1119>g_sensors_list[0]:ACCELERATION init ok.
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_init><1135>initialized channel: ACCELERATION
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_init><1119>g_sensors_list[1]:MAGNETIC init ok.
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><900>thread: ACCELERATION tid: 235 started
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><908>START LOOP.
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><913>sensor[0] channel state is sleep.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><919>ACCELERATION is waiting for being signaled...
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_init><1135>initialized channel: MAGNETIC
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_init><1119>g_sensors_list[2]:ORIENTATION init ok.
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><900>thread: MAGNETIC tid: 236 started
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><908>START LOOP.
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><913>sensor[1] channel state is sleep.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><919>MAGNETIC is waiting for being signaled...
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_init><1135>initialized channel: ORIENTATION
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><900>thread: ORIENTATION tid: 237 started
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><908>START LOOP.
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><913>sensor[2] channel state is sleep.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [0][I]BS_INFO<channel_cntl><channel_thread_proc><919>ORIENTATION is waiting for being signaled...
+D/sensord (  163):
+D/sensord (  163): [1][I]BS_INFO<channel_cntl><channel_sync><1079>all available threads are ready now
+D/sensord (  163):
+D/sensord (  163): [1][I]BS_INFO<channel_cntl><channel_init><1145>sensors_list config ok.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [1][D]BS_DBG<channel_cntl><channel_set_state><590>function entry
+D/sensord (  163):
+D/sensord (  163): [1][I]BS_INFO<channel_cntl><channel_set_state><602>channel:ACCELERATION prev_state:0 state: 1 ---> 0
+reason: 3
+D/sensord (  163):
+D/sensord (  163): [1][I]BS_INFO<channel_cntl><channel_set_state><615>ACCELERATION synced
+D/sensord (  163):
+D/sensord (  163): [1][I]BS_INFO<channel_cntl><channel_check_dep_hw><535>check dependency of ACCELERATION, 0
+D/sensord (  163):
+D/sensord (  163): [1][I]BS_INFO<channel_cntl><channel_check_dep_hw><545>1 dep on 1, 0
+D/sensord (  163):
+D/sensord (  163): [1][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><484>acc op_mode: 0
+D/sensord (  163):
+D/sensord (  163): [1][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><488>opmode sysfs node path is : /sys/class/input/input5/m
+ode.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [2][I]BS_INFO<channel_cntl><hw_ref_down><491>ref count for channel ACCELERATION: 0
+D/sensord (  163):
+D/sensord (  163): [2][D]BS_DBG<channel_cntl><channel_set_state><590>function entry
+D/sensord (  163):
+D/sensord (  163): [2][I]BS_INFO<channel_cntl><channel_set_state><602>channel:MAGNETIC prev_state:0 state: 1 ---> 0 reas
+on: 3
+D/sensord (  163):
+D/sensord (  163): [2][I]BS_INFO<channel_cntl><channel_set_state><615>MAGNETIC synced
+D/sensord (  163):
+D/sensord (  163): [2][I]BS_INFO<channel_cntl><channel_check_dep_hw><535>check dependency of MAGNETIC, 0
+D/sensord (  163):
+D/sensord (  163): [2][I]BS_INFO<channel_cntl><channel_check_dep_hw><545>2 dep on 2, 0
+D/sensord (  163):
+D/sensord (  163): [2][I]BS_INFO<hw_cntl_m><hc_mag_set_opmode><254>mag op_mode: 0
+D/sensord (  163):
+D/sensord (  163): [3][I]BS_INFO<channel_cntl><hw_ref_down><491>ref count for channel MAGNETIC: 0
+D/sensord (  163):
+D/sensord (  163): [3][D]BS_DBG<channel_cntl><channel_set_state><590>function entry
+D/sensord (  163):
+D/sensord (  163): [3][I]BS_INFO<channel_cntl><channel_set_state><602>channel:ORIENTATION prev_state:0 state: 1 ---> 0 r
+eason: 3
+D/sensord (  163):
+D/sensord (  163): [3][I]BS_INFO<channel_cntl><channel_set_state><615>ORIENTATION synced
+D/sensord (  163):
+D/sensord (  163): [3][D]BS_DBG<algo_adapter_bst><algo_save_calib_profile><249>status not good, profile disgarded
+D/sensord (  163):
+D/sensord (  163): [3][I]BS_INFO<channel_cntl><channel_check_dep_hw><535>check dependency of ORIENTATION, 0
+D/sensord (  163):
+D/sensord (  163): [3][I]BS_INFO<channel_cntl><channel_check_dep_hw><545>3 dep on 1, 0
+D/sensord (  163):
+D/sensord (  163): [3][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><484>acc op_mode: 0
+D/sensord (  163):
+D/sensord (  163): [3][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><488>opmode sysfs node path is : /sys/class/input/input5/m
+ode.
+D/sensord (  163):
+D/sensord (  163):
+D/sensord (  163): [4][I]BS_INFO<channel_cntl><hw_ref_down><491>ref count for channel ACCELERATION: 0
+D/sensord (  163):
+D/sensord (  163): [4][I]BS_INFO<channel_cntl><channel_check_dep_hw><545>3 dep on 2, 0
+D/sensord (  163):
+D/sensord (  163): [4][I]BS_INFO<hw_cntl_m><hc_mag_set_opmode><254>mag op_mode: 0
+D/sensord (  163):
+D/sensord (  163): [4][I]BS_INFO<channel_cntl><hw_ref_down><491>ref count for channel MAGNETIC: 0
+D/sensord (  163):
+D/sensord (  163): [4][I]BS_INFO<event_handler><fifo_init><457>old cmds purged out
+D/sensord (  163):
+D/sensord (  163): [4][I]BS_INFO<event_handler><fifo_init><491>g_fd_fifo_cmd: 20 g_fd_fifo_dat: 21

@@ -1,0 +1,169 @@
+Start Record:
+pcm_in_open
+    q6asm_audio_client_alloc
+	q6asm_session_alloc
+    	apr_register((apr_fn)q6asm_callback)   ====> apr_reset(ac->apr)
+		wait_event_timeout
+		pil_get("q6")
+		apr_tal_open(apr_cb_func)
+	apr_register((apr_fn)q6asm_mmapcallback)
+	atomic_inc
+	init_waitqueue_head
+	q6asm_audio_client_free
+    q6asm_open_read
+	q6asm_add_hdr
+	apr_send_pkt
+	wait_event_timeout
+    q6asm_audio_client_free
+	q6asm_audio_client_buf_free
+	apr_deregister(ac->apr)
+	q6asm_session_free
+	apr_deregister(this_mmap.apr)
+
+pcm_in_release
+    msm_disable_incall_recording
+	voice_start_record
+	adm_close
+	msm_clear_copp_id
+	afe_stop_pseudo_port
+    auddev_cfg_tx_copp_topology	
+	remove_from_tx_topology_lists
+	check_tx_copp_topology
+    pcm_in_disable(pcm)
+	atomic_read
+	q6asm_cmd
+	wake_up(&pcm->wait)
+    msm_clear_session_id
+	adm_close
+    q6asm_audio_client_free	
+	q6asm_audio_client_buf_free
+	apr_deregister(ac->apr)
+	q6asm_session_free
+	apr_deregister(this_mmap.apr)
+
+aac_in_open
+    q6asm_audio_client_alloc((app_cb)q6asm_aac_in_cb) ==> audio_in_get_dsp_frames  
+								atomic_inc
+								wake_up
+	q6asm_session_alloc
+    	apr_register((apr_fn)q6asm_callback)   ====> apr_reset(ac->apr)
+		wait_event_timeout
+		pil_get("q6")
+		apr_tal_open(apr_cb_func)
+	apr_register((apr_fn)q6asm_mmapcallback)
+	atomic_inc
+	init_waitqueue_head
+	q6asm_audio_client_free
+    q6asm_open_read_write (nt.mod)
+    q6asm_open_read 	  (t.mod)
+	q6asm_add_hdr
+	apr_send_pkt
+	wait_event_timeout
+    q6asm_reg_tx_overflow
+	q6asm_add_hdr
+	apr_send_pkt
+	wait_event_timeout
+    q6asm_audio_client_free
+	q6asm_audio_client_buf_free
+	apr_deregister(ac->apr)
+	q6asm_session_free
+	apr_deregister(this_mmap.apr)
+
+pcm_in_open
+    q6asm_audio_client_alloc
+    q6asm_open_read
+    q6asm_audio_client_free
+
+msm_device_put (speaker_mono_tx=1)
+afe_open: 1 48000
+"Topology = 10be3"  ==> adm_open
+
+send_cal: No calibration data to send!  ==> send_cal (q6adm.c)
+	msm8x60.c 	 		  audio_dev_ctl.c		q6adm.c
+snd_msm_controls ==>	msm_route_put ==> msm_snddev_set_enc  ==>	adm_matrix_map ==> send_adm_cal  ==> send_cal
+static struct snd_kcontrol_new snd_msm_controls[] = {
+	...
+	MSM_EXT("Record", msm_route_info, msm_route_get, \
+						 msm_route_put, 0),
+	...
+};
+
+msm_device_put (speaker_mono_tx = 0)
+afe_close: port_id=1  ==> apr_send_pkt(AFE_PORT_CMD_STOP)
+snddev_icodec_probe  ==> snddev_icodec_close  ==> snddev_icodec_close_tx  ==> afe_close
+dev_info->dev_ops.close = snddev_icodec_close;
+
+msm_device_put (speaker_mono_tx=1)
+msm_device_put (freq =48000)
+afe_open: 1 48000
+adm_close port_id=1 index 1
+	afe_get_port_index
+	afe_validate_port
+Topology = 10be3
+send_cal: No calibration data to send!
+pcm_in_ioctl: AUDIO_START session id[2]   (pcm_in.c)
+	config(pcm)
+		q6asm_audio_client_buf_alloc
+		q6asm_enc_cfg_blk_pcm
+	pcm_in_enable(pcm)
+		q6asm_run
+	q6asm_read
+		q6asm_add_hdr
+		apr_send_pkt
+	msm_enable_incall_recording
+		rec_mod = VOC_REC_UPLINK; VOC_REC_DOWNLINK; VOC_REC_BOTH.
+		afe_start_pseudo_port
+			apr_register
+			apr_send_pkt(AFE_PSEUDOPORT_CMD_START)
+			wait_event_timeout
+		adm_open
+		adm_matrix_map
+		msm_set_copp_id
+		voice_start_record(1)
+			voice_get_cvs_handle
+			voice_cvs_start_record
+				voice_get_apr_cvs(v)
+				voice_get_cvs_handle(v)
+				apr_send_pkt(VSS_ISTREAM_CMD_START_RECORD)
+				wait_event_timeout
+
+
+
+End Record:
+pcm_in_release release session id[2]
+	msm_disable_incall_recording
+		rec_mod = VOC_REC_UPLINK; VOC_REC_DOWNLINK; VOC_REC_BOTH.
+		voice_start_record(0)
+			voice_get_cvs_handle
+			voice_cvs_stop_record
+				voice_get_apr_cvs(v)
+				voice_get_cvs_handle(v)
+				apr_send_pkt(VSS_ISTREAM_CMD_STOP_RECORD)
+				wait_event_timeout
+		adm_close
+		msm_clear_copp_id
+		afe_stop_pseudo_port
+	auddev_cfg_tx_copp_topology
+	pcm_in_disable(pcm)
+	msm_clear_session_id
+	q6asm_audio_client_free
+adm_close port_id=1 index 1
+msm_device_put (speaker_mono_tx = 0)
+afe_close: port_id=1
+msm_device_put (speaker_stereo_rx = 0)	
+msm_device_put (speaker_mono_tx = 0)
+audio_in_release: session id 1     (audio_utils.c)
+	audio_in_disable
+		q6asm_cmd(CMD_CLOSE)
+	q6asm_audio_client_free
+		q6asm_audio_client_buf_free
+			q6asm_memory_unmap_regions
+		apr_deregister
+		q6asm_session_free
+			apr_deregister(this_mmap.apr)
+
+
+
+
+
+

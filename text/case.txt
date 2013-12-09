@@ -1,0 +1,47 @@
+1. Can we change the pm8058_micbias_enable API configuration?
+
+/*
+ * The API pm8058_micbias_enable() allows to configure
+ * the MIC_BIAS. Only the lines which are not used for
+ * headset detection can be configured using this API.
+ */
+
+int pm8058_micbias_enable(enum othc_micbias micbias,
+		enum othc_micbias_enable enable)
+{
+	int rc;
+	u8 reg;
+	struct pm8058_othc *dd = config[micbias];
+
+	if (dd == NULL) {
+		pr_err("MIC_BIAS not registered, cannot enable\n");
+		return -ENODEV;
+	}
+#if 0
+	if (dd->othc_pdata->micbias_capability != OTHC_MICBIAS) {
+		pr_err("MIC_BIAS enable capability not supported\n");
+		return -EINVAL;
+	}
+#endif
+
+	rc = pm8058_read(dd->pm_chip, dd->othc_base + 1, &reg, 1);
+	if (rc < 0) {
+		pr_err("PM8058 read failed\n");
+		return rc;
+	}
+
+	reg &= PM8058_OTHC_EN_SIG_MASK;
+	reg |= (enable << PM8058_OTHC_EN_SIG_SHIFT);
+
+	rc = pm8058_write(dd->pm_chip, dd->othc_base + 1, &reg, 1);
+	if (rc < 0) {
+		pr_err("PM8058 write failed\n");
+		return rc;
+	}
+
+	return rc;
+}
+EXPORT_SYMBOL(pm8058_micbias_enable);
+
+
+The #if 0 and #endif do not exist in original API. The question is, can I change it like this, to make sure that I can configure headset Micbias, turning it on/off  (.micbias_capability = OTHC_MICBIAS_HSED) ? 

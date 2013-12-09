@@ -1,0 +1,337 @@
+Question: 
+Why there is not any construction and destruction functions in AudioSystem module?
+
+
+class AudioSystem
+{
+public:
+	enum stream_type
+	enum pcm_sub_format
+	enum mp3_sub_format
+	enum amr_sub_format
+	enum aac_sub_format
+	enum vorbis_sub_format
+	enum audio_format
+	enum audio_channels
+	enum audio_mode
+	enum audio_in_acoustics
+	enum audio_sessions
+	enum audio_devices
+	enum device_connection_state 
+	enum output_flags
+	enum forced_config
+	enum force_use
+	enum io_config_event
+	class OutputDescriptor
+
+private:
+	class AudioFlingerClient: public IBinder::DeathRecipient, public BnAudioFlingerClient
+	class AudioPolicyServiceClient: public IBinder::DeathRecipient
+	friend class AudioFlingerClient;
+	friend class AudioPolicyServiceClient;
+}; 
+
+class AudioParameter
+{
+    static const char *keyRouting;
+    static const char *keySamplingRate;
+    static const char *keyFormat;
+    static const char *keyChannels;
+    static const char *keyFrameCount;
+    static const char *keyInputSource;
+	...
+}
+
+
+
+Classes list:
+class AudioFlingerClient: public IBinder::DeathRecipient, public BnAudioFlingerClient
+class IAudioFlinger 	: public IInterface
+class AudioFlinger 		: public BinderService<AudioFlinger>, public BnAudioFlinger
+class BnAudioFlinger 	: public BnInterface<IAudioFlinger>
+class AudioHardwareBase : public AudioHardwareInterface
+class AudioHardware 	: public AudioHardwareBase
+class PlaybackThread 	: public ThreadBase
+
+class AudioStreamOutMSM72xx : public AudioStreamOut
+class AudioStreamOutDirect 	: public AudioStreamOut 
+class AudioSessionOutMSM7xxx: public AudioStreamOut
+
+class AudioPolicyManagerBase: public AudioPolicyInterface
+class AudioPolicyManager	: public AudioPolicyManagerBase
+
+class IAudioPolicyService 	: public IInterface
+class IInterface 			: public virtual RefBase
+class AudioPolicyServiceClient: public IBinder::DeathRecipient
+
+
+
+
+The function call flow in AudioSystem Module :
+-------------------------- I.Interaction with AudioFlinger -----------------------------
+AudioSystem::muteMicrophone
+	AudioSystem::get_audio_flinger();
+		sp<IServiceManager> sm = defaultServiceManager();
+		binder = sm->getService(String16("media.audio_flinger"));
+/*****
+class BServiceManager 	: public BnServiceManager
+class BnServiceManager 	: public BnInterface<IServiceManager>
+template<typename INTERFACE>
+class BnInterface : public INTERFACE, public BBinder
+class BBinder : public IBinder
+class IBinder : public virtual RefBase
+sp<IBinder> BServiceManager::getService(const String16& name) const
+*****/
+		gAudioFlingerClient = new AudioFlingerClient();
+		gAudioFlinger = interface_cast<IAudioFlinger>(binder);
+		gAudioFlinger->registerClient(gAudioFlingerClient);		
+			new NotificationClient
+			mNotificationClients.add
+			client->ioConfigChanged
+	af->setMicMute	
+	==> AudioFlinger::setMicMute
+				mAudioHardware->setMicMute
+				==> AudioHardware::setMicMute(bool state)
+						setMicMute_nosync(state)
+							isStreamOnAndActive(VOICE_CALL)
+							isStreamOnAndActive(VOIP_CALL)
+							msm_set_voice_tx_mute_ext(mMicMute,session_id)
+								msm_mixer_elem_write(&val)
+									ioctl(control->fd, SNDRV_CTL_IOCTL_ELEM_WRITE, val);
+
+status_t AudioSystem::isMicrophoneMuted(bool* state)
+	const sp<IAudioFlinger>& af = AudioSystem::get_audio_flinger();
+	*state = af->getMicMute();
+
+status_t AudioSystem::setMasterVolume(float value)
+	af->setMasterVolume(value);
+	==> AudioFlinger::setMasterVolume(float value)
+			mAudioHardware->setMasterVolume(value)
+			==> AudioHardware::setMasterVolume(float v)
+					set_volume_rpc(device, method, volume);
+			mPlaybackThreads.valueAt(i)->setMasterVolume(value);
+			==> AudioFlinger::PlaybackThread::setMasterVolume(float value)
+
+AudioSystem::getMasterVolume(float* volume)
+		*volume = af->masterVolume();
+		==> AudioFlinger::masterVolume() const
+
+AudioSystem::getMasterMute(bool* mute)
+	*mute = af->masterMute();
+	==> bool AudioFlinger::masterMute() const
+
+AudioSystem::setStreamVolume(int stream, float value, int output)
+	af->setStreamVolume(stream, value, output);
+	==> AudioFlinger::setStreamVolume(int stream, float value, int output)
+			settingsAllowed
+
+AudioSystem::setParameters(audio_io_handle_t ioHandle, const String8& keyValuePairs)
+	result = af->getParameters(ioHandle, keys);
+		==> AudioFlinger::setParameters(int ioHandle, const String8& keyValuePairs)
+				mAudioHardware->setParameters(keyValuePairs);
+				==> AudioHardware::setParameters(const String8& keyValuePairs)
+				result = mLPAOutput->setParameters(keyValuePairs);
+				checkPlaybackThread_l
+
+AudioSystem::getParameters(audio_io_handle_t ioHandle, const String8& keys) 
+	result = af->getParameters(ioHandle, keys);
+	==> AudioHardware::getParameters(const String8& keys)
+			getNodeByStreamType
+
+AudioSystem::getOutputSamplingRate(int* samplingRate, int streamType)
+	getOutput((stream_type)streamType);
+		AudioSystem::gStreamOutputMap.valueFor(stream);
+		sp<IAudioPolicyService>& aps = AudioSystem::get_audio_policy_service();
+			sp<IServiceManager> sm = defaultServiceManager();
+			binder = sm->getService(String16("media.audio_policy"));
+			gAudioPolicyServiceClient = new AudioPolicyServiceClient();
+			interface_cast<IAudioPolicyService>(binder);
+		aps->getOutput(stream, samplingRate, format, channels, flags);
+		AudioSystem::gStreamOutputMap.add(stream, output);
+	AudioSystem::gOutputs.valueFor(output);
+	const sp<IAudioFlinger>& af = AudioSystem::get_audio_flinger();
+	af->sampleRate(output);
+	==> AudioFlinger::sampleRate(int output) 
+			PlaybackThread *thread = checkPlaybackThread_l(output);
+			thread->sampleRate()
+			==> AudioFlinger::ThreadBase::sampleRate() 
+
+AudioSystem::getOutputFrameCount(int* frameCount, int streamType)
+	output = getOutput((stream_type)streamType);
+	AudioSystem::gOutputs.valueFor(output);
+	sp<IAudioFlinger>& af = AudioSystem::get_audio_flinger();
+	af->frameCount(output);
+
+AudioSystem::getOutputLatency(uint32_t* latency, int streamType)
+	sp<IAudioFlinger>& af = AudioSystem::get_audio_flinger();
+	af->latency(output);
+	==> AudioFlinger::latency(int output) const
+			PlaybackThread *thread = checkPlaybackThread_l(output);
+			thread->latency();
+				(AudioStreamOut* mOutput;)
+				mOutput->latency(); //which latency will be called?
+
+AudioSystem::getInputBufferSize(uint32_t sampleRate, int format, int channelCount, size_t* buffSize)
+	sp<IAudioFlinger>& af = AudioSystem::get_audio_flinger();
+	af->getInputBufferSize(sampleRate, format, channelCount);
+	==> AudioFlinger::getInputBufferSize(uint32_t sampleRate, int format, int channelCount)
+			mAudioHardware->getInputBufferSize(sampleRate, format, channelCount);
+			==> AudioHardware::getInputBufferSize(uint32_t sampleRate, int format, int channelCount)
+
+AudioSystem::setVoiceVolume(float value)
+	sp<IAudioFlinger>& af = AudioSystem::get_audio_flinger();
+	af->setVoiceVolume(value);
+	==> AudioFlinger::setVoiceVolume(float value)
+			mAudioHardware->setVoiceVolume(value);
+			==> AudioHardware::setVoiceVolume(float v)
+    				msm_set_voice_rx_vol_ext(vol,session_id)
+
+AudioSystem::AudioFlingerClient::ioConfigChanged(int event, int ioHandle, void *param2)
+	switch (event)
+	case STREAM_CONFIG_CHANGED:
+	case OUTPUT_OPENED: 
+		OutputDescriptor *outputDesc =  new OutputDescriptor(*desc);
+		gOutputs.add(ioHandle, outputDesc);
+	case OUTPUT_CLOSED: 
+	case OUTPUT_CONFIG_CHANGED:
+		OutputDescriptor *outputDesc = gOutputs.valueAt(index);
+		delete outputDesc;
+        outputDesc =  new OutputDescriptor(*desc);
+        gOutputs.replaceValueFor(ioHandle, outputDesc);
+	case INPUT_OPENED:
+    case INPUT_CLOSED:
+    case INPUT_CONFIG_CHANGED:
+
+
+
+
+-------------------------- II.Interaction with AudioPolicyManager -----------------------------
+AudioSystem::device_connection_state AudioSystem::getDeviceConnectionState(audio_devices device,
+                                                  const char *device_address)
+	aps->getDeviceConnectionState(device, device_address);
+	==> AudioSystem::device_connection_state AudioPolicyService::getDeviceConnectionState
+			mpPolicyManager->getDeviceConnectionState(device, device_address);
+			==> AudioSystem::device_connection_state AudioPolicyManagerBase::getDeviceConnectionState(AudioSystem::audio_devices device,
+                                                  const char *device_address)
+					AudioSystem::isOutputDevice(device)
+					AudioSystem::isInputDevice(device)
+
+AudioSystem::setDeviceConnectionState(audio_devices device,
+                                                  device_connection_state state,
+                                                  const char *device_address)
+	aps->setDeviceConnectionState(device, state, device_address);
+	==> AudioPolicyManager::setDeviceConnectionState(AudioSystem::audio_devices device,
+                                                      AudioSystem::device_connection_state state,
+                                                      const char *device_address)
+			newDevice = AudioPolicyManagerBase::getNewDevice(mHardwareOutput, false);
+			newDevice = AudioPolicyManagerBase::getNewDevice(mLPADecodeOutput, false);
+			newDevice = getDeviceForStrategy(STRATEGY_MEDIA, false);
+			AudioPolicyManagerBase::updateDeviceForStrategy();
+			setOutputDevice(mHardwareOutput, newDevice);
+			AudioSystem::isInputDevice(device)
+			audio_io_handle_t activeInput = AudioPolicyManagerBase::getActiveInput();
+			uint32_t newDevice = AudioPolicyManagerBase::getDeviceForInputSource(inputDesc->mInputSource);
+			
+AudioSystem::setPhoneState(int state)
+	aps->setPhoneState(state);
+	==> AudioPolicyManager::setPhoneState(int state)
+			AudioPolicyManagerBase::handleIncallSonification(stream, false, true);
+			AudioPolicyManagerBase::getNewDevice(mHardwareOutput, false);
+			getDeviceForStrategy(STRATEGY_MEDIA, false);
+			AudioPolicyManagerBase::updateDeviceForStrategy();
+			setStreamMute(AudioSystem::RING, true, mHardwareOutput);
+			setOutputDevice(mHardwareOutput, newDevice, force, delayMs);
+			AudioPolicyManagerBase::handleIncallSonification(stream, true, true);
+
+AudioSystem::forced_config AudioSystem::getForceUse(force_use usage)
+	aps->getForceUse(usage);
+	==> AudioPolicyManager::setForceUse(AudioSystem::force_use usage, AudioSystem::forced_config config)
+			newDevice = getNewDevice(mHardwareOutput, false);
+			updateDeviceForStrategy();
+			setOutputDevice(mHardwareOutput, newDevice);
+			
+AudioSystem::getSession
+	aps->getSession
+	==> AudioPolicyManager::getSession
+			routing_strategy strategy = getStrategy((AudioSystem::stream_type)stream);
+			device = getDeviceForStrategy(strategy);		
+				
+AudioSystem::startOutput
+	aps->startOutput(output, stream, session);
+	==> AudioPolicyManager::startOutput
+			setOutputDevice(output, AudioPolicyManagerBase::getNewDevice(output), true);
+			checkAndSetVolume(stream, mStreams[stream].mIndexCur, output, outputDesc->device());
+			
+			
+	
+AudioSystem::stopOutput
+	aps->stopOutput(output, stream, session);
+	==> AudioPolicyManager::stopOutput
+			AudioPolicyManagerBase::getStrategy
+			AudioPolicyManagerBase::getNewDevice
+			setOutputDevice
+			
+	
+AudioSystem::releaseOutput(audio_io_handle_t output)
+	aps->releaseOutput(output);
+	==> AudioPolicyManagerBase::releaseOutput
+				mpClientInterface->closeOutput(output);
+				delete mOutputs.valueAt(index);
+				mOutputs.removeItem(output);
+
+AudioSystem::pauseSession(audio_io_handle_t output, stream_type stream)
+	aps->pauseSession(output, stream);
+	==> AudioPolicyManager::pauseSession(audio_io_handle_t output, AudioSystem::stream_type stream)
+			
+
+AudioSystem::resumeSession(audio_io_handle_t output, stream_type stream)
+	aps->resumeSession(output, stream);
+	==> AudioPolicyManager::resumeSession(audio_io_handle_t output, AudioSystem::stream_type stream)
+			AudioPolicyManager::startOutput(mLPADecodeOutput, mLPAStreamType);
+
+AudioSystem::closeSession(audio_io_handle_t output)
+	aps->closeSession(output);
+
+AudioSystem::getInput
+	aps->getInput(inputSource, samplingRate, format, channels, acoustics);
+	==> AudioPolicyManagerBase::getInput
+			getDeviceForInputSource(inputSource)
+			==> AudioPolicyManagerBase::getDeviceForInputSource(int inputSource)
+
+AudioSystem::startInput(audio_io_handle_t input)
+	aps->startInput(input);
+	==> AudioPolicyManager::startInput
+			AudioParameter()
+			param.addInt(String8(AudioParameter::keyRouting), (int)inputDesc->mDevice);
+			param.addInt(String8("vr_mode"), vr_enabled);
+			mpClientInterface->setParameters(input, param.toString());
+
+AudioSystem::stopInput(audio_io_handle_t input)
+	aps->stopInput(input);
+	==> AudioPolicyManagerBase::stopInput(audio_io_handle_t input)
+			mpClientInterface->setParameters(input, param.toString());
+
+AudioSystem::releaseInput(audio_io_handle_t input)
+	aps->releaseInput(input);
+	==> AudioPolicyManagerBase::releaseInput(audio_io_handle_t input)
+			mpClientInterface->closeInput(input);
+			delete mInputs.valueAt(index);
+			mInputs.removeItem(input);
+
+AudioSystem::initStreamVolume
+	aps->initStreamVolume(stream, indexMin, indexMax);
+	==> AudioPolicyManagerBase::initStreamVolume
+
+AudioSystem::AudioPolicyServiceClient::binderDied(const wp<IBinder>& who)
+	AudioSystem::gAudioPolicyService.clear();
+
+AudioParameter::AudioParameter(const String8& keyValuePairs)
+
+
+
+
+
+
+
+
+

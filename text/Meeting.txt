@@ -1,0 +1,116 @@
+Alan，
+Last Week,
+1、	DFX上课；
+2、	与高通沟通无法关闭TCXO问题；
+
+
+This Week,
+1、	查找TCXO无法关闭的原因；
+2、	查找唤醒APP的timer；
+3、	Power consumption performance test；
+
+Cherry:
+Last week:
+1. touch self-test debug
+2. capkey 触摸振动debug
+3. touch SW 接口介绍文档
+ 
+This week：
+1. capkey LED乱闪debug
+2. touch power 控制
+3. Dubai performance test
+
+Dany
+Last week:
+1. CR Turn ON Mass Storage异常Fix 
+2. ADB have no device on ship issue Fix
+3. AT 通道app 和amss 数据流分析
+
+This week:
+1. Cairo_TW CDROM 功能导入
+2. USB CDC class study
+3. AT Command issue on MAC GO ON
+
+Frankie
+Last week：
+1、WHCK准备
+
+This week：
+1、WHCK测试
+2、请假
+
+Kris:
+Last week:
+1.	QCSBL ddr 问题跟踪
+2.	Lk全屏显示
+3.	单板不能download
+4.	专利
+
+This week:
+1.	单板不能download跟踪
+2.	专利
+3.	ddr压力测试
+4.	linux内存管理学习
+
+Jack
+Last week:
+1.	Thermal Daemon debug
+2.	Audio ACDB and AEC debug /  tuning
+3.	Smoke test on EVT1-2
+4.	Audio CR debug(EC issue/audio setting no sound issue/recording no sound issue)
+
+This week:
+1.	Audio performance test on EVT1-2
+2.	Audio policy table prepare
+3.	Audio CR debug and SR trace(recording no sound issue)
+
+Larkin
+Last Week
+1. Psensor doesnot work on one EVT1-2 (lack calibration)
+2. Psensor Near Calibration failed of 3cm gray distance on A-Line
+3. Lsensor Calibration failed once issue survey
+4. Verify bmc150 sensor on EVT1-1 board
+5. Debug and Test Psensor Near Calibration on A-Line
+This Week
+1. Import lock/unlock around lpsensor otp write operation
+2. Debug i2c error (not connected) issue when verifying bmc150
+3. Update lpsensor ftd code to show pdata 
+4. Poffset register adjustment for psensor crosstalk
+5. Make Sensor performance test 
+
+
+Reed
+Last week:
+1.导入fastboot download cksum功能
+2.工厂不能download手机分析
+3.JTAG Licence采购
+4.FOTA功能完善（加入logo.bin）
+5.工厂其它事情（包括A Line multi-dl及factory cable的检测）
+ 
+This week:
+1.Fastboot稳定性测试
+2.Boot/Download performance测试
+3.Fastboot安全机制导入
+ 
+Snail ：
+Last Week ：
+1.	DFX 上课与C阶段PPT准备
+2.	SPC FTD interface implement and test
+3.	Kmsg to mail log and on/off control
+4.	产线NV backup fail 手机问题澄清
+5.	Dump SMEM log for logmaster
+
+This Week ：
+1.	DFX上课与C阶段PPT修改
+2.	Diag port on/off control for logmaster
+3.	F3 ind trigger implement
+
+Terry
+Last week：
+1、Ramdump改进
+2、CR追踪
+
+This week：
+1、Ramdump改进
+2、CR fix
+3、DFX上课

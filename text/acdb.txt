@@ -1,0 +1,9 @@
+The acdb initialization sequence of audio devices in AudioHardware.cpp
+enableDevice(int device,short enable)
+	initACDB()
+		acdb_loader_init_ACDB()
+			open("/dev/msm_acdb", O_RDWR);
+			open("/dev/pmem_audio", O_RDWR);
+			ioctl(acdb_handle, AUDIO_REGISTER_PMEM, &pmem_info);
+
+	

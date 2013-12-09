@@ -1,0 +1,24 @@
+A buffer is a list of elements of a specific primitive type. 
+
+A buffer can be described by the following properties: 
+*Capacity: the number of elements a buffer can hold. Capacity may not be negative and never changes.
+*Position: a cursor of this buffer. Elements are read or written at the position if you do not specify an index explicitly. Position may not be negative and not greater than the limit.
+*Limit: controls the scope of accessible elements. You can only read or write elements from index zero to limit - 1. Accessing elements out of the scope will cause an exception. Limit may not be negative and not greater than capacity.
+*Mark: used to remember the current position, so that you can reset the position later. Mark may not be negative and no greater than position.
+*Permission:A buffer can be read-only or read-write. Trying to modify the elements of a read-only buffer will cause a ReadOnlyBufferException, while changing the position, limit and mark of a read-only buffer is OK.
+*A buffer can be direct or indirect. A direct buffer will try its best to take advantage of native memory APIs and it may not stay in the Java heap, thus it is not affected by garbage collection.
+Buffers are not thread-safe. If concurrent access to a buffer instance is required, then the callers are responsible to take care of the synchronization issues. 
+
+Buffers are used for many purposes, such as
+
+interconnecting two digital circuits operating at different rates,
+holding data for use at a later time,
+allowing timing corrections to be made on a data stream,
+collecting binary data bits into groups that can then be operated on as a unit,
+delaying the transit time of a signal in order to allow other operations to occur.
+
+A cache often also acts as a buffer, and vice versa. However, cache operates on the premise that the same data will be read from it multiple times, that written data will soon be read, or that there is a good chance of multiple reads or writes to combine to form a single larger block. Its sole purpose is to reduce accesses to the underlying slower storage. Cache is also usually an abstraction layer that is designed to be invisible.
+
+A buffer overflow occurs when data written to a buffer, due to insufficient bounds checking, corrupts data values in memory addresses adjacent to the allocated buffer. Most commonly this occurs when copying strings of characters from one buffer to another.
+
+

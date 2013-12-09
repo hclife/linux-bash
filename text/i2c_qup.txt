@@ -1,0 +1,16 @@
+qup_i2c_probe(struct platform_device *pdev)
+	platform_get_resource_byname(pdev, IORESOURCE_MEM, "qup_phys_addr");
+	platform_get_resource_byname
+	request_mem_region
+	clk_get(&pdev->dev, pdata->pclk);
+	kzalloc(sizeof(struct qup_i2c_dev), GFP_KERNEL);
+	ioremap(qup_mem->start, resource_size(qup_mem));
+	request_irq(dev->in_irq, qup_i2c_interrupt,...)
+	disable_irq
+	i2c_set_adapdata(&dev->adapter, dev);
+	pdata->msm_i2c_config_gpio(dev->adapter.nr, 1);
+	setup_timer(&dev->pwr_timer, qup_i2c_pwr_timer, (unsigned long) dev);
+	pm_runtime_set_active(&pdev->dev);
+	pm_runtime_enable(&pdev->dev);
+	i2c_add_numbered_adapter(&dev->adapter);
+	

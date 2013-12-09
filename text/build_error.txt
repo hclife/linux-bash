@@ -1,0 +1,13 @@
+device/boss/orange/libsensors/sensord/src/data_proc_engines.c: In function 'data_proc_engines_init':
+device/boss/orange/libsensors/sensord/src/data_proc_engines.c:107: error: 'bstd' undeclared (first use in this function)
+device/boss/orange/libsensors/sensord/src/data_proc_engines.c:107: error: (Each undeclared identifier is reported only once
+device/boss/orange/libsensors/sensord/src/data_proc_engines.c:107: error: for each function it appears in.)
+device/boss/orange/libsensors/sensord/src/data_proc_engines.c: In function 'data_proc_engines_destroy':
+device/boss/orange/libsensors/sensord/src/data_proc_engines.c:226: error: 'bstd' undeclared (first use in this function)
+make: *** [out/oret3uR_lex/target/product/orange/obj/EXECUTABLES/sensord_intermediates/src/data_proc_engines.o] Error 1
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont" /v 936 /t REG_MULTI_SZ /d *¡• È\0*SimLi /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont" /v 936 /t REG_MULTI_SZ /d *Œ¢»Ì\0*Œ¢»Ì—≈∫⁄ /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont" /v 936 /t REG_MULTI_SZ /d *¡• È\0*Consolas /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont" /v 936 /t REG_MULTI_SZ /d *Œ¢»Ì—≈∫⁄\0*Consolas /f
+

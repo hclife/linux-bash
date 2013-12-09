@@ -1,0 +1,25 @@
+__init msm8x60_init(struct msm_board_data *board_data)
+		BUG_ON(msm_rpm_init(&msm_rpm_data));
+		msm_xo_init()
+		socinfo_init()
+		msm8x60_check_2d_hardware();
+		socinfo_get_platform_version();
+		regulator_suppress_info_printing();
+		platform_add_devices(early_regulators, ARRAY_SIZE(early_regulators));
+		msm_clock_init(msm_clocks_8x60, msm_num_clocks_8x60);
+		msm8x60_init_buses();
+		platform_add_devices(early_devices, ARRAY_SIZE(early_devices));
+		msm8x60_init_ebi2();
+		msm8x60_init_tlmm();
+		msm8x60_init_gpiomux(board_data->gpiomux_cfgs);
+		msm8x60_init_mmc();
+		msm8x60_init_pm8058_othc();
+
+static void __init msm8x60_qis_common_init(void)
+{
+	msm8x60_init(&msm8x60_qis_common_board_data);
+}
+
+static struct msm_board_data msm8x60_qis_common_board_data __initdata = {
+	.gpiomux_cfgs = msm8x60_qis_common_gpiomux_cfgs,
+};

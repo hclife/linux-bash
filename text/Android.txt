@@ -1,0 +1,16 @@
+Android Developer and Engineer  (kayrighthere@yahoo.com.cn)
+Develop embedded software for Smartphone (based on Android), which include but not limited to
+　　- Mobile applications and customization for tier-1 mobile operators/carriers in Europe and Americas ;
+　　- Wireless protocol (GSM/GPRS/EDGE/WCDMA/HSPA/...) related features like USSD, STK, Messaging, CPHS, etc;
+　　- BSP (Board Support Package), like Linux drivers for Wifi, GPS, eCompass, G Sensor, Touch Screen, Bluetooth, Keypad, Audio, etc;
+　　- Product integration test and trouble shooting.
+　　
+　　Requirements: 
+　　- Bachelor degree with 2 years working experience or above;
+　　- C/C++ (Product integration, BSP), Linux (Ubuntu, for example), J2SE (for Mobile Applications), Perl, Eclipse, Google Android SDK;
+　　- Domain knowledge of mobile applications such as phonebook, messaging, telephony service, browser, email, social networking, general UI routine, text input, Bluetooth, etc
+　　- Domain knowledge of Android framework, application development (activity, service, UI development, etc);
+　　- ARM architecture, debugging (JTAG, Lauterbach, Trace32, etc);
+　　- Experience in using any of SCM tool like ClearCase, GIT, SVN, etc;
+　　- Very good English read/write skills, good oral English is a plus;
+　　- Technical writings, architecture design by UML.

@@ -1,0 +1,137 @@
+
+
+class AudioTrack 
+{
+public:
+	enum channel_index
+	enum event_type
+	class Buffer
+private:
+	class AudioTrackThread : public Thread	
+	{
+	public:
+		AudioTrackThread;
+	private:
+		friend class AudioTrack;
+	};
+};
+	
+	
+
+
+AudioTrack callback function (audio_track_cblk_t).
+Default stream type is music.
+Audio format:
+PCM_16_BIT = (PCM|PCM_SUB_16_BIT),
+PCM_8_BIT  = (PCM|PCM_SUB_8_BIT)
+(loopEnd-loopStart) <= framecount()
+All tracks in same audio session must share the same routing strategy.
+     * loopStart:   loop start expressed as the number of PCM frames played since AudioTrack start.
+     * loopEnd:     loop end expressed as the number of PCM frames played since AudioTrack start.
+     * loopCount:   number of loops to execute. Calling setLoop() with loopCount == 0 cancels any pending or
+     *          active loop. loopCount = -1 means infinite looping.
+
+AudioTrack construct functions:
+/* construct an uninitialized AudioTrack. */
+1. AudioTrack();
+/* Creates an audio track and registers it with AudioFlinger. */
+2. AudioTrack( int streamType,	..., int frameCount = 0, ...);					==> set1
+/* Creates an audio track and registers it with AudioFlinger. 
+   This prototype is for static buffer playback. */
+3. AudioTrack( int streamType, ..., const sp<IMemory>& sharedBuffer = 0, ...); 	==> set1
+/* Creates an audio track and registers it with AudioFlinger. With this constructor,
+   session ID of compressed stream can be registered AudioFlinger and AudioHardware, for routing purpose. */
+4. AudioTrack( int streamType,	..., int lpaSessionId = -1);					==> set2
+
+
+AudioTrack destruction functions:
+AudioTrack::~AudioTrack()
+	mAudioTrackThread->requestExitAndWait();
+	mAudioTrackThread.clear();
+	mAudioTrack.clear();
+	audioFlinger->deleteSession();
+	AudioSystem::closeSession(mAudioSession);
+	IPCThreadState::self()->flushCommands();
+
+
+/* Initialize an uninitialized AudioTrack. */
+set(...) //long parameters: set1, line177
+	AudioSystem::getOutputSamplingRate
+	AudioSystem::getOutputLatency
+	AudioSystem::popCount
+	AudioSystem::getOutput
+	createTrack
+		AudioSystem::getOutputSamplingRate
+		AudioSystem::getOutputFrameCount
+		AudioSystem::getOutputLatency
+		audioFlinger->createTrack
+		==>¡¡AudioFlinger::createTrack
+				checkPlaybackThread_l
+				mClients.valueFor(pid)
+				nextUniqueId()
+				thread->createTrack_l
+					AudioSystem::getStrategyForStream
+					track = new Track(...);
+					mTracks.add(track);
+					chain = getEffectChain_l(sessionId)
+					track->setMainBuffer
+					chain->setStrategy
+				moveEffectChain_l
+				new TrackHandle(track)
+		track->getCblk()
+		mAudioTrack->attachAuxEffect(mAuxEffectId)
+	new AudioTrackThread
+	
+/* Initialize an AudioTrack and registers session Id for Tunneled audio decoding. */
+set(...) //short parameters: set2, line 293
+	AudioSystem::getSession
+	audioFlinger->createSession
+	android_atomic_or(1, &mActive) 	//make the track active
+	AudioSystem::startOutput		//start output
+
+AudioTrack::dump
+	::write
+		obtainBuffer(&audioBuffer, -1)
+			cblk->framesAvailable()
+				framesAvailable_l()
+			mAudioTrack->start()
+			createTrack
+		releaseBuffer(&audioBuffer)
+			cblk->stepUser(audioBuffer->frameCount);
+
+void AudioTrack::start()
+	AudioSystem::resumeSession
+	sp<AudioTrackThread> t = mAudioTrackThread;
+	t->run("AudioTrackThread", THREAD_PRIORITY_AUDIO_CLIENT);
+	mAudioTrack->start();
+
+void AudioTrack::stop()
+	mCblk->cv.signal();
+	mAudioTrack->stop();
+	setLoop(0, 0, 0);
+	mMarkerReached = false;
+	flush();
+		mAudioTrack->flush();
+		mCblk->cv.signal();
+
+void AudioTrack::pause()
+	AudioSystem::pauseSession
+
+AudioTrack::setPositionUpdatePeriod(uint32_t updatePeriod)
+	getPosition(&curPosition);
+	
+AudioTrack::reload
+	stopped()
+	flush();
+	mCblk->stepUser
+
+AudioTrack::AudioTrackThread::threadLoop()
+	mReceiver.processAudioBuffer(this);
+		mCbf(EVENT_UNDERRUN, mUserData, 0);
+		mCbf(EVENT_BUFFER_END, mUserData, 0);
+		mCbf(EVENT_LOOP_END, mUserData, (void *)&loopCount);
+		mCbf(EVENT_MARKER, mUserData, (void *)&mMarkerPosition);
+		mCbf(EVENT_NEW_POS, mUserData, (void *)&mNewPosition);
+		obtainBuffer(&audioBuffer, 1);
+		mCbf(EVENT_MORE_DATA, mUserData, &audioBuffer);
+		releaseBuffer(&audioBuffer);

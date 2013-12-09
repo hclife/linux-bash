@@ -1,0 +1,134 @@
+  android内核编译方法 收藏
+北京理工大学  20981  陈罡
+
+google的android很多人都希望在gphone没有出来之前，把它移植到相关的硬件平台上去。网上看了不少文章，总的感觉是：在这一步走得最远的就是openmoko的一个大师级别的黑客
+Ben“Benno”Leslie,他曾经试图把目前google发布的android移植到openmoko的平台上去，并且做了10000多行代码的 尝试。最终虽然由于open moko采用比较老的arm920t的内核，而android采用较新的arm926-ej-s内核，而且使用了新的内核的一些新特性，导致移植失败，但 是anyway，他已经做了足够多的前期工作了，尔后的宣布成功移植android到real target板子上的人，大多是在他提供的patch的基础上继续走下去做出来的。
+
+下面是一些有用的参考，希望有助于对此感兴趣的开发人员：
+(1)Ben “Benno” Leslie的关于andorid移植到openmoko的个人博客地址：
+http://benno.id.au/blog/
+
+(2)早期宣布成功移植android到zauraus-sl-c760的详细方法描述的链接：
+http://euedge.com/blog/2007/12/06/google-android-runs-on-sharp-zaurus-sl-c760/
+
+(3)后续的根据上述先行者们的工作，成功移植android到zauraus-c3000的方法：
+http://androidzaurus.seesaa.net/article/74237419.html
+
+(4)本文是参考下面的wiki，接合个人的实践写出来的，对原文的作者表示一下感谢：
+http://wiki.droiddocs.net/Compilation_of_Android_kernel
+
+很羡慕这些人阿！
+
+不过很可惜，偶的开发板是s3c2410的，恰好是arm920t的核心的。。。估计移植上去戏不是很大,需要重写很多代码，毕竟偶跟benno相差得太远太远了，同样是开发人员，差距咋就那么大呢？！
+（毕竟google仅仅开放了kernel的源代码而已，他们需要开放的东西还很多。）
+
+在这里把关于android内核编译方法简单写一下，或许对希望移植内核的朋友能有些帮助:
+(看了Benno的移植过程以后，觉得即使你能够编译google开放出来的内核，意义也不是特别大，因为这个内核中加入了为了支持qemu的很多东西，而这些代码似乎对希望移植到真机上的朋友来说，没有任何意义，反而是一种阻碍)。
+
+1)从CodeSourcery上面载用于交叉编译的工具链:
+http://www.codesourcery.com/gnu_toolchains/arm/download.html
+我在这里选择的是->ARM GNU/Linux，以及IA32-GNU/Linux。有文章说应该选择ARM EABI，我不知道了，没有测试过，反正我选择的这个编译的内核也是可以跑起来的
+
+2)下载google的android linux的内核源代码：
+http://code.google.com/p/android/downloads/list
+主要是这个文件：linux-2.6.23-android-m3-rc20.tar.gz
+3)把下载到的内核和交叉编译工具解压缩，并最好把工具链的路径放到PATH里面去
+解压缩内核：
+$ mkdir -p android
+$ cd android
+$ tar xzvf ../linux-2.6.23-android-m3-rc20.tar.gz
+会解压出来一个叫做kernel的目录，google的android的linux内核就在里面了。
+
+解压缩交叉编译工具链：
+$ cd /usr/local/
+$ sudo cp ~/arm-2007q3-51-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2 .
+$ sudo tar zxvf arm-2007q3-51-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2
+此时会解压出来一个叫做arm2007q3的一个目录，这里面就是工具链了。
+
+设置一下环境变量：
+$ export PATH=$PATH:/usr/local/arm2007q3/bin
+好了，到此，基本的内核编译环境就搞好了。
+
+4)现在是要得到android的内核编译参数的配置文件的时候了，该文件需要从已经安装好的android的模拟器
+中得到才行。所以安装android的sdk也是必须的，这一步不太明白的朋友可以参考我以前发的android
+命令行体验的文章。
+首先启动android模拟器，然后通过adb得到模拟器中提供的内核配置文件：
+$emulator &
+$adb pull /proc/config.gz .
+这时候adb工具会连接模拟器，并从它里面下载一个叫做config.gz的文件到你的当前目录下。
+把它拷贝到你的kernel目录：
+$cd ~/android/kernel
+$cp ~/config.gz . 
+解压缩该文件，并重命名为.config，这一步做了就可以跳过make menuconfig之类的内核参数设置
+动作了。
+$gunzip config.gz
+$mv config .config
+
+5)修改kernel目录中的Makefile文件，用emacs或vi打开该Makefile
+
+修改CROSS_COMPILE变量为:
+CROSS_COMPILE=arm-none-linux-gnueabi-
+这个就是刚刚的下载和解压的工具链的前缀了，旨在告诉make，在编译的时候要使用我们的工具链。
+
+在Makefile中注释掉LDFLAGS_BUILD_ID这个变量：
+例如将如下定义：
+LDFLAGS_BUILD_ID = $(patsubst -Wl$(comma)%,%,\
+                              $(call ld-option, -Wl$(comma)--build-id,))
+修改为：
+LDFLAGS_BUILD_ID=
+#LDFLAGS_BUILD_ID = $(patsubst -Wl$(comma)%,%,\
+#                              $(call ld-option, -Wl$(comma)--build-id,))
+把它注释掉的原因是目前android的内核还不支持这个选项。--build-id选项，主要是用于在生成的elf
+可执行文件中加入一个内置的id，这样在core dump，或者debuginfo的时候就可以很快定位这个模块是
+哪次build的时候弄出来的。这样就可以避免，每次都把整个文件做一遍效验，然后才能得到该文件的是由
+哪次build产生的。对于内核开发者来说，这是很不错的想法，可以节约定位模块版本和其影响的时间。
+目前，该功能还出于early stage的状态，未来的android或许会支持，但至少目前的版本是不支持的。
+所以，用#注释掉即可，或者害怕不保险的话，就加入LDFLAGS_BUILD_ID=空，这样即使编译的时候用了，
+也只是一个空格而已。
+对这个--build-id选项感兴趣的朋友，可以访问下面的网址，它的作者已经解释得非常明白了：
+http://fedoraproject.org/wiki/Releases/FeatureBuildId
+
+6)终于可以开始make了。
+$ make
+不出意外的话，应该整个过程都会非常顺利，最终会在~/android/kernel/arch/arm/boot目录下面
+生成一个zImage，这个就是我们要的内核映像了。
+
+7)激动人心的时刻终于到来了，我们可以测试一下刚刚编译出来的内核可以不可以用了。
+$emulator -kernel ~/android/kernel/arch/arm/boot/zImage
+当看到red eye在晃来晃去，最终显示出来android的界面的时候，一颗悬着的心总算放下了。
+
+android的proc里面的version如下：
+# cat version
+Linux version 2.6.23 (wayne@wayne) (gcc version 4.2.1 (CodeSourcery Sourcery G++ Lite 2007q3-51)) #1 Sat Jan 19 18:11:44 HKT 2008
+从这里就可以看出，这是自己编译的kernel，而不是人家sdk里面自带的kernel-qemu了。
+
+android自带的sdk里面的kernel映像的version应该是：
+# cat version
+Linux version 2.6.23-gcc3bc3b4 (arve@arvelnx.corp.google.com) (gcc version 4.2.1) #3 Tue Oct 30 16:28:18 PDT 2007
+hoho, 这里不会把这个开发者的email暴露出来了吧。。。
+
+android的cpuinfo如下：
+Processor       : ARM926EJ-S rev 5 (v5l)
+BogoMIPS        : 313.75
+Features        : swp half thumb fastmult vfp edsp java
+CPU implementer : 0x41
+CPU architecture: 5TEJ
+CPU variant     : 0x0
+CPU part        : 0x926
+CPU revision    : 5
+Cache type      : write-through
+Cache clean     : not required
+Cache lockdown  : not supported
+Cache format    : Harvard
+I size          : 4096
+I assoc         : 4
+I line length   : 32
+I sets          : 32
+D size          : 65536
+D assoc         : 4
+D line length   : 32
+D sets          : 512
+
+Hardware        : Goldfish
+Revision        : 0000
+Serial          : 0000000000000000

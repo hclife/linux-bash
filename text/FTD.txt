@@ -1,0 +1,109 @@
+== ft_audio.c == 
+android/system/core/ftd
+commands_AudioPlayWav
+	pthread_create( &play_rec_thread, NULL, 
+		playpcm_thread, NULL);
+		      ==>wav_play
+				memcpy(path, AUDIO_PLAY_FILE_NAME, strlen(AUDIO_PLAY_FILE_NAME));
+				fd = open(path, O_RDONLY);
+				read(fd, &hdr, sizeof(hdr)) != sizeof(hdr)
+				play_file(hdr.sample_rate, hdr.num_channels,
+					 fd, hdr.data_sz);
+					pcm_play(rate, channels, fill_buffer, 0);
+						out_fd = open(AUDIO_PCM_OUT_PATH, O_WRONLY);
+						ioctl(out_fd, AUDIO_GET_SESSION_ID, &dec_id)
+						msm_route_stream(AUDIO_STREAM_DIR_RX, dec_id, audiotest_devid[RX_DEVICE], 1) 
+						ioctl(out_fd, AUDIO_GET_CONFIG, &config)
+						ioctl(out_fd, AUDIO_SET_CONFIG, &config)
+						ioctl(out_fd, AUDIO_START, 0) 
+			pthread_exit
+	SendResult(SUCCESS, AUDIO_ITEM_INDEX, AUDIO_FUNC_INDEX_PLAY_WAV, 0, 0);		
+	sleep(2);
+	pthread_join( play_rec_thread, NULL );  
+
+commands_AudioRecordWav
+	commands_AudioRecPcm
+		pthread_create( &play_rec_thread, NULL, 
+			recpcm_thread, NULL);
+			==> wav_rec
+				fd = open(AUDIO_RECORD_FILE_NAME, O_CREAT | O_RDWR | O_TRUNC, 0666);
+				write(fd, &hdr, sizeof(hdr));
+				afd = open(AUDIO_PCM_IN_PATH, O_RDONLY);
+			    pthread_exit
+				
+	sleep(2)
+	SendResult
+
+AudioSwitchDevice
+	audiotest_init()
+	memset(index, 0, sizeof(index));  
+	memcpy(index, deviceIndex, len);  
+	msm_get_device(device_name)
+	msm_en_device(all,0)
+	msm_en_device(device_id,1)
+	audiotest_deinit(); 
+
+
+typedef struct
+{
+	int		cmd_index;
+	char	cmd_str[12];
+	int		device_id;
+	char	device_name[64];
+} dev_map_t;
+
+static dev_map_t g_rx_device[] = 
+{
+	{AUDIO_RX_HANDSET_RECEIVER_MONO,				"0",	-1, 	"handset_rx"			},
+	{AUDIO_RX_HEADSET_SPEAKER_STEREO,				"1",	-1, 	"headset_stereo_rx"		},
+	/*Leo Qin: speaker_stereo_rx_left later*/
+	{AUDIO_RX_LOUD_SPEAKER_LEFT, 					"2",	-1, 	"speaker_stereo_rx"		},
+	/*Leo Qin: speaker_stereo_rx_right later*/
+	{AUDIO_RX_LOUD_SPEAKER_RIGHT,					"3",	-1, 	"speaker_stereo_rx"		},
+	{-1, 											"",		-1, 	""						}
+};
+
+static dev_map_t g_tx_device[] = 
+{
+	{AUDIO_TX_HANDSET_MIC_1,							"0",	-1,		"handset_tx"				},
+	{AUDIO_TX_HANDSET_MIC_2,							"1",	-1,		"handset_tx_a2"				},
+	{AUDIO_TX_HEADSET_MIC,								"2",	-1,		"headset_mono_tx"			},
+	{-1,												"",		-1,		""							}
+};
+
+
+
+
+
+
+
+ft_public.c
+SendResult
+	get_ftd_info_public(2)
+	ret=send(packetfd_public, (cMsg+i), 1, 0);
+
+
+
+== EB1B300041_kmsg_20111108_1353_39.log ==
+<6>[   85.725090] msm_device_put:device speaker_stereo_rx set 0
+<6>[   86.914144] binder: 308:308 refcount change on invalid ref 0
+<6>[   86.918764] binder: 308:308 refcount change on invalid ref 0
+<6>[   86.924610] binder: 308:308 transaction failed 29189, size 88-0
+<6>[   87.811924] msm_device_put:device handset_rx set 0
+
+_1108 15:31:38.890481 10616 GLog.cpp:89] Speaker Play wav Stop.
+_1108 15:31:42.968580 10616 GLog.cpp:89] Speaker Play wav Stop Success.
+
+
+em_audio.c (Derrick) flow :
+audio_em_test
+	audiotest_init();
+	AudioSwitchDevice
+	commands_AudioPlayWav
+	commands_AudioLoop
+	AudioCloseAllDevice
+	commands_AudioRecordWav
+
+
+
+

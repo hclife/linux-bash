@@ -1,0 +1,731 @@
+<6>[    0.000000] Initializing cgroup subsys cpu
+<5>[    0.000000] Linux version 3.0.8-perf (cherry@bp152) (gcc version 4.4.3 (GCC) ) #114 PREEMPT Tue Mar 13 16:31:16 HKT 2012
+<4>[    0.000000] CPU: ARMv7 Processor [410fc051] revision 1 (ARMv7), cr=10c53c7d
+<4>[    0.000000] CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+<4>[    0.000000] Machine: QCT MSM7x27a FFA
+<4>[    0.000000] parse_tag_mem_aboot_log 2da00000 100000
+<6>[    0.000000] Partition (from atag) boot -- Offset:10f Size:28
+<6>[    0.000000] Partition (from atag) system -- Offset:137 Size:538
+<6>[    0.000000] Partition (from atag) flex -- Offset:66f Size:118
+<6>[    0.000000] Partition (from atag) recovery -- Offset:787 Size:38
+<6>[    0.000000] Partition (from atag) misc -- Offset:7bf Size:8
+<6>[    0.000000] Partition (from atag) cache -- Offset:7c7 Size:1e0
+<6>[    0.000000] Partition (from atag) userdata -- Offset:9a7 Size:578
+<6>[    0.000000] Partition (from atag) oem_glog -- Offset:f1f Size:c0
+<6>[    0.000000] Partition (from atag) oem_logfilter -- Offset:fdf Size:4
+<6>[    0.000000] Partition (from atag) oem_RC -- Offset:fe3 Size:4
+<6>[    0.000000] Partition (from atag) oem_variables -- Offset:fe7 Size:8
+<6>[    0.000000] Partition (from atag) oem_dlog -- Offset:fef Size:8
+<6>[    0.000000] Partition (from atag) oem_FA -- Offset:ff7 Size:8
+<6>[    0.000000] Partition (from atag) MIBIB -- Offset:0 Size:a
+<6>[    0.000000] Partition (from atag) SIM_SECURE -- Offset:a Size:4
+<6>[    0.000000] Partition (from atag) QCSBL -- Offset:e Size:3
+<6>[    0.000000] Partition (from atag) OEMSBL1 -- Offset:11 Size:9
+<6>[    0.000000] Partition (from atag) OEMSBL2 -- Offset:1a Size:9
+<6>[    0.000000] memory pool 3 (start 2a500000 size 3500000) initialized
+<4>[    0.000000] Memory policy: ECC disabled, Data cache writeback
+<6>[    0.000000] L310 cache controller enabled
+<6>[    0.000000] L310 cache controller enabled
+<6>[    0.000000] l2x0: 8 ways, CACHE_ID 0x410054c7, AUX_CTRL 0x00540000, Cache size: 262144 B
+<3>[    0.000000] smem_find(137, 72): wrong size 64
+<4>[    0.000000] socinfo_init, cur_cpu 16, socinfo->v1.id 102
+<6>[    0.000000] socinfo_init: v4, id=102, ver=1.1, raw_id=1571, raw_ver=1, hw_plat=2, hw_plat_ver=65536
+<7>[    0.000000] On node 0 totalpages: 107264
+<7>[    0.000000] free_area_init_node: node 0, pgdat c07cf07c, node_mem_map c0acd000
+<7>[    0.000000]   Normal zone: 1056 pages used for memmap
+<7>[    0.000000]   Normal zone: 0 pages reserved
+<7>[    0.000000]   Normal zone: 68576 pages, LIFO batch:15
+<7>[    0.000000]   HighMem zone: 400 pages used for memmap
+<7>[    0.000000]   HighMem zone: 37232 pages, LIFO batch:7
+<6>[    0.000000] allocating 4608000 bytes at c124b000 (144b000 physical) for fb
+<7>[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+<7>[    0.000000] pcpu-alloc: [0] 0 
+<4>[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 105808
+<5>[    0.000000] Kernel command line: androidboot.hardware=qcom androidboot.serialno=BK1C200306 androidboot.authorized_kernel=true androidboot.baseband=msm androidboot.board_adc=166 androidboot.ddr_size=512 imei=03a7512070400124 btmac=0017CAF300D3 wlanmac=0017CAF380D3 Qdebugfs=1 Qunlock=1 console=none bootup_reason=fastboot power_on_status=0x20 flash_capacity=1024 
+<6>[    0.000000] board_adc_setup: board_adc_value=166
+<6>[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+<6>[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    0.000000] Memory: 254MB 165MB = 419MB total
+<5>[    0.000000] Memory: 408876k/408876k available, 74452k reserved, 150528K highmem
+<5>[    0.000000] Virtual kernel memory layout:
+<5>[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>[    0.000000]     DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+<5>[    0.000000]     vmalloc : 0xe1800000 - 0xfa000000   ( 392 MB)
+<5>[    0.000000]     lowmem  : 0xc0000000 - 0xe1000000   ( 528 MB)
+<5>[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+<5>[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+<5>[    0.000000]       .init : 0xc0008000 - 0xc0037000   ( 188 kB)
+<5>[    0.000000]       .text : 0xc0037000 - 0xc0779c00   (7435 kB)
+<5>[    0.000000]       .data : 0xc077a000 - 0xc07dc340   ( 393 kB)
+<5>[    0.000000]        .bss : 0xc07dc3f4 - 0xc0ac8f58   (2995 kB)
+<6>[    0.000000] Preemptible hierarchical RCU implementation.
+<6>[    0.000000] NR_IRQS:261
+<6>[    0.000000] sched_clock: 27 bits at 600kHz, resolution 1666ns, wraps every 223696ms
+<6>[    0.000000] Console: colour dummy device 80x30
+<6>[    0.000294] Calibrating delay loop... 298.59 BogoMIPS (lpj=1492992)
+<6>[    0.070063] pid_max: default: 32768 minimum: 301
+<6>[    0.070308] Mount-cache hash table entries: 512
+<6>[    0.070758] Initializing cgroup subsys cpuacct
+<6>[    0.070794] Initializing cgroup subsys devices
+<6>[    0.070811] Initializing cgroup subsys freezer
+<6>[    0.070864] CPU: Testing write buffer coherency: ok
+<6>[    0.071121] hw perfevents: enabled with ARMv7 Cortex-A5 PMU driver, 3 counters available
+<6>[    0.073196] print_constraints: dummy: 
+<3>[    0.073251] rdev_init_debugfs: Error-Bad Function Input
+<6>[    0.073441] NET: Registered protocol family 16
+<3>[    0.074693] kernel_debuglevel_dir OK
+<6>[    0.074738] acpuclk_7627_init()
+<6>[    0.074759] Shared PLL control available.
+<6>[    0.074928] L val: PLL0: 50, PLL1: 12, PLL2: 62
+<6>[    0.074991] L val: PLL4: 52
+<6>[    0.075164] ACPU running at 600000 KHz
+<6>[    0.075181] Id CPU-KHz PLL DIV AHB-KHz ADIV AXI-KHz D0 D1 D2 D4 U0 U1 U2 U4
+<6>[    0.075211]  0   19200  -1   1    2400    4   30720 -1 -1 -1 -1  6  3  4  7
+<6>[    0.075239]  1   61440   1   4    7680    4   61440 -1 -1 -1 -1  6  3  4  7
+<6>[    0.075268]  2  122880   1   2   15360    4   61440 -1  1 -1 -1  6  3  8  7
+<6>[    0.075298]  3  245760   1   1   30720    4   61440 -1  1 -1 -1  6 -1  8  7
+<6>[    0.075326]  4  300000   2   4   37500    4  150000 -1  1 -1 -1  6 -1  8  7
+<6>[    0.075354]  5  320000   0   3   40000    4  122880 -1  1  4 -1  6 -1  8  7
+<6>[    0.075384]  6  480000   0   2   60000    4  122880  5  1  4 -1 -1 -1  8  7
+<6>[    0.075413]  7  504000   4   2   63000    4  200000  5  1  4 -1 -1 -1  8  9
+<6>[    0.075441]  8  600000   2   2   75000    4  200000  5  2  4  7 -1 -1 -1  9
+<6>[    0.075471]  9 1008000   4   1  126000    4  200000 -1 -1  8  7 -1 -1 -1 -1
+<6>[    0.075488] 6 scaling frequencies supported.
+<6>[    0.075703] print_constraints: smps1: 1100 mV normal 
+<6>[    0.075903] print_constraints: smps2: 1100 mV normal 
+<6>[    0.076079] print_constraints: smps3: 1800 mV normal 
+<6>[    0.076268] print_constraints: smps4: 2100 mV normal 
+<6>[    0.076444] print_constraints: ldo01: 1800 mV normal 
+<6>[    0.076631] print_constraints: ldo02: 2850 mV normal 
+<6>[    0.076838] print_constraints: ldo03: 1200 mV normal 
+<6>[    0.077013] print_constraints: ldo04: 1100 mV normal 
+<6>[    0.077213] print_constraints: ldo05: 1300 <--> 1350 mV normal 
+<6>[    0.077389] print_constraints: ldo06: 1200 mV normal 
+<6>[    0.077588] print_constraints: ldo07: 2600 mV normal 
+<6>[    0.077769] print_constraints: ldo08: 2850 mV normal 
+<6>[    0.077968] print_constraints: ldo09: 1800 mV normal 
+<6>[    0.078161] print_constraints: ldo10: 1800 <--> 3000 mV normal 
+<6>[    0.078369] print_constraints: ldo11: 1800 mV normal 
+<6>[    0.078558] print_constraints: ldo12: 2850 mV normal 
+<6>[    0.078764] print_constraints: ldo13: 2850 mV normal 
+<6>[    0.078954] print_constraints: ldo14: 3300 mV normal 
+<6>[    0.079164] print_constraints: ldo15: 1800 <--> 2850 mV normal 
+<6>[    0.079373] print_constraints: ldo16: 1800 <--> 2850 mV normal 
+<6>[    0.079569] print_constraints: ldo17: 2900 <--> 3300 mV normal 
+<6>[    0.079789] print_constraints: ldo18: 2700 mV normal 
+<6>[    0.079984] print_constraints: ldo19: 1200 <--> 1800 mV normal 
+<6>[    0.080324] print_constraints: ncp: 1800 mV normal 
+<4>[    0.082544] debuglevel open start ++
+<4>[    0.082559] debuglevel open start 1++
+<4>[    0.082586] debuglevel open start --
+<4>[    0.082688] msm7x27a_init_ar6000_static_memory
+<2>[    0.082819] bdata=0xe0a26000
+<2>[    0.082826] otp=0xe0a58000
+<2>[    0.082833] fw=0xe0a60000
+<2>[    0.082838] patch=0xe0a04800
+<4>[    0.083509] debuglevel open start ++
+<4>[    0.083521] debuglevel open start 1++
+<4>[    0.083546] debuglevel open start --
+<4>[    0.084524] --vibrator_create_debugfs_entries--
+<4>[    0.084591] --vibrator_create_kernel_debuglevel_entries--
+<3>[    0.086908] i2c i2c-0: Invalid 7-bit I2C address 0x00
+<3>[    0.086929] i2c i2c-0: Can't create device at 0x00
+<6>[    0.089539] print_constraints: fs_gfx3d: normal 
+<6>[    0.105184] bio: create slab <bio-0> at 0
+<5>[    0.106109] SCSI subsystem initialized
+<6>[    0.106341] usbcore: registered new interface driver usbfs
+<6>[    0.106473] usbcore: registered new interface driver hub
+<6>[    0.106658] usbcore: registered new device driver usb
+<6>[    0.107054] Advanced Linux Sound Architecture Driver Version 1.0.24.
+<6>[    0.107783] NET: Registered protocol family 31
+<6>[    0.108246] Switching to clocksource dg_timer
+<6>[    0.117416] NET: Registered protocol family 2
+<6>[    0.117616] IP route cache hash table entries: 4096 (order: 2, 16384 bytes)
+<6>[    0.118059] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+<6>[    0.118581] TCP bind hash table entries: 16384 (order: 4, 65536 bytes)
+<6>[    0.118833] TCP: Hash tables configured (established 16384 bind 16384)
+<6>[    0.118853] TCP reno registered
+<6>[    0.118881] UDP hash table entries: 256 (order: 0, 4096 bytes)
+<6>[    0.118918] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+<6>[    0.119336] NET: Registered protocol family 1
+<6>[    0.119636] Unpacking initramfs...
+<6>[    0.156193] Freeing initrd memory: 296K
+<6>[    0.156343] PMU: registered new PMU device of type 0
+<3>[    0.164414] Notify: smsm init
+<6>[    0.165631] rpcrouter_smd_remote_notify: smd opened 0x  (null)
+<4>[    0.168713] snd_create_kernel_debuglevel:create snd kernel debuglevel!!!
+<3>[    0.168734] kernel_debuglevel_dir snd_dll Done
+<1>[    0.169268] dma_test_init, minor number 40
+<3>[    0.172666] rpcrouter: Server create rejected, version = 0, program = 3000003b
+<3>[    0.173781] rpcrouter: Server create rejected, version = 0, program = 30000051
+<6>[    0.176903] __msm_rpc_connect: server not found 30000002:20001
+<4>[    0.195768] highmem bounce pool size: 64 pages
+<6>[    0.196074] ashmem: initialized
+<6>[    0.197318] fuse init (API version 7.16)
+<7>[    0.197604] yaffs: yaffs built Mar  1 2012 08:18:10 Installing.
+<6>[    0.197656] msgmni has been set to 505
+<4>[    0.198048] cryptomgr_test used greatest stack depth: 7064 bytes left
+<4>[    0.198468] cryptomgr_test used greatest stack depth: 6856 bytes left
+<6>[    0.199778] io scheduler noop registered
+<6>[    0.199893] io scheduler cfq registered (default)
+<6>[    0.201643] mipi_dsi base phy_addr = 0xa1100000 virt = 0xe1a00000
+<3>[    0.202258] -- lcd create kernel debuglevel --
+<6>[    0.202286] setting pdata->panel_info.fb_num to 3. type: 8
+<6>[    0.202534] DSI Two Lanes
+<6>[    0.206216] FrameBuffer[0] 480x800 size=4608000 bytes is registered successfully!
+<7>[    0.206564] Registered led device: lcd-backlight
+<6>[    0.207006] msm_serial: detected port #0
+<6>[    0.207103] msm_serial.0: ttyMSM0 at MMIO 0xa9a00000 (irq = 9) is a MSM
+<6>[    0.218488] msm_serial: driver initialized
+<6>[    0.218796] msm_serial_hs.0: ttyHS0 at MMIO 0xa0200000 (irq = 45) is a MSM HS UART
+<6>[    0.238414] msm_serial_hs module loaded
+<6>[    0.238524] msm_serial_hsl: detected port #0
+<6>[    0.238638] msm_serial_hsl.0: ttyHSL0 at MMIO 0xa0300000 (irq = 52) is a MSM
+<3>[    0.238981] msm_hsl_power(): Error setting UART clock rate to zero.
+<6>[    0.258419] msm_serial_hsl: driver initialized
+<6>[    0.261093] kgsl kgsl-3d0: |kgsl_gpummu_init| MMU type set for device is GPUMMU
+<6>[    0.265176] loop: module loaded
+<6>[    0.265328] pmem: Initializing pmem (user-space) as cached
+<6>[    0.265549] allocating 36700160 bytes at   (null) (2a500000 physical) for pmem
+<6>[    0.265651] pmem: Initializing pmem_adsp (user-space) as cached
+<6>[    0.265843] allocating 17825792 bytes at   (null) (2c800000 physical) for pmem_adsp
+<6>[    0.265934] pmem: Initializing pmem_audio (user-space) as non-cached
+<6>[    0.266111] allocating 372736 bytes at   (null) (2d900000 physical) for pmem_audio
+<4>[    0.266244] BootLog, +lsensor_init
+<4>[    0.291816] i2c-core: driver [isl29028] using legacy suspend method
+<4>[    0.291836] i2c-core: driver [isl29028] using legacy resume method
+<4>[    0.291968] [ALS]lsensor_init, lsensor_workqueue created PASS!
+<4>[    0.292299] [ALS]als: input_allocate_device: PASS
+<6>[    0.292589] input: lsensor_isl29028 as /devices/virtual/input/input0
+<4>[    0.292613] [ALS]als: input_register_device: PASS
+<4>[    0.292633] [ALS]prox: input_allocate_device: PASS
+<6>[    0.292883] input: psensor_isl29028 as /devices/virtual/input/input1
+<4>[    0.292901] [ALS]prox: input_register_device: PASS
+<4>[    0.292916] BootLog, -lsensor_init, ret=0
+<6>[    0.508774] [NFC]PN544 probe : misc devices setting....
+<6>[    0.508996] [NFC]PN544 probe : IRQ setting....
+<4>[    0.509156] PN544_DEBUG_DLL(0)
+<6>[    0.718676] pn544_read_test: empty frame
+<6>[    0.718694] pn544_I : No data can readed, retry once
+<6>[    0.748676] pn544_read_test: empty frame
+<6>[    0.748691] pn544_I : No data can readed, retry once
+<4>[    1.768384] pn544_probe success: nfc sw version is 108-12
+<4>[    1.768479] pn544_init initialize success!
+<6>[    1.769208] SCSI Media Changer driver v0.25 
+<6>[    1.769888] msm_nand_probe: phys addr 0xa0a00000 
+<6>[    1.769911] msm_nand_probe: Dual Nand Ctrl in ping-pong mode
+<6>[    1.769929] msm_nand_probe: dmac 0x7
+<6>[    1.769981] msm_nand_probe: allocated dma buffer at ffdec000, dma_addr 20ed4000
+<6>[    1.770631] ONFI probe : CRC Check failed on ONFI Parameter data 
+<6>[    1.770698] status: c00020
+<6>[    1.770714] nandid: 1191b3ad maker ad device b3
+<6>[    1.770756] Found a supported NAND device
+<6>[    1.770771] NAND Id  : 0x1191b3ad
+<6>[    1.770783] Buswidth : 16 Bits
+<6>[    1.770794] Density  : 1024 MByte
+<6>[    1.770808] Pagesize : 4096 Bytes
+<6>[    1.770819] Erasesize: 262144 Bytes
+<6>[    1.770831] Oobsize  : 128 Bytes
+<6>[    1.770861] CFG0 Init  : 0xa85409c0
+<6>[    1.770873] CFG1 Init  : 0x0004645e
+<6>[    1.770884] ECCBUFCFG  : 0x00000203
+<5>[    1.770903] Creating 18 MTD partitions on "msm_nand":
+<5>[    1.770928] 0x0000043c0000-0x000004dc0000 : "boot"
+<5>[    1.775018] 0x000004dc0000-0x000019bc0000 : "system"
+<5>[    1.873891] 0x000019bc0000-0x00001e1c0000 : "flex"
+<5>[    1.895421] 0x00001e1c0000-0x00001efc0000 : "recovery"
+<5>[    1.900568] 0x00001efc0000-0x00001f1c0000 : "misc"
+<5>[    1.902243] 0x00001f1c0000-0x0000269c0000 : "cache"
+<5>[    1.938819] 0x0000269c0000-0x00003c7c0000 : "userdata"
+<5>[    2.043299] 0x00003c7c0000-0x00003f7c0000 : "oem_glog"
+<5>[    2.058511] 0x00003f7c0000-0x00003f8c0000 : "oem_logfilter"
+<5>[    2.059816] 0x00003f8c0000-0x00003f9c0000 : "oem_RC"
+<5>[    2.061126] 0x00003f9c0000-0x00003fbc0000 : "oem_variables"
+<5>[    2.062781] 0x00003fbc0000-0x00003fdc0000 : "oem_dlog"
+<5>[    2.064439] 0x00003fdc0000-0x00003ffc0000 : "oem_FA"
+<5>[    2.066131] 0x000000000000-0x000000280000 : "MIBIB"
+<5>[    2.067991] 0x000000280000-0x000000380000 : "SIM_SECURE"
+<5>[    2.069438] 0x000000380000-0x000000440000 : "QCSBL"
+<5>[    2.070663] 0x000000440000-0x000000680000 : "OEMSBL1"
+<5>[    2.072343] 0x000000680000-0x0000008c0000 : "OEMSBL2"
+<6>[    2.074248] PPP generic driver version 2.4.2
+<6>[    2.074538] PPP Deflate Compression module registered
+<6>[    2.074556] PPP BSD Compression module registered
+<4>[    2.074896] kworker/u:2 used greatest stack depth: 6696 bytes left
+<4>[    2.075634] cryptomgr_probe used greatest stack depth: 6672 bytes left
+<6>[    2.075688] PPP MPPE Compression module registered
+<6>[    2.075706] NET: Registered protocol family 24
+<6>[    2.075766] tun: Universal TUN/TAP device driver, 1.6
+<6>[    2.075781] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+<6>[    2.076258] rmnet_init: SMD devices[8]
+<7>[    2.081466] gpio_request: gpio-141 (i2c_host_vbus_en) status -22
+<3>[    2.081488] failed to request 141 GPIO
+<4>[    2.082093] --otg_create_kernel_debuglevel_entries--
+<6>[    2.082273] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[    2.082501] host driver registered w/ tranceiver
+<6>[    2.082719] usbcore: registered new interface driver cdc_acm
+<6>[    2.082736] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+<6>[    2.082754] Initializing USB Mass Storage driver...
+<6>[    2.082864] usbcore: registered new interface driver usb-storage
+<6>[    2.082881] USB Mass Storage support registered.
+<6>[    2.082959] usbcore: registered new interface driver ums-alauda
+<6>[    2.083051] usbcore: registered new interface driver ums-cypress
+<6>[    2.083133] usbcore: registered new interface driver ums-datafab
+<6>[    2.083214] usbcore: registered new interface driver ums-freecom
+<6>[    2.083296] usbcore: registered new interface driver ums-isd200
+<6>[    2.083378] usbcore: registered new interface driver ums-jumpshot
+<6>[    2.083459] usbcore: registered new interface driver ums-karma
+<6>[    2.083541] usbcore: registered new interface driver ums-onetouch
+<6>[    2.083624] usbcore: registered new interface driver ums-sddr09
+<6>[    2.083706] usbcore: registered new interface driver ums-sddr55
+<6>[    2.083789] usbcore: registered new interface driver ums-usbat
+<6>[    2.083874] usbcore: registered new interface driver usb_ehset_test
+<6>[    2.084283] peripheral driver registered w/ tranceiver
+<4>[    2.086951] Sonia::android mtp_function_init
+<6>[    2.087751] android_usb gadget: Mass Storage Function, version: 2009/09/11
+<6>[    2.087776] android_usb gadget: Number of LUNs=1
+<6>[    2.087794]  lun0: LUN: removable file: (no medium)
+<4>[    2.088183] Sonia::android hid_function_init
+<6>[    2.088259] android_usb gadget: android_usb ready
+<6>[    2.089908] diagchar initialized nowcyttsp_init:system_rev=0x20
+<4>[    2.090236] ATMEL mXT224E Touchscreen Driver (Built Mar  1 2012 @ 08:17:56)
+<4>[    2.090254] system_rev=0x20
+<4>[    2.090266] touchpad_init 2961
+<4>[    2.090329] touchpad_probe 2745
+<4>[    2.208304] touchpad_power_on_device 868 avdd_touch & vdd_touch have been turn on
+<4>[    2.308394] Sonia::msm_otg_set_power  chg_type 3 0 mA 
+<4>[    2.309411] Sonia::msm_otg_set_power delay to tell charger type 3
+<4>[    2.309436] Sonia::msm_otg_set_power Charging with 0 mA current -1 mA chg_type  3 update 1 update_chg_type 1
+<4>[    2.309868] Sonia::msm_otg_set_power delay to tell vbus draw 0 mA
+<4>[    2.309908] Sonia::udc OFFLINE -> ONLINE
+<4>[    2.343709] ATMEL mXT224E touch fimrware version : 0x10
+<4>[    2.351153] SOnia::msm_otg_irq (92d0020) VBUS - (OFF)
+<4>[    2.370149] SOnia::msm_otg_irq (92c2c20) VBUS - (ON)
+<4>[    2.377496] calculate config CRC:0xc89a12
+<4>[    2.377511] g_tp->T6_config_checksum:0xc89a12
+<6>[    2.377896] input: touch_ATMEL_mXT224E as /devices/i2c-1/1-004a/input/input2
+<6>[    2.378433] input: capkey_ATMEL_mXT224E as /devices/i2c-1/1-004a/input/input3
+<4>[    2.379051] Start Probe PASS
+<4>[    2.379139] touchpad_init 2969
+<3>[    2.379338] gpio_event_matrix_func: gpio_direction_input for input 35
+<3>[    2.379411] gpio_event_matrix_func: gpio_direction_input for input 36
+<6>[    2.379509] GPIO Matrix Keypad Driver: Start keypad matrix for 7k_ffa_keypad in interrupt mode
+<6>[    2.379869] input: 7k_ffa_keypad as /devices/virtual/input/input4
+<4>[    2.380733] set normal pri...
+<4>[    2.382589] command T6 report id is:1
+<4>[    2.382603] command T6 status:0
+<4>[    2.382614] It isn't normal to read T6 message
+<3>[    2.383074] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:43
+<3>[    2.383106] qup_i2c qup_i2c.1: I2C slave addr:0x18 not connected
+<3>[    2.383243] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:43
+<3>[    2.383274] qup_i2c qup_i2c.1: I2C slave addr:0x18 not connected
+<3>[    2.383411] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:43
+<3>[    2.383441] qup_i2c qup_i2c.1: I2C slave addr:0x18 not connected
+<3>[    2.383578] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:43
+<3>[    2.383608] qup_i2c qup_i2c.1: I2C slave addr:0x18 not connected
+<3>[    2.383744] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:43
+<3>[    2.383774] qup_i2c qup_i2c.1: I2C slave addr:0x18 not connected
+<3>[    2.383911] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:43
+<3>[    2.383941] qup_i2c qup_i2c.1: I2C slave addr:0x18 not connected
+<3>[    2.384078] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:43
+<3>[    2.384108] qup_i2c qup_i2c.1: I2C slave addr:0x18 not connected
+<3>[    2.384244] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:43
+<3>[    2.384274] qup_i2c qup_i2c.1: I2C slave addr:0x18 not connected
+<6>[    2.393894] input: bma250 as /devices/virtual/input/input5
+<4>[    2.395354] i2c-core: driver [bma250] using legacy suspend method
+<4>[    2.395374] i2c-core: driver [bma250] using legacy resume method
+<6>[    2.398881] RPC CALL -- TOD TIME UPDATE: ttick = 721677
+<6>[    2.398893] stamp=53250052507860992, freq = 0
+<3>[    2.398919] /home/cherry/c7_ics/ics/dev/android/kernel/drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+<6>[    2.400221] using rtc device, msm_rtc, for alarms
+<6>[    2.400274] rs30000048 rs30000048.262144: rtc core: registered msm_rtc as rtc0
+<6>[    2.401058] rs30000048 rs30000048.262144: rtc core: registered msm_rtc_secure as rtc1
+<6>[    2.401159] i2c /dev entries driver
+<6>[    2.401704] lirc_dev: IR Remote Control driver registered, major 243 
+<6>[    2.401724] IR NEC protocol handler initialized
+<6>[    2.401738] IR RC5(x) protocol handler initialized
+<6>[    2.401753] IR RC6 protocol handler initialized
+<6>[    2.401766] IR JVC protocol handler initialized
+<6>[    2.401779] IR Sony protocol handler initialized
+<6>[    2.401793] IR RC5 (streamzap) protocol handler initialized
+<6>[    2.401808] IR LIRC bridge handler initialized
+<6>[    2.401819] Linux video capture interface: v2.00
+<4>[    2.402024] adp1650_i2c_probe:Ritchie@Qisda: qsd_flash_i2c_probe called!
+<4>[    2.402044] adp1650_i2c_probe:qsd_flash_probe successed! rc = 0
+<4>[    2.402121] adp1650_init:0
+<6>[    2.538449] android_work: did not send uevent (0 0   (null))
+<4>[    3.308299] Sonia::--msm_otg_resent_connected_work-- delay to inform charger chg_type=3
+<4>[    3.308328] Sonia::msm_otg_resent_vbus_draw delay to infor charger vbus_draw 0 mA
+<4>[    3.402389] adp1650_init:Ritchie@Qisda: Flash ID:(0x22) 
+<4>[    3.402453] cam_create_kernel_debuglevel:create kernel debuglevel!
+<4>[    3.402616] __mt9p017_probe:__mt9p017_probe__mt9p017_probe is called
+<4>[    3.402774] msm_camera_vreg_config++, vreg_en is 1
+<4>[    3.403133] msm_camera_vreg_config--, vreg_en is 1
+<4>[    3.403343] mt9p017_sensor_probe:mt9p017_sensor_probe: SENSOR PROBE entered !
+<4>[    3.458319] mt9p017_i2c_probe:mt9p017_probe successed! rc = 0
+<4>[    3.668296] mt9p017_probe_init_sensor: mt9p017_probe_init_sensor
+<4>[    3.668371] mt9p017_probe_init_sensor:sensor_reset = 0
+<4>[    3.718996] mt9p017_probe_init_sensor:mt9p017 model_id = 0x4800
+<4>[    3.719613] mt9p017_probe_init_sensor:mt9p017 revsion = 0x4
+<4>[    3.719629] mt9p017_probe_init_sensor: mt9p017_probe_init_sensor finishes
+<4>[    3.719651] mt9p017_sensor_probe:[CAM----] mt9p017_sensor_probe: 1383 the angle is 90
+<4>[    3.719674] mt9p017_sensor_probe:mt9p017_sensor_probe: SENSOR PROBE completed !
+<4>[    3.719693] msm_camera_vreg_config++, vreg_en is 0
+<4>[    3.719811] msm_camera_vreg_config--, vreg_en is 0
+<4>[    3.721013] msm_camera_vreg_config++, vreg_en is 1
+<4>[    3.721348] msm_camera_vreg_config--, vreg_en is 1
+<3>[    3.758431] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1363c8, irq:34
+<3>[    3.758471] qup_i2c qup_i2c.0: I2C slave addr:0x36 not connected
+<4>[    3.758503] msm_camera_vreg_config++, vreg_en is 0
+<4>[    3.758619] msm_camera_vreg_config--, vreg_en is 0
+<3>[    3.758834] msm_sync_init: failed to initialize mt9e013
+<4>[    3.759108] msm_camera_vreg_config++, vreg_en is 1
+<4>[    3.759448] msm_camera_vreg_config--, vreg_en is 1
+<4>[    3.759711] msm_camera_vreg_config++, vreg_en is 0
+<4>[    3.759819] msm_camera_vreg_config--, vreg_en is 0
+<3>[    3.760014] msm_sync_init: failed to initialize s5k4e1
+<4>[    3.760041] msm_camera_s5k4e1: probe of msm_camera_s5k4e1.0 failed with error -524
+<4>[    3.760276] msm_camera_vreg_config++, vreg_en is 1
+<4>[    3.760613] msm_camera_vreg_config--, vreg_en is 1
+<7>[    3.818448] gpio_request: gpio-153 (imx072) status -22
+<3>[    3.818466] imx072_sensor_probe: SENSOR PROBE FAILS!
+<4>[    3.818481] msm_camera_vreg_config++, vreg_en is 0
+<4>[    3.818591] msm_camera_vreg_config--, vreg_en is 0
+<3>[    3.818816] msm_sync_init: failed to initialize imx072
+<4>[    3.818844] msm_camera_imx072: probe of msm_camera_imx072.0 failed with error -22
+<4>[    3.819119] msm_camera_vreg_config++, vreg_en is 1
+<4>[    3.819458] msm_camera_vreg_config--, vreg_en is 1
+<3>[    3.908421] qup_i2c qup_i2c.0: QUP: I2C status flags :0x1343c8, irq:34
+<3>[    3.908459] qup_i2c qup_i2c.0: I2C slave addr:0x10 not connected
+<6>[    3.908481]  ov9726_probe_init_sensor finishes
+<4>[    3.908496] msm_camera_vreg_config++, vreg_en is 0
+<4>[    3.908606] msm_camera_vreg_config--, vreg_en is 0
+<3>[    3.908859] msm_sync_init: failed to initialize ov9726
+<4>[    3.908888] msm_camera_ov9726: probe of msm_camera_ov9726.0 failed with error -5
+<6>[    3.909273] I2C radio driver for Qualcomm FM Radio Transceiver , Version 1.0.0
+<4>[    3.909389] tavarua_probe: probe called
+<3>[    3.910098] charger wake lock get!!!
+<4>[    3.910116] msm_charger_probe probe success!
+<4>[    3.910233] msm_charger_init initialining success!
+<4>[    3.910729] --bq27520_power,reguest soc_int--
+<4>[    3.910974] --bq27520_power,reguest bat_low--
+<4>[    3.911254] bq27520_battery_probe probe success!
+<4>[    3.911348] bq27520_battery_init initializing success!
+<6>[    3.911898] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+<6>[    3.913481] mmc0: mci-version: 0
+<6>[    3.914179] mmc0: Qualcomm MSM SDCC-core at 0x00000000a0400000 irq 24,149 dma 8 dmacrcri 6
+<6>[    3.914201] mmc0: 8 bit data mode disabled
+<6>[    3.914214] mmc0: 4 bit data mode enabled
+<6>[    3.914228] mmc0: polling status mode disabled
+<6>[    3.914246] mmc0: MMC clock 144000 -> 49152000 Hz, PCLK 100000000 Hz
+<6>[    3.914263] mmc0: Slot eject status = 1
+<6>[    3.914276] mmc0: Power save feature enable = 1
+<6>[    3.914294] mmc0: DM non-cached buffer at ffdc0000, dma_addr 0x20400000
+<6>[    3.914314] mmc0: DM cmd busaddr 0x20400000, cmdptr busaddr 0x20417f40
+<6>[    3.914821] mmc1: mci-version: 0
+<3>[    3.914986] mmc1: No card detect facilities available
+<6>[    3.915331] mmc1: Qualcomm MSM SDCC-core at 0x00000000a0500000 irq 26,0 dma 8 dmacrcri 7
+<6>[    3.915353] mmc1: 8 bit data mode disabled
+<6>[    3.915366] mmc1: 4 bit data mode enabled
+<6>[    3.915379] mmc1: polling status mode disabled
+<6>[    3.915396] mmc1: MMC clock 144000 -> 49152000 Hz, PCLK 100000000 Hz
+<6>[    3.915413] mmc1: Slot eject status = 0
+<6>[    3.915424] mmc1: Power save feature enable = 1
+<6>[    3.915443] mmc1: DM non-cached buffer at ffd60000, dma_addr 0x20420000
+<6>[    3.915463] mmc1: DM cmd busaddr 0x20420000, cmdptr busaddr 0x20437f40
+<7>[    3.915863] Registered led device: keyboard-backlight
+<4>[    3.915979] BootLog, +as3665_init
+<4>[    3.916156] [LED]as3665_i2c_probe+
+<4>[    4.028209] [LED]as3665_i2c_probe-, ret=0
+<4>[    4.028323] i2c-core: driver [as3665_i2c] using legacy suspend method
+<4>[    4.028341] i2c-core: driver [as3665_i2c] using legacy resume method
+<4>[    4.033906] BootLog, -as3665_init, ret=0
+<6>[    4.040184] usbcore: registered new interface driver usbhid
+<6>[    4.040203] usbhid: USB HID core driver
+<6>[    4.040793] logger: created 1024K log 'log_main'
+<6>[    4.040968] logger: created 256K log 'log_events'
+<6>[    4.041128] logger: created 512K log 'log_radio'
+<6>[    4.041284] logger: created 64K log 'log_system'
+<6>[    4.042836] ALSA device list:
+<6>[    4.042853]   No soundcards found.
+<6>[    4.043363] oprofile: using timer interrupt.
+<6>[    4.043496] Netfilter messages via NETLINK v0.30.
+<6>[    4.043609] nf_conntrack version 0.5.0 (6393 buckets, 25572 max)
+<6>[    4.044048] ctnetlink v0.93: registering with nfnetlink.
+<6>[    4.044128] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>[    4.044144] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>[    4.044614] xt_time: kernel timezone is -0000
+<6>[    4.044886] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    4.045119] arp_tables: (C) 2002 David S. Miller
+<6>[    4.045213] TCP cubic registered
+<6>[    4.045486] NET: Registered protocol family 10
+<6>[    4.047666] Mobile IPv6
+<6>[    4.047729] ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    4.047763] IPv6 over IPv4 tunneling driver
+<6>[    4.049424] NET: Registered protocol family 17
+<6>[    4.049479] NET: Registered protocol family 15
+<4>[    4.071673] [SMB136]-smbus:(00-0B= 88 80 4C 3A 25  1B 29 85 23 20  40 81)
+<4>[    4.071704] [SMB136]-smbus:(31~39= 80 00 44 00 00  00 00 00 00) (22 0A 00)
+<4>[    4.071721] [SMB136]:CHG_INT=0
+<4>[    4.072218] --msm_otg_chg_connected_register--
+<4>[    4.072798] smb136_probe probe success!
+<4>[    4.072884] smb136_init initializing success!
+<6>[    4.072901] VFP support v0.3: implementor 41 architecture 2 part 30 variant 5 rev 1
+<6>[    4.072931] ThumbEE CPU extension supported.
+<6>[    4.076816] clock_late_init() disabled 32 unused clocks
+<6>[    4.076836] BootLog, +headset_init
+<6>[    4.077196] Init headset wake lock
+<4>[    4.077366] headset_probe, hook_gpio 92
+<4>[    4.077504] headset_probe, get jack_gpio 1
+<6>[    4.077833] input: c7_handset as /devices/virtual/input/input6
+<6>[    4.078373] BootLog, -headset_init, ret=0
+<6>[    4.079271] input: 7k_handset as /devices/virtual/input/input7
+<6>[    4.081841] rs30000048 rs30000048.262144: setting system clock to 2012-03-13 08:56:38 UTC (1331628998)
+<4>[    4.083161] Warning: unable to open an initial console.
+<6>[    4.083453] Freeing init memory: 188K
+<3>[    4.088241] init: /init.qcom.rc: 428: invalid command '/system/bin/log'
+<3>[    4.088648] init: /init.qcom.rc: 539: invalid service name 'offcharge'
+<3>[    4.088864] init: /init.target.rc: 54: invalid service name 'ftd'
+<4>[    4.089113] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+<4>[    4.308308] Sonia::--msm_otg_resent_connected_work-- inform charger chg_type=3
+<4>[    4.308334] Sonia::msm_otg_resent_vbus_draw infor charger vbus_draw 0 mA
+<4>[    4.338596] mipi_chimei_lcd_on(), mipi_mode=0
+<4>[    4.493459] bq27520_hw_config: DEVICE_TYPE is 0x520, FIRMWARE_VERSION is 0x302, 		HW_VERSION is 0xA3, STATUS is 0x29D
+<3>[    4.959176] init: too many mtd partitions
+<3>[    4.959246] init: too many mtd partitions
+<6>[    4.959391] yaffs: dev is 32505857 name is "mtdblock1" rw
+<6>[    4.959419] yaffs: passed flags ""
+<7>[    4.959443] yaffs: Attempting MTD mount of 31.1,"mtdblock1"
+<7>[    5.071721] yaffs: yaffs_read_super: is_checkpointed 1
+<6>[    5.074294] yaffs: dev is 32505858 name is "mtdblock2" ro
+<6>[    5.074314] yaffs: passed flags ""
+<7>[    5.074328] yaffs: Attempting MTD mount of 31.2,"mtdblock2"
+<7>[    5.149656] yaffs: yaffs_read_super: is_checkpointed 0
+<6>[    5.149811] yaffs: dev is 32505862 name is "mtdblock6" rw
+<6>[    5.149839] yaffs: passed flags ""
+<7>[    5.149861] yaffs: Attempting MTD mount of 31.6,"mtdblock6"
+<7>[    7.565804] yaffs: yaffs_read_super: is_checkpointed 0
+<6>[    7.566139] yaffs: dev is 32505861 name is "mtdblock5" rw
+<6>[    7.566184] yaffs: passed flags ""
+<7>[    7.566208] yaffs: Attempting MTD mount of 31.5,"mtdblock5"
+<7>[    7.567711] yaffs: yaffs_read_super: is_checkpointed 1
+<6>[    7.567863] yaffs: dev is 32505863 name is "mtdblock7" rw
+<6>[    7.567873] yaffs: passed flags ""
+<7>[    7.567883] yaffs: Attempting MTD mount of 31.7,"mtdblock7"
+<7>[    7.572148] yaffs: yaffs_read_super: is_checkpointed 1
+<3>[    7.753418] init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+<3>[    7.843441] init: cannot find '/system/bin/autorun_test.sh', disabling 'run_autorun_test'
+<4>[    7.931429] btnvtool used greatest stack depth: 5080 bytes left
+<3>[    7.965058] init: service 'console' requires console
+<4>[    7.968141] Sonia::enable_store enable=0
+<3>[    7.968961] android_usb: already disabled
+<4>[    7.969981] Sonia::android_enable_function mtp
+<4>[    7.970028] Sonia::android_enable_function adb
+<4>[    7.970048] Sonia::android_enable_function diag
+<4>[    7.970069] Sonia::android_enable_function serial
+<4>[    7.970283] Sonia::enable_store enable=1
+<6>[    7.970313] mtp_bind_config
+<6>[    7.970483] adb_bind_config
+<4>[    7.975243] Sonia::msm72k_pullup schedule chg_det
+<4>[    7.978251] Sonia::usb_interrupt usb suspend
+<4>[    7.978416] Sonia::udc usb_do_work usb ONLINE-->CONFIGURED maxpower=-19
+<6>[    7.978689] adb_open
+<4>[    8.229711] Sonia::udc msm_hsusb_set_state state=USB_STATE_ADDRESS
+<4>[    8.231968] Sonia::udc msm_hsusb_set_state state=USB_STATE_ADDRESS
+<6>[    8.447134] android_work: sent uevent USB_STATE=CONNECTED
+<4>[    8.450571] Sonia::udc msm_hsusb_set_state state=USB_STATE_ADDRESS
+<4>[    8.452824] Sonia::udc msm_hsusb_set_state state=USB_STATE_ADDRESS
+<4>[    8.634446] Sonia::udc msm_hsusb_set_state state=USB_STATE_CONFIGURED
+<4>[    8.735528] Sonia::udc msm_hsusb_set_state state=USB_STATE_SUSPENDED
+<4>[    8.735571] Sonia::udc handle_setup pc send configured message
+<6>[    8.735591] android_usb gadget: high speed config #1: android
+<7>[    8.735929] diag: USB connected
+<4>[    8.736013] Sonia::udc usb_do_work usb ONLINE-->CONFIGURED maxpower=-19
+<6>[    8.736144] android_work: sent uevent USB_STATE=CONFIGURED
+<4>[    8.736414] Sonia::diag diag_read_work_fn len=0 
+<4>[    8.968403] Sonia::msm_otg_set_power  chg_type 0 500 mA 
+<6>[    8.968433] 
+<6>[    8.968436] Charger Type: STD DOWNSTREAM PORT
+<4>[    8.968978] Sonia::msm_otg_set_power tell charger type 0
+<4>[    8.969001] Sonia::msm_otg_set_power Charging with 500 mA current 0 mA chg_type  0 update 0 update_chg_type 1
+<4>[    8.969486] Sonia::msm_otg_set_power tell vbus draw 500 mA
+<4>[    8.975644] [SMB136]-xfer:(00-0B= 88 80 4C 3A 25  0B 29 85 23 20  40 81)
+<4>[    8.975681] [SMB136]-xfer:(31~39= A8 00 44 00 00  05 00 01 03) (22 0A 00)
+<4>[    8.975694] [SMB136]:CHG_INT=0
+<3>[    9.264753] smd_pkt_open: DATA8_CNTL open failed -19
+<3>[    9.297818] smd_pkt_open: DATA9_CNTL open failed -19
+<3>[    9.413021] smd_pkt_open: DATA12_CNTL open failed -19
+<3>[    9.431669] smd_pkt_open: DATA13_CNTL open failed -19
+<3>[    9.454104] smd_pkt_open: DATA14_CNTL open failed -19
+<6>[    9.893353] __msm_rpc_connect: server not found 30000002:20001
+<6>[    9.980399] msm_release_control: control0
+<6>[    9.980489] __msm_release, open count =0
+<6>[    9.980511] __msm_release, release VFE
+<6>[   14.305491] warning: `netmgrd' uses 32-bit capabilities (legacy support in use)
+<3>[   14.836261] smd_pkt_open: DATA8_CNTL open failed -19
+<3>[   14.850051] smd_pkt_open: DATA9_CNTL open failed -19
+<3>[   14.860636] smd_pkt_open: DATA12_CNTL open failed -19
+<3>[   14.864043] smd_pkt_open: DATA13_CNTL open failed -19
+<3>[   14.867373] smd_pkt_open: DATA14_CNTL open failed -19
+<4>[   15.802048] BatteryStats-Wr used greatest stack depth: 5032 bytes left
+<7>[   19.747559] pmic_rpc_req_reply: successfully connected to 0x60001 rpc version
+<6>[   19.772834] request_suspend_state: wakeup (3->0) at 19774516664 (2012-03-13 08:56:54.181573329 UTC)
+<7>[   20.048674] pmapp_rpc_req_reply: successfully connected to 0x70001 rpc version
+<6>[   20.078783] bt_power bt_power.0: bahama_bt: found version 1
+<3>[   20.118538] config_pcm mode =BT_PCM_ON
+<3>[   20.351209] PowerManagerService get!!!
+<6>[   20.371763] acc_open
+<6>[   20.372044] acc_release
+<6>[   23.443158] mtp_open
+<3>[   28.950854] [SEAN]AMSSVer=E330_
+<3>[   28.950864] ,AMSSVerLen=6
+<6>[   34.737364] RPC CALL -- TOD TIME UPDATE: ttick = 1781362
+<6>[   34.737376] stamp=53250052507860992, freq = 40
+<6>[   34.750073] rs30000048 rs30000048.262144: setting system clock to 2012-03-13 08:57:10 UTC (1331629030)
+<4>[   43.697674] MediaScannerSer used greatest stack depth: 4992 bytes left
+<6>[   89.099904] request_suspend_state: sleep (0->3) at 89101576684 (2012-03-13 08:58:04.849798359 UTC)
+<4>[   89.100044] [ALS]lsensor_early_suspend_func+
+<4>[   89.100096] [ALS]lsensor_early_suspend_func-
+<4>[   89.488393] mipi_chimei_lcd_off()
+<4>[  353.279653] process_subs_srvc_callback, => report_hs_key 
+<4>[  353.279736] report_hs_key, => key 116, 1
+<6>[  353.284453] request_suspend_state: wakeup (3->0) at 353286126354 (2012-03-13 09:02:29.034343032 UTC)
+<4>[  353.286859] tp resume
+<4>[  353.411928] command T6 report id is:1
+<4>[  353.411953] command T6 status:0
+<4>[  353.411959] It isn't normal to read T6 message
+<4>[  353.446653] process_subs_srvc_callback, => report_hs_key 
+<4>[  353.446738] report_hs_key, => key 116, 0
+<4>[  353.560539] mipi_chimei_lcd_on(), mipi_mode=0
+<3>[  354.928613] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:43
+<3>[  354.928688] qup_i2c qup_i2c.1: I2C slave addr:0x28 not connected
+<3>[  354.928714] pn544_dev_write : i2c_master_send returned -107
+<4>[  358.188498] process_audmgr_callback:[audmgr.c:process_audmgr_callback] DISABLED
+<6>[  435.480016] request_suspend_state: sleep (0->3) at 435481686630 (2012-03-13 09:03:51.229909972 UTC)
+<4>[  435.480149] [ALS]lsensor_early_suspend_func+
+<4>[  435.480203] [ALS]lsensor_early_suspend_func-
+<3>[  435.799218] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:43
+<3>[  435.799286] qup_i2c qup_i2c.1: I2C slave addr:0x28 not connected
+<3>[  435.799313] pn544_dev_write : i2c_master_send returned -107
+<4>[  435.859628] mipi_chimei_lcd_off()
+<4>[ 1549.774253] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1549.774334] report_hs_key, => key 116, 1
+<6>[ 1549.779378] request_suspend_state: wakeup (3->0) at 1549781083911 (2012-03-13 09:22:25.529307255 UTC)
+<4>[ 1549.781211] tp resume
+<4>[ 1549.903438] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1549.903466] report_hs_key, => key 116, 0
+<4>[ 1549.911849] command T6 report id is:1
+<4>[ 1549.911868] command T6 status:0
+<4>[ 1549.911874] It isn't normal to read T6 message
+<4>[ 1550.058788] mipi_chimei_lcd_on(), mipi_mode=0
+<3>[ 1552.025518] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1363c8, irq:43
+<3>[ 1552.025593] qup_i2c qup_i2c.1: I2C slave addr:0x28 not connected
+<3>[ 1552.025618] pn544_dev_write : i2c_master_send returned -107
+<4>[ 1555.257359] process_audmgr_callback:[audmgr.c:process_audmgr_callback] DISABLED
+<4>[ 1556.133148] Sonia::usb_interrupt usb suspend
+<4>[ 1556.133309] Sonia::udc usb_get_max_power usb suspend or not configured
+<4>[ 1556.133403] Sonia::udc usb_do_work usb ONLINE-->CONFIGURED maxpower=0
+<4>[ 1556.133493] Sonia::msm_otg_set_power  chg_type 0 0 mA 
+<4>[ 1556.133586] Sonia::msm_otg_set_power Charging with 0 mA current 500 mA chg_type  0 update 0 update_chg_type 0
+<4>[ 1556.134626] Sonia::msm_otg_set_power tell vbus draw 0 mA
+<4>[ 1556.158873] SOnia::msm_otg_irq (92c2120) VBUS - (OFF)
+<4>[ 1556.159023] Sonia::usb_do_work udc offline cancel chg_det
+<4>[ 1556.159109] Sonia::udc ONLINE->OFFLINE
+<7>[ 1556.159259] diag: USB disconnected
+<6>[ 1556.159748] adb_release
+<4>[ 1556.160681] Sonia::diag diag_read_work_fn len=0 
+<6>[ 1556.161226] adb_open
+<4>[ 1556.162693] Sonia::msm_otg_set_power  chg_type 3 0 mA 
+<6>[ 1556.163104] android_work: sent uevent USB_STATE=DISCONNECTED
+<6>[ 1556.166423] mtp_release
+<4>[ 1556.167461] Sonia::msm_otg_set_power tell charger type 3
+<4>[ 1556.167584] Sonia::msm_otg_set_power Charging with 0 mA current 0 mA chg_type  3 update 0 update_chg_type 1
+<4>[ 1556.168628] Sonia::msm_otg_set_power tell vbus draw 0 mA
+<4>[ 1556.178611] [SMB136]-xfer:(00-0B= 88 80 4C 3A 25  1B 29 85 23 20  40 81)
+<4>[ 1556.178716] [SMB136]-xfer:(31~39= A0 00 05 00 C0  00 02 01 00) (22 0A 00)
+<4>[ 1556.178763] [SMB136]:CHG_INT=0
+<4>[ 1556.398518] Sonia::msm_otg_set_power  chg_type 3 0 mA 
+<4>[ 1556.398554] Sonia::msm_otg_set_power Charging with 0 mA current 0 mA chg_type  3 update 0 update_chg_type 0
+<4>[ 1556.398569] Sonia::msm_otg_put_suspend define runtime pm
+<6>[ 1556.398709] msm_otg_suspend: usb in low power mode
+<4>[ 1561.622463] [ALS]lsensor_misc_ioctl: (0277) PROXIMITY_SENSOR_IOCTL_ENABLE, prox 1
+<4>[ 1561.639376] [ALS]psensor enable :start_pdata=0,ls_drv.pdata_min=0,ps_ht = 11,ps_lt = 3
+<4>[ 1561.639386] 
+<4>[ 1561.640908] [ALS]pdata=0
+<4>[ 1561.640934] [ALS]pdata=0,ls_drv.pdata_min=0,ps_ht = 11,ps_lt = 3,ps_dist = 1
+<6>[ 1562.331823] request_suspend_state: wakeup (0->0) at 1562333527742 (2012-03-13 09:22:38.081756084 UTC)
+<4>[ 1563.949759] [ALS]pdata=34
+<4>[ 1563.949834] [ALS]pdata=34,ls_drv.pdata_min=0,ps_ht = 11,ps_lt = 3,ps_dist = 1
+<4>[ 1563.949878] [ALS]prox 1->0
+<4>[ 1564.053811] process_audmgr_callback:[audmgr.c:process_audmgr_callback] DISABLED
+<6>[ 1564.371599] request_suspend_state: sleep (0->3) at 1564373257741 (2012-03-13 09:22:40.121479417 UTC)
+<4>[ 1564.372341] [ALS]lsensor_early_suspend_func+
+<4>[ 1564.374738] [ALS]pdata=255
+<4>[ 1564.374804] [ALS]pdata=255,ls_drv.pdata_min=0,ps_ht = 11,ps_lt = 3,ps_dist = 0
+<4>[ 1564.375781] [ALS]lsensor_early_suspend_func-
+<3>[ 1564.611959] qup_i2c qup_i2c.1: QUP: I2C status flags :0x1343c8, irq:43
+<3>[ 1564.612029] qup_i2c qup_i2c.1: I2C slave addr:0x28 not connected
+<3>[ 1564.612053] pn544_dev_write : i2c_master_send returned -107
+<4>[ 1564.838368] mipi_chimei_lcd_off()
+<4>[ 1631.571764] Sonia::msm_otg_get_resume
+<6>[ 1631.572364] msm_otg_resume: usb exited from low power mode
+<4>[ 1631.573913] SOnia::msm_otg_irq (92c2d20) VBUS - (ON)
+<4>[ 1631.574073] Sonia::msm_otg_set_power  chg_type 3 0 mA 
+<4>[ 1631.574139] Sonia::msm_otg_set_power Charging with 0 mA current 0 mA chg_type  3 update 0 update_chg_type 0
+<4>[ 1631.574248] Sonia::udc OFFLINE -> ONLINE
+<4>[ 1631.612153] SOnia::msm_otg_irq (92d0020) VBUS - (OFF)
+<4>[ 1631.630151] SOnia::msm_otg_irq (92c0c20) VBUS - (ON)
+<4>[ 1631.798821] Sonia::usb_do_work schedule chg_det
+<6>[ 1631.798943] android_work: did not send uevent (0 0   (null))
+<4>[ 1631.801848] Sonia::usb_interrupt usb suspend
+<4>[ 1631.801993] Sonia::udc usb_do_work usb ONLINE-->CONFIGURED maxpower=-19
+<4>[ 1632.052753] Sonia::udc msm_hsusb_set_state state=USB_STATE_ADDRESS
+<4>[ 1632.054933] Sonia::udc msm_hsusb_set_state state=USB_STATE_ADDRESS
+<6>[ 1632.270489] android_work: sent uevent USB_STATE=CONNECTED
+<4>[ 1632.273684] Sonia::udc msm_hsusb_set_state state=USB_STATE_ADDRESS
+<4>[ 1632.275939] Sonia::udc msm_hsusb_set_state state=USB_STATE_ADDRESS
+<4>[ 1632.457418] Sonia::udc msm_hsusb_set_state state=USB_STATE_CONFIGURED
+<4>[ 1632.546724] Sonia::udc msm_hsusb_set_state state=USB_STATE_SUSPENDED
+<4>[ 1632.546771] Sonia::udc handle_setup pc send configured message
+<6>[ 1632.546793] android_usb gadget: high speed config #1: android
+<7>[ 1632.546971] diag: USB connected
+<4>[ 1632.547079] Sonia::diag diag_read_work_fn len=0 
+<4>[ 1632.547208] Sonia::udc usb_do_work usb ONLINE-->CONFIGURED maxpower=-19
+<6>[ 1632.547388] android_work: sent uevent USB_STATE=CONFIGURED
+<6>[ 1632.622196] mtp_open
+<4>[ 1632.798531] Sonia::msm_otg_set_power  chg_type 0 500 mA 
+<6>[ 1632.798596] 
+<6>[ 1632.798608] Charger Type: STD DOWNSTREAM PORT
+<4>[ 1632.800271] Sonia::msm_otg_set_power tell charger type 0
+<4>[ 1632.800331] Sonia::msm_otg_set_power Charging with 500 mA current 0 mA chg_type  0 update 0 update_chg_type 1
+<4>[ 1632.801211] Sonia::msm_otg_set_power tell vbus draw 500 mA
+<4>[ 1632.808273] [SMB136]-xfer:(00-0B= 88 80 4C 3A 25  0B 29 85 23 20  40 81)
+<4>[ 1632.808463] [SMB136]-xfer:(31~39= A8 00 44 00 00  05 00 01 03) (22 0A 00)
+<4>[ 1632.808499] [SMB136]:CHG_INT=0
+<4>[ 1645.154204] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1645.154234] report_hs_key, => key 116, 1
+<4>[ 1645.379499] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1645.379524] report_hs_key, => key 116, 0
+<4>[ 1650.255304] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1650.255398] report_hs_key, => key 116, 1
+<4>[ 1650.606781] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1650.606849] report_hs_key, => key 116, 0
+<4>[ 1662.541771] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1662.541866] report_hs_key, => key 116, 1
+<4>[ 1662.889096] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1662.889189] report_hs_key, => key 116, 0
+<4>[ 1668.379568] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1668.379598] report_hs_key, => key 116, 1
+<4>[ 1668.737739] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1668.737823] report_hs_key, => key 116, 0
+<4>[ 1681.282433] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1681.282464] report_hs_key, => key 116, 1
+<4>[ 1681.562209] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1681.562284] report_hs_key, => key 116, 0
+<4>[ 1689.064018] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1689.064048] report_hs_key, => key 116, 1
+<4>[ 1689.252344] process_subs_srvc_callback, => report_hs_key 
+<4>[ 1689.252374] report_hs_key, => key 116, 0
+<3>[ 1696.852654] init: untracked pid 1571 exited

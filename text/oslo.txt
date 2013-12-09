@@ -1,0 +1,45 @@
+1. The gpio source files used in oslo: 
+gpio.o  gpio_switch.o  gpiomux-7x27.o  gpiomux-v1.o  gpiomux.o
+
+2. The board sourc files used in oslo:
+board-7627a-all.o            board-msm7627a-display.o  board-msm7627a-wlan.o
+board-mahimahi-flashlight.o  board-msm7627a-io.o       board-msm7x27a-regulator.o
+board-msm7627a-bt.o          board-msm7627a-sensor.o   board-msm7x27a.o
+board-msm7627a-camera.o      board-msm7627a-storage.o  board-qrd7627a.o
+
+3. The build options
+oslo solution c
+[14:45:42] Terry: C+G DSDA & C2G & G+G DSDA: Oslo Solution A
+C+G DSDA & C2G & G+G DSDS: Oslo Solution B
+C+G DSDA & C2G & G+G SSSS: Oslo Solution C
+
+Quad core 1.2GH solution
+DSDA (C/G + G)
+5¡±HD display + 8M Camera
+
+Technology
+OS:	  Android Jelly Bean
+Processor: MSM8625Q 1.2GHz Quad Core
+Band:	CDMA 800/1900£¨GSM 900/1800/1900) +GSM 900/1800/1900
+RF: 	RTR6500+RTR6285A+SPRD SC6610, DSDA
+Display: 	5¡±HD (1280x720)
+Camera:	8MP AF + 1.3MP 
+Memory:	1GB RAM LPDDR2 + 4GB eMMC
+Connection: WLAN802.11b/g/n, Bluetooth ? 3.0, USB 2.0 HS
+Interface:	3.5mm audio Jack, Micro SD card supported
+Battery:	2100mAh (Removable)
+Dimension: 143.54 x 72.7 x 8..48 mm 
+Weight:	<180g  (TBC)
+Others:	G-sensor, E-compass, Proximity sensor, ALS, GPS
+Accessory:	5V/1A PSU, Micro USB Cable, Headset
+
+  11/23, EVB SMT
+  12/24£¬8x25 working sample SMT
+  12/31£¬8x25 working sample pre-FA(with  mockup)
+  1/20£¬ 8x25 CG+G Working Samples ready
+  2/5£¬  8x25Q working sample SMT
+  2/7£¬  8x25Q working sample pre-FA(with  mockup)
+  2/25£¬ 8x25Q CG+G Working Samples ready
+
+ 
+

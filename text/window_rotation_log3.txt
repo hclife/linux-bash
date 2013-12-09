@@ -1,0 +1,1288 @@
+--------- beginning of /dev/log/main
+08-01 08:40:32.779 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:32.929 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:33.159 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:33.199 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:33.329 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:33.409 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:34.379 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:34.429 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:34.539 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:36.129 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:36.149 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:36.309 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:36.329 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:36.539 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:36.559 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:39.989 V/WindowManager(  447): onProposedRotationChanged function entry.
+08-01 08:40:39.989 V/WindowManager(  447): onProposedRotationChanged, rotation=1
+08-01 08:40:39.989 V/WindowManager(  447): updateRotation function entry in PhoneWindowManager.
+08-01 08:40:40.819 V/WindowManager(  447): Screen status=true, current orientation=1, SensorEnabled=true
+08-01 08:40:40.819 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:40.829 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.829 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.829 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:40.829 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.829 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.839 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:40.839 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.839 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.869 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:40.869 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.869 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.889 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:40.889 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.889 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.909 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:40.909 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.909 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.929 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:40.929 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.929 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.939 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:40.939 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.939 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.959 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:40.959 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.959 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.979 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:40.979 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.979 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:40.999 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:40.999 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:40.999 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.019 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:41.019 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.019 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.039 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:40:41.039 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.039 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.059 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(9.357574, 15.388031, 549.35754, 903.38806)
+08-01 08:40:41.059 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.059 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.069 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(6.912018, 11.366394, 546.912, 899.3664)
+08-01 08:40:41.069 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.069 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.079 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(6.2840576, 10.333771, 546.28406, 898.33374)
+08-01 08:40:41.079 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.079 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.089 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(5.038849, 8.286102, 545.0388, 896.28613)
+08-01 08:40:41.089 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.089 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.109 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(3.5389404, 5.81958, 543.53894, 893.8196)
+08-01 08:40:41.109 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.109 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.129 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(2.370819, 3.8986511, 542.37085, 891.8987)
+08-01 08:40:41.129 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.129 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.139 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(1.492981, 2.4551392, 541.493, 890.45514)
+08-01 08:40:41.139 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.139 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.159 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.8640137, 1.4208069, 540.864, 889.4208)
+08-01 08:40:41.159 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.159 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.169 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.42193604, 0.6938782, 540.42194, 888.69385)
+08-01 08:40:41.169 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.169 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.189 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.17520142, 0.28811646, 540.1752, 888.2881)
+08-01 08:40:41.189 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.189 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.209 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.045562744, 0.074920654, 540.04553, 888.07495)
+08-01 08:40:41.209 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.209 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.219 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.004638672, 0.0076293945, 540.00464, 888.0076)
+08-01 08:40:41.219 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.219 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:41.239 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:41.239 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:41.239 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:43.739 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:43.739 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:43.739 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:43.799 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:43.799 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:43.799 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:43.899 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:43.899 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:43.899 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:43.929 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:43.929 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:43.929 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:45.499 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:45.499 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:45.499 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:45.519 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:45.519 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:45.519 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:46.279 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:46.279 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:46.279 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:46.289 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:46.289 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:46.289 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:46.609 D/WindowManager(  447): interceptKeyTq keycode=82 screenIsOn=true keyguardActive=false
+08-01 08:40:47.109 D/WindowManager(  447): interceptKeyTq keycode=82 screenIsOn=true keyguardActive=false
+08-01 08:40:51.169 D/WindowManager(  447): interceptKeyTq keycode=82 screenIsOn=true keyguardActive=false
+08-01 08:40:53.079 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:53.079 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:53.079 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:53.109 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:53.109 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:53.109 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:56.249 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:56.249 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:56.249 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:57.569 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:57.569 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:57.569 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:57.609 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:57.609 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:57.609 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:57.629 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:57.629 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:57.629 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:57.649 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:57.649 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:57.649 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:57.679 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:57.679 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:57.679 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:40:57.699 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:40:57.699 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:40:57.699 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:04.359 D/WindowManager(  447): interceptKeyTq keycode=26 screenIsOn=true keyguardActive=false
+08-01 08:41:04.489 D/WindowManager(  447): interceptKeyTq keycode=26 screenIsOn=true keyguardActive=false
+08-01 08:41:04.509 V/WindowManager(  447): Screen status=false, current orientation=1, SensorEnabled=true
+08-01 08:41:04.509 V/WindowManager(  447): Disabling listeners
+08-01 08:41:05.299 V/WindowManager(  447): Screen status=false, current orientation=5, SensorEnabled=false
+08-01 08:41:05.299 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:05.309 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:05.429 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:05.439 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:05.449 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:06.309 D/WindowManager(  447): interceptKeyTq keycode=26 screenIsOn=false keyguardActive=true
+08-01 08:41:06.309 V/WindowManager(  447): Screen status=true, current orientation=5, SensorEnabled=false
+08-01 08:41:06.309 V/WindowManager(  447): Enabling listeners
+08-01 08:41:06.509 D/WindowManager(  447): interceptKeyTq keycode=26 screenIsOn=true keyguardActive=true
+08-01 08:41:08.599 I/WindowManager(  447): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 08:41:08.719 I/WindowManager(  447): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 08:41:08.719 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:08.719 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:08.749 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:08.859 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.839 V/WindowManager(  447): Screen status=true, current orientation=1, SensorEnabled=true
+08-01 08:41:09.839 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:09.839 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.839 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.839 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:09.839 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.839 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.879 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:09.879 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.879 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.899 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:09.899 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.899 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.909 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:09.909 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.909 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.929 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:09.929 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.929 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.939 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:09.939 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.939 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.959 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:09.959 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.959 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.979 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:09.979 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.979 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:09.989 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:09.989 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:09.989 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.009 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:10.009 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.009 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.029 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:10.029 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.029 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.039 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(13.5, 22.200012, 553.5, 910.2)
+08-01 08:41:10.039 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.039 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.059 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(12.512604, 20.576263, 552.5126, 908.5763)
+08-01 08:41:10.059 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.059 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.059 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(9.678375, 15.915558, 549.67834, 903.9155)
+08-01 08:41:10.069 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.069 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.079 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(8.737396, 14.368164, 548.7374, 902.36816)
+08-01 08:41:10.079 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.079 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.089 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(7.1744385, 11.798004, 547.17444, 899.798)
+08-01 08:41:10.089 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.089 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.109 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(5.2517395, 8.636169, 545.2517, 896.63617)
+08-01 08:41:10.109 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.109 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.119 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(3.707428, 6.0966797, 543.7074, 894.0967)
+08-01 08:41:10.119 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.119 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.139 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(2.5000916, 4.111267, 542.5001, 892.11127)
+08-01 08:41:10.139 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.139 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.159 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(1.5401306, 2.5326843, 541.54016, 890.5327)
+08-01 08:41:10.159 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.159 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.169 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.89682007, 1.474762, 540.89685, 889.47473)
+08-01 08:41:10.169 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.169 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.189 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.46340942, 0.76208496, 540.4634, 888.7621)
+08-01 08:41:10.189 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.189 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.209 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.19851685, 0.32647705, 540.1985, 888.3265)
+08-01 08:41:10.209 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.209 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.219 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.060638428, 0.099731445, 540.06067, 888.09973)
+08-01 08:41:10.219 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.219 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.239 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.008300781, 0.013641357, 540.0083, 888.0137)
+08-01 08:41:10.239 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.239 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:10.249 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:10.249 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#133 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:10.249 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:11.409 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:11.409 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:11.409 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:11.439 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:11.439 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:11.439 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:11.469 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:11.469 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:11.469 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:11.489 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:11.489 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:11.489 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:11.519 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:11.519 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:11.519 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.369 V/WindowManager(  447): Adding starting window for com.android.settings / Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}: null
+08-01 08:41:12.389 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:12.389 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:12.389 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.459 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:12.459 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:12.459 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.479 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:12.479 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#33 ty=1 fl=#8110100 pfl=0x8 fmt=-2 wanim=0x1030001} lp.flags=0x8110100
+08-01 08:41:12.479 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.489 V/WindowManager(  447): Screen status=true, current orientation=-1, SensorEnabled=true
+08-01 08:41:12.489 I/WindowManager(  447): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 08:41:12.499 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.519 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:12.519 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.519 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.519 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(135.0, 222.0, 675.0, 1110.0)
+08-01 08:41:12.519 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.519 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.549 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(123.12337, 202.46954, 663.12335, 1090.4695)
+08-01 08:41:12.549 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.549 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.569 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(108.13837, 177.82755, 648.13837, 1065.8275)
+08-01 08:41:12.569 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.569 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.579 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(96.39337, 158.51355, 636.3934, 1046.5135)
+08-01 08:41:12.579 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.579 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.599 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(87.48338, 143.86157, 627.4834, 1031.8616)
+08-01 08:41:12.599 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.599 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.639 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(77.976, 128.2272, 617.976, 1016.2272)
+08-01 08:41:12.639 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.639 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.659 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(58.805984, 96.703186, 598.80597, 984.7032)
+08-01 08:41:12.659 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.659 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.669 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(51.893997, 85.33679, 591.894, 973.3368)
+08-01 08:41:12.669 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.669 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.689 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(45.023346, 74.03839, 585.0233, 962.0384)
+08-01 08:41:12.689 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.689 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.709 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(38.640366, 63.54193, 578.6404, 951.54193)
+08-01 08:41:12.709 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.709 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.789 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(33.078384, 54.39557, 573.07837, 942.39557)
+08-01 08:41:12.789 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.789 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.809 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(11.55011, 18.9935, 551.5501, 906.9935)
+08-01 08:41:12.819 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.819 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.829 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(6.6833496, 10.990387, 546.68335, 898.99036)
+08-01 08:41:12.829 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.829 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.849 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(4.496338, 7.393982, 544.49634, 895.394)
+08-01 08:41:12.849 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.849 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.859 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(2.741333, 4.5079956, 542.74133, 892.508)
+08-01 08:41:12.859 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.859 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.879 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(1.3500061, 2.2200012, 541.35, 890.22)
+08-01 08:41:12.879 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.879 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.899 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.48599243, 0.79919434, 540.48596, 888.7992)
+08-01 08:41:12.899 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.899 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.909 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.04135132, 0.067993164, 540.0414, 888.068)
+08-01 08:41:12.909 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.909 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.929 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:12.929 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.929 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:12.929 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:12.929 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:12.929 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:13.529 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:13.529 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:13.529 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:13.839 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:13.839 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:13.839 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:13.839 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:13.839 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x9 wanim=0x1030292} lp.flags=0x1830118
+08-01 08:41:13.839 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:13.849 V/WindowManager(  447): Removing starting window for Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}: com.android.internal.policy.impl.PhoneWindow$DecorView@41863c20
+08-01 08:41:16.899 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:16.899 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:16.899 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:16.919 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:16.919 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:16.919 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:16.939 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:16.939 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:16.939 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:16.949 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:16.949 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:16.949 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:16.969 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:16.969 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:16.969 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:16.989 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:16.989 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:16.989 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:16.999 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:16.999 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:16.999 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:17.019 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:17.019 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:17.019 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:17.069 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:17.069 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:17.069 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:17.089 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:17.089 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:17.089 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:17.089 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:17.089 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:17.089 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:18.989 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:18.989 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:18.989 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:19.019 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:19.019 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:19.019 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.049 V/WindowManager(  447): onProposedRotationChanged function entry.
+08-01 08:41:26.049 V/WindowManager(  447): onProposedRotationChanged, rotation=1
+08-01 08:41:26.049 V/WindowManager(  447): updateRotation function entry in PhoneWindowManager.
+08-01 08:41:26.089 I/WindowManager(  447): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 08:41:26.109 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:26.109 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.109 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.229 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.339 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.359 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 0.0, 0.0)
+08-01 08:41:26.359 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.359 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.409 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.409 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.409 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.419 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.419 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.419 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.449 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.449 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.449 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.519 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.519 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.519 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.729 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.729 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.729 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.729 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.729 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.729 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.789 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.789 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.789 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.799 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.799 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.799 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.819 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.819 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.819 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.839 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.839 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.839 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.899 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:26.899 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.899 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.909 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(209.0, 751.0, 1106.0, 1291.0)
+08-01 08:41:26.909 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.909 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.929 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(76.46224, 646.77484, 973.4622, 1186.7749)
+08-01 08:41:26.929 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.929 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.949 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-2.3133879, 538.6556, 894.6866, 1078.6555)
+08-01 08:41:26.949 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.949 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.959 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-46.745487, 435.35184, 850.2545, 975.3518)
+08-01 08:41:26.959 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.959 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.979 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-67.813805, 338.5717, 829.1862, 878.57166)
+08-01 08:41:26.979 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.979 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:26.999 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-71.954704, 257.83252, 825.0453, 797.8325)
+08-01 08:41:26.999 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:26.999 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.009 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-67.13448, 196.20377, 829.86554, 736.20374)
+08-01 08:41:27.009 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.009 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.029 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-58.21627, 147.0151, 838.78375, 687.01514)
+08-01 08:41:27.029 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.029 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.049 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-47.26665, 106.31767, 849.73334, 646.3177)
+08-01 08:41:27.049 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.049 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.059 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-37.242897, 76.9668, 859.7571, 616.9668)
+08-01 08:41:27.059 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.059 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.079 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-27.830029, 53.41124, 869.17, 593.41125)
+08-01 08:41:27.079 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.079 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.089 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-20.485401, 36.941185, 876.5146, 576.94116)
+08-01 08:41:27.089 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.089 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.109 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-14.651754, 24.802753, 882.34827, 564.80273)
+08-01 08:41:27.109 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.109 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.129 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-9.97232, 15.580763, 887.0277, 555.58075)
+08-01 08:41:27.129 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.129 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.139 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-6.6229625, 9.23165, 890.377, 549.2316)
+08-01 08:41:27.139 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.139 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.159 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-4.4454904, 5.2084246, 892.5545, 545.20844)
+08-01 08:41:27.159 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.159 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.179 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-2.9931242, 2.5683956, 894.0069, 542.5684)
+08-01 08:41:27.179 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.179 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.189 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-2.0744593, 0.9159282, 894.92554, 540.91595)
+08-01 08:41:27.189 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.189 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.209 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-1.504978, -0.101820886, 895.495, 539.8982)
+08-01 08:41:27.209 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.209 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.219 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-1.219253, -0.61056525, 895.78076, 539.3894)
+08-01 08:41:27.219 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.229 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.239 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-1.0804372, -0.85721856, 895.91956, 539.14276)
+08-01 08:41:27.239 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.239 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.259 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-1.0000305, -1.0, 896.0, 539.0)
+08-01 08:41:27.259 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.259 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.269 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-1.0000305, -1.0, 896.0, 539.0)
+08-01 08:41:27.269 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.269 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.289 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-1.0000305, -1.0, 896.0, 539.0)
+08-01 08:41:27.289 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.289 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.289 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-1.0000305, -1.0, 896.0, 539.0)
+08-01 08:41:27.289 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.289 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.299 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-1.0000305, -1.0, 896.0, 539.0)
+08-01 08:41:27.299 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.299 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:27.309 D/WindowManager(  447): frame: Rect(0, 0 - 897, 540) shown frame: RectF(-1.0000305, -1.0, 896.0, 539.0)
+08-01 08:41:27.309 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:27.309 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:29.969 V/WindowManager(  447): onProposedRotationChanged function entry.
+08-01 08:41:29.969 V/WindowManager(  447): onProposedRotationChanged, rotation=0
+08-01 08:41:29.969 V/WindowManager(  447): updateRotation function entry in PhoneWindowManager.
+08-01 08:41:30.009 I/WindowManager(  447): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 08:41:30.079 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 897.0, 540.0)
+08-01 08:41:30.079 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.079 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+--------- beginning of /dev/log/system
+08-01 08:41:30.089 V/WindowManager(  447): Resizing window Window{4161b190 StatusBarExpanded paused=false} to 540.0x454.0
+08-01 08:41:30.089 V/WindowManager(  447): Orientation continue waiting for draw in Window{4161b190 StatusBarExpanded paused=false}
+08-01 08:41:30.089 V/WindowManager(  447): Orientation change complete in Window{41987f28 com.android.settings/com.android.settings.Settings paused=false}
+08-01 08:41:30.089 V/WindowManager(  447): Orientation change skips hidden Window{41888678 com.android.noisefield.NoiseFieldWallpaper paused=false}
+08-01 08:41:30.089 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.089 V/WindowManager(  447): Reporting new frame to Window{4161b190 StatusBarExpanded paused=false}: Rect(0, -540 - 540, -86)
+08-01 08:41:30.089 I/WindowManager(  447): Sending new config to window Window{4161b190 StatusBarExpanded paused=false}: 540.0x454.0 / {1.0 0mcc0mnc en_US layoutdir=0 sw360dp w360dp h566dp nrml port finger -keyb/v/h -nav/h s.6} / 0x480
+08-01 08:41:30.089 I/WindowManager(  447): Resizing Window{4161b190 StatusBarExpanded paused=false} WITH DRAW PENDING
+08-01 08:41:30.089 V/WindowManager(  447): Reporting new frame to Window{41863220 StatusBar paused=false}: Rect(0, 0 - 540, 38)
+08-01 08:41:30.089 I/WindowManager(  447): Sending new config to window Window{41863220 StatusBar paused=false}: 540.0x38.0 / {1.0 0mcc0mnc en_US layoutdir=0 sw360dp w360dp h566dp nrml port finger -keyb/v/h -nav/h s.6} / 0x480
+08-01 08:41:30.089 I/WindowManager(  447): Resizing Window{41863220 StatusBar paused=false} WITH DRAW PENDING
+08-01 08:41:30.089 V/WindowManager(  447): Reporting new frame to Window{4182d450 NavigationBar paused=false}: Rect(0, 888 - 540, 960)
+08-01 08:41:30.089 I/WindowManager(  447): Sending new config to window Window{4182d450 NavigationBar paused=false}: 540.0x72.0 / {1.0 0mcc0mnc en_US layoutdir=0 sw360dp w360dp h566dp nrml port finger -keyb/v/h -nav/h s.6} / 0x480
+08-01 08:41:30.089 I/WindowManager(  447): Resizing Window{4182d450 NavigationBar paused=false} WITH DRAW PENDING
+08-01 08:41:30.099 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.099 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.setNewConfiguration(WindowManagerService.java:3578)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.am.ActivityManagerService.updateConfigurationLocked(ActivityManagerService.java:13635)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.am.ActivityManagerService.updateConfiguration(ActivityManagerService.java:13530)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.sendNewConfiguration(WindowManagerService.java:5918)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.updateRotationUnchecked(WindowManagerService.java:5362)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.updateRotation(WindowManagerService.java:5320)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.internal.policy.impl.PhoneWindowManager.updateRotation(PhoneWindowManager.java:3888)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.internal.policy.impl.PhoneWindowManager$MyOrientationListener.onProposedRotationChanged(PhoneWindowManager.java:546)
+08-01 08:41:30.099 I/WindowManager(  447): 	at android.view.WindowOrientationListener$SensorEventListenerImpl.onSensorChanged(WindowOrientationListener.java:498)
+08-01 08:41:30.099 I/WindowManager(  447): 	at android.hardware.SensorManager$ListenerDelegate$1.handleMessage(SensorManager.java:580)
+08-01 08:41:30.099 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.099 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.099 I/WindowManager(  447): 	at com.android.server.ServerThread.run(SystemServer.java:790)
+08-01 08:41:30.169 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.169 V/WindowManager(  447): Eval win Window{41987f28 com.android.settings/com.android.settings.Settings paused=false}: isDrawn=true, isAnimating=false
+08-01 08:41:30.189 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.189 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.189 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.189 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.189 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.189 V/WindowManager(  447): Orientation continue waiting for draw in Window{4161b190 StatusBarExpanded paused=false}
+08-01 08:41:30.259 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.259 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.259 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.259 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.259 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.259 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.259 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:30.259 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:30.259 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:30.259 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.259 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.259 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.269 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.269 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.269 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.269 V/WindowManager(  447): Orientation continue waiting for draw in Window{4161b190 StatusBarExpanded paused=false}
+08-01 08:41:30.269 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.269 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.269 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.269 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.269 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.269 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.269 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.removeWindowInnerLocked(WindowManagerService.java:2437)
+08-01 08:41:30.269 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.removeWindowLocked(WindowManagerService.java:2337)
+08-01 08:41:30.269 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.removeWindow(WindowManagerService.java:2272)
+08-01 08:41:30.269 I/WindowManager(  447): 	at com.android.server.wm.Session.remove(Session.java:149)
+08-01 08:41:30.269 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:124)
+08-01 08:41:30.269 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.269 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.269 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.289 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.289 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.289 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.289 V/WindowManager(  447): Orientation continue waiting for draw in Window{4161b190 StatusBarExpanded paused=false}
+08-01 08:41:30.289 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.299 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.299 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.299 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.removeWindowInnerLocked(WindowManagerService.java:2437)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.removeWindowLocked(WindowManagerService.java:2337)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.removeWindow(WindowManagerService.java:2272)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.Session.remove(Session.java:149)
+08-01 08:41:30.299 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:124)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.299 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.299 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.299 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.299 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.299 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.299 V/WindowManager(  447): Orientation continue waiting for draw in Window{4161b190 StatusBarExpanded paused=false}
+08-01 08:41:30.299 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.299 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.299 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:30.299 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:30.299 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.299 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.299 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.369 I/WindowManager(  447): createSurface Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}: DRAW NOW PENDING
+08-01 08:41:30.369 V/WindowManager(  447): Changing surface while display frozen: Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}
+08-01 08:41:30.379 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 0.0, 0.0)
+08-01 08:41:30.379 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.379 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.379 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.379 V/WindowManager(  447): Eval win Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}: isDrawn=false, isAnimating=false
+08-01 08:41:30.379 V/WindowManager(  447): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Settings, identity=20) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 08:41:30.379 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.379 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.379 V/WindowManager(  447): Orientation continue waiting for draw in Window{4161b190 StatusBarExpanded paused=false}
+08-01 08:41:30.379 V/WindowManager(  447): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=false
+08-01 08:41:30.379 V/WindowManager(  447): Changing surface while display frozen: Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}
+08-01 08:41:30.379 V/WindowManager(  447): Orientation start waiting for draw in Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}, surface Surface(name=com.android.settings/com.android.settings.Settings, identity=20)
+08-01 08:41:30.379 V/WindowManager(  447): Resizing window Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false} to 540.0x888.0
+08-01 08:41:30.379 V/WindowManager(  447): Orientation continue waiting for draw in Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}
+08-01 08:41:30.389 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.389 V/WindowManager(  447): Reporting new frame to Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}: Rect(0, 0 - 540, 888)
+08-01 08:41:30.389 I/WindowManager(  447): Resizing Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false} WITH DRAW PENDING
+08-01 08:41:30.389 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.389 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.389 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.389 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.389 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.389 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:30.389 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:30.389 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:30.389 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.389 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.389 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.479 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.479 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.479 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.479 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.479 V/WindowManager(  447): Eval win Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}: isDrawn=false, isAnimating=false
+08-01 08:41:30.479 V/WindowManager(  447): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Settings, identity=20) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 08:41:30.479 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.479 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.479 V/WindowManager(  447): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfaceResized=true configChanged=false
+08-01 08:41:30.479 V/WindowManager(  447): Changing surface while display frozen: Window{4161b190 StatusBarExpanded paused=false}
+08-01 08:41:30.479 V/WindowManager(  447): Orientation start waiting for draw in Window{4161b190 StatusBarExpanded paused=false}, surface Surface(name=StatusBarExpanded, identity=7)
+08-01 08:41:30.479 V/WindowManager(  447): Resizing window Window{4161b190 StatusBarExpanded paused=false} to 540.0x802.0
+08-01 08:41:30.479 V/WindowManager(  447): Orientation continue waiting for draw in Window{4161b190 StatusBarExpanded paused=false}
+08-01 08:41:30.479 V/WindowManager(  447): Orientation continue waiting for draw in Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}
+08-01 08:41:30.489 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.489 V/WindowManager(  447): Reporting new frame to Window{4161b190 StatusBarExpanded paused=false}: Rect(0, -888 - 540, -86)
+08-01 08:41:30.489 I/WindowManager(  447): Resizing Window{4161b190 StatusBarExpanded paused=false} WITH DRAW PENDING
+08-01 08:41:30.489 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.489 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.489 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.489 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.489 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.489 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:30.489 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:30.489 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:30.489 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.489 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.489 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.529 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.529 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.529 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.529 V/WindowManager(  447): finishDrawingLocked: Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false} in Surface(name=com.android.settings/com.android.settings.Settings, identity=20)
+08-01 08:41:30.529 V/WindowManager(  447): Eval win Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}: isDrawn=true, isAnimating=false
+08-01 08:41:30.529 V/WindowManager(  447): tokenMayBeDrawn: AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} freezingScreen=true mAppFreezing=false
+08-01 08:41:30.529 I/WindowManager(  447):   SURFACE 417a3d00: SHOW (performShowLocked) / com.android.settings/com.android.settings.Settings
+08-01 08:41:30.529 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.529 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.529 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.529 I/WindowManager(  447): 	at com.android.server.wm.WindowState.performShowLocked(WindowState.java:925)
+08-01 08:41:30.529 I/WindowManager(  447): 	at com.android.server.wm.AppWindowToken.showAllWindowsLocked(AppWindowToken.java:194)
+08-01 08:41:30.529 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:8052)
+08-01 08:41:30.529 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.529 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.finishDrawingWindow(WindowManagerService.java:2936)
+08-01 08:41:30.529 I/WindowManager(  447): 	at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 08:41:30.529 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 08:41:30.529 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.529 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.529 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.529 V/WindowManager(  447): Clear freezing of AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} force=true
+08-01 08:41:30.529 V/WindowManager(  447): No longer freezing: AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}}
+08-01 08:41:30.529 I/WindowManager(  447): Setting orientationChangeComplete=true because wtoken AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} numInteresting=1 numDrawn=1
+08-01 08:41:30.529 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.529 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.529 V/WindowManager(  447): Orientation continue waiting for draw in Window{4161b190 StatusBarExpanded paused=false}
+08-01 08:41:30.529 V/WindowManager(  447): Orientation not waiting for draw in Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}, surface Surface(name=com.android.settings/com.android.settings.Settings, identity=20)
+08-01 08:41:30.529 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.539 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.539 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.539 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.539 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.539 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.539 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.finishDrawingWindow(WindowManagerService.java:2936)
+08-01 08:41:30.539 I/WindowManager(  447): 	at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 08:41:30.539 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 08:41:30.539 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.539 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.539 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.559 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.559 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.559 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.559 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.559 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.559 V/WindowManager(  447): finishDrawingLocked: Window{4161b190 StatusBarExpanded paused=false} in Surface(name=StatusBarExpanded, identity=7)
+08-01 08:41:30.559 I/WindowManager(  447):   SURFACE 4161b190: SHOW (performShowLocked) / StatusBarExpanded
+08-01 08:41:30.559 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.559 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.559 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.559 I/WindowManager(  447): 	at com.android.server.wm.WindowState.performShowLocked(WindowState.java:925)
+08-01 08:41:30.559 I/WindowManager(  447): 	at com.android.server.wm.WindowState.commitFinishDrawingLocked(WindowState.java:888)
+08-01 08:41:30.559 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:7865)
+08-01 08:41:30.559 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.559 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.finishDrawingWindow(WindowManagerService.java:2936)
+08-01 08:41:30.559 I/WindowManager(  447): 	at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 08:41:30.559 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 08:41:30.559 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.559 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.559 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.559 V/WindowManager(  447): Eval win Window{417a3d00 com.android.settings/com.android.settings.Settings paused=false}: isDrawn=true, isAnimating=false
+08-01 08:41:30.559 V/WindowManager(  447): tokenMayBeDrawn: AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} freezingScreen=false mAppFreezing=false
+08-01 08:41:30.569 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.569 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.569 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.569 V/WindowManager(  447): Orientation not waiting for draw in Window{4161b190 StatusBarExpanded paused=false}, surface Surface(name=StatusBarExpanded, identity=7)
+08-01 08:41:30.569 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.579 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.579 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.579 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.579 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.579 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.finishDrawingWindow(WindowManagerService.java:2936)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 08:41:30.579 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.579 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.579 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.579 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.579 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.579 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.579 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.579 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.579 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:30.579 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:30.579 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.579 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.579 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.589 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.589 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.589 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.589 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.589 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.589 V/WindowManager(  447): Orientation continue waiting for draw in Window{41863220 StatusBar paused=false}
+08-01 08:41:30.589 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.589 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.589 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.589 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.589 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.589 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.589 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:30.589 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:30.589 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:30.589 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.589 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.589 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.599 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.599 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.599 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.599 V/WindowManager(  447): finishDrawingLocked: Window{41863220 StatusBar paused=false} in Surface(name=StatusBar, identity=5)
+08-01 08:41:30.599 I/WindowManager(  447):   SURFACE 41863220: SHOW (performShowLocked) / StatusBar
+08-01 08:41:30.599 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.599 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.599 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.599 I/WindowManager(  447): 	at com.android.server.wm.WindowState.performShowLocked(WindowState.java:925)
+08-01 08:41:30.599 I/WindowManager(  447): 	at com.android.server.wm.WindowState.commitFinishDrawingLocked(WindowState.java:888)
+08-01 08:41:30.599 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:7865)
+08-01 08:41:30.599 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.599 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.finishDrawingWindow(WindowManagerService.java:2936)
+08-01 08:41:30.599 I/WindowManager(  447): 	at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 08:41:30.599 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 08:41:30.599 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.599 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.599 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.599 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.599 V/WindowManager(  447): Orientation not waiting for draw in Window{41863220 StatusBar paused=false}, surface Surface(name=StatusBar, identity=5)
+08-01 08:41:30.609 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.609 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.609 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.609 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.609 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.609 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.609 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.609 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.609 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.609 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.finishDrawingWindow(WindowManagerService.java:2936)
+08-01 08:41:30.609 I/WindowManager(  447): 	at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 08:41:30.609 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 08:41:30.609 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.609 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.609 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.609 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.609 V/WindowManager(  447): Orientation continue waiting for draw in Window{4182d450 NavigationBar paused=false}
+08-01 08:41:30.609 V/WindowManager(  447): With display frozen, orientationChangeComplete=false
+08-01 08:41:30.619 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.619 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.619 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.619 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.619 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.619 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:30.619 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:30.619 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:30.619 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.619 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.619 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.629 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.629 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.629 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.629 V/WindowManager(  447): finishDrawingLocked: Window{4182d450 NavigationBar paused=false} in Surface(name=NavigationBar, identity=6)
+08-01 08:41:30.629 I/WindowManager(  447):   SURFACE 4182d450: SHOW (performShowLocked) / NavigationBar
+08-01 08:41:30.629 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.629 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.629 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.629 I/WindowManager(  447): 	at com.android.server.wm.WindowState.performShowLocked(WindowState.java:925)
+08-01 08:41:30.629 I/WindowManager(  447): 	at com.android.server.wm.WindowState.commitFinishDrawingLocked(WindowState.java:888)
+08-01 08:41:30.629 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:7865)
+08-01 08:41:30.629 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.629 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.finishDrawingWindow(WindowManagerService.java:2936)
+08-01 08:41:30.629 I/WindowManager(  447): 	at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 08:41:30.629 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 08:41:30.629 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.629 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.629 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.629 V/WindowManager(  447): Orientation not waiting for draw in Window{4182d450 NavigationBar paused=false}, surface Surface(name=NavigationBar, identity=6)
+08-01 08:41:30.629 V/WindowManager(  447): With display frozen, orientationChangeComplete=true
+08-01 08:41:30.629 I/WindowManager(  447): **** Dismissing screen rotation animation
+08-01 08:41:30.699 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:30.699 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.699 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.699 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.699 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.699 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.699 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.699 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.699 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.699 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.finishDrawingWindow(WindowManagerService.java:2936)
+08-01 08:41:30.699 I/WindowManager(  447): 	at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 08:41:30.699 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 08:41:30.699 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.699 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.699 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.709 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.709 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.709 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.709 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.709 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.709 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.709 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.709 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.709 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.709 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.719 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(751.0, 209.0, 1291.0, 1097.0)
+08-01 08:41:30.719 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.719 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.729 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(653.4175, 82.76828, 1193.4175, 970.7683)
+08-01 08:41:30.729 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.729 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.729 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.729 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.729 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.729 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.729 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.729 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.729 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.729 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.729 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.739 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.739 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.739 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.739 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.739 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.739 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.739 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.739 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.739 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.739 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.739 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.749 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(545.3767, 1.492229, 1085.3767, 889.49225)
+08-01 08:41:30.749 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.749 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.759 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.759 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.759 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.759 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.759 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.759 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.759 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.759 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.759 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.759 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.769 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(429.2435, -48.624172, 969.2435, 839.37585)
+08-01 08:41:30.769 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.769 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.779 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.779 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.779 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.779 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.779 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.779 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.779 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.779 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.779 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.779 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.789 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(308.21625, -70.76448, 848.21625, 817.23553)
+08-01 08:41:30.789 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.789 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.799 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.799 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.799 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.799 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.799 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.799 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.799 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.799 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.799 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.799 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.809 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(237.13486, -71.109695, 777.1349, 816.8903)
+08-01 08:41:30.809 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.809 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.809 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.809 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.809 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.809 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.809 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.809 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.809 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.809 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.809 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.809 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.819 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(176.39635, -64.095894, 716.39636, 823.9041)
+08-01 08:41:30.819 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.819 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.829 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.829 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.829 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.829 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.829 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.829 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.829 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.829 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.829 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.829 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.839 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(131.40218, -54.408684, 671.40216, 833.5913)
+08-01 08:41:30.839 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.839 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.849 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.849 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.849 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.849 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.849 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.849 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.849 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.849 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.849 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.849 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.859 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(94.39164, -43.41541, 634.39166, 844.5846)
+08-01 08:41:30.859 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.859 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.869 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(67.84456, -33.746216, 607.84454, 854.2538)
+08-01 08:41:30.869 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.869 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.869 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.869 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.869 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.869 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.869 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.869 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.869 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.869 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.869 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.869 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.879 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.879 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.879 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.879 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.879 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.879 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.879 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.879 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.879 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.879 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.889 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(46.65805, -24.896402, 586.6581, 863.1036)
+08-01 08:41:30.889 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.889 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.899 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.899 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.899 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.899 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.899 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.899 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.899 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.899 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.899 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.899 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.909 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(30.395039, -17.384617, 570.395, 870.61536)
+08-01 08:41:30.909 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.909 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.919 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(20.050508, -12.267477, 560.05054, 875.73254)
+08-01 08:41:30.919 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.919 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.919 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.919 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.919 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.919 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.919 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.919 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.919 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.919 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.919 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.919 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.929 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.929 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.929 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.929 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.929 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.929 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.929 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.929 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.929 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.929 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.939 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(12.2846985, -8.246696, 552.28467, 879.7533)
+08-01 08:41:30.939 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.939 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.949 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(7.0186076, -5.4305105, 547.0186, 882.5695)
+08-01 08:41:30.949 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.949 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.949 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.949 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.949 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.949 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.949 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.949 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.949 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.949 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.949 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.949 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.949 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.959 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(4.621264, -4.1240907, 544.6213, 883.8759)
+08-01 08:41:30.959 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.959 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.959 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.959 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.959 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.959 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.959 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.959 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:30.959 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:30.959 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:30.959 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.959 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.959 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.969 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(3.4234872, -3.465569, 543.42346, 884.5344)
+08-01 08:41:30.969 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.969 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.969 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.969 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.969 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.969 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.969 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.969 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.969 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.969 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.969 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.969 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.969 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:30.979 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(1.8513273, -2.5953605, 541.8513, 885.40466)
+08-01 08:41:30.979 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.979 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.979 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.979 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.979 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.979 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.979 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.979 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:30.979 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:30.979 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:30.979 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:30.979 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:30.979 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:30.989 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.989 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.989 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.989 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.989 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.989 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.989 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.989 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.989 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.989 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:30.999 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.99648654, -2.1194005, 540.99646, 885.8806)
+08-01 08:41:30.999 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:30.999 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:30.999 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:30.999 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:30.999 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:30.999 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:30.999 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:30.999 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:30.999 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:30.999 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:30.999 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:30.999 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:31.009 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(-0.012055516, -1.5552953, 539.9879, 886.4447)
+08-01 08:41:31.009 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:31.009 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:31.019 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:31.019 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:31.019 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:31.019 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:31.019 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:31.019 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:31.019 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:31.019 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:31.019 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:31.019 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:31.029 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(-0.5641615, -1.2452912, 539.43585, 886.7547)
+08-01 08:41:31.029 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:31.029 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:31.029 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:31.029 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:31.029 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:31.029 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:31.029 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:31.029 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:31.029 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:31.029 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:31.029 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:31.029 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:31.039 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(-0.8362105, -1.0922428, 539.1638, 886.9078)
+08-01 08:41:31.039 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:31.039 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:31.049 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:31.049 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:31.049 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:31.049 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:31.049 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:31.049 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:31.049 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:31.049 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:31.049 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:31.049 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:31.059 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(-1.0, -1.0, 539.0, 887.0)
+08-01 08:41:31.059 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:31.059 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:31.059 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:31.059 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:31.059 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:31.059 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:31.059 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:31.059 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:31.059 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:31.059 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:31.059 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:31.059 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:31.079 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(-1.0, -1.0, 539.0, 887.0)
+08-01 08:41:31.079 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:31.079 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:31.079 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:31.079 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:31.079 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:31.079 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:31.079 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:31.079 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:31.079 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:31.079 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:31.079 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:31.079 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:31.089 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(-1.0, -1.0, 539.0, 887.0)
+08-01 08:41:31.089 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:31.089 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:31.089 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:31.089 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:31.089 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:31.089 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:31.089 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:31.089 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:31.089 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:31.089 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:31.089 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:31.089 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:31.109 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(-1.0, -1.0, 539.0, 887.0)
+08-01 08:41:31.109 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:31.109 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:31.109 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:31.109 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:31.109 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:31.109 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:31.109 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:31.109 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:31.109 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:31.109 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:31.109 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:31.109 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:31.119 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(-1.0, -1.0, 539.0, 887.0)
+08-01 08:41:31.119 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:31.119 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:31.129 D/WindowManager(  447): Performing post-rotate rotation
+08-01 08:41:31.129 V/WindowManager(  447): updateRotationUncheckedLocked inTransaction: false
+08-01 08:41:31.129 V/WindowManager(  447): rotationForOrientationLw(orient=-1, last=0); user=0 
+08-01 08:41:31.129 V/WindowManager(  447): Application requested orientation -1, got rotation 0 which has compatible metrics
+08-01 08:41:31.129 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:31.129 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:31.129 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:31.129 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:31.129 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:31.129 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.access$500(WindowManagerService.java:149)
+08-01 08:41:31.129 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:6758)
+08-01 08:41:31.129 I/WindowManager(  447): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 08:41:31.129 I/WindowManager(  447): 	at android.os.Looper.loop(Looper.java:137)
+08-01 08:41:31.129 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService$WMThread.run(WindowManagerService.java:721)
+08-01 08:41:46.379 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:46.379 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:46.379 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:46.379 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:46.379 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:46.379 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:46.379 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:46.379 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:46.379 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:46.379 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:46.379 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:46.379 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:46.379 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:46.379 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:46.379 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)
+08-01 08:41:46.399 D/WindowManager(  447): frame: Rect(0, 0 - 540, 888) shown frame: RectF(0.0, 0.0, 540.0, 888.0)
+08-01 08:41:46.399 D/WindowManager(  447): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030292} lp.flags=0x1810100
+08-01 08:41:46.399 V/WindowManager(  447): finishAnimationLw::mHideKeyguard=false
+08-01 08:41:46.399 V/WindowManager(  447): Done at AppWindowToken{418af6f8 token=Token{4180ede8 ActivityRecord{4180ecb0 com.android.settings/.Settings}}} -- full screen, return -1
+08-01 08:41:46.399 I/WindowManager(  447): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false mShowingBootMessages=false mSystemBooted=true
+08-01 08:41:46.399 I/WindowManager(  447): java.lang.RuntimeException: here
+08-01 08:41:46.399 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked(WindowManagerService.java:4886)
+08-01 08:41:46.399 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9036)
+08-01 08:41:46.399 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:7517)
+08-01 08:41:46.399 I/WindowManager(  447): 	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2858)
+08-01 08:41:46.399 I/WindowManager(  447): 	at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 08:41:46.399 I/WindowManager(  447): 	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 08:41:46.399 I/WindowManager(  447): 	at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 08:41:46.399 I/WindowManager(  447): 	at android.os.Binder.execTransact(Binder.java:338)
+08-01 08:41:46.399 I/WindowManager(  447): 	at dalvik.system.NativeStart.run(Native Method)

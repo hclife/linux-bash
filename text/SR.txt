@@ -1,0 +1,19 @@
+* Known bugs . Issues that Qualcomm is aware of and plans to fix in an upcoming release 3
+* Fixed bugs . Bugs that are fixed for this release 4
+* Withdrawn bugs . Known bugs that are later determined not to be an issue 5
+A full release = MP Proprietary  + AP Proprietary + AP open source. 
+Gyro SR AMSS/DMSS Build ID:   R8625SSNSKQLYM1120   
+1-5	R8625	
+6	S	MSM8X25
+7	S	SURF/FFA/QRD
+8	N	512MB 32-Bit DDR
+9	S	eMMC boot builds
+10	K	ZRF6500
+11	Q
+12.13	LY	Linux Android
+14	M	Modem Image
+ 
+LYM: Non-HLOS
+LYA: HLOS___________ Open source HLOS
+	       |______ Proprietary HLOS
+	

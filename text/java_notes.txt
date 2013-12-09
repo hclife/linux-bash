@@ -1,0 +1,65 @@
+JAVA中extends 与implements有啥区别？
+1. 在类的声明中，通过关键字extends来创建一个类的子类。一个类通过关键字implements声明自己使用一个或者多个接口。
+extends 是继承某个类, 继承之后可以使用父类的方法, 也可以重写父类的方法; 
+implements 是实现多个接口, 接口的方法一般为空的, 必须重写才能使用
+2.extends是继承父类，只要那个类不是声明为final或者那个类定义为abstract的就能继承，JAVA中不支持多重继承，但是可以用接口 来实现，这样就要用到implements，继承只能继承一个类，但implements可以实现多个接口，用逗号分开就行了
+比如
+class A extends B implements C,D,E
+a.实现一个接口就是要实现该接口的所有的方法(抽象类除外)。
+b.接口中的方法都是抽象的。
+c.多个无关的类可以实现同一个接口，一个类可以实现多个无关的接口。
+extends是继承父类，只要那个类不是声明为final或者那个类定义为abstract的就能继承，JAVA中不支持多重 继承，但是可以用接口来实现，这样就要用到implements，继承只能继承一个类，但implements可以实现多个接口，用逗号分开就行了
+
+A a = new B(); 这条语句，实际上有三个过程：
+(1) A a;
+将a声明为父类对象，只是一个引用，未分配空间
+(2) B temp = new B();
+通过B类的构造函数建立了一个B类对象的实例，也就是初始化
+(3) a = (A)temp;
+将子类对象temp转换未父类对象并赋给a，这就是上传(upcast)，是安全的。
+经过以上3个过程，a就彻底成为了一个A类的实例。
+子类往往比父类有更多的属性和方法，上传只是舍弃，是安全的；而下传(downcast)有时会增加，通常是不安全的。
+
+1. public class SyncTest ( 
+2. private int x; 
+3. private int y; 
+4. private synchronized void setX (int i) (x=1;) 
+5. private synchronized void setY (int i) (y=1;) 
+6. public void setXY(int 1)(set X(i); setY(i);) 
+7. public synchronized Boolean check() (return x !=y;) 
+8. ) 
+Under which conditions will check () return true when called from a different class? 
+A. Check() can never return true. 
+B. Check() can return true when setXY is called by multiple threads. 
+C. Check() can return true when multiple threads call setX and setY separately. 
+D. Check() can only return true if SyncTest is changed to allow x and y to be set separately.
+
+一个类中所有的synchronized实例方法共享一个对象锁，当一个线程调用setX,另一个线程调用setY时，这时首先调用的那个线程享有对象锁，其他线程无法调用该对象的其他synchronized方法。当一个线程调用了setX后，在另一个线程可以调用setY方法前调用check,就return true. 对于setXY方法()，在首先调用此方法的线程从该方法退出前，其他任何线程可以进入该方法，但无法调用里面的方法，也无法调用check,因为该线程有唯一的对象锁，所以一旦调用了这个方法,x = y.至于D那就更不对了，x和y一上来初始值不同，check就可以是true了。
+
+The difference between throws and throw:
+ public Test() throws RepletException {
+    try {
+      System.out.println("Test this Project!")
+    }
+    catch (Exception e) {
+      throw new Exception(e.toString());
+    }
+  }
+
+
+
+throws是用来声明一个方法可能抛出的所有异常信息
+throw则是指抛出的一个具体的异常类型。
+通常在一个方法（类）的声明处通过throws声明方法（类）可能抛出的异常信息，而在方法（类）内部通过throw声明一个具体的异常信息。
+throws通常不用显示的捕获异常，可由系统自动将所有捕获的异常信息抛给上级方法；
+throw则需要用户自己捕获相关的异常，而后在对其进行相关包装，最后在将包装后的异常信息抛出。
+
+在这段程序中，this和super不再是像以前那样用“.”连接一个方法或成员，而是直接在其后跟 
+上适当的参数，因此它的意义也就有了变化。super后加参数的是用来调用父类中具有相同形式的 
+构造函数，如1和2处。this后加参数则调用的是当前具有相同参数的构造函数，如3处。当然，在 
+Chinese的各个重载构造函数中，this和super在一般方法中的各种用法也仍可使用，比如4处，你 
+可以将它替换为“this.prt”(因为它继承了父类中的那个方法）或者是“super.prt”（因为它 
+是父类中的方法且可被子类访问），它照样可以正确运行。但这样似乎就有点画蛇添足的味道 
+了。 
+最后，写了这么多，如果你能对“this通常指代当前对象，super通常指代父类”这句话牢记在 
+心，那么本篇便达到了目的，其它的你自会在以后的编程实践当中慢慢体会、掌握。

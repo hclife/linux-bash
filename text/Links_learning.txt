@@ -1,0 +1,16 @@
+The Mark of internet links to be continued: 
+
+http://en.wikipedia.org/wiki/Flash_memory
+http://hi.baidu.com/yamobread/item/5373fa5d0f9f201babf6d770
+http://dev.10086.cn/cmdn/wiki/index.php?doc-view-5959.html
+
+Android ActivityManager Architecture Introduction:
+http://blog.sina.com.cn/s/blog_6ddb0bb30100z0t6.html
+http://www.apkbus.com/android-17534-1-1.html
+
+buddy system: a memory allocation algorithm
+http://en.wikipedia.org/wiki/Buddy_memory_system
+
+typedef learning
+http://baike.baidu.com/view/1283800.htm
+http://blog.csdn.net/21aspnet/article/details/6723915

@@ -1,0 +1,463 @@
+D/sensord ( 1790): [139106][I]BS_INFO<channel_a><get_data_a><115>================= acceleration ===============
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][D]BS_DBG<channel_a><get_data_a><120>[acc data] x: -0.406250 y: 0.250000 z: 8.000000
+3
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][I]BS_INFO<channel_a><get_data_a><121>================= acceleration ===============
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][D]BS_DBG<channel_cntl><channel_thread_proc><943>proc time_start: 1 for ACCELERATION
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][I]BS_INFO<channel_cntl><channel_thread_proc><966>sensor[0] channel state is normal.
+D/sensord ( 1790):
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][I]BS_INFO<channel_cntl><channel_thread_proc><967>Then it'll write data fifo.
+D/sensord ( 1790):
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][I]BS_INFO<channel_cntl><channel_thread_proc><1000>Daemon write fifo rc = 112.
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][I]BS_INFO<channel_cntl><channel_thread_proc><1004>Writing data fifo. Sensor ACCELER
+op = 2113.
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][I]BS_INFO<channel_cntl><channel_thread_proc><1028>elapse 1 for ACCELERATION is posi
+mal).
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][I]BS_INFO<channel_cntl><channel_thread_proc><1029>calculating sleep_time for ACCELE
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][I]BS_INFO<channel_cntl><channel_thread_proc><1031>sleep_time = 65 for ACCELERATION.
+D/sensord ( 1790):
+D/sensord ( 1790): [139106][I]BS_INFO<channel_cntl><channel_thread_proc><1054>After sleep_time = 65. Start next
+op count = 2113.
+D/sensord ( 1790):
+D/sensord ( 1790):
+D/sensord ( 1790): [139114][I]BS_INFO<event_handler><ev_loop_check_display_state><252>read of sleep file comple
+D/sensord ( 1790):
+D/sensord ( 1790): [139114][I]BS_INFO<event_handler><notify_display_listeners><192>new display state: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139114][W]BS_WARN<event_handler><sighandler_generic><330>time: 2012-08-01_03-35-09
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><331>signo: 11
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><332>errno: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><333>code: 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><334>addr: 0x12ca690
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><338>total count: 27
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><342>3 21 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><347>8 20 104
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>0: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>1: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>2: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>3: 00000002
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>4: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>5: 0000000e
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>6: 80000005
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>7: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>8: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>9: fffffe84
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>10: 0001af14
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>11: 012ca690
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>12: 0001a290
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>13: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>14: 000188a4
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>15: 0001521e
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>16: 00015260
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>17: 000151ac
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>18: 0001529e
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>19: 00014710
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>20: fffffe80
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>21: 40566e40
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>22: 00009eef
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>23: 012ca690
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>24: 60000010
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>25: 012ca690
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><351>26: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566dc0: 0001712d
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566dc4: 00000001
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566dc8: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566dcc: 00000001
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566dd0: 00000001
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566dd4: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566dd8: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566ddc: 447a9979
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566de0: 0001a424
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566de4: 0001a424
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566de8: 000000b4
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566dec: 00000003
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566df0: 0001a49c
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566df4: 0000bf77
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566df8: 0001677f
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566dfc: 0000003f
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e00: 000189a4
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e04: 00000366
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e08: 0001712d
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e0c: 00000001
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e10: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e14: 0001a49c
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e18: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e1c: 447a9979
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e20: 0001a290
+D/sensord ( 1790):
+D/sensord ( 1790): [139115][W]BS_WARN<event_handler><sighandler_generic><360>40566e24: 0001a290
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e28: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e2c: 000188a4
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e30: 0001521e
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e34: 00009ed5
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e38: df0027ad
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e3c: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e40: 00018904
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e44: 000000c0
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e48: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e4c: 000188a4
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e50: 0001521e
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e54: 00000017
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e58: 00000016
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e5c: 0000a3c3
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e60: 000188a4
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e64: 000000fc
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e68: 00000016
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e6c: 00000017
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e70: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e74: 00000008
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e78: 000188a4
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e7c: 00014710
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e80: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e84: 65656c73
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e88: 676e6970
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e8c: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e90: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e94: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e98: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566e9c: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566ea0: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566ea4: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566ea8: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566eac: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566eb0: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566eb4: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566eb8: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][W]BS_WARN<event_handler><sighandler_generic><360>40566ebc: 00000000
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1216>channel information dump
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<main><dump_ver><102>daemon_ver: 33816670 desc: 2012-03-05,14:03:48
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<main><dump_ver><103>algo_ver: M 34013953 desc: Copyright (C) Bosch Sensor
+ased on 2012-02-29/20:08:00
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1220>hdl: 4
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1221>cfg: 8
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1222>ptid: 20
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1223>tid: 24
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1226>-----------------
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1227>name: ACCELERATION
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1228>addr: 0x1a424
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1229>availability: 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1230>calib_bg: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1231>interval: 66
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1232>interval_min: 10
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1233>interval_max: 100
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1234>dep: 2
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1235>rd_blk: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1236>blocked: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1237>started: 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1238>state: 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1239>prev_state: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1240>data_status: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1243>ptid: 18ef020 tid: 1792
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1247>lock obj: 0x1a440, 0x1a444, 0x1a448
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1226>-----------------
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1227>name: MAGNETIC
+D/sensord ( 1790):
+D/sensord ( 1790): [139116][I]BS_INFO<channel_cntl><channel_dump><1228>addr: 0x1a460
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1229>availability: 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1230>calib_bg: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1231>interval: 66
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1232>interval_min: 20
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1233>interval_max: 100
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1234>dep: 4
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1235>rd_blk: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1236>blocked: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1237>started: 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1238>state: 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1239>prev_state: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1240>data_status: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1243>ptid: 18ef060 tid: 1793
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1247>lock obj: 0x1a47c, 0x1a480, 0x1a484
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1226>-----------------
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1227>name: ORIENTATION
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1228>addr: 0x1a49c
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1229>availability: 2
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1230>calib_bg: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1231>interval: 66
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1232>interval_min: 20
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1233>interval_max: 100
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1234>dep: 6
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1235>rd_blk: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1236>blocked: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1237>started: 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1238>state: 1
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1239>prev_state: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1240>data_status: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1243>ptid: 18ef0a0 tid: 1794
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1247>lock obj: 0x1a4b8, 0x1a4bc, 0x1a4c0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1251>name: ACCELERATION
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1252>addr: 0x1a404
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1253>ref: 2
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1254>lock obj: 0x1a410
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1251>name: MAGNETIC
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1252>addr: 0x1a414
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1253>ref: 2
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1254>lock obj: 0x1a420
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1259>err: 0, len_cmd: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_dump><1262>err: 0, len_dat: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<channel_cntl><channel_destroy><1181>function entry
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<data_proc_engines><data_proc_engines_destroy><252>function entry
+D/sensord ( 1790):
+D/sensord ( 1790): [139117][I]BS_INFO<data_proc_engines><algo_data_log_destroy><139>function entry
+D/sensord ( 1790):
+D/sensord ( 1790): [139131][I]BS_INFO<channel_cntl><channel_thread_proc><1056>END LOOP.
+D/sensord ( 1790):
+D/sensord ( 1790): [139131][I]BS_INFO<channel_cntl><channel_thread_proc><908>START LOOP.
+D/sensord ( 1790):
+D/sensord ( 1790): [139132][I]BS_INFO<channel_cntl><channel_thread_proc><913>sensor[1] channel state is sleep.
+D/sensord ( 1790):
+D/sensord ( 1790):
+D/sensord ( 1790): [139137][D]BS_DBG<event_handler><check_cmd_event><167>command got: 1, 2, 66
+D/sensord ( 1790):
+D/sensord ( 1790): [139137][I]BS_INFO<channel_cntl><channel_on_cmd_received><740>command to ACCELERATION, cmd:
+66
+D/sensord ( 1790):
+D/sensord ( 1790): [139137][I]BS_INFO<channel_cntl><channel_on_cmd_received><811>new interval for sensor ACCELE
+ 66
+D/sensord ( 1790):
+D/sensord ( 1790): [139137][I]BS_INFO<algo_adapter_bst><algo_on_interval_changed><675>handle: 1 new hz: 15 dr:
+D/sensord ( 1790):
+D/sensord ( 1790): [139137][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><693>bw: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139137][I]BS_INFO<hw_cntl_a><hc_acc_set_bandwidth><697>bandwidth sysfs node path is : /sys/
+ut/input5/bandwidth.
+D/sensord ( 1790):
+D/sensord ( 1790):
+D/sensord ( 1790): [139142][I]BS_INFO<channel_cntl><channel_on_cmd_received><821>command handle result: 0
+D/sensord ( 1790):
+D/sensord ( 1790): [139158][I]BS_INFO<channel_cntl><channel_thread_proc><1056>END LOOP.
+D/sensord ( 1790):
+D/sensord ( 1790): [139158][I]BS_INFO<channel_cntl><channel_thread_proc><908>START LOOP.
+D/sensord ( 1790):
+D/sensord ( 1790): [139158][I]BS_INFO<channel_cntl><channel_thread_proc><913>sensor[2] channel state is sleep.
+
+
+
+
+segmentation fault:
+<1>定义了指针后记得初始化，在使用的时候记得判断是否为NULL
+<2>在使用数组的时候是否被初始化，数组下标是否越界，数组元素是否存在等
+<3>在变量处理的时候变量的格式控制是否合理等
+
+
+Normal Trace on resume: 
+
+D/sensord (  166): [82549][I]BS_INFO<event_handler><ev_loop_check_display_state><246>read of wake file complete
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<event_handler><notify_display_listeners><192>new display state: 1
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<event_handler><notify_display_listeners><196>g_display_event_handler is not NULL.
+D/sensord (  166):
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<event_handler><notify_display_listeners><198>on_display_state_change is not NULL
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<event_handler><notify_display_listeners><199>The parameter state = 1.
+D/sensord (  166):
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<channel_cntl><channel_on_display_state_change><836>function entry
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<channel_cntl><channel_on_display_state_change><838>waiting for g_mutex_display_stat
+e...
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<channel_cntl><channel_on_display_state_change><840>get hold of g_mutex_display_stat
+e
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<channel_cntl><channel_on_display_state_change><843>display is on
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<channel_cntl><channel_on_display_state_change><844>transition 1, 4 => start display
+.
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<channel_cntl><channel_on_display_state_change><850>prev state of ACCELERATION is: 1
+
+D/sensord (  166):
+D/sensord (  166): [82549][D]BS_DBG<channel_cntl><channel_set_state><590>function entry
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<channel_cntl><channel_set_state><602>channel:ACCELERATION prev_state:1 state: 0 ---
+> 1 reason: 1
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<channel_cntl><channel_check_dep_hw><535>check dependency of ACCELERATION, 1
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<channel_cntl><channel_check_dep_hw><545>1 dep on 1, 1
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><481>acc op_mode: 2
+D/sensord (  166):
+D/sensord (  166): [82549][I]BS_INFO<hw_cntl_a><hc_acc_set_opmode><485>opmode sysfs node path is : /sys/class/input/inpu
+t5/mode.
+D/sensord (  166):
+D/sensord (  166):
+D/sensord (  166): [82552][I]BS_INFO<channel_cntl><hw_ref_up><458>ref count for channel ACCELERATION: 1
+D/sensord (  166):

@@ -1,0 +1,232 @@
+01-01 00:09:50.259 W/SignalStrength(  597): SignalStrength before validate=SignalStrength: 12 255 -1 -1 -1 -1 8 99 21474
+83647 2147483647 2147483647 2147483647 cdma
+01-01 00:09:50.259 W/SignalStrength(  597): SignalStrength after validate=SignalStrength: 12 255 -120 -160 -120 -1 8 99
+2147483647 2147483647 2147483647 2147483647 cdma
+01-01 00:09:50.259 W/SignalStrength(  393): getLTELevel - rsrp:2147483647 snr:2147483647 rsrpIconLevel:-1 snrIconLevel:-
+1
+01-01 00:09:50.259 W/SignalStrength(  393): getLTELevel - rssi:99 rssiIconLevel:0
+01-01 00:09:50.259 W/SignalStrength(  393): getGsmLevel=4
+01-01 00:09:50.259 W/SignalStrength(  393): getLevel=4
+01-01 00:09:50.259 W/CNE     (  393): mDefaultApnLinkProp is null
+01-01 00:09:50.259 I/CNE_DEBUG(  393): getSignalStrength networkType= 0
+01-01 00:09:50.259 I/CNE_DEBUG(  393): CNE onSignalStrengthsChanged - type:0 strength:-1 ipV4Addr:null roaming:0 iface:n
+ull timeStamp:2011-01-01 00:09:50.273
+01-01 00:09:50.259 I/CNE_DEBUG(  393): UpdateWwanStatus type=0 state=5 rssi=-1 roaming=0 ipV4Addr=null iface=null timeSt
+amp=2011-01-01 00:09:50.273
+01-01 00:09:50.269 E/Parcel  (  179): Reading a NULL string not supported here.
+01-01 00:09:50.269 E/Parcel  (  179): Reading a NULL string not supported here.
+01-01 00:09:50.269 W/SignalStrength(  491): getLTELevel - rsrp:2147483647 snr:2147483647 rsrpIconLevel:-1 snrIconLevel:-
+1
+01-01 00:09:50.269 W/SignalStrength(  491): getLTELevel - rssi:99 rssiIconLevel:0
+01-01 00:09:50.269 W/SignalStrength(  491): getGsmLevel=4
+01-01 00:09:50.269 W/SignalStrength(  491): getLevel=4
+01-01 00:09:50.269 W/SignalStrength(  491): getLTELevel - rsrp:2147483647 snr:2147483647 rsrpIconLevel:-1 snrIconLevel:-
+1
+01-01 00:09:50.269 W/SignalStrength(  491): getLTELevel - rssi:99 rssiIconLevel:0
+01-01 00:09:50.269 D/StatusBar.NetworkController(  491): onSignalStrengthsChanged signalStrength=SignalStrength: 12 255
+-120 -160 -120 -1 8 99 2147483647 2147483647 2147483647 2147483647 gsm|lte level=4
+01-01 00:09:50.269 D/StatusBar.NetworkController(  491):  No service
+01-01 00:09:50.279 W/SignalStrength(  491): getGsmLevel=4
+01-01 00:09:50.279 W/SignalStrength(  491): getLevel=4
+01-01 00:09:50.279 D/StatusBar.NetworkController(  491): refreshViews connected={ } level=4 combinedSignalIconId=0x7f020
+094/com.android.systemui:drawable/stat_sys_signal_0 combinedActivityIconId=0x0 mAirplaneMode=false mDataActivity=0 mPhon
+eSignalIconId=0x7f020094 mDataDirectionIconId=0x0 mDataSignalIconId=0x7f020094 mDataTypeIconId=0x0 mNoSimIconId=0x7f0200
+8d mWifiIconId=0x0 mBluetoothTetherIconId=0x1080535
+01-01 00:09:54.469 V/PrintK  (    4): [  551.250642] msm-charger msm-charger: update_heartbeat: msm_chg.batt_status(1)=1
+0,hw_chg_state=3
+01-01 00:09:54.508 V/PrintK  (    4): [  551.289417] msm-charger msm-charger: update_heartbeat: msm_chg.batt_status(2)=1
+0
+01-01 00:09:54.709 D/BatteryService(  393): level:60 scale:100 status:2 health:2 present:true voltage: 3903 temperature:
+ 286 technology: Li-ion AC powered:false USB powered:true icon:17302790 invalid charger:0
+01-01 00:09:54.719 I/CNE_DEBUG(  393): CNE received action: android.intent.action.BATTERY_CHANGED
+01-01 00:09:54.719 I/CNE_DEBUG(  393): UpdateBatteryStatus status=2 pluginType=2 level=60
+01-01 00:09:54.719 I/StatusBar.BatteryController(  491): --status=2
+01-01 00:09:54.729 I/PowerUI (  491): --ACTION_BATTERY_CHANGED, health=2, plugged=true
+01-01 00:09:55.679 D/NewsReader--UpdateService( 1277): notifyWidget()
+01-01 00:09:56.669 W/SignalStrength(  597): SignalStrength before validate=SignalStrength: 14 255 -1 -1 -1 -1 8 99 21474
+83647 2147483647 2147483647 2147483647 cdma
+01-01 00:09:56.669 W/SignalStrength(  597): SignalStrength after validate=SignalStrength: 14 255 -120 -160 -120 -1 8 99
+2147483647 2147483647 2147483647 2147483647 cdma
+01-01 00:09:56.679 W/SignalStrength(  393): getLTELevel - rsrp:2147483647 snr:2147483647 rsrpIconLevel:-1 snrIconLevel:-
+1
+01-01 00:09:56.679 W/SignalStrength(  393): getLTELevel - rssi:99 rssiIconLevel:0
+01-01 00:09:56.679 W/SignalStrength(  393): getGsmLevel=4
+01-01 00:09:56.679 W/SignalStrength(  393): getLevel=4
+01-01 00:09:56.679 W/CNE     (  393): mDefaultApnLinkProp is null
+01-01 00:09:56.679 I/CNE_DEBUG(  393): getSignalStrength networkType= 0
+01-01 00:09:56.679 I/CNE_DEBUG(  393): CNE onSignalStrengthsChanged - type:0 strength:-1 ipV4Addr:null roaming:0 iface:n
+ull timeStamp:2011-01-01 00:09:56.694
+01-01 00:09:56.679 I/CNE_DEBUG(  393): UpdateWwanStatus type=0 state=5 rssi=-1 roaming=0 ipV4Addr=null iface=null timeSt
+amp=2011-01-01 00:09:56.694
+01-01 00:09:56.689 W/SignalStrength(  491): getLTELevel - rsrp:2147483647 snr:2147483647 rsrpIconLevel:-1 snrIconLevel:-
+1
+01-01 00:09:56.689 W/SignalStrength(  491): getLTELevel - rssi:99 rssiIconLevel:0
+01-01 00:09:56.689 W/SignalStrength(  491): getGsmLevel=4
+01-01 00:09:56.689 W/SignalStrength(  491): getLevel=4
+01-01 00:09:56.689 W/SignalStrength(  491): getLTELevel - rsrp:2147483647 snr:2147483647 rsrpIconLevel:-1 snrIconLevel:-
+1
+01-01 00:09:56.689 W/SignalStrength(  491): getLTELevel - rssi:99 rssiIconLevel:0
+01-01 00:09:56.689 W/SignalStrength(  491): getGsmLevel=4
+01-01 00:09:56.689 W/SignalStrength(  491): getLevel=4
+01-01 00:09:56.689 E/Parcel  (  179): Reading a NULL string not supported here.
+01-01 00:09:56.689 E/Parcel  (  179): Reading a NULL string not supported here.
+01-01 00:09:56.689 D/StatusBar.NetworkController(  491): onSignalStrengthsChanged signalStrength=SignalStrength: 14 255
+-120 -160 -120 -1 8 99 2147483647 2147483647 2147483647 2147483647 gsm|lte level=4
+01-01 00:09:56.689 D/StatusBar.NetworkController(  491):  No service
+01-01 00:09:56.689 D/StatusBar.NetworkController(  491): refreshViews connected={ } level=4 combinedSignalIconId=0x7f020
+094/com.android.systemui:drawable/stat_sys_signal_0 combinedActivityIconId=0x0 mAirplaneMode=false mDataActivity=0 mPhon
+eSignalIconId=0x7f020094 mDataDirectionIconId=0x0 mDataSignalIconId=0x7f020094 mDataTypeIconId=0x0 mNoSimIconId=0x7f0200
+8d mWifiIconId=0x0 mBluetoothTetherIconId=0x1080535
+01-01 00:09:57.467 V/PrintK  (   67): [  554.248424] ----kick watchdog---.
+01-01 00:09:57.598 V/PrintK  (  156): [  554.379080] [pcm_out.c:pcm_out_open] open
+01-01 00:09:57.599 E/AudioHardwareMSM8660(  156):  AudioStreamOutMSM72xx: channels
+01-01 00:09:57.599 E/AudioHardwareMSM8660(  156):  AudioStreamOutMSM72xx : sampleRate
+01-01 00:09:57.609 D/AudioHardwareMSM8660(  156): write(): dec_id = 1 cur_rx = 2
+01-01 00:09:57.609 D/AudioHardwareMSM8660(  156): value of device and enable is 2 1 ALSA dev id:2
+01-01 00:09:57.613 V/PrintK  (  156): [  554.393829] [pcm_out.c:pcm_out_open] open session id[1]
+01-01 00:09:57.619 V/PrintK  (  156): [  554.400540] msm_device_put:device speaker_stereo_rx set 1
+01-01 00:09:57.624 W/PrintK  (  156): [  554.405096] msm_device_put:device freq =48000
+01-01 00:09:57.657 V/PrintK  (  156): [  554.438639] afe_open: 0 48000
+01-01 00:09:57.669 D/ACDB-LOADER(  156): ACDB -> send_audio_cal, acdb_id = 15, path =  0
+01-01 00:09:57.669 D/ACDB-LOADER(  156): ACDB -> send_adm_topology
+01-01 00:09:57.669 D/ACDB-LOADER(  156): ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+01-01 00:09:57.669 D/ACDB-LOADER(  156): ACDB -> send_audtable
+01-01 00:09:57.669 D/ACDB-LOADER(  156): ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+01-01 00:09:57.669 D/ACDB-LOADER(  156): ACDB -> AUDIO_SET_AUDPROC_CAL
+01-01 00:09:57.669 D/ACDB-LOADER(  156): ACDB -> send_audvoltable
+01-01 00:09:57.669 D/ACDB-LOADER(  156): ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_VOLTBL_STEP_COPP
+01-01 00:09:57.669 D/ACDB-LOADER(  156): ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+01-01 00:09:57.689 D/AudioHardwareMSM8660(  156): addToTable stream 1
+01-01 00:09:57.704 V/PrintK  (  156): [  554.485275] pcm_out_ioctl: AUDIO_START
+01-01 00:09:57.970 V/PrintK  (  393): [  554.750723] [BMA250]bma250_open
+01-01 00:09:57.972 V/PrintK  (  393): [  554.753410] [BMA250][BMA250] Set gsensor delay is 100 ms.
+01-01 00:09:57.978 V/PrintK  (  393): [  554.759361] [BMA250]bma250_release
+01-01 00:09:57.981 V/PrintK  (  393): [  554.762531] [BMA250]bma250_open
+01-01 00:09:57.979 V/WindowManager(  393): rotationForOrientationLw(orient=-1, last=0); user=0
+01-01 00:09:57.984 V/PrintK  (  393): [  554.765558] [BMA250][BMA250] Set gsensor delay is 66 ms.
+01-01 00:09:57.991 V/PrintK  (  393): [  554.772628] [BMA250]bma250_release
+01-01 00:09:57.999 I/WindowManager(  393): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+01-01 00:09:57.999 I/ActivityManager(  393): Config changed: {1.0 0mcc0mnc en_US layoutdir=0 sw320dp w533dp h294dp nrml
+long land finger -keyb/v/h -nav/h s.7}
+01-01 00:09:57.999 V/WindowManager(  393): rotationForOrientationLw(orient=-1, last=3); user=0
+01-01 00:09:58.009 D/PhoneApp(  597): updateProximitySensorMode: state = IDLE
+01-01 00:09:58.009 D/PhoneApp(  597): updateProximitySensorMode: lock already released.
+01-01 00:09:58.109 W/SignalStrength(  491): getLTELevel - rsrp:2147483647 snr:2147483647 rsrpIconLevel:-1 snrIconLevel:-
+1
+01-01 00:09:58.109 W/SignalStrength(  491): getLTELevel - rssi:99 rssiIconLevel:0
+01-01 00:09:58.109 W/SignalStrength(  491): getGsmLevel=4
+01-01 00:09:58.109 W/SignalStrength(  491): getLevel=4
+01-01 00:09:58.109 D/memalloc(  153): ion: Allocated buffer base:0x4305f000 size:1536000 fd:45
+01-01 00:09:58.109 D/memalloc(  153): ion: Freeing buffer base:0x42ee8000 size:1536000 fd:60
+01-01 00:09:58.109 D/memalloc(  153): ion: Unmapping buffer  base:0x42ee8000 size:1536000
+01-01 00:09:58.109 D/StatusBar.NetworkController(  491): refreshViews connected={ } level=4 combinedSignalIconId=0x7f020
+094/com.android.systemui:drawable/stat_sys_signal_0 combinedActivityIconId=0x0 mAirplaneMode=false mDataActivity=0 mPhon
+eSignalIconId=0x7f020094 mDataDirectionIconId=0x0 mDataSignalIconId=0x7f020094 mDataTypeIconId=0x0 mNoSimIconId=0x7f0200
+8d mWifiIconId=0x0 mBluetoothTetherIconId=0x1080535
+01-01 00:09:58.129 D/memalloc( 1247): ion: Unmapping buffer  base:0x5cf37000 size:1536000
+01-01 00:09:58.129 D/memalloc( 1247): ion: Mapped buffer base:0x5c9fe000 size:1536000 offset:0 fd:47
+01-01 00:09:58.199 D/memalloc(  491): ion: Unmapping buffer  base:0x5bdd6000 size:1413120
+01-01 00:09:58.199 D/memalloc(  491): ion: Unmapping buffer  base:0x5bc10000 size:1413120
+01-01 00:09:58.199 D/memalloc(  491): ion: Unmapping buffer  base:0x5bf2f000 size:1413120
+01-01 00:09:58.209 D/memalloc(  153): ion: Freeing buffer base:0x42774000 size:1413120 fd:48
+01-01 00:09:58.209 D/memalloc(  153): ion: Unmapping buffer  base:0x42774000 size:1413120
+01-01 00:09:58.209 D/memalloc(  153): ion: Freeing buffer base:0x42afa000 size:1413120 fd:54
+01-01 00:09:58.209 D/memalloc(  153): ion: Unmapping buffer  base:0x42afa000 size:1413120
+01-01 00:09:58.209 I/Adreno200-EGLSUB(  491): <ConfigWindowMatch:2078>: Format RGBA_8888.
+01-01 00:09:58.209 D/memalloc(  153): ion: Allocated buffer base:0x4262f000 size:1331200 fd:48
+01-01 00:09:58.209 D/memalloc(  491): ion: Mapped buffer base:0x5bdd6000 size:1331200 offset:0 fd:56
+01-01 00:09:58.219 E/StrictMode( 1247): class com.android.settings.SubSettings; instances=2; limit=1
+01-01 00:09:58.219 E/StrictMode( 1247): android.os.StrictMode$InstanceCountViolation: class com.android.settings.SubSett
+ings; instances=2; limit=1
+01-01 00:09:58.219 E/StrictMode( 1247):         at android.os.StrictMode.setClassInstanceLimit(StrictMode.java:1)
+01-01 00:09:58.219 D/memalloc( 1247): ion: Unmapping buffer  base:0x5c9fe000 size:1536000
+01-01 00:09:58.219 D/memalloc( 1247): ion: Unmapping buffer  base:0x5d20e000 size:1536000
+01-01 00:09:58.219 D/memalloc( 1247): ion: Unmapping buffer  base:0x5d39f000 size:1536000
+01-01 00:09:58.219 D/memalloc(  153): ion: Freeing buffer base:0x4305f000 size:1536000 fd:45
+01-01 00:09:58.219 D/memalloc(  153): ion: Unmapping buffer  base:0x4305f000 size:1536000
+01-01 00:09:58.219 D/memalloc(  153): ion: Freeing buffer base:0x435b8000 size:1536000 fd:75
+01-01 00:09:58.219 D/memalloc(  153): ion: Unmapping buffer  base:0x435b8000 size:1536000
+01-01 00:09:58.229 D/memalloc(  153): ion: Freeing buffer base:0x43782000 size:1536000 fd:78
+01-01 00:09:58.229 D/memalloc(  153): ion: Unmapping buffer  base:0x43782000 size:1536000
+01-01 00:09:58.239 D/AppWidgetService( 1264): AppWidgetService--------->flashRemoteVIews------>the COUNTER is : 12
+01-01 00:09:58.239 D/memalloc(  153): ion: Allocated buffer base:0x427dc000 size:1331200 fd:45
+01-01 00:09:58.239 D/memalloc(  491): ion: Mapped buffer base:0x5c399000 size:1331200 offset:0 fd:71
+01-01 00:09:58.239 I/Adreno200-EGLSUB(  153): <CreateImage:893>: Android Image
+01-01 00:09:58.239 I/Adreno200-EGLSUB(  153): <GetImageAttributes:1102>: RGBA_8888
+01-01 00:09:58.239 D/memalloc(  153): ion: Freeing buffer base:0x4228f000 size:1413120 fd:57
+01-01 00:09:58.239 D/memalloc(  153): ion: Unmapping buffer  base:0x4228f000 size:1413120
+01-01 00:09:58.259 D/memalloc(  153): ion: Allocated buffer base:0x4193e000 size:102400 fd:54
+01-01 00:09:58.259 D/memalloc(  153): ion: Freeing buffer base:0x418f6000 size:61440 fd:69
+01-01 00:09:58.259 D/memalloc(  153): ion: Unmapping buffer  base:0x418f6000 size:61440
+01-01 00:09:58.259 D/memalloc(  491): ion: Unmapping buffer  base:0x5b48d000 size:61440
+01-01 00:09:58.259 D/memalloc(  491): ion: Mapped buffer base:0x5bc10000 size:102400 offset:0 fd:47
+01-01 00:09:58.269 I/Adreno200-EGLSUB(  153): <CreateImage:893>: Android Image
+01-01 00:09:58.269 I/Adreno200-EGLSUB(  153): <GetImageAttributes:1088>: RGB_565
+01-01 00:09:58.309 D/memalloc(  153): ion: Allocated buffer base:0x41957000 size:102400 fd:57
+01-01 00:09:58.309 D/memalloc(  153): ion: Freeing buffer base:0x41905000 size:61440 fd:63
+01-01 00:09:58.309 D/memalloc(  153): ion: Unmapping buffer  base:0x41905000 size:61440
+01-01 00:09:58.309 D/memalloc(  491): ion: Unmapping buffer  base:0x5b98c000 size:61440
+01-01 00:09:58.309 D/memalloc(  491): ion: Mapped buffer base:0x5bc29000 size:102400 offset:0 fd:74
+01-01 00:09:58.309 I/Adreno200-EGLSUB(  153): <CreateImage:893>: Android Image
+01-01 00:09:58.309 I/Adreno200-EGLSUB(  153): <GetImageAttributes:1088>: RGB_565
+01-01 00:09:58.349 I/Adreno200-EGLSUB( 1247): <ConfigWindowMatch:2078>: Format RGBA_8888.
+01-01 00:09:58.349 D/memalloc(  153): ion: Allocated buffer base:0x4228f000 size:1536000 fd:60
+01-01 00:09:58.349 D/memalloc( 1247): ion: Mapped buffer base:0x5c89e000 size:1536000 offset:0 fd:47
+01-01 00:09:58.399 D/memalloc(  153): ion: Allocated buffer base:0x42afa000 size:1536000 fd:63
+01-01 00:09:58.399 D/memalloc( 1247): ion: Mapped buffer base:0x5cafc000 size:1536000 offset:0 fd:62
+01-01 00:09:58.399 I/Adreno200-EGLSUB(  153): <CreateImage:893>: Android Image
+01-01 00:09:58.399 I/Adreno200-EGLSUB(  153): <GetImageAttributes:1102>: RGBA_8888
+01-01 00:09:58.459 D/memalloc(  153): ion: Allocated buffer base:0x42ee8000 size:1536000 fd:66
+01-01 00:09:58.459 D/memalloc( 1247): ion: Mapped buffer base:0x5ccb5000 size:1536000 offset:0 fd:65
+01-01 00:09:58.479 I/Adreno200-EGLSUB(  153): <CreateImage:893>: Android Image
+01-01 00:09:58.479 I/Adreno200-EGLSUB(  153): <GetImageAttributes:1102>: RGBA_8888
+01-01 00:09:58.889 V/WindowManager(  393): rotationForOrientationLw(orient=-1, last=3); user=0
+01-01 00:09:59.539 I/Adreno200-EGLSUB(  153): <CreateImage:893>: Android Image
+01-01 00:09:59.539 I/Adreno200-EGLSUB(  153): <GetImageAttributes:1102>: RGBA_8888
+01-01 00:10:00.049 D/memalloc(  153): ion: Allocated buffer base:0x42d71000 size:1331200 fd:69
+01-01 00:10:00.049 D/memalloc(  491): ion: Mapped buffer base:0x5bf1b000 size:1331200 offset:0 fd:77
+01-01 00:10:00.049 I/Adreno200-EGLSUB(  153): <CreateImage:893>: Android Image
+01-01 00:10:00.049 I/Adreno200-EGLSUB(  153): <GetImageAttributes:1102>: RGBA_8888
+01-01 00:10:00.049 D/AppWidgetService( 1264): AppWidgetService--------->updateCurTime------>the weather temp is : 00:10
+01-01 00:10:00.069 E/for in if( 1310): for in if
+01-01 00:10:00.069 E/for     ( 1310): fortrue
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/for     ( 1310): forfalse
+01-01 00:10:00.069 E/list size( 1310): 1
+01-01 00:10:00.069 E/showId  ( 1310): 1
+01-01 00:10:00.069 E/time    ( 1310): 0010
+01-01 00:10:00.089 D/AppWidgetService( 1264): AppWidgetService--------->flashRemoteVIews------>the COUNTER is : 13
+01-01 00:10:00.699 D/AudioHardwareMSM8660(  156): AudioStreamOutMSM72xx::standby()
+01-01 00:10:00.699 D/AudioHardwareMSM8660(  156): Deroute pcm stream
+01-01 00:10:00.709 D/AudioHardwareMSM8660(  156): deleteFromTable stream 1
+01-01 00:10:00.709 D/AudioHardwareMSM8660(  156): value of device and enable is 2 0 ALSA dev id:2
+01-01 00:10:00.721 V/PrintK  (  156): [  557.502003] msm_device_put:device speaker_stereo_rx set 0
+01-01 00:10:00.774 V/PrintK  (  156): [  557.555003] [pcm_out.c:pcm_out_release] release session id[1]

@@ -1,0 +1,242 @@
+\\10.85.21.150\larkin\dubai\android\out\duet2F_wgd\target\product\dubai
+
+\\10.85.21.141\Technical\Develop_Ref\MTK_Release\Document\External Document\SW\3G Phone Data\Smart Phone\Standard Package\MT6589 SW Doc Package\FAQ\Mediatek Customization for Application Properties
+\\10.82.164.8\Technical3\MTK_Release\Document\External Document\SW\3G Phone Data\Smart Phone\Standard Package\MT6589 SW Doc Package\Customer Training\Driver_All_In_One_V1_MT6589_4.2
+MTK pdf password: [14:25:23] Snail.Qian: 2870673174 
+PMS website: http://ipsna.qisda.qcorp.com/PFCMS/SysFrame/
+Mediatek case website: http://eportal.mediatek.com/eservice/pri/index.jsp?issueid=962282
+Mediatek documents download website: 
+http://dcc.mediatek.com/Docs/Default.aspx
+
+1. DCC (MTK online)
+用于下载文档；
+同时该帐号可用于登录
+http://online.mediatek.com
+可查看FAQ/eCourse/QVL等。
+ 直接用共用账号
+Username: derrick.zhang@qisda.com
+PWD:           wr35
+
+flower qcs system links: 
+http://sflower1.qcs.qcorp.com/flower/main.aspx
+MTK android peripheral sensors questions list: 
+http://online.mediatek.com/Pages/FAQ.aspx?list=SW&l0=2&l1=3&l2=128
+
+[15:41:19] dany_deng: Dubai E851 usb driver
+\\10.85.40.60\PC USB Driver\Dubai USB Driver\E851_USBDriver_EndUser
+Dubai/Cairo Passport的获取方式请参考附件
+Path:  \\10.85.40.20\ubuntu\passport
+User:   ubuntu
+Pw:     ubuntu
+
+Microsoft .net framework package path: 
+\\qcsfs\ITS\Soft\Other\framework\framework3.5SP1
+=> The Definitive Guide to Bash Command Line History
+http://www.google.com.hk/url?sa=p&hl=zh-CN&pref=hkredirect&pval=yes&q=http://www.google.com.hk/url%3Fq%3Dhttp%253A%252F%252Fwww.catonmat.net%252Fblog%252Fthe-definitive-guide-to-bash-command-line-history%252F%26sa%3DD%26sntz%3D1%26usg%3DAFQjCNEddzxfGushntd7Knx8dqac0F4p0g&ust=1361953723660812&usg=AFQjCNEHrZFustIRmzpRWOJAmulFpdCZWA
+=> Top Ten One-Liners from CommandLineFu Explained
+http://www.catonmat.net/blog/top-ten-one-liners-from-commandlinefu-explained/
+Sensor mapping table related file: 
+overlay/frameworks/base/core/res/res/values/config.xml
+QRD SKU5 schematic server path:
+\\ht0-pvcs2\Pre_Develop\Oslo_Predevelop\04.Platform\_00_HW\QRD\SKU5
+Dubai schedule and one page spec: 
+\\ht0-pvcs2\Pre_Develop\dubai_PreDevelop\50.SW\98.Requirement\SmartFren\schedule
+UART Drivers Path:
+\\10.85.40.140\Software\Work\USB2UART_Driver\2303\USB2RS232_2\Win2K
+QMI Related Documents
+\\10.85.21.141\Technical\Develop_Ref\Qualcomm_Release\QCT\8x25\SW\AMSS 8625\AMSS 8625 SW User 
+Guide\Qualcomm Messaging Interface (QMI)
+\\10.85.21.29\cherry\Detroit\ics\dev\android\system\core\ftd_detroit
+\\10.85.21.150\jack\msm8x30\1205_db\android\core\ftd
+RPC (Interprocessor communication technology in 8x25)
+\\wgc_build2\3G_Platform\Platform\PS\Training\Technical_Training\Presentation\GSM&WCDMA\Qualcomm Android Solution
+
+Oslo schedule update path:
+\\ht0-pvcs\HT1\_WGC15\Project\Oslo\schedule
+Qualcomm release note path: 
+\\10.85.21.141\Technical\Develop_Ref\Qualcomm_Release\QCT\QRD8625\SW\QMSS_8625\QMSS 8625 SW User Guide\_Release Notes
+oslo EVB key components datasheet在：
+\\ht0-pvcs2\Pre_Develop\Oslo_Predevelop\04.Platform\_06_Datasheet\EVB
+oslo evb layout / schematic and user guide path:
+\\ht0-pvcs2\Pre_Develop\Oslo_Predevelop\04.Platform\_00_HW\EVB
+The address to generate passport for shipment version cell phone: 
+\\10.85.21.114\passport
+Kris computer: 
+\\10.85.40.130\software
+\\ht0-pvcs\HT1\_WGC15
+\\10.85.40.63  Eric
+Daily Build images:
+\\10.82.157.54\Orange\build_images\
+\\10.85.21.57\Orange_NightlyBuild\
+\\10.85.40.34\USB Driver  ==> Dany's computer
+\\10.85.40.60\Usb PC Driver\Orange USB Driver\inf_package\adb and fastboot driver\i386
+
+\\wgc_build2\Android_PreDevelop\Technical\SW\1.Development\Driver\4.FunctionStudy\Build_Environment\ref
+PMS system (Performance Communication System frameworks) 
+http://ipsna.qisda.qcorp.com/PFCMS/SysFrame/
+Qdownload tool server path:
+\\10.85.21.151\Pre_Develop\Cairo_PreDevelop\04.Tool\06.Tools\QDownload
+\\10.85.21.57\Orange_NightlyBuild\2011-12-29_01-00-42\archive\android\out\oret3uR_lex\target\product\orange
+\\10.85.40.23\Orange_OOB_SWSOP
+http://ekm.qcs.qcorp.com/webpart/km2_main.asp
+\\qcsfs\its\FreeSoft\NetworkTools\即时通讯软件
+\\ht0-pvcs\HT1\_WGC15\BB\sensors\GSensor\bmc050
+\\qcsfs\public\qcs-english-club
+\\10.85.21.160\VerifySW\GORAB1A_Orange\SWEP_old
+\\ht0-pvcs\HT1\_WGC1\Report\
+v01.017.02 release package address:
+F:\Larkin Learning\adb_linux\logfiles\ALS_AUDIO_111102
+* \\10.85.21.160\VerifySW\GORAB1A_Orange\
+\\10.82.164.8\VerifySW\GORAB1A_Orange\
+\\10.82.164.8\Official\
+SWEP_PRJMGORAB1A_SWVRv01.017.02.a_VART00_SECUUnsign_SWRTShipment_BLDN0038.zip
+Manpower galaxy link:
+http://galaxyserver.qisda.qcorp.com/manpower/FrameSet.aspx
+\\wr1server5.qisda.qcorp.com\Technical 
+VREG_S3A_1P8
+Update QCS Qualcomm Release Server path:
+\\10.85.21.152\Technical\Develop_Ref\Qualcomm_Release\QCT\8260_8660\SW\Training 8660 SW\TL80-N6110-1
+***********audio related code******************
+Qplatform cairo DB load: 
+\\10.85.21.29\qisda2\Qplatform_DB_Backup
+MSM8660_ICS cairo 
+\\10.85.21.57\Cairo_NightlyBuild
+\\ht0-pvcs2\Pre_Develop\Cairo_PreDevelop\02.BSP\_04_Schematic\For_Gerber
+\\Wgc_build2\android_predevelop\Technical\SW\1.Development\Driver\4.FunctionStudy\Sensors
+\\ht0-pvcs\HT1\_WGC15\BB\sensors
+\\ht0-pvcs\HT1\_WGC15\BB\嵌入式系统
+\\qcsfs\ITS\FreeSoft
+gpio modem side interface definition
+\\10.82.157.54\Orange\tools\Old\DL_Tool
+\\10.82.157.54\Orange\build_images
+\\10.82.157.54\Orange_ICS\build_images
+F:\Larkin Learning\schedules\audio\spec\output\testSample
+https://support.cdmatech.com/login/
+FPOXNlOkPcUU
+\\ht0-pvcs2\Pre_Develop\Orange_PreDevelop
+\\ht0-pvcs\HT1\_WGC15\BB
+\\ht0-pvcs\HT1\_WGC15\_Training
+\\bmbfs\Technical2\Qualcomm_Release\QCT\8260_8660\HW\MSM8260-MSM8660\
+mashups: http://wr1server1.qisda.qcorp.com/tmtrack/tmtrack.dll?LoginPage&Template=loginform&Message=
+gerrit : http://10.82.164.21:8080/#q,status:open,n,z
+Mashup URL: http://10.82.164.16/tmtrack/tmtrack.dll?
+Macol's computer  : 	\\10.85.40.153
+Ricky Ge ip address:	\\10.85.40.113\cario
+JDK installation package address:
+\\wgc_build2\Android_PreDevelop\Technical\SW\3.Dev_Res\3.Android_Tools\JDK
+omega log :
+http://qun.qq.com/#62078226/chatlog
+\\10.82.164.8\Official\01.Project_related\GORAB1A_Orange\Doc\Test_Report\
+\\bmbfs\Technical2\Qualcomm_Release\QCT\8260_8660\HW\PM8058\
+\\bmbfs\Technical2\Qualcomm_Release\QCT\8260_8660\HW\PM8901\
+\\ht0-pvcs2\Pre_Develop\MSM8260_EVB_PreDevelop\Platform\_06_Study\PMIC\
+\\bmbfs\Technical2\Qualcomm_Release\QCT\8260_8660\SW\AMSS 8660\Release
+\\bmbfs\Technical2\Qualcomm_Release\QCT\_General Documents\SW\General\General SW User Guide\Release Overview
+Larkin Daily Reports:
+\\o-2qpg\Larkin\Larkin.Reports\  
+\\wgc_build2\Android_PreDevelop\Technical\SW\1.Development\Driver\4.FunctionStudy\L1_Common\interrupt\
+\\wgc_build2\Android_PreDevelop\Technical\Linux_training(QTY)
+WR352 Weekly Meeting and Conference report record backup address：
+\\ht0-pvcs\HT1\_WGC15\_WeeklyReport
+task status address：		
+\\ht0-pvcs\HT1\_WGC15\_WeeklyReport\_Task_Status
+\\10.85.40.147\camera_share
+\\ht0-pvcs1\Doc_Share\05.Training\99.General_Knowledge\2.IT
+\\ht0-pvcs1\Doc_Share\05.Training\99.General_Knowledge\1.HR
+\\bmbfs\Technical2\Qualcomm_Release\QCT\8260_8660\SW\AMSS 8660\Release
+\\ht0-pvcs1\Doc_Share\05.Training\05.Q_System_Introduction
+The wgc build resources related with learning schedule
+\\wgc_build2\Android_PreDevelop\Technical\SW\1.Development\Driver\4.FunctionStudy\Linux_Kernel\os
+\\wgc_build2\Android_PreDevelop\Technical\SW\1.Development\Driver\4.FunctionStudy\Android
+\\wgc_build2\Android_PreDevelop\Technical\SW\1.Development\Driver\4.FunctionStudy\Build_Environment
+\\wgc_build2\Android_PreDevelop\Technical\SW\3.Dev_Res\2.Android_Developer
+\\ht0-pvcs2.qcs.qcorp.com\Pre_Develop\MSM8260_EVB_PreDevelop\Platform\_05_Reference\driver\Android_Driver_modified
+\\ht0-pvcs2\Pre_Develop\MSM8260_EVB_PreDevelop\Platform\_06_Study
+\\bmbfs\Technical2\Qualcomm_Release\QCT\8260_8660\SW\AMSS 8260\AMSS 8260 SW User Guide\Multimedia Audio
+\\bmbfs\Technical2\Qualcomm_Release\QCT\8260_8660\SW\AMSS 8660\Release\M8660AAABQNLYA109031
+
+Function3 Team Weekly Metting Report Server: 
+\\ht0-pvcs\HT1\_WGC15\_WeeklyReport\2012\0503 
+
+patent search link:
+http://bqceolaw01.bqc.corp.com:8080/cnipr/zljs/index.jsp?t=0
+idea system link:
+http://lipr.qisda.qcorp.com/idea/PatentApplyWizard.aspx
+********Documentations from WR315*********************
+\\10.85.40.147\audio\spec
+\\wgc_build2\Android_PreDevelop\Technical\SW\1.Development\Driver\4.FunctionStudy
+\\wr1server4.qisda.qcorp.com\Mobile_RD_Committee\Platform\BSP\Lesson_learned\MSM8260_Lesson_Learned
+\\wr1server4.qisda.qcorp.com\Mobile_RD_Committee\Platform\BSP\02_HLD\MSM8260
+\\ht0-pvcs2\Pre_Develop\MSM8260_EVB_PreDevelop\Platform\_06_Study
+
+\\10.85.40.60\Orange Usb Driver\Lenovo USB Driver\adb and fastboot driver
+*****************************
+Qisa Patent Applicant Process:
+http://10.85.21.83/mediawiki/index.php/%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9
+Several patent information:
+\\ht0-pvcs\HT1\_WGC15\Experience_Sharing\Patent
+Android OpenGL Introduction:
+\\wgc_build2\Public\Utility\TrainingVideoRecorder
+some useful files list: jack's computer
+\\o-2pc1\TOOL
+\\10.85.40.34
+patent search sites:
+http://www.cnipr.com/
+http://www.soopat.com/
+http://www.sipo.gov.cn/
+http://www.soopat.com/
+Meeting Site:
+
+http://qcsap/meeting/indexpage.asp?Emp_ID=BQS.EMP.1111121980&redirection=1
+
+***********audio related code******************
+\\10.85.21.122\derrick\orange\0621\android\vendor\qcom\proprietary\mm-audio\audio-alsa\src\hw.c		    *
+\\10.85.21.122\derrick\orange\0621\android\kernel\drivers\video\via
+\\10.85.21.122\derrick\orange\0621\android\kernel\arch\arm\mach-fsm\qdsp6v2
+\\10.85.21.122\derrick\orange\0621\android\kernel\arch\arm\mach-msm\qdsp6v2				    *
+\\10.85.21.122\derrick\orange\0621\android\out\oret1R_bos\target\product\orange\obj\KERNEL_OBJ\sound	    *	
+\\10.85.21.122\derrick\orange\0621\android\kernel\sound\soc\msm
+\\10.85.21.122\derrick\orange\0621\android\kernel\Documentation\
+\\10.85.21.122\derrick\orange\0621\android\kernel\include\sound
+\\10.85.21.122\derrick\orange\0621\android\kernel\drivers\mfd						    *
+\\10.85.21.122\derrick\orange\0621\android\vendor\qcom\opensource\kernel-tests\mm-audio\audio-native\qdsp5  *
+\\10.85.21.122\derrick\orange\0621\android\out\oret1R_bos\target\product\orange\symbols\system\lib
+\\10.85.21.122\derrick\orange\0621\android\kernel\Documentation
+\\10.85.21.122\derrick\orange\0621\android\system\core\init
+\\10.85.21.122\derrick\orange\0621\android\kernel\drivers\i2c
+\\10.85.21.122\derrick\orange\0621\android\kernel\include\linux\i2c
+\\10.85.21.122\derrick\orange\0621\android\kernel\fs\proc
+\\10.85.21.122\derrick\orange\0621\android\kernel\sound\pci\asihpi
+\\10.85.21.122\derrick\orange\0621\android\kernel\drivers\media\video\cx18
+\\10.85.21.122\derrick\orange\0621\android\kernel\sound\core						    *
+video test sample from QA:
+\\o-2nem\QA\Video test data 在 10.85.40.156 上
+8x60 video doc loacation:
+\\10.85.21.122\derrick\orange\0621\android\vendor\qcom\opensource\omx\mm-video
+\\bmbfs\Technical2\Qualcomm_Release\QCT\8260_8660\SW\AMSS 8660\AMSS 8660 SW User Guide\_Release Notes
+\\bmbfs\Technical2\Qualcomm_Release\QCT\8260_8660\SW\AMSS 8660\AMSS 8660 SW User Guide\Multimedia Audio
+code\android\kernel\Documentation\sound\alsa\soc
+code\android\framework\base\data\sounds
+
+
+Get 307002 Android Release steps:
+1. repo init -u git://10.85.21.71/qaep/platform/manifest.git -b gingerbread_house -m M8260AAABQNLZA307002.xml
+2. 改.repo文件夹中的manifest.xml，
+	从   	<remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/> 
+	改成 	<remote fetch="git://10.85.21.71/qaep/" name="caf" review="codeaurora.org"/>
+3. 后repo sync
+
+
+如果用tag找不到，你可以这样： 
+到linux source的目录，然后 grep copy_to_user * -R 如果结果太多就定向到一个文件，如果你知道这个宏（或函数）有返回类型，可以用pipe再来grep一下 
+grep copy_to_user * -R | grep int > search_result 
+以后这类问题你都这样搞定好了。 
+
+\\10.85.21.94\qisda\cairo_nightlyproject\android\out\caet2uS_her\target\product\cairo\system\bin
+\\10.85.21.94\qisda\cairo_nightlyproject\android\out\caet2uR_her\target\product\cairo\system\bin
+\\10.85.21.29\qisda\cairo_db_evt2\Qplatform_DB_Backup\db_u_20120516\SWLoad
+
+make[1]: Leaving directory `/home/larkin/evb/android/kernel'
+make -C kernel O=../out/debug/target/product/msm7627a/obj/KERNEL_OBJ ARCH=arm CROSS_COMPILE=arm-eabi- modules
+
+make -C kernel O=../out/debug/target/product/msm7627a/obj/KERNEL_OBJ ARCH=arm CROSS_COMPILE=arm-eabi- msm7627a-perf_defconfig

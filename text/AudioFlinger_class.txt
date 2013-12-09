@@ -1,0 +1,135 @@
+class AudioFlinger :
+    public BinderService<AudioFlinger>,
+    public BnAudioFlinger
+{
+    friend class BinderService<AudioFlinger>;
+public:
+    ...
+    enum hardware_call_state 
+private:
+    class Client : public RefBase 
+    class NotificationClient : public IBinder::DeathRecipient 
+    class TrackHandle;
+    class RecordHandle;
+    class RecordThread;
+    class PlaybackThread;
+    class MixerThread;
+    class DirectOutputThread;
+    class DuplicatingThread;
+    class Track;
+    class RecordTrack;
+    class EffectModule;
+    class EffectHandle;
+    class EffectChain;
+
+    class ThreadBase : public Thread {
+    public:
+           class TrackBase : public AudioBufferProvider, public RefBase {
+           public:
+                  enum track_state
+                  enum track_flags
+           protected:
+               friend class ThreadBase;
+               friend class RecordHandle;
+               friend class PlaybackThread;
+               friend class RecordThread;
+               friend class MixerThread;
+               friend class DirectOutputThread;
+               ...
+           };
+
+     class ConfigEvent {
+     };
+     ...
+     protected:
+        friend class Track;
+        friend class TrackBase;
+        friend class PlaybackThread;
+        friend class MixerThread;
+        friend class DirectOutputThread;
+        friend class DuplicatingThread;
+        friend class RecordThread;
+        friend class RecordTrack;
+        ...
+     };
+
+    class PlaybackThread : public ThreadBase {
+    public:
+         enum type
+         enum mixer_state
+         
+         class Track : public TrackBase {
+         public:
+             ...
+         protected:
+            friend class ThreadBase;
+            friend class AudioFlinger;
+            friend class TrackHandle;
+            friend class PlaybackThread;
+            friend class MixerThread;
+            friend class DirectOutputThread;
+            ...
+         }; 
+         
+         class OutputTrack : public Track {
+         public:
+             class Buffer: public AudioBufferProvider::Buffer
+             ...
+         private:
+             ...
+         };
+         
+         ...
+         enum effect_state
+         struct stream_type_t
+         
+    protected:
+         ...
+    private:
+        friend class AudioFlinger;
+        friend class OutputTrack;
+        friend class Track;
+        friend class TrackBase;
+        friend class MixerThread;
+        friend class DirectOutputThread;
+        friend class DuplicatingThread;
+        ...
+    };
+    
+    class MixerThread : public PlaybackThread
+    class DirectOutputThread : public PlaybackThread 
+    class DuplicatingThread : public MixerThread 
+    ...
+    friend class AudioBuffer;
+    class TrackHandle : public android::BnAudioTrack
+    friend class Client;
+    friend class PlaybackThread::Track;
+    
+    class RecordThread : public ThreadBase, public AudioBufferProvider {
+    public:
+    
+        class RecordTrack : public TrackBase {
+        public:
+            ...
+        private:
+            friend class AudioFlinger;
+            friend class RecordThread; 
+        };
+        
+        ...
+    private:
+        ...
+    };  
+
+    class RecordHandle : public android::BnAudioRecord 
+    class EffectModule: public RefBase 
+    class EffectHandle: public android::BnEffect 
+    class EffectChain: public RefBase 
+    friend class RecordThread;
+    friend class PlaybackThread;
+    ...
+    }; 
+
+
+
+

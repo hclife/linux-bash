@@ -1,0 +1,279 @@
+
+
+The Log when I open the DEBUG_ORIENTATION on window orientation change to landscape left:
+08-01 07:01:31.239 V/WindowManager(  448): updateRotationUnchecked(alwaysSendConfiguration=false)
+08-01 07:01:31.239 V/WindowManager(  448): updateRotationUncheckedLocked inTransaction: false
+08-01 07:01:31.239 V/WindowManager(  448): rotationForOrientationLw(orient=-1, last=1); user=0
+08-01 07:01:31.239 V/WindowManager(  448): Application requested orientation -1, got rotation 0 which has compatible met
+rics
+08-01 07:01:31.239 V/WindowManager(  448): Rotation changed to 0 from 1, forceApp=-1
+08-01 07:01:31.309 I/WindowManager(  448): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 07:01:31.309 V/WindowManager(  448): Set mOrientationChanging of Window{41765330 NavigationBar paused=false}
+08-01 07:01:31.309 V/WindowManager(  448): Set mOrientationChanging of Window{416c6378 StatusBar paused=false}
+08-01 07:01:31.309 V/WindowManager(  448): Set mOrientationChanging of Window{4149bb58 StatusBarExpanded paused=false}
+08-01 07:01:31.309 V/WindowManager(  448): Set mOrientationChanging of Window{415abf58 com.android.settings/com.android.
+settings.Settings paused=false}
+08-01 07:01:31.309 V/WindowManager(  448): Set mOrientationChanging of Window{41a0f000 com.android.noisefield.NoiseField
+Wallpaper paused=false}
+08-01 07:01:31.359 I/WindowManager(  448): Set freezing of Token{419cc708 ActivityRecord{41484278 com.android.settings/.
+Settings}}: hidden=false freezing=false
+08-01 07:01:31.359 I/WindowManager(  448): Set freezing of Token{419cc708 ActivityRecord{41484278 com.android.settings/.
+Settings}}: hidden=false freezing=true
+08-01 07:01:31.359 V/WindowManager(  448): Eval win Window{415abf58 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=true, isAnimating=false
+08-01 07:01:31.359 V/WindowManager(  448): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfac
+eResized=true configChanged=true
+08-01 07:01:31.359 V/WindowManager(  448): Changing surface while display frozen: Window{41765330 NavigationBar paused=f
+alse}
+08-01 07:01:31.359 V/WindowManager(  448): Orientation start waiting for draw in Window{41765330 NavigationBar paused=fa
+lse}, surface Surface(name=NavigationBar, identity=7)
+08-01 07:01:31.359 V/WindowManager(  448): Resizing window Window{41765330 NavigationBar paused=false} to 540.0x72.0
+08-01 07:01:31.359 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.359 V/WindowManager(  448): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfac
+eResized=true configChanged=true
+08-01 07:01:31.359 V/WindowManager(  448): Changing surface while display frozen: Window{416c6378 StatusBar paused=false
+}
+08-01 07:01:31.359 V/WindowManager(  448): Orientation start waiting for draw in Window{416c6378 StatusBar paused=false}
+, surface Surface(name=StatusBar, identity=6)
+08-01 07:01:31.359 V/WindowManager(  448): Resizing window Window{416c6378 StatusBar paused=false} to 540.0x38.0
+08-01 07:01:31.359 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.359 V/WindowManager(  448): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfac
+eResized=true configChanged=true
+08-01 07:01:31.359 V/WindowManager(  448): Changing surface while display frozen: Window{4149bb58 StatusBarExpanded paus
+ed=false}
+08-01 07:01:31.359 V/WindowManager(  448): Orientation start waiting for draw in Window{4149bb58 StatusBarExpanded pause
+d=false}, surface Surface(name=StatusBarExpanded, identity=8)
+08-01 07:01:31.359 V/WindowManager(  448): Resizing window Window{4149bb58 StatusBarExpanded paused=false} to 540.0x454.
+0
+08-01 07:01:31.359 V/WindowManager(  448): Orientation continue waiting for draw in Window{4149bb58 StatusBarExpanded pa
+used=false}
+08-01 07:01:31.359 V/WindowManager(  448): Orientation change complete in Window{415abf58 com.android.settings/com.andro
+id.settings.Settings paused=false}
+08-01 07:01:31.359 V/WindowManager(  448): Orientation change skips hidden Window{41a0f000 com.android.noisefield.NoiseF
+ieldWallpaper paused=false}
+08-01 07:01:31.379 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.379 V/WindowManager(  448): Reporting new frame to Window{4149bb58 StatusBarExpanded paused=false}: Rect(
+0, -540 - 540, -86)
+08-01 07:01:31.379 I/WindowManager(  448): Sending new config to window Window{4149bb58 StatusBarExpanded paused=false}:
+ 540.0x454.0 / {1.0 0mcc0mnc en_US layoutdir=0 sw360dp w360dp h566dp nrml port finger -keyb/v/h -nav/h s.13} / 0x480
+08-01 07:01:31.379 I/WindowManager(  448): Resizing Window{4149bb58 StatusBarExpanded paused=false} WITH DRAW PENDING
+08-01 07:01:31.379 V/WindowManager(  448): Reporting new frame to Window{416c6378 StatusBar paused=false}: Rect(0, 0 - 5
+40, 38)
+08-01 07:01:31.379 I/WindowManager(  448): Sending new config to window Window{416c6378 StatusBar paused=false}: 540.0x3
+8.0 / {1.0 0mcc0mnc en_US layoutdir=0 sw360dp w360dp h566dp nrml port finger -keyb/v/h -nav/h s.13} / 0x480
+08-01 07:01:31.379 I/WindowManager(  448): Resizing Window{416c6378 StatusBar paused=false} WITH DRAW PENDING
+08-01 07:01:31.379 V/WindowManager(  448): Reporting new frame to Window{41765330 NavigationBar paused=false}: Rect(0, 8
+88 - 540, 960)
+08-01 07:01:31.379 I/WindowManager(  448): Sending new config to window Window{41765330 NavigationBar paused=false}: 540
+.0x72.0 / {1.0 0mcc0mnc en_US layoutdir=0 sw360dp w360dp h566dp nrml port finger -keyb/v/h -nav/h s.13} / 0x480
+08-01 07:01:31.379 I/WindowManager(  448): Resizing Window{41765330 NavigationBar paused=false} WITH DRAW PENDING
+08-01 07:01:31.399 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:31.399 V/WindowManager(  448): Eval win Window{415abf58 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=true, isAnimating=false
+08-01 07:01:31.399 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.399 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.399 V/WindowManager(  448): Orientation continue waiting for draw in Window{4149bb58 StatusBarExpanded pa
+used=false}
+08-01 07:01:31.409 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.489 V/WindowManager(  448): Eval win Window{415abf58 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=true, isAnimating=false
+08-01 07:01:31.489 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.489 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.489 V/WindowManager(  448): Orientation continue waiting for draw in Window{4149bb58 StatusBarExpanded pa
+used=false}
+08-01 07:01:31.489 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.519 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.519 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.519 V/WindowManager(  448): Orientation continue waiting for draw in Window{4149bb58 StatusBarExpanded pa
+used=false}
+08-01 07:01:31.539 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.549 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:31.549 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.549 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.549 V/WindowManager(  448): Orientation continue waiting for draw in Window{4149bb58 StatusBarExpanded pa
+used=false}
+08-01 07:01:31.549 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.679 I/WindowManager(  448): createSurface Window{415f3a88 com.android.settings/com.android.settings.Setti
+ngs paused=false}: DRAW NOW PENDING
+08-01 07:01:31.679 V/WindowManager(  448): Changing surface while display frozen: Window{415f3a88 com.android.settings/c
+om.android.settings.Settings paused=false}
+08-01 07:01:31.679 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:31.679 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=false, isAnimating=false
+08-01 07:01:31.679 V/WindowManager(  448): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Setti
+ngs, identity=86) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 07:01:31.679 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.679 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.679 V/WindowManager(  448): Orientation continue waiting for draw in Window{4149bb58 StatusBarExpanded pa
+used=false}
+08-01 07:01:31.679 V/WindowManager(  448): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceR
+esized=true configChanged=false
+08-01 07:01:31.679 V/WindowManager(  448): Changing surface while display frozen: Window{415f3a88 com.android.settings/c
+om.android.settings.Settings paused=false}
+08-01 07:01:31.679 V/WindowManager(  448): Orientation start waiting for draw in Window{415f3a88 com.android.settings/co
+m.android.settings.Settings paused=false}, surface Surface(name=com.android.settings/com.android.settings.Settings, iden
+tity=86)
+08-01 07:01:31.679 V/WindowManager(  448): Resizing window Window{415f3a88 com.android.settings/com.android.settings.Set
+tings paused=false} to 540.0x888.0
+08-01 07:01:31.679 V/WindowManager(  448): Orientation continue waiting for draw in Window{415f3a88 com.android.settings
+/com.android.settings.Settings paused=false}
+08-01 07:01:31.689 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.689 V/WindowManager(  448): Reporting new frame to Window{415f3a88 com.android.settings/com.android.setti
+ngs.Settings paused=false}: Rect(0, 0 - 540, 888)
+08-01 07:01:31.689 I/WindowManager(  448): Resizing Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false} WITH DRAW PENDING
+08-01 07:01:31.719 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:31.719 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=false, isAnimating=false
+08-01 07:01:31.719 V/WindowManager(  448): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Setti
+ngs, identity=86) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 07:01:31.719 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.719 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.719 V/WindowManager(  448): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfac
+eResized=true configChanged=false
+08-01 07:01:31.719 V/WindowManager(  448): Changing surface while display frozen: Window{4149bb58 StatusBarExpanded paus
+ed=false}
+08-01 07:01:31.719 V/WindowManager(  448): Orientation start waiting for draw in Window{4149bb58 StatusBarExpanded pause
+d=false}, surface Surface(name=StatusBarExpanded, identity=8)
+08-01 07:01:31.719 V/WindowManager(  448): Resizing window Window{4149bb58 StatusBarExpanded paused=false} to 540.0x802.
+0
+08-01 07:01:31.719 V/WindowManager(  448): Orientation continue waiting for draw in Window{4149bb58 StatusBarExpanded pa
+used=false}
+08-01 07:01:31.719 V/WindowManager(  448): Orientation continue waiting for draw in Window{415f3a88 com.android.settings
+/com.android.settings.Settings paused=false}
+08-01 07:01:31.719 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.719 V/WindowManager(  448): Reporting new frame to Window{4149bb58 StatusBarExpanded paused=false}: Rect(
+0, -888 - 540, -86)
+08-01 07:01:31.719 I/WindowManager(  448): Resizing Window{4149bb58 StatusBarExpanded paused=false} WITH DRAW PENDING
+08-01 07:01:31.769 V/WindowManager(  448): finishDrawingLocked: Window{4149bb58 StatusBarExpanded paused=false} in Surfa
+ce(name=StatusBarExpanded, identity=8)
+08-01 07:01:31.769 I/WindowManager(  448):   SURFACE 4149bb58: SHOW (performShowLocked) / StatusBarExpanded
+08-01 07:01:31.769 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=false, isAnimating=false
+08-01 07:01:31.769 V/WindowManager(  448): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Setti
+ngs, identity=86) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 07:01:31.769 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.769 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.769 V/WindowManager(  448): Orientation not waiting for draw in Window{4149bb58 StatusBarExpanded paused=
+false}, surface Surface(name=StatusBarExpanded, identity=8)
+08-01 07:01:31.769 V/WindowManager(  448): Orientation continue waiting for draw in Window{415f3a88 com.android.settings
+/com.android.settings.Settings paused=false}
+08-01 07:01:31.769 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.779 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:31.779 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=false, isAnimating=false
+08-01 07:01:31.779 V/WindowManager(  448): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Setti
+ngs, identity=86) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 07:01:31.779 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.779 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.779 V/WindowManager(  448): Orientation continue waiting for draw in Window{415f3a88 com.android.settings
+/com.android.settings.Settings paused=false}
+08-01 07:01:31.779 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.779 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:31.779 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=false, isAnimating=false
+08-01 07:01:31.779 V/WindowManager(  448): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Setti
+ngs, identity=86) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 07:01:31.779 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.779 V/WindowManager(  448): Orientation continue waiting for draw in Window{416c6378 StatusBar paused=fal
+se}
+08-01 07:01:31.779 V/WindowManager(  448): Orientation continue waiting for draw in Window{415f3a88 com.android.settings
+/com.android.settings.Settings paused=false}
+08-01 07:01:31.779 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.789 V/WindowManager(  448): finishDrawingLocked: Window{416c6378 StatusBar paused=false} in Surface(name=
+StatusBar, identity=6)
+08-01 07:01:31.789 I/WindowManager(  448):   SURFACE 416c6378: SHOW (performShowLocked) / StatusBar
+08-01 07:01:31.789 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=false, isAnimating=false
+08-01 07:01:31.799 V/WindowManager(  448): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Setti
+ngs, identity=86) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 07:01:31.799 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.799 V/WindowManager(  448): Orientation not waiting for draw in Window{416c6378 StatusBar paused=false},
+surface Surface(name=StatusBar, identity=6)
+08-01 07:01:31.799 V/WindowManager(  448): Orientation continue waiting for draw in Window{415f3a88 com.android.settings
+/com.android.settings.Settings paused=false}
+08-01 07:01:31.799 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.799 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:31.799 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=false, isAnimating=false
+08-01 07:01:31.799 V/WindowManager(  448): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Setti
+ngs, identity=86) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 07:01:31.799 V/WindowManager(  448): Orientation continue waiting for draw in Window{41765330 NavigationBar paused
+=false}
+08-01 07:01:31.799 V/WindowManager(  448): Orientation continue waiting for draw in Window{415f3a88 com.android.settings
+/com.android.settings.Settings paused=false}
+08-01 07:01:31.799 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.819 V/WindowManager(  448): finishDrawingLocked: Window{41765330 NavigationBar paused=false} in Surface(n
+ame=NavigationBar, identity=7)
+08-01 07:01:31.819 I/WindowManager(  448):   SURFACE 41765330: SHOW (performShowLocked) / NavigationBar
+08-01 07:01:31.819 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=false, isAnimating=false
+08-01 07:01:31.819 V/WindowManager(  448): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Setti
+ngs, identity=86) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 07:01:31.819 V/WindowManager(  448): Orientation not waiting for draw in Window{41765330 NavigationBar paused=fals
+e}, surface Surface(name=NavigationBar, identity=7)
+08-01 07:01:31.819 V/WindowManager(  448): Orientation continue waiting for draw in Window{415f3a88 com.android.settings
+/com.android.settings.Settings paused=false}
+08-01 07:01:31.819 V/WindowManager(  448): With display frozen, orientationChangeComplete=false
+08-01 07:01:31.869 V/WindowManager(  448): finishDrawingLocked: Window{415f3a88 com.android.settings/com.android.setting
+s.Settings paused=false} in Surface(name=com.android.settings/com.android.settings.Settings, identity=86)
+08-01 07:01:31.869 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=true, isAnimating=false
+08-01 07:01:31.869 V/WindowManager(  448): tokenMayBeDrawn: AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{
+41484278 com.android.settings/.Settings}}} freezingScreen=true mAppFreezing=false
+08-01 07:01:31.879 I/WindowManager(  448):   SURFACE 415f3a88: SHOW (performShowLocked) / com.android.settings/com.andro
+id.settings.Settings
+08-01 07:01:31.879 V/WindowManager(  448): Clear freezing of AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord
+{41484278 com.android.settings/.Settings}}} force=true
+08-01 07:01:31.879 V/WindowManager(  448): No longer freezing: AppWindowToken{41b6ac60 token=Token{419cc708 ActivityReco
+rd{41484278 com.android.settings/.Settings}}}
+08-01 07:01:31.879 I/WindowManager(  448): Setting orientationChangeComplete=true because wtoken AppWindowToken{41b6ac60
+ token=Token{419cc708 ActivityRecord{41484278 com.android.settings/.Settings}}} numInteresting=1 numDrawn=1
+08-01 07:01:31.879 V/WindowManager(  448): Orientation not waiting for draw in Window{415f3a88 com.android.settings/com.
+android.settings.Settings paused=false}, surface Surface(name=com.android.settings/com.android.settings.Settings, identi
+ty=86)
+08-01 07:01:31.879 V/WindowManager(  448): With display frozen, orientationChangeComplete=true
+08-01 07:01:31.879 I/WindowManager(  448): **** Dismissing screen rotation animation
+08-01 07:01:31.929 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:31.939 V/WindowManager(  448): Eval win Window{415f3a88 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=true, isAnimating=false
+08-01 07:01:31.939 V/WindowManager(  448): tokenMayBeDrawn: AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{
+41484278 com.android.settings/.Settings}}} freezingScreen=false mAppFreezing=false
+08-01 07:01:32.019 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:32.039 V/WindowManager(  448): Done at AppWindowToken{41b6ac60 token=Token{419cc708 ActivityRecord{41484278
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:01:32.359 D/WindowManager(  448): Performing post-rotate rotation
+08-01 07:01:32.359 V/WindowManager(  448): updateRotationUncheckedLocked inTransaction: false
+08-01 07:01:32.359 V/WindowManager(  448): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 07:01:32.359 V/WindowManager(  448): Application requested orientation -1, got rotation 0 which has compatible met
+rics
+D:\adb\fastboot\load\cairo>

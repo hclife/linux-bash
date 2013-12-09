@@ -1,0 +1,16 @@
+
+==== build error info ====
+system/core/ftd/ft_audio.c:160: error: 'AUDIO_GET_SESSION_ID' undeclared (first use in this function)
+system/core/ftd/ft_audio.c:160: error: (Each undeclared identifier is reported only once
+system/core/ftd/ft_audio.c:160: error: for each function it appears in.)
+==== build error info ====
+
+msm_audio.h  file path:
+android/bionic/libc/kernel/common/linux/msm_audio.h
+android/kernel/include/linux/msm_audio.h
+
+Assign including files in Android.mk
+LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
+LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+
+

@@ -1,0 +1,166 @@
+The shortcuts of excel: 
+快捷键之在工作表中移动和滚动向上、下、左或右移动单元格箭头键 
+移动到当前数据区域的边缘：CTRL+ 箭头键 
+移动到行首：HOME 
+移动到工作表的开头：CTRL+HOME 
+移动到工作表的最后一个单元格。：CTRL+END 
+向下移动一屏：PAGE DOWN 
+向上移动一屏：PAGE UP 
+向右移动一屏：ALT+PAGE DOWN 
+向左移动一屏：ALT+PAGE UP 
+移动到工作簿中下一个工作表：CTRL+PAGE DOWN 
+移动到工作簿中前一个工作表：CTRL+PAGE UP 
+移动到下一工作簿或窗口：CTRL+F6 或 CTRL+TAB 
+移动到前一工作簿或窗口：CTRL+SHIFT+F6 
+移动到已拆分工作簿中的下一个窗格：F6 
+移动到被拆分的工作簿中的上一个窗格：SHIFT+F6 
+滚动并显示活动单元格：CTRL+BACKSPACE 
+显示“定位”对话框：F5 
+显示“查找”对话框：SHIFT+F5 
+重复上一次“查找”操作：SHIFT+F4 
+在保护工作表中的非锁定单元格之间移动：TAB 
+
+
+2>Excel快捷键之处于END模式时在工作表中移动 
+打开或关闭 END 模式：END 
+在一行或列内以数据块为单位移动：END, 箭头键 
+移动到工作表的最后一个单元格.：END, HOME 
+在当前行中向右移动到最后一个非空白单元格。：END, ENTER 
+
+3>Excel快捷键之处于“滚动锁定”模式时在工作表中移动 
+打开或关闭滚动锁定：SCROLL LOCK 
+移动到窗口中左上角处的单元格：HOME 
+移动到窗口中右下角处的单元格：END 
+向上或向下滚动一行：上箭头键或下箭头键 
+向左或向右滚动一列：左箭头键或右箭头键 
+
+4>Excel快捷键之用于预览和打印文档 
+显示“打印”对话框：CTRL+P 
+在打印预览中时： 
+当放大显示时，在文档中移动：箭头键 
+当缩小显示时，在文档中每次滚动一页：PAGE UP 
+当缩小显示时，滚动到第一页：CTRL+上箭头键 
+当缩小显示时，滚动到最后一页：CTRL+下箭头键 
+
+5>Excel快捷键之用于工作表、图表和宏 
+插入新工作表：SHIFT+F11 
+创建使用当前区域的图表：F11 或 ALT+F1 
+显示“宏”对话框：ALT+F8 
+显示“Visual Basic 编辑器”：ALT+F11 
+插入 Microsoft Excel 4.0 宏工作表：CTRL+F11 
+移动到工作簿中的下一个工作表：CTRL+PAGE DOWN 
+移动到工作簿中的上一个工作表：CTRL+PAGE UP 
+选择工作簿中当前和下一个工作表：SHIFT+CTRL+PAGE DOWN 
+选择当前工作簿或上一个工作簿：SHIFT+CTRL+PAGE UP 
+
+6>Excel快捷键之选择图表工作表 
+选择工作簿中的下一张工作表：CTRL+PAGE DOWN 
+选择工作簿中的上一个工作表：CTRL+PAGE UP，END, SHIFT+ENTER 
+
+7>Excel快捷键之用于在工作表中输入数据 
+完成单元格输入并在选定区域中下移：ENTER 
+在单元格中折行：ALT+ENTER 
+用当前输入项填充选定的单元格区域：CTRL+ENTER 
+完成单元格输入并在选定区域中上移：SHIFT+ENTER 
+完成单元格输入并在选定区域中右移：TAB 
+完成单元格输入并在选定区域中左移：SHIFT+TAB 
+取消单元格输入：ESC 
+删除插入点左边的字符，或删除选定区域：BACKSPACE 
+删除插入点右边的字符，或删除选定区域：DELETE 
+删除插入点到行末的文本：CTRL+DELETE 
+向上下左右移动一个字符：箭头键 
+移到行首：HOME 
+重复最后一次操作：F4 或 CTRL+Y 
+编辑单元格批注：SHIFT+F2 
+由行或列标志创建名称：CTRL+SHIFT+F3 
+向下填充：CTRL+D 
+向右填充：CTRL+R 
+定义名称：CTRL+F3 
+
+8>Excel快捷键之设置数据格式 
+显示“样式”对话框：ALT+' （撇号） 
+显示“单元格格式”对话框：CTRL+1 
+应用“常规”数字格式：CTRL+SHIFT+~ 
+应用带两个小数位的“贷币”格式：CTRL+SHIFT+$ 
+应用不带小数位的“百分比”格式：CTRL+SHIFT+% 
+应用带两个小数位的“科学记数”数字格式：CTRL+SHIFT+^ 
+应用年月日“日期”格式：CTRL+SHIFT+# 
+应用小时和分钟“时间”格式，并标明上午或下午：CTRL+SHIFT+@ 
+应用具有千位分隔符且负数用负号 (-) 表示：CTRL+SHIFT+! 
+应用外边框：CTRL+SHIFT+& 
+删除外边框：CTRL+SHIFT+_ 
+应用或取消字体加粗格式：CTRL+B 
+应用或取消字体倾斜格式：CTRL+I 
+应用或取消下划线格式：CTRL+U 
+应用或取消删除线格式：CTRL+5 
+隐藏行：CTRL+9 
+取消隐藏行：CTRL+SHIFT+( 左括号 
+隐藏列：CTRL+0（零） 
+取消隐藏列：CTRL+SHIFT+)右括号 
+
+9>Excel快捷键之编辑数据 
+编辑活动单元格并将插入点放置到线条末尾：F2 
+取消单元格或编辑栏中的输入项：ESC 
+编辑活动单元格并清除其中原有的内容：BACKSPACE 
+将定义的名称粘贴到公式中：F3 
+完成单元格输入：ENTER 
+将公式作为数组公式输入：CTRL+SHIFT+ENTER 
+在公式中键入函数名之后，显示公式选项板：CTRL+A 
+在公式中键入函数名后为该函数插入变量名和括号：CTRL+SHIFT+A 
+显示“拼写检查”对话框。：F7 键 
+
+10>Excel快捷键之插入、删除和复制选中区域 
+复制选定区域：CTRL+C 
+剪切选定区域：CTRL+X 
+粘贴选定区域：CTRL+V 
+清除选定区域的内容：DELETE 
+删除选定区域：CTRL+ 连字符 
+撤消最后一次操作：CTRL+Z 
+插入空白单元格：CTRL+SHIFT+ 加号 
+
+11>Excel快捷键之在选中区域内移动 
+在选定区域内由上往下移动：ENTER 
+在选定区域内由下往上移动：SHIFT+ENTER 
+在选定区域内由左往右移动：TAB 
+在选定区域内由右往左移动：SHIFT+TAB 
+按顺时针方向移动到选定区域的下一个角：CTRL+PERIOD 
+右移到非相邻的选定区域：CTRL+ALT+右箭头键 
+左移到非相邻的选定区域：CTRL+ALT+左箭头键 
+
+12>Excel快捷键之选择单元格、列或行 
+选定当前单元格周围的区域：CTRL+SHIFT+*（星号） 
+将选定区域扩展一个单元格宽度：SHIFT+ 箭头键 
+选定区域扩展到单元格同行同列的最后非空单元格：CTRL+SHIFT+ 箭头键 
+将选定区域扩展到行首：SHIFT+HOME 
+将选定区域扩展到工作表的开始：CTRL+SHIFT+HOME 
+将选定区域扩展到工作表的最后一个使用的单元格：CTRL+SHIFT+END 
+选定整列：CTRL+SPACEBAR 
+选定整行：SHIFT+SPACEBAR 
+选定整个工作表：CTRL+A 
+如果选定了多个单元格则只选定其中的单元格：SHIFT+BACKSPACE 
+将选定区域向下扩展一屏：SHIFT+PAGE DOWN 
+将选定区域向上扩展一屏：SHIFT+PAGE UP 
+选定了一个对象，选定工作表上的所有对象：CTRL+SHIFT+SPACEBAR 
+在隐藏对象、显示对象与对象占位符之间切换：CTRL+6 
+显示或隐藏“常用”工具栏：CTRL+7 
+使用箭头键启动扩展选中区域的功能：F8 
+将其他区域中的单元格添加到选中区域中：SHIFT+F8 
+将选定区域扩展到窗口左上角的单元格：SCROLLLOCK, SHIFT+HOME 
+将选定区域扩展到窗口右下角的单元格：SCROLLLOCK, SHIFT+END 
+
+13>Excel快捷键之处于End模式时展开选中区域 
+打开或关闭 END 模式：END 
+将选定区域扩展到单元格同列同行的最后非空单元格：END, SHIFT+ 箭头键 
+将选定区域扩展到工作表上包含数据的最后一个单元格：END, SHIFT+HOME 
+将选定区域扩展到当前行中的最后一个单元格：END, SHIFT+ENTER 
+
+14>Excel快捷键之选择含有特殊字符单元格 
+选中活动单元格周围的当前区域：CTRL+SHIFT+*（星号） 
+选中当前数组，此数组是活动单元格所属的数组：CTRL+/ 
+选定所有带批注的单元格：CTRL+SHIFT+O (字母 O) 
+选择行中不与该行内活动单元格的值相匹配的单元格：CTRL+\ 
+选中列中不与该列内活动单元格的值相匹配的单元格：CTRL+SHIFT+| 
+选定当前选定区域中公式的直接引用单元格：CTRL+[ （左方括号） 
+选定当前选定区域中公式直接或间接引用的所有单元格：CTRL+SHIFT+{ 左大括号 
+只选定直接引用当前单元格的公式所在的单元格：CTRL+] （右方括号） 
+选定所有带有公式的单元格，这些公式直接或间接引用当前单元格：CTRL+SHIFT+}右大括号

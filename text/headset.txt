@@ -1,0 +1,528 @@
+
+--------------------------------------------------------
+Accessory detection loop:
+	/* Loop through to check which accessory is connected */
+	pr_info("dd->num_accessories=%d.\n", dd->num_accessories);
+	for (i = 0; i < dd->num_accessories; i++) {
+		detected = 0;
+		if (dd->accessory_info[i].enabled == false)
+			continue;
+
+		if (dd->accessory_info[i].detect_flags & OTHC_MICBIAS_DETECT) {
+			if (micbias_status)
+				detected = 1;
+			else
+				continue;
+		}
+		if (dd->accessory_info[i].detect_flags & OTHC_SWITCH_DETECT) {
+			if (switch_status) 
+				detected = 1;
+			else
+				continue;
+		}
+
+		if (detected)
+			break;
+	}
+
+Headphone:
+micbias_status = 1, switch_status = 1.
+Loop once, detection trace:
+	OTHC_MICBIAS_DETECT
+	OTHC_SWITCH_DETECT
+
+
+Headset:
+micbias_status = 1, switch_status = 0.
+Loop twice, detection trace:
+	OTHC_MICBIAS_DETECT
+	OTHC_MICBIAS_DETECT
+
+--------------------------------------------------------
+
+ICS code difference in files:
+board-msm8x60.c
+
+/* GORAB1A_CR #xxxx, Larkin.Huang, 2011/11/18.
+   Larkin recude headset detection delay for gpio detection and pop noise. {*/
+        .detection_delay_ms = 200,
+        /* Switch info */
+        .switch_debounce_ms = 200,
+/* GORAB1A_CR #xxxx, Larkin.Huang, 2011/11/18.
+   Larkin recude headset detection delay for gpio detection and pop noise. }*/
+        .othc_support_n_switch = false,
+        .switch_config = &switch_config,
+/* GORAB1A_CR #xxxx, Larkin.Huang, 2011/11/18.
+   Larkin revise the parameter for headset gpio detection and pop noise. {*/
+        /* .ir_gpio = -1, */
+        .ir_gpio = HEADSET_DET_N,
+/* GORAB1A_CR #xxxx, Larkin.Huang, 2011/11/18.
+   Larkin revise the parameter for headset gpio detection and pop noise. }*/
+
+/* MIC_BIAS1 is configured as HSED_BIAS for OTHC */
+static struct pmic8058_othc_config_pdata othc_config_pdata_1 = {
+        .micbias_select = OTHC_MICBIAS_1,
+        .micbias_capability = OTHC_MICBIAS_HSED,
+        .micbias_enable = OTHC_SIGNAL_ALWAYS_ON,
+        .micbias_regulator = &othc_reg,
+        .hsed_config = &hsed_config_1,
+        .hsed_name = "8660_handset",
+};
+
+
+
+
+
+-------------------------------------------------
+Kernel code
+-------------------------------------------------
+
+pmic8058-othc.c   ==>   platform:pmic8058_othc
+			PMIC 8058 OTHC
+
+Plug-in headset trace analysis, which cannot be detected:
+1.[Michelle HSED] pm8058_no_sw
+2.[Michelle HSED] pm8058_no_sw
+pm8058_no_sw
+/*The pm8058_no_sw detects the switch press and release operation.
+  This isr gets called only for NO type headsets. */
+	pm8058_irq_get_rt_status
+		ssbi_write
+		ssbi_read
+	*input_report_key
+	input_sync
+	disable_irq_nosync
+	schedule_work
+/*If the 3-6 traces are printed, then it means that 
+the headset is plugged in during removal delay time.*/
+--3.pm8058_isr_thread: Spurious IRQ: [master, block, bit]=[0, 7 (7), 2]
+--4.pm8058_isr_thread: spurious = 1 (handled = 0)
+--5.   root = 0x2 (masters_allowed<<1 = 0x12)
+--6.   blocks[0]=0x80, allowed[0]=0xd2
+pm8058_isr_thread	==>   pmic8058.c
+	pm8058_read_root    ==>	ssbi_read  ==>	i2c_transfer
+	pm8058_read_master
+	pm8058_read_block
+	pm8058_can_print  
+	pm8058_config_irq
+	pm8058_can_print    ==> trace 3
+	handle_nested_irq
+	pm8058_config_irq
+
+7.detect_work_f: [Michelle] detect_work_f inserted
+8.pm8058_accessory_report: Accessory [1] inserted
+detect_work_f
+	container_of(work)
+	pm8058_accessory_report
+		*switch_set_state  ==> switch_class.c
+			get_zeroed_page
+			+name_show(sdev->dev, NULL, prop_buf)
+				dev_get_drvdata(dev)
+				sdev->print_name(sdev, buf)
+				
+			+state_show(sdev->dev, NULL, prop_buf)
+				dev_get_drvdata(dev)
+				sdev->print_state(sdev, buf)    ==> switch_gpio_print_state   ==> switch_gpio.c
+									container_of
+									switch_get_state(sdev)
+										return sdev->state;
+									switch_data->state_on
+									switch_data->state_off
+			*kobject_uevent_env
+			free_page
+		*input_report_switch
+			*input_event(dev, EV_SW, code, !!value) : report new input event  ==> input.c
+ This function should be used by drivers implementing various input devices to report input events.
+				spin_lock_irqsave(&dev->event_lock, flags);
+				add_input_randomness(type, code, value);	==> random.c
+					add_timer_randomness
+						preempt_disable
+						__get_cpu_var
+						mix_pool_bytes
+						credit_entropy_bits
+				*input_handle_event(dev, type, code, value);
+					type =  EV_SYN, EV_KEY, EV_SW, EV_ABS, EV_REL, EV_MSC,
+						EV_LED, EV_SND, EV_REP, EV_FF, EV_PWR.
+					EV_KEY: 
+						is_event_supported
+						__change_bit
+						input_start_autorepeat
+						input_stop_autorepeat
+				spin_unlock_irqrestore(&dev->event_lock, flags);
+		
+		*intput_sync
+			input_event(dev, EV_SYN, SYN_REPORT, 0)
+		pm8058_irq_get_rt_status
+		gpio_get_value_cansleep
+		*accessory_adc_detect
+			DECLARE_COMPLETION_ONSTACK(accessory_adc_wait)
+			adc_channel_request_conv
+			wait_for_completion_interruptible(&accessory_adc_wait)
+			adc_channel_read_result
+			
+		pm8058_othc_svideo_enable
+	enable_irq	==> manage.c
+		chip_bus_lock(irq, desc);
+		raw_spin_lock_irqsave(&desc->lock, flags);
+		__enable_irq(desc, irq, false);
+		raw_spin_unlock_irqrestore(&desc->lock, flags);
+		chip_bus_sync_unlock(irq, desc);
+	
+
+
+Plug-out headset trace analysis:
+1.detect_work_f: [Michelle] detect_work_f removed
+2.pm8058_accessory_report: Accessory [1] removed
+
+
+__devinit pm8058_othc_probe
+		platform_get_drvdata
+		pm_runtime_set_active
+		pm_runtime_enable
+		platform_get_resource_byname("othc_base")
+		regulator_get
+		regulator_set_voltage
+		regulator_enable
+		platform_set_drvdata
+		othc_configure_hsed
+==> othc_configure_hsed
+	switch_dev_register
+	input_allocate_device()
+	platform_get_irq
+	platform_get_irq
+	dd->switch_debounce_ms = hsed_config->switch_debounce_ms;
+	dd->othc_support_n_switch = hsed_config->othc_support_n_switch;
+	dd->accessory_support = pdata->hsed_config->accessories_support;
+	dd->detection_delay_ms = pdata->hsed_config->detection_delay_ms;
+	pm8058_configure_micbias
+	pm8058_configure_switch
+	pm8058_configure_accessory
+	input_set_drvdata
+	spin_lock_init
+	input_register_device
+	hrtimer_init
+	request_threaded_irq(dd->othc_irq_ir, NULL, pm8058_nc_ir,
+		IRQF_TRIGGER_RISING | IRQF_TRIGGER_FALLING | IRQF_DISABLED,
+		"pm8058_othc_ir", dd);
+	gpio_request
+	gpio_direction_input
+	gpio_to_irq
+	request_any_context_irq
+	request_any_context_irq(dd->othc_irq_ir, ir_gpio_irq,
+		IRQF_TRIGGER_FALLING | IRQF_TRIGGER_RISING,
+		"othc_gpio_ir_irq", dd);
+	pm8058_irq_get_rt_status
+	gpio_get_value_cansleep
+	pm8058_accessory_report
+	device_init_wakeup(&pd->dev,
+			hsed_config->hsed_bias_config->othc_wakeup);
+	INIT_DELAYED_WORK(&dd->detect_work, detect_work_f);
+	INIT_DELAYED_WORK(&dd->hs_work, hs_worker);
+
+__devexit pm8058_othc_remove
+	platform_get_drvdata
+	pm_runtime_set_suspended
+	pm_runtime_disable
+	device_init_wakeup(&pd->dev, 0)
+	adc_channel_close
+	cancel_work_sync
+	gpio_free
+	cancel_delayed_work_sync(&dd->detect_work);
+	cancel_delayed_work_sync(&dd->hs_work);
+	free_irq(dd->othc_irq_sw, dd);
+	free_irq(dd->othc_irq_ir, dd);
+	gpio_free(dd->ir_gpio)
+	input_unregister_device(dd->othc_ipd)
+	regulator_disable(dd->othc_vreg)
+	regulator_put(dd->othc_vreg)
+
+
+hs_worker
+	container_of
+	gpio_get_value_cansleep
+	schedule_delayed_work(&dd->detect_work,	
+		msecs_to_jiffies(dd->detection_delay_ms));
+ir_gpio_irq
+	hrtimer_active
+	hrtimer_cancel
+	hrtimer_start(&dd->timer,
+		ktime_set((dd->switch_debounce_ms / 1000),
+		(dd->switch_debounce_ms % 1000) * 1000000), HRTIMER_MODE_REL);
+	disable_irq_nosync(dd->othc_irq_ir);
+	schedule_delayed_work(&dd->hs_work, 0);
+pm8058_micbias_enable
+	pm8058_read
+	pm8058_write
+pm8058_othc_svideo_enable
+	switch_set_state(&dd->othc_sdev, dd->curr_accessory);
+	input_report_switch(dd->othc_ipd,
+				dd->curr_accessory_code, 1);
+	input_sync(dd->othc_ipd);
+pm8058_othc_suspend
+	device_may_wakeup(dev)
+	enable_irq_wake(dd->othc_irq_sw)
+	enable_irq_wake(dd->othc_irq_ir)
+	regulator_disable
+pm8058_othc_resume
+	dev_get_drvdata
+	device_may_wakeup(dev)
+	disable_irq_wake(dd->othc_irq_sw)
+	disable_irq_wake(dd->othc_irq_ir)
+	regulator_enable
+switch_work_f
+	msleep(dd->switch_config->voltage_settling_time_ms);
+	adc_channel_request_conv(dd->adc_handle, &adc_wait)
+	wait_for_completion_interruptible(&adc_wait)
+	adc_channel_read_result(dd->adc_handle, &adc_result)
+	othc_report_switch(dd, res);
+
+pm8058_nc_ir
+	hrtimer_active(&dd->timer)
+	hrtimer_cancel(&dd->timer)
+	hrtimer_start(&dd->timer,
+		ktime_set((dd->switch_debounce_ms / 1000),
+		(dd->switch_debounce_ms % 1000) * 1000000), HRTIMER_MODE_REL);
+	disable_irq_nosync(dd->othc_irq_ir);
+	pm8058_irq_get_rt_status(dd->pm_chip, dd->othc_irq_ir);
+	schedule_delayed_work(&dd->detect_work,
+				msecs_to_jiffies(dd->detection_delay_ms));
+
+
+The pending workqueue questions:
+/* In most situations flushing the entire workqueue is overkill; you merely
+ 
+ * need to know that a particular work item isn't queued and isn't running.
+ 
+ * In such cases you should use cancel_delayed_work_sync() or
+ 
+ * cancel_work_sync() instead.
+ */
+
+gpio_switch_probe
+	switch_data->sdev.name = pdata->name;
+	switch_data->gpio = pdata->gpio;
+	switch_data->name_on = pdata->name_on;
+	switch_data->name_off = pdata->name_off;
+	switch_data->state_on = pdata->state_on;
+	switch_data->state_off = pdata->state_off;
+	switch_data->sdev.print_state = switch_gpio_print_state;
+	ret = switch_dev_register(&switch_data->sdev);
+	ret = gpio_request(switch_data->gpio, pdev->name);
+	ret = gpio_direction_input(switch_data->gpio);
+	INIT_WORK(&switch_data->work, gpio_switch_work);
+	switch_data->irq = gpio_to_irq(switch_data->gpio);
+	ret = request_irq(switch_data->irq, gpio_irq_handler,
+			  IRQF_TRIGGER_LOW, pdev->name, switch_data);
+	gpio_switch_work(&switch_data->work);
+
+i2c_add_driver
+	i2c_register_driver
+		driver_register
+		bus_for_each_dev(&i2c_bus_type, NULL, driver, __process_new_driver)
+			i2c_do_add_adapter
+				i2c_detect(adap, driver)
+					i2c_adapter_id(adapter)
+					i2c_check_functionality
+					dev_warn
+					i2c_detect_address
+						i2c_check_addr_validity(addr)
+						i2c_check_addr_busy(adapter, addr)
+						i2c_default_probe(adapter, addr)
+						driver->detect(temp_client, &info);
+						i2c_new_device(adapter, &info);
+							i2c_check_client_addr_validity
+							i2c_check_addr_busy
+							dev_set_name(&client->dev, "%d-%04x", i2c_adapter_id(adap), client->addr);
+							device_register
+								device_initialize(dev)
+								device_add(dev)							
+						list_add_tail
+						
+				driver->attach_adapter(adap)  
+				==> i2cdev_attach_adapter
+					get_free_i2c_dev(adap)
+					i2c_dev->dev = device_create(i2c_dev_class, &adap->dev,
+				     				MKDEV(I2C_MAJOR, adap->nr), NULL,
+				     				"i2c-%d", adap->nr);
+					device_create_file(i2c_dev->dev, &dev_attr_name);
+					device_destroy(i2c_dev_class, MKDEV(I2C_MAJOR, adap->nr));
+					return_i2c_dev(i2c_dev);
+				
+								
+i2c_del_driver	
+	
+
+
+-----------------------------------------------
+Data Structure information which is set during boot up time:
+static struct hsed_bias_config hsed_bias_config = {
+	/* HSED mic bias config info */
+	.othc_headset = OTHC_HEADSET_NO,
+	.othc_lowcurr_thresh_uA = 100,
+	.othc_highcurr_thresh_uA = 600,
+	.othc_hyst_prediv_us = 7800,
+	.othc_period_clkdiv_us = 62500,
+	.othc_hyst_clk_us = 121000,
+	.othc_period_clk_us = 312500,
+	.othc_wakeup = 1,
+};
+
+The reason for delay in kernel space:
+	/* The detection delay and switch reporting delay are
+	 * required to encounter a hardware bug (spurious switch
+	 * interrupts on slow insertion/removal of the headset).
+	 * This will introduce a delay in reporting the accessory
+	 * insertion and removal to the userspace.*/
+static struct othc_hsed_config hsed_config_1 = {
+	.detection_delay_ms = 1500,
+	.switch_debounce_ms = 1500,
+	.othc_support_n_switch = false,
+	.switch_config = &switch_config,
+	.accessories_support = true,
+	.accessories = othc_accessories,
+	.othc_num_accessories = ARRAY_SIZE(othc_accessories),
+};
+
+The reason for delay in user space:
+        if (headsetState == 0) {
+            Intent intent = new Intent(AudioManager.ACTION_AUDIO_BECOMING_NOISY);
+            mContext.sendBroadcast(intent);
+            // It can take hundreds of ms flush the audio pipeline after
+            // apps pause audio playback, but audio route changes are
+            // immediate, so delay the route change by 1000ms.
+            // This could be improved once the audio sub-system provides an
+            // interface to clear the audio pipeline.
+            delay = 1000;
+        } else {
+            // Insert the same delay for headset connection so that the connection event is not
+            // broadcast before the disconnection event in case of fast removal/insertion
+            if (mHandler.hasMessages(0)) {
+                delay = 1000;
+            }
+        }
+
+
+-------------------------------------------------
+Java code
+-------------------------------------------------
+    private static final String HEADSET_UEVENT_MATCH = "DEVPATH=/devices/virtual/switch/h2w";
+    private static final String HEADSET_STATE_PATH = "/sys/class/switch/h2w/state";
+    private static final String HEADSET_NAME_PATH = "/sys/class/switch/h2w/name";
+A proximity sensor is a sensor able to detect the presence of nearby objects without any physical contact.
+A proximity sensor adjusted to a very short range is often used as a touch switch.
+A proximity sensor can be used in windows, and when the window opens an alarm is activated.
+A touchscreen includes an array of touch switches on a display. A touch switch is the simplest kind of tactile sensor.
+
+The last trace when headset icon disappear:
+D/PhoneApp(340): updateProximitySensorMode: state = IDLE
+D/PhoneApp(340): updateProximitySensorMode: lock already released.
+
+V/HeadsetObserver:Headset UEVENT: {SUBSYSTEM=switch, SWITCH_STATE=1, DEVPATH=/devices/virtual/switch/h2w, SEQNUM=3220, ACTION=change, SWITCH_NAME=Headset}
+...
+
+onUEvent 
+==> update(event.get("SWITCH_NAME"), Integer.parseInt(event.get("SWITCH_STATE")));
+
+sendIntent <==  sendIntents <== handleMessage
+		mWakeLock.release
+
+adb log's ring buffer parameters:
+name	size	max.entry	max.payload
+main	1536Kb	4096b		4076b
+system	64Kb	4096b		4076b
+events	256Kb	4096b		4076b
+radio	128Kb	4096b		4076b
+
+=================================================================================
+
+After surveying this issue, this reason is described below:
+When inserting a headset, there is a 1.5s delay in kernel space and 1.0s delay in user space. 这问题是由于kernel space 1500ms delay, user space 1000ms delay, 这两者加起来使得检测时间很长.
+高通在耳机检测的时候加上1500ms 的delay. 这样做的目的之一是为了使状态稳定下来,因此会导致耳机检测偏慢的问题. 这样是为了使耳机状态稳定; 慢速插拔时出现的send/end key, 向 user space 发送event 问题.
+1000ms : 应用程序暂停时, 需要几百毫秒的时间来清除audio pipeline. 改小之后可能会有爆音产生。
+
+larkin@bp153:~/code/0813/oem/orange_scripts$ ll -d ~/code/0813/android/kernel/arch/arm/mach-msm/gpiomux-8x60-orange.c
+-rw-r--r-- 1 larkin qisda 30441 2011-11-04 14:53 /home/larkin/code/0813/android/kernel/arch/arm/mach-msm/gpiomux-8x60-orange.c
+
+HEADSET_INFO("headset_probe headset_data.hook_gpio = %d\n", headset_data.hook_gpio);
+	level = pm8058_irq_get_rt_status(dd->pm_chip, dd->othc_irq_sw);
+	rc    = pm8058_irq_get_rt_status(dd->pm_chip, dd->othc_irq_ir);
+
+	ret = pm8058_micbias_enable(OTHC_MICBIAS_2, OTHC_SIGNAL_ALWAYS_ON);
+
+/* Number of MICBIAS lines supported by PMIC8058 */
+enum othc_micbias {
+	OTHC_MICBIAS_0,
+	OTHC_MICBIAS_1,
+	OTHC_MICBIAS_2,
+	OTHC_MICBIAS_MAX,
+};
+
+/* Signal control for OTHC module */
+enum othc_micbias_enable {
+	/* Turn off MICBIAS signal */
+	OTHC_SIGNAL_OFF,
+	/* Turn on MICBIAS signal when TCXO is enabled */
+	OTHC_SIGNAL_TCXO,
+	/* Turn on MICBIAS signal when PWM is high or TCXO is enabled */
+	OTHC_SIGNAL_PWM_TCXO,
+	/* MICBIAS always enabled */
+	OTHC_SIGNAL_ALWAYS_ON,
+};
+
+/* Accessory detecion flags */
+#define OTHC_MICBIAS_DETECT	BIT(0)
+#define OTHC_GPIO_DETECT	BIT(1)
+#define OTHC_SWITCH_DETECT	BIT(2)
+#define OTHC_ADC_DETECT		BIT(3)
+
+
+---------------------------------------------------
+Headset HW detection changing
+
+/home/larkin/code/0813/android/kernel/arch/arm/mach-msm/gpiomux-8x60-orange.c
+/home/larkin/code/0813/android/kernel/arch/arm/configs/msm8660-orange_defconfig
+/home/larkin/code/0813/android/kernel/arch/arm/mach-msm/board-msm8x60-common.c
+/home/larkin/code/0813/android/kernel/drivers/input/misc/headset_det.c
+/home/larkin/code/0813/android/kernel/drivers/input/misc/pmic8058-othc.c
+---------------------------------------------------
+SW_Issue - GORAB1A_Orange-000615:  
+There is POP noise coming out on headset insertion/removal detection.
+S2-05 SW_Issue - S2-05-000666:  
+[FST V00.10.01][Idle] Status bar display earphone icon will be about 3s delay after plug in/out earphone .
+ Add Trace in audio ftd for switch device while spending a long
+
+S2-05-001499:  [UT V01.017.03][Audio]插入三星耳机,直接跳转到Music(austin上不会) 
+
+Author: Larkin.Huang <Larkin.Huang@Qisda.com>
+Date:   Tue Nov 8 16:49:58 2011 +0800
+
+    Record othc insertion/removal state after kernel detection delay.
+
+    Big id: S2-05-000725
+    Solution: Modify pmic8058-othc.c to save the state.
+
+    Change-Id: I3eaff61d5b71a5a76da9cad194c8154dc0ffac88
+
+headset hardware detection git commit format:
+Change the headset detection Method from OTHC to gpio. 
+
+Bug id: 
+Slution
+
+Turn off Micbias if headset was not plugged-in at boot up.
+
+/* GORAB1A_CR #xxxxx, Larkin.Huang, 2011/11/03.
+   Change the headset status judging sequence after detection delay. {*/
+/* GORAB1A_CR #xxxx, Larkin.Huang, 2011/11/16.
+   Larkin remove hook gpio configuration for headset hardware detection. {*/
+
+Change Headset volume level to be -9db in EVT, be 0db in DVT.
+
+Solution: Modify board-msm8x60-audio.c and timpani_profile_8x60.h for this issue.
+
+ /*use pthread_join need time to add join_count, but thread may exit at
+   this time, so sleep a timer, then check if thread has exited*/
+   sleep(2);
+
+*S2-05-001784 :[FST V01.022.01][Audio]Can't detect some loudspeaker.
+*S2-05-001777 :[FST V01.022.01][Audio]When first insert some headset, the music player will auto turn on.

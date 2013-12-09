@@ -1,0 +1,83 @@
+The audio framework modules directory:
+./frameworks/base/services/audioflinger/AudioFlinger.cpp
+./frameworks/base/media/libmedia/AudioSystem.cpp
+./frameworks/base/media/libmedia/AudioTrack.cpp
+./hardware/msm7k/libaudio/AudioPolicyManager.cpp
+./hardware/msm7k/libaudio-msm8660/AudioPolicyManager.cpp	*
+./frameworks/base/media/java/android/media/AudioService.java
+./hardware/msm7k/libaudio-msm8660/AudioHardware.cpp
+
+
+class IInterface : public virtual RefBase
+class IAudioPolicyService : public IInterface
+class BnInterface : public INTERFACE, public BBinder
+class BpInterface : public INTERFACE, public BpRefBase
+class AudioFlingerClient: public IBinder::DeathRecipient, public BnAudioFlingerClient
+class AudioPolicyServiceClient: public IBinder::DeathRecipient
+
+
+
+The audio user space code notes:
+Binder就是为了Activity通讯而设计的一个轻量级的IPC框架。
+Android Framework的音频子系统中，每一个音频流对应着一个AudioTrack类的一个实例，每个AudioTrack会在创建时注册到AudioFlinger中，由AudioFlinger把所有的AudioTrack进行混合（Mixer），然后输送到AudioHardware中进行播放，目前Android的Froyo版本设定了同时最多可以创建32个音频流，也就是说，Mixer最多会同时处理32个AudioTrack的数据流。
+sp是google搞出来的为了方便C/C++程序员管理指针的分配和释放的一套方法，类似JAVA的什么WeakReference之类的。
+sp<IServiceManager> ==> IServiceManager*
+sp<xxx> <==> xxx* 
+sp : strong proxy
+mmap: 将fd映射为内存，这样内存的memcpy等操作就相当于write/read(fd)了。
+open_driver，就是打开/dev/binder这个设备，这个是android在内核中搞的一个专门用于完成进程间通讯而设置的一个虚拟的设备。
+对于service来说继承了BBinder（BnInterface）因为BBinder有onTransact消息处理函数，而对于与service通信的client来说需要继承BpBinder(BpInterface)，因为BpBinder有消息传递函数transcat。
+IPC传递的过程中IBinder指针不可缺少，这个指针对一个进程来说就像是socket的ID一样，唯一的。所以不管这个IBinder是BBinder还是BpBinder, 他们的都是在重构BpBinder或者BBinder的时候把IBinder作为参数传入。
+gDefaultServiceManager = interface_cast<IServiceManager>
+BpServiceManager : BinderProxy...
+class MediaPlayerService : public BnMediaPlayerService
+Bn : Binder Native
+class BpServiceManager : public BpInterface<IServiceManager>
+//这种继承方式，表示同时继承BpInterface和IServiceManager
+sp<IServiceManager> sm = defaultServiceManager(); 返回的实际是BpServiceManager，它的remote对象是BpBinder，传入的那个handle参数是0。
+ServiceManager : 这个和Android机制有关系。所有Service都需要加入到ServiceManager来管理。同时也方便了Client来查询系统存在哪些Service，没看见我们传入了字符串吗？这样就可以通过Human Readable的字符串来查找Service了。
+Android系统中Service信息都是先add到ServiceManager中，由ServiceManager来集中管理，这样就可以查询当前系统有哪些服务。而且,Android系统中某个服务例如MediaPlayerService的客户端想要和MediaPlayerService通讯的话，必须先向ServiceManager查询MediaPlayerService的信息，然后通过ServiceManager返回的东西再来和MediaPlayerService交互。
+Class IPCThreadState {
+Parcel mIn;
+Parcel mOut;
+}; 
+
+线程池是一种多线程处理形式，处理过程中将任务添加到队列，然后在创建线程后自动启动这些任务。线程池线程都是后台线程.每个线程都使用默认的堆栈大小,以默认的优先级运行,并处于多线程单元中.如果某个线程在托管代码中空闲(如正在等待某个事件),则线程池将插入另一个辅助线程来使所有处理器保持繁忙.如果所有线程池线程都始终保持繁忙,但队列中包含挂起的工作,则线程池将在一段时间后创建另一个辅助线程但线程的数目永远不会超过最大值.超过最大值的线程可以排队,但他们要等到其他线程完成后才启动。
+先创建n个线程，然后用一个数组来自己管理，这个数组就是“线程池”。 
+当需要时，就从线程池中找空线程，用完之后在将之放回线程池中。 
+总之，就是在一个地方统一CreateThread和TerminateThread，便于管理。
+通过interface_cast，将这个binder转化成BpMediaPlayerService。
+Binder其实就是一个和binder设备打交道的接口，而上层IMediaPlayerService只不过把它当做一个类似socket使用罢了。
+代码引用的是哪一个pointer，看代码的头文件。一般framework层都是用strong pointer. 此外还有一个weak pointer, 它和strong pointer的不同之处在于，wp不能直接对其对象操作，只有promote为sp后才能操作其对象。同时，wp可能在其引用计数不为0的情况下，其引用对象被delete.
+sp和wp都是指针管理类，所有能够接受sp和wp管理的类都必须继承自RefBase.IBinder就是虚继承自RefBase的.
+
+class IXXX: public IInterface
+
+{
+public:
+DECLARE_META_INTERFACE(XXX);申明宏
+virtual getXXX() = 0;
+virtual setXXX() = 0;
+}
+这是一个接口。
+
+* AudioHardwareInterface.h defines the interface to the audio hardware abstraction layer.
+ *
+ * The interface supports setting and getting parameters, selecting audio routing
+ * paths, and defining input and output streams.
+ *
+ * AudioFlinger initializes the audio hardware and immediately opens an output stream.
+ * You can set Audio routing to output to handset, speaker, Bluetooth, or a headset.
+ *
+ * The audio input stream is initialized when AudioFlinger is called to carry out
+ * a record operation.
+ 
+ /**
+ * AudioHardwareBase is a convenient base class used for implementing the
+ * AudioHardwareInterface interface.
+ */
+
+
+
+
+   

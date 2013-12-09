@@ -1,0 +1,27 @@
+sensor daemon 往下面设置 bw =0 的时候要调用的接口；
+sensor daemon 中的 bandwidth map 如下：
+static const struct value_map map_acc_bw[] = {
+	{0x08, ALGO_A_BW_7_81HZ}, 
+	{0x09, ALGO_A_BW_15_63HZ}, 
+	{0x0a, ALGO_A_BW_31_25HZ}, 
+	{0x0b, ALGO_A_BW_62_50HZ}, 
+	{0x0c, ALGO_A_BW_125HZ}, 
+};
+
+#define ALGO_A_BW_7_81HZ	0
+#define ALGO_A_BW_15_63HZ	1
+#define ALGO_A_BW_31_25HZ	2
+#define ALGO_A_BW_62_50HZ	3
+#define ALGO_A_BW_125HZ	4
+
+daemon 往driver 里面设置的时候判断出value=0，则设置0x08 下去，
+目前driver 中要设置bandwidth的范围为 0~7才能设下去，因此会失败。
+这个情况这是我上次做验证的时候加入的Kernel Log，当时可能一不小心check in 进去了。
+现在的情况是这样的：
+driver probe 的时候已经做了bandwidth初始化31.25Hz，
+这个数值当时和厂商讨论过，从速率和稳定性综合来说是相对最平衡的值。
+bma250_set_bandwidth(client, BMA250_BW_SET);
+#define BMA250_BW_SET			2
+这个初始化的值在kernel 跑完后，就不需再去设置它了，而且目前的代码中也是没让daemon去设置下来。
+因此综合来说，这个Log ”06-21 13:08:13.214 W/PrintK  (  162): [ 6563.337305] bma250 set bandwidth error!“
+是我当时为了确认该情况而加入的，对于Gsensor 并无影响；后续应该将它拿掉。

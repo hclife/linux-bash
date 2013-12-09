@@ -1,0 +1,44 @@
+==> board-msm8x60-common.c
+larkin@bp153:~/hwcodes$ diff board-msm8x60-common.c /home/larkin/code/1103/android/kernel/arch/arm/mach-msm/board-msm8x60-common.c
+4381,4382d4380
+<
+<       return 0;
+6156c6154,6160
+<       }
+---
+>       },
+>       {
+>               .name   = "hook_int",
+>               .start  = HS_BUTT,
+>               .end            = HS_BUTT,
+>               .flags  = IORESOURCE_IRQ,
+>       },
+7691,7692d7694
+<
+<       return 0;
+10280c10282
+<       sdcc_vreg_data[2].vddp_data->reg_name = "8058_l14";
+---
+>       sdcc_vreg_data[2].vddp_data->reg_name = "8058_l5";
+larkin@bp153:~/hwcodes$
+
+==> gpiomux-8x60-orange.c
+larkin@bp153:~/hwcodes$ diff gpiomux-8x60-orange.c /home/larkin/code/1103/android/kernel/arch/arm/mach-msm/gpiomux-8x60-orange.c
+65a66,71
+> #if defined (CONFIG_3_5_HEADSET_NON_OTHC)
+> static struct gpiomux_setting msm_headset_hook_active_config = {
+>       .func = GPIOMUX_FUNC_GPIO,
+>       .pull = GPIOMUX_PULL_NONE,
+>       .dir = GPIOMUX_IN,
+> };
+66a73,78
+> static struct gpiomux_setting msm_headset_hook_suspend_config = {
+>       .func = GPIOMUX_FUNC_GPIO,
+>       .pull = GPIOMUX_PULL_NONE,
+>       .dir = GPIOMUX_IN,
+> };
+> #endif
+
+
+derrick@bp153:~/lexus/103118/android$ ll kernel/arch/arm/mach-msm/qdsp6v2/timpani_profile_8x60.h
+-rw-r--r-- 1 derrick qisda 217634 2011-11-02 13:25 kernel/arch/arm/mach-msm/qdsp6v2/timpani_profile_8x60.h

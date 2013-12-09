@@ -1,0 +1,32 @@
+pm8058_micbias_enable
+	rc = pm8058_read(dd->pm_chip, dd->othc_base + 1, &reg, 1);
+	reg &= PM8058_OTHC_EN_SIG_MASK;
+	reg |= (enable << PM8058_OTHC_EN_SIG_SHIFT);
+	rc = pm8058_write(dd->pm_chip, dd->othc_base + 1, &reg, 1);
+
+rc = pm8058_micbias_enable(OTHC_MICBIAS_1, OTHC_SIGNAL_OFF)
+rc = pm8058_micbias_enable(OTHC_MICBIAS_1, OTHC_SIGNAL_ALWAYS_ON)
+
+/* MIC_BIAS1 is configured as HSED_BIAS for OTHC */
+static struct pmic8058_othc_config_pdata othc_config_pdata_1 = {
+	.micbias_select = OTHC_MICBIAS_1,
+	.micbias_capability = OTHC_MICBIAS_HSED,
+	.micbias_enable = OTHC_SIGNAL_PWM_TCXO,
+	.micbias_regulator = &othc_reg,
+	.hsed_config = &hsed_config_1,
+	.hsed_name = "8660_handset",
+};
+
+/* Signal control for OTHC module */
+enum othc_micbias_enable {
+	/* Turn off MICBIAS signal */
+	OTHC_SIGNAL_OFF,
+	/* Turn on MICBIAS signal when TCXO is enabled */
+	OTHC_SIGNAL_TCXO,
+	/* Turn on MICBIAS signal when PWM is high or TCXO is enabled */
+	OTHC_SIGNAL_PWM_TCXO,
+	/* MICBIAS always enabled */
+	OTHC_SIGNAL_ALWAYS_ON,
+};
+
+

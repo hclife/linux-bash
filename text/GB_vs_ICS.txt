@@ -1,0 +1,79 @@
+Diff ICS and GB folders: device and build 
+*各个function 在MSM8260_GB上的改动，是否都对应改动到MSM8260_ICS上面了?
+*检查一下Android GB的改动是否都对应的merge到了ICS. 
+范围：Qplatform上需要sync改的那个git列表 （排除oem和amss）
+时间：周四下班前结束，提供整合的excel
+规则：回避原则，个人负责的内容请别人检查
+      每行代码/函数改动，如果没有merge，请和改动的人员确认原因，用excel记录下来
+      如果找不到原始改动人员，请找GB上该功能负责人员确认
+
+
+
+
+GB 是基于307002 & 307003 的，原始代码在：
+gb.	\\10.85.21.71\jtag\home\leo\vm\reference\307002\android
+Here is the Latest GB code :
+GB.	\\10.85.21.122\larkin\code\0214\android
+
+ICS是基于30130的，原始代码在：
+ics.\\10.85.21.71\jtag\home\qisda\QCT_release\MSM8x60\ICS_CS_30130\android
+Here is the Latest ICS code :
+ICS.\\10.85.21.122\larkin\ics\0214\android
+
+
+GB: gb vs GB
+Part I: android/device
+gb	:samsung htc
+GB	:boss 
+./qcom/common/.git
+	gb	:
+	GB	:vendorsetup.sh
+Part II: android/build
+gb	:
+GB	:1_android_build.sh	
+	:./target/product/security/lexus
+
+
+
+ICS: ics vs ICS
+Part I: android/device
+ics	:google	sample	samsung	ti
+ICS	:boss
+Part II: android/build
+ics
+ICS	:./target/product/security/lexus
+
+
+GB vs ICS 
+(Check if GB modification have been merged to ICS).
+Part I: android/device/boss/orange
+GB:	fonts	overlay_cdma	overlay_umts	scripts
+	AUOAP_FW.pix
+	Gauge.dfi
+	Gauge.inf
+	local.prop
+	matrix-keypad.kl
+	media_profiles.xml
+ICS:libsensors	radio
+	fluid-keypad.kl
+	fluid-keypad_numeric.kcm
+	fluid-keypad_qwerty.kcm
+	hostapd.accept
+	hostadd.conf
+	hostapd.deny
+
+Part II :  android/device/boss/song	=> only in GB.
+
+Part III:  android/device/boss/la	=> only in GB.
+
+Part IV :  android/device/boss/common
+GB	:libsensors	overlay	updater
+	 common_qcom.mk
+	 common_qisda.mk
+	 vendorsetup.sh
+ICS	:recovery	tools
+	 common.mk
+	 qcom.mk
+
+
+

@@ -1,0 +1,1315 @@
+内存置换空间swap的功能是在应付物理内存不足的情况下所造成的内存延伸记录。
+swap是用硬盘来暂时放置内存中的信息。
+network connection icon disapeared
+具体做法是：
+cd /etc/NetworkManager/ 
+vim nm-system-settings.conf 
+//做以下更改 
+managed=true 
+//保存退出 
+/etc/init.d/networking restart //这一步，我是用重启电脑代替的。
+重启电脑之后，图标出现，网络正常。
+
+管道符 | 所传递给程序的不是你简单地在程序名后面输入的参数，它们会被
+程序内部的读取功能如scanf和gets等接收，而xargs则是将内容作为普通的参数传递给程序，相当于你手写了
+cat --help
+
+
+:set ff?
+:set fileformat=unix
+
+OUT folder is /home/larkin/dubai/android/out/duet2D_wgd/target/product/dubai
+1， android 常用 java层 callstack打印：
+
+
+       Throwable throwable = new Throwable(
+                "Warning: A WebView method was called on thread '" +                    				  Thread.currentThread().getName() + "'. " +
+                  "All WebView methods must be called on the UI thread. " +
+                  "Future versions of WebView may not support use on other threads.");   
+
+        Log.w(LOGTAG, Log.getStackTraceString(throwable));
+
+	##################################################
+或者可以这样打印java层的call back
+
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                Log.e(LOGTAG, "Caught exception while waiting for overrideUrl");
+                Log.e(LOGTAG, Log.getStackTraceString(e));
+            }
+
+
+2， C++ 层打印，基于linux
+
+首先 	#include <utils/CallStack.h>包含此文件，
+在需要打印的CPP 函数里面 添加下面三句话
+
+android::CallStack Stack;
+Stack.update(1);
+Stack.dump(); 
+
+编译导入系统运行，然后可以看到 打印的地址，但是这个地址 是需要专门转译一下，要在android整个系统里面out编译输出的地方找到这个时候执行的so文件所在目录，在ubuntu下转到所在的so文件目录，执行下面的命令
+
+arm-eabi-addr2line -C -f -e *.so addr.
+android/frameworks/native/include/utils/CallStack.h
+系统会打印出所在的函数名字出来。
+一般这个callback可以打印30个函数的callback路径。
+
+
+3. Linux Kernel 中打印出 call stack 
+
+WARN_ON(1);
+dump_stack();
+BUG_ON(1) is to reboot system.
+
+DVDD18_NML1
+[2013-6-4 9:21:34] Larkin.Huang: whats the meaning
+[2013-6-4 9:23:39] Challenge.Wang: Digital power input for NML1
+[2013-6-4 9:24:39] Challenge.Wang: 在目录\\10.85.21.71\challenge\MTK_GPIO下有一篇文档MT6589_HSPA+_Smartphone_Application_Processor_Datasheet.pdf
+
+TRACE32-ICD是在线调试器。它采用模块化的设计,可以支持具有JTAG、BDM、0CDS、NEXUS等调试接口的嵌入式处理器。它可以为嵌入式处理器的开发人员提供断点及触发功能(利用片上调试逻辑)。TRACE32-ICD的调试器软件运行在Windows平台上。TRACE32-ICD通过并口、以太网口、USB口等形式与PC连接。TRACE32-ICD具有触发输入/输出端口,通过它TRACE32-ICD与逻辑分析仪连接。TRACE32-ICD与逻辑分析仪通过该连接相互触发,协调工作。
+
+遍历方案
+二叉树的前序遍历
+从二叉树的递归定义可知，一棵非空的二叉树由根结点及左、右子树这三个基本部分组成。因此，在任一给定结点上，可以按某种次序执行三
+个操作：
+⑴访问结点本身（N），
+⑵遍历该结点的左子树（L），
+⑶遍历该结点的右子树（R）。
+以上三种操作有六种执行次序：
+NLR、LNR、LRN、NRL、RNL、RLN。
+注意：
+前三种次序与后三种次序对称，故只讨论先左后右的前三种次序。
+遍历命名
+根据访问结点操作发生位置命名：
+① NLR：前序遍历(PreorderTraversal亦称（先序遍历））
+——访问根结点的操作发生在遍历其左右子树之前。
+② LNR：中序遍历(InorderTraversal)
+——访问根结点的操作发生在遍历其左右子树之中（间）。
+③ LRN：后序遍历(PostorderTraversal)
+——访问根结点的操作发生在遍历其左右子树之后。
+注意：
+由于被访问的结点必是某子树的根，所以N(Node）、L(Left subtree）和R(Right subtree）又可解释为根、根的左子树和根的右子树。NLR、LNR和LRN分别又称为先根遍历、中根遍历和后根遍历。
+
+1．中序遍历的递归算法定义：
+若二叉树非空，则依次执行如下操作：
+⑴遍历左子树；
+⑵访问根结点；
+⑶遍历右子树。
+2．先序遍历的递归算法定义：
+若二叉树非空，则依次执行如下操作：
+⑴ 访问根结点；
+⑵ 遍历左子树；
+⑶ 遍历右子树。
+3．后序遍历得递归算法定义：
+若二叉树非空，则依次执行如下操作：
+⑴遍历左子树；
+⑵遍历右子树；
+⑶访问根结点。
+4．层次遍历
+
+OSI七层网络模型，ISO只是开发这个网络模型的一个组织。下面我就来从下至上跟你具体说明这七层模型： 
+1层物理层：主要定义物理设备标准，如网线的接口类型、光线的接口类型、各种传输介质的传输速率等。它的主要作用是传输比特流（就是由1、0转化为电流强弱来进行传输,到达目的地后在转化为1、0，也就是我们常说的模数转换与数模转换）。这一层的数据叫做比特。 (Bit)
+2层数据链路层：主要将从物理层接收的数据进行MAC地址（网卡的地址）的封装与解封装。常把这一层的数据叫做帧。在这一层工作的设备是交换机，数据通过换换机来传输。 (Frame)
+3层网络层：主要将从下层接收到的数据进行IP地址（例192.168.0.1)的封装与解封装。在这一层工作的设备是路由器，常把这一层的数据叫做数据包。 (Package)
+4层传输层：定义了一些传输数据的协议和端口号（WWW端口80等），如：TCP（传输控制协议，传输效率低，可靠性强，用于传输可靠性要求高，数据量大的数据），UDP（用户数据报协议，与TCP特性恰恰相反，用于传输可靠性要求不高，数据量小的数据，如QQ聊天数据就是通过这种方式传输的）。 主要是将从下层接收的数据进行分段进行传输，到达目的地址后在进行重组。常常把这一层数据叫做段。 (Segment)
+5层会话层：通过传输层（端口号：传输端口与接收端口）建立数据传输的通路。主要在你的系统之间发起会话或或者接受会话请求（设备之间需要互相认识可以是IP也可以是MAC或者是主机名） (Port)
+6层表示层：主要是进行对接收的数据进行解释、加密与解密、压缩与解压缩等（也就是把计算机能够识别的东西转换成人能够能识别的东西（如图片、声音等）） (File)
+7层应用层 主要是一些终端的应用，比如说FTP（各种文件下载），WEB（IE浏览），QQ之类的（你就把它理解成我们在电脑屏幕上可以看到的东西．就 是终端应用） (APP)
+
+在软中断和硬中断之间的区别是什么？ ①硬中断是由外部事件引起的因此具有随机性和突发性；软中断是执行中断指令产生的，无面外部施加中断请求信号，因此中断的发生不是随机的而是由程序安排好的。
+②硬中断的中断响应周期，CPU需要发中断回合信号（NMI不需要），软中断的中断响应周期，CPU不需发中断回合信号。
+③硬中断的中断号是由中断控制器提供的（NMI硬中断中断号系统指定为02H）；软中断的中断号由指令直接给出，无需使用中断控制器。
+④硬中断是可屏蔽的（NMI硬中断不可屏蔽），软中断不可屏蔽。  
+
+git pull origin master =>
+git fetch origin master
+git log -p master..origin/master
+git merge origin/master
+
+or =>
+git fetch origin master:tmp
+git diff tmp
+git merge tmp
+
+MSM_8x60软件平台定义了多种虚拟的Platform Driver，包括 qup_i2c、spi_qsd、msm_serial_hs、msm_serial_hsl 、mipi_dsi、mdp、lcdc、msm_hsusb_host、msm_hsusb等 。用户需要自定义Platform device绑定到相应的Platform Driver。
+
+从Linux 2.6起引入了一套新的驱动管理和注册机制:Platform_device和Platform_driver。典型的Platform device是系统中的各种自主设备，包括各种桥接在外围总线上的port-based device和host，以及各种集成在SOC platform上的控制器。他们都有一个特点，那就是CPU BUS可以直接寻址。Platform device有一个名字，用来进行driver的绑定；还有诸如中断，地址之类的一些资源列表。Platform driver满足标准driver model，对driver的discovery/enumeration是在driver外部进行的，driver提供了probe()和 remove()方法.Platfomr dirvers通过标准模型提供power management和shutdown通知。
+Platform device 和 Platform driver实际上是cpu总线可以直接寻址的设备和驱动，他们挂载在一个虚拟的总线platform_bus_type上，是一种bus- specific设备和驱动。 所有的设备通过bus_id挂在总线上，多个device可以共用一个driver，但是一个device不可以对应多个driver。驱动去注册时候会根据设备名寻找设备，没有设备会注册失败，注册的过程会通过probe来进行相应资源的申请，以及硬件的初始化，如果probe执行成功，则device 和driver的绑定就成功了。设备注册的时候同样会在总线上寻找相应的驱动，如果找到他也会试图绑定，绑定的过程同样是执行probe。
+
+在grep命令中输入字符串参数时，最好将其用双引号括起来。有两个原因，一是以防被误解为shell命令，二是可以用来查找多个单词组成的字符串。
+
+!!	bash event designators, => !-1
+#pragma message("xxx")  可用于在编译过程中给出相应msg
+FTD Related Knowledge: 
+1、Tool通过读取ADB端口的PID/VID来判断target端是否连接，如果否则停止。
+2、在产线上，device通过检测factory table来决定是否进入FTD模式。
+3、前两项通过后，Tool即可按照设定（xml文件可设置测试项；Tool中手动选择测试项）进行测试。目前在测试时使用的通信协议有图上的3个：
+1）Command REQ：PC =>Target 指定测试需求
+2）Command ACK：Target =>PC 确定Target已收到测试命令
+3）Command Result：Target=>PC 返回测试结果：成功或失败,并且可以返回指定的数据。
+Packet = Header + Type + Command + Payload length + Payload + Check 
+Packet中用到的一些public data这里我们先定义一下，后面就不再重复描述了.
+?	HEADER                       {0x42,0x45,0x4e,0x51}即{‘B’,’E’,’E’,’Q’}
+?	Command Type
+?	CMD_REQ                  0x10
+?	CMD_ACK                  0x11
+?	CMD_RES                   0x13
+?	Test Item(Command[0])
+?	INDEX_SD                    1
+?	INDEX_CAMERA              2
+?	INDEX_DISPLAY              3
+?	INDEX_SENSOR               4
+?	INDEX_AUDIO                5
+?	INDEX_GPS                   6
+?	INDEX_BT                    7
+?	INDEX_FMR                  8
+?	INDEX_SIM                   9
+?	INDEX_CLK                  10
+?	INDEX_USB                  11
+?	INDEX_TOUCH             12
+?	INDEX_KEYPAD              13
+?	INDEX_VIBRATOR            14
+?	INDEX_BATTERY             15
+?	INDEX_DOWNLOAD           16
+?	INDEX_OS                    17
+?	INDEX_WLAN                 18
+?	INDEX_LED                   19
+?	INDEX_ID                     20
+?	INDEX_REGULATOR           21
+?	INDEX_RF                    22
+?	INDEX_TV                    24
+?	INDEX_VERSION              25
+?	INDEX_FACTORY             26
+?	INDEX_EFS             		28
+?	INDEX_NV             		29
+?	INDEX_DIAG				30
+?	INDEX_RTC				31
+
+?	Test Result
+?	RES_SUCC                   0x31
+?	RES_FAIL                    0x30
+
+
+LD_DEBUG=
+1. files	   =>show dependent file and progress
+2. bindings =>show binding progress of dynamic linking symbols
+3. libs	   =>show searching progress of shared objects
+4. versions  =>show version dependency of symbols
+5. reloc	    =>show relocation progress
+6. symbols
+7. statistics
+8. all
+9. help
+
+Definition of Baud rate: 
+在电子通信领域，波特率（Baud rate）即调制速率，指的是信号被调制以后在单位时间内的变化，即单位时间内载波参数变化的次数。它是对符号传输速率的一种度量，1波特即指每秒传输1个符号。 单位“波特”本身就已经是代表每秒的调制数，以“波特每秒”（Baud per second）为单位是一种常见的错误。 
+波特率有时候会同 比特率 混淆，实际上后者是对信息传输速率（传信率）的度量。波特率可以被理解为单位时间内传输码元符号的个数（传符号率），通过不同的调制方法可以在一个码元上负载多个比特信息。因此信息传输速率即比特率在数值上和波特率有这样的关系。 
+比特率=波特率 X 单个调制状态对应的二进制位数
+在信息传输通道中，携带数据信息的信号单元叫码元，每秒钟通过信道传输的码元数称为码元传输速率，简称波特率。波特率是传输通道频宽的指标。
+(严格来说，波特率不在传输领域，出现传输、信道等字眼容易产生混淆，波特率描述的是单位时间内调制信号的能力，经它调制出来的信号才以比特的形式来传输，或者这样说，信号在传输过程中，如果要经过数模转换，就需要调制，那么传输时间除了消耗在其它领域外，还消耗在调制过程和在信道的传输过程，描述信号调制能力用波特率，描述信号传输能力用比特率。）
+
+RPC RIL and QMI RIL cannot coexist.
+RPC calls are replaced with QMI messages.
+RPC and QMUX/QMI can coexist together, provided the respective framework at the MPROC level is delivered to the OEMs
+
+Linux shared objects naming system:
+libname.so.x.y.z
+x: Major version number
+y: Minor version number
+z: Release Version number
+i.e. libfoo.so.2.6.1 "SO-NAME" => libfoo.so.2
+The softlink always point to the newest so of the directory.
+SO-NAME 表示一个库的接口，接口如果不向后兼容，SONAME就发生变化，这是基本原则。
+But glibc and ld.so are exception:
+lrwxrwxrwx 1 root root 12 Mar 18  2011 /lib32/ld-linux.so.2 -> ld-2.11.1.so*
+lrwxrwxrwx 1 root root 14 Mar 19  2011 /lib/libc.so.6 -> libc-2.11.1.so*
+我自己用下来是，如果QMI有框架的话，好像QMI 加东西清楚也容易点，但现在Qisda QMI框架没加，只有QCT原始的几个。就不好用QMI做了 刚才也问了Terry了，说他们和PS评估了，PS建议不加Qisda QMI了，以后加新的，用RPC
+这边提供了一个http://free.ssh.vpn.net.in/服务器IP ：free.ssh.vpn.net.inSSH用户 ：vpn.net.inSSH密码 ：（不停的改）
+
+larkin@bp153:~/evb/android/kernel(evb)$ git help reset
+
+BMC050 Porting Guide:
+1. BST-BMC050-SD005-00_Linux_Driver_Porting_Guide_V1.3_Qisda.pdf
+2. BST-BMC050-SD006-00_Linux_Driver_SysFS_Interface_V1.4_Qisda.pdf
+3. BST-BMC050-SD004-00_Android_Sensor_Daemon_Porting_Guide_V1.2_Qisda.pdf
+4. BST-BMC050-SD003-00_Android_HAL_Porting_Guide_V1.2._Qisda.pdf
+
+已经build 的版本再做部分修改常用patch
+			
+alsa
+audio path 
+android
+filesystems	: debugfs sysfs proc ...
+
+LKD: chapter
+			
+Makefile
+	http://www.itpub.net/thread-219475-1-1.html
+	The GNU Make manual 
+
+UA : chapter 3
+	init
+	binder
+	zygote
+	Ashmem 	(Android shared memory)
+	PMEM	(Processor Memory Allocator)
+	logcat	(Android Logger)
+	wakelock(Android Power Management)
+	Alarm
+linux index: chapter33 signal
+Basic Digital Electrics
+Data Structure
+The C Programming Language
+sbms user guide: p33
+version control with git: 
+Unix Environment Programming: 
+notepads review: new
+Shell Script	
+Multi-thread	
+socket 			
+workqueue
+vbird linux	
+AK8975C		: end	E-compass
+BMA250		: end	G-sensor
+TMD2771		: end	L/P-sensor
+I2C_spec	: end
+
+
+Android Architecture Components:
+1. Linux Kernel
+2. Android Runtime
+3. Libraries
+4. Application Framework
+5. Applications
+
+cherry buildpc
+\\10.85.21.29\cherry\orange_gb
+cherry 
+521111chu
+
+[16:27:10] Larkin.Huang: arch/arm/configs 下面的配置文件是有什么区别吗？
+msm7627a_defconfig 和 msm7627a-perf_defconfig 
+据我所知，目前是在使用 msm7627a-perf_defconfig 来配置
+[16:28:03] Frankie.F.Zhang: perf是performance的缩写
+[16:28:34] Larkin.Huang: 哦，那没加perf 的那支配置文件是不是没有使用？
+[16:29:10] dany_deng: android/device/qcom/msm7627a/AndroidBoard.mk:    KERNEL_DEFCONFIG := msm7627a-perf_defconfig
+
+ERROR: modpost: Found 1 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+
+Burst mode (alternatively burst-mode) is a generic computing term referring to any situation in which a device is transmitting data repeatedly without waiting for input from another device or waiting for an internal process to terminate before continuing the transfer of data.
+
+[10:19:06] Frankie.F.Zhang: [10:09] ?~Kiko~?: 
+最初的VM和tracker是PVCS工具，然后我们server上的帐号和数据库的帐号都用的PVCS来命名
+
+异步双核就是两个核心可以单独执行处理指令,不需要两个一起开动干一件事情.但是这样cpu的性能会有所降低,但是功耗也会降低. 技术原理　对称多处理技术能够帮助多核处理器(例如ARM Cortex-A9 MPCore处理器)以更低的电压和频率运作，从而延长电池使用时间。相对于单处理器满负荷运行以完成各项任务，多核能够以较低的速率同时进行工作，因此，整个芯片就能在较低的温度下运作，能够帮助降低功率泄漏。这就使得SMP系统能够在显著降低功耗的同时，提供与更大、运行速度更快的单核处理器一样的性能。多核处理器可以将并行负载分配给不同的核，能够以更快的反应和速度运行Web Widget、多媒体以及通信功能，从而为用户提供更丰富的移动体验，并且无需对电池续航能力做出折衷。
+甘特图是通过条状图来显示项目进度和时间的关系，横轴标示时间，纵轴标示子项目，在甘特图中表示了每个子项目开始和结束的时间，以及进行的顺序和持续的时间。 
+
+
+-fPIC参数声明链接库的代码段是可以共享的，-shared参数声明编译为共享库。请注意这次我们编译的共享库的名字叫做libhello.so，这也是Linux共享库的一个命名的惯例了：后缀使用so，而名称使用libxxxx格式。 
+
+　　而《程序员的自我修养》则属于上面的一类。 
+　　为了能够读懂这本书，需要先掌握以下内容： 
+　　1. CPU体系结构 
+　　2. 计算机体系结构 
+　　3. 汇编语言 
+　　4. 编译原理 
+　　5. 操作系统 
+　　6. C/C++语言 
+　　7. 编译器是如何产生处理代码的（建议阅读《Delphi源码分析》） 
+
+ads是一个arm的集成开发环境，rvct是一个rvds（也是arm的开发环境）的一个编译器。在ADS中，当用户要将高级语言代码编译成目标文件时，需要根据目标机器码的不同（16位的Thumb代码或者32位的ARM代码），以及高级语言的不同（C代码或者C++代码）选择不同的编译器可执行文件；RVCT3.0编译器则将它们全部统一为armcc，仅仅通过不同的编译选项进行区分。RVCT采用了POSIX格式的编译、链接选项，所有的多字符选项前必须使用双中划线。例如：ADS的编译选项-cpu，在MDK中需要改写成--cpu
+
+Linux下共享库中的全局变量，静态变量是否只有一份？ 
+当有多个程序使用同一个共享库的时候，我们都知道，多个程序有多个进程，但是共享库在内存中只有一份。所以问题来了：如果我在共享库中定义了全局变量，那 么全局变量是不是也只有一份？如果是这样，那么当多个进程都在使用这个共享库的时候，就有问题了。比如：我们在共享库中定义了一个全局变量 server_inited，用来表示一个socket server是否已经启动成功了，如果这个变量是TRUE，那么，下次用户调用启动server的函数的时候，这个函数一check这个变量，发现已经是 TRUE了，就不会再启动server了。这样就导致了一个进程调用过了一次启动server的函数之后，其他进程再调用这个函数就没有效果了。而很明 显，这样是不行的。 
+如果真的象上面所说，那么在编写共享库的时候，就不能使用任何全局变量了。这会非常的麻烦。 
+为此，我写了两个程序测试了一下，一个TestLib用来生成共享库，一个测试程序用来测试。 
+结论是：不会。共享库的代码段，也就是每个函数，可能在内存中只有一份，但是全局变量，包括静态变量，全局静态变量在每个进程中都有独立的copy。所以不会造成上面所说的问题。 
+http://www.cnblogs.com/super119/archive/2011/03/26/1996099.html
+
+
+全局变量是在main函数之前就分配
+局部变量在定义时分配，超出作用域后释放
+静态局部变量只分配一次，程序退出后才释放
+函数参数与局部变量基本上相同在进入函数时分配，函数结束时释放
+
+mov是将数据从源操作传到目的操作数中
+lea是将源操作数的地址传到目的操作数中
+一个是数据，一个是地址
+lea指令只有一个周期，某些编译器会使用lea来优化加法等操作
+举个例子：
+mov eax,[00400000]
+传的是地址400000这个地址里的值，假设400000这个地址中的值是100，那么eax寄存器中的值就为100
+lea eax,[00400000]
+那么eax寄存器中的值就是400000
+
+
+[2012-9-26 16:06:24] Challenge.Wang: 这个detroit万一死机卡住了，不能扣电池 怎么让他重启？
+[2012-9-26 16:07:04] Frankie.F.Zhang: 上上下下左左右右ABAB
+[9:02:39] Frankie.F.Zhang: [9:00] Terry: 
+<<< Derrick / Terry / Frankie / Carl / 我 / Jimmy / Cloudy
+
+　volatile对应的变量可能在你的程序本身不知道的情况下发生改变 
+　　比如多线程的程序，共同访问的内存当中，多个程序都可以操纵这个变量 
+　　你自己的程序，是无法判定何时这个变量会发生变化 
+　　还比如，他和一个外部设备的某个状态对应，当外部设备发生操作的时候，通过驱动程序和中断事件，系统改变了这个变量的数值，而你的程序并不知道。 
+　　对于volatile类型的变量，系统每次用到他的时候都是直接从对应的内存当中提取，而不会利用cache当中的原有数值，以适应它的未知何时会发生的变化，系统对这种变量的处理不会做优化——显然也是因为它的数值随时都可能变化的情况。 
+volatile一般使用的地方
+　　一般说来，volatile用在如下的几个地方： 
+　　1、中断服务程序中修改的供其它程序检测的变量需要加volatile； 
+　　2、多任务环境下各任务间共享的标志应该加volatile； 
+　　3、存储器映射的硬件寄存器通常也要加volatile说明，因为每次对它的读写都可能由不同意义； 
+　　另外，以上这几种情况经常还要同时考虑数据的完整性（相互关联的几个标志读了一半被打断了重写），在1中可以通过关中断来实 
+　　现，2中可以禁止任务调度，3中则只能依靠硬件的良好设计了。
+　　由于访问寄存器的速度要快过RAM，所以编译器一般都会作减少存取外部RAM的优化。
+
+这在JVM 1.2之前，Java的内存模型实现总是从主存读取变量，是不需要进行特别的注意的。而随着JVM的成熟和优化，现在在多线程环境下volatile关键字的使用变得非常重要。 
+　　在当前的Java内存模型下，线程可以把变量保存在本地内存（比如机器的寄存器）中，而不是直接在主存中进行读写。这就可能造成一个线程在主存中修改了一个变量的值，而另外一个线程还继续使用它在寄存器中的变量值的拷贝，造成数据的不一致。 
+　　要解决这个问题，只需要像在本程序中的这样，把该变量声明为volatile（不稳定的）即可，这就指示JVM，这个变量是不稳定的，每次使用它都到主存中进行读取。一般说来，多任务环境下各任务间共享的标志都应该加volatile修饰。
+
+　　Java? 语言包含两种内在的同步机制：同步块（或方法）和 volatile 变量。这两种机制的提出都是为了实现代码线程的安全性。其中 Volatile 变量的同步性较差（但有时它更简单并且开销更低），而且其使用也更容易出错。在这期的 Java 理论与实践中，Brian Goetz 将介绍几种正确使用 volatile 变量的模式，并针对其适用性限制提出一些建议。 
+
+　　锁提供了两种主要特性：互斥（mutual exclusion）和可见性（visibility）。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改前的值或不一致的值，这将引发许多严重问题。
+
+Android build script neet to update current.txt of api:
+if [ -f ../../android/frameworks/base/api/current.txt ]; then
+mkdroid $1 2>&1 | tee -a ../log/build_android.log
+grep -q "Error [0-9][0-9]*\| Killed\| Stop\.\| No rule to make target\|*** Waiting for unfinished jobs...." ../log/build_android.log
+success=$?
+if [ $success == "0" ]; then
+    need_update_api=`cat ../log/build_android.log | grep -c 'You have tried to change the API from what has been previously approved'`
+    echo "need:"$need_update_api
+fi
+else
+need_update_api="1"
+echo "current.txt is not exist, update api first..."
+fi
+
+
+larkin@bp153:~/c/su$ !1060
+nm b | grep -n BSP
+5:0000000000400860 r _ZL3BSP
+larkin@bp153:~/c/su$ !1061
+nm a | grep -n BSP
+1:0000000000400700 R BSP
+
+larkin@bp153:~/c/su$ readelf -a a | grep BSP
+    62: 0000000000400700    24 OBJECT  GLOBAL DEFAULT   16 BSP
+larkin@bp153:~/c/su$ readelf -a b | grep BSP
+    50: 0000000000400860    24 OBJECT  LOCAL  DEFAULT   16 _ZL3BSP
+larkin@bp153:~/libs$ readelf -a sensors.default.nonconst.so | grep HMI
+    25: 000043dc   132 OBJECT  GLOBAL DEFAULT   16 HMI
+
+The objdump of gcc
+        printf("%d\n",a);
+  400545:       8b 55 fc                mov    -0x4(%rbp),%edx
+  400548:       b8 5c 06 40 00          mov    $0x40065c,%eax
+  40054d:       89 d6                   mov    %edx,%esi
+  40054f:       48 89 c7                mov    %rax,%rdi
+  400552:       b8 00 00 00 00          mov    $0x0,%eax
+  400557:       e8 bc fe ff ff          callq  400418 <printf@plt>
+
+
+The objdump of g++ 
+        printf("%d\n",a);
+  400625:       be 64 00 00 00          mov    $0x64,%esi
+  40062a:       bf 2c 07 40 00          mov    $0x40072c,%edi
+  40062f:       b8 00 00 00 00          mov    $0x0,%eax
+  400634:       e8 b7 fe ff ff          callq  4004f0 <printf@plt>
+
+ELF格式提供了两种不同的视角，链接器把ELF文件看成是Section的集合，而加载器把ELF文件看成是Segment的集合。
+目标文件需要链接器做进一步处理，所以一定有Section Header Table；可执行文件需要加载运行，所以一定有Program Header Table；而共享库既要加载运行，又要在加载时做动态链接，所以既有Section Header Table又有Program Header Table。
+ELF Header中描述了操作系统是UNIX，体系结构是80386。Section Header Table中有8个Section Header，从文件地址200（0xc8）开始，每个Section Header占40字节，共320字节，到文件地址0x207结束。这个目标文件没有Program Header。文件地址是这样定义的：文件开头第一个字节的地址是0，然后每个字节占一个地址。
+动态链接，在可执行文件装载时或运行时，由操作系统的装载程序加载库。大多数操作系统将解析外部引用（比如库）作为加载过程的一部分。在这些系统上，可执行文件包含一个叫做import directory的表，该表的每一项包含一个库的名字。根据表中记录的名字，装载程序在硬盘上搜索需要的库，然后将其加载到内存中预先不确定的位置，之后根据加载库后确定的库的地址更新可执行程序。可执行程序根据更新后的库信息调用库中的函数或引用库中的数据。这种类型的动态加载成为装载时加载 ，被包括Windows和Linux的大多数系统采用。装载程序在加载应用软件时要完成的最复杂的工作之一就是加载时链接。 
+　　其他操作系统可能在运行时解析引用。在这些系统上，可执行程序调用操作系统API，将库的名字，函数在库中的编号和函数参数一同传递。操作系统负责立即解析然后代表应用调用合适的函数。这种动态链接叫做运行时链接 。因为每个调用都会有系统开销，运行时链接要慢得多，对应用的性能有负面影响。现代操作系统已经很少使用运行时链接。 
+　　可以动态链接的库，在Windows上是dynamic link library (DLL)，在UNIX或Linux上是Shared Library。库文件是预先编译链接好的可执行文件，存储在计算机的硬盘上。大多数情况下，同一时间多个应用可以使用一个库的同一份拷贝，操作系统不需要加载这个库的多个实例。 
+　　动态链接的最大缺点是可执行程序依赖分别存储的库文件才能正确执行。如果库文件被删除了，移动了，重命名了或者被替换为不兼容的版本了，那么可执行程序就可能工作不正常。这就是常说的DLL-hell。
+
+[8:41:04] John Ruan: 有2中方法可以调整suspend/resume顺序
+[8:43:32] John Ruan: 1.在board-msm8x60.c里注册device时，先注册的先resume，当然也就后suspend。
+2.如果dirverA和B，如果想让A比B先resume，可以在A的probe里注册device B。
+[8:46:18] John Ruan: I2C器件都依赖i2c_qup，qcom考虑到这个依赖，就在i2c_qup的probe里注册各个I2C器件的device，也就是采用的方法2.
+
+如果Cache没有缓存该数据，就去物理内存中取数据，但并不是要哪个字节就取哪个字节，而是把相邻的几十个字节都取上来缓存着，以备下次用到，这称为一个Cache Line，典型的Cache Line大小是32~256字节。如果计算机还配置了二级缓存，则在访问物理内存之前先用PA去二级缓存中查找。一级缓存是用VA寻址的，二级缓存是用PA寻址的，这是它们的区别。Cache所做的工作是由硬件自动完成的，而不是像寄存器一样由指令决定先做什么后做什么。
+
+?Cache从内存取数据时会预取一个Cache Line缓存起来，操作系统从硬盘读数据时会预读几个页面缓存起来，都是希望这些数据以后会被程序访问到。大多数程序的行为都具有局部性（Locality）的特点：它们会花费大量的时间反复执行一小段代码（例如循环），或者反复访问一个很小的地址范围中的数据（例如访问一个数组）。所以预读缓存的办法是很有效的：CPU取一条指令，我把和它相邻的指令也都缓存起来，CPU很可能马上就会取到；CPU访问一个数据，我把和它相邻的数据也都缓存起来，CPU很可能马上就会访问到。设想有两台计算机，一台有256KB的Cache，另一台没有Cache，两台计算机的内存都是512MB的，硬盘都是100GB的，虽然多出来256KB的Cache与内存、硬盘的容量相比微不足道，但访问Cache比访问内存、硬盘快几个数量级，由于局部性原理，CPU大部分时间是在和Cache打交道，有Cache的计算机明显会快很多。高速存储器的容量只能做得很小，却能显著提升计算机的性能，这就是Memory Hierarchy的意义所在。
+
+3.执行指令，读内存，取上来的数是3，保存到eax寄存器。注意，地址0x804a01c~0x804a01f里存储的四个字节不能按地址从低到高的顺序看成0x03000000，而要按地址从高到低的顺序看成0x00000003。也就是说，对于多字节的整数类型，低地址保存的是整数的低位，这称为小端（Little Endian）字节序（Byte Order）。x86平台是小端字节序的，而另外一些平台规定低地址保存整数的高位，称为大端（Big Endian）字节序。
+有些设备像内存芯片一样连接到处理器的地址总线和数据总线，正因为地址线和数据线上可以挂多个设备和内存芯片所以才叫“总线”，但不同的设备和内存芯片应该占不同的地址范围。访问这种设备就像访问内存一样，按地址读写即可，但和访问内存不同的是，往一个地址写数据只是给设备发一个命令，数据不一定要保存，而从一个地址读数据也不一定是读先前保存在这个地址的数据，而是得到设备的当前状态。设备中可供读写访问的单元通常称为设备寄存器（注意和CPU寄存器不是一回事），操作设备的过程就是读写这些设备寄存器的过程，比如向串口发送寄存器里写数据，串口设备就会把数据发送出去，读串口接收寄存器的值，就可以读取串口设备接收到的数据。
+
+在上图中，从CPU核引出的地址和数据总线有一端经总线接口引出到芯片引脚上了，还有一端没有引出，而是接到芯片内部集成的设备上，无论是在CPU外部接总线的设备还是在CPU内部接总线的设备都有各自的地址范围，都可以像访问内存一样访问，很多体系结构（比如ARM）采用这种方式操作设备，称为内存映射I/O（Memory-mapped I/O）。但是x86比较特殊，x86对于设备有独立的端口地址空间，CPU核需要引出额外的地址线来连接片内设备（和访问内存所用的地址线不同），访问设备寄存器时用特殊的in/out指令，而不是和访问内存用同样的指令，这种方式称为端口I/O（Port I/O）。
+
+操作系统（Operating System）本身也是一段保存在磁盘上的程序，计算机在启动时执行一段固定的启动代码（称为Bootloader）首先把操作系统从磁盘加载到内存，然后执行操作系统中的代码把用户需要的其它程序加载到内存。操作系统和其它用户程序的不同之处在于：操作系统是常驻内存的，而其它用户程序则不一定，用户需要运行哪个程序，操作系统就把它加载到内存，用户不需要哪个程序，操作系统就把它终止掉，释放它所占的内存。操作系统最核心的功能是管理进程调度、管理内存的分配使用和管理各种设备，做这些工作的程序称为内核（Kernel），在我的系统上内核程序是/boot/vmlinuz-2.6.28-13-generic文件，它在计算机启动时加载到内存并常驻内存。广义上操作系统的概念还包括一些必不可少的用户程序，比如Shell是每个Linux系统必不可少的，而Office办公套件则是可有可无的，所以前者也属于广义上操作系统的范畴，而后者属于应用软件。
+
+首先引入两个概念，虚拟地址和物理地址。如果处理器没有MMU，或者有MMU但没有启用，CPU执行单元发出的内存地址将直接传到芯片引脚上，被内存芯片（以下称为物理内存，以便与虚拟内存区分）接收，这称为物理地址（Physical Address，以下简称PA），如下图所示。
+如果处理器启用了MMU，CPU执行单元发出的内存地址将被MMU截获，从CPU到MMU的地址称为虚拟地址（Virtual Address，以下简称VA），而MMU将这个地址翻译成另一个地址发到CPU芯片的外部地址引脚上，也就是将VA映射成PA，如下图所示。
+MMU将VA映射到PA是以页（Page）为单位的，32位处理器的页尺寸通常是4KB。例如，MMU可以通过一个映射项将VA的一页0xb7001000~0xb7001fff映射到PA的一页0x2000~0x2fff，如果CPU执行单元要访问虚拟地址0xb7001008，则实际访问到的物理地址是0x2008。物理内存中的页称为物理页面或者页帧（Page Frame）。虚拟内存的哪个页面映射到物理内存的哪个页帧是通过页表（Page Table）来描述的，页表保存在物理内存中，MMU会查找页表来确定一个VA应该映射到什么PA。
+MMU除了做地址转换之外，还提供内存保护机制。各种体系结构都有用户模式（User Mode）和特权模式（Privileged Mode）之分，操作系统可以在页表中设置每个内存页面的访问权限，有些页面不允许访问，有些页面只有在CPU处于特权模式时才允许访问，有些页面在用户模式和特权模式都可以访问，访问权限又分为可读、可写和可执行三种。这样设定好之后，当CPU要访问一个VA时，MMU会检查CPU当前处于用户模式还是特权模式，访问内存的目的是读数据、写数据还是取指令，如果和操作系统设定的页面权限相符，就允许访问，把它转换成PA，否则不允许访问，产生一个异常（Exception）。异常的处理过程和中断类似，不同的是中断由外部设备产生而异常由CPU内部产生，中断产生的原因和CPU当前执行的指令无关，而异常的产生就是由于CPU当前执行的指令出了问题，例如访问内存的指令被MMU检查出权限错误，除法指令的除数为0等都会产生异常。
+
+通常操作系统把虚拟地址空间划分为用户空间和内核空间，例如x86平台的Linux系统虚拟地址空间是0x00000000~0xffffffff，前3GB（0x00000000~0xbfffffff）是用户空间，后1GB（0xc0000000~0xffffffff）是内核空间。用户程序加载到用户空间，在用户模式下执行，不能访问内核中的数据，也不能跳转到内核代码中执行。这样可以保护内核，如果一个进程访问了非法地址，顶多这一个进程崩溃，而不会影响到内核和整个系统的稳定性。CPU在产生中断或异常时不仅会跳转到中断或异常服务程序，还会自动切换模式，从用户模式切换到特权模式，因此从中断或异常服务程序可以跳转到内核代码中执行。事实上，整个内核就是由各种中断和异常处理程序组成的。总结一下：在正常情况下处理器在用户模式执行用户程序，在中断或异常情况下处理器切换到特权模式执行内核程序，处理完中断或异常之后再返回用户模式继续执行用户程序。
+
+The endianness of the 32-bit SPARC V8 architecture is purely big-endian. The 64-bit SPARC V9 architecture uses big-endian instructions, but can access data in either big-endian or little-endian byte order, chosen either at the application instruction (load/store) level or at the memory page level (via an MMU setting). The latter is often used for accessing data from inherently little-endian devices, such as those on PCI buses.
+
+现代计算机都是基于Von Neumann体系结构的，不管是嵌入式系统、PC还是服务器。这种体系结构的主要特点是：CPU（CPU，Central Processing Unit，中央处理器，或简称处理器Processor）和内存（Memory）是计算机的两个主要组成部分，内存中保存着数据和指令，CPU从内存中取指令（Fetch）执行，其中有些指令让CPU做运算，有些指令让CPU读写内存中的数据。本章简要介绍组成计算机的CPU、内存和设备以及它们之间的关系，为后续章节的学习打下基础。
+
+我们都见过像这样挂在墙上的很多个邮箱，每个邮箱有一个房间编号，根据房间编号找到相应的邮箱投入信件或取出信件。内存与此类似，每个内存单元有一个地址（Address），内存地址是从0开始编号的整数，CPU通过地址找到相应的内存单元，取其中的指令或者读写其中的数据。与邮箱不同的是，一个地址所对应的内存单元不能存很多东西，只能存一个字节，以前讲过的int、float等多字节的数据类型保存在内存中要占用连续的多个地址，这种情况下数据的地址是它所占内存单元的起始地址。
+
+?程序计数器（PC，Program Counter），是一种特殊寄存器，保存着CPU取下一条指令的地址，CPU按程序计数器保存的地址去内存中取指令然后解释执行，这时程序计数器保存的地址会自动加上该指令的长度，指向内存中的下一条指令。
+?地址和数据总线（Bus）。CPU和内存之间用地址总线、数据总线和控制线连接起来，每条线上有1和0两种状态。如果在执行指令过程中需要访问内存，比如从内存读一个数到寄存器，执行过程可以想像成这样：
+
+上图中画了32条地址线和32条数据线，CPU寄存器也是32位，可以说这种体系结构是32位的，比如x86就是这样的体系结构，目前主流的处理器是32位或64位的。地址线、数据线和CPU寄存器的位数通常是一致的，从上图可以看出数据线和CPU寄存器的位数应该一致，另外有些寄存器（比如程序计数器）需要保存一个内存地址，因而地址线和CPU寄存器的位数也应该一致。处理器的位数也称为字长，字（Word）这个概念用得比较混乱，在有些上下文中指16位，在有些上下文中指32位（这种情况下16位被称为半字Half Word），在有些上下文中指处理器的字长，如果处理器是32位那么一个字就是32位，如果处理器是64位那么一个字就是64位。32位计算机有32条地址线，地址空间（Address Space）从0x00000000到0xffffffff，共4GB，而64位计算机有更大的地址空间。
+最后还要说明一点，本节所说的地址线、数据线是指CPU的内总线，是直接和CPU的执行单元相连的，内总线经过MMU和总线接口的转换之后引出到芯片引脚才是外总线，外地址线和外数据线的位数都有可能和内总线不同
+
+计算机只能对数字做运算，符号、声音、图像在计算机内部都要用数字表示，指令也不例外，上表中的机器语言完全由十六进制数字组成。最早的程序员都是直接用机器语言编程，但是很麻烦，需要查大量的表格来确定每个数字表示什么意思，编写出来的程序很不直观，而且容易出错，于是有了汇编语言，把机器语言中一组一组的数字用助记符（Mnemonic）表示，直接用这些助记符写出汇编程序，然后让汇编器（Assembler）去查表把助记符替换成数字，也就把汇编语言翻译成了机器语言。从上面的例子可以看出，汇编语言和机器语言的指令是一一对应的，汇编语言有三条指令，机器语言也有三条指令，汇编器就是做一个简单的替换工作，例如在第一条指令中，把movl ?,%eax这种格式的指令替换成机器码a1 ?，?表示一个地址，在汇编指令中是0x804a01c，转换成机器码之后是1c a0 04 08（这是指令中的十六进制数的小端表示，小端表示将在第 5.1 节 “目标文件”介绍）。
+
+从上面的例子还可以看出，C语言的语句和低级语言的指令之间不是简单的一一对应关系，一条a=b+1;语句要翻译成三条汇编或机器指令，这个过程称为编译（Compile），由编译器（Compiler）来完成，显然编译器的功能比汇编器要复杂得多。用C语言编写的程序必须经过编译转成机器指令才能被计算机执行，编译需要花一些时间，这是用高级语言编程的一个缺点，然而更多的是优点。首先，用C语言编程更容易，写出来的代码更紧凑，可读性更强，出了错也更容易改正。其次，C语言是可移植的（Portable）或者称为平台无关的（Platform Independent）。
+
+平台这个词有很多种解释，可以指计算机体系结构（Architecture），也可以指操作系统（Operating System），也可以指开发平台（编译器、链接器等）。不同的计算机体系结构有不同的指令集（Instruction Set），可以识别的机器指令格式是不同的，直接用某种体系结构的汇编或机器指令写出来的程序只能在这种体系结构的计算机上运行，然而各种体系结构的计算机都有各自的C编译器，可以把C程序编译成各种不同体系结构的机器指令，这意味着用C语言写的程序只需稍加修改甚至不用修改就可以在各种不同的计算机上编译运行。各种高级语言都具有C语言的这些优点，所以绝大部分程序是用高级语言编写的，只有和硬件关系密切的少数程序（例如驱动程序）才会用到低级语言。还要注意一点，即使在相同的体系结构和操作系统下，用不同的C编译器（或者同一个C编译器的不同版本）编译同一个程序得到的结果也有可能不同，C语言有些语法特性在C标准中并没有明确规定，各编译器有不同的实现，编译出来的指令的行为特性也会不同，应该尽量避免使用不可移植的语法特性。
+
+总结一下编译执行的过程，首先你用文本编辑器写一个C程序，然后保存成一个文件，例如program.c（通常C程序的文件名后缀是.c），这称为源代码（Source Code）或源文件，然后运行编译器对它进行编译，编译的过程并不执行程序，而是把源代码全部翻译成机器指令，再加上一些描述信息，生成一个新的文件，例如a.out，这称为可执行文件，可执行文件可以被操作系统加载运行，计算机执行该文件中由编译器生成的指令。
+
+这是我们的第一个思考题。本书的思考题通常要求读者系统地总结当前小节的知识，结合以前的知识，并经过一定的推理，然后作答。本书强调的是基本概念，读者应该抓住概念的定义和概念之间的关系来总结，比如本节介绍了很多概念：程序由语句或指令组成，计算机只能执行低级语言中的指令（汇编语言的指令要先转成机器码才能执行），高级语言要执行就必须先翻译成低级语言，翻译的方法有两种－－编译和解释，虽然有这样的不便，但高级语言有一个好处是平台无关性。什么是平台？一种平台，就是一种体系结构，就是一种指令集，就是一种机器语言，这些都可看作是一一对应的，上文并没有用“一一对应”这个词，但读者应该能推理出这个结论，而高级语言和它们不是一一对应的，因此高级语言是平台无关的，概念之间像这样的数量对应关系尤其重要。那么编译和解释的过程有哪些不同？主要的不同在于什么时候翻译和什么时候执行。
+
+
+
+一个汉字=2个英文字母=2字节
+官方标准： 
+1汉字=2字节 
+1字节（Byte)＝8字位＝8个二进制数 
+1字位(bit)＝1个二进制数 
+1B=8b 
+1KB=1024B 
+1MB=1024KB 
+1GB=1024MB 
+
+硬件商标准： 
+1GB=1000MB 
+1MB=1000KB 
+1KB=1000B 
+通常情况下，把B称为字节、b称为字位、KB称为千字节、MB称为兆字节、GB称为吉字节。
+
+CPUs also had relatively few registers, for several reasons:
+More registers also implies more time-consuming saving and restoring of register contents on the machine stack.
+A large number of registers requires a large number of instruction bits as register specifiers, meaning less dense code (see below).
+CPU registers are more expensive than external memory locations; large register sets were cumbersome with limited circuit boards or chip integration.
+
+RISC was developed as an alternative to what is now known as CISC. Over the years, other strategies have been implemented as alternatives to RISC and CISC. Some examples are VLIW, MISC, OISC, massive parallel processing, systolic array, reconfigurable computing, and dataflow architecture.
+
+One more issue is that some complex instructions are difficult to restart, e.g. following a page fault. In some cases, restarting from the beginning will work (although wasteful), but in many cases this would give incorrect results. Therefore the machine needs to have some hidden state to remember which parts went through and what remains to be done. With a load/store machine, the program counter is sufficient to describe the state of the machine.
+
+Some CPUs have been specifically designed to have a very small set of instructions – but these designs are very different from classic RISC designs, so they have been given other names such as minimal instruction set computer (MISC), or transport triggered architecture (TTA), etc.
+
+A number of vendors, including Qualcomm, are attempting to enter the PC market with ARM-based devices dubbed smartbooks, riding on the netbook trend and rising acceptance of GNU/Linux distributions, a number of which already have ARM builds.[26] Other companies are choosing to use Windows CE.[citation needed]
+
+RISC architecture are now used across a wide range of platforms, from cellular telephones and tablet computers to some of the world's fastest supercomputers such as the K computer, the fastest on the TOP500 list in 2011.[4][5]
+
+High end RISC and supercomputingSPARC, by Oracle (formerly Sun Microsystems), and Fujitsu
+Hewlett-Packard's PA-RISC, also known as HP-PA, (discontinued at the end of 2008)
+Alpha, used in single-board computers, workstations, servers and supercomputers from Digital Equipment Corporation, Compaq and HP, discontinued as of 2007.
+IBM's Power Architecture, used on many IBM's supercomputers, midrange servers and workstations
+
+在这里extern关键字表示这个标识符具有External Linkage。External Linkage的定义在上一章讲过，但现在应该更容易理解了，push这个标识符具有External Linkage指的是：如果把main.c和stack.c链接在一起，如果push在main.c和stack.c中都有声明（在stack.c中的声明同时也是定义），那么这些声明指的是同一个函数，链接之后是同一个GLOBAL符号，代表同一个地址。函数声明中的extern也可以省略不写，不写extern的函数声明也表示这个函数具有External Linkage。
+RISC: The term "reduced" in that phrase was intended to describe the fact that the amount of work any single instruction accomplishes is reduced—at most a single data memory cycle—compared to the "complex instructions" of CISC CPUs that may require dozens of data memory cycles in order to execute a single instruction.[20] In particular, RISC processors typically have separate instructions for I/O and data processing.
+
+组成共享库的目标文件和一般的目标文件有所不同，在编译时要加-fPIC选项，例如：
+$ gcc -c -fPIC stack/stack.c stack/push.c stack/pop.c stack/is_empty.c-f后面跟一些编译选项，PIC是其中一种，表示生成位置无关代码（Position Independent Code）。那么用-fPIC生成的目标文件和一般的目标文件有什么不同呢？下面分析这个问题。
+我们知道一般的目标文件称为Relocatable，在链接时可以把目标文件中各段的地址做重定位，重定位时需要修改指令。我们先不加-fPIC选项编译生成目标文件：
+$ gcc -c -g stack/stack.c stack/push.c stack/pop.c stack/is_empty.c
+
+注意，变量声明和函数声明有一点不同，函数声明的extern可写可不写，而变量声明如果不写extern意思就完全变了，如果上面的例子不写extern就表示在main函数中定义一个局部变量top。另外要注意，stack.c中的定义是int top = -1;，而main.c中的声明不能加Initializer，如果上面的例子写成extern int top = -1;则编译器会报错。
+用static关键字声明具有Internal Linkage的函数也是出于这个目的。在一个模块中，有些函数是提供给外界使用的，也称为导出（Export）给外界使用，这些函数声明为External Linkage的。有些函数只在模块内部使用而不希望被外界访问到，则声明为Internal Linkage的。
+其中已经定义了STACK_H这个宏，因此第二次再包含stack.h就相当于包含了一个空文件，这就避免了头文件的内容被重复包含。这种保护头文件的写法称为Header Guard，以后我们每写一个头文件都要加上Header Guard，宏定义名就用头文件名的大写形式，这是规范的做法。
+
+重复包含头文件有以下问题：
+
+1.一是使预处理的速度变慢了，要处理很多本来不需要处理的头文件。
+2.二是如果有foo.h包含bar.h，bar.h又包含foo.h的情况，预处理器就陷入死循环了（其实编译器都会规定一个包含层数的上限）。
+3.三是头文件里有些代码不允许重复出现，虽然变量和函数允许多次声明（只要不是多次定义就行），但头文件里有些代码是不允许多次出现的，比如typedef类型定义和结构体Tag定义等，在一个程序文件中只允许出现一次。
+既然要#include头文件，那我不如直接在main.c中#include "stack.c"得了。这样把stack.c和main.c合并为同一个程序文件，相当于又回到最初的例 12.1 “用堆栈实现倒序打印”了。当然这样也能编译通过，但是在一个规模较大的项目中不能这么做，假如又有一个foo.c也要使用stack.c这个模块怎么办呢？如果在foo.c里面也#include "stack.c"，就相当于push、pop、is_empty这三个函数在main.c和foo.c中都有定义，那么main.c和foo.c就不能链接在一起了。如果采用包含头文件的办法，那么这三个函数只在stack.c中定义了一次，最后可以把main.c、stack.c、foo.c链接在一起。
+同样道理，头文件中的变量和函数声明一定不能是定义。如果头文件中出现变量或函数定义，这个头文件又被多个.c文件包含，那么这些.c文件就不能链接在一起了。
+我们先前所说的规则“函数声明加不加extern关键字都一样”。上表也说明了在文件作用域允许定义函数，在块作用域不允许定义函数，或者说函数定义不能嵌套。另外，在块作用域中不允许用static关键字声明函数。
+
+
+
+
+虽然在foo.c中定义了函数foo，但这个函数只具有Internal Linkage，只有在foo.c中多次声明才表示同一个函数，而在main.c中声明就不表示它了。如果把foo.c编译成目标文件，函数名foo在其中是一个LOCAL的符号，不参与链接过程，所以在链接时，main.c中用到一个External Linkage的foo函数，链接器却找不到它的定义在哪儿，无法确定它的地址，也就无法做符号解析，只好报错。凡是被多次声明的变量或函数，必须有且只有一个声明是定义，如果有多个定义，或者一个定义都没有，链接器就无法完成链接。
+
+
+
+thermal protection = thermal mitigation
+#if defined a 
+#undef a 
+#define a 200 
+#endif 
+
+#ifndef a //如果a没有被定义 
+#define a 100 
+#endif 
+
+
+BSP Modules Division : 
+Camera Decode Audio FM GPS RF BT Wifi Boot 
+Storage USB Download Recovery Sensors Charge PM Touch
+Factory Display Pmic-misc Log Build proc-comm Debug Performance Driver.Module
+
+Call stack: a stack data structure stores info about the active subroutines of a computer game. 
+=> execution stack, control stack, run-time stack or machine stack. 
+Adding a subroutine's entry to the call stack is called widing; conversely, removing entries is unwinding. 
+The purpose of a call stack is: 
+storing the return address
+local data storage
+parameter passing
+evaluation stack
+pointer to current instance
+enclosing subroutine context
+other return state
+
+http://www.cnbeta.com/articles/163974.htm
+Most I/O operations are buffered through the kernel.
+When user-space buffer is page-aligned, the SCSI tape driver performs its I/O without copying the data.
+Data transfer can be triggered in two ways: either the software asks for data (via a
+function such as read) or the hardware asynchronously pushes data to the system.
+
+The PCI code distinguishes 2 types of DMA mappings,
+depending on how long the DMA buffer is expected to stay around:
+1. Coherent DMA mappings: exist for the lift of the driver.
+2. Streaming DMA mappings: set up for a single operation.
+
+__attribute__ 是 gnu c 编译器的一个功能，它用来让开发者使用此功能给所声明的函数或者变量附加一个属性，以方便编译器进行错误检查，其实就是一个内核检查器。
+__user 宏简单告诉编译器（通过 noderef ）不应该解除这个指针的引用（因为在当前地址空间中它是没有意义的）。 
+
+Edit multiple files in vi 
+编辑数个文件
+:args 显示编辑名单中的各个文件名
+:n       读入编辑名单中的下一个文件
+:rew    读入编辑名单中的第一个文件
+:e# 读入编辑名单内的前一个文件
+:e file    读入另一个文件进vi(此文件可不在编辑名单内）,若原文件经修改还没有
+存档，则应先以: w 存档。
+:e! file 强迫读入另一个文件进入vi，原文件不作存档动作。
+
+示例1,单个切换
+vi file1 file2 file3
+:n 切换到文件2 (n=next)
+:e# 或 :N    切换回到刚才编辑的文件
+比如当前编辑文件为a，:n跳至b,再:n跳至c,:e#回到b,想回到a的话用:e a
+或者直接输入:e a, :e b, :e c,在三个文件间切换
+
+示例2，分屏切换
+打开一个,vi 文件名
+然后在vi的命令输入状态下输入
+:sp 另外一个文件的路径及文件名，如此就可以在一个窗口打开多个文件了。
+或者用 vi -o file1 file2 file3....用分割屏幕窗口方式同时打开多个文件。
+可以使用 ctrl 加两次按 w 或者ctrl + w 然后按上下键在上下窗口间切换。
+
+在多个文件间复制粘贴内容
+vi多文件时，文件之间的拷贝复制只能通过命名缓存进行
+如
+"a3yy  把3行内容复制到命名为a的缓冲区
+"ap 把名字为a的缓冲区内容拷贝到当前位置
+（此时，不是输入冒号，而是输入“）
+
+在vi下使用
+：new newfile，就可以打开多个文件进行编辑，使用ctl+w进行切换；
+dd：删除一行
+：vnew可以横着打开文件
+
+
+gcc编译器是自动连接所需的C库文件。
+int main(int argc, char *argv[], char *envp[])
+Program segments:
+Text segment: Includes the program's executable code.
+Initialized data segment:
+The initialized data: the static variables and global variables
+Unitialized data segment (bss):
+The unitialized data: All global variables 
+Stack segment:
+The program stack: return addresses, parameters and local variables. 
+BSS段：BSS段（bss segment）通常是指用来存放程序中未初始化的全局变量的一块内存区域。BSS是英文Block Started by Symbol的简称。BSS段属于静态内存分配。
+
+100  * bss (Block Started by Symbol) - uninitialized data（kernel）
+101  * zeroed during startup
+
+数据段：数据段（data segment）通常是指用来存放程序中已初始化的全局变量的一块内存区域。数据段属于静态内存分配。
+代码段：代码段（code/text segment）通常是指用来存放程序执行代码的一块内存区域。这部分区域的大小在程序运行前就已经确定，并且内存区域通常属于只读, 某些架构也允许代码段为可写，即允许修改程序。在代码段中，也有可能包含一些只读的常数变量，例如字符串常量等。
+堆（heap）：堆是用于存放进程运行中被动态分配的内存段，它的大小并不固定，可动态扩张或缩减。当进程调用malloc等函数分配内存时，新分配的内存就被动态添加到堆上（堆被扩张）；当利用free等函数释放内存时，被释放的内存从堆中被剔除（堆被缩减）
+
+栈(stack)：栈又称堆栈， 是用户存放程序临时创建的局部变量，也就是说我们函数括弧“{}”中定义的变量（但不包括static声明的变量，static意味着在数据段中存放变量）。除此以外，在函数被调用时，其参数也会被压入发起调用的进程栈中，并且待到调用结束后，函数的返回值也会被存放回栈中。由于栈的先进先出特点，所以栈特别方便用来保存/恢复调用现场。从这个意义上讲，我们可以把堆栈看成一个寄存、交换临时数据的内存区。
+
+
+_________________________________________________________________
+gcc 内嵌汇编语法  asm language grammar
+1.引用寄存器要在寄存器号前加百分号%,如“movl %eax, %ebx”。
+
+2. 操作数顺序
+操作数排列是从源（左）到目的（右），如“movl %eax(源）, %ebx(目的）”
+
+3. 立即数
+使用立即数，要在数前面加符号$, 如“movl $0x04, %ebx”
+或者：
+para = 0x04
+movl $para, %ebx
+
+4. 符号常数
+符号常数直接引用如
+value: .long 0x12a3f2de
+movl value , %ebx
+指令执行的结果是将常数0x12a3f2de装入寄存器ebx
+5.引用符号地址
+在符号前加符号$, 如“movl $value, % ebx”则是将符号value的地址装入寄存器ebx。
+
+6.操作数的长度
+用加在指令后的符号表示b(byte, 8-bit), w(word, 16-bits), l(long, 32-bits)，如“movb %al, %bl”，“movw %ax, %bx”，“movl %eax, %ebx ”。
+
+7.如果没有指定操作数长度的话，编译器将按照目标操作数的长度来设置。
+
+8.基本部分"movs"和"movz"（对应Intel语法的movsx和movzx），后面跟上源操作数长度和目的操作数长度。movsbl意味着movs （from）byte （to）long；movbw意味着movs （from）byte （to）word；movswl意味着movs （from）word （to）long。对于movz指令也一样。比如指令“movsbl %al, %edx”意味着将al寄存器的内容进行符号扩展后放置到edx寄存器中。
+9.cbw -- sign-extend byte in %al to word in %ax； 
+cwde -- sign-extend word in %ax to long in %eax； 
+cwd -- sign-extend word in %ax to long in %dx:%ax； 
+cdq -- sign-extend dword in %eax to quad in %edx:%eax；
+对应的AT&T语法的指令为cbtw，cwtl，cwtd，cltd。
+
+10.调用和跳转指令
+段内调用和跳转指令为"call"，"ret"和"jmp"，段间调用和跳转指令为"lcall"，"lret"和"ljmp"。
+段间调用和跳转指令的格式为“lcall/ljmp $SECTION, $OFFSET”，而段间返回指令则为“lret $STACK-ADJUST”。
+
+◆ linux下的汇编程序是由3个常用的段组成，分别是数据段、bss段、代码段。所有的汇编程序必须有代码段『其格式：.section .text』，该区域是放指令码的地方；数据段它是可选的『其格式：.section .data或.rodata』，用.data命令声明的数据段，这个段的任何数据元素都保留在内存中并且可以被汇编语言的指令读取和写入，如果用.rodata命令声明的数据段，这个段中的任何数据元素只能按照只读『read only』的方式访问；bss段声明的数据『其格式：.section .bss』是用0或null来初始化的，它有一个好处就是这部分的数据不在可执行程序中，所以它不像data段声明多少数据就占用多少空间。
+◆  linux下汇编程序中内存的变址查询模式：
+base_address(offset_address,index,size)à base_address + offset_address + index * size；
+◆  当使用标签引用内存位置中包含的数据值时，前面必须通过美元符号$才能获得数据值的地
+
+const定义的常量叫做常变量原因有二：const定义常量像变量一样检查类型；
+const可以在任何地方定义常量，编译器对它的处理过程与变量相似，只是分配内存的地方不同。
+宏是预处理命令，即在预编译阶段进行字节替换。const常量是变量，在执行时const定义的只读变量在程序运行过程中只有一份拷贝（因为它是全局的只读变量，存放在静态存储区的只读数据区。根据c/c++语法，当你声明该量为常量，即告诉程序和编译器，你不希望此量被修改。 程序的实现，为了保护常量，特将常量都放在受保护的静态存储区内。凡是试图修改这个区域内的值，都将被视为非法，并报错。 这不能理解为凡是字符串都是放在静态存储区域的。这个跟数据类型没有关系，而是这个量是变量还是常量的问题。例如，一个字符串变量就是可以被修改的。 这种静态存储区域的保护机制是由编译器实现的，而非存储该值的内存的电器属性。换言之，实质上内存永远都可以被用户随意修改，只是编译器给用户的代码注入了一些自己的保护代码，通过软件手段将这段内存软保护起来。这种保护在汇编级别可以轻松突破，其保护也就无效了。）。
+const定义常量从汇编的角度来看，只是给出了对应的内存地址，而不是象#define一样给出的是立即数，所以const定义的常量在程序运行过程中只有一份拷贝，而#define定义的常量在内存中有若干个拷贝。C++中的const默认为内部连接，也就是说，const仅在const被定义过的文件里才是可见的，而在连接时不能被其他编译单元看到。当定义一个const时，必须赋一个值给它，除非用extern作出了清楚的说明。通常C++编译器并不为const创建存储空间，相反它把这个定义保存在它的符号表里。但是extern强制进行了存储空间分配（另外还有一些情况，如取一个const的地址，也要进行存储空间分配），由于extern意味着使用外部连接，因此必须分配存储空间，这也就是说有几个不同的编译单元应当能够引用它，所以它必须存储空间。
+Const DataType VariableName = VariableValue ;为什么const能很好地取代预定义语句？const 到底有什么大神通，使它可以振臂一挥取代预定义语句呢？
+1． 首先，以const 修饰的常量值，具有不可变性，这是它能取代预定义语句的基础。
+2． 第二，很明显，它也同样可以避免意义模糊的数字出现，同样可以很方便地进行参数的调整和修改。
+3． 第三，C++的编译器通常不为普通const常量分配存储空间，而是将它们保存在符号表中，这使得它成为一个编译期间的常量，没有了存储与读内存的操作，使得它的效率也很高，同时，这也是它取代预定义语句的重要基础。
+为什么说这一点是也是它能取代预定义语句的基础?
+这是因为，编译器不会去读存储的内容，如果编译器为const分配了存储空间，它就不能够成为一个编译期间的常量了。
+4． 最后，const定义也像一个普通的变量定义一样，它会由编译器对它进行类型的检测，消除了预定义语句的隐患。
+
+const全局变量存放在.rodata只读数据段里，修改会造成SEGV
+const局部变量存放在栈上，和普通局部变量无差别，可以用指针间接修改const值。
+c++里的常量折叠（或者常量替换)是将const常量放在符号表中，而并不给其分配内存。编译器直接进行替换优化。
+共享库共享的是代码部分，不是数据部分，而且本地变量，全局变量其实是在编译链接的时候符号识别的时候使用的。
+全局变量不是操作系统所有进程全局可见的。是源代码全局可见的
+
+const关键字在C语言中的作用仅仅是限定 不可以通过const变量来修改内存数据，但是可以通过别的方式，例如指针指向const变量然后再修改内存中的值。 
+但对于const关键字的优化gcc和g++的处理还有些不一样（以下对C/C++的描述可缩小范围为gcc/g++的描述）。 
+例如以下代码： 
+Code: 
+   1. #include    
+   2.    
+   3. int main()   
+   4. {   
+   5.     const int a = 100;   
+   6.     int *p = (int *)&a;   
+   7.     (*p)=1;   
+   8.     printf("%d",a);   
+   9.     return 0;   
+  10. }    
+在gcc下编译运行通过，输出1。 
+在g++下编译运行通过，输出100。
+调试过程中发现在printf("%d",a);这句的时候没有从内存中读取a的值，而是直接用100这个字面常量。
+这就是const关键字优化的结果，如果定义的时候换成volatile const int a = 100; 用volatile关键字限定的话就输出的1。 
+但是使用O2开关优化的时候，采用gcc/g++ (GCC) 3.4.5 (mingw-vista special)时，无论gcc还是g++都是输出100，加了volatile关键字也不起作用了。在gcc/g++ (GCC) 4.3.2 20081105 (Red Hat 4.3.2-7)中只要加入volatile，输出就是1。看来不同版本的编译器，不同的系统还有不一致的情况。所以这个结果提醒我们，不要试图修改const变量值，保不准会出现什么问题。
+
+09-14 13:16:42.359 E/HAL     (  563): dlsym from a shared object
+09-14 13:16:42.359 E/HAL     (  563): loaded HAL id=sensors path=/system/lib/hw/sensors.default.so hmi=0x0 handle=0xb6fd64c0
+USER     PID   PPID  VSIZE  RSS     WCHAN    PC         NAME
+system    563   143   577616 56732 ffffffff b6f72b74 S system_server
+
+$ ar rs libstack.a stack.o push.o pop.o is_empty.o
+ar: creating libstack.a库文件名都是以lib开头的，静态库以.a作为后缀，表示Archive。ar命令类似于tar命令，起一个打包的作用，但是把目标文件打包成静态库只能用ar命令而不能用tar命令。选项r表示将后面的文件列表添加到文件包，如果文件包不存在就创建它，如果文件包中已有同名文件就替换成新的。s是专用于生成静态库的，表示为静态库创建索引，这个索引被链接器使用。ranlib命令也可以为静态库创建索引，以上命令等价于：
+$ ar r libstack.a stack.o push.o pop.o is_empty.o
+$ ranlib libstack.a
+
+Linux下动态库查看方法：nm -D libavformat.so
+Linux下静态库查看方法：ar -t libavformat.a
+本篇文章来源于 Linux公社网站(www.linuxidc.com)  原文链接：http://www.linuxidc.com/Linux/2008-01/10262.htm
+
+！ > 算术运算符 > 关系运算符 > && > || > 赋值运算符
+同一优先级的运算符，运算次序由结合方向所决定。
+source 命令会把对应脚本中的内容读取到当前的bash 解释器中，在当前的执行环境中执行；其中定义的 function 以及通过 export 声明的变量等在 source 执行结束之后依然存在于当前的bash 环境中。比如我们常用的 source .bashrc 或者 source .profile 等目的是为了引用刚刚改动过的环境变量。
+Thumb指令集可以看作是ARM指令压缩形式的子集，它是为减小代码量而提出，具有16bit的代码密度。Thumb指令体系并不完整，只支持通用功能，必要时仍需要使用ARM指令，如进入异常时。其指令的格式与使用方式与ARM指令集类似，而且使用并不频繁，Thumb指令集作一般了解。
+ARM construction pattern:
+<opcode> {<cond>} {S}	<Rd>, <Rn>{,<operand2>}
+
+struct可以看作轻量级的class，但是区别如下：
+!)struct的默认访问属性为public，class的默认访问属性为private
+2)在用模版的时候只能写template<class   Type>或template<typename   Type>不能写template<struct   Type>。
+3)struct是从C继承来的，但在C++增加了类的特征。
+
+所有线程都有一个线程号，也就是Thread ID。其类型为pthread_t。通过调用pthread_self()函数可以获得自身的线程号。
+互斥锁和条件变量：通过synchronized关键字将取钥匙跟进门两个动作放在在一起，绑在一块。其中门就是条件变量，mutex就是这个门的互斥锁。
+因为这个变量/资源是共享的，可能会有多个进程或线程去修改它，那么就必须为它添加一个锁，这个锁是每次只有一个进程/线程可以获取到的。
+广州市越秀区博客计算机经营部“总经销的”鼠标垫“产品”，是正牌产品标识，感谢您的使用。
+AudioSystem::popCount(channels);
+//popCount 用于统计一个整数中有多少位为1.
+printk("Larkin get adie type : %d.\n", rc);
+Audio Low Temperature issue case : 00725243
+
+/* The early_suspend structure defines suspend and resume hooks to be called
+ * when the user visible sleep state of the system changes, and a level to
+ * control the order. They can be used to turn off the screen and input
+ * devices that are not used for wakeup.
+ * Suspend handlers are called in low to high level order, resume handlers are
+ * called in the opposite order. If, when calling register_early_suspend,
+ * the suspend handlers have already been called without a matching call to the
+ * resume handlers, the suspend handler will be called directly from
+ * register_early_suspend. This direct call can violate the normal level order.
+ */
+
+ioctl 是用来设置硬件控制寄存器，或者读取硬件状态寄存器的数值之类的。
+read,write 是把数据丢入缓冲区，硬件的驱动从缓冲区读取数据一个个发送或者把接收的数据送入缓冲区。
+
+
+struct {
+	int len;
+	char *str;
+} *p;
+
+In the same way, *p->str fetches whatever str points to; *p->str++ increments str after
+accessing whatever it points to (just like *s++); (*p->str)++ increments whatever str points
+to; and *p++->str increments p after accessing whatever str points to.
+
+ ext4 file system 
+ Journal checksuming: Journal can safely avoid a disk I/O wait during journaling, improving performace slightly. 
+ checksum其实是一种方法，一种保证数据完整或安全的机制。可以用在不同的方面啊，哪有需要去哪里
+ [10:58:56] Snail.Qian: 这个啊，我感觉是为了验证load本身有没有问题的
+
+位域在本质上就是一种结构类型， 不过其成员是按二进位分配的。
+位域的使用和结构成员的使用相同，其一般形式为： 位域变量名·位域名 位域允许用各种格式输出。
+C++ structure initialization method is different from c. 
+ 
+CONFIG_MSM8X60_RTAC is not set 改成 CONFIG_MSM8X60_RTAC=y 
+这样可以实时地调整ADSP里面的参数。
+arch/arm/configs/msm8660-perf_defconfig:372:# CONFIG_MSM8X60_RTAC is not set
+arch/arm/configs/msm8660-orange_defconfig:376:# CONFIG_MSM8X60_RTAC is not set
+CONFIG_MSM8X60_RTAC=y
+arch/arm/configs/msm8660_defconfig:375:# CONFIG_MSM8X60_RTAC is not set
+arch/arm/configs/msm8660-la_defconfig:375:# CONFIG_MSM8X60_RTAC is not set
+arch/arm/configs/qt8660_defconfig:398:# CONFIG_MSM8X60_RTAC is not set
+
+=====================================
+如何使用UART和EVB连接
+要准备的工具：
+以前用USB2UART的cable  + 10pin IO转2.5mm audio jack的转接板 (for Win)
+Poseidon用过的RS232转2.5mm audio jack的cable，需重新连接线，因为线的定义不一样 (for Linux and Win)
+超级终端或串口调试助手或类似工具 (for win)
+C-Kermit (for Linux)
+	Windows
+cable一头接PC USB，一头接转接板，转接板再接EVB上的UART3
+串口调试助手用于查看trace类
+超级终端用于交互比较方便，比如运行命令
+	Linux
+cable一头接PC COM1，另一头接EVB上UART3
+安装C-Kermit: sudo apt-get install ckermit
+启动COM1：sudo kermit –c
+关闭COM1：先Ctrl+\，再按c，最后q或者exit退出
+可以在里面交互，输入命令
+
+UART Trace 
+Linux初始化前使用的简单的调试方法,主要用来调试启动过程,直接将trace送到UART口,需要改代码重新编译:
+在./android/bootable/bootloader/legacy/include/boot/uart.h:
+#if 1
+#define boston_uart_putc(a) do{uart_putc(a);}while(0)
+#else
+#define boston_uart_putc(a) do{ }while(0)
+#endif
+在要判断的地方
+#include <boot/uart.h>
+boston_uart_putc(‘c’);
+或者使用
+#include <boot/boot.h>
+ dprintf("\nkernel  @ %x (%d bytes)\n", hdr->kernel_addr, hdr->kernel_size);
+kernel  @ 10008000 (2072172 bytes)
+cprintf("cmdline = '%s'\n", cmdline);
+cmdline = 'mem=108M console=ttyMSM2‘
+Reminder: 数据量大的时候可能会有数据丢失, 加的trace太多看起来不方便
+=====================================
+mod_timer(timer, expires) <==>
+del_timer(timer); 
+timer->expires = expires; 
+add_timer(timer);
+
+
+class String {
+public:
+     String(const char *str = NULL); // 普通构造函数
+     String(const String &other);    // 拷贝构造函数
+      ~ String(void);                 // 析构函数
+     String & operate =(const String &other);    // 赋值函数
+     private:
+     char    *m_data;                // 用于保存字符串
+};
+
+构造函数有个特殊的初始化方式叫“初始化表达式表”（简称初始化表）。初始化表位于函数参数表之后，却在函数体 {} 之前。这说明该表里的初始化工作发生在函数体内的任何代码被执行之前。
+构造函数初始化表的使用规则：如果类存在继承关系，派生类必须在其初始化表里调用基类的构造函数。
+构造从类层次的最根处开始，在每一层中，首先调用基类的构造函数，然后调用成员对象的构造函数。析构则严格按照与构造相反的次序执行，该次序是唯一的，否则编译器将无法自动执行析构过程。
+成员对象初始化的次序完全不受它们在初始化表中次序的影响，只由成员对象在类中声明的次序决定。这是因为类的声明是唯一的，而类的构造函数可以有多个，因此会有多个不同次序的初始化表。如果成员对象按照初始化表的次序进行构造，这将导致析构函数无法得到唯一的逆序。
+
+
+ERR_PTR()和PTR_ERR()都是很简单的类型转换，没有什么可说的。 
+IS_ERR()有一些妙处。 
+内核中的函数常常返回指针，问题是如果出错，也希望能够通过返回的指针体现出来。 
+所幸的是，内核返回的指针一般是指向页面的边界(4K边界)，即 
+Random access memory usage
+ptr & 0xfff == 0
+这样ptr的值不可能落在（0xfffff000，0xffffffff）之间， 
+而一般内核的出错代码也是一个小负数，在-1000到0之间，转变成unsigned long， 
+正好在（0xfffff000，0xffffffff)之间。因此可以用 
+
+(unsigned long)ptr > (unsigned long)-1000L
+
+来判断内核函数的返回值是一个有效的指针，还是一个出错代码。 
+
+Linux console keyguards:
+在LINUX环境里，有一些按键有特殊的含意。
+# Ctrl-U: 擦除一行光标前面的部分。
+# Ctrl-H: 擦除光标前面的一个字符。
+# Ctrl-D: 终止输入。(退出 shell，如果您正在使用 shell 的话)。
+# Ctrl-C: 终止当前正在运行的程序。
+# Ctrl-Z: 暂停程序。 (把它放到后台运行请看第 4.3.10.1 节, ``command
+&'')
+# Ctrl-S: 停止向屏幕输出。 [注释2]
+# Ctrl-Q: 重新激活向屏幕输出。
+默认的 shell，`bash’， 有历史编辑和 tab 补齐功能。
+
+# up-arrow: 开始历史命令搜索。
+# Ctrl-R: 开始增量历史命令搜索，可以按照关键字查查自己用过哪些命令。
+# TAB: 完整的把文件名输入到命令行。
+# Ctrl-V TAB: 输入 TAB 而不是扩展命令行。
+# Ctrl + P - 上一条命令
+# Ctrl + N - 下一条命令
+# Ctrl-U: 擦除一行光标前面的部分。
+# Ctrl + Y - 粘贴前一Ctrl+U类命令删除的字符 ，是粘贴不是撤销啊！ 
+下面的应用可能稍稍高级一点点
+# !! - 上一条命令
+# !-n - 倒数第N条历史命令
+# !-n:p - 打印上一条命令（不执行）
+# !?string？- 最新一条含有“string”的命令
+# !-n:gs/str1/str2/ - 将倒数第N条命令的str1替换为str2，并执行（若不加g,则仅替换第一个）
+其他一些有用的按键组合。
+Ctrl-Alt-Del:挂起或者重新启动系统，这三个按键在Linux下可以轻松地修改成关机的操作，这对于单用户的朋友还是很方便的[注释3]。
+# Ctrl + l - 清屏
+# Ctrl + A - 光标移到行首
+# Ctrl + E - 光标移到行尾
+# Ctrl + W - 清除光标之前一个单词
+# Ctrl + K - 清除光标到行尾的字符
+# Ctrl + T - 交换光标前两个字符
+# Ctrl + V - 输入控制字符 如Ctrl+v ,会输入^M
+# Ctrl + F - 光标后移一个字符
+# Ctrl + B - 光标前移一个字符
+# Ctrl + H - 删除光标前一个字符
+# Ctrl + x Ctrl + e : Edits the current line in the $EDITOR program, or vi if undefined
+# Ctrl + x Ctrl + r : Read in the contents of the inputrc file, and incorporate any bindings or variable assignments found there. 
+# Ctrl+x Ctrl+u : Incremental undo, separately remembered for each line. 
+# Ctrl+x Ctrl+v : Display version information about the current instance of bash. 
+# Ctrl+x Ctrl+x : Alternates the cursor with its old position. (C-x, because x has a crossing shape). 
+# Ctrl+y : (yank) adds the clipboard content from the cursor position. 
+# Ctrl+_ : Incremental undo, separately remembered for each line. 
+# Alt+b : (backward) moves the cursor backward one word. 
+# Alt+d : Cuts the word after the cursor. 
+# Alt+f : (forward) moves the cursor forward one word. 
+# Alt+l : Lowers the case of every character from the cursor's position to the end of the current word. 
+# Alt+r : Cancels the changes and puts back the line as it was in the history. 
+# Alt+u : Capitalizes every character from the cursor's position to the end of the current word. 
+# Alt+. : Insert the last argument to the previous command (the last word of the previous history entry). 
+
+
+# N++F - 光标后移N个单词，N为1时可省略
+# N++B - 光标前移N个单词，N为1时可省略
+# Left-click-and-drag mouse: 选择并且拷贝到剪贴板。
+# Click middle mouse button: 使用剪贴板的内容粘贴。
+# Meta-key (Emacs terminology) 传统的是使用 Left-Alt-key.
+但是有些系统使用 windows-key 实现 Meta-key.这里，为了在 Linux 字符界面下使用鼠标，您需要使用 `gpm’ 服务。 [注释4]
+[注释1] 在一个普通的 Linux 字符控制台，只有左手边的 Ctrl 和 Alt
+的键会按照期望工作。
+[注释2] 也就是不产生交互，我们输入的命令和系统回显的信息都不在屏幕中显示。您也可以禁止这些终端属性，使用： stty命令。
+[注释3]我通常编辑 `/etc/inITtab’ 来简化关机步骤。
+…
+# What to do when CTRL-ALT-DEL is pressed.
+ca:12345:ctrlaltdel:/sbin/shutdown -t1 -a -h now
+
+/dev/null 2>&1 解释
+crontab内容 ：50 18 5-30 * * /script/myscript.sh 1> /dev/null 2>&1
+其中 1> /dev/null 2>&1是什么意思？？
+dev/null 为系统垃圾箱
+&为后台运行
+但是 myscript 后面的1 和 /null后面的2 还有 &后面的1是什么意思？
+1代表标准输出，2代表错误信息输出.
+1>/dev/null 就是指将标准输出定向到空设备，
+2>&1，的意思是将错误输出定向到和1一样的输出设备，也同样是空.
+换句话说，就是不显示该程序执行过程中的任何信息
+cmd >a 2>a 和 cmd >a 2>&1 为什么不同？
+cmd >a 2>a ：stdout和stderr都直接送往文件 a ，a文件会被打开两遍，由此导致stdout和stderr互相覆盖。
+cmd >a 2>&1 ：stdout直接送往文件a ，stderr是继承了FD1的管道之后，再被送往文件a 。a文件只被打开一遍，就是FD1将其打开
+他们的不同点在于：
+cmd >a 2>a 相当于使用了FD1、FD2两个互相竞争使用文件 a 的管道；
+而cmd >a 2>&1 只使用了一个管道FD1，但已经包括了stdout和stderr。
+从IO效率上来讲，cmd >a 2>&1的效率更高。
+
+__attribute__机制是GNU C的一大特色，它可以设置函数属性、变量属性和类型属性等。可以通过它们向编译器提供更多数据，帮助编译器执行优化等。
+ __attribute__（（regparm（0）））：告诉gcc编译器该函数不需要通过任何寄存器来传递参数，参数只是通过堆栈来传递。
+ __attribute__（（regparm（3）））：告诉gcc编译器这个函数可以通过寄存器传递多达3个的参数，这3个寄存器依次为EAX、EDX 和 ECX.更多的参数才通过堆栈传递。这样可以减少一些入栈出栈操作，因此调用比较快。
+asmlinkage大都用在系统调用中。有一些情况下是需要明确的告诉编译器，我们是使用stack来传递参数的，比如X86中的系统调用，是先将参数压入stack以后调用sys_*函数的，所以所有的sys_*函数都有asmlinkage来告诉编译器不要使用寄存器来编译
+#define fastcall __attribute__((regparm(3))) 
+#define asmlinkage __attribute__((regparm(0))) 
+函数定义前加宏asmlinkage ,表示这些函数通过堆栈而不是通过寄存器传递参数。 
+gcc编译器在汇编过程中调用c语言函数时传递参数有两种方法：一种是通过堆栈，另一种是通过寄存器。缺省时采用寄存器，假如你要在你的汇编过程中调用c语言函数，并且想通过堆栈传递参数，你定义的c函数时要在函数前加上宏asmlinkage
+
+warning: initialization from incompatible pointer type static ssize_t device_write(struct file *, const char *, size_t, loff_t *);
+在函数的原型里是const char *，但在编写时缺少const，导致warning,加上const，warning消除。
+
+static ssize_t bmm_show_chip_id(struct device *dev,
+		struct device_attribute *attr, char *buf)
+{
+	return sprintf(buf, "%d\n", SENSOR_CHIP_ID_BMM);
+}
+
+static ssize_t bmm_show_op_mode(struct device *dev,
+		struct device_attribute *attr, char *buf)
+
+static DEVICE_ATTR(chip_id, S_IRUGO,
+		bmm_show_chip_id, NULL);
+static DEVICE_ATTR(op_mode, S_IRUGO|S_IWUSR,
+		bmm_show_op_mode, bmm_store_op_mode);
+
+static struct attribute *bmm_attributes[] = {
+	&dev_attr_chip_id.attr,
+	&dev_attr_op_mode.attr,
+	NULL
+};
+
+响应中断条件是:中断使能和中断标志同时成立时.
+一般来讲,响应中断后,有硬件清标志和软件清标志两种.(如果硬件不能清标志,说明书会说明).
+如果硬件不能请标志,而软件又没有清标志的话,会一直进入中断.会与设计思路违背.
+设计中断硬件的都是极端聪明的人，大多数类型中断都是一旦进入中断就硬件自动清楚申请位的。只有那些不能自动清除中断申请位的才要求用户自己清除
+如果不清中断，则退出后会再次进入中断。
+
+编程异常通常叫做软中断 
+软中断是通讯进程之间用来模拟硬中断的   一种信号通讯方式。 
+中断源发中段请求或软中断信号后，CPU   或接收进程在适当的时机自动进行中断 
+处理或完成软中断信号对应的功能 
+硬中断是硬件实现的中断，是程序运行时设备对它的中断
+IMAX ： 是一种高分辨率的电影放映系统，其银幕微微内凹，可铺满整面墙壁，支持放映 2D 、 3D 影片。 IMAX3D 是立体版的 IMAX 技术，能够产生逼真的全视野立体效果。
+ 
+Note that some functions are marked by `__init'.  These functions can
+be removed after kernel booting (or module loading) is completed.
+Likewise, functions marked by `__exit' are dropped by the compiler when
+the code is built into the kernel, as they would never be called.
+
+If you can choose between plain I2C communication and SMBus level
+communication, please use the latter. All adapters understand SMBus level
+commands, but only some of them understand plain I2C!
+
+Plain I2C communication
+-----------------------
+
+        int i2c_master_send(struct i2c_client *client, const char *buf,
+                            int count);
+        int i2c_master_recv(struct i2c_client *client, char *buf, int count);
+
+These routines read and write some bytes from/to a client. The client
+contains the i2c address, so you do not have to include it. The second
+parameter contains the bytes to read/write, the third the number of bytes
+to read/write (must be less than the length of the buffer, also should be
+less than 64k since msg.len is u16.) Returned is the actual number of bytes
+read/written.
+
+        int i2c_transfer(struct i2c_adapter *adap, struct i2c_msg *msg,
+                         int num);
+
+This sends a series of messages. Each message can be a read or write,
+and they can be mixed in any way. The transactions are combined: no
+stop bit is sent between transaction. The i2c_msg structure contains
+for each message the client address, the number of bytes of the message
+and the message data itself.
+
+static int i2c_check_addr_validity(unsigned short addr)
+{
+	/*
+	 * Reserved addresses per I2C specification:
+	 *  0x00       General call address / START byte
+	 *  0x01       CBUS address
+	 *  0x02       Reserved for different bus format
+	 *  0x03       Reserved for future purposes
+	 *  0x04-0x07  Hs-mode master code
+	 *  0x78-0x7b  10-bit slave addressing
+	 *  0x7c-0x7f  Reserved for future purposes
+	 */
+	if (addr < 0x08 || addr > 0x77)
+		return -EINVAL;
+	return 0;
+}
+
+completion和锁类似，有些动作是异步的，但你又想等它真正执行完了才进行下面的动作
+[2012-7-30 14:13:21] Snail.Qian: 就可以在执行完后，用wait_for_completion_timeout 函数去等待
+
+When you have resolved this problem run "git rebase --continue".
+If you would prefer to skip this patch, instead run "git rebase --skip".
+To restore the original branch and stop rebasing run "git rebase --abort".
+
+Linux 
+packages\apps\Launcher2\res\drawable-hdpi  ==> Logo
+你要改开机动画吗   只要在源码目录
+ ./frameworks/base/core/res/assets/images
+将对应的12张图片改了就行了。
+而相应的代码文件在  frameworks/base/cmds/bootanimation/BootAnimation.cpp
+Initialize logo:
+android\device\boss\orange\initlogo.rle
+Initialize bootanimation:
+android\device\boss\orange\bootanimation.zip
+
+#include <stdlib.h>  
+#include <stdio.h>  
+
+int main(void)  
+{  
+   printf("About to spawn command.com and run a DOS command\n");  
+   system("dir");  
+   return 0;  
+}
+
+snprintf(name, sizeof name, "pcm_in_%x", pcm->ac->session);
+wait_event_interruptible_timeout(queue, condition, timeout)
+signed long schedule_timeout(signed long timeout);
+
+Light LEDs:
+echo -n "any string" > /dev/short0
+Read current output value on port 0x378:
+dd if=/dev/short0 bs=1 count=1 | od -t x1
+ISA range I/O memory regions:
+[640KB, 1MB] <=> [0xA0000, 0x100000]
+
+#define switch_to(prev,next,last)  do {   if (last_task_used_math != next) {   struct pt_regs *regs = next->thread.uregs;   if (regs) regs->sr |= SR_FD;   }   last = sh64_switch_to(prev, &prev->thread, next,   &next->thread);  } while (0)
+
+
+Overrun: the receiver hardware is unable to hand received data to a hardware buffer because the input rate exceeds the receivers ability to handle the data. （ 由于接口输入速率超过接受方处理能力，导致丢包。）
+Underrun: There are no data in the output queue.
+(Transmit under run，与 Overrun相反，输出接口的缓存从输出队列中取以数据帧时，没有数据帧，是一种非常少见的硬件异常。)
+
+名称 描述 
+__devinit 用于标记初始化设备的函数，例如，对于PCI驱动程序，用于初始化的函数pci_driver->probe就是用此宏标识的。被其它由_devinit标记的函数调用的函数通常也由_devinit标记。 
+__devexit 用于标记设备卸载时被调用的函数。 
+__devexit_p 用于初始化由__devexit 标记的函数的指针。如果内核既支持模块也支持热拔插，则__devexit_p(fn)返回fn，否则返回NULL。可以参考“其它优化”一节 
+__devinitdata 用于标记函数使用的已初始化的数据，而这些函数兼顾设备初始化(如被_devinit标记)，因此共享其属性。 
+__devexitdata 与__devinitdata类似但与__devexit关联匹配. 
+
+void disable_irq(unsigned int); //关闭相应中断号中断
+void enable_irq(unsigned int);//开启相应中断号中断
+int set_irq_type(unsigned int irq, unsigned int type);//设置中断为何种触发模式
+void disable_irq_wake(unsigned int irq); //禁止中断唤醒功能
+void enable_irq_wake(unsigned int irq);//使能中断唤醒功能
+
+外部中断的驱动初始化时应该完成以下几个步骤: 
+1.把对应的引脚设置成中断功能 
+2.设置中断类型(IRQ或者FIQ) 
+3.设置触发方式 
+4.使能此中断 
+设置触发方式的函数接口 
+int set_irq_type(unsigned int irq, unsigned int type);
+
+使用数据区时，可以使用 lseek 来往上往下地定位数据。但像串口或键盘一类设备，使用的是数据流，所以定位这些设备没有意义；在这种情况下，不能简单地不声明 llseek 操作，因为默认方法是允许定位的。
+在 open 方法中调用 nonseekable_open() 时，它会通知内核设备不支持 llseek，nonseekable_open() 函数的实现定义在 fs/open.c 中：
+____________________________________________________________
+Hardware related nouns:
+Etch:　 将形成在晶圆表面上的薄膜全部，或特定处所去除至必要厚度的制程。 
+		蚀刻对象依薄膜种类可分为: poly, oxide, metal. 
+Plasma: 电浆是物质的第四状态.带有正,负电荷及中性粒子之总和;其中包含电子,正离子,负离子,中性分子,活性基及发散光子等,产生电浆的方法可使用高温或高电压. 
+Under-Etching: 系指被蚀刻材料，在被蚀刻途中停止造成应被去除的薄膜仍有残留. 
+Over-etching(过蚀刻 ) : 蚀刻过多造成底层被破坏. 
+Etch rate(蚀刻速率)   : 单位时间内可去除的蚀刻材料厚度或深度 
+Seasoning(陈化处理)   : 是在蚀刻室的清净或更换零件后，为要稳定制程条件，使用仿真（dummy） 晶圆进行数次的蚀刻循环。 
+open-drain or open-collector: 集电极开路 或 发射集开路. 
+硬磁和软磁是指在周围和自身内部存在磁场的物体或材质，又可分作“永久性磁铁”与“非永久性磁铁”，即“硬磁”与“软磁”。永久性磁铁可以是天然产物，又称天然磁石，也可以由人工制造（最强的磁铁是钕铁硼磁铁）。
+非永久性磁铁加热到一定的温度会突然失去磁性，这是由于组成磁铁的众多“元磁体”之排列从有序到无序所引起的；失去磁性的磁铁放入到磁场中，当磁化强度达到某一数值，它又被磁化，“元磁体”之排列又从无序到有序。 
+软磁：具有低矫顽力和高磁导率。应用最多的软磁材料是铁硅合金(硅钢片)以及各种软磁铁氧体等。
+硬磁：磁化后不易退磁而能长期保留磁性。硬磁铁氧体的晶体结构大致是六角晶系磁铅石型，其典型代表是钡铁氧体。
+
+[8:44:35] Nancy.Wang: 这不是xml里设置的  在DevelopmentSettings.java (y:\workspace\orangeics\android\packages\apps\settings\src\com\android\settings) 里的 onResume（）的第177行设置的
+[8:44:44] Larkin.Huang: ok
+[8:45:14] Nancy.Wang: 你可以把177和178行用 mKeepScreenOn.setChecked(true）；来替换
+[11:18:14] Larkin.Huang: [11:17] Larkin.Huang: 
+<<< 看芯片资料的时候，对于封装要注意哪些方面？
+[11:18:48] Larkin.Huang: 知道 pin 的定义和位置就可以？
+[11:29:05] Snail.Qian:  恩，是看pin，我会重点关注电源啊，时钟啊，数据通信啊，中断啊，使能啊，天线啊，等等。然后文章里如果提到对封装后的外接电路有什么特别需求的话，也看一下
+[11:29:47] Larkin.Huang: :| 要关注的东西果然不少哇
+[11:30:11] Larkin.Huang: data sheet 还是需要经常查阅的吧
+[11:30:47] Snail.Qian:  oh，刚刚是pin，芯片的话还要关注芯片特性啊，功能啊，使用方法啊，cmd集啊，时序啊，什么什么的
+[11:30:59] Larkin.Huang: 封装后的外接电路指的是参考电路图吧
+[11:32:02] Snail.Qian:  恩，是^_^ 以后review工程电路图的时候，如果发现我们自己设计的电路和参考电路差别比较大的话，最好向HW的RD咨询下原因
+时序其实就是个排程，比如你家的电视、DVD、功放、无线话筒发射机之类的，有个电源时序器的话，把所有设备的供电都由时序器供电，时序器再接入电源，时序器一开按照设备在时序器接口的先后一个一个的自动打开设备，简而言之主板的上电时序是为了防止烧某样东西，按照排程都设备逐一供电不是同时供电，也防止瞬间电流过大~！
+
+写FA就是往nandflash某个区域里面写内容，那个区域是专门工厂用的。
+context: The current state of the processor's registers and flags.
+
+1.在测试的过程中发现，standby时wcdma电流过大，通过power monitor看电流波形会出现paging时电流无法下降的现象，并且会将App端唤醒，为了确认是哪个中断源将App唤醒的，打开中断debug标志
+          echo 1 > /sys/module/msm_show_resume_irq/parameters/debug_mask
+        看到中断源54和69在app power collapse后将App唤醒，查找中断源，确定中断源后，与相关ower确认中断会触发的原因并解决，这个问题后来确认下来是ps那边会发送event事件给app导致app被唤醒。
+2. 在测试电流的过程中，遇到过打完电话后无法sleep的现象，并且切换到飞行模式电流也无法降下来，通过kmsg log信息发现，手机没有进入平台相关的suspend入口函数，问题确定以后，开始将debug入口点放在linux suspend流程的这边。在这边，有两种可能，一种就是有活动的wakelock存在，导致系统不能进入suspend；另一种就是在执行设备的suspend函数时，有中断产生。首先打开wakelock debug标志，通过以下命令，这在高通的debug文档中有提到：
+       echo 31 > /sys/module/wakelock/parameters/debug_mask
+     在kernel log中看到active wakelock xxx，通过查找xxx的名字，看到是因为voice那边的一个锁没有被释放。        
+
+ Cherry: 另外你可以查看android\hardware\libhardware目录下面的hardware.c文件，line 156：snprintf(path, sizeof(path), "%s/%s.default.so",是加载sensors.default
+我们在开发程序提供接口给第三方使用时，为了隐藏函数API的实现细节，最常用的办法便是将这些函数API封装成函数库以后提供给第三方调用。而这种函数库又分为静态库与动态库，所谓静态库就是在程序编译的时候，编译器会将需要调用的函数块直接整合到目标代码中，程序运行时对其不产生依赖。而动态库编译时则不会被整合到可执行文件中，在程序运行的过程中才会从动态库中加载相应的函数。   
+
+Linux Shell Base Knowledge:
+1. Linux Shell if parameters
+shell 编程中使用到得 if 语句内判断参数
+
+　　–b 当file存在并且是块文件时返回真
+
+　　-c 当file存在并且是字符文件时返回真
+
+　　-d 当pathname存在并且是一个目录时返回真
+
+　　-e 当pathname指定的文件或目录存在时返回真
+
+　　-f 当file存在并且是正规文件时返回真
+
+　　-g 当由pathname指定的文件或目录存在并且设置了SGID位时返回为真
+
+　　-h 当file存在并且是符号链接文件时返回真，该选项在一些老系统上无效
+
+　　-k 当由pathname指定的文件或目录存在并且设置了“粘滞”位时返回真
+
+　　-p 当file存在并且是命令管道时返回为真
+
+　　-r 当由pathname指定的文件或目录存在并且可读时返回为真
+
+　　-s 当file存在文件大小大于0时返回真
+
+　　-u 当由pathname指定的文件或目录存在并且设置了SUID位时返回真
+
+　　-w 当由pathname指定的文件或目录存在并且可执行时返回真。一个目录为了它的内容被访问必然是可执行的。
+
+　　-o 当由pathname指定的文件或目录存在并且被子当前进程的有效用户ID所指定的用户拥有时返回真。
+
+　　UNIX Shell 里面比较字符写法：
+
+　　-eq   等于
+
+　　-ne    不等于
+
+　　-gt    大于
+
+　　-lt    小于
+
+　　-le    小于等于
+
+　　-ge   大于等于
+
+　　-z    空串
+
+　　=    两个字符相等
+
+　　!=    两个字符不等
+
+　　-n    非空串
+
+　　-------------------------------------------------------------------------
+
+　　更为详细的说明：
+
+　　运算符                     描述                          示例
+
+　　文件比较运算符
+
+　　-e filename     如果 filename 存在，则为真            [ -e /var/log/syslog ]
+
+　　-d filename     如果 filename 为目录，则为真          [ -d /tmp/mydir ]
+
+　　-f filename     如果 filename 为常规文件，则为真      [ -f /usr/bin/grep ]
+
+　　-L filename     如果 filename 为符号链接，则为真      [ -L /usr/bin/grep ]
+
+　　-r filename     如果 filename 可读，则为真            [ -r /var/log/syslog ]
+
+　　-w filename     如果 filename 可写，则为真            [ -w /var/mytmp.txt ]
+
+　　-x filename     如果 filename 可执行，则为真          [ -L /usr/bin/grep ]
+
+　　filename1 -nt filename2 如果 filename1 比 filename2 新，则为真 [ /tmp/install/etc/services -nt /etc/services ]
+
+　　filename1 -ot filename2   如果 filename1 比 filename2 旧，则为真  [ /boot/bzImage -ot arch/i386/boot/bzImage ]
+
+　　字符串比较运算符 （请注意引号的使用，这是防止空格扰乱代码的好方法）
+
+-z string               如果 string 长度为零，则为真               [ -z $myvar ]
+
+　　-n string                      如果 string 长度非零，则为真        [ -n $myvar ]
+
+　　string1 = string2         如果 string1 与 string2 相同，则为真     [ $myvar = one two three ]
+
+　　string1 != string2        如果 string1 与 string2 不同，则为真     [ $myvar != one two three ]
+
+　　算术比较运算符
+
+　　num1 -eq num2              等于         [ 3 -eq $mynum ]
+
+　　num1 -ne num2              不等于       [ 3 -ne $mynum ]
+
+　　num1 -lt num2               小于        [ 3 -lt $mynum ]
+
+　　num1 -le num2            小于或等于     [ 3 -le $mynum ]
+
+　　num1 -gt num2             大于          [ 3 -gt $mynum ]
+
+　　num1 -ge num2             大于或等于    [ 3 -ge $mynum ]
+
+2. Shell的一些基本环境变量
+      变量说明
+      SHELL	变量保存缺省shell ，在/etc/passwd中设置
+      TERM	保存终端类型
+      TZ		时区变量保存时区值
+      HOME	用于保存注册目录的完全路径名
+      UID		当前用户的标识符，取值是由数字构成的字符串
+      PWD		当前工作目录的绝对路径名，该变量的取值随cd命令的使用而变化
+      PS1		主提示符，在root用户缺省的主提示符是“#”，普通用户缺省是“$”
+      PS2		在shell接收用户输入命令的过程中，如果用户在输入行的末尾输入“\”然后回车，或者当用户按回车键时shell判断出用户输入的命令没有结束时，显示这个辅助提示符，提示用户继续输入命令的其余部分，缺省的辅助提示符是“>”
+
+3.  Shell特定变量参数
+      参数含义
+      $#传递到脚本的参数个数
+      $*所有位置参数的内容
+      $$脚本运行的当前进程ID号
+      $!后台运行的最后一进程的进程ID号   
+      $0当前执行的进程名
+      $@与$#相同，但在使用时要加引号
+      $?命令执行后返回的状态 一般为 0
+      $-  himBH (interactive bash)
+
+Short notation 	Long notation 	Result
+set -f 		set -o noglob 	Disable file name generation using metacharacters. (globbing).
+set -v 		set -o verbose 	Prints shell input lines as they are read.
+set -x 		set -o xtrace 	Print command traces before executing command.
+The dash is used to activate a shell option and a plus to deactivate it. Don't let this confuse you!
+
+The basic form of parameter expansion is "${PARAMETER}". The value of "PARAMETER" is substituted.
+The braces are required when "PARAMETER" is a positional parameter with more than one digit, or when
+"PARAMETER" is followed by a character that is not to be interpreted as part of its name.
+单引号与双引号的最大不同在于双引号仍然可以保有变量的内容，但单引号内仅能是       一般字符 ，而不会有特殊符号。
+
+贝叶斯推断与其他统计学推断方法截然不同。它建立在主观判断的基础上，也就是说，你可以不需要客观证据，先估计一个值，然后根据实际结果不断修正。正是因为它的主观性太强，曾经遭到许多统计学家的诟病。
+
+sed option 'some/expression' file_tobe_process > sed_output_to_file
+
+Linux 权限模型有两个专门的位，叫做“suid”和“sgid”。当设置了一个可执行程序的“suid”这一位时，它将代表可执行文件的所有者运行，而不是代表启动程序的人运行。现在，回到 /etc/passwd 问题。如果看一看 passwd 可执行文件，我们可以看到它属于 root 用户：
+$ls -l /usr/bin/passwd
+-rwsr-xr-x    1 root     wheel       17588 Sep 24 00:53 /usr/bin/passwd
+您还将注意到，这里有一个 s 取替了用户权限三元组中的一个 x。这表明，对于这个特殊程序，设置了 suid 和可执行位。由于这个原因，当 passwd 运行时，它将代表 root 用户执行（具有完全超级用户访问权），而不是代表运行它的用户运行。又因为 passwd 以 root 用户访问权运行，所以能够修改 /etc/passwd 文件，而没有什么问题。
+                        suid/sgid 告诫说明
+                        我们看到了 suid 怎样工作，sgid 以同样的方式工作。它允许程序继承程序的组所有权，而不是当前用户的程序所有权。这里有一些关于 suid 和 sgid 的其它的但是很重要的信息。首先，suid 和 sgid 占据与 ls -l 清单中 x 位相同的空间。如果还设置了 x 位，则相应的位表示为 s（小写）。但是，如果没有设置 x 位，它将表示为 S（大写）。另一个很重要的提示：在许多环境中，suid 和 suid 很管用，但是不恰当地使用这些位可能使系统的安全遭到破坏。最好尽可能地少用“suid”程序。passwd 命令是为数不多的必须使用“suid”的命令之一。 
+                        改变 suid 和 sgid
+                        设置和除去 suid 与 sgid 位相当简单。这里，我们设置 suid 位：
+                        # chmod u+s /usr/bin/myapp
+                        此处，我们从一个目录除去 sgid 位。我们将看到 sgid 位怎样影响下面几屏中的目录：
+# chmod g-s /home/drobbins

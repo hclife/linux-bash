@@ -1,0 +1,51 @@
+Acronyms below:
+(A): Add
+(C): Change
+(D): Delete
+
+1. android/device/boss/orange/AndroidBoard.mk
+\\10.85.21.122\larkin\code\0214\android\device\boss\orange\AndroidBoard.mk
+\\10.85.21.71\jtag\home\leo\vm\reference\307002\android\device\qcom\msm8660_surf\AndroidBoard.mk
+\\10.85.21.122\larkin\ics\0214\android\device\boss\orange\AndroidBoard.mk
+\\10.85.21.71\jtag\home\qisda\QCT_release\MSM8x60\ICS_CS_30130\android\device\qcom\msm8660_surf\AndroidBoard.mk
+
+(D) 43-49	Leo.Qin		fluid-keypad.kl								[ICS]
+(D) 69-77	Leo.Qin		fluid-keypad_qwerty; fluid-keypad_numeric	[ICS]
+(A) 101-112 Leo.Qin		media_profiles.xml ; local.prop				[GB]
+
+2. android/device/boss/orange/system.prop
+\\10.85.21.122\larkin\code\0214\android\device\boss\orange\system.prop
+\\10.85.21.71\jtag\home\leo\vm\reference\307002\android\device\qcom\msm8660_surf\system.prop
+\\10.85.21.122\larkin\ics\0214\android\device\boss\orange\system.prop
+\\10.85.21.71\jtag\home\qisda\QCT_release\MSM8x60\ICS_CS_30130\android\device\qcom\msm8660_surf\system.prop
+
+(C) 20-23	Kris		overlayui.enable	[GB]	ICS上面用不到该定义。
+(C) 59-60	Dany		sdcard.partition	[GB]
+(A) 94-108	Leo.Qin		Orange PANEL		[GB]
+(A) 110-111	Dennis		Device mode			[GB]
+
+
+3. android/device/boss/orange/BoardConfig.mk
+\\10.85.21.122\larkin\code\0214\android\device\boss\orange\BoardConfig.mk
+\\10.85.21.71\jtag\home\leo\vm\reference\307002\android\device\qcom\msm8660_surf\BoardConfig.mk
+\\10.85.21.122\larkin\ics\0214\android\device\boss\orange\BoardConfig.mk
+\\10.85.21.71\jtag\home\qisda\QCT_release\MSM8x60\ICS_CS_30130\android\device\qcom\msm8660_surf\BoardConfig.mk
+(C) 41-43	Jey		WLAN			[GB]
+(A) 56-100	Jey 	WIFI...			[GB]
+(A) 53-54	Carl	BT				[GB]
+(C) 108-110 Leo.Qin	Overlay			[GB]	
+(C) 129-132	Leo.Qin orange			[GB]
+(D) 114-115 Leo.Qin	boot/recovery	[ICS]
+(A)	163-164	Kiki	bootchart		[GB]
+
+
+4. android/device/boss/common/vendorsetup.sh
+
+# This script is invoked during source/envsetup.sh.
+# It sets vendor specific environment for build.
+
+if [ -d "vendor/qcom/proprietary/prebuilt_HY11" ]; then
+  . vendor/qcom/proprietary/common/build/vendorsetup.sh
+elif [ -d "vendor/qcom/proprietary/prebuilt_HY22" ]; then
+  . vendor/qcom/proprietary/common/build/vendorsetup.sh
+fi

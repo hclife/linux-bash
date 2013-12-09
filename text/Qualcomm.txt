@@ -1,0 +1,114 @@
+自己看，这是已记录的
+ Qualcomm Snapdragon MSM8630
+ Qualcomm Snapdragon MSM8930
+ Qualcomm MSM7627
+ Qualcomm MSM7201
+ Qualcomm Snapdragon MSM8255
+ Qualcomm Snapdragon MSM8655
+ Qualcomm Snapdragon APQ8060
+ Qualcomm Snapdragon MSM8225
+ Qualcomm Snapdragon MSM8625
+ Qualcomm MSM7627A
+ Qualcomm Snapdragon MSM8230
+ Qualcomm MSM7630
+ Qualcomm Snapdragon APQ8030
+ Qualcomm MSM7230
+ Qualcomm MSM7227
+ Qualcomm Snapdragon QSD8250A
+ Qualcomm Snapdragon MSM8660
+ Qualcomm Snapdragon MSM8260
+ Qualcomm Snapdragon APQ8064
+ Qualcomm Snapdragon MSM8960 Pro
+ Qualcomm MSM7227A
+ Qualcomm MSM7625A
+ Qualcomm Snapdragon APQ8055
+ Qualcomm Snapdragon MSM8260A
+ Qualcomm Snapdragon MSM8960
+ Qualcomm Snapdragon MSM8627
+ Qualcomm MSM6260
+ Qualcomm MSM7627T
+ Qualcomm Snapdragon MSM8660A
+ Qualcomm Snapdragon MSM8227
+ Qualcomm MSM7225A
+ Qualcomm MSM7227T
+ Qualcomm Snapdragon MSM8655T
+ Qualcomm Snapdragon MSM8255T
+ Qualcomm Snapdragon APQ8060A
+ Qualcomm MSM7850
+ Qualcomm MSM7500
+ Qualcomm ESM7206A
+ Qualcomm MSM6500
+ Qualcomm MSM7200A
+ Qualcomm Snapdragon QSD8250
+ Qualcomm MSM7225
+ Qualcomm MSM7501A
+ Qualcomm MSM7201A
+ Qualcomm MSM7500A
+ Qualcomm MSM7525
+
+实际上没记录遗漏的，已知有
+msm6800，
+msm7800，
+msm7600，msm7500
+msm7650，等等
+
+2013年发布的
+msm8974代表8x74系列
+8x94系统
+msm8227和msm8x30系列，
+
+由于是算处理器，apq肯定要包括在内，大封装的mpq也要算。
+
+你自己看看以上说到的型号，都已经超过50多个，真是“所有”高通cpu型号列举，加详解，写完都可以微电子毕业了！！！
+
+简单说
+高通的芯片主要分qsc——单芯片处理器，一般作非智能手机主控用。mdm——基带芯片，主要给手机作信号处理器，决定网络制式，无线网卡u盘也有采用的。msm——带基带的处理器，这个才是真正在手机上当cpu用。
+
+一般手机是cpu和gpu，以及dsp，vfp等一起封装在soc里，类似intel，amd的核芯显卡的概念，gpu被封在cpu里，这个soc就是一般人所理解的手机处理器，有时基带，ram也会封装在soc里。
+也就是说soc=cpu+gpu+（modem）+（ram）
+也有例外的，比如omap3610就是soc里没有gpu。
+
+一般soc的cpu和gpu搭配是固定，所以有时所谓的手机cpu型号也可以指代手机处理器soc的型号，也有一些例外的，比如苹果a4处理器=三星c110 cpu+sgx535 gpu，a5处理器=三星exynos4210 gpu+sgx543mp2 gpu，
+而三星c110处理器=三星c110 cpu+sgx540 gpu，三星exynos4210处理=三星exynos4210 cpu+ mali400mp4 gpu
+
+高通的处理器定名规则都是msm，即mobile station modem，是包含基带的处理器，另外还要apq——application processor qualcomn，没有基带的处理器，还有mpq——media processor qualcomn，apq的大封装版。
+只有msm，apq，mpq才能算手机cpu。
+
+msm=apq+mdm，所谓的msm型号，其实就是在apq的基础上加多一个mdm基带芯片一起封装。
+msm型号的第二个字就是代表基带，msm x2xx，其中2是代表支持wcdma，联通3g。msm x6xx中的6代表支持cdma，电信3g，msm x9xx，中的9表示支持lte，同时也是目前的全基带支持的意思。
+而0是代表没基带，所以不能用msm表示，而是apq x0xx。
+所以高通第二个数字不同，其他数字已经字母相同的处理器，实际性能一样，只有基带即网络制式的差异。如msm8255，msm8655，apq8055实际是同一个cpu，不同基带而已。
+
+
+
+高通型号里最特别的就是qsd8250，qsd8650，其中qsd是qualcomn sndapdragon缩写，是纪念高通第一个超标量，1ghz的scorpion处理器，纪念高通snapdragon计划的成功，是一种荣誉前缀，实际是msm8250，只有6个型号能拥有，分别是qsd8x50和qsd8x50a系列。
+
+高通后来利用snapdragon作宣传，人为将芯片型号划分为所谓s1，s2，s3，s4.
+其中s1大部分指scorpion单核，65nm型号，
+s2指scorpion单核，45nm
+s3指scorpion双核
+s4指krait双核
+
+高通从2007年起，开始代号snapdragon计划，以arm的arm v7指令集为基础开发出asmp——异步对称处理结构的名为scorpion和krait的cpu架构，与之相对的是arm的标准smp——对称处理器结构。scorpion和krait都属于所谓的异步多核，而对应的cortex   a9，a15，a7，arm11等多核是同步多核。
+
+高通的gpu系列是adreno，是从ati公司收购的imageon发展而来的。
+
+高通目前主流型号及其对应的其他移动cpu
+msm8255t  scorpion架构，单核，默频1.4ghz，45nm sion制程工艺，gpu adreno200，=1.17ghz的联发科mt6575
+msm7225a，cortex a5架构，单核，默频1.0ghz，45nm sion，gpu 高频adreno200，=1.0ghz展讯sc8810=630mhz mt6575
+msm8225，cortex a5架构，双核，默频1.0ghz，45nm，gpu adreno203，=1.5ghz msm8255t，=1.2ghz mt6575
+
+msm8260，scorpion架构，双核，默频1.2ghz，1.5ghz，45nm，gpu adreno220，
+1.2ghz msm8260=1.0ghz nvidIA tegra2=1.0ghz  德仪omap4430
+1.5ghz msm8260=1.2ghz omap4430=1.2ghz 三星exynos4210
+1.7ghz msm8260=1.4ghz exynos4210,=1.4ghz omap4460=1.6ghz intel z2460
+
+msm8960（包括msm8260a，msm8660a，apq8060a），krait架构，双核，默频1.5ghz，28nm sion，gpu adreno225，=1.5ghz 三星exynos4212,=1.5ghz 德仪omap4470=1.3ghz 联发科mt6588
+
+apq80⑥4，krait架构，4核，默频1.5ghz，28nm sion，gpu adreno320，=1.7ghz 三星exynos5250
+
+msm8974，krait架构，4核，默频1.7ghz，28nm hkmg，gpu adreno330，=2.0ghz exynos5250=1ghz 三星exynos5410
+
+apq8094，krait架构，4核，默频2,.3ghz，28nm hkmg，gpuadreno400,=1.5ghz exynos5410
+
+msm8230，krait架构，双核，默频1.0ghz，28nm sion，gpu adreno305，=1.5ghz msm8260=900mhz mt6588.

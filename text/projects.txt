@@ -1,0 +1,2812 @@
+  All My Admin Documentation   
+ 
+OpenMergedAbandonedChangesDraftsWatched ChangesStarred ChangesGroupsProjectsIndexSearchingUploadingAccess Controls 
+  Larkin.Huang <Larkin.Huang@Qisda.com>SettingsSign Out
+Search 
+Loading ...Projects
+ Project Name Project Description 
+ -- All Projects -- Rights inherited by all other projects 
+ Benq/tv/vod  
+ JQHMI07  
+ PVCS  
+ PlatformTool  
+ Qiss/BuildScripts  
+ Qiss/Cashbook  
+ Qiss/DocQman  
+ Qiss/Home/Demo  
+ Qiss/HomeDia  
+ Qiss/PiQture-DSC  
+ Qiss/PlurQPro  
+ Qiss/PlurkQ  
+ Qiss/QContacts  
+ Qiss/QGallery  
+ Qiss/QGalleryPro  
+ Qiss/QPet  
+ Qiss/QTwitter  
+ Qiss/Qcompass  
+ Qiss/QissEDU_MaterialManager  
+ Qiss/QissEduClassnote  
+ Qiss/QissEduCloudApi  
+ Qiss/QissEduCloudServer  
+ Qiss/QissEduContactBookParents  
+ Qiss/QissEduContactBookTeacher  
+ Qiss/QissEduExamVoteEditor  
+ Qiss/QissEduIWB  
+ Qiss/QissEduPJLinker  
+ Qiss/QissEduVOTE  
+ Qiss/QissFileManager  
+ Qiss/QissHome  
+ Qiss/QissHomeDemo  
+ Qiss/QissKids  
+ Qiss/QissLauncher  
+ Qiss/QissLauncher_1.5  
+ Qiss/QissMusic  
+ Qiss/QissMusicPro  
+ Qiss/QissRadio  
+ Qiss/QloudMedia  
+ Qiss/QloudMediaFree  
+ Qiss/QloudMediaOEM  
+ Qiss/QloudRegistry  
+ Qiss/QloudServer  
+ Qiss/QloudVideo  
+ Qiss/QloudVideoFree  
+ Qiss/Qmemo  
+ Qiss/Qmemo-Free  
+ Qiss/RadiQ  
+ Qiss/RssQ  
+ Qiss/Shopaholic  
+ Qiss/Tarot  
+ Qiss/WP7/FliQr  
+ Qiss/WP7/PlurQ  
+ Qiss/WP7/QMemo  
+ Qiss/WP7/QShot  
+ Qiss/WP7/QTarot  
+ Qiss/WP7/QisdaLibrary  
+ Qiss/WP7/QloudMedia  
+ Qiss/WP7/QloudMusic  
+ Qiss/WP7/QloudVideo  
+ Qiss/WP7/backup/QloudVideo  
+ Qiss/WearQ  
+ Qiss/Win8/QloudMedia  
+ Qiss/eReader  
+ Qiss/edu  
+ Qiss/ios/Qmemo  
+ Qiss/qtv/edu-vod  
+ Qiss/qtv/info-vod  
+ Qiss/qtv/parenting  
+ Qiss/qtv/set  
+ Qiss/qtv/tv-piqture  
+ Qiss/qtv/tv-tarot  
+ Qiss/qtv/tv-vod  
+ Qiss/qtv/udn  
+ Qiss/test  
+ Tool2013  
+ WP_SystemApp/CB  
+ WP_SystemApp/ConnectionSetting  
+ WP_SystemApp/DeviceInfo  
+ WP_SystemApp/EM  
+ WP_SystemApp/FDN  
+ WP_SystemApp/LogTool  
+ Wolf  
+ baby  
+ bunny  
+ cairo/.repo/manifests Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/.repo/repo Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/amss Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/boss/cairo  
+ cairo/device/boss/common Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/boss/la Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/boss/orange Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/boss/song Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/common Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/generic/goldfish  
+ cairo/device/htc/common Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/htc/dream Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/htc/dream-sapphire Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/htc/passion Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/htc/passion-common Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/htc/sapphire Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/qcom/common Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/sample Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/device/samsung/crespo Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/kernel/common Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/kernel/lk Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/kernel/msm Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/oem Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/abi/cpp  
+ cairo/platform/bionic Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/bootable/bootloader/legacy Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/bootable/diskinstaller Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/bootable/recovery Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/build Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/cts Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/dalvik Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/development Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/aes Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/alljoyn/alljoyn_core  
+ cairo/platform/external/alljoyn/common  
+ cairo/platform/external/alsa-lib Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/alsa-utils Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/android-mock  
+ cairo/platform/external/antlr  
+ cairo/platform/external/apache-harmony  
+ cairo/platform/external/apache-http Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/apache-xml  
+ cairo/platform/external/astl Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/bison Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/blktrace Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/bluetooth/bluez Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/bluetooth/glib Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/bluetooth/hcidumb Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/bluetooth/hcidump Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/bluez Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/bouncycastle Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/bsdiff Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/bson  
+ cairo/platform/external/busybox  
+ cairo/platform/external/bzip2 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/chromium Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/clang  
+ cairo/platform/external/clearsilver Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/collada  
+ cairo/platform/external/connectivity Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/curl  
+ cairo/platform/external/dbus Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/dhcpcd Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/dnsmasq Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/doclava  
+ cairo/platform/external/dosfstools Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/dropbear Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/e2fsprogs Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/easymock Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/eglib Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/elfcopy Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/elfutils Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/embunit Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/emma Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/esd Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/expat Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/eyes-free  
+ cairo/platform/external/fdlibm Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/flac  
+ cairo/platform/external/freetype Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/fsck_msdos Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/gdata Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/genext2fs Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/giflib Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/google-diff-match-patch  
+ cairo/platform/external/googleclient Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/grub Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/gtest Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/guava Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/harfbuzz Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/hcidump Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/hostap  
+ cairo/platform/external/hostap-06 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/hyphenation Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/icu4c Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/iperf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/iproute2 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/ipsec-tools Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/iptables Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/javasqlite  
+ cairo/platform/external/javassist  
+ cairo/platform/external/jdiff Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/jhead Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/jpeg Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/jsilver Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/jsr305 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/junit Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/kernel-headers Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/lcc Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/libffi Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/libgsm Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/liblzf  
+ cairo/platform/external/libnfc-nxp Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/libnl-headers  
+ cairo/platform/external/libpcap Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/libphonenumber  
+ cairo/platform/external/libpng Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/libvpx Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/libxml2 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/libxslt Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/llvm  
+ cairo/platform/external/lohit-fonts  
+ cairo/platform/external/markdown  
+ cairo/platform/external/mesa3d  
+ cairo/platform/external/mksh  
+ cairo/platform/external/mockwebserver  
+ cairo/platform/external/mtd-utils Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/mtpd Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/netcat Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/netperf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/neven Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/nist-sip Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/node  
+ cairo/platform/external/node-sqlite-async  
+ cairo/platform/external/node-sqlite-sync  
+ cairo/platform/external/oauth Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/opencore Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/opencv  
+ cairo/platform/external/openssl Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/openvpn Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/oprofile Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/pciutils Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/pcre  
+ cairo/platform/external/ping Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/ping6  
+ cairo/platform/external/powertop Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/ppp Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/proguard Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/protobuf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/qemu Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/qemu-pc-bios Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/qrngd Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/quake Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/replicaisland  
+ cairo/platform/external/safe-iop Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/skia Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/sonivox Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/speex Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/sqlite Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/srec Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/srtp  
+ cairo/platform/external/stlport Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/strace Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/svox Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/tagsoup Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/tcpdump Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/tesseract Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/tinyalsa  
+ cairo/platform/external/tinyxml Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/tremolo Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/tremor Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/tslib Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/v8 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/valgrind  
+ cairo/platform/external/webkit Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/webp  
+ cairo/platform/external/webrtc  
+ cairo/platform/external/wpa_supplicant Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/wpa_supplicant_6 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/wpa_supplicant_8  
+ cairo/platform/external/xdelta3 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/xmlwriter Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/yaffs2 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/external/zlib Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/frameworks/base Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/frameworks/compile/libbcc  
+ cairo/platform/frameworks/compile/linkloader  
+ cairo/platform/frameworks/compile/slang  
+ cairo/platform/frameworks/ex Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/frameworks/media/libvideoeditor  
+ cairo/platform/frameworks/oem/LogLibrary Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/frameworks/oem/sdk_addon Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/frameworks/opt/calendar  
+ cairo/platform/frameworks/opt/com.google.android Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/frameworks/opt/com.google.android.googlelogin Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/frameworks/opt/emoji Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/frameworks/opt/inputmethodcommon  
+ cairo/platform/frameworks/opt/mailcommon  
+ cairo/platform/frameworks/opt/vcard  
+ cairo/platform/frameworks/policies/base Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/frameworks/support  
+ cairo/platform/hardware/alsa_sound Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/broadcom/wlan Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/htc/dream Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/invensense  
+ cairo/platform/hardware/libhardware Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/libhardware_legacy Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/msm7k Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/qcom/camera  
+ cairo/platform/hardware/qcom/display  
+ cairo/platform/hardware/qcom/gps Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/qcom/media Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/qsd8k Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/ril Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/ti/omap3 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/hardware/ti/omap4xxx  
+ cairo/platform/hardware/ti/wlan Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/libcore Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/manifest Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/ndk Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/AccountsAndSyncSettings Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/AlarmClock Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/BasicSmsReceiver  
+ cairo/platform/packages/apps/Bluetooth Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Browser Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Calculator Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Calendar Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Camera Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/CellBroadcastReceiver  
+ cairo/platform/packages/apps/CertInstaller Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Contacts Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/DeskClock Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Email Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Exchange  
+ cairo/platform/packages/apps/FM Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/FMRadio  
+ cairo/platform/packages/apps/Gallery Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Gallery2  
+ cairo/platform/packages/apps/Gallery3D Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/GlobalSearch Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/GoogleSearch Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/HTMLViewer Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/IM Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/KeyChain  
+ cairo/platform/packages/apps/Launcher Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Launcher2 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Mms Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Music Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/MusicFX  
+ cairo/platform/packages/apps/Nfc Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/OTAProvisioningClient Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/PackageInstaller Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Phone Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Protips Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Provision Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/QualcommSoftAP Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/QuickSearchBox Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Settings Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/SoundRecorder Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/SpareParts  
+ cairo/platform/packages/apps/SpeechRecorder Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Stk Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Sync Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/TSCalibration Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Tag Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/Updater Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/VideoEditor  
+ cairo/platform/packages/apps/VoiceDialer Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/oem_apps/ContactsPicker  
+ cairo/platform/packages/apps/oem_apps/EngineeringMode Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/oem_apps/InternetServices  
+ cairo/platform/packages/apps/oem_apps/LogMaster2 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/oem_apps/LogService  
+ cairo/platform/packages/apps/oem_apps/ModemVersion  
+ cairo/platform/packages/apps/oem_apps/OOBTestTool  
+ cairo/platform/packages/apps/oem_apps/PackageChecker Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/oem_apps/PackageUpdate Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/oem_apps/PreLoadNetworkSettings  
+ cairo/platform/packages/apps/oem_apps/RunIn  
+ cairo/platform/packages/apps/oem_apps/SIMManager  
+ cairo/platform/packages/apps/oem_apps/TodoList Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/apps/oem_apps/UnicomPortal  
+ cairo/platform/packages/apps/oem_apps/VoiceRecorder  
+ cairo/platform/packages/apps/oem_apps/lota  
+ cairo/platform/packages/experimental Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/inputmethods/LatinIME Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/inputmethods/OpenWnn Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/inputmethods/PinyinIME Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/ApplicationsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/CalendarProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/ContactsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/DownloadProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/DrmProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/GoogleContactsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/GoogleSubscribedFeedsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/ImProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/ManagementProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/MediaProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/TelephonyProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/UserDictionaryProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/providers/WebSearchProvider Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/services/EasService Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/services/LockAndWipe Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/wallpapers/Basic Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/wallpapers/Galaxy4  
+ cairo/platform/packages/wallpapers/HoloSpiral  
+ cairo/platform/packages/wallpapers/LivePicker Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/wallpapers/MagicSmoke Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/wallpapers/MusicVisualization Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/packages/wallpapers/NoiseField  
+ cairo/platform/packages/wallpapers/PhaseBeam  
+ cairo/platform/prebuilt Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/recovery Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/sdk Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/system/bluetooth Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/system/core Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/system/extras Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/system/media Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/system/netd Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/system/qcom Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/system/vold Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/system/wlan/broadcom Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/system/wlan/ti Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/tools/tradefederation Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/aosp Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/google  
+ cairo/platform/vendor/hermes  
+ cairo/platform/vendor/htc/common-open Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/htc/dream-open Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/htc/prebuilt-open Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/htc/sapphire-open Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/pv-open Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom-opensource/battery_monitor  
+ cairo/platform/vendor/qcom-opensource/bt-wlan-coex Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom-opensource/diag Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom-opensource/kernel-tests/mm-audio Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom-opensource/omx/mm-audio Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom-opensource/omx/mm-core Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom-opensource/omx/mm-video Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom-opensource/time-services Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom-opensource/v8  
+ cairo/platform/vendor/qcom-opensource/webkit Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/android-open Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/copper  
+ cairo/platform/vendor/qcom/msm7201a_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7201a_surf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7501a_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7501a_surf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7625_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7625_surf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7627_6x  
+ cairo/platform/vendor/qcom/msm7627_7x_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7627_7x_surf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7627_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7627_surf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7627a Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7630_1x_surf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7630_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7630_fusion Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm7630_surf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm8660_csfb Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm8660_surf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/msm8960 Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/proprietary Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/proprietary-open Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/qsd8250_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/qsd8250_surf Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qcom/qsd8650a_st1x Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qihoo360  
+ cairo/platform/vendor/qisda Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/platform/vendor/qisda/apps/Weather  
+ cairo/platform/vendor/sample Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/repo Unnamed repository; edit this file 'description' to name the repository. 
+ cairo/tools  
+ cairo_jb/amss  
+ cairo_jb/device/common  
+ cairo_jb/device/generic/armv7-a  
+ cairo_jb/device/generic/armv7-a-neon  
+ cairo_jb/device/generic/goldfish  
+ cairo_jb/device/qcom/common  
+ cairo_jb/kernel/lk  
+ cairo_jb/kernel/msm  
+ cairo_jb/oem  
+ cairo_jb/platform/abi/cpp  
+ cairo_jb/platform/bionic  
+ cairo_jb/platform/bootable/bootloader/legacy  
+ cairo_jb/platform/bootable/diskinstaller  
+ cairo_jb/platform/bootable/recovery  
+ cairo_jb/platform/build  
+ cairo_jb/platform/cts  
+ cairo_jb/platform/dalvik  
+ cairo_jb/platform/development  
+ cairo_jb/platform/docs/source.android.com  
+ cairo_jb/platform/external/aac  
+ cairo_jb/platform/external/alljoyn/alljoyn_core  
+ cairo_jb/platform/external/alljoyn/common  
+ cairo_jb/platform/external/android-mock  
+ cairo_jb/platform/external/antlr  
+ cairo_jb/platform/external/apache-harmony  
+ cairo_jb/platform/external/apache-http  
+ cairo_jb/platform/external/apache-xml  
+ cairo_jb/platform/external/astl  
+ cairo_jb/platform/external/bison  
+ cairo_jb/platform/external/blktrace  
+ cairo_jb/platform/external/bluetooth/bluez  
+ cairo_jb/platform/external/bluetooth/glib  
+ cairo_jb/platform/external/bluetooth/hcidump  
+ cairo_jb/platform/external/bouncycastle  
+ cairo_jb/platform/external/bsdiff  
+ cairo_jb/platform/external/bson  
+ cairo_jb/platform/external/busybox  
+ cairo_jb/platform/external/bzip2  
+ cairo_jb/platform/external/checkpolicy  
+ cairo_jb/platform/external/chromium  
+ cairo_jb/platform/external/chromium-trace  
+ cairo_jb/platform/external/cibu-fonts  
+ cairo_jb/platform/external/clang  
+ cairo_jb/platform/external/compat-wireless  
+ cairo_jb/platform/external/compiler-rt  
+ cairo_jb/platform/external/connectivity  
+ cairo_jb/platform/external/curl  
+ cairo_jb/platform/external/dbus  
+ cairo_jb/platform/external/dexmaker  
+ cairo_jb/platform/external/dhcpcd  
+ cairo_jb/platform/external/dnsmasq  
+ cairo_jb/platform/external/doclava  
+ cairo_jb/platform/external/dropbear  
+ cairo_jb/platform/external/e2fsprogs  
+ cairo_jb/platform/external/easymock  
+ cairo_jb/platform/external/eclipse-basebuilder  
+ cairo_jb/platform/external/eclipse-windowbuilder  
+ cairo_jb/platform/external/elfutils  
+ cairo_jb/platform/external/embunit  
+ cairo_jb/platform/external/emma  
+ cairo_jb/platform/external/esd  
+ cairo_jb/platform/external/expat  
+ cairo_jb/platform/external/eyes-free  
+ cairo_jb/platform/external/fdlibm  
+ cairo_jb/platform/external/flac  
+ cairo_jb/platform/external/freetype  
+ cairo_jb/platform/external/fsck_msdos  
+ cairo_jb/platform/external/ganymed-ssh2  
+ cairo_jb/platform/external/gcc-demangle  
+ cairo_jb/platform/external/genext2fs  
+ cairo_jb/platform/external/giflib  
+ cairo_jb/platform/external/google-diff-match-patch  
+ cairo_jb/platform/external/grub  
+ cairo_jb/platform/external/gtest  
+ cairo_jb/platform/external/guava  
+ cairo_jb/platform/external/hamcrest  
+ cairo_jb/platform/external/harfbuzz  
+ cairo_jb/platform/external/hyphenation  
+ cairo_jb/platform/external/icu4c  
+ cairo_jb/platform/external/iproute2  
+ cairo_jb/platform/external/ipsec-tools  
+ cairo_jb/platform/external/iptables  
+ cairo_jb/platform/external/javasqlite  
+ cairo_jb/platform/external/javassist  
+ cairo_jb/platform/external/jdiff  
+ cairo_jb/platform/external/jhead  
+ cairo_jb/platform/external/jmdns  
+ cairo_jb/platform/external/jmonkeyengine  
+ cairo_jb/platform/external/jpeg  
+ cairo_jb/platform/external/jsilver  
+ cairo_jb/platform/external/jsr305  
+ cairo_jb/platform/external/junit  
+ cairo_jb/platform/external/kernel-headers  
+ cairo_jb/platform/external/libffi  
+ cairo_jb/platform/external/libgsm  
+ cairo_jb/platform/external/liblzf  
+ cairo_jb/platform/external/libmtp  
+ cairo_jb/platform/external/libnfc-nxp  
+ cairo_jb/platform/external/libnl-headers  
+ cairo_jb/platform/external/libpcap  
+ cairo_jb/platform/external/libphonenumber  
+ cairo_jb/platform/external/libpng  
+ cairo_jb/platform/external/libselinux  
+ cairo_jb/platform/external/libsepol  
+ cairo_jb/platform/external/libusb  
+ cairo_jb/platform/external/libusb-compat  
+ cairo_jb/platform/external/libvpx  
+ cairo_jb/platform/external/libxml2  
+ cairo_jb/platform/external/libxslt  
+ cairo_jb/platform/external/libyuv  
+ cairo_jb/platform/external/linux-tools-perf  
+ cairo_jb/platform/external/littlemock  
+ cairo_jb/platform/external/llvm  
+ cairo_jb/platform/external/lohit-fonts  
+ cairo_jb/platform/external/markdown  
+ cairo_jb/platform/external/mdnsresponder  
+ cairo_jb/platform/external/mesa3d  
+ cairo_jb/platform/external/mksh  
+ cairo_jb/platform/external/mobicore  
+ cairo_jb/platform/external/mockwebserver  
+ cairo_jb/platform/external/mtpd  
+ cairo_jb/platform/external/naver-fonts  
+ cairo_jb/platform/external/netcat  
+ cairo_jb/platform/external/netperf  
+ cairo_jb/platform/external/neven  
+ cairo_jb/platform/external/nist-sip  
+ cairo_jb/platform/external/oauth  
+ cairo_jb/platform/external/opencv  
+ cairo_jb/platform/external/openfst  
+ cairo_jb/platform/external/openssh  
+ cairo_jb/platform/external/openssl  
+ cairo_jb/platform/external/oprofile  
+ cairo_jb/platform/external/ping  
+ cairo_jb/platform/external/ping6  
+ cairo_jb/platform/external/ppp  
+ cairo_jb/platform/external/proguard  
+ cairo_jb/platform/external/protobuf  
+ cairo_jb/platform/external/qemu  
+ cairo_jb/platform/external/qemu-pc-bios  
+ cairo_jb/platform/external/qrngd  
+ cairo_jb/platform/external/quake  
+ cairo_jb/platform/external/regex-re2  
+ cairo_jb/platform/external/replicaisland  
+ cairo_jb/platform/external/safe-iop  
+ cairo_jb/platform/external/sepolicy  
+ cairo_jb/platform/external/skia  
+ cairo_jb/platform/external/smali  
+ cairo_jb/platform/external/sonivox  
+ cairo_jb/platform/external/speex  
+ cairo_jb/platform/external/sqlite  
+ cairo_jb/platform/external/srec  
+ cairo_jb/platform/external/srtp  
+ cairo_jb/platform/external/stlport  
+ cairo_jb/platform/external/strace  
+ cairo_jb/platform/external/stressapptest  
+ cairo_jb/platform/external/svox  
+ cairo_jb/platform/external/tagsoup  
+ cairo_jb/platform/external/tcpdump  
+ cairo_jb/platform/external/tinyalsa  
+ cairo_jb/platform/external/tinyxml  
+ cairo_jb/platform/external/tremolo  
+ cairo_jb/platform/external/v8  
+ cairo_jb/platform/external/valgrind  
+ cairo_jb/platform/external/webkit  
+ cairo_jb/platform/external/webp  
+ cairo_jb/platform/external/webrtc  
+ cairo_jb/platform/external/wpa_supplicant_6  
+ cairo_jb/platform/external/wpa_supplicant_8  
+ cairo_jb/platform/external/xmlwriter  
+ cairo_jb/platform/external/yaffs2  
+ cairo_jb/platform/external/zlib  
+ cairo_jb/platform/external/zxing  
+ cairo_jb/platform/frameworks/av  
+ cairo_jb/platform/frameworks/base  
+ cairo_jb/platform/frameworks/compile/libbcc  
+ cairo_jb/platform/frameworks/compile/linkloader  
+ cairo_jb/platform/frameworks/compile/mclinker  
+ cairo_jb/platform/frameworks/compile/slang  
+ cairo_jb/platform/frameworks/ex  
+ cairo_jb/platform/frameworks/mff  
+ cairo_jb/platform/frameworks/ml  
+ cairo_jb/platform/frameworks/native  
+ cairo_jb/platform/frameworks/oem/LogLibrary  
+ cairo_jb/platform/frameworks/opt/calendar  
+ cairo_jb/platform/frameworks/opt/emoji  
+ cairo_jb/platform/frameworks/opt/inputmethodcommon  
+ cairo_jb/platform/frameworks/opt/mailcommon  
+ cairo_jb/platform/frameworks/opt/vcard  
+ cairo_jb/platform/frameworks/rs  
+ cairo_jb/platform/frameworks/support  
+ cairo_jb/platform/frameworks/testing  
+ cairo_jb/platform/frameworks/wilhelm  
+ cairo_jb/platform/gdk  
+ cairo_jb/platform/hardware/broadcom/wlan  
+ cairo_jb/platform/hardware/invensense  
+ cairo_jb/platform/hardware/libhardware  
+ cairo_jb/platform/hardware/libhardware_legacy  
+ cairo_jb/platform/hardware/msm7k  
+ cairo_jb/platform/hardware/qcom/audio  
+ cairo_jb/platform/hardware/qcom/camera  
+ cairo_jb/platform/hardware/qcom/display  
+ cairo_jb/platform/hardware/qcom/gps  
+ cairo_jb/platform/hardware/qcom/media  
+ cairo_jb/platform/hardware/qcom/wlan  
+ cairo_jb/platform/hardware/ril  
+ cairo_jb/platform/libcore  
+ cairo_jb/platform/libnativehelper  
+ cairo_jb/platform/manifest  
+ cairo_jb/platform/ndk  
+ cairo_jb/platform/packages/apps/BasicSmsReceiver  
+ cairo_jb/platform/packages/apps/Bluetooth  
+ cairo_jb/platform/packages/apps/Browser  
+ cairo_jb/platform/packages/apps/Calculator  
+ cairo_jb/platform/packages/apps/Calendar  
+ cairo_jb/platform/packages/apps/Camera  
+ cairo_jb/platform/packages/apps/CellBroadcastReceiver  
+ cairo_jb/platform/packages/apps/CertInstaller  
+ cairo_jb/platform/packages/apps/Contacts  
+ cairo_jb/platform/packages/apps/DeskClock  
+ cairo_jb/platform/packages/apps/Email  
+ cairo_jb/platform/packages/apps/Exchange  
+ cairo_jb/platform/packages/apps/FM  
+ cairo_jb/platform/packages/apps/Gallery  
+ cairo_jb/platform/packages/apps/Gallery2  
+ cairo_jb/platform/packages/apps/HTMLViewer  
+ cairo_jb/platform/packages/apps/KeyChain  
+ cairo_jb/platform/packages/apps/Launcher2  
+ cairo_jb/platform/packages/apps/LegacyCamera  
+ cairo_jb/platform/packages/apps/Mms  
+ cairo_jb/platform/packages/apps/Music  
+ cairo_jb/platform/packages/apps/MusicFX  
+ cairo_jb/platform/packages/apps/Nfc  
+ cairo_jb/platform/packages/apps/PackageInstaller  
+ cairo_jb/platform/packages/apps/Phone  
+ cairo_jb/platform/packages/apps/Protips  
+ cairo_jb/platform/packages/apps/Provision  
+ cairo_jb/platform/packages/apps/QuickSearchBox  
+ cairo_jb/platform/packages/apps/Settings  
+ cairo_jb/platform/packages/apps/SoundRecorder  
+ cairo_jb/platform/packages/apps/SpareParts  
+ cairo_jb/platform/packages/apps/SpeechRecorder  
+ cairo_jb/platform/packages/apps/Stk  
+ cairo_jb/platform/packages/apps/Tag  
+ cairo_jb/platform/packages/apps/VideoEditor  
+ cairo_jb/platform/packages/apps/VoiceDialer  
+ cairo_jb/platform/packages/experimental  
+ cairo_jb/platform/packages/inputmethods/LatinIME  
+ cairo_jb/platform/packages/inputmethods/OpenWnn  
+ cairo_jb/platform/packages/inputmethods/PinyinIME  
+ cairo_jb/platform/packages/providers/ApplicationsProvider  
+ cairo_jb/platform/packages/providers/CalendarProvider  
+ cairo_jb/platform/packages/providers/ContactsProvider  
+ cairo_jb/platform/packages/providers/DownloadProvider  
+ cairo_jb/platform/packages/providers/DrmProvider  
+ cairo_jb/platform/packages/providers/MediaProvider  
+ cairo_jb/platform/packages/providers/PartnerBookmarksProvider  
+ cairo_jb/platform/packages/providers/TelephonyProvider  
+ cairo_jb/platform/packages/providers/UserDictionaryProvider  
+ cairo_jb/platform/packages/wallpapers/Basic  
+ cairo_jb/platform/packages/wallpapers/Galaxy4  
+ cairo_jb/platform/packages/wallpapers/HoloSpiral  
+ cairo_jb/platform/packages/wallpapers/LivePicker  
+ cairo_jb/platform/packages/wallpapers/MagicSmoke  
+ cairo_jb/platform/packages/wallpapers/MusicVisualization  
+ cairo_jb/platform/packages/wallpapers/NoiseField  
+ cairo_jb/platform/packages/wallpapers/PhaseBeam  
+ cairo_jb/platform/pdk  
+ cairo_jb/platform/prebuilt  
+ cairo_jb/platform/prebuilts/eclipse  
+ cairo_jb/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6  
+ cairo_jb/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6  
+ cairo_jb/platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3  
+ cairo_jb/platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6  
+ cairo_jb/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6  
+ cairo_jb/platform/prebuilts/misc  
+ cairo_jb/platform/prebuilts/ndk  
+ cairo_jb/platform/prebuilts/qemu-kernel  
+ cairo_jb/platform/prebuilts/sdk  
+ cairo_jb/platform/prebuilts/tools  
+ cairo_jb/platform/sdk  
+ cairo_jb/platform/system/bluetooth  
+ cairo_jb/platform/system/core  
+ cairo_jb/platform/system/extras  
+ cairo_jb/platform/system/media  
+ cairo_jb/platform/system/netd  
+ cairo_jb/platform/system/qcom  
+ cairo_jb/platform/system/security  
+ cairo_jb/platform/system/vold  
+ cairo_jb/platform/vendor/google  
+ cairo_jb/platform/vendor/hermes  
+ cairo_jb/platform/vendor/qcom-opensource/bt-wlan-coex  
+ cairo_jb/platform/vendor/qcom-opensource/testframework  
+ cairo_jb/platform/vendor/qcom-opensource/time-services  
+ cairo_jb/platform/vendor/qcom-opensource/v8  
+ cairo_jb/platform/vendor/qcom/msm8660_surf  
+ cairo_jb/platform/vendor/qcom/proprietary  
+ cairo_jb/platform/vendor/qisda  
+ dallas/amss  
+ dallas/device/common  
+ dallas/device/generic/goldfish  
+ dallas/device/google/accessory/arduino  
+ dallas/device/google/accessory/demokit  
+ dallas/device/qcom/common  
+ dallas/device/sample  
+ dallas/device/samsung/maguro  
+ dallas/device/samsung/tuna  
+ dallas/device/ti/panda  
+ dallas/kernel/lk  
+ dallas/kernel/msm  
+ dallas/oem  
+ dallas/platform/abi/cpp  
+ dallas/platform/bionic  
+ dallas/platform/bootable/bootloader/legacy  
+ dallas/platform/bootable/diskinstaller  
+ dallas/platform/bootable/recovery  
+ dallas/platform/build  
+ dallas/platform/cts  
+ dallas/platform/dalvik  
+ dallas/platform/development  
+ dallas/platform/docs/source.android.com  
+ dallas/platform/external/alljoyn/alljoyn_core  
+ dallas/platform/external/alljoyn/common  
+ dallas/platform/external/android-mock  
+ dallas/platform/external/antlr  
+ dallas/platform/external/apache-harmony  
+ dallas/platform/external/apache-http  
+ dallas/platform/external/apache-xml  
+ dallas/platform/external/astl  
+ dallas/platform/external/bison  
+ dallas/platform/external/blktrace  
+ dallas/platform/external/bluetooth/bluez  
+ dallas/platform/external/bluetooth/glib  
+ dallas/platform/external/bluetooth/hcidump  
+ dallas/platform/external/bouncycastle  
+ dallas/platform/external/bsdiff  
+ dallas/platform/external/bson  
+ dallas/platform/external/bzip2  
+ dallas/platform/external/chromium  
+ dallas/platform/external/clang  
+ dallas/platform/external/collada  
+ dallas/platform/external/connectivity  
+ dallas/platform/external/curl  
+ dallas/platform/external/dbus  
+ dallas/platform/external/dhcpcd  
+ dallas/platform/external/dnsmasq  
+ dallas/platform/external/doclava  
+ dallas/platform/external/dropbear  
+ dallas/platform/external/e2fsprogs  
+ dallas/platform/external/easymock  
+ dallas/platform/external/elfutils  
+ dallas/platform/external/embunit  
+ dallas/platform/external/emma  
+ dallas/platform/external/esd  
+ dallas/platform/external/expat  
+ dallas/platform/external/eyes-free  
+ dallas/platform/external/fdlibm  
+ dallas/platform/external/flac  
+ dallas/platform/external/freetype  
+ dallas/platform/external/fsck_msdos  
+ dallas/platform/external/genext2fs  
+ dallas/platform/external/giflib  
+ dallas/platform/external/google-diff-match-patch  
+ dallas/platform/external/grub  
+ dallas/platform/external/gtest  
+ dallas/platform/external/guava  
+ dallas/platform/external/harfbuzz  
+ dallas/platform/external/hostap  
+ dallas/platform/external/hostap-06  
+ dallas/platform/external/hyphenation  
+ dallas/platform/external/icu4c  
+ dallas/platform/external/iproute2  
+ dallas/platform/external/ipsec-tools  
+ dallas/platform/external/iptables  
+ dallas/platform/external/javasqlite  
+ dallas/platform/external/javassist  
+ dallas/platform/external/jdiff  
+ dallas/platform/external/jhead  
+ dallas/platform/external/jpeg  
+ dallas/platform/external/jsilver  
+ dallas/platform/external/jsr305  
+ dallas/platform/external/junit  
+ dallas/platform/external/kernel-headers  
+ dallas/platform/external/libffi  
+ dallas/platform/external/libgsm  
+ dallas/platform/external/liblzf  
+ dallas/platform/external/libnfc-nxp  
+ dallas/platform/external/libnl-headers  
+ dallas/platform/external/libpcap  
+ dallas/platform/external/libphonenumber  
+ dallas/platform/external/libpng  
+ dallas/platform/external/libvpx  
+ dallas/platform/external/libxml2  
+ dallas/platform/external/libxslt  
+ dallas/platform/external/llvm  
+ dallas/platform/external/lohit-fonts  
+ dallas/platform/external/markdown  
+ dallas/platform/external/mesa3d  
+ dallas/platform/external/mksh  
+ dallas/platform/external/mockwebserver  
+ dallas/platform/external/mtpd  
+ dallas/platform/external/netcat  
+ dallas/platform/external/netperf  
+ dallas/platform/external/neven  
+ dallas/platform/external/nist-sip  
+ dallas/platform/external/node  
+ dallas/platform/external/node-sqlite-async  
+ dallas/platform/external/node-sqlite-sync  
+ dallas/platform/external/oauth  
+ dallas/platform/external/opencv  
+ dallas/platform/external/openssl  
+ dallas/platform/external/oprofile  
+ dallas/platform/external/pcre  
+ dallas/platform/external/ping  
+ dallas/platform/external/ping6  
+ dallas/platform/external/powertop  
+ dallas/platform/external/ppp  
+ dallas/platform/external/proguard  
+ dallas/platform/external/protobuf  
+ dallas/platform/external/qemu  
+ dallas/platform/external/qemu-pc-bios  
+ dallas/platform/external/quake  
+ dallas/platform/external/safe-iop  
+ dallas/platform/external/skia  
+ dallas/platform/external/sonivox  
+ dallas/platform/external/speex  
+ dallas/platform/external/sqlite  
+ dallas/platform/external/srec  
+ dallas/platform/external/srtp  
+ dallas/platform/external/stlport  
+ dallas/platform/external/strace  
+ dallas/platform/external/svox  
+ dallas/platform/external/tagsoup  
+ dallas/platform/external/tcpdump  
+ dallas/platform/external/tinyalsa  
+ dallas/platform/external/tinyxml  
+ dallas/platform/external/tremolo  
+ dallas/platform/external/tslib  
+ dallas/platform/external/v8  
+ dallas/platform/external/valgrind  
+ dallas/platform/external/webkit  
+ dallas/platform/external/webp  
+ dallas/platform/external/webrtc  
+ dallas/platform/external/wireless_tools  
+ dallas/platform/external/wpa_supplicant  
+ dallas/platform/external/wpa_supplicant_6  
+ dallas/platform/external/wpa_supplicant_8  
+ dallas/platform/external/xmlwriter  
+ dallas/platform/external/yaffs2  
+ dallas/platform/external/zlib  
+ dallas/platform/frameworks/base  
+ dallas/platform/frameworks/compile/libbcc  
+ dallas/platform/frameworks/compile/linkloader  
+ dallas/platform/frameworks/compile/slang  
+ dallas/platform/frameworks/ex  
+ dallas/platform/frameworks/media/libvideoeditor  
+ dallas/platform/frameworks/oem/LogLibrary  
+ dallas/platform/frameworks/opt/calendar  
+ dallas/platform/frameworks/opt/emoji  
+ dallas/platform/frameworks/opt/inputmethodcommon  
+ dallas/platform/frameworks/opt/mailcommon  
+ dallas/platform/frameworks/opt/vcard  
+ dallas/platform/frameworks/support  
+ dallas/platform/hardware/alsa_sound  
+ dallas/platform/hardware/broadcom/wlan  
+ dallas/platform/hardware/invensense  
+ dallas/platform/hardware/libhardware  
+ dallas/platform/hardware/libhardware_legacy  
+ dallas/platform/hardware/msm7k  
+ dallas/platform/hardware/qcom/camera  
+ dallas/platform/hardware/qcom/display  
+ dallas/platform/hardware/qcom/gps  
+ dallas/platform/hardware/qcom/media  
+ dallas/platform/hardware/ril  
+ dallas/platform/hardware/ti/omap3  
+ dallas/platform/hardware/ti/omap4xxx  
+ dallas/platform/libcore  
+ dallas/platform/manifest  
+ dallas/platform/ndk  
+ dallas/platform/packages/apps/BasicSmsReceiver  
+ dallas/platform/packages/apps/Bluetooth  
+ dallas/platform/packages/apps/Browser  
+ dallas/platform/packages/apps/Calculator  
+ dallas/platform/packages/apps/Calendar  
+ dallas/platform/packages/apps/Camera  
+ dallas/platform/packages/apps/CellBroadcastReceiver  
+ dallas/platform/packages/apps/CertInstaller  
+ dallas/platform/packages/apps/Contacts  
+ dallas/platform/packages/apps/CpuMeter  
+ dallas/platform/packages/apps/DeskClock  
+ dallas/platform/packages/apps/Email  
+ dallas/platform/packages/apps/Exchange  
+ dallas/platform/packages/apps/FM  
+ dallas/platform/packages/apps/Gallery  
+ dallas/platform/packages/apps/Gallery2  
+ dallas/platform/packages/apps/HTMLViewer  
+ dallas/platform/packages/apps/KeyChain  
+ dallas/platform/packages/apps/Launcher2  
+ dallas/platform/packages/apps/Mms  
+ dallas/platform/packages/apps/Music  
+ dallas/platform/packages/apps/MusicFX  
+ dallas/platform/packages/apps/Nfc  
+ dallas/platform/packages/apps/NxpSecureElement  
+ dallas/platform/packages/apps/PackageInstaller  
+ dallas/platform/packages/apps/Phone  
+ dallas/platform/packages/apps/Protips  
+ dallas/platform/packages/apps/Provision  
+ dallas/platform/packages/apps/QualcommSoftAP  
+ dallas/platform/packages/apps/QuickSearchBox  
+ dallas/platform/packages/apps/Settings  
+ dallas/platform/packages/apps/SoundRecorder  
+ dallas/platform/packages/apps/SpareParts  
+ dallas/platform/packages/apps/SpeechRecorder  
+ dallas/platform/packages/apps/Stk  
+ dallas/platform/packages/apps/TSCalibration  
+ dallas/platform/packages/apps/Tag  
+ dallas/platform/packages/apps/VideoEditor  
+ dallas/platform/packages/apps/VoiceDialer  
+ dallas/platform/packages/apps/oem_apps/EngineeringMode  
+ dallas/platform/packages/apps/oem_apps/Log  
+ dallas/platform/packages/experimental  
+ dallas/platform/packages/inputmethods/LatinIME  
+ dallas/platform/packages/inputmethods/OpenWnn  
+ dallas/platform/packages/inputmethods/PinyinIME  
+ dallas/platform/packages/providers/ApplicationsProvider  
+ dallas/platform/packages/providers/CalendarProvider  
+ dallas/platform/packages/providers/ContactsProvider  
+ dallas/platform/packages/providers/DownloadProvider  
+ dallas/platform/packages/providers/DrmProvider  
+ dallas/platform/packages/providers/GoogleContactsProvider  
+ dallas/platform/packages/providers/MediaProvider  
+ dallas/platform/packages/providers/TelephonyProvider  
+ dallas/platform/packages/providers/UserDictionaryProvider  
+ dallas/platform/packages/wallpapers/Basic  
+ dallas/platform/packages/wallpapers/Galaxy4  
+ dallas/platform/packages/wallpapers/HoloSpiral  
+ dallas/platform/packages/wallpapers/LivePicker  
+ dallas/platform/packages/wallpapers/MagicSmoke  
+ dallas/platform/packages/wallpapers/MusicVisualization  
+ dallas/platform/packages/wallpapers/NoiseField  
+ dallas/platform/packages/wallpapers/PhaseBeam  
+ dallas/platform/prebuilt  
+ dallas/platform/sdk  
+ dallas/platform/system/bluetooth  
+ dallas/platform/system/core  
+ dallas/platform/system/extras  
+ dallas/platform/system/media  
+ dallas/platform/system/netd  
+ dallas/platform/system/qcom  
+ dallas/platform/system/vold  
+ dallas/platform/vendor/qcom-opensource/battery_monitor  
+ dallas/platform/vendor/qcom-opensource/bt-wlan-coex  
+ dallas/platform/vendor/qcom-opensource/diag  
+ dallas/platform/vendor/qcom-opensource/kernel-tests/mm-audio  
+ dallas/platform/vendor/qcom-opensource/omx/mm-audio  
+ dallas/platform/vendor/qcom-opensource/omx/mm-core  
+ dallas/platform/vendor/qcom-opensource/omx/mm-video  
+ dallas/platform/vendor/qcom-opensource/time-services  
+ dallas/platform/vendor/qcom-opensource/v8  
+ dallas/platform/vendor/qcom-opensource/webkit  
+ dallas/platform/vendor/qcom/android-open  
+ dallas/platform/vendor/qcom/copper  
+ dallas/platform/vendor/qcom/msm7627_6x  
+ dallas/platform/vendor/qcom/msm7627_surf  
+ dallas/platform/vendor/qcom/msm7627a  
+ dallas/platform/vendor/qcom/msm7630_fusion  
+ dallas/platform/vendor/qcom/msm7630_surf  
+ dallas/platform/vendor/qcom/msm8660_surf  
+ dallas/platform/vendor/qcom/msm8960  
+ dallas/platform/vendor/qcom/proprietary  
+ dallas/script  
+ dsda/MTK  
+ dsda/amss  
+ dsda/device/common  
+ dsda/device/generic/goldfish  
+ dsda/device/google/accessory/arduino  
+ dsda/device/google/accessory/demokit  
+ dsda/device/qcom/common  
+ dsda/device/sample  
+ dsda/device/samsung/maguro  
+ dsda/device/samsung/tuna  
+ dsda/device/ti/panda  
+ dsda/kernel/lk  
+ dsda/kernel/msm  
+ dsda/non_hlos  
+ dsda/oem  
+ dsda/platform/abi/cpp  
+ dsda/platform/bionic  
+ dsda/platform/bootable/bootloader/legacy  
+ dsda/platform/bootable/diskinstaller  
+ dsda/platform/bootable/recovery  
+ dsda/platform/build  
+ dsda/platform/cts  
+ dsda/platform/dalvik  
+ dsda/platform/development  
+ dsda/platform/docs/source.android.com  
+ dsda/platform/external/alljoyn/alljoyn_core  
+ dsda/platform/external/alljoyn/common  
+ dsda/platform/external/android-mock  
+ dsda/platform/external/antlr  
+ dsda/platform/external/apache-harmony  
+ dsda/platform/external/apache-http  
+ dsda/platform/external/apache-xml  
+ dsda/platform/external/astl  
+ dsda/platform/external/bison  
+ dsda/platform/external/blktrace  
+ dsda/platform/external/bluetooth/bluez  
+ dsda/platform/external/bluetooth/glib  
+ dsda/platform/external/bluetooth/hcidump  
+ dsda/platform/external/bouncycastle  
+ dsda/platform/external/bsdiff  
+ dsda/platform/external/bson  
+ dsda/platform/external/bzip2  
+ dsda/platform/external/chromium  
+ dsda/platform/external/clang  
+ dsda/platform/external/collada  
+ dsda/platform/external/connectivity  
+ dsda/platform/external/curl  
+ dsda/platform/external/dbus  
+ dsda/platform/external/dhcpcd  
+ dsda/platform/external/dnsmasq  
+ dsda/platform/external/doclava  
+ dsda/platform/external/downloadtool-x86  
+ dsda/platform/external/dropbear  
+ dsda/platform/external/e2fsprogs  
+ dsda/platform/external/easymock  
+ dsda/platform/external/elfutils  
+ dsda/platform/external/embunit  
+ dsda/platform/external/emma  
+ dsda/platform/external/esd  
+ dsda/platform/external/expat  
+ dsda/platform/external/eyes-free  
+ dsda/platform/external/fdlibm  
+ dsda/platform/external/flac  
+ dsda/platform/external/freetype  
+ dsda/platform/external/fsck_msdos  
+ dsda/platform/external/genext2fs  
+ dsda/platform/external/giflib  
+ dsda/platform/external/google-diff-match-patch  
+ dsda/platform/external/grub  
+ dsda/platform/external/gtest  
+ dsda/platform/external/guava  
+ dsda/platform/external/harfbuzz  
+ dsda/platform/external/hostap  
+ dsda/platform/external/hostap-06  
+ dsda/platform/external/hyphenation  
+ dsda/platform/external/icu4c  
+ dsda/platform/external/iproute2  
+ dsda/platform/external/ipsec-tools  
+ dsda/platform/external/iptables  
+ dsda/platform/external/javasqlite  
+ dsda/platform/external/javassist  
+ dsda/platform/external/jdiff  
+ dsda/platform/external/jhead  
+ dsda/platform/external/jpeg  
+ dsda/platform/external/jsilver  
+ dsda/platform/external/jsr305  
+ dsda/platform/external/junit  
+ dsda/platform/external/kernel-headers  
+ dsda/platform/external/libffi  
+ dsda/platform/external/libgsm  
+ dsda/platform/external/liblzf  
+ dsda/platform/external/libnfc-nxp  
+ dsda/platform/external/libnl-headers  
+ dsda/platform/external/libpcap  
+ dsda/platform/external/libphonenumber  
+ dsda/platform/external/libpng  
+ dsda/platform/external/libvpx  
+ dsda/platform/external/libxml2  
+ dsda/platform/external/libxslt  
+ dsda/platform/external/llvm  
+ dsda/platform/external/lohit-fonts  
+ dsda/platform/external/markdown  
+ dsda/platform/external/mesa3d  
+ dsda/platform/external/mksh  
+ dsda/platform/external/mockwebserver  
+ dsda/platform/external/mtpd  
+ dsda/platform/external/netcat  
+ dsda/platform/external/netperf  
+ dsda/platform/external/neven  
+ dsda/platform/external/nist-sip  
+ dsda/platform/external/node  
+ dsda/platform/external/node-sqlite-async  
+ dsda/platform/external/node-sqlite-sync  
+ dsda/platform/external/oauth  
+ dsda/platform/external/opencv  
+ dsda/platform/external/openssl  
+ dsda/platform/external/oprofile  
+ dsda/platform/external/pcre  
+ dsda/platform/external/ping  
+ dsda/platform/external/ping6  
+ dsda/platform/external/powertop  
+ dsda/platform/external/ppp  
+ dsda/platform/external/proguard  
+ dsda/platform/external/protobuf  
+ dsda/platform/external/qemu  
+ dsda/platform/external/qemu-pc-bios  
+ dsda/platform/external/quake  
+ dsda/platform/external/replicaisland  
+ dsda/platform/external/safe-iop  
+ dsda/platform/external/skia  
+ dsda/platform/external/sonivox  
+ dsda/platform/external/speex  
+ dsda/platform/external/sqlite  
+ dsda/platform/external/srec  
+ dsda/platform/external/srtp  
+ dsda/platform/external/stlport  
+ dsda/platform/external/strace  
+ dsda/platform/external/svox  
+ dsda/platform/external/tagsoup  
+ dsda/platform/external/tcpdump  
+ dsda/platform/external/tinyalsa  
+ dsda/platform/external/tinyxml  
+ dsda/platform/external/tremolo  
+ dsda/platform/external/tslib  
+ dsda/platform/external/v8  
+ dsda/platform/external/valgrind  
+ dsda/platform/external/webkit  
+ dsda/platform/external/webp  
+ dsda/platform/external/webrtc  
+ dsda/platform/external/wireless_tools  
+ dsda/platform/external/wpa_supplicant  
+ dsda/platform/external/wpa_supplicant_6  
+ dsda/platform/external/wpa_supplicant_8  
+ dsda/platform/external/xmlwriter  
+ dsda/platform/external/yaffs2  
+ dsda/platform/external/zlib  
+ dsda/platform/frameworks/base  
+ dsda/platform/frameworks/compile/libbcc  
+ dsda/platform/frameworks/compile/linkloader  
+ dsda/platform/frameworks/compile/slang  
+ dsda/platform/frameworks/ex  
+ dsda/platform/frameworks/media/libvideoeditor  
+ dsda/platform/frameworks/oem  
+ dsda/platform/frameworks/oem/LogLibrary  
+ dsda/platform/frameworks/opt/calendar  
+ dsda/platform/frameworks/opt/emoji  
+ dsda/platform/frameworks/opt/inputmethodcommon  
+ dsda/platform/frameworks/opt/mailcommon  
+ dsda/platform/frameworks/opt/vcard  
+ dsda/platform/frameworks/support  
+ dsda/platform/hardware/alsa_sound  
+ dsda/platform/hardware/broadcom/wlan  
+ dsda/platform/hardware/invensense  
+ dsda/platform/hardware/libhardware  
+ dsda/platform/hardware/libhardware_legacy  
+ dsda/platform/hardware/msm7k  
+ dsda/platform/hardware/qcom/camera  
+ dsda/platform/hardware/qcom/display  
+ dsda/platform/hardware/qcom/gps  
+ dsda/platform/hardware/qcom/media  
+ dsda/platform/hardware/ril  
+ dsda/platform/hardware/ti/omap3  
+ dsda/platform/hardware/ti/omap4xxx  
+ dsda/platform/libcore  
+ dsda/platform/manifest  
+ dsda/platform/manifests  
+ dsda/platform/mflex  
+ dsda/platform/ndk  
+ dsda/platform/packages/apps/BasicSmsReceiver  
+ dsda/platform/packages/apps/Bluetooth  
+ dsda/platform/packages/apps/Browser  
+ dsda/platform/packages/apps/Calculator  
+ dsda/platform/packages/apps/Calendar  
+ dsda/platform/packages/apps/Camera  
+ dsda/platform/packages/apps/CellBroadcastReceiver  
+ dsda/platform/packages/apps/CertInstaller  
+ dsda/platform/packages/apps/Contacts  
+ dsda/platform/packages/apps/CpuMeter  
+ dsda/platform/packages/apps/DeskClock  
+ dsda/platform/packages/apps/Email  
+ dsda/platform/packages/apps/Exchange  
+ dsda/platform/packages/apps/FM  
+ dsda/platform/packages/apps/Gallery  
+ dsda/platform/packages/apps/Gallery2  
+ dsda/platform/packages/apps/HTMLViewer  
+ dsda/platform/packages/apps/KeyChain  
+ dsda/platform/packages/apps/Launcher2  
+ dsda/platform/packages/apps/Mms  
+ dsda/platform/packages/apps/Music  
+ dsda/platform/packages/apps/MusicFX  
+ dsda/platform/packages/apps/Nfc  
+ dsda/platform/packages/apps/NxpSecureElement  
+ dsda/platform/packages/apps/PackageInstaller  
+ dsda/platform/packages/apps/Phone  
+ dsda/platform/packages/apps/Protips  
+ dsda/platform/packages/apps/Provision  
+ dsda/platform/packages/apps/QualcommSoftAP  
+ dsda/platform/packages/apps/QuickSearchBox  
+ dsda/platform/packages/apps/Settings  
+ dsda/platform/packages/apps/SoundRecorder  
+ dsda/platform/packages/apps/SpareParts  
+ dsda/platform/packages/apps/SpeechRecorder  
+ dsda/platform/packages/apps/Stk  
+ dsda/platform/packages/apps/TSCalibration  
+ dsda/platform/packages/apps/Tag  
+ dsda/platform/packages/apps/VideoEditor  
+ dsda/platform/packages/apps/VoiceDialer  
+ dsda/platform/packages/apps/oem_apps/Calibrator  
+ dsda/platform/packages/apps/oem_apps/ContactsPicker  
+ dsda/platform/packages/apps/oem_apps/DisplayVersionInfo  
+ dsda/platform/packages/apps/oem_apps/EngineeringMode  
+ dsda/platform/packages/apps/oem_apps/FMRadio  
+ dsda/platform/packages/apps/oem_apps/HDExplorer  
+ dsda/platform/packages/apps/oem_apps/Log  
+ dsda/platform/packages/apps/oem_apps/LogMaster2  
+ dsda/platform/packages/apps/oem_apps/LogService  
+ dsda/platform/packages/apps/oem_apps/Lota  
+ dsda/platform/packages/apps/oem_apps/Multimedia  
+ dsda/platform/packages/apps/oem_apps/NetworkHint  
+ dsda/platform/packages/apps/oem_apps/PreLoadNetworkSettings  
+ dsda/platform/packages/apps/oem_apps/RunIn  
+ dsda/platform/packages/apps/oem_apps/ShutdownAnimationReceiver  
+ dsda/platform/packages/apps/oem_apps/StressTest  
+ dsda/platform/packages/apps/oem_apps/SwitchLanguage  
+ dsda/platform/packages/apps/oem_apps/SystemUpdate  
+ dsda/platform/packages/apps/oem_apps/UnicomPortal  
+ dsda/platform/packages/apps/oem_apps/W910UserManual  
+ dsda/platform/packages/experimental  
+ dsda/platform/packages/inputmethods/LatinIME  
+ dsda/platform/packages/inputmethods/OpenWnn  
+ dsda/platform/packages/inputmethods/PinyinIME  
+ dsda/platform/packages/providers/ApplicationsProvider  
+ dsda/platform/packages/providers/CalendarProvider  
+ dsda/platform/packages/providers/ContactsProvider  
+ dsda/platform/packages/providers/DownloadProvider  
+ dsda/platform/packages/providers/DrmProvider  
+ dsda/platform/packages/providers/GoogleContactsProvider  
+ dsda/platform/packages/providers/MediaProvider  
+ dsda/platform/packages/providers/TelephonyProvider  
+ dsda/platform/packages/providers/UserDictionaryProvider  
+ dsda/platform/packages/wallpapers/Basic  
+ dsda/platform/packages/wallpapers/Galaxy4  
+ dsda/platform/packages/wallpapers/HoloSpiral  
+ dsda/platform/packages/wallpapers/LivePicker  
+ dsda/platform/packages/wallpapers/MagicSmoke  
+ dsda/platform/packages/wallpapers/MusicVisualization  
+ dsda/platform/packages/wallpapers/NoiseField  
+ dsda/platform/packages/wallpapers/PhaseBeam  
+ dsda/platform/prebuilt  
+ dsda/platform/sdk  
+ dsda/platform/system/bluetooth  
+ dsda/platform/system/core  
+ dsda/platform/system/extras  
+ dsda/platform/system/media  
+ dsda/platform/system/netd  
+ dsda/platform/system/qcom  
+ dsda/platform/system/vold  
+ dsda/platform/vendor/google  
+ dsda/platform/vendor/qcom-opensource/battery_monitor  
+ dsda/platform/vendor/qcom-opensource/bt-wlan-coex  
+ dsda/platform/vendor/qcom-opensource/diag  
+ dsda/platform/vendor/qcom-opensource/kernel-tests/mm-audio  
+ dsda/platform/vendor/qcom-opensource/omx/mm-audio  
+ dsda/platform/vendor/qcom-opensource/omx/mm-core  
+ dsda/platform/vendor/qcom-opensource/omx/mm-video  
+ dsda/platform/vendor/qcom-opensource/time-services  
+ dsda/platform/vendor/qcom-opensource/v8  
+ dsda/platform/vendor/qcom-opensource/webkit  
+ dsda/platform/vendor/qcom/android-open  
+ dsda/platform/vendor/qcom/copper  
+ dsda/platform/vendor/qcom/msm7627_6x  
+ dsda/platform/vendor/qcom/msm7627_surf  
+ dsda/platform/vendor/qcom/msm7627a  
+ dsda/platform/vendor/qcom/msm7630_fusion  
+ dsda/platform/vendor/qcom/msm7630_surf  
+ dsda/platform/vendor/qcom/msm8660_surf  
+ dsda/platform/vendor/qcom/msm8960  
+ dsda/platform/vendor/qcom/proprietary  
+ dsda/script  
+ dublin/amss  
+ dublin/device/asus/grouper  
+ dublin/device/common  
+ dublin/device/generic/armv7-a  
+ dublin/device/generic/armv7-a-neon  
+ dublin/device/generic/goldfish  
+ dublin/device/google/accessory/arduino  
+ dublin/device/google/accessory/demokit  
+ dublin/device/moto/common  
+ dublin/device/moto/stingray  
+ dublin/device/moto/wingray  
+ dublin/device/qcom/common  
+ dublin/device/sample  
+ dublin/device/samsung/crespo  
+ dublin/device/samsung/crespo4g  
+ dublin/device/samsung/maguro  
+ dublin/device/samsung/toro  
+ dublin/device/samsung/torospr  
+ dublin/device/samsung/tuna  
+ dublin/device/ti/panda  
+ dublin/kernel/lk  
+ dublin/kernel/msm  
+ dublin/platform/abi/cpp  
+ dublin/platform/bionic  
+ dublin/platform/bootable/bootloader/legacy  
+ dublin/platform/bootable/diskinstaller  
+ dublin/platform/bootable/recovery  
+ dublin/platform/build  
+ dublin/platform/cts  
+ dublin/platform/dalvik  
+ dublin/platform/development  
+ dublin/platform/docs/source.android.com  
+ dublin/platform/external/Sensors  
+ dublin/platform/external/aac  
+ dublin/platform/external/alljoyn/alljoyn_core  
+ dublin/platform/external/alljoyn/common  
+ dublin/platform/external/android-mock  
+ dublin/platform/external/antlr  
+ dublin/platform/external/apache-harmony  
+ dublin/platform/external/apache-http  
+ dublin/platform/external/apache-xml  
+ dublin/platform/external/astl  
+ dublin/platform/external/bison  
+ dublin/platform/external/blktrace  
+ dublin/platform/external/bluetooth/bluez  
+ dublin/platform/external/bluetooth/glib  
+ dublin/platform/external/bluetooth/hcidump  
+ dublin/platform/external/bouncycastle  
+ dublin/platform/external/bsdiff  
+ dublin/platform/external/bson  
+ dublin/platform/external/bzip2  
+ dublin/platform/external/checkpolicy  
+ dublin/platform/external/chromium  
+ dublin/platform/external/chromium-trace  
+ dublin/platform/external/cibu-fonts  
+ dublin/platform/external/clang  
+ dublin/platform/external/compat-wireless  
+ dublin/platform/external/compiler-rt  
+ dublin/platform/external/connectivity  
+ dublin/platform/external/curl  
+ dublin/platform/external/dbus  
+ dublin/platform/external/dexmaker  
+ dublin/platform/external/dhcpcd  
+ dublin/platform/external/dnsmasq  
+ dublin/platform/external/doclava  
+ dublin/platform/external/dropbear  
+ dublin/platform/external/e2fsprogs  
+ dublin/platform/external/easymock  
+ dublin/platform/external/eclipse-basebuilder  
+ dublin/platform/external/eclipse-windowbuilder  
+ dublin/platform/external/elfutils  
+ dublin/platform/external/embunit  
+ dublin/platform/external/emma  
+ dublin/platform/external/esd  
+ dublin/platform/external/expat  
+ dublin/platform/external/eyes-free  
+ dublin/platform/external/fdlibm  
+ dublin/platform/external/flac  
+ dublin/platform/external/freetype  
+ dublin/platform/external/fsck_msdos  
+ dublin/platform/external/ganymed-ssh2  
+ dublin/platform/external/gcc-demangle  
+ dublin/platform/external/genext2fs  
+ dublin/platform/external/giflib  
+ dublin/platform/external/google-diff-match-patch  
+ dublin/platform/external/grub  
+ dublin/platform/external/gtest  
+ dublin/platform/external/guava  
+ dublin/platform/external/hamcrest  
+ dublin/platform/external/harfbuzz  
+ dublin/platform/external/hyphenation  
+ dublin/platform/external/icu4c  
+ dublin/platform/external/iproute2  
+ dublin/platform/external/ipsec-tools  
+ dublin/platform/external/iptables  
+ dublin/platform/external/javasqlite  
+ dublin/platform/external/javassist  
+ dublin/platform/external/jdiff  
+ dublin/platform/external/jhead  
+ dublin/platform/external/jmdns  
+ dublin/platform/external/jmonkeyengine  
+ dublin/platform/external/jpeg  
+ dublin/platform/external/jsilver  
+ dublin/platform/external/jsr305  
+ dublin/platform/external/junit  
+ dublin/platform/external/kernel-headers  
+ dublin/platform/external/libffi  
+ dublin/platform/external/libgsm  
+ dublin/platform/external/liblzf  
+ dublin/platform/external/libmtp  
+ dublin/platform/external/libnfc-nxp  
+ dublin/platform/external/libnl-headers  
+ dublin/platform/external/libpcap  
+ dublin/platform/external/libphonenumber  
+ dublin/platform/external/libpng  
+ dublin/platform/external/libselinux  
+ dublin/platform/external/libsepol  
+ dublin/platform/external/libusb  
+ dublin/platform/external/libusb-compat  
+ dublin/platform/external/libvpx  
+ dublin/platform/external/libxml2  
+ dublin/platform/external/libxslt  
+ dublin/platform/external/libyuv  
+ dublin/platform/external/linux-tools-perf  
+ dublin/platform/external/littlemock  
+ dublin/platform/external/llvm  
+ dublin/platform/external/lohit-fonts  
+ dublin/platform/external/markdown  
+ dublin/platform/external/mdnsresponder  
+ dublin/platform/external/mesa3d  
+ dublin/platform/external/mksh  
+ dublin/platform/external/mobicore  
+ dublin/platform/external/mockwebserver  
+ dublin/platform/external/mtpd  
+ dublin/platform/external/naver-fonts  
+ dublin/platform/external/netcat  
+ dublin/platform/external/netperf  
+ dublin/platform/external/neven  
+ dublin/platform/external/nist-sip  
+ dublin/platform/external/oauth  
+ dublin/platform/external/opencv  
+ dublin/platform/external/openfst  
+ dublin/platform/external/openssh  
+ dublin/platform/external/openssl  
+ dublin/platform/external/oprofile  
+ dublin/platform/external/ping  
+ dublin/platform/external/ping6  
+ dublin/platform/external/powertop  
+ dublin/platform/external/ppp  
+ dublin/platform/external/proguard  
+ dublin/platform/external/protobuf  
+ dublin/platform/external/protobuf-c  
+ dublin/platform/external/qemu  
+ dublin/platform/external/qemu-pc-bios  
+ dublin/platform/external/qrngd  
+ dublin/platform/external/quake  
+ dublin/platform/external/regex-re2  
+ dublin/platform/external/remo_ti  
+ dublin/platform/external/replicaisland  
+ dublin/platform/external/safe-iop  
+ dublin/platform/external/sepolicy  
+ dublin/platform/external/skia  
+ dublin/platform/external/smali  
+ dublin/platform/external/sonivox  
+ dublin/platform/external/speex  
+ dublin/platform/external/sqlite  
+ dublin/platform/external/srec  
+ dublin/platform/external/srtp  
+ dublin/platform/external/stlport  
+ dublin/platform/external/strace  
+ dublin/platform/external/stressapptest  
+ dublin/platform/external/svox  
+ dublin/platform/external/tagsoup  
+ dublin/platform/external/tcpdump  
+ dublin/platform/external/tinyalsa  
+ dublin/platform/external/tinyxml  
+ dublin/platform/external/tremolo  
+ dublin/platform/external/v8  
+ dublin/platform/external/valgrind  
+ dublin/platform/external/webkit  
+ dublin/platform/external/webp  
+ dublin/platform/external/webrtc  
+ dublin/platform/external/wireless_tools  
+ dublin/platform/external/wpa_supplicant_6  
+ dublin/platform/external/wpa_supplicant_8  
+ dublin/platform/external/xmlwriter  
+ dublin/platform/external/yaffs2  
+ dublin/platform/external/zlib  
+ dublin/platform/external/zxing  
+ dublin/platform/frameworks/av  
+ dublin/platform/frameworks/base  
+ dublin/platform/frameworks/compile/libbcc  
+ dublin/platform/frameworks/compile/linkloader  
+ dublin/platform/frameworks/compile/mclinker  
+ dublin/platform/frameworks/compile/slang  
+ dublin/platform/frameworks/ex  
+ dublin/platform/frameworks/mff  
+ dublin/platform/frameworks/ml  
+ dublin/platform/frameworks/native  
+ dublin/platform/frameworks/oem/LogLibrary  
+ dublin/platform/frameworks/opt/calendar  
+ dublin/platform/frameworks/opt/emoji  
+ dublin/platform/frameworks/opt/inputmethodcommon  
+ dublin/platform/frameworks/opt/mailcommon  
+ dublin/platform/frameworks/opt/vcard  
+ dublin/platform/frameworks/rs  
+ dublin/platform/frameworks/support  
+ dublin/platform/frameworks/testing  
+ dublin/platform/frameworks/wilhelm  
+ dublin/platform/gdk  
+ dublin/platform/hardware/bosch_daemon  
+ dublin/platform/hardware/bosch_daemon_6axis  
+ dublin/platform/hardware/bosch_fusion  
+ dublin/platform/hardware/bosch_fusion_6axis  
+ dublin/platform/hardware/broadcom/wlan  
+ dublin/platform/hardware/invensense  
+ dublin/platform/hardware/l3gd20_hal  
+ dublin/platform/hardware/libhardware  
+ dublin/platform/hardware/libhardware_legacy  
+ dublin/platform/hardware/msm7k  
+ dublin/platform/hardware/qcom/audio  
+ dublin/platform/hardware/qcom/camera  
+ dublin/platform/hardware/qcom/display  
+ dublin/platform/hardware/qcom/gestures  
+ dublin/platform/hardware/qcom/gps  
+ dublin/platform/hardware/qcom/media  
+ dublin/platform/hardware/qcom/nfc  
+ dublin/platform/hardware/qcom/wlan  
+ dublin/platform/hardware/ril  
+ dublin/platform/hardware/ti/omap3  
+ dublin/platform/hardware/ti/omap4xxx  
+ dublin/platform/hardware/ti/wlan  
+ dublin/platform/hardware/ti/wpan  
+ dublin/platform/libcore  
+ dublin/platform/libnativehelper  
+ dublin/platform/manifest  
+ dublin/platform/ndk  
+ dublin/platform/packages/apps/BasicSmsReceiver  
+ dublin/platform/packages/apps/Bluetooth  
+ dublin/platform/packages/apps/Browser  
+ dublin/platform/packages/apps/Calculator  
+ dublin/platform/packages/apps/Calendar  
+ dublin/platform/packages/apps/Camera  
+ dublin/platform/packages/apps/CellBroadcastReceiver  
+ dublin/platform/packages/apps/CertInstaller  
+ dublin/platform/packages/apps/Contacts  
+ dublin/platform/packages/apps/DeskClock  
+ dublin/platform/packages/apps/Email  
+ dublin/platform/packages/apps/Exchange  
+ dublin/platform/packages/apps/FM  
+ dublin/platform/packages/apps/Gallery  
+ dublin/platform/packages/apps/Gallery2  
+ dublin/platform/packages/apps/HTMLViewer  
+ dublin/platform/packages/apps/KeyChain  
+ dublin/platform/packages/apps/Launcher2  
+ dublin/platform/packages/apps/LegacyCamera  
+ dublin/platform/packages/apps/Mms  
+ dublin/platform/packages/apps/Music  
+ dublin/platform/packages/apps/MusicFX  
+ dublin/platform/packages/apps/Nfc  
+ dublin/platform/packages/apps/PackageInstaller  
+ dublin/platform/packages/apps/Phone  
+ dublin/platform/packages/apps/Protips  
+ dublin/platform/packages/apps/Provision  
+ dublin/platform/packages/apps/QuickSearchBox  
+ dublin/platform/packages/apps/Settings  
+ dublin/platform/packages/apps/SoundRecorder  
+ dublin/platform/packages/apps/SpareParts  
+ dublin/platform/packages/apps/SpeechRecorder  
+ dublin/platform/packages/apps/Stk  
+ dublin/platform/packages/apps/Tag  
+ dublin/platform/packages/apps/VideoEditor  
+ dublin/platform/packages/apps/VoiceDialer  
+ dublin/platform/packages/apps/gestures  
+ dublin/platform/packages/apps/oem_apps/ContactsPicker  
+ dublin/platform/packages/apps/oem_apps/EngineeringMode  
+ dublin/platform/packages/apps/oem_apps/FMRadio  
+ dublin/platform/packages/apps/oem_apps/Log  
+ dublin/platform/packages/apps/oem_apps/PreLoadNetworkSettings  
+ dublin/platform/packages/apps/oem_apps/QVariableChecker  
+ dublin/platform/packages/experimental  
+ dublin/platform/packages/inputmethods/LatinIME  
+ dublin/platform/packages/inputmethods/OpenWnn  
+ dublin/platform/packages/inputmethods/PinyinIME  
+ dublin/platform/packages/providers/ApplicationsProvider  
+ dublin/platform/packages/providers/CalendarProvider  
+ dublin/platform/packages/providers/ContactsProvider  
+ dublin/platform/packages/providers/DownloadProvider  
+ dublin/platform/packages/providers/DrmProvider  
+ dublin/platform/packages/providers/MediaProvider  
+ dublin/platform/packages/providers/PartnerBookmarksProvider  
+ dublin/platform/packages/providers/TelephonyProvider  
+ dublin/platform/packages/providers/UserDictionaryProvider  
+ dublin/platform/packages/wallpapers/Basic  
+ dublin/platform/packages/wallpapers/Galaxy4  
+ dublin/platform/packages/wallpapers/HoloSpiral  
+ dublin/platform/packages/wallpapers/LivePicker  
+ dublin/platform/packages/wallpapers/MagicSmoke  
+ dublin/platform/packages/wallpapers/MusicVisualization  
+ dublin/platform/packages/wallpapers/NoiseField  
+ dublin/platform/packages/wallpapers/PhaseBeam  
+ dublin/platform/pdk  
+ dublin/platform/prebuilt  
+ dublin/platform/prebuilts/eclipse  
+ dublin/platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6  
+ dublin/platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6  
+ dublin/platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.4.3  
+ dublin/platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6  
+ dublin/platform/prebuilts/gcc/darwin-x86/x86/i686-android-linux-4.4.3  
+ dublin/platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6  
+ dublin/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6  
+ dublin/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6  
+ dublin/platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3  
+ dublin/platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6  
+ dublin/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6  
+ dublin/platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.4.3  
+ dublin/platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6  
+ dublin/platform/prebuilts/gcc/linux-x86/x86/i686-android-linux-4.4.3  
+ dublin/platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6  
+ dublin/platform/prebuilts/misc  
+ dublin/platform/prebuilts/ndk  
+ dublin/platform/prebuilts/qemu-kernel  
+ dublin/platform/prebuilts/sdk  
+ dublin/platform/prebuilts/tools  
+ dublin/platform/sdk  
+ dublin/platform/system/bluetooth  
+ dublin/platform/system/core  
+ dublin/platform/system/extras  
+ dublin/platform/system/media  
+ dublin/platform/system/netd  
+ dublin/platform/system/qcom  
+ dublin/platform/system/security  
+ dublin/platform/system/vold  
+ dublin/platform/vendor/google  
+ dublin/platform/vendor/qcom-opensource/bt-wlan-coex  
+ dublin/platform/vendor/qcom-opensource/kernel/kernel-tests  
+ dublin/platform/vendor/qcom-opensource/testframework  
+ dublin/platform/vendor/qcom-opensource/time-services  
+ dublin/platform/vendor/qcom-opensource/v8  
+ dublin/platform/vendor/qcom/copper  
+ dublin/platform/vendor/qcom/mpq8064  
+ dublin/platform/vendor/qcom/msm7627a  
+ dublin/platform/vendor/qcom/msm7630_surf  
+ dublin/platform/vendor/qcom/msm8625  
+ dublin/platform/vendor/qcom/msm8660_surf  
+ dublin/platform/vendor/qcom/msm8960  
+ dublin/platform/vendor/qcom/proprietary  
+ dublin/script  
+ l30/apps_proc/Innopath  
+ l30/apps_proc/atfwd-daemon  
+ l30/apps_proc/base  
+ l30/apps_proc/bootable/bootloader/lk  
+ l30/apps_proc/bootable/recovery  
+ l30/apps_proc/bootable/scripts  
+ l30/apps_proc/common  
+ l30/apps_proc/cxm-apps  
+ l30/apps_proc/data  
+ l30/apps_proc/diag  
+ l30/apps_proc/diag-reboot-app  
+ l30/apps_proc/external/hostap  
+ l30/apps_proc/external/safe-iop  
+ l30/apps_proc/external/yaffs2  
+ l30/apps_proc/gps  
+ l30/apps_proc/hardware/libhardware  
+ l30/apps_proc/hardware/qcom/gps  
+ l30/apps_proc/kernel  
+ l30/apps_proc/kernel-tests  
+ l30/apps_proc/mbim  
+ l30/apps_proc/mm-audio  
+ l30/apps_proc/oe-core  
+ l30/apps_proc/qcom-opensource/kernel/kernel-tests  
+ l30/apps_proc/qcom-opensource/mm-audio  
+ l30/apps_proc/qmi  
+ l30/apps_proc/qmi-framework  
+ l30/apps_proc/qmi-shutdown-modem  
+ l30/apps_proc/system/core  
+ l30/apps_proc/thermal  
+ l30/apps_proc/time-services  
+ l30/apps_proc/wap-fota-daemon  
+ l30/apps_proc/wlan  
+ l30/apps_proc/wlan-proprietary  
+ l30/apps_proc/xmllib  
+ l30/boot_images  
+ l30/common  
+ l30/lpass_proc  
+ l30/modem_proc  
+ l30/platform/manifest  
+ l30/rpm_proc  
+ l30/script  
+ liliantest  
+ msm8260/.repo/manifests Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/.repo/repo Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/amss Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/boss/cairo  
+ msm8260/device/boss/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/boss/la Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/boss/orange Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/boss/song Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/generic/goldfish  
+ msm8260/device/htc/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/dream Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/dream-sapphire Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/passion Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/passion-common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/htc/sapphire Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/qcom/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/sample Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/device/samsung/crespo Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/kernel/common Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/kernel/lk Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/kernel/msm Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/oem Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/abi/cpp  
+ msm8260/platform/bionic Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/bootable/bootloader/legacy Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/bootable/diskinstaller Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/bootable/recovery Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/build Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/cts Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/dalvik Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/development Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/aes Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/alljoyn/alljoyn_core  
+ msm8260/platform/external/alljoyn/common  
+ msm8260/platform/external/alsa-lib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/alsa-utils Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/android-mock  
+ msm8260/platform/external/antlr  
+ msm8260/platform/external/apache-harmony  
+ msm8260/platform/external/apache-http Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/apache-xml  
+ msm8260/platform/external/astl Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bison Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/blktrace Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluetooth/bluez Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluetooth/glib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluetooth/hcidumb Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluetooth/hcidump Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bluez Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bouncycastle Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bsdiff Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/bson  
+ msm8260/platform/external/busybox  
+ msm8260/platform/external/bzip2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/chromium Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/clang  
+ msm8260/platform/external/clearsilver Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/collada  
+ msm8260/platform/external/connectivity Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/curl  
+ msm8260/platform/external/dbus Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/dhcpcd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/dnsmasq Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/doclava  
+ msm8260/platform/external/dosfstools Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/dropbear Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/e2fsprogs Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/easymock Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/eglib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/elfcopy Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/elfutils Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/embunit Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/emma Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/esd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/expat Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/eyes-free  
+ msm8260/platform/external/fdlibm Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/flac  
+ msm8260/platform/external/freetype Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/fsck_msdos Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/gdata Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/genext2fs Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/giflib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/google-diff-match-patch  
+ msm8260/platform/external/googleclient Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/grub Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/gtest Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/guava Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/harfbuzz Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/hcidump Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/hostap  
+ msm8260/platform/external/hostap-06 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/hyphenation Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/icu4c Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/iperf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/iproute2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/ipsec-tools Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/iptables Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/javasqlite  
+ msm8260/platform/external/javassist  
+ msm8260/platform/external/jdiff Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/jhead Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/jpeg Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/jsilver Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/jsr305 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/junit Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/kernel-headers Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/lcc Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libffi Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libgsm Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/liblzf  
+ msm8260/platform/external/libnfc-nxp Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libnl-headers  
+ msm8260/platform/external/libpcap Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libphonenumber  
+ msm8260/platform/external/libpng Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libvpx Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libxml2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/libxslt Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/llvm  
+ msm8260/platform/external/lohit-fonts  
+ msm8260/platform/external/markdown  
+ msm8260/platform/external/mesa3d  
+ msm8260/platform/external/mksh  
+ msm8260/platform/external/mockwebserver  
+ msm8260/platform/external/mtd-utils Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/mtpd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/netcat Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/netperf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/neven Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/nist-sip Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/node  
+ msm8260/platform/external/node-sqlite-async  
+ msm8260/platform/external/node-sqlite-sync  
+ msm8260/platform/external/oauth Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/opencore Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/opencv  
+ msm8260/platform/external/openssl Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/openvpn Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/oprofile Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/pciutils Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/pcre  
+ msm8260/platform/external/ping Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/ping6  
+ msm8260/platform/external/powertop Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/ppp Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/proguard Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/protobuf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/qemu Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/qemu-pc-bios Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/qrngd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/quake Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/safe-iop Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/skia Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/sonivox Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/speex Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/sqlite Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/srec Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/srtp  
+ msm8260/platform/external/stlport Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/strace Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/svox Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tagsoup Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tcpdump Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tesseract Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tinyalsa  
+ msm8260/platform/external/tinyxml Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tremolo Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tremor Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/tslib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/v8 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/valgrind  
+ msm8260/platform/external/webkit Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/webp  
+ msm8260/platform/external/webrtc  
+ msm8260/platform/external/wpa_supplicant Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/wpa_supplicant_6 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/wpa_supplicant_8  
+ msm8260/platform/external/xdelta3 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/xmlwriter Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/yaffs2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/external/zlib Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/base Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/compile/libbcc  
+ msm8260/platform/frameworks/compile/linkloader  
+ msm8260/platform/frameworks/compile/slang  
+ msm8260/platform/frameworks/ex Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/media/libvideoeditor  
+ msm8260/platform/frameworks/oem/LogLibrary Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/oem/sdk_addon Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/opt/calendar  
+ msm8260/platform/frameworks/opt/com.google.android Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/opt/com.google.android.googlelogin Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/opt/emoji Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/opt/inputmethodcommon  
+ msm8260/platform/frameworks/opt/mailcommon  
+ msm8260/platform/frameworks/opt/vcard  
+ msm8260/platform/frameworks/policies/base Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/frameworks/support  
+ msm8260/platform/hardware/alsa_sound Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/broadcom/wlan Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/htc/dream Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/invensense  
+ msm8260/platform/hardware/libhardware Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/libhardware_legacy Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/msm7k Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/qcom/camera  
+ msm8260/platform/hardware/qcom/display  
+ msm8260/platform/hardware/qcom/gps Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/qcom/media Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/qsd8k Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/ril Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/ti/omap3 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/hardware/ti/omap4xxx  
+ msm8260/platform/hardware/ti/wlan Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/libcore Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/manifest Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/ndk Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/AccountsAndSyncSettings Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/AlarmClock Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/BasicSmsReceiver  
+ msm8260/platform/packages/apps/Bluetooth Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Browser Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Calculator Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Calendar Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Camera Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Camera_Cairo  
+ msm8260/platform/packages/apps/CellBroadcastReceiver  
+ msm8260/platform/packages/apps/CertInstaller Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Contacts Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/DeskClock Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Email Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Exchange  
+ msm8260/platform/packages/apps/FM Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Gallery Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Gallery2  
+ msm8260/platform/packages/apps/Gallery3D Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/GlobalSearch Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/GoogleSearch Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/HTMLViewer Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/IM Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/KeyChain  
+ msm8260/platform/packages/apps/Launcher Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Launcher2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Mms Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Music Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/MusicFX  
+ msm8260/platform/packages/apps/Nfc Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/OTAProvisioningClient Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/PackageInstaller Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Phone Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Protips Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Provision Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/QualcommSoftAP Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/QuickSearchBox Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Settings Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/SoundRecorder Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/SpareParts  
+ msm8260/platform/packages/apps/SpeechRecorder Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Stk Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Sync Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/TSCalibration Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Tag Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/Updater Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/VideoEditor  
+ msm8260/platform/packages/apps/VoiceDialer Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/ContactsPicker  
+ msm8260/platform/packages/apps/oem_apps/EngineeringMode Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/EngineeringMode_Cairo  
+ msm8260/platform/packages/apps/oem_apps/InternetServices  
+ msm8260/platform/packages/apps/oem_apps/LogMaster2 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/LogService  
+ msm8260/platform/packages/apps/oem_apps/ModemVersion  
+ msm8260/platform/packages/apps/oem_apps/OOBTestTool  
+ msm8260/platform/packages/apps/oem_apps/PackageChecker Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/PackageUpdate Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/PreLoadNetworkSettings  
+ msm8260/platform/packages/apps/oem_apps/RunIn  
+ msm8260/platform/packages/apps/oem_apps/SIMManager  
+ msm8260/platform/packages/apps/oem_apps/SIMManger  
+ msm8260/platform/packages/apps/oem_apps/TodoList Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/apps/oem_apps/test  
+ msm8260/platform/packages/experimental Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/inputmethods/LatinIME Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/inputmethods/OpenWnn Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/inputmethods/PinyinIME Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/ApplicationsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/CalendarProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/ContactsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/DownloadProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/DrmProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/GoogleContactsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/GoogleSubscribedFeedsProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/ImProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/ManagementProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/MediaProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/TelephonyProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/UserDictionaryProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/providers/WebSearchProvider Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/services/EasService Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/services/LockAndWipe Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/wallpapers/Basic Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/wallpapers/Galaxy4  
+ msm8260/platform/packages/wallpapers/HoloSpiral  
+ msm8260/platform/packages/wallpapers/LivePicker Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/wallpapers/MagicSmoke Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/wallpapers/MusicVisualization Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/packages/wallpapers/NoiseField  
+ msm8260/platform/packages/wallpapers/PhaseBeam  
+ msm8260/platform/prebuilt Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/recovery Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/sdk Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/bluetooth Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/core Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/extras Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/media Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/netd Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/qcom Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/vold Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/wlan/broadcom Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/system/wlan/ti Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/tools/tradefederation Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/aosp Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/google Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/hermes  
+ msm8260/platform/vendor/htc/common-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/htc/dream-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/htc/prebuilt-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/htc/sapphire-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/lexus  
+ msm8260/platform/vendor/pv-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/battery_monitor  
+ msm8260/platform/vendor/qcom-opensource/bt-wlan-coex Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/diag Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/kernel-tests/mm-audio Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/omx/mm-audio Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/omx/mm-core Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/omx/mm-video Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/time-services Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom-opensource/v8  
+ msm8260/platform/vendor/qcom-opensource/webkit Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/android-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/copper  
+ msm8260/platform/vendor/qcom/msm7201a_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7201a_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7501a_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7501a_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7625_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7625_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627_6x  
+ msm8260/platform/vendor/qcom/msm7627_7x_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627_7x_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7627a Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7630_1x_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7630_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7630_fusion Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm7630_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm8660_csfb Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm8660_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/msm8960 Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/proprietary Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/proprietary-open Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/qsd8250_ffa Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/qsd8250_surf Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qcom/qsd8650a_st1x Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qisda Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/platform/vendor/qisda/apps/Weather  
+ msm8260/platform/vendor/real  
+ msm8260/platform/vendor/sample Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/repo Unnamed repository; edit this file 'description' to name the repository. 
+ msm8260/test  
+ msm8260/tools  
+ msm8x30/MTK  
+ msm8x30/amss  
+ msm8x30/device/asus/grouper  
+ msm8x30/device/common  
+ msm8x30/device/generic/armv7-a  
+ msm8x30/device/generic/armv7-a-neon  
+ msm8x30/device/generic/goldfish  
+ msm8x30/device/google/accessory/arduino  
+ msm8x30/device/google/accessory/demokit  
+ msm8x30/device/moto/common  
+ msm8x30/device/moto/stingray  
+ msm8x30/device/moto/wingray  
+ msm8x30/device/qcom/common  
+ msm8x30/device/sample  
+ msm8x30/device/samsung/crespo  
+ msm8x30/device/samsung/crespo4g  
+ msm8x30/device/samsung/maguro  
+ msm8x30/device/samsung/toro  
+ msm8x30/device/samsung/torospr  
+ msm8x30/device/samsung/tuna  
+ msm8x30/device/ti/panda  
+ msm8x30/kernel/lk  
+ msm8x30/kernel/msm  
+ msm8x30/platform/abi/cpp  
+ msm8x30/platform/bionic  
+ msm8x30/platform/bootable/bootloader/legacy  
+ msm8x30/platform/bootable/diskinstaller  
+ msm8x30/platform/bootable/recovery  
+ msm8x30/platform/build  
+ msm8x30/platform/cts  
+ msm8x30/platform/dalvik  
+ msm8x30/platform/development  
+ msm8x30/platform/docs/source.android.com  
+ msm8x30/platform/external/aac  
+ msm8x30/platform/external/alljoyn/alljoyn_core  
+ msm8x30/platform/external/alljoyn/common  
+ msm8x30/platform/external/android-mock  
+ msm8x30/platform/external/antlr  
+ msm8x30/platform/external/apache-harmony  
+ msm8x30/platform/external/apache-http  
+ msm8x30/platform/external/apache-xml  
+ msm8x30/platform/external/astl  
+ msm8x30/platform/external/bison  
+ msm8x30/platform/external/blktrace  
+ msm8x30/platform/external/bluetooth/bluez  
+ msm8x30/platform/external/bluetooth/glib  
+ msm8x30/platform/external/bluetooth/hcidump  
+ msm8x30/platform/external/bouncycastle  
+ msm8x30/platform/external/bsdiff  
+ msm8x30/platform/external/bson  
+ msm8x30/platform/external/busybox  
+ msm8x30/platform/external/bzip2  
+ msm8x30/platform/external/checkpolicy  
+ msm8x30/platform/external/chromium  
+ msm8x30/platform/external/chromium-trace  
+ msm8x30/platform/external/cibu-fonts  
+ msm8x30/platform/external/clang  
+ msm8x30/platform/external/collada  
+ msm8x30/platform/external/compat-wireless  
+ msm8x30/platform/external/compiler-rt  
+ msm8x30/platform/external/connectivity  
+ msm8x30/platform/external/curl  
+ msm8x30/platform/external/dbus  
+ msm8x30/platform/external/dexmaker  
+ msm8x30/platform/external/dhcpcd  
+ msm8x30/platform/external/dnsmasq  
+ msm8x30/platform/external/doclava  
+ msm8x30/platform/external/dropbear  
+ msm8x30/platform/external/e2fsprogs  
+ msm8x30/platform/external/easymock  
+ msm8x30/platform/external/eclipse-basebuilder  
+ msm8x30/platform/external/eclipse-windowbuilder  
+ msm8x30/platform/external/elfutils  
+ msm8x30/platform/external/embunit  
+ msm8x30/platform/external/emma  
+ msm8x30/platform/external/esd  
+ msm8x30/platform/external/expat  
+ msm8x30/platform/external/eyes-free  
+ msm8x30/platform/external/fdlibm  
+ msm8x30/platform/external/flac  
+ msm8x30/platform/external/freetype  
+ msm8x30/platform/external/fsck_msdos  
+ msm8x30/platform/external/ganymed-ssh2  
+ msm8x30/platform/external/gcc-demangle  
+ msm8x30/platform/external/genext2fs  
+ msm8x30/platform/external/giflib  
+ msm8x30/platform/external/google-diff-match-patch  
+ msm8x30/platform/external/grub  
+ msm8x30/platform/external/gtest  
+ msm8x30/platform/external/guava  
+ msm8x30/platform/external/hamcrest  
+ msm8x30/platform/external/harfbuzz  
+ msm8x30/platform/external/hostap  
+ msm8x30/platform/external/hostap-06  
+ msm8x30/platform/external/hyphenation  
+ msm8x30/platform/external/icu4c  
+ msm8x30/platform/external/iproute2  
+ msm8x30/platform/external/ipsec-tools  
+ msm8x30/platform/external/iptables  
+ msm8x30/platform/external/javasqlite  
+ msm8x30/platform/external/javassist  
+ msm8x30/platform/external/jdiff  
+ msm8x30/platform/external/jhead  
+ msm8x30/platform/external/jmdns  
+ msm8x30/platform/external/jmonkeyengine  
+ msm8x30/platform/external/jpeg  
+ msm8x30/platform/external/jsilver  
+ msm8x30/platform/external/jsr305  
+ msm8x30/platform/external/junit  
+ msm8x30/platform/external/kernel-headers  
+ msm8x30/platform/external/kissfft  
+ msm8x30/platform/external/libffi  
+ msm8x30/platform/external/libgsm  
+ msm8x30/platform/external/liblzf  
+ msm8x30/platform/external/libmtp  
+ msm8x30/platform/external/libnfc-nxp  
+ msm8x30/platform/external/libnl-headers  
+ msm8x30/platform/external/libpcap  
+ msm8x30/platform/external/libphonenumber  
+ msm8x30/platform/external/libpng  
+ msm8x30/platform/external/libselinux  
+ msm8x30/platform/external/libsepol  
+ msm8x30/platform/external/libusb  
+ msm8x30/platform/external/libusb-compat  
+ msm8x30/platform/external/libvpx  
+ msm8x30/platform/external/libxml2  
+ msm8x30/platform/external/libxslt  
+ msm8x30/platform/external/libyuv  
+ msm8x30/platform/external/linux-tools-perf  
+ msm8x30/platform/external/littlemock  
+ msm8x30/platform/external/llvm  
+ msm8x30/platform/external/lohit-fonts  
+ msm8x30/platform/external/markdown  
+ msm8x30/platform/external/mdnsresponder  
+ msm8x30/platform/external/mesa3d  
+ msm8x30/platform/external/mksh  
+ msm8x30/platform/external/mobicore  
+ msm8x30/platform/external/mockwebserver  
+ msm8x30/platform/external/mtpd  
+ msm8x30/platform/external/naver-fonts  
+ msm8x30/platform/external/netcat  
+ msm8x30/platform/external/netperf  
+ msm8x30/platform/external/neven  
+ msm8x30/platform/external/nist-sip  
+ msm8x30/platform/external/node  
+ msm8x30/platform/external/node-sqlite-async  
+ msm8x30/platform/external/node-sqlite-sync  
+ msm8x30/platform/external/oauth  
+ msm8x30/platform/external/opencv  
+ msm8x30/platform/external/openfst  
+ msm8x30/platform/external/openssh  
+ msm8x30/platform/external/openssl  
+ msm8x30/platform/external/oprofile  
+ msm8x30/platform/external/pcre  
+ msm8x30/platform/external/ping  
+ msm8x30/platform/external/ping6  
+ msm8x30/platform/external/powertop  
+ msm8x30/platform/external/ppp  
+ msm8x30/platform/external/proguard  
+ msm8x30/platform/external/protobuf  
+ msm8x30/platform/external/protobuf-c  
+ msm8x30/platform/external/qemu  
+ msm8x30/platform/external/qemu-pc-bios  
+ msm8x30/platform/external/qrngd  
+ msm8x30/platform/external/quake  
+ msm8x30/platform/external/regex-re2  
+ msm8x30/platform/external/remo_ti  
+ msm8x30/platform/external/replicaisland  
+ msm8x30/platform/external/safe-iop  
+ msm8x30/platform/external/sepolicy  
+ msm8x30/platform/external/skia  
+ msm8x30/platform/external/smali  
+ msm8x30/platform/external/sonivox  
+ msm8x30/platform/external/speex  
+ msm8x30/platform/external/sqlite  
+ msm8x30/platform/external/srec  
+ msm8x30/platform/external/srtp  
+ msm8x30/platform/external/stlport  
+ msm8x30/platform/external/strace  
+ msm8x30/platform/external/stressapptest  
+ msm8x30/platform/external/svox  
+ msm8x30/platform/external/tagsoup  
+ msm8x30/platform/external/tcpdump  
+ msm8x30/platform/external/tinyalsa  
+ msm8x30/platform/external/tinyxml  
+ msm8x30/platform/external/tremolo  
+ msm8x30/platform/external/tslib  
+ msm8x30/platform/external/v8  
+ msm8x30/platform/external/valgrind  
+ msm8x30/platform/external/webkit  
+ msm8x30/platform/external/webp  
+ msm8x30/platform/external/webrtc  
+ msm8x30/platform/external/wireless_tools  
+ msm8x30/platform/external/wpa_supplicant  
+ msm8x30/platform/external/wpa_supplicant_6  
+ msm8x30/platform/external/wpa_supplicant_8  
+ msm8x30/platform/external/xmlwriter  
+ msm8x30/platform/external/yaffs2  
+ msm8x30/platform/external/zlib  
+ msm8x30/platform/external/zxing  
+ msm8x30/platform/frameworks/av  
+ msm8x30/platform/frameworks/base  
+ msm8x30/platform/frameworks/compile/libbcc  
+ msm8x30/platform/frameworks/compile/linkloader  
+ msm8x30/platform/frameworks/compile/mclinker  
+ msm8x30/platform/frameworks/compile/slang  
+ msm8x30/platform/frameworks/ex  
+ msm8x30/platform/frameworks/media/libvideoeditor  
+ msm8x30/platform/frameworks/mff  
+ msm8x30/platform/frameworks/ml  
+ msm8x30/platform/frameworks/native  
+ msm8x30/platform/frameworks/oem/LogLibrary  
+ msm8x30/platform/frameworks/opt/calendar  
+ msm8x30/platform/frameworks/opt/emoji  
+ msm8x30/platform/frameworks/opt/inputmethodcommon  
+ msm8x30/platform/frameworks/opt/mailcommon  
+ msm8x30/platform/frameworks/opt/vcard  
+ msm8x30/platform/frameworks/rs  
+ msm8x30/platform/frameworks/support  
+ msm8x30/platform/frameworks/testing  
+ msm8x30/platform/frameworks/wilhelm  
+ msm8x30/platform/gdk  
+ msm8x30/platform/hardware/alsa_sound  
+ msm8x30/platform/hardware/bosch_daemon  
+ msm8x30/platform/hardware/bosch_daemon_6axis  
+ msm8x30/platform/hardware/bosch_fusion  
+ msm8x30/platform/hardware/bosch_fusion_6axis  
+ msm8x30/platform/hardware/broadcom/wlan  
+ msm8x30/platform/hardware/invensense  
+ msm8x30/platform/hardware/l3gd20_hal  
+ msm8x30/platform/hardware/libhardware  
+ msm8x30/platform/hardware/libhardware_legacy  
+ msm8x30/platform/hardware/msm7k  
+ msm8x30/platform/hardware/qcom/audio  
+ msm8x30/platform/hardware/qcom/camera  
+ msm8x30/platform/hardware/qcom/display  
+ msm8x30/platform/hardware/qcom/gestures  
+ msm8x30/platform/hardware/qcom/gps  
+ msm8x30/platform/hardware/qcom/media  
+ msm8x30/platform/hardware/qcom/nfc  
+ msm8x30/platform/hardware/qcom/wlan  
+ msm8x30/platform/hardware/ril  
+ msm8x30/platform/hardware/ti/omap3  
+ msm8x30/platform/hardware/ti/omap4xxx  
+ msm8x30/platform/hardware/ti/wlan  
+ msm8x30/platform/hardware/ti/wpan  
+ msm8x30/platform/libcore  
+ msm8x30/platform/libnativehelper  
+ msm8x30/platform/manifest  
+ msm8x30/platform/ndk  
+ msm8x30/platform/packages/apps/BasicSmsReceiver  
+ msm8x30/platform/packages/apps/Bluetooth  
+ msm8x30/platform/packages/apps/Browser  
+ msm8x30/platform/packages/apps/Calculator  
+ msm8x30/platform/packages/apps/Calendar  
+ msm8x30/platform/packages/apps/Camera  
+ msm8x30/platform/packages/apps/CellBroadcastReceiver  
+ msm8x30/platform/packages/apps/CertInstaller  
+ msm8x30/platform/packages/apps/Contacts  
+ msm8x30/platform/packages/apps/DeskClock  
+ msm8x30/platform/packages/apps/Email  
+ msm8x30/platform/packages/apps/Exchange  
+ msm8x30/platform/packages/apps/FM  
+ msm8x30/platform/packages/apps/Gallery  
+ msm8x30/platform/packages/apps/Gallery2  
+ msm8x30/platform/packages/apps/HTMLViewer  
+ msm8x30/platform/packages/apps/KeyChain  
+ msm8x30/platform/packages/apps/Launcher2  
+ msm8x30/platform/packages/apps/LegacyCamera  
+ msm8x30/platform/packages/apps/Mms  
+ msm8x30/platform/packages/apps/Music  
+ msm8x30/platform/packages/apps/MusicFX  
+ msm8x30/platform/packages/apps/Nfc  
+ msm8x30/platform/packages/apps/NxpSecureElement  
+ msm8x30/platform/packages/apps/PackageInstaller  
+ msm8x30/platform/packages/apps/Phone  
+ msm8x30/platform/packages/apps/Protips  
+ msm8x30/platform/packages/apps/Provision  
+ msm8x30/platform/packages/apps/QualcommSoftAP  
+ msm8x30/platform/packages/apps/QuickSearchBox  
+ msm8x30/platform/packages/apps/Settings  
+ msm8x30/platform/packages/apps/SoundRecorder  
+ msm8x30/platform/packages/apps/SpareParts  
+ msm8x30/platform/packages/apps/SpeechRecorder  
+ msm8x30/platform/packages/apps/Stk  
+ msm8x30/platform/packages/apps/TSCalibration  
+ msm8x30/platform/packages/apps/Tag  
+ msm8x30/platform/packages/apps/VideoEditor  
+ msm8x30/platform/packages/apps/VoiceDialer  
+ msm8x30/platform/packages/apps/gestures  
+ msm8x30/platform/packages/apps/oem_apps/ContactsPicker  
+ msm8x30/platform/packages/apps/oem_apps/EngineeringMode  
+ msm8x30/platform/packages/apps/oem_apps/FMRadio  
+ msm8x30/platform/packages/apps/oem_apps/Log  
+ msm8x30/platform/packages/apps/oem_apps/PreLoadNetworkSettings  
+ msm8x30/platform/packages/apps/oem_apps/QVariableChecker  
+ msm8x30/platform/packages/experimental  
+ msm8x30/platform/packages/inputmethods/LatinIME  
+ msm8x30/platform/packages/inputmethods/OpenWnn  
+ msm8x30/platform/packages/inputmethods/PinyinIME  
+ msm8x30/platform/packages/providers/ApplicationsProvider  
+ msm8x30/platform/packages/providers/CalendarProvider  
+ msm8x30/platform/packages/providers/ContactsProvider  
+ msm8x30/platform/packages/providers/DownloadProvider  
+ msm8x30/platform/packages/providers/DrmProvider  
+ msm8x30/platform/packages/providers/GoogleContactsProvider  
+ msm8x30/platform/packages/providers/MediaProvider  
+ msm8x30/platform/packages/providers/PartnerBookmarksProvider  
+ msm8x30/platform/packages/providers/TelephonyProvider  
+ msm8x30/platform/packages/providers/UserDictionaryProvider  
+ msm8x30/platform/packages/wallpapers/Basic  
+ msm8x30/platform/packages/wallpapers/Galaxy4  
+ msm8x30/platform/packages/wallpapers/HoloSpiral  
+ msm8x30/platform/packages/wallpapers/LivePicker  
+ msm8x30/platform/packages/wallpapers/MagicSmoke  
+ msm8x30/platform/packages/wallpapers/MusicVisualization  
+ msm8x30/platform/packages/wallpapers/NoiseField  
+ msm8x30/platform/packages/wallpapers/PhaseBeam  
+ msm8x30/platform/pdk  
+ msm8x30/platform/prebuilt  
+ msm8x30/platform/prebuilts/eclipse  
+ msm8x30/platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6  
+ msm8x30/platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6  
+ msm8x30/platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.4.3  
+ msm8x30/platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6  
+ msm8x30/platform/prebuilts/gcc/darwin-x86/x86/i686-android-linux-4.4.3  
+ msm8x30/platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6  
+ msm8x30/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6  
+ msm8x30/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6  
+ msm8x30/platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3  
+ msm8x30/platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6  
+ msm8x30/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6  
+ msm8x30/platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.4.3  
+ msm8x30/platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6  
+ msm8x30/platform/prebuilts/gcc/linux-x86/x86/i686-android-linux-4.4.3  
+ msm8x30/platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6  
+ msm8x30/platform/prebuilts/misc  
+ msm8x30/platform/prebuilts/ndk  
+ msm8x30/platform/prebuilts/qemu-kernel  
+ msm8x30/platform/prebuilts/sdk  
+ msm8x30/platform/prebuilts/tools  
+ msm8x30/platform/sdk  
+ msm8x30/platform/system/bluetooth  
+ msm8x30/platform/system/core  
+ msm8x30/platform/system/extras  
+ msm8x30/platform/system/media  
+ msm8x30/platform/system/netd  
+ msm8x30/platform/system/qcom  
+ msm8x30/platform/system/security  
+ msm8x30/platform/system/vold  
+ msm8x30/platform/vendor/google  
+ msm8x30/platform/vendor/qcom-opensource/battery_monitor  
+ msm8x30/platform/vendor/qcom-opensource/bt-wlan-coex  
+ msm8x30/platform/vendor/qcom-opensource/diag  
+ msm8x30/platform/vendor/qcom-opensource/kernel-tests/mm-audio  
+ msm8x30/platform/vendor/qcom-opensource/kernel/kernel-tests  
+ msm8x30/platform/vendor/qcom-opensource/omx/mm-audio  
+ msm8x30/platform/vendor/qcom-opensource/omx/mm-core  
+ msm8x30/platform/vendor/qcom-opensource/omx/mm-video  
+ msm8x30/platform/vendor/qcom-opensource/testframework  
+ msm8x30/platform/vendor/qcom-opensource/time-services  
+ msm8x30/platform/vendor/qcom-opensource/v8  
+ msm8x30/platform/vendor/qcom-opensource/webkit  
+ msm8x30/platform/vendor/qcom/android-open  
+ msm8x30/platform/vendor/qcom/copper  
+ msm8x30/platform/vendor/qcom/mpq8064  
+ msm8x30/platform/vendor/qcom/msm7627_6x  
+ msm8x30/platform/vendor/qcom/msm7627_surf  
+ msm8x30/platform/vendor/qcom/msm7627a  
+ msm8x30/platform/vendor/qcom/msm7630_fusion  
+ msm8x30/platform/vendor/qcom/msm7630_surf  
+ msm8x30/platform/vendor/qcom/msm8625  
+ msm8x30/platform/vendor/qcom/msm8660_surf  
+ msm8x30/platform/vendor/qcom/msm8960  
+ msm8x30/platform/vendor/qcom/proprietary  
+ msm8x30/script  
+ msm8x30/spreadtrum  
+ seattle8064/device/asus/grouper  
+ seattle8064/device/common  
+ seattle8064/device/generic/armv7-a  
+ seattle8064/device/generic/armv7-a-neon  
+ seattle8064/device/generic/goldfish  
+ seattle8064/device/google/accessory/arduino  
+ seattle8064/device/google/accessory/demokit  
+ seattle8064/device/moto/common  
+ seattle8064/device/moto/stingray  
+ seattle8064/device/moto/wingray  
+ seattle8064/device/qcom/common  
+ seattle8064/device/sample  
+ seattle8064/device/samsung/crespo  
+ seattle8064/device/samsung/crespo4g  
+ seattle8064/device/samsung/maguro  
+ seattle8064/device/samsung/toro  
+ seattle8064/device/samsung/torospr  
+ seattle8064/device/samsung/tuna  
+ seattle8064/device/ti/panda  
+ seattle8064/kernel/lk  
+ seattle8064/kernel/msm  
+ seattle8064/non_hlos  
+ seattle8064/platform/abi/cpp  
+ seattle8064/platform/bionic  
+ seattle8064/platform/bootable/bootloader/legacy  
+ seattle8064/platform/bootable/diskinstaller  
+ seattle8064/platform/bootable/recovery  
+ seattle8064/platform/build  
+ seattle8064/platform/cts  
+ seattle8064/platform/dalvik  
+ seattle8064/platform/development  
+ seattle8064/platform/docs/source.android.com  
+ seattle8064/platform/external/aac  
+ seattle8064/platform/external/alljoyn/alljoyn_core  
+ seattle8064/platform/external/alljoyn/common  
+ seattle8064/platform/external/android-mock  
+ seattle8064/platform/external/antlr  
+ seattle8064/platform/external/apache-harmony  
+ seattle8064/platform/external/apache-http  
+ seattle8064/platform/external/apache-xml  
+ seattle8064/platform/external/astl  
+ seattle8064/platform/external/bison  
+ seattle8064/platform/external/blktrace  
+ seattle8064/platform/external/bluetooth/bluez  
+ seattle8064/platform/external/bluetooth/glib  
+ seattle8064/platform/external/bluetooth/hcidump  
+ seattle8064/platform/external/bouncycastle  
+ seattle8064/platform/external/bsdiff  
+ seattle8064/platform/external/bson  
+ seattle8064/platform/external/bzip2  
+ seattle8064/platform/external/checkpolicy  
+ seattle8064/platform/external/chromium  
+ seattle8064/platform/external/chromium-trace  
+ seattle8064/platform/external/cibu-fonts  
+ seattle8064/platform/external/clang  
+ seattle8064/platform/external/compat-wireless  
+ seattle8064/platform/external/compiler-rt  
+ seattle8064/platform/external/connectivity  
+ seattle8064/platform/external/curl  
+ seattle8064/platform/external/dbus  
+ seattle8064/platform/external/dexmaker  
+ seattle8064/platform/external/dhcpcd  
+ seattle8064/platform/external/dnsmasq  
+ seattle8064/platform/external/doclava  
+ seattle8064/platform/external/dropbear  
+ seattle8064/platform/external/e2fsprogs  
+ seattle8064/platform/external/easymock  
+ seattle8064/platform/external/eclipse-basebuilder  
+ seattle8064/platform/external/eclipse-windowbuilder  
+ seattle8064/platform/external/elfutils  
+ seattle8064/platform/external/embunit  
+ seattle8064/platform/external/emma  
+ seattle8064/platform/external/esd  
+ seattle8064/platform/external/expat  
+ seattle8064/platform/external/eyes-free  
+ seattle8064/platform/external/fdlibm  
+ seattle8064/platform/external/flac  
+ seattle8064/platform/external/freetype  
+ seattle8064/platform/external/fsck_msdos  
+ seattle8064/platform/external/ganymed-ssh2  
+ seattle8064/platform/external/gcc-demangle  
+ seattle8064/platform/external/genext2fs  
+ seattle8064/platform/external/giflib  
+ seattle8064/platform/external/google-diff-match-patch  
+ seattle8064/platform/external/grub  
+ seattle8064/platform/external/gtest  
+ seattle8064/platform/external/guava  
+ seattle8064/platform/external/hamcrest  
+ seattle8064/platform/external/harfbuzz  
+ seattle8064/platform/external/hyphenation  
+ seattle8064/platform/external/icu4c  
+ seattle8064/platform/external/iproute2  
+ seattle8064/platform/external/ipsec-tools  
+ seattle8064/platform/external/iptables  
+ seattle8064/platform/external/javasqlite  
+ seattle8064/platform/external/javassist  
+ seattle8064/platform/external/jdiff  
+ seattle8064/platform/external/jhead  
+ seattle8064/platform/external/jmdns  
+ seattle8064/platform/external/jmonkeyengine  
+ seattle8064/platform/external/jpeg  
+ seattle8064/platform/external/jsilver  
+ seattle8064/platform/external/jsr305  
+ seattle8064/platform/external/junit  
+ seattle8064/platform/external/kernel-headers  
+ seattle8064/platform/external/libffi  
+ seattle8064/platform/external/libgsm  
+ seattle8064/platform/external/liblzf  
+ seattle8064/platform/external/libmtp  
+ seattle8064/platform/external/libnfc-nxp  
+ seattle8064/platform/external/libnl-headers  
+ seattle8064/platform/external/libpcap  
+ seattle8064/platform/external/libphonenumber  
+ seattle8064/platform/external/libpng  
+ seattle8064/platform/external/libselinux  
+ seattle8064/platform/external/libsepol  
+ seattle8064/platform/external/libusb  
+ seattle8064/platform/external/libusb-compat  
+ seattle8064/platform/external/libvpx  
+ seattle8064/platform/external/libxml2  
+ seattle8064/platform/external/libxslt  
+ seattle8064/platform/external/libyuv  
+ seattle8064/platform/external/linux-tools-perf  
+ seattle8064/platform/external/littlemock  
+ seattle8064/platform/external/llvm  
+ seattle8064/platform/external/lohit-fonts  
+ seattle8064/platform/external/markdown  
+ seattle8064/platform/external/mdnsresponder  
+ seattle8064/platform/external/mesa3d  
+ seattle8064/platform/external/mksh  
+ seattle8064/platform/external/mobicore  
+ seattle8064/platform/external/mockwebserver  
+ seattle8064/platform/external/mtpd  
+ seattle8064/platform/external/naver-fonts  
+ seattle8064/platform/external/netcat  
+ seattle8064/platform/external/netperf  
+ seattle8064/platform/external/neven  
+ seattle8064/platform/external/nist-sip  
+ seattle8064/platform/external/oauth  
+ seattle8064/platform/external/opencv  
+ seattle8064/platform/external/openfst  
+ seattle8064/platform/external/openssh  
+ seattle8064/platform/external/openssl  
+ seattle8064/platform/external/oprofile  
+ seattle8064/platform/external/ping  
+ seattle8064/platform/external/ping6  
+ seattle8064/platform/external/powertop  
+ seattle8064/platform/external/ppp  
+ seattle8064/platform/external/proguard  
+ seattle8064/platform/external/protobuf  
+ seattle8064/platform/external/qemu  
+ seattle8064/platform/external/qemu-pc-bios  
+ seattle8064/platform/external/qrngd  
+ seattle8064/platform/external/quake  
+ seattle8064/platform/external/regex-re2  
+ seattle8064/platform/external/replicaisland  
+ seattle8064/platform/external/safe-iop  
+ seattle8064/platform/external/sepolicy  
+ seattle8064/platform/external/skia  
+ seattle8064/platform/external/smali  
+ seattle8064/platform/external/sonivox  
+ seattle8064/platform/external/speex  
+ seattle8064/platform/external/sqlite  
+ seattle8064/platform/external/srec  
+ seattle8064/platform/external/srtp  
+ seattle8064/platform/external/stlport  
+ seattle8064/platform/external/strace  
+ seattle8064/platform/external/stressapptest  
+ seattle8064/platform/external/svox  
+ seattle8064/platform/external/tagsoup  
+ seattle8064/platform/external/tcpdump  
+ seattle8064/platform/external/tinyalsa  
+ seattle8064/platform/external/tinyxml  
+ seattle8064/platform/external/tremolo  
+ seattle8064/platform/external/v8  
+ seattle8064/platform/external/valgrind  
+ seattle8064/platform/external/webkit  
+ seattle8064/platform/external/webp  
+ seattle8064/platform/external/webrtc  
+ seattle8064/platform/external/wpa_supplicant_6  
+ seattle8064/platform/external/wpa_supplicant_8  
+ seattle8064/platform/external/xmlwriter  
+ seattle8064/platform/external/yaffs2  
+ seattle8064/platform/external/zlib  
+ seattle8064/platform/external/zxing  
+ seattle8064/platform/frameworks/av  
+ seattle8064/platform/frameworks/base  
+ seattle8064/platform/frameworks/compile/libbcc  
+ seattle8064/platform/frameworks/compile/linkloader  
+ seattle8064/platform/frameworks/compile/mclinker  
+ seattle8064/platform/frameworks/compile/slang  
+ seattle8064/platform/frameworks/ex  
+ seattle8064/platform/frameworks/mff  
+ seattle8064/platform/frameworks/ml  
+ seattle8064/platform/frameworks/native  
+ seattle8064/platform/frameworks/oem/LogLibrary  
+ seattle8064/platform/frameworks/opt/calendar  
+ seattle8064/platform/frameworks/opt/emoji  
+ seattle8064/platform/frameworks/opt/inputmethodcommon  
+ seattle8064/platform/frameworks/opt/mailcommon  
+ seattle8064/platform/frameworks/opt/vcard  
+ seattle8064/platform/frameworks/rs  
+ seattle8064/platform/frameworks/support  
+ seattle8064/platform/frameworks/testing  
+ seattle8064/platform/frameworks/wilhelm  
+ seattle8064/platform/gdk  
+ seattle8064/platform/hardware/broadcom/wlan  
+ seattle8064/platform/hardware/invensense  
+ seattle8064/platform/hardware/libhardware  
+ seattle8064/platform/hardware/libhardware_legacy  
+ seattle8064/platform/hardware/msm7k  
+ seattle8064/platform/hardware/qcom/audio  
+ seattle8064/platform/hardware/qcom/camera  
+ seattle8064/platform/hardware/qcom/display  
+ seattle8064/platform/hardware/qcom/gps  
+ seattle8064/platform/hardware/qcom/media  
+ seattle8064/platform/hardware/qcom/wlan  
+ seattle8064/platform/hardware/ril  
+ seattle8064/platform/hardware/ti/omap3  
+ seattle8064/platform/hardware/ti/omap4xxx  
+ seattle8064/platform/hardware/ti/wlan  
+ seattle8064/platform/hardware/ti/wpan  
+ seattle8064/platform/libcore  
+ seattle8064/platform/libnativehelper  
+ seattle8064/platform/manifest  
+ seattle8064/platform/ndk  
+ seattle8064/platform/packages/apps/BasicSmsReceiver  
+ seattle8064/platform/packages/apps/Bluetooth  
+ seattle8064/platform/packages/apps/Browser  
+ seattle8064/platform/packages/apps/Calculator  
+ seattle8064/platform/packages/apps/Calendar  
+ seattle8064/platform/packages/apps/Camera  
+ seattle8064/platform/packages/apps/CellBroadcastReceiver  
+ seattle8064/platform/packages/apps/CertInstaller  
+ seattle8064/platform/packages/apps/Contacts  
+ seattle8064/platform/packages/apps/DeskClock  
+ seattle8064/platform/packages/apps/Email  
+ seattle8064/platform/packages/apps/Exchange  
+ seattle8064/platform/packages/apps/FM  
+ seattle8064/platform/packages/apps/Gallery  
+ seattle8064/platform/packages/apps/Gallery2  
+ seattle8064/platform/packages/apps/HTMLViewer  
+ seattle8064/platform/packages/apps/KeyChain  
+ seattle8064/platform/packages/apps/Launcher2  
+ seattle8064/platform/packages/apps/LegacyCamera  
+ seattle8064/platform/packages/apps/Mms  
+ seattle8064/platform/packages/apps/Music  
+ seattle8064/platform/packages/apps/MusicFX  
+ seattle8064/platform/packages/apps/Nfc  
+ seattle8064/platform/packages/apps/PackageInstaller  
+ seattle8064/platform/packages/apps/Phone  
+ seattle8064/platform/packages/apps/Protips  
+ seattle8064/platform/packages/apps/Provision  
+ seattle8064/platform/packages/apps/QuickSearchBox  
+ seattle8064/platform/packages/apps/Settings  
+ seattle8064/platform/packages/apps/SoundRecorder  
+ seattle8064/platform/packages/apps/SpareParts  
+ seattle8064/platform/packages/apps/SpeechRecorder  
+ seattle8064/platform/packages/apps/Stk  
+ seattle8064/platform/packages/apps/Tag  
+ seattle8064/platform/packages/apps/VideoEditor  
+ seattle8064/platform/packages/apps/VoiceDialer  
+ seattle8064/platform/packages/apps/oem_apps/EngineeringMode  
+ seattle8064/platform/packages/apps/oem_apps/Log  
+ seattle8064/platform/packages/apps/oem_apps/PreLoadNetworkSettings  
+ seattle8064/platform/packages/apps/oem_apps/QVariableChecker  
+ seattle8064/platform/packages/experimental  
+ seattle8064/platform/packages/inputmethods/LatinIME  
+ seattle8064/platform/packages/inputmethods/OpenWnn  
+ seattle8064/platform/packages/inputmethods/PinyinIME  
+ seattle8064/platform/packages/providers/ApplicationsProvider  
+ seattle8064/platform/packages/providers/CalendarProvider  
+ seattle8064/platform/packages/providers/ContactsProvider  
+ seattle8064/platform/packages/providers/DownloadProvider  
+ seattle8064/platform/packages/providers/DrmProvider  
+ seattle8064/platform/packages/providers/MediaProvider  
+ seattle8064/platform/packages/providers/PartnerBookmarksProvider  
+ seattle8064/platform/packages/providers/TelephonyProvider  
+ seattle8064/platform/packages/providers/UserDictionaryProvider  
+ seattle8064/platform/packages/wallpapers/Basic  
+ seattle8064/platform/packages/wallpapers/Galaxy4  
+ seattle8064/platform/packages/wallpapers/HoloSpiral  
+ seattle8064/platform/packages/wallpapers/LivePicker  
+ seattle8064/platform/packages/wallpapers/MagicSmoke  
+ seattle8064/platform/packages/wallpapers/MusicVisualization  
+ seattle8064/platform/packages/wallpapers/NoiseField  
+ seattle8064/platform/packages/wallpapers/PhaseBeam  
+ seattle8064/platform/pdk  
+ seattle8064/platform/prebuilt  
+ seattle8064/platform/prebuilts/eclipse  
+ seattle8064/platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6  
+ seattle8064/platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6  
+ seattle8064/platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.4.3  
+ seattle8064/platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6  
+ seattle8064/platform/prebuilts/gcc/darwin-x86/x86/i686-android-linux-4.4.3  
+ seattle8064/platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6  
+ seattle8064/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6  
+ seattle8064/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6  
+ seattle8064/platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3  
+ seattle8064/platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6  
+ seattle8064/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6  
+ seattle8064/platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.4.3  
+ seattle8064/platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6  
+ seattle8064/platform/prebuilts/gcc/linux-x86/x86/i686-android-linux-4.4.3  
+ seattle8064/platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6  
+ seattle8064/platform/prebuilts/misc  
+ seattle8064/platform/prebuilts/ndk  
+ seattle8064/platform/prebuilts/qemu-kernel  
+ seattle8064/platform/prebuilts/sdk  
+ seattle8064/platform/prebuilts/tools  
+ seattle8064/platform/sdk  
+ seattle8064/platform/system/bluetooth  
+ seattle8064/platform/system/core  
+ seattle8064/platform/system/extras  
+ seattle8064/platform/system/media  
+ seattle8064/platform/system/netd  
+ seattle8064/platform/system/qcom  
+ seattle8064/platform/system/security  
+ seattle8064/platform/system/vold  
+ seattle8064/platform/vendor/google  
+ seattle8064/platform/vendor/qcom-opensource/bt-wlan-coex  
+ seattle8064/platform/vendor/qcom-opensource/testframework  
+ seattle8064/platform/vendor/qcom-opensource/time-services  
+ seattle8064/platform/vendor/qcom-opensource/v8  
+ seattle8064/platform/vendor/qcom/msm7627a  
+ seattle8064/platform/vendor/qcom/msm7630_surf  
+ seattle8064/platform/vendor/qcom/msm8625  
+ seattle8064/platform/vendor/qcom/msm8660_surf  
+ seattle8064/platform/vendor/qcom/msm8960  
+ seattle8064/platform/vendor/qcom/proprietary  
+ seattle8064/script  
+ w50  
+
+Press '?' to view keyboard shortcuts
+Powered by Gerrit Code Review (2.1.6.1) | Report Bug

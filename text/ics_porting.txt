@@ -1,0 +1,298 @@
+file folder : qdsp6v2
+1. board-msm8x60-audio.c 
+#include <mach/hw_id.h>
+#if PM8058_L10_USED
+static struct regulator *snddev_reg_l10;
+#endif
+655-870	evb	
+922-938	imic2
+957-1040  
+1092-1130  	Larkin headset music profile
+1208-1223
+1259-1291
+1340-1407
+1460-1512
+1549-1584
+3213-3271
+3362-3388	Larkin hw info control
+
+3396-3406	if ( !machine_is_msm8x60_qis_common())
+
+......
+
+2. audio_dev_ctl.c
+94-123 Derrick suspend/resume
+
+3. q6voice.c  
+3 Derrick changes
+
+4. snddev_icodec.c 
+950-1101 Derrick changes
+
+5. timpani_profile_8x60.h
+Derrick and Larkin changes
+
+----------------------------------------
+file folder: 
+"arch/arm/configs/msm8660-orange_defconfig"
+41, 42, 43 
+"arch/arm/mach-msm/Makefile"  204
+
+
+/**************related evb functions****************/
+/*Leo Qin adds for 8260 EVB amid/dmic power control*/
+/*Terry Yan, change return parameter for incompatible pointer type error*/
+static int evb_snddev_enable_amic_power(void)
+{
+	int ret;
+
+#ifdef CONFIG_PMIC8058_OTHC
+
+	ret = pm8058_micbias_enable(OTHC_MICBIAS_0,
+			OTHC_SIGNAL_ALWAYS_ON);
+	if (ret)
+		pr_err("%s: Enabling amic power failed\n", __func__);
+#endif
+	return ret;
+}
+
+void evb_snddev_disable_amic_power(void)
+{
+#ifdef CONFIG_PMIC8058_OTHC
+	int ret;
+
+	ret = pm8058_micbias_enable(OTHC_MICBIAS_0, OTHC_SIGNAL_OFF);
+	if (ret)
+		pr_err("%s: Disabling amic power failed\n", __func__);
+#endif
+}
+
+static struct regulator *reg_8901_l4;
+
+static void evb_snddev_ctrl_dmic_power(int on)
+{
+	int rc;
+
+	if (!reg_8901_l4) {
+		reg_8901_l4 = regulator_get(NULL, "8901_l4");
+		if (IS_ERR(reg_8901_l4)) {
+			pr_err("%s: Unable to get 8901_l4\n", __func__);
+			return;
+		}
+	}
+
+	if (on) {
+		rc = regulator_set_voltage(reg_8901_l4, 2600000, 2600000);
+		if (rc) {
+			pr_err("%s: error set 8901_l4 to 2.6V\n", __func__);
+			goto fail;
+		}
+
+		rc = regulator_enable(reg_8901_l4);
+		if (rc) {
+			pr_err("%s: 8901_l4 enable failed, rc=%d\n",
+				__func__, rc);
+			goto fail;
+		}
+
+	} else {
+		if (regulator_is_enabled(reg_8901_l4)) {
+			rc = regulator_disable(reg_8901_l4);
+			if (rc)
+				pr_warning("%s: 8901_l4 disable failed, "
+					"rc=%d\n", __func__, rc);
+		}
+
+	}
+
+	return;
+
+fail:
+	regulator_put(reg_8901_l4);
+	reg_8901_l4 = NULL;
+}
+
+/*Terry Yan: change return parameter for incompatible pointer type error*/
+static int evb_snddev_enable_dmic_power(void)
+{
+  evb_snddev_ctrl_dmic_power(1);
+  return 0;
+}
+
+void evb_snddev_disable_dmic_power(void)
+{
+  evb_snddev_ctrl_dmic_power(0);
+}
+
+/* Macros assume PMIC GPIOs start at 0 */
+#define PM8058_GPIO_BASE			NR_MSM_GPIOS
+#define PM8058_GPIO_PM_TO_SYS(pm_gpio)		(pm_gpio + PM8058_GPIO_BASE)
+#define PM8058_GPIO_SYS_TO_PM(sys_gpio)		(sys_gpio - PM8058_GPIO_BASE)
+#define PM8058_MPP_BASE			(PM8058_GPIO_BASE + PM8058_GPIOS)
+#define PM8058_MPP_PM_TO_SYS(pm_gpio)		(pm_gpio + PM8058_MPP_BASE)
+#define PM8058_MPP_SYS_TO_PM(sys_gpio)		(sys_gpio - PM8058_MPP_BASE)
+#define PM8058_IRQ_BASE				(NR_MSM_IRQS + NR_GPIO_IRQS)
+
+#define PM8901_GPIO_BASE			(PM8058_GPIO_BASE + \
+						PM8058_GPIOS + PM8058_MPPS)
+#define PM8901_GPIO_PM_TO_SYS(pm_gpio)		(pm_gpio + PM8901_GPIO_BASE)
+#define PM8901_GPIO_SYS_TO_PM(sys_gpio)		(sys_gpio - PM901_GPIO_BASE)
+#define PM8901_IRQ_BASE				(PM8058_IRQ_BASE + \
+						NR_PMIC8058_IRQS)
+
+
+static void config_audio_amp_gpio(int enable)
+{
+	int rc;
+
+#if defined(CONFIG_BOARD_IS_SONG)
+#if defined(CONFIG_MACH_EVB1) || defined(CONFIG_MACH_EVB2)
+	if (enable) {
+		rc = pm8901_mpp_config_digital_out(AUDIO_AMP_EN_MPP,
+			PM8901_MPP_DIG_LEVEL_MSMIO, 1);
+
+		if (rc) {
+			pr_err("%s: AUDIO_AMP_EN_MPP failed\n", __func__);
+			return;
+		}
+
+		rc = gpio_request(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP),
+			"CLASSD0_EN");
+
+		if (rc) {
+			pr_err("%s: spkr pamp gpio pm8901 mpp3 request"
+			"failed\n", __func__);
+			pm8901_mpp_config_digital_out(AUDIO_AMP_EN_MPP,
+			PM8901_MPP_DIG_LEVEL_MSMIO, 0);
+			return;
+		}
+
+		gpio_direction_output(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP), 1);
+		gpio_set_value(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP), 1);
+
+	} else {
+		pm8901_mpp_config_digital_out(AUDIO_AMP_EN_MPP,
+		PM8901_MPP_DIG_LEVEL_MSMIO, 0);
+		gpio_set_value(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP), 0);
+		gpio_free(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP));
+	}
+#endif
+#endif/*#if defined(CONFIG_BOARD_IS_SONG)*/
+
+
+#if defined(CONFIG_BOARD_IS_LA)
+#if defined(CONFIG_MACH_EVT1)
+	if (enable) {
+		rc = gpio_request(AUDIO_AMP_EN,	"CLASSD0_EN");
+
+		if (rc) {
+			pr_err("%s: spkr pamp gpio failed\n", __func__);
+			return;
+		}		
+	} else {
+		gpio_free(AUDIO_AMP_EN);
+	}
+#endif
+#endif/*#if defined(CONFIG_BOARD_IS_LA)*/
+
+
+#if defined(CONFIG_BOARD_IS_ORANGE)
+#if defined(CONFIG_MACH_EVT1)
+	if (enable) {
+		rc = pm8901_mpp_config_digital_out(AUDIO_AMP_EN_MPP,
+			PM8901_MPP_DIG_LEVEL_MSMIO, 1);
+
+		if (rc) {
+			pr_err("%s: AUDIO_AMP_EN_MPP failed\n", __func__);
+			return;
+		}
+
+		rc = gpio_request(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP),
+			"CLASSD0_EN");
+
+		if (rc) {
+			pr_err("%s: spkr pamp gpio pm8901 mpp3 request"
+			"failed\n", __func__);
+			pm8901_mpp_config_digital_out(AUDIO_AMP_EN_MPP,
+			PM8901_MPP_DIG_LEVEL_MSMIO, 0);
+			return;
+		}
+
+		gpio_direction_output(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP), 1);
+		gpio_set_value(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP), 1);
+
+	} else {
+		pm8901_mpp_config_digital_out(AUDIO_AMP_EN_MPP,
+		PM8901_MPP_DIG_LEVEL_MSMIO, 0);
+		gpio_set_value(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP), 0);
+		gpio_free(PM8901_GPIO_PM_TO_SYS(AUDIO_AMP_EN_MPP));
+	}
+#endif
+#endif/*#if defined(CONFIG_BOARD_IS_ORANGE)*/
+}
+
+static void config_audio_amp_power(int enable)
+{
+  /*Leo Qin: this function is used to control speaker amp 1.8V power, current it'll jumped to 8058_s3,
+  which is already enaabled when timpani codec core starts with "vreg_timpani_2"*/
+  
+  return;
+}
+/*Terry Yan: change return parameter for incompatible pointer type error*/
+static int evb_snddev_poweramp_on(void)
+{
+	int ret = 0;
+	pr_debug("%s: enable stereo spkr amp\n", __func__);
+	config_audio_amp_gpio(1);
+	config_audio_amp_power(1);
+	return ret;
+}
+
+void evb_snddev_poweramp_off(void)
+{
+
+	pr_debug("%s: disable stereo spkr amp\n", __func__);
+	config_audio_amp_power(0);
+	config_audio_amp_gpio(0);
+	msleep(30);
+}
+/**************related evb functions****************/
+
+/******orange speaker*************/
+static struct adie_codec_action_unit ispkr_stereo_48KHz_osr256_actions[] =
+	SPEAKER_MONO_PRI_STEREO_48000_OSR_256;
+
+
+static struct adie_codec_hwsetting_entry ispkr_stereo_settings[] = {
+	{
+		.freq_plan = 48000,
+		.osr = 256,
+		.actions = ispkr_stereo_48KHz_osr256_actions,
+		.action_sz = ARRAY_SIZE(ispkr_stereo_48KHz_osr256_actions),
+	}
+};
+
+static struct adie_codec_dev_profile ispkr_stereo_profile = {
+	.path_type = ADIE_CODEC_RX,
+	.settings = ispkr_stereo_settings,
+	.setting_sz = ARRAY_SIZE(ispkr_stereo_settings),
+};
+
+static struct snddev_icodec_data snddev_q_ispkr_stereo_data = {
+	.capability = (SNDDEV_CAP_RX | SNDDEV_CAP_VOICE),
+	.name = "speaker_stereo_rx",
+	.copp_id = 0,
+	.profile = &ispkr_stereo_profile,
+	.channel_mode = 2,
+	.default_sample_rate = 48000,
+/*Leo Qin: For 8260 EVB*/
+	.pamp_on = evb_snddev_poweramp_on,
+	.pamp_off = evb_snddev_poweramp_off,
+};
+
+static struct platform_device ispkr_stereo_device = {
+	.name = "snddev_icodec",
+	.dev = { .platform_data = &snddev_q_ispkr_stereo_data },
+};
+/******orange speaker*************/
+

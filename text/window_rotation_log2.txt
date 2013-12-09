@@ -1,0 +1,1081 @@
+
+
+08-01 07:25:30.069 V/WindowManager(  441): updataRotation function entry.
+08-01 07:25:30.069 V/WindowManager(  441): updateRotationUnchecked(alwaysSendConfiguration=false)
+08-01 07:25:30.069 V/WindowManager(  441): updateRotationUncheckedLocked inTransaction: false
+08-01 07:25:30.069 V/WindowManager(  441): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 07:25:30.069 V/WindowManager(  441): Application requested orientation -1, got rotation 1 which has compatible met
+rics
+08-01 07:25:30.069 V/WindowManager(  441): Rotation changed to 1 from 0, forceApp=-1
+08-01 07:25:30.109 V/WindowManager(  441): Set mOrientationChanging of Window{4187e180 NavigationBar paused=false}
+08-01 07:25:30.109 V/WindowManager(  441): Set mOrientationChanging of Window{41952488 StatusBar paused=false}
+08-01 07:25:30.109 V/WindowManager(  441): Set mOrientationChanging of Window{4153c0f0 StatusBarExpanded paused=false}
+08-01 07:25:30.109 V/WindowManager(  441): Set mOrientationChanging of Window{413b9900 com.android.settings/com.android.
+settings.Settings paused=false}
+08-01 07:25:30.109 V/WindowManager(  441): Set mOrientationChanging of Window{414fe800 com.android.noisefield.NoiseField
+Wallpaper paused=false}
+08-01 07:25:31.019 I/WindowManager(  441): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 07:25:31.089 I/WindowManager(  441): Set freezing of Token{418c6670 ActivityRecord{41755e40 com.android.settings/.
+Settings}}: hidden=false freezing=false
+08-01 07:25:31.089 I/WindowManager(  441): Set freezing of Token{418c6670 ActivityRecord{41755e40 com.android.settings/.
+Settings}}: hidden=false freezing=true
+08-01 07:25:31.099 V/WindowManager(  441): Eval win Window{413b9900 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=true, isAnimating=false
+08-01 07:25:31.099 V/WindowManager(  441): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfac
+eResized=true configChanged=true
+08-01 07:25:31.099 V/WindowManager(  441): Changing surface while display frozen: Window{4187e180 NavigationBar paused=f
+alse}
+08-01 07:25:31.099 V/WindowManager(  441): Orientation start waiting for draw in Window{4187e180 NavigationBar paused=fa
+lse}, surface Surface(name=NavigationBar, identity=7)
+08-01 07:25:31.099 V/WindowManager(  441): Resizing window Window{4187e180 NavigationBar paused=false} to 63.0x540.0
+08-01 07:25:31.099 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:31.099 V/WindowManager(  441): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfac
+eResized=true configChanged=true
+08-01 07:25:31.099 V/WindowManager(  441): Changing surface while display frozen: Window{41952488 StatusBar paused=false
+}
+08-01 07:25:31.099 V/WindowManager(  441): Orientation start waiting for draw in Window{41952488 StatusBar paused=false}
+, surface Surface(name=StatusBar, identity=6)
+08-01 07:25:31.099 V/WindowManager(  441): Resizing window Window{41952488 StatusBar paused=false} to 897.0x38.0
+08-01 07:25:31.099 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:31.109 V/WindowManager(  441): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfac
+eResized=true configChanged=true
+08-01 07:25:31.109 V/WindowManager(  441): Changing surface while display frozen: Window{4153c0f0 StatusBarExpanded paus
+ed=false}
+08-01 07:25:31.109 V/WindowManager(  441): Orientation start waiting for draw in Window{4153c0f0 StatusBarExpanded pause
+d=false}, surface Surface(name=StatusBarExpanded, identity=8)
+08-01 07:25:31.109 V/WindowManager(  441): Resizing window Window{4153c0f0 StatusBarExpanded paused=false} to 897.0x888.
+0
+08-01 07:25:31.109 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:31.109 V/WindowManager(  441): Orientation change complete in Window{413b9900 com.android.settings/com.andro
+id.settings.Settings paused=false}
+08-01 07:25:31.109 V/WindowManager(  441): Orientation change skips hidden Window{414fe800 com.android.noisefield.NoiseF
+ieldWallpaper paused=false}
+08-01 07:25:31.179 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:31.179 V/WindowManager(  441): Reporting new frame to Window{4153c0f0 StatusBarExpanded paused=false}: Rect(
+0, -888 - 897, 0)
+08-01 07:25:31.179 I/WindowManager(  441): Sending new config to window Window{4153c0f0 StatusBarExpanded paused=false}:
+ 897.0x888.0 / {1.0 0mcc0mnc en_US layoutdir=0 sw360dp w598dp h334dp nrml land finger -keyb/v/h -nav/h s.5} / 0x480
+08-01 07:25:31.179 I/WindowManager(  441): Resizing Window{4153c0f0 StatusBarExpanded paused=false} WITH DRAW PENDING
+08-01 07:25:31.179 V/WindowManager(  441): Reporting new frame to Window{41952488 StatusBar paused=false}: Rect(0, 0 - 8
+97, 38)
+08-01 07:25:31.179 I/WindowManager(  441): Sending new config to window Window{41952488 StatusBar paused=false}: 897.0x3
+8.0 / {1.0 0mcc0mnc en_US layoutdir=0 sw360dp w598dp h334dp nrml land finger -keyb/v/h -nav/h s.5} / 0x480
+08-01 07:25:31.179 I/WindowManager(  441): Resizing Window{41952488 StatusBar paused=false} WITH DRAW PENDING
+08-01 07:25:31.179 V/WindowManager(  441): Reporting new frame to Window{4187e180 NavigationBar paused=false}: Rect(897,
+ 0 - 960, 540)
+08-01 07:25:31.179 I/WindowManager(  441): Sending new config to window Window{4187e180 NavigationBar paused=false}: 63.
+0x540.0 / {1.0 0mcc0mnc en_US layoutdir=0 sw360dp w598dp h334dp nrml land finger -keyb/v/h -nav/h s.5} / 0x480
+08-01 07:25:31.179 I/WindowManager(  441): Resizing Window{4187e180 NavigationBar paused=false} WITH DRAW PENDING
+08-01 07:25:31.189 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:31.189 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.setNewConfiguration(Window
+ManagerService.java:3578)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.am.ActivityManagerService.updateConfigurationLocke
+d(ActivityManagerService.java:13635)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.am.ActivityManagerService.updateConfiguration(Acti
+vityManagerService.java:13530)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.sendNewConfiguration(Windo
+wManagerService.java:5918)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.updateRotationUnchecked(Wi
+ndowManagerService.java:5362)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.updateRotation(WindowManag
+erService.java:5320)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.internal.policy.impl.PhoneWindowManager.updateRotation(Ph
+oneWindowManager.java:3884)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.internal.policy.impl.PhoneWindowManager$MyOrientationList
+ener.onProposedRotationChanged(PhoneWindowManager.java:544)
+08-01 07:25:31.189 I/WindowManager(  441):      at android.view.WindowOrientationListener$SensorEventListenerImpl.onSens
+orChanged(WindowOrientationListener.java:492)
+08-01 07:25:31.189 I/WindowManager(  441):      at android.hardware.SensorManager$ListenerDelegate$1.handleMessage(Senso
+rManager.java:580)
+08-01 07:25:31.189 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:31.189 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:31.189 I/WindowManager(  441):      at com.android.server.ServerThread.run(SystemServer.java:790)
+08-01 07:25:31.189 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:31.189 V/WindowManager(  441): Eval win Window{413b9900 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=true, isAnimating=false
+08-01 07:25:31.189 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:31.189 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:31.189 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:31.199 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:31.199 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:31.199 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:31.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:31.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:31.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:31.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManag
+erService.java:2858)
+08-01 07:25:31.199 I/WindowManager(  441):      at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 07:25:31.199 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 07:25:31.199 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:31.199 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:31.199 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+
+
+
+08-01 07:25:31.219 V/WindowManager(  441): updataRotation function entry.
+08-01 07:25:31.219 V/WindowManager(  441): updateRotationUnchecked(alwaysSendConfiguration=false)
+08-01 07:25:31.219 V/WindowManager(  441): updateRotationUncheckedLocked inTransaction: false
+08-01 07:25:31.219 V/WindowManager(  441): rotationForOrientationLw(orient=-1, last=1); user=0
+08-01 07:25:31.219 V/WindowManager(  441): Application requested orientation -1, got rotation 1 which has compatible met
+rics
+08-01 07:25:31.319 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:31.319 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:31.319 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:31.319 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:31.329 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:31.329 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.removeWindowInnerLocked(Wi
+ndowManagerService.java:2437)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.removeWindowLocked(WindowM
+anagerService.java:2337)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.removeWindow(WindowManager
+Service.java:2272)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.wm.Session.remove(Session.java:149)
+08-01 07:25:31.329 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:124)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:31.329 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.SystemServer.init1(Native Method)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.server.SystemServer.main(SystemServer.java:882)
+08-01 07:25:31.329 I/WindowManager(  441):      at java.lang.reflect.Method.invokeNative(Native Method)
+08-01 07:25:31.329 I/WindowManager(  441):      at java.lang.reflect.Method.invoke(Method.java:511)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit
+.java:787)
+08-01 07:25:31.329 I/WindowManager(  441):      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:554)
+08-01 07:25:31.329 I/WindowManager(  441):      at dalvik.system.NativeStart.main(Native Method)
+08-01 07:25:31.389 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:31.389 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:31.389 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:31.399 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:31.399 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:31.399 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:31.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:31.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:31.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:31.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.removeWindowInnerLocked(Wi
+ndowManagerService.java:2437)
+08-01 07:25:31.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.removeWindowLocked(WindowM
+anagerService.java:2337)
+08-01 07:25:31.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.removeWindow(WindowManager
+Service.java:2272)
+08-01 07:25:31.399 I/WindowManager(  441):      at com.android.server.wm.Session.remove(Session.java:149)
+08-01 07:25:31.399 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:124)
+08-01 07:25:31.399 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:31.399 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:31.399 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:31.409 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:31.409 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:31.409 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:31.409 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:31.409 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:31.419 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:31.419 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:31.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:31.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:31.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:31.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManag
+erService.java:2858)
+08-01 07:25:31.419 I/WindowManager(  441):      at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 07:25:31.419 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 07:25:31.419 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:31.419 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:31.419 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:31.599 I/WindowManager(  441): createSurface Window{41934488 com.android.settings/com.android.settings.Setti
+ngs paused=false}: DRAW NOW PENDING
+08-01 07:25:31.599 V/WindowManager(  441): Changing surface while display frozen: Window{41934488 com.android.settings/c
+om.android.settings.Settings paused=false}
+08-01 07:25:31.599 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:31.599 V/WindowManager(  441): Eval win Window{41934488 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=false, isAnimating=false
+08-01 07:25:31.609 V/WindowManager(  441): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Setti
+ngs, identity=17) pv=true dp=true cdp=false ah=false th=false a=false
+08-01 07:25:31.609 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:31.609 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:31.609 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:31.609 V/WindowManager(  441): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceR
+esized=true configChanged=false
+08-01 07:25:31.609 V/WindowManager(  441): Changing surface while display frozen: Window{41934488 com.android.settings/c
+om.android.settings.Settings paused=false}
+08-01 07:25:31.609 V/WindowManager(  441): Orientation start waiting for draw in Window{41934488 com.android.settings/co
+m.android.settings.Settings paused=false}, surface Surface(name=com.android.settings/com.android.settings.Settings, iden
+tity=17)
+08-01 07:25:31.609 V/WindowManager(  441): Resizing window Window{41934488 com.android.settings/com.android.settings.Set
+tings paused=false} to 897.0x540.0
+08-01 07:25:31.609 V/WindowManager(  441): Orientation continue waiting for draw in Window{41934488 com.android.settings
+/com.android.settings.Settings paused=false}
+08-01 07:25:31.619 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:31.619 V/WindowManager(  441): Reporting new frame to Window{41934488 com.android.settings/com.android.setti
+ngs.Settings paused=false}: Rect(0, 0 - 897, 540)
+08-01 07:25:31.619 I/WindowManager(  441): Resizing Window{41934488 com.android.settings/com.android.settings.Settings p
+aused=false} WITH DRAW PENDING
+08-01 07:25:31.619 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:31.619 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:31.619 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:31.619 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:31.619 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:31.619 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManag
+erService.java:2858)
+08-01 07:25:31.619 I/WindowManager(  441):      at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 07:25:31.619 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 07:25:31.619 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:31.619 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:31.619 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:31.789 V/WindowManager(  441): finishDrawingLocked: Window{41934488 com.android.settings/com.android.setting
+s.Settings paused=false} in Surface(name=com.android.settings/com.android.settings.Settings, identity=17)
+08-01 07:25:31.789 V/WindowManager(  441): Eval win Window{41934488 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=true, isAnimating=false
+08-01 07:25:31.789 V/WindowManager(  441): tokenMayBeDrawn: AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{
+41755e40 com.android.settings/.Settings}}} freezingScreen=true mAppFreezing=false
+08-01 07:25:31.789 I/WindowManager(  441):   SURFACE 41934488: SHOW (performShowLocked) / com.android.settings/com.andro
+id.settings.Settings
+08-01 07:25:31.789 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:31.789 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.WindowState.performShowLocked(WindowState.java:
+925)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.AppWindowToken.showAllWindowsLocked(AppWindowTo
+ken.java:194)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:8052)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.finishDrawingWindow(Window
+ManagerService.java:2936)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 07:25:31.789 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:31.789 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:31.789 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:31.789 V/WindowManager(  441): Clear freezing of AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord
+{41755e40 com.android.settings/.Settings}}} force=true
+08-01 07:25:31.789 V/WindowManager(  441): No longer freezing: AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityReco
+rd{41755e40 com.android.settings/.Settings}}}
+08-01 07:25:31.789 I/WindowManager(  441): Setting orientationChangeComplete=true because wtoken AppWindowToken{41a9d9f0
+ token=Token{418c6670 ActivityRecord{41755e40 com.android.settings/.Settings}}} numInteresting=1 numDrawn=1
+08-01 07:25:31.789 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:31.789 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:31.789 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:31.789 V/WindowManager(  441): Orientation not waiting for draw in Window{41934488 com.android.settings/com.
+android.settings.Settings paused=false}, surface Surface(name=com.android.settings/com.android.settings.Settings, identi
+ty=17)
+08-01 07:25:31.789 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:31.789 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:31.789 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.finishDrawingWindow(Window
+ManagerService.java:2936)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 07:25:31.789 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 07:25:31.789 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:31.789 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:31.789 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:31.959 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:31.959 V/WindowManager(  441): Eval win Window{41934488 com.android.settings/com.android.settings.Settings p
+aused=false}: isDrawn=true, isAnimating=false
+08-01 07:25:31.959 V/WindowManager(  441): tokenMayBeDrawn: AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{
+41755e40 com.android.settings/.Settings}}} freezingScreen=false mAppFreezing=false
+08-01 07:25:31.959 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:31.959 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:31.959 V/WindowManager(  441): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfac
+eResized=true configChanged=false
+08-01 07:25:31.959 V/WindowManager(  441): Changing surface while display frozen: Window{4153c0f0 StatusBarExpanded paus
+ed=false}
+08-01 07:25:31.979 V/WindowManager(  441): Orientation start waiting for draw in Window{4153c0f0 StatusBarExpanded pause
+d=false}, surface Surface(name=StatusBarExpanded, identity=8)
+08-01 07:25:31.979 V/WindowManager(  441): Resizing window Window{4153c0f0 StatusBarExpanded paused=false} to 897.0x454.
+0
+08-01 07:25:31.979 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:31.979 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:31.979 V/WindowManager(  441): Reporting new frame to Window{4153c0f0 StatusBarExpanded paused=false}: Rect(
+0, -540 - 897, -86)
+08-01 07:25:31.979 I/WindowManager(  441): Resizing Window{4153c0f0 StatusBarExpanded paused=false} WITH DRAW PENDING
+08-01 07:25:31.979 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:31.979 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:31.979 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:31.979 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:31.979 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:31.979 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManag
+erService.java:2858)
+08-01 07:25:31.979 I/WindowManager(  441):      at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 07:25:31.979 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 07:25:31.979 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:31.979 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:31.979 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:32.019 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:32.019 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:32.019 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:32.019 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:32.019 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:32.019 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.019 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManag
+erService.java:2858)
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 07:25:32.019 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.019 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.server.SystemServer.init1(Native Method)
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.server.SystemServer.main(SystemServer.java:882)
+08-01 07:25:32.019 I/WindowManager(  441):      at java.lang.reflect.Method.invokeNative(Native Method)
+08-01 07:25:32.019 I/WindowManager(  441):      at java.lang.reflect.Method.invoke(Method.java:511)
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit
+.java:787)
+08-01 07:25:32.019 I/WindowManager(  441):      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:554)
+08-01 07:25:32.019 I/WindowManager(  441):      at dalvik.system.NativeStart.main(Native Method)
+08-01 07:25:32.019 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:32.019 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:32.019 V/WindowManager(  441): Orientation continue waiting for draw in Window{41952488 StatusBar paused=fal
+se}
+08-01 07:25:32.019 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:32.029 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:32.029 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.029 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.029 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.029 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.029 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.029 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManag
+erService.java:2858)
+08-01 07:25:32.029 I/WindowManager(  441):      at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 07:25:32.029 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 07:25:32.029 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.029 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.029 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:32.049 V/WindowManager(  441): finishDrawingLocked: Window{41952488 StatusBar paused=false} in Surface(name=
+StatusBar, identity=6)
+08-01 07:25:32.049 I/WindowManager(  441):   SURFACE 41952488: SHOW (performShowLocked) / StatusBar
+08-01 07:25:32.049 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.049 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.049 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.049 I/WindowManager(  441):      at com.android.server.wm.WindowState.performShowLocked(WindowState.java:
+925)
+08-01 07:25:32.049 I/WindowManager(  441):      at com.android.server.wm.WindowState.commitFinishDrawingLocked(WindowSta
+te.java:888)
+08-01 07:25:32.049 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:7865)
+08-01 07:25:32.049 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.049 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.finishDrawingWindow(Window
+ManagerService.java:2936)
+08-01 07:25:32.049 I/WindowManager(  441):      at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 07:25:32.049 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 07:25:32.049 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.049 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.049 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:32.049 V/WindowManager(  441): Orientation continue waiting for draw in Window{4187e180 NavigationBar paused
+=false}
+08-01 07:25:32.049 V/WindowManager(  441): Orientation not waiting for draw in Window{41952488 StatusBar paused=false},
+surface Surface(name=StatusBar, identity=6)
+08-01 07:25:32.049 V/WindowManager(  441): Orientation continue waiting for draw in Window{4153c0f0 StatusBarExpanded pa
+used=false}
+08-01 07:25:32.049 V/WindowManager(  441): With display frozen, orientationChangeComplete=false
+08-01 07:25:32.109 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.109 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.109 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.109 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.109 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.109 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.finishDrawingWindow(Window
+ManagerService.java:2936)
+08-01 07:25:32.109 I/WindowManager(  441):      at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 07:25:32.109 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 07:25:32.109 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.109 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.109 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:32.109 W/WindowManager(  441): Window freeze timeout expired.
+08-01 07:25:32.109 W/WindowManager(  441): Force clearing orientation change: Window{4187e180 NavigationBar paused=false
+}
+08-01 07:25:32.109 W/WindowManager(  441): Force clearing orientation change: Window{4153c0f0 StatusBarExpanded paused=f
+alse}
+08-01 07:25:32.119 V/WindowManager(  441): With display frozen, orientationChangeComplete=true
+08-01 07:25:32.119 I/WindowManager(  441): **** Dismissing screen rotation animation
+08-01 07:25:32.169 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:32.169 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.169 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.169 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.169 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.169 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.169 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.169 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6923)
+08-01 07:25:32.169 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.169 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.169 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.179 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.179 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.179 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.179 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.179 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.179 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.179 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.179 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.179 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.179 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.179 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:32.189 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.189 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.189 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManag
+erService.java:2858)
+08-01 07:25:32.189 I/WindowManager(  441):      at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 07:25:32.189 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 07:25:32.189 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.189 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.189 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:32.199 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.199 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.199 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.199 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.199 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.209 V/WindowManager(  441): finishDrawingLocked: Window{4187e180 NavigationBar paused=false} in Surface(n
+ame=NavigationBar, identity=7)
+08-01 07:25:32.209 I/WindowManager(  441):   SURFACE 4187e180: SHOW (performShowLocked) / NavigationBar
+08-01 07:25:32.219 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.219 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.wm.WindowState.performShowLocked(WindowState.java:
+925)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.wm.WindowState.commitFinishDrawingLocked(WindowSta
+te.java:888)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:7865)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.finishDrawingWindow(Window
+ManagerService.java:2936)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 07:25:32.219 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.219 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.SystemServer.init1(Native Method)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.server.SystemServer.main(SystemServer.java:882)
+08-01 07:25:32.219 I/WindowManager(  441):      at java.lang.reflect.Method.invokeNative(Native Method)
+08-01 07:25:32.219 I/WindowManager(  441):      at java.lang.reflect.Method.invoke(Method.java:511)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit
+.java:787)
+08-01 07:25:32.219 I/WindowManager(  441):      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:554)
+08-01 07:25:32.219 I/WindowManager(  441):      at dalvik.system.NativeStart.main(Native Method)
+08-01 07:25:32.229 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.229 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.finishDrawingWindow(Window
+ManagerService.java:2936)
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 07:25:32.229 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.229 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.server.SystemServer.init1(Native Method)
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.server.SystemServer.main(SystemServer.java:882)
+08-01 07:25:32.229 I/WindowManager(  441):      at java.lang.reflect.Method.invokeNative(Native Method)
+08-01 07:25:32.229 I/WindowManager(  441):      at java.lang.reflect.Method.invoke(Method.java:511)
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit
+.java:787)
+08-01 07:25:32.229 I/WindowManager(  441):      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:554)
+08-01 07:25:32.229 I/WindowManager(  441):      at dalvik.system.NativeStart.main(Native Method)
+08-01 07:25:32.239 D/WindowManager(  441): interceptKeyTq keycode=4 screenIsOn=true keyguardActive=false
+08-01 07:25:32.239 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.239 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.239 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.239 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.239 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.239 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.239 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.239 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.239 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.239 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.249 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.249 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.249 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.249 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.249 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.249 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.249 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.249 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.249 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.249 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.269 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.269 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.269 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.269 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.269 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.269 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.269 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.269 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.269 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.269 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.279 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.279 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.279 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.279 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.279 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.279 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.279 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.279 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.279 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.279 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.299 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.299 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.299 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.299 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.299 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.299 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.299 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.299 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.299 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.299 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.319 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.319 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.319 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.319 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.319 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.319 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.319 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.319 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.319 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.319 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.339 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.339 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.339 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.339 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.339 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.339 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.339 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.339 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.339 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.339 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.349 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.349 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.349 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.349 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.349 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.349 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.349 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.349 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.349 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.349 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.369 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.369 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.369 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.369 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.369 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.369 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.369 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.369 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.369 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.369 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.379 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.379 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.379 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.379 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.379 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.379 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.379 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.379 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.379 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.379 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.399 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.399 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.399 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.399 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.399 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.419 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.419 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.419 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.419 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.419 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.429 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.429 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.429 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.429 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.429 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.429 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.429 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.429 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.429 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.429 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.449 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.449 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.449 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.449 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.449 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.449 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.449 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.449 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.449 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.449 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.469 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.469 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.469 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.469 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.469 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.469 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.469 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.469 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.469 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.469 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.479 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.479 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.479 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.479 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.479 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.479 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.479 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.479 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.479 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.479 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.499 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.499 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.499 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.499 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.499 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.499 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.499 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.499 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.499 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.499 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.519 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.519 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.519 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.519 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.519 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.519 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.519 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.519 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.519 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.519 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.529 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.529 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.529 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.529 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.529 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.529 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.529 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.529 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.529 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.529 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.549 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.549 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.549 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.549 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.549 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.549 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.549 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.549 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.549 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.549 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.559 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.559 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.559 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.559 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.559 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.559 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.559 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.559 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.559 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.559 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.579 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.579 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.579 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.579 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.579 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.579 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.579 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.579 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.579 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.579 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.599 D/WindowManager(  441): Performing post-rotate rotation
+08-01 07:25:32.599 V/WindowManager(  441): updateRotationUncheckedLocked inTransaction: false
+08-01 07:25:32.599 V/WindowManager(  441): rotationForOrientationLw(orient=-1, last=1); user=0
+08-01 07:25:32.599 V/WindowManager(  441): Application requested orientation -1, got rotation 1 which has compatible met
+rics
+08-01 07:25:32.599 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.599 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.599 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.599 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.599 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.599 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.access$500(WindowManagerSe
+rvice.java:149)
+08-01 07:25:32.599 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$H.handleMessage(WindowMana
+gerService.java:6758)
+08-01 07:25:32.599 I/WindowManager(  441):      at android.os.Handler.dispatchMessage(Handler.java:99)
+08-01 07:25:32.599 I/WindowManager(  441):      at android.os.Looper.loop(Looper.java:137)
+08-01 07:25:32.599 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService$WMThread.run(WindowManager
+Service.java:721)
+08-01 07:25:32.599 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:32.609 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.609 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.609 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.609 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.609 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.609 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManag
+erService.java:2858)
+08-01 07:25:32.609 I/WindowManager(  441):      at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 07:25:32.609 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 07:25:32.609 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.609 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.609 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:32.639 V/WindowManager(  441): finishDrawingLocked: Window{4153c0f0 StatusBarExpanded paused=false} in Surfa
+ce(name=StatusBarExpanded, identity=8)
+08-01 07:25:32.649 I/WindowManager(  441):   SURFACE 4153c0f0: SHOW (performShowLocked) / StatusBarExpanded
+08-01 07:25:32.649 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.649 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowState.performShowLocked(WindowState.java:
+925)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowState.commitFinishDrawingLocked(WindowSta
+te.java:888)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:7865)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.finishDrawingWindow(Window
+ManagerService.java:2936)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 07:25:32.649 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.649 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.649 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:32.649 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.649 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.finishDrawingWindow(Window
+ManagerService.java:2936)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.Session.finishDrawing(Session.java:191)
+08-01 07:25:32.649 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:290)
+08-01 07:25:32.649 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.649 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.649 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+08-01 07:25:32.649 V/WindowManager(  441): Done at AppWindowToken{41a9d9f0 token=Token{418c6670 ActivityRecord{41755e40
+com.android.settings/.Settings}}} -- full screen, return -1
+08-01 07:25:32.659 I/WindowManager(  441): enableScreenIfNeededLocked: mDisplayEnabled=true mForceDisplayEnabled=false m
+ShowingBootMessages=false mSystemBooted=true
+08-01 07:25:32.659 I/WindowManager(  441): java.lang.RuntimeException: here
+08-01 07:25:32.659 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.enableScreenIfNeededLocked
+(WindowManagerService.java:4886)
+08-01 07:25:32.659 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLockedInner(WindowManagerService.java:9036)
+08-01 07:25:32.659 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfa
+cesLocked(WindowManagerService.java:7517)
+08-01 07:25:32.659 I/WindowManager(  441):      at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManag
+erService.java:2858)
+08-01 07:25:32.659 I/WindowManager(  441):      at com.android.server.wm.Session.relayout(Session.java:158)
+08-01 07:25:32.659 I/WindowManager(  441):      at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:160)
+08-01 07:25:32.659 I/WindowManager(  441):      at com.android.server.wm.Session.onTransact(Session.java:111)
+08-01 07:25:32.659 I/WindowManager(  441):      at android.os.Binder.execTransact(Binder.java:338)
+08-01 07:25:32.659 I/WindowManager(  441):      at dalvik.system.NativeStart.run(Native Method)
+^C
+D:\adb\fastboot\load\cairo>

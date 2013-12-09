@@ -1,0 +1,30 @@
+<7>[   92.792158] [cpuid: 0] BATT: msm_battery_update_psy_statusBATT: received, 0, 0, 0x171; 0, 4227, 93, 350; 1, 0, 0; 4300,
+4227, 495
+<6>[   94.978926] [cpuid: 0] SysRq : Emergency Remount R/O
+<6>[   94.988138] [cpuid: 0] EXT4-fs (mmcblk0p18): re-mounted. Opts: (null)
+<6>[   94.992619] [cpuid: 0] EXT4-fs (mmcblk0p19): re-mounted. Opts: (null)
+<6>[   94.996423] [cpuid: 0] EXT4-fs (mmcblk0p15): re-mounted. Opts: (null)
+<6>[   95.008933] [cpuid: 0] EXT4-fs (mmcblk0p21): re-mounted. Opts: (null)
+<4>[   95.018888] [cpuid: 0] Emergency Remount complete
+<6>[   95.079748] [cpuid: 0] rmt_storage_reboot_call: Sending force-sync RPC request
+<4>[   95.112936] [cpuid: 0] mpdecision: cpu up
+<4>[   95.114319] [cpuid: 0] mpdecision: cpu up
+<4>[   95.162899] [cpuid: 0] mpdecision: cpu up
+<6>[   95.164204] [cpuid: 0] ping all the CPU from CPU0
+<4>[   95.213178] [cpuid: 0] mpdecision: cpu down
+<4>[   95.218368] [cpuid: 0] mpdecision: cpu down
+<6>[   95.481191] [cpuid: 1] rmt_storage_event_write_iovec_cb: write iovec callback received
+<6>[   95.730014] [cpuid: 1] rmt_storage_ioctl: send status ioctl
+<6>[   95.753308] [cpuid: 0] rmt_storage_reboot_call: Final-sync successful
+<6>[   95.753391] [cpuid: 0] rmt_storage_reboot_call: Un register RMT storage client.
+<6>[   95.753458] [cpuid: 0] msm_rpc_unregister_client: stopping client...
+<6>[   95.763796] [cpuid: 0] pmlog_flush_to_file: thread adbd pmlog_flush_to_file: Can't open /var/pmlog/pmlog.log. -30
+<6>[   95.769716] [cpuid: 0] pmlog_notify_sys: thread adbd pmlog_notify_sys: Open file failed
+<4>[   95.772868] [cpuid: 0] ==ft5x0x_ts_shutdown=
+<6>[   95.773036] [cpuid: 0] [VREG12]L12_common_power_vote entrance.
+<6>[   95.773158] [cpuid: 0] [VREG12][touch] is switching L12 power 0.
+<6>[   95.773273] [cpuid: 0] [VREG12]gpio 77 has been asked to pull-down 4 times.
+<4>[   95.773399] [cpuid: 0] TouchScreen_PowerOff
+<4>[   95.773586] [cpuid: 0] [FTS] ft5x0x_ts_shutdown, power off.err(0)
+<4>[   95.775094] [cpuid: 0] Disabling non-boot CPUs ...
+<0>[   95.779828] [cpuid: 0] Restarting system with command ''.

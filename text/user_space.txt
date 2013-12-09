@@ -1,0 +1,132 @@
+08-01 06:38:30.119 D/memalloc(  609): ion: Unmapping buffer  base:0x5c22c000 size:208896
+08-01 06:38:30.119 D/memalloc(  609): ion: Unmapping buffer  base:0x5c25f000 size:208896
+08-01 06:38:30.119 D/memalloc(  159): ion: Freeing buffer base:0x41e75000 size:208896 fd:60
+08-01 06:38:30.119 D/memalloc(  159): ion: Unmapping buffer  base:0x41e75000 size:208896
+08-01 06:38:30.119 I/Adreno200-EGLSUB(  609): <ConfigWindowMatch:2078>: Format RGBA_8888.
+08-01 06:38:30.119 D/memalloc(  159): ion: Allocated buffer base:0x41e39000 size:139264 fd:60
+08-01 06:38:30.129 D/memalloc(  609): ion: Mapped buffer base:0x5c22c000 size:139264 offset:0 fd:82
+08-01 06:38:30.129 D/memalloc(  159): ion: Allocated buffer base:0x41f2f000 size:139264 fd:63
+08-01 06:38:30.129 D/memalloc(  609): ion: Mapped buffer base:0x5c24e000 size:139264 offset:0 fd:93
+08-01 06:38:30.139 I/Adreno200-EGLSUB(  159): <CreateImage:893>: Android Image
+08-01 06:38:30.139 I/Adreno200-EGLSUB(  159): <GetImageAttributes:1102>: RGBA_8888
+08-01 06:38:30.139 D/memalloc(  159): ion: Freeing buffer base:0x41db6000 size:208896 fd:45
+08-01 06:38:30.139 D/memalloc(  159): ion: Unmapping buffer  base:0x41db6000 size:208896
+08-01 06:38:30.499 W/SignalStrength(  699): SignalStrength before validate=SignalStrength: 8 255 -1 -1 -1 -1 8 99 21474
+3647 2147483647 2147483647 2147483647 cdma
+08-01 06:38:30.499 W/SignalStrength(  699): SignalStrength after validate=SignalStrength: 8 255 -120 -160 -120 -1 8 99
+147483647 2147483647 2147483647 2147483647 cdma
+08-01 06:38:30.499 W/SignalStrength(  430): getLTELevel - rsrp:2147483647 snr:2147483647 rsrpIconLevel:-1 snrIconLevel:
+1
+08-01 06:38:30.499 W/SignalStrength(  430): getLTELevel - rssi:99 rssiIconLevel:0
+08-01 06:38:30.499 W/SignalStrength(  430): getGsmLevel=3
+08-01 06:38:30.499 W/SignalStrength(  430): getLevel=3
+08-01 06:38:30.499 W/CNE     (  430): mDefaultApnLinkProp is null
+08-01 06:38:30.499 I/CNE_DEBUG(  430): getSignalStrength networkType= 0
+08-01 06:38:30.499 I/CNE_DEBUG(  430): CNE onSignalStrengthsChanged - type:0 strength:-1 ipV4Addr:null roaming:0 iface:
+ull timeStamp:2012-08-01 06:38:30.509
+08-01 06:38:30.499 I/CNE_DEBUG(  430): UpdateWwanStatus type=0 state=5 rssi=-1 roaming=0 ipV4Addr=null iface=null timeS
+amp=2012-08-01 06:38:30.509
+08-01 06:38:30.509 E/Parcel  (  186): Reading a NULL string not supported here.
+08-01 06:38:30.509 E/Parcel  (  186): Reading a NULL string not supported here.
+08-01 06:38:30.619 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:38:30.799 D/PowerManagerService(  430): lightSensorChangedLocked 100
+08-01 06:38:30.799 D/PowerManagerService(  430): lcdValue 100
+08-01 06:38:30.799 D/PowerManagerService(  430): buttonValue 0
+08-01 06:38:30.799 D/PowerManagerService(  430): keyboardValue 0
+08-01 06:38:30.819 D/PowerManagerService(  430): onSensorChanged: light value: 85
+08-01 06:38:31.199 D/memalloc(  159): ion: Allocated buffer base:0x42a80000 size:2019328 fd:45
+08-01 06:38:31.209 D/memalloc( 1588): ion: Mapped buffer base:0x5d1b2000 size:2019328 offset:0 fd:75
+08-01 06:38:31.209 I/Adreno200-EGLSUB(  159): <CreateImage:893>: Android Image
+08-01 06:38:31.209 I/Adreno200-EGLSUB(  159): <GetImageAttributes:1102>: RGBA_8888
+08-01 06:38:31.219 I/Adreno200-EGLSUB(  159): <CreateImage:893>: Android Image
+08-01 06:38:31.219 I/Adreno200-EGLSUB(  159): <GetImageAttributes:1102>: RGBA_8888
+
+
+WindowManager Log 
+C:\cairo_nightly_0518>adb logcat -v time -ds WindowManager
+--------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+08-01 06:34:45.569 I/WindowManager(  430): Enabled StrictMode for PolicyThread's Looper
+08-01 06:34:45.569 I/WindowManager(  430): Enabled StrictMode logging for WMThread's Looper
+08-01 06:34:45.629 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:34:45.979 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:34:46.349 I/WindowManager(  430): SAFE MODE not enabled
+08-01 06:34:46.359 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:34:57.679 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:35:04.279 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:35:17.709 V/WindowManager(  430): rotationForOrientationLw(orient=5, last=0); user=0
+08-01 06:35:17.719 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:35:17.719 V/WindowManager(  430): rotationForOrientationLw(orient=5, last=0); user=0
+08-01 06:35:32.939 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:35.939 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:38.059 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:39.119 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:40.439 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:41.369 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:43.679 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:44.479 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:46.139 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:49.119 V/WindowManager(  430): rotationForOrientationLw(orient=1, last=0); user=0
+08-01 06:35:51.129 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:35:51.129 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:36:03.129 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:04.859 D/WindowManager(  430): interceptKeyTq keycode=4 screenIsOn=true keyguardActive=false
+08-01 06:36:04.929 D/WindowManager(  430): interceptKeyTq keycode=4 screenIsOn=true keyguardActive=false
+08-01 06:36:04.959 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:08.099 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:36:08.119 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:08.979 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:08.979 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:09.749 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:11.879 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:11.919 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:12.459 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=1); user=0
+08-01 06:36:12.599 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=1); user=0
+08-01 06:36:12.629 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:13.509 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:36:23.999 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:36:24.029 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:24.619 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:24.829 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:25.129 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:26.179 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:27.109 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:27.129 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:27.989 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:36:55.419 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:36:55.469 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:56.439 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:58.729 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:36:58.749 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:36:59.679 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:00.919 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:04.749 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:08.599 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:18.449 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:18.489 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:37:19.339 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=1); user=0
+08-01 06:37:19.519 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=1); user=0
+08-01 06:37:19.549 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:37:19.839 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:20.429 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:34.679 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:34.709 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:37:35.559 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=1); user=0
+08-01 06:37:38.989 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=1); user=0
+08-01 06:37:39.029 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:37:39.939 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:41.829 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:37:41.869 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:37:42.719 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:37:48.319 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+08-01 06:37:48.349 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:37:49.219 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:38:01.559 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:38:02.619 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:38:06.709 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:38:29.739 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=0); user=0
+08-01 06:38:29.779 I/WindowManager(  430): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+08-01 06:38:30.619 V/WindowManager(  430): rotationForOrientationLw(orient=-1, last=3); user=0
+
+
+

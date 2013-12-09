@@ -1,0 +1,168 @@
+==========================================================================================================================
+HAL ¡ª¡ªandroid\device\boss\common\libsensors
+Daemon: /home/larkin/code/0214/android/device/boss/common/libsensors/AKM/akmd8975/main.c
+int s_opmode;		/*!< 0:Daemon mode, 1:Console mode */
+int main
+	Disp_StartMessage();
+	AKD_InitDevice()
+		g_file = open(MSENSOR_NAME, O_RDWR) //magnetic sensor's device driver. 
+			#define MSENSOR_NAME      "/dev/akm8975_dev"
+		Acc_InitDevice()					//acceleration sensor's device driver.
+			open_gsensor_device();
+				fd = open("/dev/bma250_dev", O_RDWR);
+				ioctl(fd, GSENSOR_IOC_ENABLE)
+	InitAK8975PRMS(&prms);
+	ReadAK8975FUSEROM(&prms)
+	console mode(1):
+		case MODE_FctShipmntTestBody:
+			FctShipmntTest_Body(&prms);
+				TEST_DATA(NULL, "START", 0, 0, 0, &pf_total); 
+				FctShipmntTestProcess_Body(prms);	// Execute "Onboard Function Test" (NOT includes "START" and "END" command).
+					AKD_SetMode(AK8975_MODE_POWER_DOWN) 
+					AKD_TxData(AK8975_REG_I2CDIS, i2cData, 1) 
+					AKD_RxData(AK8975_REG_WIA, i2cData, 13)
+					TEST_DATA...
+					AKD_RxData(AK8975_REG_I2CDIS, i2cData, 1) 
+					AKD_SetMode(AK8975_MODE_FUSE_ACCESS)
+					AKD_RxData(AK8975_FUSE_ASAX, i2cData, 3) 
+					TEST_DATA...
+					AKD_GetMagneticData(i2cData) 
+					...
+					
+				TEST_DATA(NULL, "END", 0, 0, 0, &pf_total);
+		case MODE_MeasureSNG:
+			LoadParameters(&prms)
+				fopen(SETTING_FILE_NAME, "r")	//
+					#define SETTING_FILE_NAME	"/data/misc/akmd_set.txt"
+				LoadInt16(fp, "HSUC_HDST_FORM0", &tmp);
+				LoadInt16vec(fp, "HSUC_HO_FORM0", &prms->HSUC_HO[0]);
+			SetDefaultPRMS(&prms);
+			MeasureSNGLoop(&prms);		// This is the main routine of measurement.
+			{
+				openKey()
+				openFormation()
+				GetValidInterval(CSPEC_INTERVAL_SNG, &interval);
+				InitAK8975_Measure(prms)
+					AKD_SetMode(AK8975_MODE_POWER_DOWN)
+						ioctl(g_file, ECS_IOCTL_SET_MODE, &mode)
+					getFormation();
+					AKSC_InitDecomp8975(prms->m_hdata);
+					AKSC_InitHDOEProcPrmsS3
+					AKSC_InitHFlucCheck
+				clock_gettime(CLOCK_REALTIME, &tsstart)
+				AKD_SetMode(AK8975_MODE_SNG_MEASURE)
+				AKD_GetMagneticData(i2cData) 
+					memset(data, 0, SENSOR_DATA_SIZE);
+					msleep(AK8975_MEASUREMENT_TIME);
+					AKD_RxData(AK8975_REG_ST1, data, 1)
+						ioctl(g_file, ECS_IOCTL_READ, buf) 
+					AKD_RxData(AK8975_REG_ST1, data, SENSOR_DATA_SIZE)
+					usleep(1000);
+					ioctl(g_file, ECS_IOCTL_GETDATA, data) 
+						=> AKM8975 AKECS_GetData: data_ready is not set.
+				GetAccVec(prms)
+					AKD_GetAccelerationData(acc)	// Acquire acceleration data from acceleration sensor.
+						Acc_GetAccelerationData(fData) 
+							GSensorReadACC(fData);
+								ioctl(fd, GSENSOR_IOC_GET_ACCEL, &acc)
+								ioctl(fd, GSENSOR_IOC_GET_RANGE, &range)
+						Android2SmartCompass(fData, data);	//Convert Acceleration sensor coordinate system from Android's one to AK's one.
+				MeasuringEventProcess				//SmartCompass main calculation routine. 
+					AKSC_Decomp8975					// Decompose one block data into each Magnetic sensor's data
+					AKSC_HFlucCheck(&(prms->m_hflucv), &(prms->m_hdata[0]));
+					AKSC_SetHDOELevel
+					AKSC_HDOEProcessS3
+					AKSC_VNorm
+					AKSC_ThetaFilter
+				AKD_GetDelay(&delay)				// Acquire Delay
+					ioctl(g_file, ECS_IOCTL_GET_DELAY, &tmp)
+				GetValidInterval(delay, &interval);
+				Disp_MeasurementResultHook(prms);
+					ioctl(g_file, ECS_IOCTL_SET_YPR, &rbuf);
+					Disp_MeasurementResult(prms);
+				checkKey();							// Check if measurement stop event is occurred.
+					checkKeyConsole();				//  Check if measurement stop event is occurred. This function should not be  called except the application is run as ConsoleMode.
+						read(s_keyFile, &ev, sizeof(ev));
+				AKD_SetMode(AK8975_MODE_POWER_DOWN)
+				closeFormation();					// Close device driver 
+				closeKey();							// Close device driver for checking measurement stop condition.
+					close(s_keyFile);				// Close a file descriptor.
+						wsFakeDevFromFd(fd);
+						dev->close(dev, fd);
+			}
+			SaveParameters(&prms)					// Save parameters to file which is specified with #SETTING_FILE_NAME. 
+				fopen(SETTING_FILE_NAME, "w")
+				SaveInt16(fp, "HSUC_HDST_FORM0", (int16)prms->HSUC_HDST[0]);	// Save parameters of int16 type structure to file. 
+					fprintf(fp, "%s" DELIMITER "%d\n", lpKeyName, val) 			
+				SaveInt16vec(fp, "HSUC_HO_FORM0", &prms->HSUC_HO[0]);			// Save parameters of int16vec type structure to file.
+					snprintf(keyName, sizeof(keyName), "%s.x", lpKeyName);
+					SaveInt16(fp, keyName, vec->u.x);
+	
+			
+	daemon  mode(0):
+		ioctl(g_file, ECS_IOCTL_GET_OPEN_STATUS, &st) 
+			AKECS_GetOpenStatus();
+				wait_event_interruptible(open_wq, (atomic_read(&open_flag) != 0));
+				atomic_read(&open_flag);
+			copy_to_user(argp, &status, sizeof(status))
+		LoadParameters(&prms)
+			fp = fopen(SETTING_FILE_NAME, "r")
+		/SetDefaultPRMS(&prms);
+		startClone(&prms)	// Start measurement thread, a new thread.
+			pthread_attr_init(&attr);
+			pthread_create(&s_thread, &attr, thread_main, prms) 
+				=>thread_main
+					MeasureSNGLoop((AK8975PRMS *) args);	// This is the main routine of measurement.
+				_pthread_internal_alloc();
+					calloc( sizeof(*thread), 1 );
+						heap_alloc(realsize, 0);
+							ROUNDUP(size, sizeof(void *));
+							enter_critical_section();
+							list_for_every_entry(&theheap.free_list, chunk, struct free_heap_chunk, node)
+							list_next(&theheap.free_list, &chunk->node);
+							heap_create_free_chunk((uint8_t *)ptr + size, chunk->len - size);	
+							(void *)ROUNDUP((addr_t)ptr, alignment);
+							exit_critical_section();
+								arch_enable_ints();
+						memset(ptr, 0, realsize);
+				mkstack(stackSize, attr->guard_size);
+				_pthread_internal_free(thread);
+				pthread_mutex_init(start_mutex, NULL);
+				pthread_mutex_lock(start_mutex);
+				__pthread_clone((int(*)(void*))start_routine, tls, ...)
+				_pthread_internal_free(thread);
+				_init_thread(thread, tid, (pthread_attr_t*)attr, stack);
+				pthread_mutex_lock(&gDebuggerNotificationLock);
+				_thread_created_hook(tid);
+				pthread_mutex_unlock(&gDebuggerNotificationLock);
+				pthread_mutex_unlock(start_mutex);
+				
+		ioctl(g_file, ECS_IOCTL_GET_CLOSE_STATUS, &st)	// Wait until device driver is closed.
+			AKECS_GetCloseStatus();
+				wait_event_interruptible(open_wq, (atomic_read(&open_flag) <= 0));
+				atomic_read(&open_flag);
+			(copy_to_user(argp, &status, sizeof(status))) 
+		pthread_join(s_thread, NULL);
+			pthread_mutex_lock(&gThreadListLock);
+			(thread == (pthread_internal_t*)thid)?
+			pthread_mutex_unlock(&gThreadListLock);
+			pthread_cond_wait( &thread->join_cond, &gThreadListLock );
+			_pthread_internal_remove_locked(thread);
+			_pthread_internal_free(thread);
+		SaveParameters(&prms) 	
+			fopen(SETTING_FILE_NAME, "w")	// #define SETTING_FILE_NAME	"/data/misc/akmd_set.txt"
+			SaveInt16(fp, "HSUC_HDST_FORM0", (int16)prms->HSUC_HDST[0]);	// Save parameters of int16 type structure to file. 
+				fprintf(fp, "%s" DELIMITER "%d\n", lpKeyName, val) 			
+			SaveInt16vec(fp, "HSUC_HO_FORM0", &prms->HSUC_HO[0]);			// Save parameters of int16vec type structure to file.
+				snprintf(keyName, sizeof(keyName), "%s.x", lpKeyName);
+				SaveInt16(fp, keyName, vec->u.x);
+		AKD_DeinitDevice();		// Close Device Driver. 
+			close(g_file);
+			Acc_DeinitDevice
+		Disp_EndMessage();		// Show the last msg.
+			
+
+Disp_MeasurementResultHook(prms);
+ Output measurement result. If this application is run as ConsoleMode,
+ the measurement result is output to console. If this application is run as
+ DaemonMode, the measurement result is written to device driver.

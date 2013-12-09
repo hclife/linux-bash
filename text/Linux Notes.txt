@@ -1,0 +1,11 @@
+内存置换空间swap的功能是在应付物理内存不足的情况下所造成的内存延伸记录。
+swap是用硬盘来暂时放置内存中的信息。
+network connection icon disapeared
+具体做法是：
+cd /etc/NetworkManager/ 
+vim nm-system-settings.conf 
+//做以下更改 
+managed=true 
+//保存退出 
+/etc/init.d/networking restart //这一步，我是用重启电脑代替的。
+重启电脑之后，图标出现，网络正常。

@@ -1,0 +1,68 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+main(argc,argv)
+int argc;
+char*argv[];
+{
+char ch;
+char temp[100];
+FILE *fp1,*fp2;
+int i=0,j;
+int n=100;
+char str[100][20];
+char filename1[20],filename2[20];
+char *file;
+
+{ 
+  if(argc<2)
+{
+  printf(“please input filename1\n”);
+  scanf(“%s”,filename1);
+  file=filename1;
+}
+ else
+  if((fp1=fopen(argv[1],”r”))==NULL)
+{
+  printf(“not open”);
+  exit(0)
+}
+  
+  while(fscanf(fp1,”%s”,str[i])!=EOF)
+{
+  i++;
+  if(i>100)
+  break;
+}
+  
+//排序
+char *p[i];//个数i
+for(j=0;i<i;j++)
+{ p[j]=str[j];//将字符串放入指针
+}
+//调用排序函数，或者直接写(以下参量是按照我原来那个排序的）
+
+if(argc<3)
+{
+ printf(“please input filename2\n”);
+  scanf(“%s”,filename2);
+  file=filename2;
+ }
+ else
+{
+if((fp2=fopen(argv[2],”w”))==NULL)
+ {
+ printf(“cannot open file!”);
+ exit(0);
+ }
+ else
+ {
+  for(j=0;j<i;j++)
+ {
+  fprintf(fp2,"%s",p[j]);
+ }
+}
+fclose(fp1);
+fclose(fp2);
+}
+

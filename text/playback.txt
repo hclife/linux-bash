@@ -1,0 +1,219 @@
+start playback: 
+pcm_out_open  (pcm_out.c)  open session id[1]
+    q6asm_audio_client_alloc  
+	q6asm_session_alloc
+    	apr_register((apr_fn)q6asm_callback)   ====> apr_reset(ac->apr)
+		wait_event_timeout
+		pil_get("q6")
+		apr_tal_open(apr_cb_func)
+	apr_register((apr_fn)q6asm_mmapcallback)
+	atomic_inc
+	init_waitqueue_head
+	q6asm_audio_client_free
+    q6asm_open_write
+	q6asm_add_hdr
+	apr_send_pkt
+	wait_event_timeout
+    init_waitqueue_head
+    spin_lock_init
+    wake_lock_init
+    auddev_register_evt_listner(pcm_event_listner)
+    q6asm_audio_client_free
+	q6asm_audio_client_buf_free
+		q6asm_memory_unmap_regions
+	apr_deregister(ac->apr)
+	q6asm_session_free
+	apr_deregister(this_mmap.apr)
+
+
+
+
+msm_device_put:device speaker_stereo_rx set 1
+msm_device_put:device freq =48000
+  |audio_dev_ctrl_find_dev
+  |dev_info->dev_ops.set_freq
+  |dev_info->dev_ops.open    ==> snddev_icodec_open  
+  				   snddev_icodec_open_rx/lb/tx  =========>  *wake_lock
+									    vreg_mode_vote	===================> regulator_enable
+														     regulator_set_optimum_mode
+														     /regulator_disable
+									    msm_snddev_rx_mclk_request ============> *gpio_request
+ 									    clk_get
+									    clk_set_rate(osrclk)
+									    clk_enable(osrclk)
+									    clk_set_rate(bitclk)
+									    clk_enable(bitclk)
+		 							    icodec->data->voltage_on	 ===========> *msm_snddev_voltage_on
+															   atomic_inc_return
+															   regulator_get
+															  *regulator_set_voltage(ncp)  ==> The API to open power
+															   regulator_enable(ncp)
+		 							    *adie_codec_open (configure adie)  ======> cur_adie_ops->codec_open  ========>  marimba_adie_codec_open
+															(msm-adie-codec.c)
+																				adie_codec.codec_pdata->marimba_codec_power(1)
+																				marimba_codec_bring_up    ==>   adie_codec_write
+																								  marimba_write_bit_mask
+
+									    adie_codec_setpath  ====================> cur_adie_ops->codec_setpath  =====>  marimba_adie_codec_setpath      
+									    *afe_open   
+										*apr_register("ADSP", "AFE", afe_callback, 0xFFFFFFFF, &this_afe);
+										afe_validate_port(port_id) 
+										apr_send_pkt(config) ==> opcode : AFE_PORT_AUDIO_IF_CONFIG.
+										wait_event_timeout
+										apr_send_pkt(start)  ==> opcode : AFE_PORT_CMD_START.
+										wait_event_timeout
+									    adie_codec_proceed_stage (enable adie) ==> cur_adie_ops->codec_proceed_stage  ==> marimba_adie_codec_proceed_stage
+																				 ADIE_CODEC_UNPACK_ENTRY
+																				 adie_codec_write
+																					marimba_write_bit_mask
+																				 adie_codec_reach_stage_action
+
+									    adie_codec_set_master_mode  ============> cur_adie_ops->codec_set_master_mode ==> timpani_adie_codec_set_master_mode
+																				 adie_codec_write * n	
+																					marimba_write_bit_mask
+																						i2c_transfer * 2
+									    icodec->data->pamp_on  =================> msm_snddev_poweramp_on
+															 atomic_inc_return
+															 config_class_d0_gpio(1)  
+																pm8901_mpp_config_digital_out
+																gpio_request(227)
+																gpio_direction_output(227)
+																gpio_set_value(1)
+															 config_class_d1_gpio
+																gpio_request(229)
+																gpio_direction_output(229)
+																
+
+									    *wake_unlock
+				   snddev_icodec_set_device_volume_impl ==> adie_codec_set_device_digital_volume  ==> codec_set_device_digital_volume ==> marimba_adie_codec_set_device_digital_volume
+									    adie_codec_set_device_analog_volume   ==> codec_set_device_analog_volume  ==> timpani_adie_codec_set_device_analog_volume
+												
+
+  				   snddev_icodec_open_lb
+  |broadcast_event
+  |afe_loopback
+
+auddev_cb_function
+
+
+evb_snddev_poweramp_on: enable stereo spkr amp
+    config_audio_amp_gpio(1)
+	pm8901_mpp_config_digital_out(1)
+	gpio_request
+	*gpio_direction_output(1)
+	*gpio_set_value(1)
+    config_audio_amp_power(1)
+
+
+pcm_out_ioctl: AUDIO_START
+    copy_to_user
+    copy_from_user
+    config(pcm)
+	q6asm_audio_client_buf_alloc
+	q6asm_enc_cfg_blk_pcm
+    pcm_out_enable
+	atomic_read(&pcm->out_enabled)
+	q6asm_run
+	q6asm_add_hdr
+	apr_send_pkt
+	wait_event_timeout
+    audio_prevent_sleep(pcm)
+	*wake_lock(&audio->wakelock);
+	*wake_lock(&audio->idlelock);
+    atomic_set(1)
+    q6asm_set_volume
+	q6asm_add_hdr_async
+	apr_send_pkt
+	wait_event_timeout
+    q6asm_set_lrgain
+	q6asm_add_hdr_async
+	apr_send_pkt
+	wait_event_timeout
+    q6asm_set_mute
+	q6asm_add_hdr_async
+	apr_send_pkt
+
+
+
+Timpani-codec.c
+static int adie_codec_write 
+		(marimba-code.c)
+	==> marimba_write_bit_mask  ==> i2c_transfer*2  (i2c-core.c)
+						struct i2c_algorithm  ( i2c_qup.h )
+						ret = adap->algo->master_xfer(adap, msgs, num)
+						==> qup_i2c_xfer
+(i2c-qup.c)
+static const struct i2c_algorithm qup_i2c_algo = {
+	.master_xfer	= qup_i2c_xfer,
+	.functionality	= qup_i2c_func,
+};
+
+qup_i2c_xfer
+	DECLARE_COMPLETION_ONSTACK(complete);
+	i2c_get_adapdata(adap)	==> dev_get_drvdata
+	del_timer_sync
+	clk_set_rate
+	qup_i2c_pwr_mgmt(dev, 1)  ==> clk_enable
+	writel(0x2 << 4, dev->gsbi);
+	dsb()
+	qup_i2c_poll_state   ==>  while (retries != 2000)
+	enable_irq(dev->err_irq)
+	qup_print_status(dev)
+	qup_set_read_mode(dev, dev->cnt) / qup_set_wr_mode(dev, rem)
+	qup_update_state(dev, QUP_RUN_STATE)
+	qup_print_status(dev)
+	qup_update_state
+	qup_print_status
+	qup_issue_read / qup_issue_write
+		==> qup_verify_fifo
+	qup_update_state
+	qup_print_status
+	wait_for_completion_timeout
+	...
+	qup_i2c_poll_writeready
+	disable_irq
+	add_timer	
+	    BUG_ON
+	    mod_timer
+		=    del_timer(timer); timer->expires = expires; add_timer(timer);
+		timer_pending(timer)
+		apply_slack(timer, expires)
+			time_after(expires, now)
+			find_last_bit(&mask, BITS_PER_LONG)
+		__mod_timer
+			timer_stats_timer_set_start_info(timer)
+			BUG_ON(!timer->function)
+			lock_timer_base(timer, &flags)
+			tbase_get_deferrable(timer->base)
+			debug_activate(timer, expires)
+			smp_processor_id()
+			if (!pinned && get_sysctl_timer_migration() && idle_cpu(cpu)) {
+			int preferred_cpu = get_nohz_load_balancer(); ... }
+			per_cpu
+			timer_set_base
+			if (time_before(timer->expires, base->next_timer) &&
+			    !tbase_get_deferrable(timer->base))
+			base->next_timer = timer->expires;
+			internal_add_timer(base, timer);
+
+
+
+Normal playback:
+decoded PCM data -> Stagefright/Opencore -> Audioflinger -> Audio HAL -> PCM out driver -> DSP -> ADIE
+LPA playback:
+decoded PCM data -> Opencore with custom MIO -> PMEM (LPA PCM out driver) -> DSP -> ADIE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						

@@ -52,8 +52,6 @@ DB value of audio devices:
   git clone git://10.82.164.21/Data/msm8260/oem.git -b Qplatform_ICS
   git clone git://10.82.164.21/Data/msm8260/amss.git -b Qplatform_ICS
   
-  
-  
 #git clone git://10.85.21.71/ics/kernel/msm.git -b QIcs
 ==> grep the kernel code.
 git log --author=Frankie --no-merges --stat
@@ -82,27 +80,22 @@ remotes/origin/SWEP_GORAB1A_v01.025.g_00
 ---------------------------------------
 check in procedure:
 ssh-keygen -t rsa
-ssh p 29418 Larkin.Huang@10.82.164.21
+ssh -p 29418 Larkin.Huang@10.82.164.21
 git config --global user.name "Larkin.Huang"
 git config --global user.email "Larkin.Huang@Qisda.com"
 git config -l
 mkdir git; cd git
 git clone git://10.82.164.21/Data/msm8260/kernel/msm -b MSM8260_GB
-
 Audio Low Temp git of code base:
 git clone git://10.85.21.71/audio_core.git
 git clone git://10.85.21.71/audio_msm8660_surf.git
 git clone git://10.85.21.71/audio_kernel.git
-git push
-
-
 
 git clone git://10.82.164.21/Data/msm8260/platform/vendor/qcom/proprietary -b MSM8260_GB
 ==> android/vendor/qcom/proprietary/mm-audio/audcal/boss/audio_cal_orange_dvt.acdb
 
 git clone git://10.82.164.21/Data/msm8260/kernel/msm -b SWEP_GORAB1A_v01.017.a_00
 git clone ssh://Larkin.Huang@10.82.164.21:29418/msm8260/kernel/msm.git -b MSM8260_GB
-cd msm; git status
 git add .	//check in all the files
 git add kernel/drvier/power/kconfig  //check in a special file
 git commit -m "EVT1 max8903b charge IC driver" //submit comments
@@ -155,19 +148,12 @@ $ git clone git://10.82.164.21/Data/msm8260/oem -b MSM8260_GB
 $ git clone git://10.82.164.21/Data/msm8260/device/boss/orange -b MSM8260_ICS
 $ git clone git://10.82.164.21/Data/msm8260/device/boss/cairo -b Qplatform_ICS
 $ git clone git://10.82.164.21/Data/msm8260/platform/system/core -b MSM8260_GB
-
 git clone git://10.82.164.21/Data/cairo/device/boss/cairo -b MSM8660_ICS
 git clone git://10.82.164.21/Data/cairo/platform/vendor/qcom/proprietary -b MSM8660_ICS
 git clone git://10.82.164.21/Data/cairo/kernel/msm -b MSM8660_ICS
 
-
-
 git commit format:
 Record othc insertion/removal state after kernel detection delay.
-
-Big id: S2-05-000725
-Solution: Modify pmic8058-othc.c to 
-
 --------------------------------------
 git status -uno    	//show no untracked files
 git commit --amend 	//change the last commit
@@ -585,7 +571,6 @@ size SimpleSection.o
    44  2012-11-26 14:39:49 ./build_android.sh evb qisda debug
    38  2012-11-23 14:59:41 ./1_build_android.sh kernel evb qisda debug
    44  2012-11-26 14:39:49 ./build_android.sh evb qisda debug
-
  1080  2012-12-19 13:35:55 make VERBOSE=1 TARGET=android DEVICE=MPU3050 ANDROID_ROOT=/home/larkin/evb/android KERNEL_ROOT=/home/larkin/evb/android/kernel CROSS=/home/larkin/evb/android/prebuilt/linux-x86/toolchain/arm-eabi-4.4.0/bin/arm-eabi- PRODUCT=msm7627a MPL_LIB_NAME=mplmpu echo_in_colors=echo -f Android-shared.mk
  1081  2012-12-19 15:41:44 cd ../../
  1082  2012-12-19 15:41:49 cd ../../kernel/Documentation/
@@ -1836,27 +1821,11 @@ gcc -c -g stack.c push.c pop.c empty.c
  1037  2012-08-29 10:07:51 rm main
  1038  2012-08-29 10:08:43 gcc main -Lstack -lstack -Istack -o main -Wl,-rpath,/home/larkin/c/stk/so/stack
  1039  2012-08-29 10:08:54 gcc main.c -Lstack -lstack -Istack -o main -Wl,-rpath,/home/larkin/c/stk/so/stack
- 1040  2012-08-29 10:08:56 ll main
- 1041  2012-08-29 10:08:59 ldd main
- 1042  2012-08-29 10:09:04 pwd
- 1043  2012-08-29 10:09:18 history | tail >> /home/larkin/cmd.log 
- 1028  2012-08-30 12:32:56 git log --author=Jack
- 1029  2012-08-30 12:33:05 git log --author=Reed
  1030  2012-08-30 12:33:13 git log --author=Reed.Wang
- 1031  2012-08-30 12:33:25 cd ..
  1032  2012-08-30 12:33:39 repo forall -c git log --author=Reed.Wang
- 1033  2012-08-30 12:34:07 ls
  1034  2012-08-30 12:34:27 repo forall -pc git log --author=Reed.Wang
  1035  2012-08-30 12:34:36 repo help forall
  1036  2012-08-30 12:35:00 repo forall -p -c git log --author=Reed.Wang
- 1037  2012-08-30 12:35:12 history | tail >> /home/larkin/cmd.log 
- 1029  2012-08-31 10:18:56 cat empty.
- 1030  2012-08-31 10:18:59 cat empty.c
- 1031  2012-08-31 10:21:17 cat ../main.c 
- 1032  2012-08-31 10:22:07 history | grep gcc
- 1033  2012-08-31 10:23:01 cat pop.c
- 1034  2012-08-31 10:28:21 history | tail 
- 1035  2012-08-31 10:28:26 ls
  1036  2012-08-31 10:28:30 ll libstack.so.1.0 
  1037  2012-08-31 10:28:37 gcc -shared -Wl,-soname,libstack.so.1 -o libstack.so.1.0 stack.o push.o pop.o empty.o
  1038  2012-08-31 10:28:46 history | tail >> /home/larkin/cmd.log 
@@ -1865,4 +1834,7 @@ gcc -c -g stack.c push.c pop.c empty.c
   660  2012-09-10 11:25:19 readelf -a a.o > elf.relocatable
   665  2012-09-10 11:27:43 vi elf.executable
   676  2012-09-10 14:08:37 readelf -a sensors.default.nonconst.so > elf.shared.objects
+
+origin  https://github.com/hclife/-bash-con.git (fetch)
+origin  https://github.com/hclife/-bash-con.git (push)
 

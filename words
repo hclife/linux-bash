@@ -1894,6 +1894,7 @@ FHS	:Filesystem Hierarchy Standard
 KDE	:K Desktop Environment; Keyboard Data Entry
 FTPD	:File Transfer Protocol Deamon
 GCD	:Greatest Common Divisor
+LCM	:Lowest Common Multiple
 EIS	:Electronic Image Stabilization
 EISA	:Extended ISA
 VLB	:VESA Local Bus

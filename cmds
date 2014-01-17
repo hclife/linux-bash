@@ -980,33 +980,13 @@ END {print "Can I do anything else for you, mistress?"}'
 977: 1025  tar --help
 978: 1026  tar --help | less
 985: 1033  tar -xzvf prom.tar.gz 
-999: 1047  hg 'tar '
-1000: 1048  hg 'tar ' >> cmds
 959: 1008  gzip bashrc 
 962: 1011  gzip -d bashrc.gz 
-1000: 1049  hg 'gzip ' >> cmds
- 1043  cd
- 1044  mv cmds.txt cmds
- 1045  ls
- 1046  hg tar
- 1047  hg 'tar '
- 1048  hg 'tar ' >> cmds
- 1049  hg 'gzip ' >> cmds
  1050  netstat -nl
  1051  netstat -nlu
- 1052  cmds
- 1061  ifconfig
- 1062  ifconfig -a
- 1063  ifconfig eth0 up
- 1064  ifconfig 
- 1065  ifconfig --help
  1066  ifconfig eth0 192.168.1.1 netmask 255.255.255.0
- 1067  ifconfig 
  1068  ping 192.168.1.105
  1069  ifconfig eth0 192.168.1.105 netmask 255.255.255.0
- 1070  cmds
- 1077  sync
- 1078  whatis sync
  1079  cal 12
  1080  cal --help
  1081  cat 2015-10

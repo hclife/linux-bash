@@ -1,0 +1,31 @@
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 100000
+10000.00
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 200000
+17500.00
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 300000
+22500.00
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 400000
+27500.00
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 500000
+30500.00
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 600000
+33500.00
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 700000
+35000.00
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 800000
+36500.00
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 900000
+38000.00
+[larkin@localhost chapter4]$ ./bonus.switch
+Please input the profit: 1000000
+39500.00
+

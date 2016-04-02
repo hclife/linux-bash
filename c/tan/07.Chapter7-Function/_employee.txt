@@ -1,0 +1,12 @@
+10
+zhangsan 89
+lisi 76
+wangwu 55
+zhaoliu 67
+qianqi 23
+sunba 30
+zhoujiu 25
+wushi 44
+zhenger 41
+liuyi 20
+67

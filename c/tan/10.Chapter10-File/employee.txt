@@ -1,0 +1,5 @@
+Wan  101 M 30 Block1 5000 GD Bachelor
+Liu  103 M 31 Block7 5500 VG Master
+Kai  107 F 28 Block3 4000 GD Bachelor
+Hou  108 M 35 Block5 8000 NI Doctor
+Woo  110 F 30 Block6 7000 EX Master

@@ -1,0 +1,13 @@
+10
+Li 3
+Zhang 1
+Yang 27
+Qian 7
+Sun 8
+Jiang 12
+Zhao 6
+Shen 23
+Wang 2
+Han 26
+4
+

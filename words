@@ -1,3 +1,6 @@
+----------------------------------------------------------
+The glossary of most often used words during development.
+----------------------------------------------------------
 
 LFE	:Low Frequency Enhancement channel (15Hz ~ 120 Hz)
 IEC	:International Electrotechnical Commission
@@ -70,20 +73,22 @@ SPTS	:Single Program Transport Stream
 PAT	:Program Association Table
 PMT	:Program Map Table
 PCR	:Program Clock Reference
-To enable a decoder to present synchronized content, such as audio tracks matching the associated video,
-at least once each 100 ms a Program Clock Reference, or PCR is transmitted in the adaptation field of
-an MPEG-2 transport stream packet. The PID with the PCR for an MPEG-2 program is identified by the pcr_pid
-value in the associated Program Map Table. The value of the PCR, when properly used, is employed to
-generate a system_timing_clock in the decoder. The STC or System Time Clock decoder, when properly
-implemented, provides a highly accurate time base that is used to synchronize audio and video elementary
-streams. 
-Timing in MPEG2 references this clock. For example, the presentation time stamp (PTS) is intended to
-be relative to the PCR. The first 33 bits are based on a 90 kHz clock. The last 9 are based on a 27 MHz
-clock. The maximum jitter permitted for the PCR is +/- 500 ns.
-Decoding of N-elementary streams is synchronized by adjusting the decoding of streams to a common master
-time base rather than by adjusting the decoding of one stream to match that of another. The master time
-base may be one of the N-decoders¿ clocks, the data source¿s clock, or it may be some external clock.
-
+To enable a decoder to present synchronized content, such as audio tracks matching
+the associated video, at least once each 100 ms a Program Clock Reference, or PCR
+is transmitted in the adaptation field of an MPEG-2 transport stream packet. The
+PID with the PCR for an MPEG-2 program is identified by the pcr_pid value in the
+associated Program Map Table. The value of the PCR, when properly used, is employed
+to generate a system_timing_clock in the decoder. The STC or System Time Clock
+decoder, when properly implemented, provides a highly accurate time base that is
+used to synchronize audio and video elementary streams. 
+Timing in MPEG2 references this clock. For example, the presentation time stamp
+(PTS) is intended to be relative to the PCR. The first 33 bits are based on a
+90kHz clock. The last 9 are based on a 27 MHz clock. The maximum jitter permitted
+for the PCR is +/- 500 ns.  Decoding of N-elementary streams is synchronized by
+adjusting the decoding of streams to a common master time base rather than by
+adjusting the decoding of one stream to match that of another. The master time
+base may be one of the N-decoders clocks, the data sources clock, or it may be
+some external clock.
 LDTD	:Local Descriptor Table Descriptor
 SVF	:Serial Vector Format
 GREP	:Global Search Regular Expression and Printout the lines
@@ -529,7 +534,7 @@ GCA	:Gain Control Amplifier
 FFT	:Fast Fourier Transform Algorithm (method)
 KY	:KunYao Lee
 PLC	:Programmable Logic Controller
-	 Package Loss Concealing
+	:Package Loss Concealing
 ANS	:Automatic Noise Suppression
 TASI	:Time-Assigned Speech Interpolation
 VAD	:Voice Activity Detection
@@ -611,9 +616,13 @@ WPS	:WorkPlace Shell
 NT	:New Technology
 SNA	:System Network Architecture
 ARM	:The Application Response Measurement standard
-	:Advanced RISC Machine; Architecture Reference Manual
+	:Advanced RISC Machine
+	:Architecture Reference Manual
 RISC	:Reduced Instruction Set Computer
-Well known RISC families include DEC Alpha, AMD 29k, ARC, ARM, Atmel AVR, Blackfin, MIPS, PA-RISC, Power (including PowerPC), SuperH, and SPARC. The ARM architecture processors in smart phones and tablet computers also belongs to the RISC families. And RISC processors are also used in supercomputers such as the K computer.
+Well known RISC families include DEC Alpha, AMD 29k, ARC, ARM, Atmel AVR, Blackfin,
+MIPS, PA-RISC, Power (including PowerPC), SuperH, and SPARC. The ARM architecture
+processors in smart phones and tablet computers also belongs to the RISC families.
+And RISC processors are also used in supercomputers such as the K computer.
 CISC	:Complicated Instruction Set Computer
 ILP	:int long pointer
 JCL	:Job Contrl Language
@@ -863,7 +872,7 @@ STL	:Standard Template Library
 	 Standard Telephone Laboratories
 COW	:Copy-On-Write
 ASV	:Advanced SuperView 
-	 ==> The technology from Sharp to improve image quality
+The technology from Sharp to improve image quality
 TFT	:Thin Film Transistor
 QVGA	:Quater Video Graphics Array, 320*240 image resolution
 SQCIF	:SubQuarter Common Intermediate Format, 128*96 image resolution
@@ -891,8 +900,9 @@ KVM	:Kernel based Virtual Machine
 MTRR	:Memory Type Range Register
 MSI	:Message Signaled Interrupts
 MRV	:Magillem Register View
-TLM	:Transmission Line Model; Time Linearization Method; 
-	 Transmission Line Matrix
+TLM	:Transmission Line Model
+	:Time Linearization Method
+	:Transmission Line Matrix
 TLP	:Transmission Layer Protocol
 RTL	:Register Transfer Language
 MMU	:Memory Management Unit = PMMU.
@@ -1250,11 +1260,11 @@ ATM	:Automatic Teller Machine; Asynchronous Transfer Mode
 CDS	:Central Dynamic Store
 HGC	:Hutchison Global Communications Investments Limited
 VPM	:Voice Privacy Mask; Voice Processing Management
-	 VoiceProc Manager
+	:VoiceProc Manager
 ADM	:Application Data Mover
 ASM	:ASSEMBLY language; Asynchronous state machine;
-	 Algorithmic State Machine; Audio Stream Manager;
-	 Auto-Sequencing Memory
+	:Algorithmic State Machine; Audio Stream Manager;
+	:Auto-Sequencing Memory
 ASMP	:Active Set Management Protocol
 XML	:eXtensible Markup Language
 OVR	:Output Voltage Regulation
@@ -1263,7 +1273,7 @@ VG	:Volume Group
 PE	:Physical Extend
 LV	:Logical Volume
 DM	:Dianostic Monitor;Data Mover; Device Management; 
-	 Data Memory; Delta Modulation
+	:Data Memory; Delta Modulation
 DTS	:Digital Theatre System
 LPC	:Linear Predictive Coding
 LPCM	:Linear Pulse Coded Modulation
@@ -1430,7 +1440,7 @@ SEM	:Simplified Ebers-Moll model
 SLUB	:
 SROT	:Secure Root-of-Trust
 PME	:power wakeup signal
-	 A signal line on PCI bus, restart system by triggering it.
+A signal line on PCI bus, restart system by triggering it.
 EDAC MC	:
 PEC	:Packet Error Checking
 STMR	:SideTone Masking Rating
@@ -1442,7 +1452,7 @@ SSS	:Single Subscriber Station
 HSPA	:High-Speed Packet Access
 HSPD	:High-Speed Packet Data
 PBE	:Philips Business Excellence; Plain Both Ends;
-	 Psycho-acoustic Bass Enhancement
+	:Psycho-acoustic Bass Enhancement
 CAF	:Core Audio Format; Code Aurora Forum
 AMR	:Adaptive Multi-Rate
 AMR-NB	:AMR-NarrowBand
@@ -2313,11 +2323,11 @@ VGA	:video/graphics array; Variable Gain Amplifier
 SRP	:session request protocol 
 HNP	:host negotiation protocol
 RUIM	:removable user interface module
-	 Re-Usable Identification Module
+	:Re-Usable Identification Module
 SBDT	:Serial Bus Data Line
-	 ==> bidirectional and is used to transfer data into and out of the PM8058IC
+It's bidirectional and is used to transfer data into and out of the PM8058IC
 SBST	:Serial Bus Strobe Signal
-	 ==> used to initiate serial data transfers
+It's used to initiate serial data transfers
 SBCK	:Serial Bus Clock ==> synchronizes data transfers
 TXCO	:Temperature Compensated Crystal Oscillator
 SLC	:Single-Level Cell: one bit information per cell

@@ -5,7 +5,7 @@
 #define MAXN	36
 
 int Ans;
-const int N=30;
+const int N=32;
 int cube[MAXN][MAXN][MAXN];
 
 void cube_dump()

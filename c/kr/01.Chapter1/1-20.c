@@ -6,12 +6,6 @@
 #define MAX	1024
 #define TAB	8
 
-a b
-a  b
-a   c
-a     five
-a	tab start
-a       wowowow
 int get(char s[])
 {
 	int c,i;

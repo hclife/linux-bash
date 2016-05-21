@@ -133,8 +133,10 @@ MSR	:Modem Status Register
 LSR	:Line Status Register
 IOI	:International Olympiad in Informatics
 CU	:China Unicom
-D.J.	:International English Pronounciation Dictionary, 1963 (Daniel Jones)
-K.K.	:A Pronounciation Dictionary of American English, 1956 (John S. Kenyon & Thomas A. Knott) => (Kenyon & Knott)
+D.J.	:International English Pronounciation Dictionary,
+	 1963 (Daniel Jones)
+K.K.	:A Pronounciation Dictionary of American English,
+	 1956 (John S. Kenyon & Thomas A. Knott) => (Kenyon & Knott)
 IPA	:International Pronounciation of symbols
 AHD	:American pronounciation in custom dictionary
 BCC	:Bump Chip Carrier
@@ -248,7 +250,8 @@ OLE	:
 SFC	:System File Checker
 CPSR	:Current Program Status Register
 SPSR	:Saved Program Status Register
-(Be used to save CPSR status, in order to restore working status after exception return.)
+	 (Be used to save CPSR status, in order to
+	 restore working status after exception return.)
 EM64T	:Extended Memory 64 Technology
 SSE	:Streaming SIMD Extensions
 MMX	:MultiMedia eXtensions
@@ -833,8 +836,10 @@ CORDIC	:Coordinate Rotation Digital Computer
 DDC	:Direct Digital Control; Digital Down Converter
 NCO	:Nu-merical Control Oscillator
 DDS	:Direct Digital Frequency Synthesis. =DDFS
-LCC	:Line Concentration Controller; Life Cycle Costs; Library of Congress Classification
-CIC	:Cross Interleave Code; Circuit Identify Code; Carrier Interface Controller;Circulating Innune Complex
+LCC	:Line Concentration Controller; Life Cycle Costs;
+	 Library of Congress Classification
+CIC	:Cross Interleave Code; Circuit Identify Code;
+	 Carrier Interface Controller;Circulating Innune Complex
 CIC	:Cascaded Integrator-Comb filter
 DML	:Database Manipulate Language; Data Manipulation Language
 DNA	:Distributed interNet Application
@@ -872,7 +877,7 @@ STL	:Standard Template Library
 	 Standard Telephone Laboratories
 COW	:Copy-On-Write
 ASV	:Advanced SuperView 
-The technology from Sharp to improve image quality
+	 The technology from Sharp to improve image quality
 TFT	:Thin Film Transistor
 QVGA	:Quater Video Graphics Array, 320*240 image resolution
 SQCIF	:SubQuarter Common Intermediate Format, 128*96 image resolution
@@ -895,7 +900,7 @@ BTS	:Debian Bug Tracking System
 MTD	:Memory Technology Device
 FUSE	:Filesystem in USERspace
 IMA	:Integrity Measurement Architecture
-	 Interactive Multimedia Association
+	:Interactive Multimedia Association
 KVM	:Kernel based Virtual Machine
 MTRR	:Memory Type Range Register
 MSI	:Message Signaled Interrupts
@@ -984,7 +989,8 @@ PTY	:Program Type
 PTYN	:Program Type Name
 TP	:Traffic Program
 TA	:Traffic Announcement
-AF	:Alternative Frequency; Auto Focus; Adaptive Filter; Audio Flinger
+AF	:Alternative Frequency; Auto Focus;
+	:Adaptive Filter; Audio Flinger
 DI	:Decoder Identification
 MS	:Music Speech Switch
 	:Mobile Station, MicroSoft
@@ -1005,8 +1011,10 @@ COSE	:Common Open Software Environment
 ARSS	:Airborne Remote Sensing System
 ECM	:Error-Correcting Module
 ECC	:Error-Correcting Code (standard)
-PSRR	:Power Supply Rejection Ratio; Product and Support Requirement Request
-=> Describe the amount of noise from a power supply that a particular device can reject.
+PSRR	:Power Supply Rejection Ratio;
+	:Product and Support Requirement Request
+	 Describe the amount of noise from a power supply
+	 that a particular device can reject.
 SIP	:Session Initiation Protocol; Simple IP
 SIR	:Signal-to-Interface Protocol
 SMD	:Surface Mount Device; Shared Memory Driver

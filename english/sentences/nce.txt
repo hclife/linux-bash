@@ -1,3 +1,6 @@
+--------------
+sentences
+--------------
 My father spotted several spelling mistakes in my composition.
 They set to work accumulating a huge mass of data. The scandal
 obliged the minister to resign. An extraordinarily large order
@@ -16,3 +19,28 @@ return to his native home. What troubles me is that I can't learn
 all these English idioms by heart. The reason why the little
 actress has been such a success is that she is both clever and
 hard-working.
+We are working in association with a number of local companies
+to raise money for the homeless. To my surprise, he refused to
+cooperate with us. It is difficult to get used to another country's
+customs. The knife can be used to cut meat. Twenty shillings were
+equal to one pound before 1971. The book has enjoyed a success
+unparalleled in recent publishing history.
+The sun rises in the east and sets in the west. He turned on the
+torch to look for his keys. I can hardly recognize her, because she
+just had her hair cut a moment ago. The police are anxious to
+apprehend a middle-aged man believed to be armed with a gun.
+Although she does hate him, he did send her a postcard last week.
+You'd better get used to doing as you're told. She recognized the
+stranger as her son through his accent. Now that she is out of job,
+Lucy has been considering going back to school, but she hasn't
+decided yet. The job was new to Charles, and for a few days he was
+all at sea.
+
+
+--------------
+conversations
+--------------
+- Hi Tracy, you look pale.
+- I am tired. I have been painting the living room all day.
+- I'm sure Andrew will win the first prize in the final.
+- I think so. He has been preparing for it for months.

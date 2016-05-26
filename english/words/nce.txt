@@ -51,3 +51,33 @@ statuette
 stature
 gossip
 giggle
+extreme
+palace
+impatient
+associate
+advocate
+anecdotes
+bureau
+journal
+journalist
+journalism
+newspaperman
+nomination
+imperial
+stunt
+supreme
+primitive
+senator
+bluff
+pupil
+
+
+---------------
+phrases
+---------------
+go to hospital
+go to the hospital
+go to school
+go to the school
+Buckingham Palace
+Potala Palace

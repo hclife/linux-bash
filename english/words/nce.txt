@@ -110,6 +110,7 @@ spokeswoman
 representative
 Newcastle
 ditch
+dictate
 dictator
 behead
 invade
@@ -148,6 +149,66 @@ altitude
 latitude
 longitude
 fowl
+disparate
+consolidate
+augment
+unification
+uniformity
+probe
+paradigm
+fascinate
+affection
+affectionate
+myth
+mystery
+mysterious
+submit
+submissive
+compliant
+obedient
+feline
+independence
+high-rise
+windowsill
+paratrooper
+squirrel
+impact
+impression
+influence
+infection
+air-resistance
+sequoias
+crave
+admire
+tangible
+desirous
+hurtle
+windshield
+setback
+choke
+hexagon
+stitch
+stereoscopic
+tile
+abberation
+chromatic
+glitch
+barrel
+flit
+embody
+sensitive
+sensible
+rebellious
+stubborn
+defiant
+suspicious
+suspective
+suspected
+suspensive
+sustainable
+survive
+surpass
+tsunami
 
 
 
@@ -160,6 +221,7 @@ go to hospital
 go to the hospital
 go to school
 go to the school
+go horse-riding
 Buckingham Palace
 Potala Palace
 microwave oven
@@ -172,4 +234,16 @@ identify with
 deal with a claim
 run a business
 have a good day
-go horse-riding
+declaration of independence
+war of independence
+independence hall
+environmental impact assessment
+impact resistance
+economic impact
+visual impact
+cat walk
+a barber's cat
+as sick as a cat
+like a cat on hot bricks
+die of cancer
+die from earthquake

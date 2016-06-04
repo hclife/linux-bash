@@ -209,8 +209,44 @@ sustainable
 survive
 surpass
 tsunami
-
-
+Southampton
+colossal
+watertight
+compartment
+tragic
+tragedian
+liner
+voyage
+iceberg
+lookout
+collide
+collision
+narrowly
+slight
+tremble
+faint
+tremendous
+enormous
+massive
+tight
+seal
+ingredient
+snatch
+profligacy
+superiority
+interference
+bankruptcy
+receivership
+closely
+grudgingly
+involuntarily
+sodden
+gloom
+cyclone
+fuzzy
+vague
+ambiguous
+obscure
 
 
 
@@ -247,3 +283,6 @@ as sick as a cat
 like a cat on hot bricks
 die of cancer
 die from earthquake
+slight fever
+slight pain
+slight illness

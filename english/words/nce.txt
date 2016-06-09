@@ -247,17 +247,64 @@ fuzzy
 vague
 ambiguous
 obscure
+guilty
+tolerant
+declare
+hardened
+dreadful
+fearful
+smuggler
+officious
+pounce
+perfume
+sarcastically
+exempt
+mixture
+gel
+unscrew
+nostril
+chalk
+baggage
+luggage
+yummy
+carapace
+remorseless
+vocational
+specialized
+occupational
+harsh
+pompous
+stride
+throb
+terrible
+horrible
+ironically
+satirically
+daresay
+accusation
+undergo
+sustain
+intense
+scald
+delicate
+sausage
+
 
 
 
 ---------------
 phrases
 ---------------
+go at
+go on
+go off
+go through
 go to hospital
 go to the hospital
 go to school
 go to the school
 go horse-riding
+go through the customs
 Buckingham Palace
 Potala Palace
 microwave oven
@@ -286,3 +333,14 @@ die from earthquake
 slight fever
 slight pain
 slight illness
+customs officer
+professional knowledge
+professional training
+professional education
+exempt from tax
+tax exempt
+on the other hand
+look in the eye
+in a mess
+charge sb with sth
+accuse sb of sth

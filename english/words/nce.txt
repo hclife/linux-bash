@@ -288,6 +288,27 @@ intense
 scald
 delicate
 sausage
+desert
+paradise
+wretched
+starve
+coral
+Miami
+Caribbean
+dinghy
+spear
+lobster
+tanker
+genuinely
+scrutinize
+slump
+accurse
+suspense
+deprive
+befriend
+piteous
+radical
+folly
 
 
 
@@ -305,6 +326,8 @@ go to school
 go to the school
 go horse-riding
 go through the customs
+get into
+get out of
 Buckingham Palace
 Potala Palace
 microwave oven
@@ -344,3 +367,11 @@ look in the eye
 in a mess
 charge sb with sth
 accuse sb of sth
+Robinson Crusoe
+seize the opportunity
+rare opportunity
+opportunity cost
+business opportunity
+form a picture of
+an element of truth
+good point

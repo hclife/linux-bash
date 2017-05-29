@@ -1818,3 +1818,6 @@ gcc -c -g stack.c push.c pop.c empty.c
 origin  https://github.com/hclife/-bash-con.git (fetch)
 origin  https://github.com/hclife/-bash-con.git (push)
 
+sudo vim /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="text"
+sudo update-grub2

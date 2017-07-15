@@ -1822,3 +1822,69 @@ origin  https://github.com/hclife/-bash-con.git (push)
 sudo vim /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="text"
 sudo update-grub2
+make MENUCONFIG_COLOR=mono ARCH=arm menuconfig
+make MENUCONFIG_COLOR=blackbg ARCH=arm menuconfig
+make MENUCONFIG_COLOR=classic ARCH=arm menuconfig
+make MENUCONFIG_COLOR=bluetitle ARCH=arm menuconfig
+./rep.sh s32UniCond uni_cond
+rm *.log; ./build.sh > 1.log 2&>1
+make clean
+make mrproper
+file /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
+objcopy -I binary -O ihex audio_dsp0_ucode.fw audio_dsp0_ucode.fw.ihex
+objcopy -I binary -O ihex audio_dsp1_ucode.fw audio_dsp1_ucode.fw.ihex
+objdump -s audio_dsp0_ucode.fw.ihex 
+objdump -s audio_dsp0_ucode.fw.ihex | head
+hi Comment ctermfg=6
+arm-linux-gnueabihf-gcc --static audio_test.c -o audiotest
+ifconfig -a
+git clone http://git.alsa-project.org/http/alsa-lib.git 
+git clone http://git.alsa-project.org/http/alsa-utils.git
+git clone http://git.alsa-project.org/http/alsa-firmware.git
+git clone http://git.alsa-project.org/http/alsa-tools.git
+git clone http://git.alsa-project.org/http/alsa-plugins.git
+git clone http://git.alsa-project.org/http/alsa-oss.git
+git clone http://git.alsa-project.org/http/alsa-python.git
+git clone http://git.alsa-project.org/http/alsa-ucm-conf.git
+git clone http://git.alsa-project.org/http/tinycompress.git
+./configure --host=arm-linux-gnueabihf --prefix=/home/larkin/alsa/alsa-lib/build/ \
+	--with-alsa-devdir=/dev/snd --enable-static --enable-shared --disable-python \
+	--with-configdir=/usr/local/share/alsa
+./configure --host=arm-linux-gnueabihf --target=arm-linux --prefix=/home/larkin/alsa/alsa-lib/build/ \
+	--with-alsa-devdir=/dev/snd --enable-static=yes --enable-shared=no --disable-python \
+	--with-configdir=/usr/local/share/alsa
+aclocal
+automake --add-missing
+libtoolize
+whatis libtoolize
+mkdir -pv m4
+gsh HEAD~
+gsh HEAD^1
+gsh HEAD^1^1
+gsh HEAD^^
+gsh HEAD^2
+git show --pretty=fuller
+git show-branch --more=35
+git fetch ssh://HuangChao@168.219.241.167:29418/profile/tv/platform/kernel/linux-tizentv \
+	refs/changes/76/23476/1 && git cherry-pick FETCH_HEAD
+arm-linux-gnueabihf-gcc aplay.c -I/home/larkin/audio/alsa-lib/out/arm/alsa-lib/include/ \
+	-I/home/larkin/audio/alsa-utils/include/ -I/home/larkin/audio/alsa-lib/include/ \
+	-L/home/larkin/audio/alsa-lib/out/arm/alsa-lib/lib -lasound -lrt -ldl -lm -lpthread -static -o aplays
+
+# Replacement in whole files 
+for i in *.txt; do
+	sed -i s/"$1"/"$2"/g "$i"
+done
+gcc -Wall $(pkg-config --cflags --libs gstreamer-0.10) hello.c -o hello
+gcc -Wall $(pkg-config --cflags --libs gstreamer-0.10) hello.c -o hello
+gst-launch filesrc location=boy.mp3 ! mad ! pulsesink
+gstlaunch filesrc location=boy.mp3 ! decodebin ! pulsesink
+gst-launch filesrc location=boy.mp3 ! decodebin ! pulsesink
+gst-launch filesrc location=poweron_vorbis.ogg ! decodebin ! pulsesink
+gst-launch filesrc location=poweron_vorbis.ogg ! decodebin ! videoconvert ! xvimagesink
+gst-launch playbin uri=file:///root/gst/dev/Life_44100Hz_vorbis_stereo.ogg 
+gst-inspect playbin
+gst-inspect playbin | more
+mount -t vboxsf shares /mnt/vmshare
+mount -t vboxsf text /mnt/vmtext
+mount -t vboxsf atsc /mnt/vmatsc

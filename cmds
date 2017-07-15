@@ -1814,6 +1814,7 @@ gcc -c -g stack.c push.c pop.c empty.c
   660  2012-09-10 11:25:19 readelf -a a.o > elf.relocatable
   665  2012-09-10 11:27:43 vi elf.executable
   676  2012-09-10 14:08:37 readelf -a sensors.default.nonconst.so > elf.shared.objects
+gcj ClassName.java --main=ClassName -o ClassName
 
 origin  https://github.com/hclife/-bash-con.git (fetch)
 origin  https://github.com/hclife/-bash-con.git (push)

@@ -201,6 +201,7 @@ ALI	:Acer Labs Inc.
 ONFI	:Open NAND Flash Interface Working Group
 NVMHCI	:Non-Volatile Memory Host Controller Interface
 FTL	:Flash Translation Layer
+UFS	:Universal Flash Storage
 BBM	:Bad Block Management
 IEDM	:International Electron Devices Meeting
 NX	:No eXecute

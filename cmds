@@ -83,6 +83,8 @@ ssh-keygen -t rsa
 ssh -p 29418 Larkin.Huang@10.82.164.21
 git config --global user.name "Larkin.Huang"
 git config --global user.email "Larkin.Huang@Qisda.com"
+git config --global color.ui true
+git config --global core.editor vim
 git config -l
 mkdir git; cd git
 git clone git://10.82.164.21/Data/msm8260/kernel/msm -b MSM8260_GB
@@ -1367,8 +1369,6 @@ remotes/origin/SWEP_GORAB1A_v01.025.g_00
 check in procedure:
 ssh-keygen -t rsa
 ssh -p 29418 Larkin.Huang@10.82.164.21
-git config --global user.name "Larkin.Huang"
-git config --global user.email "Larkin.Huang@Qisda.com"
 git config -l
 mkdir git; cd git
 git clone git://10.82.164.21/Data/msm8260/kernel/msm -b MSM8260_GB
